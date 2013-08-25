@@ -1,9 +1,15 @@
---- layout: page weight: 0 title: Customer Subuser Bounces navigation:
-Event Notification URL show: true --- {% anchor h2 %} Retrieve Bounces
-{% endanchor %}
+---
+layout: page
+weight: 0
+title: Customer Subuser Bounces
+navigation: Event Notification URL
+show: true
+---
 
-Note that you can use *either* the days parameter *or* the start\_date
-and end\_date parameter.
+{% anchor h2 %} Retrieve Bounces {% endanchor %}
+
+
+Note that you can use *either* the days parameter *or* the start\_date and end\_date parameter.
 
 <table>
 <thead>
@@ -45,37 +51,25 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_us
 ### Response
 
 {% codeblock %}
-bounces\><bounce><email>email1@domain.com</email><status>5.1.1</status><reason>host
-[127.0.0.1] said: 550 5.1.1 unknown or illegal user:
-email1@domain.com</reason><created>2009-06-10
-12:40:30</created></bounce><bounce><email>email2@domain2.com</email><status>5.1.1</status><reason>host
-[127.0.0.1] said: 550 5.1.1 unknown or illegal user:
-email2@domain2.com</reason><created>2009-06-10
-12:40:30</created></bounce></bounces>JSON Call
+bounces\><bounce><email>email1@domain.com</email><status>5.1.1</status><reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com</reason><created>2009-06-10 12:40:30</created></bounce><bounce><email>email2@domain2.com</email><status>5.1.1</status><reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com</reason><created>2009-06-10 12:40:30</created></bounce></bounces>JSON Call
 
 </h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=get&date=
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=get&date=
 {% endcodeblock %}
 
 ### Response
 
 {% codeblock %}
-{"email":"email1@domain.com","status":"5.1.1","reason":"host [127.0.0.1]
-said: 550 5.1.1 unknown or illegal user:
-email1@domain.com","created":"2009-06-01
-19:41:39"},{"email":"email2@domain2.com","status":"5.1.1","reason":"host
-[127.0.0.1] said: 550 5.1.1 unknown or illegal user:
-email2@domain2.com","created":"2009-06-01 19:41:39"}]
+{"email":"email1@domain.com","status":"5.1.1","reason":"host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","status":"5.1.1","reason":"host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com","created":"2009-06-01 19:41:39"}]
 {% endcodeblock %}
 
 * * * * *
 
+
 {% anchor h2 %} Delete Bounces {% endanchor %}
 
-Since SendGrid does not re-deliver to bounced addresses, users can
-remove bounces from their list at any time if redelivery to a bounced
-address is desired.
+
+Since SendGrid does not re-deliver to bounced addresses, users can remove bounces from their list at any time if redelivery to a bounced address is desired.
 
 <table>
 <thead>

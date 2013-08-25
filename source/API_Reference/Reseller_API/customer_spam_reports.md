@@ -1,5 +1,13 @@
---- layout: page weight: 0 title: Customer Spam Reports navigation:
-show: true --- {% anchor h2 %} Retrieve Spam Reports {% endanchor %}
+---
+layout: page
+weight: 0
+title: Customer Spam Reports
+navigation:
+   show: true
+---
+
+{% anchor h2 %} Retrieve Spam Reports {% endanchor %}
+
 
 <table>
 <thead>
@@ -94,11 +102,11 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 
 * * * * *
 
+
 {% anchor h2 %} Delete Spam Reports {% endanchor %}
 
-Since SendGrid does not deliver to spam reported addresses, users can
-remove spam reports from their list at any time if re-delivery to a spam
-reported address is desired.
+
+Since SendGrid does not deliver to spam reported addresses, users can remove spam reports from their list at any time if re-delivery to a spam reported address is desired.
 
 <table>
 <thead>

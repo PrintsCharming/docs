@@ -1,8 +1,15 @@
---- layout: page weight: 0 title: Customer Unsubscribes navigation:
-show: true --- {% anchor h2 %} Retrieve Unsubscribes {% endanchor %}
+---
+layout: page
+weight: 0
+title: Customer Unsubscribes
+navigation:
+   show: true
+---
 
-Note that you can use *either* the days parameter *or* the start\_date
-and end\_date parameter.
+{% anchor h2 %} Retrieve Unsubscribes {% endanchor %}
+
+
+Note that you can use *either* the days parameter *or* the start\_date and end\_date parameter.
 
 <table>
 <thead>
@@ -50,30 +57,25 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 ### Response
 
 {% codeblock %}
-unsubscribes\><unsubscribe><email>email1@domain.com</email><created>2009-06-10
-12:40:30</created></unsubscribe><unsubscribe><email>email2@domain2.com</email><created>2009-06-10
-12:40:30</created></unsubscribe></unsubscribes>JSON Call
+unsubscribes\><unsubscribe><email>email1@domain.com</email><created>2009-06-10 12:40:30</created></unsubscribe><unsubscribe><email>email2@domain2.com</email><created>2009-06-10 12:40:30</created></unsubscribe></unsubscribes>JSON Call
 
 </h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=get&date=
+{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=get&date=
 {% endcodeblock %}
 
 ### Response
 
 {% codeblock %}
-{"email":"email1@domain.com","created":"2009-06-01
-19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01
-19:41:39"}]
+{"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}]
 {% endcodeblock %}
 
 * * * * *
 
+
 {% anchor h2 %} Delete Unsubscribes {% endanchor %}
 
-Since SendGrid does not deliver to unsubscribe addresses, users can
-remove unsubscribes from their list at any time if re-delivery to an
-unsubscribed address is desired.
+
+Since SendGrid does not deliver to unsubscribe addresses, users can remove unsubscribes from their list at any time if re-delivery to an unsubscribed address is desired.
 
 <table>
 <thead>
@@ -148,10 +150,11 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 * * * * *
 
+
 {% anchor h2 %} Add Unsubscribes {% endanchor %}
 
-Add unsubscribe email records to their account if they need to stop
-sending email messages to a specific recipient.
+
+Add unsubscribe email records to their account if they need to stop sending email messages to a specific recipient.
 
 <table>
 <thead>

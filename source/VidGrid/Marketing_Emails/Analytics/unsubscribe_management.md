@@ -1,5 +1,11 @@
---- layout: page weight: 0 title: Managing Marketing Email Unsubscribe
-List breadcrumbs: true navigation: show: true ---
+---
+layout: page
+weight: 0
+title: Managing Marketing Email Unsubscribe List
+breadcrumbs: true
+navigation:
+  show: true
+---
 
 <div class="well">
 <div class="video-container">
@@ -8,10 +14,7 @@ List breadcrumbs: true navigation: show: true ---
 </div>
 ### Managing Marketing Email Unsubscribe Requests
 
-This must-see video by Keanon shows you how to manage the list of people
-that unsubscribe from your Marketing Email. It is important to learn how
-they are unsubscribing from a specific list and not necessarily all
-future lists that you create or clone.
+This must-see video by Keanon shows you how to manage the list of people that unsubscribe from your Marketing Email. It is important to learn how they are unsubscribing from a specific list and not necessarily all future lists that you create or clone.
 
 </div>
 

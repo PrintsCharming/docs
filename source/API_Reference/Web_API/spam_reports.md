@@ -1,9 +1,16 @@
---- layout: page weight: 0 title: Spam Reports navigation: show: true
+---
+layout: page
+weight: 0
+title: Spam Reports
+navigation:
+  show: true
 ---
 
 Retrieve and delete entries in the Spam Reports list.
 
+
 {% anchor h2 %} get {% endanchor %}
+
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -17,24 +24,24 @@ Retrieve and delete entries in the Spam Reports list.
          <td>date</td>
          <td>No</td>
          <td>Must be set to 1</td>
-         <td>Retrieve the timestamp of the spam report records. It will return a datein a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
+         <td>Retrieve the timestamp of the spam report records. It will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
       </tr>
       <tr>
          <td>days</td>
          <td>No</td>
          <td>If specified, must be an integer greater than 0</td>
-         <td>Number of days in the past for which to retrieve spam reports (includestoday)</td>
+         <td>Number of days in the past for which to retrieve spam reports (includes today)</td>
       </tr>
       <tr>
          <td>start\_date</td>
          <td>No</td>
-         <td>Date must be in YYYY-MM-DD format and be earlier than the end\_dateparameter.</td>
+         <td>Date must be in YYYY-MM-DD format and be earlier than the end\_date parameter.</td>
          <td>The start of the date range for which to retrieve spam reports.</td>
       </tr>
       <tr>
          <td>end\_date</td>
          <td>No</td>
-         <td>Date must be in YYYY-MM-DD format and be later than the start\_dateparameter.</td>
+         <td>Date must be in YYYY-MM-DD format and be later than the start\_date parameter.</td>
          <td>The end of the date range for which to retrieve spam reports.</td>
       </tr>
       <tr>
@@ -70,7 +77,20 @@ https://sendgrid.com/api/spamreports.get.json?api_user=your_sendgrid_username&ap
 
 ### Response
 
-
+{% codeblock lang:javascript %}
+[
+  {
+    "ip": "174.36.80.219",
+    "email": "example@aol.com",
+    "created": "2009-12-06 15:45:08"
+  },
+  {
+    "ip": "74.63.202.105",
+    "email": "example2@yahoo.com",
+    "created": "2009-12-08 07:43:01"
+  }
+]
+{% endcodeblock %}
 
 </div>
 <div class="tab-pane" id="get-xml">
@@ -105,7 +125,9 @@ https://sendgrid.com/api/spamreports.get.xml?api_user=your_sendgrid_username&api
 
 * * * * *
 
+
 {% anchor h2 %} delete {% endanchor %}
+
 
 Delete an address from the Spam Reports list.
 

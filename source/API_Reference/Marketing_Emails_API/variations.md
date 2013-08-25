@@ -1,13 +1,18 @@
---- layout: page weight: 0 title: Variations (A/B Testing) navigation:
-show: true ---
+---
+layout: page
+weight: 0
+title: Variations (A/B Testing)
+navigation:
+  show: true
+---
 
-This module allows you to add new Variations to your drafted Marketing
-Emails. These Variations can be used in A/B testing (also sometimes
-called split testing).
+This module allows you to add new Variations to your drafted Marketing Emails. These Variations can be used in A/B testing (also sometimes called split testing).
 
 * * * * *
 
+
 {% anchor h2 %} add {% endanchor %}
+
 
 Create a new Variation.
 
@@ -130,7 +135,9 @@ https://sendgrid.com/api/newsletter/variations/add.xml?api_user=your_sendgrid_us
 
 * * * * *
 
-{% anchor h2 %} edit {% endanchor %} Edit an existing Variation.   
+
+{% anchor h2 %} edit {% endanchor %}
+ Edit an existing Variation.   
 
 <table>
 <thead>
@@ -251,8 +258,9 @@ https://sendgrid.com/api/newsletter/variations/edit.xml?api_user=your_sendgrid_u
 
 * * * * *
 
-{% anchor h2 %} get {% endanchor %} Retrieve the contents of an existing
-Variation.   
+
+{% anchor h2 %} get {% endanchor %}
+ Retrieve the contents of an existing Variation.   
 
 <table>
 <thead>
@@ -338,8 +346,9 @@ https://sendgrid.com/api/newsletter/variations/get.xml?api_user=your_sendgrid_us
 
 * * * * *
 
-{% anchor h2 %} cancel {% endanchor %} Cancels a current Variation send
-that is in progress.   
+
+{% anchor h2 %} cancel {% endanchor %}
+ Cancels a current Variation send that is in progress.   
 
 <table>
 <thead>
@@ -426,8 +435,9 @@ https://sendgrid.com/api/newsletter/variations/cancel.xml?api_user=your_sendgrid
 
 * * * * *
 
-{% anchor h2 %} delete {% endanchor %} Delete the contents of an
-existing Variation.   
+
+{% anchor h2 %} delete {% endanchor %}
+ Delete the contents of an existing Variation.   
 
 <table>
 <thead>
@@ -520,8 +530,9 @@ https://sendgrid.com/api/newsletter/variations/delete.xml?api_user=your_sendgrid
 
 * * * * *
 
-{% anchor h2 %} list {% endanchor %} Retrieve a list of all Variations
-attached to a Marketing Email.   
+
+{% anchor h2 %} list {% endanchor %}
+ Retrieve a list of all Variations attached to a Marketing Email.   
 
 <table>
 <thead>
@@ -614,8 +625,9 @@ https://sendgrid.com/api/newsletter/variations/list.xml?api_user=your_sendgrid_u
 
 * * * * *
 
-{% anchor h2 %} pickwinner {% endanchor %} Select the Variation you
-would like to send.   
+
+{% anchor h2 %} pickwinner {% endanchor %}
+ Select the Variation you would like to send.   
 
 <table>
 <thead>
@@ -708,8 +720,9 @@ https://sendgrid.com/api/newsletter/variations/pickwinner.xml?api_user=your_send
 
 * * * * *
 
-{% anchor h2 %} schedule {% endanchor %} Schedule a send time and
-percentage for your variations.   
+
+{% anchor h2 %} schedule {% endanchor %}
+ Schedule a send time and percentage for your variations.   
 
 <table>
 <thead>

@@ -1,10 +1,17 @@
---- layout: page weight: 0 title: Customer Subuser Apps navigation:
-show: true --- {% anchor h2 %} List {% endanchor %}
+---
+layout: page
+weight: 0
+title: Customer Subuser Apps
+navigation:
+   show: true
+---
+
+{% anchor h2 %} List {% endanchor %}
+
 
 List all of the available apps.
 
-Note: The *name* entry is used in all the other API calls to identify a
-app.
+Note: The *name* entry is used in all the other API calls to identify a app.
 
 <table>
 <thead>
@@ -46,26 +53,23 @@ filters\><filter><name>twitter</name>
 Twitter
 
 </title>
-<description>This plugin allows you to send an email message to
-twitter</description><activated>0</activated></filter> ...
-</filters>JSON Call
+<description>This plugin allows you to send an email message to twitter</description><activated>0</activated></filter> ... </filters>JSON Call
 
 </h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=example@example.com
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=example@example.com
 {% endcodeblock %}
 
 ### Response: Success
 
 {% codeblock %}
-{"name":"twitter","title":"Twitter","description":"This
-plugin allows you to send an email message to
-twitter","activated":false}, ...
+{"name":"twitter","title":"Twitter","description":"This plugin allows you to send an email message to twitter","activated":false}, ...
 {% endcodeblock %}
 
 * * * * *
 
+
 {% anchor h2 %} Activate App {% endanchor %}
+
 
 <table>
 <thead>
@@ -120,7 +124,9 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 
 * * * * *
 
+
 {% anchor h2 %} Deactivate App {% endanchor %}
+
 
 <table>
 <thead>
@@ -175,7 +181,9 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 
 * * * * *
 
+
 {% anchor h2 %} Customize App {% endanchor %}
+
 
 These API calls require that settings are passed using POST.
 
@@ -188,12 +196,10 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_us
 ### Response: Success
 
 {% codeblock %}
-filter\><field_name>field_value</field_name> ...
-</filter>Response: Error
+filter\><field_name>field_value</field_name> ... </filter>Response: Error
 
 </h3>
-{% codeblock %} result\><message>error</message><message>... error
-messages ...</message></result>
+{% codeblock %} result\><message>error</message><message>... error messages ...</message></result>
 {% endcodeblock %}
 
 #### Return - Empty
@@ -204,8 +210,7 @@ This is returned if that filter has no settings or is not enabled.
 filter\></filter>JSON Call
 
 </h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=setup&user=example@example.com
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=setup&user=example@example.com
 {% endcodeblock %}
 
 ### Response: Success
@@ -222,7 +227,9 @@ This is returned if that filter has no settings or is not enabled.
 
 * * * * *
 
+
 {% anchor h2 %} Get Current Settings {% endanchor %}
+
 
 ### XML Call
 
@@ -233,12 +240,10 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_us
 ### Response: Success
 
 {% codeblock %}
-filter\><field_name>field_value</field_name> ...
-</filter>Response: Error
+filter\><field_name>field_value</field_name> ... </filter>Response: Error
 
 </h3>
-{% codeblock %} result\><message>error</message><message>... error
-messages ...</message></result>
+{% codeblock %} result\><message>error</message><message>... error messages ...</message></result>
 {% endcodeblock %}
 
 #### Return - Empty
@@ -249,8 +254,7 @@ This is returned if that filter has no settings or is not enabled.
 filter\></filter>JSON Call
 
 </h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=example@example.com&method=app
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=example@example.com&method=app
 {% endcodeblock %}
 
 ### Response: Success

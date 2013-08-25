@@ -1,15 +1,18 @@
---- layout: page weight: 0 title: Subusers navigation: show: true ---
+---
+layout: page
+weight: 0
+title: Subusers
+navigation:
+   show: true
+---
 
-These are actions that directly affect your subuser. We provide access
-via XML and JSON.
+These are actions that directly affect your subuser. We provide access via XML and JSON.
 
-{% info %} In both creating and searching for a subuser account, you are
-using the USERNAME parameter, while in all other cases you are using the
-USER parameter. When you are creating a subuser, there is no existing
-USER parameter to reference, so you are creating one. When you are
-searching for a subuser, you are authenticating to our servers with a
-valid username. {% endinfo %} {% anchor h2 %} Create a Subuser {%
-endanchor %}
+
+{% info %} In both creating and searching for a subuser account, you are using the USERNAME parameter, while in all other cases you are using the USER parameter. When you are creating a subuser, there is no existing USER parameter to reference, so you are creating one. When you are searching for a subuser, you are authenticating to our servers with a valid username. {% endinfo %}
+ 
+{% anchor h2 %} Create a Subuser {% endanchor %}
+
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -77,7 +80,7 @@ endanchor %}
          <td>zip</td>
          <td>Yes</td>
          <td>No more than 50 characters</td>
-         <td>Zip of new subuser. This field is not validated for correct value. It'sup to developer to check for valid zip code.</td>
+         <td>Zip of new subuser. This field is not validated for correct value. It's up to developer to check for valid zip code.</td>
       </tr>
       <tr>
          <td>country</td>
@@ -106,7 +109,7 @@ endanchor %}
       <tr>
          <td>mail\_domain</td>
          <td>No</td>
-         <td>A mail domain must already be setup with SendGrid, pleasecontact [support@sendgrid.com](mailto:support@sendgrid.com) to have onesetup</td>
+         <td>A mail domain must already be setup with SendGrid, please contact [support@sendgrid.com](mailto:support@sendgrid.com) to have one setup</td>
          <td>Mail domain of new subuser</td>
       </tr>
    </tbody>
@@ -176,7 +179,9 @@ https://sendgrid.com/apiv2/customer.add.json?api_user=your_sendgrid_username&api
 
 * * * * *
 
+
 {% anchor h2 %} Delete a Subuser {% endanchor %}
+
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -259,8 +264,9 @@ https://sendgrid.com/apiv2/customer.delete.json?api_user=your_sendgrid_username&
 
 * * * * *
 
-{% anchor h2 %} Retrieve Subusers {% endanchor %} Obtain a complete list
-of all subusers.
+
+{% anchor h2 %} Retrieve Subusers {% endanchor %}
+ Obtain a complete list of all subusers.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -444,9 +450,9 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username
 
 * * * * *
 
-{% anchor h2 %} Enable a Subuser {% endanchor %} Enable a subuser so
-they may start sending out emails again. This call will not enable
-website access.
+
+{% anchor h2 %} Enable a Subuser {% endanchor %}
+ Enable a subuser so they may start sending out emails again. This call will not enable website access.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -526,8 +532,9 @@ https://sendgrid.com/apiv2/customer.enable.json?api_user=your_sendgrid_username&
 
 * * * * *
 
-{% anchor h2 %} Disable a Subuser {% endanchor %} This prevents them
-from sending out emails with SendGrid.
+
+{% anchor h2 %} Disable a Subuser {% endanchor %}
+ This prevents them from sending out emails with SendGrid.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -605,9 +612,9 @@ https://sendgrid.com/apiv2/customer.disable.json?api_user=your_sendgrid_username
 
 * * * * *
 
-{% anchor h2 %} Enable Website Access To A Subuser {% endanchor %} Allow
-a subuser to login to the SendGrid.com website. This call will not
-enable the subuser to send out emails.
+
+{% anchor h2 %} Enable Website Access To A Subuser {% endanchor %}
+ Allow a subuser to login to the SendGrid.com website. This call will not enable the subuser to send out emails.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -685,9 +692,9 @@ https://sendgrid.com/apiv2/customer.website_enable.json?api_user=your_sendgrid_u
 
 * * * * *
 
+
 {% anchor h2 %} Disable Website Access To A Subuser {% endanchor %}
-Disallow a subuser to login to the SendGrid.com website. This call will
-not prevent them from sending emails.
+ Disallow a subuser to login to the SendGrid.com website. This call will not prevent them from sending emails.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -765,8 +772,9 @@ https://sendgrid.com/apiv2/customer.website_disable.json?api_user=your_sendgrid_
 
 * * * * *
 
-{% anchor h2 %} Update Subuser Profile {% endanchor %} Allows you to
-update your subusers profile information
+
+{% anchor h2 %} Update Subuser Profile {% endanchor %}
+ Allows you to update your subusers profile information
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -887,8 +895,7 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username
 ### Response: Error
 
 {% codeblock %}
-{ "message": "error", "errors": [ "...error messages..."
-] }
+{ "message": "error", "errors": [ "...error messages..." ] }
 {% endcodeblock %}
 
 </div>
@@ -896,9 +903,9 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username
 
 * * * * *
 
-{% anchor h2 %} Update Subuser Password {% endanchor %} Passwords are
-encrypted by default and therefore cannot be retrieved; however, you can
-reset a subusers password.
+
+{% anchor h2 %} Update Subuser Password {% endanchor %}
+ Passwords are encrypted by default and therefore cannot be retrieved; however, you can reset a subusers password.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -978,8 +985,7 @@ https://sendgrid.com/apiv2/customer.password.json?api_user=your_sendgrid_usernam
 ### Response: Error
 
 {% codeblock %}
-{ "message": "error", "errors": [ "...error messages..."
-] }
+{ "message": "error", "errors": [ "...error messages..." ] }
 {% endcodeblock %}
 
 </div>
@@ -987,9 +993,9 @@ https://sendgrid.com/apiv2/customer.password.json?api_user=your_sendgrid_usernam
 
 * * * * *
 
-{% anchor h2 %} Update Subuser Username {% endanchor %} Note that your
-subuser account username is used to login to our SMTP server *and* the
-website and changes take effect immediately.
+
+{% anchor h2 %} Update Subuser Username {% endanchor %}
+ Note that your subuser account username is used to login to our SMTP server *and* the website and changes take effect immediately.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -1003,7 +1009,7 @@ website and changes take effect immediately.
          <td>task</td>
          <td>Yes</td>
          <td>Must be set to**setUsername**</td>
-         <td>This will let us know you want to update your subusers username. This isthe new username your subuser will be authenticating with our SMTPservers *and* to access the website. This update takes effectimmediately</td>
+         <td>This will let us know you want to update your subusers username. This is the new username your subuser will be authenticating with our SMTP servers *and* to access the website. This update takes effect immediately</td>
       </tr>
       <tr>
          <td>user</td>
@@ -1014,8 +1020,8 @@ website and changes take effect immediately.
       <tr>
          <td>username</td>
          <td>Yes</td>
-         <td>Must be in email format, not more than 100 characters, cannot be alreadytaken and cannot contain SendGrid.com in the domain name</td>
-         <td>This is the new username we will be authenticating with our SMTPservers *and* to access our site. This update takes effect immediately</td>
+         <td>Must be in email format, not more than 100 characters, cannot be already taken and cannot contain SendGrid.com in the domain name</td>
+         <td>This is the new username we will be authenticating with our SMTP servers *and* to access our site. This update takes effect immediately</td>
       </tr>
    </tbody>
 </table>
@@ -1069,8 +1075,7 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username
 ### Response: Error
 
 {% codeblock %}
-{ "message": "error", "errors": [ "...error messages..."
-] }
+{ "message": "error", "errors": [ "...error messages..." ] }
 {% endcodeblock %}
 
 </div>
@@ -1078,9 +1083,9 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username
 
 * * * * *
 
-{% anchor h2 %} Update Subuser Email Address {% endanchor %} This is the
-contact email we use for your subusers. Changes take place immediately.
-It is your responsibility to validate the contact email.
+
+{% anchor h2 %} Update Subuser Email Address {% endanchor %}
+ This is the contact email we use for your subusers. Changes take place immediately. It is your responsibility to validate the contact email.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -1094,7 +1099,7 @@ It is your responsibility to validate the contact email.
          <td>task</td>
          <td>Yes</td>
          <td>Must be set to **setEmail**</td>
-         <td>This will let us know you want to update your subusers email address.This update takes effect immediately</td>
+         <td>This will let us know you want to update your subusers email address. This update takes effect immediately</td>
       </tr>
       <tr>
          <td>user</td>
@@ -1106,7 +1111,7 @@ It is your responsibility to validate the contact email.
          <td>email</td>
          <td>Yes</td>
          <td>Must be in email format, not more than 100 characters</td>
-         <td>This is the new email address we will use for contacting subuser. Thisupdate takes effect immediately</td>
+         <td>This is the new email address we will use for contacting subuser. This update takes effect immediately</td>
       </tr>
    </tbody>
 </table>
@@ -1160,8 +1165,7 @@ https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&
 ### Response: Error
 
 {% codeblock %}
-{ "message": "error", "errors": [ "...error messages..."
-] }
+{ "message": "error", "errors": [ "...error messages..." ] }
 {% endcodeblock %}
 
 </div>

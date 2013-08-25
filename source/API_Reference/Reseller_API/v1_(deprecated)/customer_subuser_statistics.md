@@ -1,7 +1,13 @@
---- layout: page weight: 0 title: Customer Subuser Statistics
-navigation: show: true --- {% anchor h2 %} Retrieve Customer Subuser
-Statistics {% endanchor %} Note that you can use *either* the days
-parameter *or* the start\_date and end\_date parameter.
+---
+layout: page
+weight: 0
+title: Customer Subuser Statistics
+navigation:
+   show: true
+---
+
+{% anchor h2 %} Retrieve Customer Subuser Statistics {% endanchor %}
+ Note that you can use *either* the days parameter *or* the start\_date and end\_date parameter.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -47,12 +53,10 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_us
 ### Response
 
 {% codeblock %}
-<stats><day><date>2009-06-20</date><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></day><day><date>2009-06-21</date><requests>32342</requests><bounces>10</bounces><clicks>14323</clicks><opens>10995</opens><spamreports>7</spamreports></day><day><date>2009-06-22</date><requests>52342</requests><bounces>11</bounces><clicks>19223</clicks><opens>12992</opens><spamreports>2</spamreports></day></stats>JSON
-Call
+<stats><day><date>2009-06-20</date><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></day><day><date>2009-06-21</date><requests>32342</requests><bounces>10</bounces><clicks>14323</clicks><opens>10995</opens><spamreports>7</spamreports></day><day><date>2009-06-22</date><requests>52342</requests><bounces>11</bounces><clicks>19223</clicks><opens>12992</opens><spamreports>2</spamreports></day></stats>JSON Call
 
 </h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com
 {% endcodeblock %}
 
 ### Response
@@ -63,8 +67,9 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 
 * * * * *
 
-{% anchor h2 %} Retrieve Aggregates {% endanchor %} Retrieve all-time
-totals for your customer subuser
+
+{% anchor h2 %} Retrieve Aggregates {% endanchor %}
+ Retrieve all-time totals for your customer subuser
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -98,12 +103,10 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_us
 ### Response
 
 {% codeblock %}
-<stats><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></stats>JSON
-Call
+<stats><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></stats>JSON Call
 
 </h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&aggregate=
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&aggregate=
 {% endcodeblock %}
 
 ### Response
@@ -114,8 +117,9 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 
 * * * * *
 
-{% anchor h2 %} Category List {% endanchor %} Retrieve a list of all the
-categories used in your customer subusers account.
+
+{% anchor h2 %} Category List {% endanchor %}
+ Retrieve a list of all the categories used in your customer subusers account.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -129,7 +133,7 @@ categories used in your customer subusers account.
          <td>list</td>
          <td>Yes</td>
          <td>The value must be set to *true*</td>
-         <td>This will allow you to retrieve a list of all categories used in yourcustomer subusers account.</td>
+         <td>This will allow you to retrieve a list of all categories used in your customer subusers account.</td>
       </tr>
       <tr>
          <td>user</td>
@@ -149,12 +153,10 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_us
 ### Response
 
 {% codeblock %}
-<categories><category>categoryA</category><category>categoryB</category><category>categoryC</category></categories>JSON
-Call
+<categories><category>categoryA</category><category>categoryB</category><category>categoryC</category></categories>JSON Call
 
 </h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&list=tru
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&list=tru
 {% endcodeblock %}
 
 ### Response
@@ -165,10 +167,9 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 
 * * * * *
 
-{% anchor h2 %} Category Statistics {% endanchor %} Retrieve statistics
-broken down by category. If the category does not exist, there will be
-an empty result set. Note that you can use *either* the days parameter
-*or* the start\_date and end\_date parameter.
+
+{% anchor h2 %} Category Statistics {% endanchor %}
+ Retrieve statistics broken down by category. If the category does not exist, there will be an empty result set. Note that you can use *either* the days parameter *or* the start\_date and end\_date parameter.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -181,7 +182,7 @@ an empty result set. Note that you can use *either* the days parameter
       <tr>
          <td>category</td>
          <td>Yes</td>
-         <td>Must be an existing category that has statistics. You can pass in anarray of categories</td>
+         <td>Must be an existing category that has statistics. You can pass in an array of categories</td>
          <td>The category you will specify to retrieve detailed stats</td>
       </tr>
       <tr>
@@ -226,12 +227,10 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_us
 ### Response
 
 {% codeblock %}
-<stats><day><date>2009-06-20</date><category>categoryA</category><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></day><day><date>2009-06-21</date><category>categoryB</category><requests>32342</requests><bounces>10</bounces><clicks>14323</clicks><opens>10995</opens><spamreports>7</spamreports></day></stats>JSON
-Call
+<stats><day><date>2009-06-20</date><category>categoryA</category><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></day><day><date>2009-06-21</date><category>categoryB</category><requests>32342</requests><bounces>10</bounces><clicks>14323</clicks><opens>10995</opens><spamreports>7</spamreports></day></stats>JSON Call
 
 </h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category
 {% endcodeblock %}
 
 #### Command - Using an array of categories

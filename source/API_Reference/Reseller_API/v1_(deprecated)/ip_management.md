@@ -1,5 +1,13 @@
---- layout: page weight: 0 title: IP Management navigation: show: true
---- {% anchor h2 %} All {% endanchor %}
+---
+layout: page
+weight: 0
+title: IP Management
+navigation:
+   show: true
+---
+
+{% anchor h2 %} All {% endanchor %}
+
 
 View all IPs under your account.
 
@@ -43,12 +51,10 @@ https://sendgrid.com/api/distributor.ip.xml?api_user=your_sendgrid_username&api_
 ### Response
 
 {% codeblock %}
-<ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips>JSON
-Call
+<ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips>JSON Call
 
 </h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=al
+{% codeblock %} https://sendgrid.com/api/distributor.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=al
 {% endcodeblock %}
 
 ### Response: Success
@@ -70,10 +76,11 @@ https://sendgrid.com/api/distributor.ip.json?api_user=your_sendgrid_username&api
 
 * * * * *
 
+
 {% anchor h2 %} Free {% endanchor %}
 
-A listing of all free IPs under your account. A Free IP is any IP that
-is not in use by a user or is not linked to an IP grouping.
+
+A listing of all free IPs under your account. A Free IP is any IP that is not in use by a user or is not linked to an IP grouping.
 
 <table>
 <thead>
@@ -109,12 +116,10 @@ https://sendgrid.com/api/distributor.ip.xml?api_user=your_sendgrid_username&api_
 ### Response
 
 {% codeblock %}
-<ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips>JSON
-Call
+<ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips>JSON Call
 
 </h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=fre
+{% codeblock %} https://sendgrid.com/api/distributor.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=fre
 {% endcodeblock %}
 
 ### Response: Success
@@ -136,10 +141,11 @@ https://sendgrid.com/api/distributor.ip.json?api_user=your_sendgrid_username&api
 
 * * * * *
 
+
 {% anchor h2 %} Taken {% endanchor %}
 
-A listing of all taken IPs under your account. A Taken IP is any IP that
-is in use by a user or is linked to an IP grouping.
+
+A listing of all taken IPs under your account. A Taken IP is any IP that is in use by a user or is linked to an IP grouping.
 
 <table>
 <thead>
@@ -175,12 +181,10 @@ https://sendgrid.com/api/distributor.ip.xml?api_user=your_sendgrid_username&api_
 ### Response
 
 {% codeblock %}
-<ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips>JSON
-Call
+<ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips>JSON Call
 
 </h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=take
+{% codeblock %} https://sendgrid.com/api/distributor.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=take
 {% endcodeblock %}
 
 ### Response: Success
@@ -202,11 +206,11 @@ https://sendgrid.com/api/distributor.ip.json?api_user=your_sendgrid_username&api
 
 * * * * *
 
+
 {% anchor h2 %} Available {% endanchor %}
 
-A listing of all available IPs under your account. An Available IP is
-any IP that is currently free, or is in use by a user *but* that user is
-inactive or that is not linked to an IP grouping.
+
+A listing of all available IPs under your account. An Available IP is any IP that is currently free, or is in use by a user *but* that user is inactive or that is not linked to an IP grouping.
 
 <table>
 <thead>
@@ -242,12 +246,10 @@ https://sendgrid.com/api/distributor.ip.xml?api_user=your_sendgrid_username&api_
 ### Response
 
 {% codeblock %}
-<ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips>JSON
-Call
+<ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips>JSON Call
 
 </h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=availabl
+{% codeblock %} https://sendgrid.com/api/distributor.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=availabl
 {% endcodeblock %}
 
 ### Response: Success
@@ -269,7 +271,9 @@ https://sendgrid.com/api/distributor.ip.json?api_user=your_sendgrid_username&api
 
 * * * * *
 
+
 {% anchor h2 %} Usage {% endanchor %}
+
 
 The current breakdown of users who are using your IPs.
 
@@ -325,12 +329,10 @@ https://sendgrid.com/api/distributor.ip.xml?api_user=your_sendgrid_username&api_
 ### Response
 
 {% codeblock %}
-<ips><entry><ip>255.255.253.0</ip><user>user4@example.com</user></entry><entry><ip>255.255.254.0</ip><user>user4@example.com</user></entry></ips>JSON
-Call
+<ips><entry><ip>255.255.253.0</ip><user>user4@example.com</user></entry><entry><ip>255.255.254.0</ip><user>user4@example.com</user></entry></ips>JSON Call
 
 </h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=usage&user=example.com
+{% codeblock %} https://sendgrid.com/api/distributor.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=usage&user=example.com
 {% endcodeblock %}
 
 ### Response: Success

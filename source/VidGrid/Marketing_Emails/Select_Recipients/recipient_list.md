@@ -1,5 +1,11 @@
---- layout: page weight: 500 title: Recipient Lists breadcrumbs: true
-navigation: show: true ---
+---
+layout: page
+weight: 500
+title: Recipient Lists
+breadcrumbs: true
+navigation:
+  show: true
+---
 
 <div class="well">
 <div class="video-container">
@@ -8,9 +14,7 @@ navigation: show: true ---
 </div>
 ### Create a Recipient List
 
-Anisha provides a foundation for creating recipient lists. You can also
-find more details, including adding custom variables, in Kyle’s video,
-“Create a Marketing Email and Add Custom Variables.”
+Anisha provides a foundation for creating recipient lists. You can also find more details, including adding custom variables, in Kyle’s video, “Create a Marketing Email and Add Custom Variables.”
 
 </div>
 

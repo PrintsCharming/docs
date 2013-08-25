@@ -1,5 +1,13 @@
---- layout: page weight: 0 title: Parse Webhook Settings navigation:
-show: true --- {% anchor h2 %} get {% endanchor %}
+---
+layout: page
+weight: 0
+title: Parse Webhook Settings
+navigation:
+  show: true
+---
+
+{% anchor h2 %} get {% endanchor %}
+
 
 Retrieve settings already configured for parsing incoming email.
 
@@ -94,7 +102,9 @@ https://sendgrid.com/api/parse.get.xml?api_user=your_sendgrid_username&api_key=y
 
 * * * * *
 
+
 {% anchor h2 %} set {% endanchor %}
+
 
 Specify the hostname and url for parsing incoming emails.
 
@@ -122,7 +132,7 @@ Specify the hostname and url for parsing incoming emails.
          <td>hostname</td>
          <td>Yes</td>
          <td>alphanumeric</td>
-         <td>The hostname (domain or subdomain) for which you would like to configurea Parse Webhook callback URL.</td>
+         <td>The hostname (domain or subdomain) for which you would like to configure a Parse Webhook callback URL.</td>
       </tr>
       <tr>
          <td>url</td>
@@ -134,7 +144,7 @@ Specify the hostname and url for parsing incoming emails.
          <td>spam\_check</td>
          <td>No</td>
          <td>0 or 1</td>
-         <td>If spam check is enabled, messages that look like spam will not bePOSTed.</td>
+         <td>If spam check is enabled, messages that look like spam will not be POSTed.</td>
       </tr>
    </tbody>
 </table>
@@ -196,8 +206,7 @@ https://sendgrid.com/api/parse.set.xml?api_user=your_sendgrid_username&api_key=y
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
    @nodes
@@ -210,7 +219,9 @@ https://sendgrid.com/api/parse.set.xml?api_user=your_sendgrid_username&api_key=y
 
 * * * * *
 
+
 {% anchor h2 %} Delete Entry {% endanchor %}
+
 
 Delete the existing settings for parsing incoming emails.
 
@@ -238,7 +249,7 @@ Delete the existing settings for parsing incoming emails.
          <td>hostname</td>
          <td>Yes</td>
          <td>alphanumeric</td>
-         <td>The hostname (domain or subdomain) for which you would like to deleteParse Webhook settings.</td>
+         <td>The hostname (domain or subdomain) for which you would like to delete Parse Webhook settings.</td>
       </tr>
    </tbody>
 </table>
@@ -300,8 +311,7 @@ https://sendgrid.com/api/parse.delete.xml?api_user=your_sendgrid_username&api_ke
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
    @nodes

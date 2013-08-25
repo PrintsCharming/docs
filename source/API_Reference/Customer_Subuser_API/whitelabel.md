@@ -1,10 +1,17 @@
---- layout: page weight: 0 title: Whitelabel navigation: show: true ---
-With the whitelabel API calls you will be able to retrieve whitelabel
-settings related to your account.
+---
+layout: page
+weight: 0
+title: Whitelabel
+navigation:
+   show: true
+---
+With the whitelabel API calls you will be able to retrieve whitelabel settings related to your account.
 
 * * * * *
 
+
 {% anchor h2 %} List {% endanchor %}
+
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -68,7 +75,9 @@ https://sendgrid.com/apiv2/customer.whitelabel.json?api_user=your_sendgrid_usern
 
 * * * * *
 
+
 {% anchor h2 %} Append {% endanchor %}
+
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -125,8 +134,7 @@ https://sendgrid.com/apiv2/customer.whitelabel.xml?api_user=your_sendgrid_userna
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>

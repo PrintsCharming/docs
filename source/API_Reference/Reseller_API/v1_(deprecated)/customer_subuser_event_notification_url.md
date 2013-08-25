@@ -1,5 +1,13 @@
---- layout: page weight: 0 title: Customer Subuser Event Notification
-URL navigation: show: true --- {% anchor h2 %} Retrieve {% endanchor %}
+---
+layout: page
+weight: 0
+title: Customer Subuser Event Notification URL
+navigation:
+   show: true
+---
+
+{% anchor h2 %} Retrieve {% endanchor %}
+
 
 <table>
 <thead>
@@ -38,8 +46,7 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_us
 url\>http://www.SubUserPostUrlHere.com</url>JSON Call
 
 </h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com&method=eventpostur
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com&method=eventpostur
 {% endcodeblock %}
 
 ### Response
@@ -50,7 +57,9 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 
 * * * * *
 
+
 {% anchor h2 %} Update / Set URL {% endanchor %}
+
 
 <table>
 <thead>
@@ -111,7 +120,9 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 
 * * * * *
 
+
 {% anchor h2 %} Delete {% endanchor %}
+
 
 <table>
 <thead>

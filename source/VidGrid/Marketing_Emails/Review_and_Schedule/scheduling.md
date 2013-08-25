@@ -1,5 +1,11 @@
---- layout: page weight: 0 title: Scheduling Your Marketing Email
-breadcrumbs: true navigation: show: true ---
+---
+layout: page
+weight: 0
+title: Scheduling Your Marketing Email
+breadcrumbs: true
+navigation:
+  show: true
+---
 
 <div class="well">
 <div class="video-container">
@@ -8,9 +14,7 @@ breadcrumbs: true navigation: show: true ---
 </div>
 ### Scheduling Your Marketing Email
 
-Kayla’s tech tip shows you the options to schedule your Marketing Email
-for delivery. Use this feature to ensure that your Marketing Email
-always sends on time.
+Kayla’s tech tip shows you the options to schedule your Marketing Email for delivery. Use this feature to ensure that your Marketing Email always sends on time.
 
 </div>
 

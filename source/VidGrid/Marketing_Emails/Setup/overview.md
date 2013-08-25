@@ -1,5 +1,11 @@
---- layout: page weight: 1000 title: Marketing Email Setup breadcrumbs:
-true navigation: show: true ---
+---
+layout: page
+weight: 1000
+title: Marketing Email Setup
+breadcrumbs: true
+navigation:
+  show: true
+---
 
 <div class="well">
 <div class="video-container">
@@ -8,9 +14,7 @@ true navigation: show: true ---
 </div>
 ### Marketing Emails Overview
 
-Anisha takes a few minutes to provide a quick overview of the Marketing
-Email four step setup process. This is a great starting point providing
-the fundamentals that are covered in more detail in the other tech tips.
+Anisha takes a few minutes to provide a quick overview of the Marketing Email four step setup process. This is a great starting point providing the fundamentals that are covered in more detail in the other tech tips.
 
 </div>
 

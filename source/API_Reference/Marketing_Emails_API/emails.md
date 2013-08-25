@@ -1,8 +1,16 @@
---- layout: page weight: 0 title: Emails navigation: show: true ---
+---
+layout: page
+weight: 0
+title: Emails
+navigation:
+  show: true
+---
 
 This endpoint allows you to manage entries in your Recipient Lists.
 
+
 {% anchor h2 %} add {% endanchor %}
+
 
 Add one or more emails to a Recipient List.
 
@@ -103,9 +111,7 @@ Success: (X records inserted)
 Add an email recipient to a list:
 
 {% codeblock %}
-\#curl -d
-'api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=my_list&data={"email":"address@domain.com","name":"contactName"}'
-https://sendgrid.com/api/newsletter/lists/email/add.json
+\#curl -d 'api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=my_list&data={"email":"address@domain.com","name":"contactName"}' https://sendgrid.com/api/newsletter/lists/email/add.json
 {% endcodeblock %}
 
 Add an email recipient with multiple data fields:
@@ -115,14 +121,14 @@ Add an email recipient with multiple data fields:
 Add multiple email recipients to a list:
 
 {% codeblock %}
-\#curl -d
-'api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=my_list&data[]={"email":"address1@domain.com","name":"contactName1"}&data[]={"email":"address2@domain.com","name":"contactName2"}'
-https://sendgrid.com/api/newsletter/lists/email/add.json
+\#curl -d 'api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=my_list&data[]={"email":"address1@domain.com","name":"contactName1"}&data[]={"email":"address2@domain.com","name":"contactName2"}' https://sendgrid.com/api/newsletter/lists/email/add.json
 {% endcodeblock %}
 
 * * * * *
 
+
 {% anchor h2 %} get {% endanchor %}
+
 
 Get the email addresses and associated fields for a Recipient List.
 
@@ -221,7 +227,9 @@ https://sendgrid.com/api/newsletter/lists/email/get.xml?list=Test&api_user=your_
 
 * * * * *
 
+
 {% anchor h2 %} delete {% endanchor %}
+
 
 Remove one or more emails from a Recipient List.
 

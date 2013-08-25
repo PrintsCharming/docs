@@ -1,9 +1,12 @@
---- layout: page weight: 0 title: Authenticate a Customer Subuser
-navigation: show: true ---
+---
+layout: page
+weight: 0
+title: Authenticate a Customer Subuser
+navigation:
+   show: true
+---
 
-Authenticate a customer subuser on your website before displaying their
-account information so that you can have users manage their SendGrid
-account on your website completely.
+Authenticate a customer subuser on your website before displaying their account information so that you can have users manage their SendGrid account on your website completely.
 
 <table>
 <thead>
@@ -57,8 +60,7 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>

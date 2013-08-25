@@ -1,5 +1,13 @@
---- layout: page weight: 0 title: IP Management navigation: show: true
---- {% anchor h2 %} All {% endanchor %}
+---
+layout: page
+weight: 0
+title: IP Management
+navigation:
+   show: true
+---
+
+{% anchor h2 %} All {% endanchor %}
+
 
 View all IPs under your account.
 
@@ -107,10 +115,11 @@ https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_
 
 * * * * *
 
+
 {% anchor h2 %} Free {% endanchor %}
 
-A listing of all free IPs under your account. A Free IP is any IP that
-is not in use by a user or is not linked to an IP grouping.
+
+A listing of all free IPs under your account. A Free IP is any IP that is not in use by a user or is not linked to an IP grouping.
 
 <table>
 <thead>
@@ -210,10 +219,11 @@ https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_
 
 * * * * *
 
+
 {% anchor h2 %} Taken {% endanchor %}
 
-A listing of all taken IPs under your account. A Taken IP is any IP that
-is in use by a user or is linked to an IP grouping.
+
+A listing of all taken IPs under your account. A Taken IP is any IP that is in use by a user or is linked to an IP grouping.
 
 <table>
 <thead>
@@ -313,11 +323,11 @@ https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_
 
 * * * * *
 
+
 {% anchor h2 %} Available {% endanchor %}
 
-A listing of all available IPs under your account. An Available IP is
-any IP that is currently free, or is in use by a user *but* that user is
-inactive or that is not linked to an IP grouping.
+
+A listing of all available IPs under your account. An Available IP is any IP that is currently free, or is in use by a user *but* that user is inactive or that is not linked to an IP grouping.
 
 <table>
 <thead>
@@ -417,7 +427,9 @@ https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_
 
 * * * * *
 
+
 {% anchor h2 %} Usage {% endanchor %}
+
 
 The current breakdown of users who are using your IPs.
 

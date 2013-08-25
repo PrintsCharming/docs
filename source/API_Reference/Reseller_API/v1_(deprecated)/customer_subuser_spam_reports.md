@@ -1,6 +1,13 @@
---- layout: page weight: 0 title: Customer Subuser Spam Reports
-navigation: show: true --- {% anchor h2 %} Retrieve Spam Reports {%
-endanchor %}
+---
+layout: page
+weight: 0
+title: Customer Subuser Spam Reports
+navigation:
+   show: true
+---
+
+{% anchor h2 %} Retrieve Spam Reports {% endanchor %}
+
 
 <table>
 <thead>
@@ -42,30 +49,25 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_us
 ### Response
 
 {% codeblock %}
-spamreports\><spamreport><email>email1@domain.com</email><created>2009-06-10
-12:40:30</created></spamreport><spamreport><email>email2@domain2.com</email><created>2009-06-10
-12:40:30</created></spamreport></spamreports>JSON Call
+spamreports\><spamreport><email>email1@domain.com</email><created>2009-06-10 12:40:30</created></spamreport><spamreport><email>email2@domain2.com</email><created>2009-06-10 12:40:30</created></spamreport></spamreports>JSON Call
 
 </h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=example@example.com&task=get&date=
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=example@example.com&task=get&date=
 {% endcodeblock %}
 
 ### Response
 
 {% codeblock %}
-{"email":"email1@domain.com","created":"2009-06-01
-19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01
-19:41:39"}
+{"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}
 {% endcodeblock %}
 
 * * * * *
 
+
 {% anchor h2 %} Delete Spam Reports {% endanchor %}
 
-Since SendGrid does not deliver to spam reported addresses, users can
-remove spam reports from their list at any time if re-delivery to a spam
-reported address is desired.
+
+Since SendGrid does not deliver to spam reported addresses, users can remove spam reports from their list at any time if re-delivery to a spam reported address is desired.
 
 <table>
 <thead>

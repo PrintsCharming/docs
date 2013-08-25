@@ -1,5 +1,10 @@
---- layout: page weight: 0 title: View Available Packages navigation:
-show: true ---
+---
+layout: page
+weight: 0
+title: View Available Packages
+navigation:
+   show: true
+---
 
 List all packages available to your account.
 
@@ -35,8 +40,7 @@ https://sendgrid.com/apiv2/reseller.packages.xml?api_user=your_sendgrid_username
       <package>
          <name>Silver Package</name>
          <price>79.95</price>
-         <description>Silver
-Package Description</description>
+         <description>Silver Package Description</description>
          <credits>50000</credits>
          <overage>0.001</overage>
          <has_reseller>false</has_reseller>
@@ -57,8 +61,7 @@ Package Description</description>
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>

@@ -1,8 +1,15 @@
---- layout: page weight: 0 title: Customer Statistics navigation: show:
-true --- {% anchor h2 %} Retrieve Customer Statistics {% endanchor %}
+---
+layout: page
+weight: 0
+title: Customer Statistics
+navigation:
+   show: true
+---
 
-Note that you can use *either* the days parameter *or* the start\_date
-and end\_date parameter.
+{% anchor h2 %} Retrieve Customer Statistics {% endanchor %}
+
+
+Note that you can use *either* the days parameter *or* the start\_date and end\_date parameter.
 
 <table>
 <thead>
@@ -56,12 +63,10 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 ### Response
 
 {% codeblock %}
-stats\><day><date>2009-06-20</date><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></day><day><date>2009-06-21</date><requests>32342</requests><bounces>10</bounces><clicks>14323</clicks><opens>10995</opens><spamreports>7</spamreports></day><day><date>2009-06-22</date><requests>52342</requests><bounces>11</bounces><clicks>19223</clicks><opens>12992</opens><spamreports>2</spamreports></day></stats>JSON
-Call
+stats\><day><date>2009-06-20</date><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></day><day><date>2009-06-21</date><requests>32342</requests><bounces>10</bounces><clicks>14323</clicks><opens>10995</opens><spamreports>7</spamreports></day><day><date>2009-06-22</date><requests>52342</requests><bounces>11</bounces><clicks>19223</clicks><opens>12992</opens><spamreports>2</spamreports></day></stats>JSON Call
 
 </h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com
 {% endcodeblock %}
 
 ### Response
@@ -72,7 +77,9 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 
 * * * * *
 
+
 {% anchor h2 %} Retrieve Aggregates {% endanchor %}
+
 
 Retrieve all-time totals for your customer
 
@@ -116,12 +123,10 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 ### Response
 
 {% codeblock %}
-stats\><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></stats>JSON
-Call
+stats\><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></stats>JSON Call
 
 </h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&aggregate=
+{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&aggregate=
 {% endcodeblock %}
 
 ### Response
@@ -132,7 +137,9 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 * * * * *
 
+
 {% anchor h2 %} Category List {% endanchor %}
+
 
 Retrieve a list of all the categories used in your customers account.
 
@@ -176,12 +183,10 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 ### Response
 
 {% codeblock %}
-categories\><category>categoryA</category><category>categoryB</category><category>categoryC</category></categories>JSON
-Call
+categories\><category>categoryA</category><category>categoryB</category><category>categoryC</category></categories>JSON Call
 
 </h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&list=tru
+{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&list=tru
 {% endcodeblock %}
 
 ### Response
@@ -192,13 +197,13 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 * * * * *
 
+
 {% anchor h2 %} Category Statistics {% endanchor %}
 
-Retrieve statistics broken down by category. If the category does not
-exist, there will be an empty result set.
 
-Note that you can use *either* the days parameter *or* the start\_date
-and end\_date parameter.
+Retrieve statistics broken down by category. If the category does not exist, there will be an empty result set.
+
+Note that you can use *either* the days parameter *or* the start\_date and end\_date parameter.
 
 <table>
 <thead>
@@ -264,12 +269,10 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 ### Response
 
 {% codeblock %}
-stats\><day><date>2009-06-20</date><category>categoryA</category><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></day><day><date>2009-06-21</date><category>categoryB</category><requests>32342</requests><bounces>10</bounces><clicks>14323</clicks><opens>10995</opens><spamreports>7</spamreports></day></stats>JSON
-Call
+stats\><day><date>2009-06-20</date><category>categoryA</category><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></day><day><date>2009-06-21</date><category>categoryB</category><requests>32342</requests><bounces>10</bounces><clicks>14323</clicks><opens>10995</opens><spamreports>7</spamreports></day></stats>JSON Call
 
 </h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category
+{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category
 {% endcodeblock %}
 
 #### Command - Using an array of categories

@@ -1,15 +1,20 @@
---- layout: page weight: 0 title: Monitor Records navigation: show: true
+---
+layout: page
+weight: 0
+title: Monitor Records
+navigation:
+   show: true
 ---
 
 Receive a sample of an outgoing message by a specific customer.
 
-The first step is to create a Monitor Record. Once the monitor record
-has been created, a reseller can append a monitor record to a customer.
-Multiple customer can be appended to a single monitor record.
+The first step is to create a Monitor Record. Once the monitor record has been created, a reseller can append a monitor record to a customer. Multiple customer can be appended to a single monitor record.
 
 * * * * *
 
+
 {% anchor h2 %} Create Monitor Record {% endanchor %}
+
 
 Obtain a complete list of all customer.
 
@@ -76,8 +81,7 @@ result\><message>success</message></result>
 <result>
    <message>error</message>
    <errors>
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
    </errors>
 </result>
 
@@ -110,7 +114,9 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 * * * * *
 
+
 {% anchor h2 %} Edit Monitor Record {% endanchor %}
+
 
 Make modifications to an existing Monitor record.
 
@@ -183,8 +189,7 @@ result\><message>success</message></result>
 <result>
    <message>error</message>
    <errors>
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
    </errors>
 </result>
 
@@ -217,11 +222,11 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 * * * * *
 
+
 {% anchor h2 %} Delete Monitor Record {% endanchor %}
 
-Deleting a monitor record will remove it from SendGrid's system. **Make
-sure no users are currently using the monitor record when removing, or
-removal will fail.**
+
+Deleting a monitor record will remove it from SendGrid's system. **Make sure no users are currently using the monitor record when removing, or removal will fail.**
 
 <table>
 <thead>
@@ -274,8 +279,7 @@ result\><message>success</message></result>
 <result>
    <message>error</message>
    <errors>
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
    </errors>
 </result>
 
@@ -308,7 +312,9 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 * * * * *
 
+
 {% anchor h2 %} List All Monitor Records {% endanchor %}
+
 
 List all available monitor records a reseller has.
 
@@ -346,12 +352,10 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 ### Response
 
 {% codeblock %}
-monitors\><monitor><name>sampleNameA</name><email>example@example.com</email><frequency>1000</frequency><users></users></monitor><monitor><name>sampleNameB</name><email>example@example.com</email><frequency>10000</frequency><users><user>user1@example.com</user><user>user2@example.com</user></users></monitor></monitors>JSON
-Call
+monitors\><monitor><name>sampleNameA</name><email>example@example.com</email><frequency>1000</frequency><users></users></monitor><monitor><name>sampleNameB</name><email>example@example.com</email><frequency>10000</frequency><users><user>user1@example.com</user><user>user2@example.com</user></users></monitor></monitors>JSON Call
 
 </h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=lis
+{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=lis
 {% endcodeblock %}
 
 ### Response
@@ -362,7 +366,9 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 * * * * *
 
+
 {% anchor h2 %} Append A Customer To A Monitor Record {% endanchor %}
+
 
 Append a monitor record to a existing record onto a customer.
 
@@ -423,8 +429,7 @@ result\><message>success</message></result>
 <result>
    <message>error</message>
    <errors>
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
    </errors>
 </result>
 
@@ -457,7 +462,9 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 * * * * *
 
+
 {% anchor h2 %} Detach A Monitor Record From A Customer {% endanchor %}
+
 
 Detach a customer from a monitor record.
 
@@ -512,8 +519,7 @@ result\><message>success</message></result>
 <result>
    <message>error</message>
    <errors>
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
    </errors>
 </result>
 

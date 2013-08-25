@@ -1,5 +1,13 @@
---- layout: page weight: 0 title: Event Notification URL navigation:
-show: true --- {% anchor h2 %} Retrieve {% endanchor %}
+---
+layout: page
+weight: 0
+title: Event Notification URL
+navigation:
+   show: true
+---
+
+{% anchor h2 %} Retrieve {% endanchor %}
+
 
 <table>
 <thead>
@@ -44,8 +52,7 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 <url>http://www.SubUserPostUrlHere.com</url>JSON Call
 
 </h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=customer@example.com&method=eventpostur
+{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=customer@example.com&method=eventpostur
 {% endcodeblock %}
 
 ### Response
@@ -56,7 +63,9 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 * * * * *
 
+
 {% anchor h2 %} Update / Set URL {% endanchor %}
+
 
 <table>
 <thead>
@@ -128,7 +137,9 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 * * * * *
 
+
 {% anchor h2 %} Delete {% endanchor %}
+
 
 <table>
 <thead>

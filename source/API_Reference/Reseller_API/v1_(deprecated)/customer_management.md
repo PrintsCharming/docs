@@ -1,12 +1,18 @@
---- layout: page weight: 0 title: Customer Management navigation: show:
-true ---
+---
+layout: page
+weight: 0
+title: Customer Management
+navigation:
+   show: true
+---
 
-These are actions that directly affect your customer. We provide access
-via XML and JSON.
+These are actions that directly affect your customer. We provide access via XML and JSON.
 
 * * * * *
 
+
 {% anchor h2 %} Create a Customer {% endanchor %}
+
 
 <table>
 <thead>
@@ -167,8 +173,7 @@ https://sendgrid.com/api/distributor.add.xml?api_user=your_sendgrid_username&api
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>
@@ -202,15 +207,13 @@ https://sendgrid.com/api/distributor.add.json?api_user=your_sendgrid_username&ap
 
 * * * * *
 
+
 {% anchor h2 %} Delete a Customer {% endanchor %}
 
-Remove a customer from your account. This is **not** the same as
-disabling a customer on our system. However, the removed user will still
-be stored within the system so that you cannot re-register a new user
-with this new username.
 
-This is the same thing as closing out a customers account at the end of
-their billing cycle.
+Remove a customer from your account. This is **not** the same as disabling a customer on our system. However, the removed user will still be stored within the system so that you cannot re-register a new user with this new username.
+
+This is the same thing as closing out a customers account at the end of their billing cycle.
 
 <table>
 <thead>
@@ -257,8 +260,7 @@ https://sendgrid.com/api/distributor.delete.xml?api_user=your_sendgrid_username&
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>
@@ -398,38 +400,31 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 555 any street
 
 </address>
-<city>any
-city</city><state>CA</state><zip>91234</zip><country>US</country><phone>555-555-5555</phone><website>example.com</website></user><user><username>user2</username><email>example2@example.com</email><active>false</active><first_name>jane</first_name><last_name>doe</last_name>
+<city>any city</city><state>CA</state><zip>91234</zip><country>US</country><phone>555-555-5555</phone><website>example.com</website></user><user><username>user2</username><email>example2@example.com</email><active>false</active><first_name>jane</first_name><last_name>doe</last_name>
 
 <address>
 555 any street
 
 </address>
-<city>any
-city</city><state>CA</state><zip>91234</zip><country>US</country><phone>555-555-5555</phone><website>example.com</website></user></users>JSON
-Call
+<city>any city</city><state>CA</state><zip>91234</zip><country>US</country><phone>555-555-5555</phone><website>example.com</website></user></users>JSON Call
 
 </h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=ge
+{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=ge
 {% endcodeblock %}
 
 ### Response
 
 {% codeblock %}
-{"username":"username","email":"example1@example.com","active":"true","first_name":"john","last_name":"doe","address":"555
-any street","city":"any
-city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"},{"username":"username","email":"example2@example.com","active":"false","first_name":"jane","last_name":"doe","address":"555
-any street","city":"any
-city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"}
+{"username":"username","email":"example1@example.com","active":"true","first_name":"john","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"},{"username":"username","email":"example2@example.com","active":"false","first_name":"jane","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"}
 {% endcodeblock %}
 
 * * * * *
 
+
 {% anchor h2 %} Enable a Customer {% endanchor %}
 
-Enable a customer so they may start sending out emails again. This call
-will not enable website access.
+
+Enable a customer so they may start sending out emails again. This call will not enable website access.
 
 <table>
 <thead>
@@ -508,7 +503,9 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 * * * * *
 
+
 {% anchor h2 %} Disable a Customer {% endanchor %}
+
 
 This prevents them from sending out emails with SendGrid.
 
@@ -589,10 +586,11 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 * * * * *
 
+
 {% anchor h2 %} Enable Website Access To A Customer {% endanchor %}
 
-Allow a customer to login to the SendGrid.com website. This call will
-not enable the customer from sending out emails.
+
+Allow a customer to login to the SendGrid.com website. This call will not enable the customer from sending out emails.
 
 <table>
 <thead>
@@ -671,10 +669,11 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 * * * * *
 
+
 {% anchor h2 %} Disable Website Access To A Customer {% endanchor %}
 
-Disallow a customer to login to the SendGrid.com website. This call will
-not prevent them from sending out emails.
+
+Disallow a customer to login to the SendGrid.com website. This call will not prevent them from sending out emails.
 
 <table>
 <thead>
@@ -753,7 +752,9 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 * * * * *
 
+
 {% anchor h2 %} Update Customer Profile {% endanchor %}
+
 
 Allows you to update your customers profile information
 
@@ -860,8 +861,7 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>
@@ -895,10 +895,11 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 * * * * *
 
+
 {% anchor h2 %} Update Customer Password {% endanchor %}
 
-Passwords are encrypted by default and therefore cannot be retrieved;
-however, you can reset a customers password.
+
+Passwords are encrypted by default and therefore cannot be retrieved; however, you can reset a customers password.
 
 <table>
 <thead>
@@ -963,8 +964,7 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>
@@ -998,10 +998,11 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 * * * * *
 
+
 {% anchor h2 %} Update Customer Username {% endanchor %}
 
-Note that your customer account username is used to login to our SMTP
-server *and* the website and changes take effect immediately.
+
+Note that your customer account username is used to login to our SMTP server *and* the website and changes take effect immediately.
 
 <table>
 <thead>
@@ -1066,8 +1067,7 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>
@@ -1101,10 +1101,11 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 * * * * *
 
+
 {% anchor h2 %} Update Customer Email Address {% endanchor %}
 
-This is the contact email we use for your customers. Changes take place
-immediately. It is your responsibility to validate the contact email.
+
+This is the contact email we use for your customers. Changes take place immediately. It is your responsibility to validate the contact email.
 
 <table>
 <thead>
@@ -1169,8 +1170,7 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>

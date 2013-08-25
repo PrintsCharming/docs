@@ -1,5 +1,13 @@
---- layout: page weight: 0 title: Event Notification URL navigation:
-show: true --- {% anchor h2 %} Retrieve {% endanchor %}
+---
+layout: page
+weight: 0
+title: Event Notification URL
+navigation:
+   show: true
+---
+
+{% anchor h2 %} Retrieve {% endanchor %}
+
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -13,7 +21,7 @@ show: true --- {% anchor h2 %} Retrieve {% endanchor %}
          <td>task</td>
          <td>Yes</td>
          <td>Must be set to *get*</td>
-         <td>This will allow you to retrieve the event notification url for thespecified subuser</td>
+         <td>This will allow you to retrieve the event notification url for the specified subuser</td>
       </tr>
       <tr>
          <td>user</td>
@@ -64,7 +72,9 @@ https://sendgrid.com/api/user.eventposturl.json?api_user=your_sendgrid_username&
 
 * * * * *
 
+
 {% anchor h2 %} Update / Set URL {% endanchor %}
+
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -78,7 +88,7 @@ https://sendgrid.com/api/user.eventposturl.json?api_user=your_sendgrid_username&
          <td>task</td>
          <td>Yes</td>
          <td>Must be set to *set*</td>
-         <td>This will allow you to retrieve the event notification url for thespecified subuser</td>
+         <td>This will allow you to retrieve the event notification url for the specified subuser</td>
       </tr>
       <tr>
          <td>user</td>
@@ -137,7 +147,9 @@ https://sendgrid.com/api/user.eventposturl.json?api_user=your_sendgrid_username&
 
 * * * * *
 
+
 {% anchor h2 %} Delete {% endanchor %}
+
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -151,7 +163,7 @@ https://sendgrid.com/api/user.eventposturl.json?api_user=your_sendgrid_username&
          <td>task</td>
          <td>Yes</td>
          <td>Must be set to *delete*</td>
-         <td>This will allow you to delete the event notification url for thespecified subuser</td>
+         <td>This will allow you to delete the event notification url for the specified subuser</td>
       </tr>
       <tr>
          <td>user</td>

@@ -1,6 +1,13 @@
---- layout: page weight: 0 title: Apps navigation: show: true --- {%
-anchor h2 %} List {% endanchor %} List all of the available apps. Note:
-The *name* entry is used in all the other API calls to identify a app.
+---
+layout: page
+weight: 0
+title: Apps
+navigation:
+   show: true
+---
+
+{% anchor h2 %} List {% endanchor %}
+ List all of the available apps. Note: The *name* entry is used in all the other API calls to identify a app.
 
 <table>
 <tbody>
@@ -37,7 +44,14 @@ https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&ap
 
 ### Response: Success
 
-
+{% codeblock lang:javascript %}
+{
+  "name": "twitter",
+  "title": "Twitter",
+  "description": "This plugin allows you to send an email message to twitter",
+  "activated": false
+}
+{% endcodeblock %}
 
 </div>
 <div class="tab-pane" id="list-xml">
@@ -59,8 +73,7 @@ https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api
 Twitter
 
 </title>
-      <description>This plugin allows you to send an email message to
-twitter</description>
+      <description>This plugin allows you to send an email message to twitter</description>
       <activated>0</activated>
    </filter>
 </filters>
@@ -72,7 +85,9 @@ twitter</description>
 
 * * * * *
 
+
 {% anchor h2 %} Activate App {% endanchor %}
+
 
 <table>
 <tbody>
@@ -139,7 +154,9 @@ https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api
 
 * * * * *
 
+
 {% anchor h2 %} Deactivate App {% endanchor %}
+
 
 <table>
 <tbody>
@@ -206,8 +223,9 @@ https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api
 
 * * * * *
 
-{% anchor h2 %} Customize App {% endanchor %} These API calls require
-that settings are passed using POST. {% xmljsontabs customize %}
+
+{% anchor h2 %} Customize App {% endanchor %}
+ These API calls require that settings are passed using POST. {% xmljsontabs customize %}
 
 <div class="tab-content">
 <div class="tab-pane active" id="customize-json">
@@ -232,7 +250,11 @@ https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&ap
 
 #### Return - Empty
 
-This is returned if that filter has no settings or is not enabled. 
+This is returned if that filter has no settings or is not enabled. {% codeblock lang:javascript %}
+{
+  "settings": null
+}
+{% endcodeblock %}
 
 </div>
 <div class="tab-pane" id="customize-xml">
@@ -261,8 +283,7 @@ https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api
 
 <result>
    <message>error</message>
-   <message>... error messages
-...</message>
+   <message>... error messages ...</message>
 </result>
 
 {% endcodeblock %}
@@ -281,8 +302,9 @@ This is returned if that filter has no settings or is not enabled. {% codeblock 
 
 * * * * *
 
-{% anchor h2 %} Get Current Settings {% endanchor %} {% xmljsontabs
-settings %}
+
+{% anchor h2 %} Get Current Settings {% endanchor %}
+ {% xmljsontabs settings %}
 
 <div class="tab-content">
 <div class="tab-pane active" id="settings-json">
@@ -347,8 +369,7 @@ https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api
 ### Response: Error
 
 {% codeblock %}
-<result><message>error</message><message>... error
-messages ...</message></result>
+<result><message>error</message><message>... error messages ...</message></result>
 {% endcodeblock %}
 
 #### Return - Empty

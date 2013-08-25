@@ -1,9 +1,12 @@
---- layout: page weight: 0 title: Authenticate a Customer navigation:
-show: true ---
+---
+layout: page
+weight: 0
+title: Authenticate a Customer
+navigation:
+   show: true
+---
 
-Authenticate a customer on your website before displaying their account
-information so that you can have users manage their SendGrid account on
-your website completely.
+Authenticate a customer on your website before displaying their account information so that you can have users manage their SendGrid account on your website completely.
 
 <table>
 <thead>
@@ -52,8 +55,7 @@ result\><message>success</message></result>
 <result>
    <message>error</message>
    <errors>
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
    </errors>
 </result>
 

@@ -1,14 +1,18 @@
---- layout: page weight: 0 title: Automatic Login navigation: show: true
+---
+layout: page
+weight: 0
+title: Automatic Login
+navigation:
+   show: true
 ---
 
-Allow customers to manage their account from your website using an
-iframe to our site.
+Allow customers to manage their account from your website using an iframe to our site.
+
 
 {% anchor h2 %} Initial API Call {% endanchor %}
 
-In order to login your customer, you need to contact our web API to
-retrieve the unique URL to automatically login your customer. Then
-display the generated URL to automatically login your customer.
+
+In order to login your customer, you need to contact our web API to retrieve the unique URL to automatically login your customer. Then display the generated URL to automatically login your customer.
 
 <table>
 <thead>
@@ -83,14 +87,14 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 
 * * * * *
 
+
 {% anchor h2 %} iFrame Usage {% endanchor %}
 
-Using the parameters returned from the Initial API Call, you can
-construct the iFrame URL as shown below.
+
+Using the parameters returned from the Initial API Call, you can construct the iFrame URL as shown below.
 
 {% codeblock %}
-iframe
-src="https://sendgrid.com/account?al_username=username&al_subuser_name=example@example.com&al_hash=aa39649af578679d3a90d2cc43245d56"\></iframe>
+iframe src="https://sendgrid.com/account?al_username=username&al_subuser_name=example@example.com&al_hash=aa39649af578679d3a90d2cc43245d56"\></iframe>
 {% endcodeblock %}
 
 </div>

@@ -1,9 +1,16 @@
---- layout: page weight: 0 title: Recipients navigation: show: true ---
+---
+layout: page
+weight: 0
+title: Recipients
+navigation:
+  show: true
+---
 
-This module allows you to manage which lists are assigned to marketing
-email.
+This module allows you to manage which lists are assigned to marketing email.
+
 
 {% anchor h2 %} add {% endanchor %}
+
 
 Assign a List to a Marketing Email.
 
@@ -94,7 +101,9 @@ https://sendgrid.com/api/newsletter/recipients/add.xml?name=SendGrid%20NL%20Test
 
 * * * * *
 
+
 {% anchor h2 %} get {% endanchor %}
+
 
 Get all lists assigned to a particular marketing email
 
@@ -183,7 +192,9 @@ https://sendgrid.com/api/newsletter/recipients/get.xml?name=test&api_user=your_s
 
 * * * * *
 
+
 {% anchor h2 %} delete {% endanchor %}
+
 
 Remove assigned lists from marketing email
 

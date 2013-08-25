@@ -1,12 +1,12 @@
---- layout: page weight: 0 title: Thunderbird navigation: show: true ---
+---
+layout: page
+weight: 0
+title: Thunderbird
+navigation:
+  show: true
+---
 
-To send email using Thunderbird you will have to modify your outgoing
-server settings in Thunderbird accordingly. Additionally you can modify
-settings in Thunderbird that will allow you to include an [SMTP
-API]({{root_url}}/API_Reference/SMTP_API/index.html) header in your
-emails if you wish to leverage
-[categories]({{root_url}}/Delivery_Metrics/categories.html) or other
-features of the SMTP API when sending mail via the Thunderbird client.
+To send email using Thunderbird you will have to modify your outgoing server settings in Thunderbird accordingly. Additionally you can modify settings in Thunderbird that will allow you to include an [SMTP API]({{root_url}}/API_Reference/SMTP_API/index.html) header in your emails if you wish to leverage [categories]({{root_url}}/Delivery_Metrics/categories.html) or other features of the SMTP API when sending mail via the Thunderbird client.
 
 <h2>
 Start by going to: 'Tools' -\> 'Account Settings'
@@ -31,8 +31,7 @@ The Settings that need to be entered include:
 Incorporating SMTP API headers requires the following.
 
 </h3>
--   Select Tools | Options (Win) or Thunderbird | Preferences (Mac) from
-    the menu in Thunderbird.
+-   Select Tools | Options (Win) or Thunderbird | Preferences (Mac) from the menu in Thunderbird.
 -   Open the "Advanced" category.
 -   Go to the "General" tab.
 -   Click "Config Editor".
@@ -48,8 +47,6 @@ Incorporating SMTP API headers requires the following.
 ![]({{root_url}}/images/thunderbird_4.png "thunderbird_header")
 
 -   Restart Thunderbird
--   Create a mail message and just like you would add a CC or BCC to
-    your email, click the drop down option that will now allow you to
-    add a header of the type "X-SMTPAPI" in addition to "To"
+-   Create a mail message and just like you would add a CC or BCC to your email, click the drop down option that will now allow you to add a header of the type "X-SMTPAPI" in addition to "To"
 
 ![]({{root_url}}/images/thunderbird_5.png "thunderbird_compose")

@@ -1,5 +1,12 @@
---- layout: page weight: 0 title: Docs Home icon: icon-home showTitle:
-false navigation: show: true ---
+---
+layout: page
+weight: 0
+title: Docs Home
+icon: icon-home
+showTitle: false
+navigation:
+  show: true
+---
 
 <header class="page-header">
 Getting Started With SendGrid
@@ -12,8 +19,7 @@ Getting Started With SendGrid
 
 ### [Overview]({{root_url}}/User_Guide/index.html)
 
-Find out more about what SendGrid does and how it can help solve your
-email deliverability problems.
+Find out more about what SendGrid does and how it can help solve your email deliverability problems.
 
 [What is SendGrid?]({{root_url}}/User_Guide/index.html)
 
@@ -23,8 +29,7 @@ email deliverability problems.
 
 ### [Integrate]({{root_url}}/Integrate/index.html)
 
-Add email capability to your application, whether it's WordPress, Ruby
-on Rails, Drupal, Codeigniter, and more.
+Add email capability to your application, whether it's WordPress, Ruby on Rails, Drupal, Codeigniter, and more.
 
 [Start Sending Email]({{root_url}}/Integrate/index.html)
 
@@ -34,8 +39,7 @@ on Rails, Drupal, Codeigniter, and more.
 
 ### [Code Examples]({{root_url}}/Code_Examples/index.html)
 
-Code for common use cases in a variety of languages to help you get
-going on your project.
+Code for common use cases in a variety of languages to help you get going on your project.
 
 [Show Me the Code]({{root_url}}/Code_Examples/index.html)
 
@@ -52,8 +56,7 @@ Reference
 
 ### [SMTP API]({{root_url}}/API_Reference/SMTP_API/index.html)
 
-Learn how to use SendGrid's SMTP API to customize how your email is
-sent.
+Learn how to use SendGrid's SMTP API to customize how your email is sent.
 
 [SMTP API Reference]({{root_url}}/API_Reference/SMTP_API/index.html)
 

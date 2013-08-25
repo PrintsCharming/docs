@@ -1,9 +1,12 @@
---- layout: page weight: 0 title: Account Overview navigation: show:
-true ---
+---
+layout: page
+weight: 0
+title: Account Overview
+navigation:
+   show: true
+---
 
-View general account information regarding your customers, including
-billing cycle, current billing cycle, credit usage, package, overage
-credits, etc.
+View general account information regarding your customers, including billing cycle, current billing cycle, credit usage, package, overage credits, etc.
 
 <table>
 <thead>
@@ -71,8 +74,7 @@ https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>

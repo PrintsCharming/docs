@@ -1,9 +1,17 @@
---- layout: page weight: 0 title: General Statistics navigation: show:
-true --- {% anchor h2 %} Retrieve Statistics {% endanchor %} {% info %}
-You can specify either the days parameter or the start\_date and
-end\_date parameters. If provided with no parameters, the current day's
-statistics are returned. {% endinfo %} {% anchor h2 %} Parameters {%
-endanchor %}
+---
+layout: page
+weight: 0
+title: General Statistics
+navigation:
+  show: true
+---
+
+{% anchor h2 %} Retrieve Statistics {% endanchor %}
+ 
+{% info %} You can specify either the days parameter or the start\_date and end\_date parameters. If provided with no parameters, the current day's statistics are returned. {% endinfo %}
+ 
+{% anchor h2 %} Parameters {% endanchor %}
+
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -146,7 +154,9 @@ https://sendgrid.com/api/stats.get.xml?api_user=your_sendgrid_username&api_key=y
 
 * * * * *
 
+
 {% anchor h2 %} Category List {% endanchor %}
+
 
 ### Retrieve a list of all the categories used in your account.
 
@@ -202,13 +212,17 @@ https://sendgrid.com/api/stats.get.xml?api_user=your_sendgrid_username&api_key=y
 
 * * * * *
 
+
 {% anchor h2 %} Category Statistics {% endanchor %}
+
 
 ### Retrieve statistics broken down by category. If the category does not exist, there will be an empty result set.
 
-{% info %} Note that you can use either the days parameter or the
-start\_date and end\_date parameter. {% endinfo %} {% anchor h2 %}
-Parameters {% endanchor %}
+
+{% info %} Note that you can use either the days parameter or the start\_date and end\_date parameter. {% endinfo %}
+ 
+{% anchor h2 %} Parameters {% endanchor %}
+
 
 <table class="table table-bordered table-striped">
    <tbody>

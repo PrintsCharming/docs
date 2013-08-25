@@ -1,6 +1,13 @@
---- layout: page weight: 0 title: Advanced Statistics navigation: show:
-true --- {% anchor h2 %} Get Statistics for: Browsers, Clients, Devices,
-Geo, Global, Isp {% endanchor %}
+---
+layout: page
+weight: 0
+title: Advanced Statistics
+navigation:
+  show: true
+---
+
+{% anchor h2 %} Get Statistics for: Browsers, Clients, Devices, Geo, Global, Isp {% endanchor %}
+
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -43,7 +50,7 @@ Geo, Global, Isp {% endanchor %}
          <td>country</td>
          <td>No</td>
          <td>
-            Get stats for each region/state for the given country. Only *US* (UnitedStates) and *CA* (Canada) is supported at this time. Country code is twoletter characters based on [ISO 3166-1alpha-2](http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
+            Get stats for each region/state for the given country. Only *US* (United States) and *CA* (Canada) is supported at this time. Country code is two letter characters based on [ISO 3166-1 alpha-2](http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
             <p>This parameter is only used for when *data\_type=geo*</p>
          </td>
       </tr>

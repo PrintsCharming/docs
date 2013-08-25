@@ -1,8 +1,15 @@
---- layout: page weight: 0 title: Customer Subuser Bounces navigation:
-show: true --- {% anchor h2 %} Retrieve Bounces {% endanchor %}
+---
+layout: page
+weight: 0
+title: Customer Subuser Bounces
+navigation:
+   show: true
+---
 
-Note that you can use *either* the days parameter *or* the start\_date
-and end\_date parameter.
+{% anchor h2 %} Retrieve Bounces {% endanchor %}
+
+
+Note that you can use *either* the days parameter *or* the start\_date and end\_date parameter.
 
 <table>
 <thead>
@@ -54,18 +61,14 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
    <bounce>
       <email>email1@domain.com</email>
       <status>5.1.1</status>
-      <reason>host [127.0.0.1] said: 550 5.1.1 unknown
-or illegal user: email1@domain.com</reason>
-      <created>2009-06-10
-12:40:30</created>
+      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com</reason>
+      <created>2009-06-10 12:40:30</created>
    </bounce>
    <bounce>
       <email>email2@domain2.com</email>
       <status>5.1.1</status>
-      <reason>host [127.0.0.1] said: 550 5.1.1 unknown
-or illegal user: email2@domain2.com</reason>
-      <created>2009-06-10
-12:40:30</created>
+      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com</reason>
+      <created>2009-06-10 12:40:30</created>
    </bounce>
 </bounces>
 
@@ -81,18 +84,33 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_us
 
 ### Response
 
-
+{% codeblock lang:javascript %}
+[
+  {
+    "email": "email1@domain.com",
+    "status": "5.1.1",
+    "reason": "host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com",
+    "created": "2009-06-01 19:41:39"
+  },
+  {
+    "email": "email2@domain2.com",
+    "status": "5.1.1",
+    "reason": "host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com",
+    "created": "2009-06-01 19:41:39"
+  }
+]
+{% endcodeblock %}
 
 </div>
 </div>
 
 * * * * *
 
+
 {% anchor h2 %} Delete Bounces {% endanchor %}
 
-Since SendGrid does not re-deliver to bounced addresses, users can
-remove bounces from their list at any time if redelivery to a bounced
-address is desired.
+
+Since SendGrid does not re-deliver to bounced addresses, users can remove bounces from their list at any time if redelivery to a bounced address is desired.
 
 <table>
 <thead>

@@ -1,8 +1,15 @@
---- layout: page weight: 0 title: Multiple Credentials navigation: show:
-true --- {% anchor h2 %} Add user credential {% endanchor %}
+---
+layout: page
+weight: 0
+title: Multiple Credentials
+navigation:
+  show: true
+---
 
-Notes: This API call allows SendGrid resellers to add a new set of
-credentials to a specified child account.
+{% anchor h2 %} Add user credential {% endanchor %}
+
+
+Notes: This API call allows SendGrid resellers to add a new set of credentials to a specified child account.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -15,7 +22,7 @@ credentials to a specified child account.
       <tr>
          <td>user</td>
          <td>Yes</td>
-         <td>The username must be be between 3 and 64 characters and cannot becompletely numeric.</td>
+         <td>The username must be be between 3 and 64 characters and cannot be completely numeric.</td>
          <td>The child account we are adding a credential to.</td>
       </tr>
       <tr>
@@ -27,7 +34,7 @@ credentials to a specified child account.
       <tr>
          <td>credential\_name</td>
          <td>Yes</td>
-         <td>The credential\_name must be be between 3 and 64 characters and cannotbe completely numeric.</td>
+         <td>The credential\_name must be be between 3 and 64 characters and cannot be completely numeric.</td>
          <td>The credential we are creating under the child account.</td>
       </tr>
       <tr>
@@ -99,11 +106,11 @@ https://sendgrid.com/apiv2/reseller.credential.json?api_user=your_sendgrid_usern
 
 * * * * *
 
+
 {% anchor h2 %} Edit user credential {% endanchor %}
 
-Notes: This API call allows SendGrid resellers to edit an already
-existing credential password. Changing the credential name is not
-currently allowed.
+
+Notes: This API call allows SendGrid resellers to edit an already existing credential password. Changing the credential name is not currently allowed.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -116,7 +123,7 @@ currently allowed.
       <tr>
          <td>user</td>
          <td>Yes</td>
-         <td>The username must be be between 3 and 64 characters and cannot becompletely numeric.</td>
+         <td>The username must be be between 3 and 64 characters and cannot be completely numeric.</td>
          <td>The username that we are checking against existing usernames.</td>
       </tr>
       <tr>
@@ -128,7 +135,7 @@ currently allowed.
       <tr>
          <td>credential\_name</td>
          <td>Yes</td>
-         <td>The credential\_name must be be between 3 and 64 characters and cannotbe completely numeric.</td>
+         <td>The credential\_name must be be between 3 and 64 characters and cannot be completely numeric.</td>
          <td>The credential we want to modify</td>
       </tr>
       <tr>
@@ -166,8 +173,7 @@ https://sendgrid.com/apiv2/reseller.credential.xml?api_user=your_sendgrid_userna
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>
@@ -200,10 +206,11 @@ https://sendgrid.com/apiv2/reseller.credential.json?api_user=your_sendgrid_usern
 {% endcodeblock %}
 
 </h4>
+
 {% anchor h2 %} Delete user credential {% endanchor %}
 
-Notes: This API call allows SendGrid resellers to delete an existing
-credential under a child account.
+
+Notes: This API call allows SendGrid resellers to delete an existing credential under a child account.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -216,7 +223,7 @@ credential under a child account.
       <tr>
          <td>user</td>
          <td>Yes</td>
-         <td>The username must be be between 3 and 64 characters and cannot becompletely numeric.</td>
+         <td>The username must be be between 3 and 64 characters and cannot be completely numeric.</td>
          <td>The username that we are checking against existing usernames.</td>
       </tr>
       <tr>
@@ -228,7 +235,7 @@ credential under a child account.
       <tr>
          <td>credential\_name</td>
          <td>Yes</td>
-         <td>The credential\_name must be be between 3 and 64 characters and cannotbe completely numeric.</td>
+         <td>The credential\_name must be be between 3 and 64 characters and cannot be completely numeric.</td>
          <td>The credential we want to remove</td>
       </tr>
    </tbody>
@@ -260,8 +267,7 @@ https://sendgrid.com/apiv2/reseller.credential.xml?api_user=your_sendgrid_userna
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>

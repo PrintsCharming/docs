@@ -1,9 +1,16 @@
---- layout: page weight: 0 title: Lists navigation: show: true ---
+---
+layout: page
+weight: 0
+title: Lists
+navigation:
+  show: true
+---
 
-This endpoint allows you to manage and create Recipient Lists associated
-with the Marketing Email feature.
+This endpoint allows you to manage and create Recipient Lists associated with the Marketing Email feature.
+
 
 {% anchor h2 %} add {% endanchor %}
+
 
 Create a new Recipient List.
 
@@ -93,15 +100,16 @@ https://sendgrid.com/api/newsletter/lists/add.xml?list=test789&api_user=your_sen
    <message>error: reason</message>
 </result>
 
-{% endcodeblock %}
-</result>
+{% endcodeblock %} </result>
 
 </div>
 </div>
 
 * * * * *
 
+
 {% anchor h2 %} edit {% endanchor %}
+
 
 Rename a Recipient List.
 
@@ -185,18 +193,18 @@ https://sendgrid.com/api/newsletter/lists/edit.xml?list=test7890&newlist=test567
    <message>error: reason</message>
 </result>
 
-{% endcodeblock %}
-</result>
+{% endcodeblock %} </result>
 
 </div>
 </div>
 
 * * * * *
 
+
 {% anchor h2 %} get {% endanchor %}
 
-List all Recipient Lists on your account, or check if a particular List
-exists.
+
+List all Recipient Lists on your account, or check if a particular List exists.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -210,7 +218,7 @@ exists.
          <td>list</td>
          <td>No</td>
          <td>None</td>
-         <td>Check for this particular list. (To list all Recipient Lists on youraccount exclude this parameter)</td>
+         <td>Check for this particular list. (To list all Recipient Lists on your account exclude this parameter)</td>
       </tr>
    </tbody>
 </table>
@@ -276,15 +284,16 @@ https://sendgrid.com/api/newsletter/lists/get.xml?list=test&api_user=your_sendgr
    <message>error: reason</message>
 </result>
 
-{% endcodeblock %}
-</result>
+{% endcodeblock %} </result>
 
 </div>
 </div>
 
 * * * * *
 
+
 {% anchor h2 %} delete {% endanchor %}
+
 
 Remove a Recipient List from your account.
 
@@ -362,8 +371,7 @@ https://sendgrid.com/api/newsletter/lists/delete.xml?list=test5678&api_user=your
    <message>error: reason</message>
 </result>
 
-{% endcodeblock %}
-</result>
+{% endcodeblock %} </result>
 
 </div>
 </div>

@@ -1,5 +1,10 @@
---- layout: page weight: 0 title: View Available Packages navigation:
-show: true ---
+---
+layout: page
+weight: 0
+title: View Available Packages
+navigation:
+   show: true
+---
 
 List all packages available to your account.
 
@@ -14,11 +19,7 @@ https://sendgrid.com/api/distributor.packages.xml?api_user=your_sendgrid_usernam
 ### Response: Success
 
 {% codeblock %}
-result\><packages><package><name>Basic
-Package</name><price>9.95</price><description>Basic Package
-description</description><credits>10000</credits><overage>0.001</overage><has_reseller>false</has_reseller><has_ip>false</has_ip><distributor_price>50</distributor_price></package><package><name>Silver
-Package</name><price>79.95</price><description>Silver Package
-Description</description><credits>50000</credits><overage>0.001</overage><has_reseller>false</has_reseller><has_ip>false</has_ip><distributor_price>50</distributor_price></package></packages></result>
+result\><packages><package><name>Basic Package</name><price>9.95</price><description>Basic Package description</description><credits>10000</credits><overage>0.001</overage><has_reseller>false</has_reseller><has_ip>false</has_ip><distributor_price>50</distributor_price></package><package><name>Silver Package</name><price>79.95</price><description>Silver Package Description</description><credits>50000</credits><overage>0.001</overage><has_reseller>false</has_reseller><has_ip>false</has_ip><distributor_price>50</distributor_price></package></packages></result>
 {% endcodeblock %}
 
 ### Response: Error
@@ -29,8 +30,7 @@ Description</description><credits>50000</credits><overage>0.001</overage><has_re
 <result>
    <message>error</message>
    <errors>
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
    </errors>
 </result>
 
@@ -45,11 +45,7 @@ https://sendgrid.com/api/distributor.packages.json?api_user=your_sendgrid_userna
 ### Response: Success
 
 {% codeblock %}
-[{"name":"Basic
-Package","price":9.95,"description":"Basic Package
-description","credits":10000,"overage":0.001,"has_reseller":false,"has_ip":false,"distributor_price":50},{"name":"Silver
-Package","price":79.95,"description":"Silver Package
-description","credits":50000,"overage":0.001,"has_reseller":false,"has_ip":true}]
+[{"name":"Basic Package","price":9.95,"description":"Basic Package description","credits":10000,"overage":0.001,"has_reseller":false,"has_ip":false,"distributor_price":50},{"name":"Silver Package","price":79.95,"description":"Silver Package description","credits":50000,"overage":0.001,"has_reseller":false,"has_ip":true}]
 {% endcodeblock %}
 
 ### Response: Error

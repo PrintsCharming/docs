@@ -1,9 +1,16 @@
---- layout: page weight: 0 title: Marketing Emails navigation: show:
-true ---
+---
+layout: page
+weight: 0
+title: Marketing Emails
+navigation:
+  show: true
+---
 
 This endpoint allows you to add, view, or remove marketing emails.
 
+
 {% anchor h2 %} add {% endanchor %}
+
 
 Create a new Marketing Email.
 
@@ -114,7 +121,9 @@ https://sendgrid.com/api/newsletter/add.xml?identity=Sender_Address&name=SendGri
 
 * * * * *
 
+
 {% anchor h2 %} edit {% endanchor %}
+
 
 Edit an existing Marketing Email.
 
@@ -195,7 +204,9 @@ https://sendgrid.com/api/newsletter/edit.xml?identity=Sender_Address&name=SendGr
 
 * * * * *
 
+
 {% anchor h2 %} get {% endanchor %}
+
 
 Retrieve the contents of an existing Marketing Email.
 
@@ -230,7 +241,20 @@ https://sendgrid.com/api/newsletter/get.json?name=SendGrid_Test&api_user=your_se
 
 ### Response: Success
 
-
+{% codeblock lang:javascript %}
+{
+  "can_edit": true,
+  "name": "SendGrid NL Test",
+  "text": null,
+  "newsletter_id": 38074,
+  "total_recipients": 1,
+  "html": null,
+  "type": "html",
+  "date_schedule": null,
+  "identity": "d22de3a53fac1abef944c80c19032c2c",
+  "subject": null
+}
+{% endcodeblock %}
 
 ### Response: Error
 
@@ -286,7 +310,9 @@ https://sendgrid.com/api/newsletter/get.xml?name=SendGrid_Test&api_user=your_sen
 
 * * * * *
 
+
 {% anchor h2 %} list {% endanchor %}
+
 
 Retrieve a list of all existing Marketing Email.
 
@@ -403,7 +429,9 @@ https://sendgrid.com/api/newsletter/list.xml?&api_user=your_sendgrid_username&ap
 
 * * * * *
 
+
 {% anchor h2 %} delete {% endanchor %}
+
 
 Remove an existing Marketing Email.
 

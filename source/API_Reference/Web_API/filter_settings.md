@@ -1,14 +1,18 @@
---- layout: page weight: 0 title: Filter Settings navigation: show: true
+---
+layout: page
+weight: 0
+title: Filter Settings
+navigation:
+  show: true
 ---
 
-For a more detailed description of each of the Apps below, please visit
-the [Apps]({{root_url}}/Apps) page.
+For a more detailed description of each of the Apps below, please visit the [Apps]({{root_url}}/Apps) page.
 
-{% anchor h2 %} Address Whitelist {% endanchor %} [API App Name:
-"addresswhitelist"] {% info %} When using this call, you must define all
-emails & domains here. Using this call will overwrite any current
-settings for this filter. This would also be how you remove an entry, by
-excluding if from the call. {% endinfo %}
+
+{% anchor h2 %} Address Whitelist {% endanchor %}
+ [API App Name: "addresswhitelist"] 
+{% info %} When using this call, you must define all emails & domains here. Using this call will overwrite any current settings for this filter. This would also be how you remove an entry, by excluding if from the call. {% endinfo %}
+
 
 <table>
 <thead>
@@ -29,8 +33,9 @@ excluding if from the call. {% endinfo %}
 
 * * * * *
 
-{% anchor h2 %} BCC "Blind Carbon Copy" {% endanchor %} [API app name:
-"bcc"]
+
+{% anchor h2 %} BCC "Blind Carbon Copy" {% endanchor %}
+ [API app name: "bcc"]
 
 <table>
 <thead>
@@ -51,8 +56,9 @@ excluding if from the call. {% endinfo %}
 
 * * * * *
 
-{% anchor h2 %} Click Tracking {% endanchor %} [API app name:
-"clicktrack"]
+
+{% anchor h2 %} Click Tracking {% endanchor %}
+ [API app name: "clicktrack"]
 
 <table>
 <thead>
@@ -73,7 +79,9 @@ excluding if from the call. {% endinfo %}
 
 * * * * *
 
-{% anchor h2 %} Domain Keys {% endanchor %} [API app name:"domainkeys"]
+
+{% anchor h2 %} Domain Keys {% endanchor %}
+ [API app name:"domainkeys"]
 
 <table>
 <thead>
@@ -99,7 +107,9 @@ excluding if from the call. {% endinfo %}
 
 * * * * *
 
-{% anchor h2 %} DKIM {% endanchor %} [API app name:"dkim"]
+
+{% anchor h2 %} DKIM {% endanchor %}
+ [API app name:"dkim"]
 
 <table class="table table-bordered table-striped">
    <tr>
@@ -115,8 +125,9 @@ excluding if from the call. {% endinfo %}
 
 * * * * *
 
-{% anchor h2 %} Email Templates {% endanchor %} [API app
-name:"template"]
+
+{% anchor h2 %} Email Templates {% endanchor %}
+ [API app name:"template"]
 
 <table class="table table-bordered table-striped">
    <tr>
@@ -132,9 +143,11 @@ name:"template"]
 
 * * * * *
 
-{% anchor h2 %} Event Notification {% endanchor %} [API app
-name:"eventnotify"] {% info %} All fields are required for each call. {%
-endinfo %}
+
+{% anchor h2 %} Event Notification {% endanchor %}
+ [API app name:"eventnotify"] 
+{% info %} All fields are required for each call. {% endinfo %}
+
 
 <table>
 <thead>
@@ -200,7 +213,9 @@ endinfo %}
 
 * * * * *
 
-{% anchor h2 %} Footer {% endanchor %} [API app name:"footer"]
+
+{% anchor h2 %} Footer {% endanchor %}
+ [API app name:"footer"]
 
 <table class="table table-bordered table-striped">
    <tr>
@@ -223,8 +238,9 @@ endinfo %}
 
 * * * * *
 
-{% anchor h2 %} Google Analytics {% endanchor %} [API app
-name:"ganalytics"]
+
+{% anchor h2 %} Google Analytics {% endanchor %}
+ [API app name:"ganalytics"]
 
 <table>
 <thead>
@@ -265,7 +281,9 @@ name:"ganalytics"]
 
 * * * * *
 
-{% anchor h2 %} Gravatar {% endanchor %} [API app name:"gravatar"]
+
+{% anchor h2 %} Gravatar {% endanchor %}
+ [API app name:"gravatar"]
 
 <table class="table table-bordered table-striped">
    <th>Parameter</th>
@@ -276,7 +294,9 @@ name:"ganalytics"]
 
 * * * * *
 
-{% anchor h2 %} Open Tracking {% endanchor %} [API app name:"opentrack"]
+
+{% anchor h2 %} Open Tracking {% endanchor %}
+ [API app name:"opentrack"]
 
 <table class="table table-bordered table-striped">
    <th>Parameter</th>
@@ -287,8 +307,9 @@ name:"ganalytics"]
 
 * * * * *
 
-{% anchor h2 %} Return Path Seedlist {% endanchor %} [API app
-name:"seedlist"]
+
+{% anchor h2 %} Return Path Seedlist {% endanchor %}
+ [API app name:"seedlist"]
 
 <table class="table table-bordered table-striped">
    <th>Parameter</th>
@@ -299,8 +320,9 @@ name:"seedlist"]
 
 * * * * *
 
-{% anchor h2 %} SPAM Filter Checker {% endanchor %} [API app
-name:"spamcheck"]
+
+{% anchor h2 %} SPAM Filter Checker {% endanchor %}
+ [API app name:"spamcheck"]
 
 <table class="table table-bordered table-striped">
    <th>Parameter</th>
@@ -311,8 +333,9 @@ name:"spamcheck"]
 
 * * * * *
 
-{% anchor h2 %} Subscription Tracking {% endanchor %} [API app
-name:"subscriptiontrack"]
+
+{% anchor h2 %} Subscription Tracking {% endanchor %}
+ [API app name:"subscriptiontrack"]
 
 <table class="table table-bordered table-striped">
    <th>Parameter</th>
@@ -323,7 +346,9 @@ name:"subscriptiontrack"]
 
 * * * * *
 
-{% anchor h2 %} Twitter {% endanchor %} [API app name:"twitter"]
+
+{% anchor h2 %} Twitter {% endanchor %}
+ [API app name:"twitter"]
 
 <table>
 <thead>

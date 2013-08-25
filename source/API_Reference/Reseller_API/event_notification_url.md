@@ -1,5 +1,13 @@
---- layout: page weight: 0 title: Event Notification URL navigation:
-show: true --- {% anchor h2 %} Retrieve {% endanchor %}
+---
+layout: page
+weight: 0
+title: Event Notification URL
+navigation:
+   show: true
+---
+
+{% anchor h2 %} Retrieve {% endanchor %}
+
 
 <table>
 <thead>
@@ -72,7 +80,9 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 
 * * * * *
 
+
 {% anchor h2 %} Update / Set URL {% endanchor %}
+
 
 <table>
 <thead>
@@ -153,7 +163,9 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 
 * * * * *
 
+
 {% anchor h2 %} Delete {% endanchor %}
+
 
 <table>
 <thead>

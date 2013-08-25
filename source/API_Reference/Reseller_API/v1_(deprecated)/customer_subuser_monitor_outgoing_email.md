@@ -1,14 +1,17 @@
---- layout: page weight: 0 title: Customer Subuser Monitor Outgoing
-Email navigation: show: true --- Receive a sample of an outgoing message
-by a specific customer subuser. The first step is to create a Monitor
-Record. Once the monitor record has been created, a reseller can append
-a monitor record to a customer subuser. Multiple customer subuser can be
-appended to a single monitor record.
+---
+layout: page
+weight: 0
+title: Customer Subuser Monitor Outgoing Email
+navigation:
+   show: true
+---
+Receive a sample of an outgoing message by a specific customer subuser. The first step is to create a Monitor Record. Once the monitor record has been created, a reseller can append a monitor record to a customer subuser. Multiple customer subuser can be appended to a single monitor record.
 
 * * * * *
 
-{% anchor h2 %} Create Monitor Record {% endanchor %} Obtain a complete
-list of all customer subuser.
+
+{% anchor h2 %} Create Monitor Record {% endanchor %}
+ Obtain a complete list of all customer subuser.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -71,8 +74,7 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_us
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>
@@ -106,8 +108,9 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 
 * * * * *
 
-{% anchor h2 %} Edit Monitor Record {% endanchor %} Make modifications
-to an existing Monitor record.
+
+{% anchor h2 %} Edit Monitor Record {% endanchor %}
+ Make modifications to an existing Monitor record.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -176,8 +179,7 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_us
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>
@@ -211,10 +213,9 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 
 * * * * *
 
-{% anchor h2 %} Delete Monitor Record {% endanchor %} Deleting a monitor
-record will remove it from SendGrid's system. **Make sure no users are
-currently using the monitor record when removing, or removal will
-fail.**
+
+{% anchor h2 %} Delete Monitor Record {% endanchor %}
+ Deleting a monitor record will remove it from SendGrid's system. **Make sure no users are currently using the monitor record when removing, or removal will fail.**
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -265,8 +266,7 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_us
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>
@@ -300,8 +300,9 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 
 * * * * *
 
-{% anchor h2 %} List All Monitor Records {% endanchor %} List all
-available monitor records a reseller has.
+
+{% anchor h2 %} List All Monitor Records {% endanchor %}
+ List all available monitor records a reseller has.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -329,12 +330,10 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_us
 ### Response
 
 {% codeblock %}
-<monitors><monitor><name>sampleNameA</name><email>example@example.com</email><frequency>1000</frequency><users></users></monitor><monitor><name>sampleNameB</name><email>example@example.com</email><frequency>10000</frequency><users><user>user1@example.com</user><user>user2@example.com</user></users></monitor></monitors>JSON
-Call
+<monitors><monitor><name>sampleNameA</name><email>example@example.com</email><frequency>1000</frequency><users></users></monitor><monitor><name>sampleNameB</name><email>example@example.com</email><frequency>10000</frequency><users><user>user1@example.com</user><user>user2@example.com</user></users></monitor></monitors>JSON Call
 
 </h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=lis
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=lis
 {% endcodeblock %}
 
 ### Response
@@ -345,9 +344,9 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 
 * * * * *
 
-{% anchor h2 %} Append A Customer Subuser To A Monitor Record {%
-endanchor %} Append a monitor record to a existing record onto a
-customer subuser.
+
+{% anchor h2 %} Append A Customer Subuser To A Monitor Record {% endanchor %}
+ Append a monitor record to a existing record onto a customer subuser.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -404,8 +403,7 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_us
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>
@@ -439,8 +437,9 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 
 * * * * *
 
-{% anchor h2 %} Detach A Monitor Record From A Customer Subuser {%
-endanchor %} Detach a customer subuser from a monitor record.
+
+{% anchor h2 %} Detach A Monitor Record From A Customer Subuser {% endanchor %}
+ Detach a customer subuser from a monitor record.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -491,8 +490,7 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_us
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>

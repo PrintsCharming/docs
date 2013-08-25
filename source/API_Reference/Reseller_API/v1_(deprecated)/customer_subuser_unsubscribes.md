@@ -1,7 +1,13 @@
---- layout: page weight: 0 title: Customer Subuser Unsubscribes
-navigation: show: true --- {% anchor h2 %} Retrieve Unsubscribes {%
-endanchor %} Note that you can use *either* the days parameter *or* the
-start\_date and end\_date parameter.
+---
+layout: page
+weight: 0
+title: Customer Subuser Unsubscribes
+navigation:
+   show: true
+---
+
+{% anchor h2 %} Retrieve Unsubscribes {% endanchor %}
+ Note that you can use *either* the days parameter *or* the start\_date and end\_date parameter.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -21,13 +27,13 @@ start\_date and end\_date parameter.
          <td>task</td>
          <td>Yes</td>
          <td>Must be set to *get*</td>
-         <td>This will allow you to retrieve the unsubscribes for the specifiedcustomer subuser</td>
+         <td>This will allow you to retrieve the unsubscribes for the specified customer subuser</td>
       </tr>
       <tr>
          <td>date</td>
          <td>No</td>
          <td>Must be set to 1</td>
-         <td>Retrieves the timestamps, it will return a date in a MySQL timestampformat - YYYY-MM-DD HH:MM:SS</td>
+         <td>Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
       </tr>
    </tbody>
 </table>
@@ -41,29 +47,23 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_us
 ### Response
 
 {% codeblock %}
-<unsubscribes><unsubscribe><email>email1@domain.com</email><created>2009-06-10
-12:40:30</created></unsubscribe><unsubscribe><email>email2@domain2.com</email><created>2009-06-10
-12:40:30</created></unsubscribe></unsubscribes>JSON Call
+<unsubscribes><unsubscribe><email>email1@domain.com</email><created>2009-06-10 12:40:30</created></unsubscribe><unsubscribe><email>email2@domain2.com</email><created>2009-06-10 12:40:30</created></unsubscribe></unsubscribes>JSON Call
 
 </h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=example@example.com&task=get&date=
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=example@example.com&task=get&date=
 {% endcodeblock %}
 
 ### Response
 
 {% codeblock %}
-{"email":"email1@domain.com","created":"2009-06-01
-19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01
-19:41:39"}]
+{"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}]
 {% endcodeblock %}
 
 * * * * *
 
-{% anchor h2 %} Delete Unsubscribes {% endanchor %} Since SendGrid does
-not deliver to unsubscribe addresses, users can remove unsubscribes from
-their list at any time if re-delivery to an unsubscribed address is
-desired.
+
+{% anchor h2 %} Delete Unsubscribes {% endanchor %}
+ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsubscribes from their list at any time if re-delivery to an unsubscribed address is desired.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -83,7 +83,7 @@ desired.
          <td>task</td>
          <td>Yes</td>
          <td>Must be set to *delete*</td>
-         <td>This will allow you to delete an unsubscribe record for the specifiedcustomer subuser</td>
+         <td>This will allow you to delete an unsubscribe record for the specified customer subuser</td>
       </tr>
       <tr>
          <td>email</td>
@@ -146,9 +146,9 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 
 * * * * *
 
-{% anchor h2 %} Add Unsubscribes {% endanchor %} Add unsubscribe email
-records to their account if they need to stop sending email messages to
-a specific recipient.
+
+{% anchor h2 %} Add Unsubscribes {% endanchor %}
+ Add unsubscribe email records to their account if they need to stop sending email messages to a specific recipient.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -168,7 +168,7 @@ a specific recipient.
          <td>task</td>
          <td>Yes</td>
          <td>Must be set to *add*</td>
-         <td>This will allow you to add an unsubscribe record for the specifiedcustomer subuser</td>
+         <td>This will allow you to add an unsubscribe record for the specified customer subuser</td>
       </tr>
       <tr>
          <td>email</td>

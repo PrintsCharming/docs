@@ -1,12 +1,18 @@
---- layout: page weight: 0 title: Pending Account Changes navigation:
-show: true ---
+---
+layout: page
+weight: 0
+title: Pending Account Changes
+navigation:
+   show: true
+---
 
-Retrieve pending update information for users that have scheduled
-upgrades to their account.
+Retrieve pending update information for users that have scheduled upgrades to their account.
 
 * * * * *
 
+
 {% anchor h2 %} List Pending Changes {% endanchor %}
+
 
 Returns all of the users who have pending changes within your account.
 
@@ -46,14 +52,7 @@ https://sendgrid.com/api/distributor.pending.xml?api_user=your_sendgrid_username
 ### Response: Success
 
 {% codeblock %}
-result\><pending><user><username>user4</username><type>Account
-Upgrade</type><current>Main Reseller - Silver
-Package</current><update>Main Reseller - Gold
-Package</update><date>2010-09-30</date><ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip></ips><ip_groups></ip_groups></user><user><username>user5</username><type>Account
-Downgrade</type><current>Main Reseller - Gold
-Package</current><update>Main Reseller - Basic
-Package</update><date>2010-10-07</date><ips></ips><ip_groups><ip_group>Reseller
-Group</ip_group></ip_groups></user></pending></result>
+result\><pending><user><username>user4</username><type>Account Upgrade</type><current>Main Reseller - Silver Package</current><update>Main Reseller - Gold Package</update><date>2010-09-30</date><ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip></ips><ip_groups></ip_groups></user><user><username>user5</username><type>Account Downgrade</type><current>Main Reseller - Gold Package</current><update>Main Reseller - Basic Package</update><date>2010-10-07</date><ips></ips><ip_groups><ip_group>Reseller Group</ip_group></ip_groups></user></pending></result>
 {% endcodeblock %}
 
 ### Response: Error
@@ -64,8 +63,7 @@ Group</ip_group></ip_groups></user></pending></result>
 <result>
    <message>error</message>
    <errors>
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
    </errors>
 </result>
 
@@ -80,13 +78,7 @@ https://sendgrid.com/api/distributor.pending.json?api_user=your_sendgrid_usernam
 ### Response: Success
 
 {% codeblock %}
-{"username":"user4","type":"Account
-Upgrade","current":"Main Reseller - Silver Package","update":"Main
-Reseller - Gold
-Package","ip_groups":[],"ips":["255.255.255.0","255.255.254.0"],"date":"2010-09-30"},{"username":"user5","type":"Account
-Downgrade","current":"Main Reseller - Gold Package","update":"Main
-Reseller - Basic Package","ip_groups":["Reseller
-Group"],"ips":[],"date":"2010-10-07"}
+{"username":"user4","type":"Account Upgrade","current":"Main Reseller - Silver Package","update":"Main Reseller - Gold Package","ip_groups":[],"ips":["255.255.255.0","255.255.254.0"],"date":"2010-09-30"},{"username":"user5","type":"Account Downgrade","current":"Main Reseller - Gold Package","update":"Main Reseller - Basic Package","ip_groups":["Reseller Group"],"ips":[],"date":"2010-10-07"}
 {% endcodeblock %}
 
 ### Response: Error
@@ -102,7 +94,9 @@ Group"],"ips":[],"date":"2010-10-07"}
 
 * * * * *
 
+
 {% anchor h2 %} Delete Pending Changes {% endanchor %}
+
 
 Cancel/Revert a pending change.
 
@@ -148,8 +142,7 @@ result\><message>success</message></result>
 <result>
    <message>error</message>
    <errors>
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
    </errors>
 </result>
 
@@ -182,12 +175,11 @@ https://sendgrid.com/api/distributor.pending.json?api_user=your_sendgrid_usernam
 
 * * * * *
 
+
 {% anchor h2 %} Immediate Upgrade {% endanchor %}
 
-Once an upgrade happens, an invoice is generated for that user. If it's
-a free user to a paid account, the full price for that upgrade will be
-created. If it's in between billing periods, a prorated discount will be
-applied to the invoice.
+
+Once an upgrade happens, an invoice is generated for that user. If it's a free user to a paid account, the full price for that upgrade will be created. If it's in between billing periods, a prorated discount will be applied to the invoice.
 
 <table>
 <thead>
@@ -229,8 +221,7 @@ applied to the invoice.
 ### XML Call
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic
-Package&user=customer@example.com&ip_group[]=Reseller Grou
+https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 
 ### Response: Success
@@ -247,8 +238,7 @@ result\><message>success</message></result>
 <result>
    <message>error</message>
    <errors>
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
    </errors>
 </result>
 
@@ -257,8 +247,7 @@ result\><message>success</message></result>
 ### JSON Call
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic
-Package&user=customer@example.com&ip_group[]=Reseller Grou
+https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 
 ### Response: Success
@@ -282,10 +271,11 @@ Package&user=customer@example.com&ip_group[]=Reseller Grou
 
 * * * * *
 
+
 {% anchor h2 %} Immediate Downgrade {% endanchor %}
 
-Once a downgrade happens, an invoice is generated for that user. Free
-customers are not allowed to downgrade.
+
+Once a downgrade happens, an invoice is generated for that user. Free customers are not allowed to downgrade.
 
 <table>
 <thead>
@@ -327,8 +317,7 @@ customers are not allowed to downgrade.
 ### XML Call
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic
-Package&user=customer@example.com&ip_group[]=Reseller Grou
+https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 
 ### Response: Success
@@ -345,8 +334,7 @@ result\><message>success</message></result>
 <result>
    <message>error</message>
    <errors>
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
    </errors>
 </result>
 
@@ -355,8 +343,7 @@ result\><message>success</message></result>
 ### JSON Call
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic
-Package&user=customer@example.com&ip_group[]=Reseller Grou
+https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 
 ### Response: Success
@@ -380,11 +367,11 @@ Package&user=customer@example.com&ip_group[]=Reseller Grou
 
 * * * * *
 
+
 {% anchor h2 %} Immediate Close {% endanchor %}
 
-Close or revert an account to a free user immediately. An invoice is
-generated for that user with the new package price (if no overages are
-incurred, a invoice with zero amount due is generated.
+
+Close or revert an account to a free user immediately. An invoice is generated for that user with the new package price (if no overages are incurred, a invoice with zero amount due is generated.
 
 <table>
 <thead>
@@ -416,8 +403,7 @@ incurred, a invoice with zero amount due is generated.
 ### XML Call
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller
-Grou
+https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 
 ### Response: Success
@@ -434,8 +420,7 @@ result\><message>success</message></result>
 <result>
    <message>error</message>
    <errors>
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
    </errors>
 </result>
 
@@ -444,8 +429,7 @@ result\><message>success</message></result>
 ### JSON Call
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller
-Grou
+https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 
 ### Response: Success
@@ -469,11 +453,11 @@ Grou
 
 * * * * *
 
+
 {% anchor h2 %} Scheduled Upgrade {% endanchor %}
 
-Apply an upgrade at the end of the user's billing cycle. Once an upgrade
-happens, an invoice is generated for that user with the new package
-price. Prorated charges do not apply here.
+
+Apply an upgrade at the end of the user's billing cycle. Once an upgrade happens, an invoice is generated for that user with the new package price. Prorated charges do not apply here.
 
 <table>
 <thead>
@@ -515,8 +499,7 @@ price. Prorated charges do not apply here.
 ### XML Call
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic
-Package&user=customer@example.com&ip_group[]=Reseller Grou
+https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 
 ### Response: Success
@@ -533,8 +516,7 @@ result\><message>success</message></result>
 <result>
    <message>error</message>
    <errors>
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
    </errors>
 </result>
 
@@ -543,8 +525,7 @@ result\><message>success</message></result>
 ### JSON Call
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic
-Package&user=customer@example.com&ip_group[]=Reseller Grou
+https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 
 ### Response: Success
@@ -568,11 +549,11 @@ Package&user=customer@example.com&ip_group[]=Reseller Grou
 
 * * * * *
 
+
 {% anchor h2 %} Scheduled Downgrade {% endanchor %}
 
-Apply a downgrade at the end of the user's billing cycle. Once a
-downgrade happens, an invoice is generated for that user with the new
-package price. Prorated charges do not apply here.
+
+Apply a downgrade at the end of the user's billing cycle. Once a downgrade happens, an invoice is generated for that user with the new package price. Prorated charges do not apply here.
 
 <table>
 <thead>
@@ -614,8 +595,7 @@ package price. Prorated charges do not apply here.
 ### XML Call
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic
-Package&user=customer@example.com&ip_group[]=Reseller Grou
+https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 
 ### Response: Success
@@ -632,8 +612,7 @@ result\><message>success</message></result>
 <result>
    <message>error</message>
    <errors>
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
    </errors>
 </result>
 
@@ -642,8 +621,7 @@ result\><message>success</message></result>
 ### JSON Call
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic
-Package&user=customer@example.com&ip_group[]=Reseller Grou
+https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 
 ### Response: Success
@@ -667,12 +645,11 @@ Package&user=customer@example.com&ip_group[]=Reseller Grou
 
 * * * * *
 
+
 {% anchor h2 %} Scheduled Close {% endanchor %}
 
-Close or revert an account to a free user at the end of the user's
-billing cycle. Once a closure happens, an invoice is generated for that
-user with the new package price (if no overages are incurred, a invoice
-with zero amount due is generated.
+
+Close or revert an account to a free user at the end of the user's billing cycle. Once a closure happens, an invoice is generated for that user with the new package price (if no overages are incurred, a invoice with zero amount due is generated.
 
 <table>
 <thead>
@@ -704,8 +681,7 @@ with zero amount due is generated.
 ### XML Call
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller
-Grou
+https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 
 ### Response: Success
@@ -722,8 +698,7 @@ result\><message>success</message></result>
 <result>
    <message>error</message>
    <errors>
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
    </errors>
 </result>
 
@@ -732,8 +707,7 @@ result\><message>success</message></result>
 ### JSON Call
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller
-Grou
+https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 
 ### Response: Success

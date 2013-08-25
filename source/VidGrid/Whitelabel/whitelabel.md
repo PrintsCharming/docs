@@ -1,5 +1,11 @@
---- layout: page weight: 1000 title: Whitelabel Wizard breadcrumbs: true
-navigation: show: true ---
+---
+layout: page
+weight: 1000
+title: Whitelabel Wizard
+breadcrumbs: true
+navigation:
+  show: true
+---
 
 <div class="well">
 <div class="video-container">
@@ -8,10 +14,7 @@ navigation: show: true ---
 </div>
 ### Whitelabel Wizard
 
-What is whitelabeling and why should you use it? Mohammed explains what
-this powerful feature is used for and quickly walks you through the 3
-step whitelabeling process. The whitelabel feature is available on
-Silver packages and higher.
+What is whitelabeling and why should you use it? Mohammed explains what this powerful feature is used for and quickly walks you through the 3 step whitelabeling process. The whitelabel feature is available on Silver packages and higher.
 
 </div>
 

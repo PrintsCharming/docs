@@ -1,6 +1,13 @@
---- layout: page weight: 0 title: Customer Subuser Invalid Emails
-navigation: show: true --- {% anchor h2 %} Retrieve Invalid Emails {%
-endanchor %}
+---
+layout: page
+weight: 0
+title: Customer Subuser Invalid Emails
+navigation:
+   show: true
+---
+
+{% anchor h2 %} Retrieve Invalid Emails {% endanchor %}
+
 
 <table>
 <thead>
@@ -103,11 +110,11 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_us
 
 * * * * *
 
+
 {% anchor h2 %} Delete Invalid Emails {% endanchor %}
 
-Since SendGrid does not deliver to invalid emails, users can remove
-invalid emails from their list at any time if re-delivery to a spam
-reported address is desired.
+
+Since SendGrid does not deliver to invalid emails, users can remove invalid emails from their list at any time if re-delivery to a spam reported address is desired.
 
 <table>
 <thead>

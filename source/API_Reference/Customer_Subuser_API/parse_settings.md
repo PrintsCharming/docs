@@ -1,5 +1,13 @@
---- layout: page weight: 0 title: Parse Settings navigation: show: true
---- {% anchor h2 %} Get Current Settings {% endanchor %}
+---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+
+{% anchor h2 %} Get Current Settings {% endanchor %}
+
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -95,7 +103,9 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&a
 
 * * * * *
 
+
 {% anchor h2 %} Create New Entry {% endanchor %}
+
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -162,8 +172,7 @@ https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&ap
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>
@@ -202,7 +211,9 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&a
 
 * * * * *
 
+
 {% anchor h2 %} Edit Entry {% endanchor %}
+
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -269,8 +280,7 @@ https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&ap
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>
@@ -309,7 +319,9 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&a
 
 * * * * *
 
+
 {% anchor h2 %} Delete Entry {% endanchor %}
+
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -370,8 +382,7 @@ https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&ap
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>

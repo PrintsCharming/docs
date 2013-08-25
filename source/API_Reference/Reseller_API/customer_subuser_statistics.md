@@ -1,9 +1,15 @@
---- layout: page weight: 0 title: Customer Subuser Statistics
-navigation: show: true --- {% anchor h2 %} Retrieve Customer Subuser
-Statistics {% endanchor %}
+---
+layout: page
+weight: 0
+title: Customer Subuser Statistics
+navigation:
+   show: true
+---
 
-Note that you can use *either* the days parameter *or* the start\_date
-and end\_date parameter.
+{% anchor h2 %} Retrieve Customer Subuser Statistics {% endanchor %}
+
+
+Note that you can use *either* the days parameter *or* the start\_date and end\_date parameter.
 
 <table>
 <thead>
@@ -130,7 +136,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_us
 
 * * * * *
 
+
 {% anchor h2 %} Retrieve Aggregates {% endanchor %}
+
 
 Retrieve all-time totals for your customer subuser
 
@@ -209,10 +217,11 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
 
 * * * * *
 
+
 {% anchor h2 %} Category List {% endanchor %}
 
-Retrieve a list of all the categories used in your customer subusers
-account.
+
+Retrieve a list of all the categories used in your customer subusers account.
 
 <table>
 <thead>
@@ -283,13 +292,13 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_us
 
 * * * * *
 
+
 {% anchor h2 %} Category Statistics {% endanchor %}
 
-Retrieve statistics broken down by category. If the category does not
-exist, there will be an empty result set.
 
-Note that you can use *either* the days parameter *or* the start\_date
-and end\_date parameter.
+Retrieve statistics broken down by category. If the category does not exist, there will be an empty result set.
+
+Note that you can use *either* the days parameter *or* the start\_date and end\_date parameter.
 
 <table>
 <thead>

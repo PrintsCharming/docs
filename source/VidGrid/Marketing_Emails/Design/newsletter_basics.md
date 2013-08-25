@@ -1,5 +1,11 @@
---- layout: page weight: 100 title: Marketing Email Basics breadcrumbs:
-true navigation: show: true ---
+---
+layout: page
+weight: 100
+title: Marketing Email Basics
+breadcrumbs: true
+navigation:
+  show: true
+---
 
 <div class="well">
 <div class="video-container">
@@ -8,9 +14,7 @@ true navigation: show: true ---
 </div>
 ### Create a Marketing Email and Add Custom Variables
 
-Kyle’s tech tips include an overview of the Marketing Email creation
-process and details on how your list can include custom values that will
-be inserted in the body of your message.
+Kyle’s tech tips include an overview of the Marketing Email creation process and details on how your list can include custom values that will be inserted in the body of your message.
 
 </div>
 

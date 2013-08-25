@@ -1,5 +1,13 @@
---- layout: page weight: 0 title: Parse Settings navigation: show: true
---- {% anchor h2 %} Get Current Settings {% endanchor %}
+---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+
+{% anchor h2 %} Get Current Settings {% endanchor %}
+
 
 <table>
 <thead>
@@ -41,15 +49,13 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 ### Response: Success
 
 {% codeblock %}
-<parse><entry><hostname>www.example.com</hostname><url>www.mydomain.com/parse.php</url><spam_check>1</spam_check></entry></parse>Response:
-Empty
+<parse><entry><hostname>www.example.com</hostname><url>www.mydomain.com/parse.php</url><spam_check>1</spam_check></entry></parse>Response: Empty
 
 </h3>
 {% codeblock %} <parse></parse>JSON Call
 
 </h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&method=parse&user=customer@example.com
+{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&method=parse&user=customer@example.com
 {% endcodeblock %}
 
 ### Response: Success
@@ -66,7 +72,9 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 * * * * *
 
+
 {% anchor h2 %} Create New Entry {% endanchor %}
+
 
 <table>
 <thead>
@@ -137,8 +145,7 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>
@@ -172,7 +179,9 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 * * * * *
 
+
 {% anchor h2 %} Edit Entry {% endanchor %}
+
 
 <table>
 <thead>
@@ -243,8 +252,7 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>
@@ -278,7 +286,9 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 * * * * *
 
+
 {% anchor h2 %} Delete Entry {% endanchor %}
+
 
 <table>
 <thead>
@@ -343,8 +353,7 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>

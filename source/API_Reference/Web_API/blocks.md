@@ -1,10 +1,16 @@
---- layout: page weight: 0 title: Blocks navigation: show: true ---
+---
+layout: page
+weight: 0
+title: Blocks
+navigation:
+  show: true
+---
 
-This endpoint allows you to retrieve and delete entries in the Blocks
-list.
+This endpoint allows you to retrieve and delete entries in the Blocks list.
 
-{% anchor h2 %} get {% endanchor %}Retrieve a list of Blocks with
-addresses and response codes, optionally with dates.
+
+{% anchor h2 %} get {% endanchor %}
+Retrieve a list of Blocks with addresses and response codes, optionally with dates.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -18,7 +24,7 @@ addresses and response codes, optionally with dates.
          <td>date</td>
          <td>No</td>
          <td>Must be set to 1</td>
-         <td>Retrieve the timestamp of the Block records. It will return a date in aMySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
+         <td>Retrieve the timestamp of the Block records. It will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
       </tr>
       <tr>
          <td>days</td>
@@ -29,13 +35,13 @@ addresses and response codes, optionally with dates.
       <tr>
          <td>start\_date</td>
          <td>No</td>
-         <td>Date must be in YYYY-MM-DD format and be earlier than the end\_dateparameter.</td>
+         <td>Date must be in YYYY-MM-DD format and be earlier than the end\_date parameter.</td>
          <td>The start of the date range for which to retrieve blocks.</td>
       </tr>
       <tr>
          <td>end\_date</td>
          <td>No</td>
-         <td>Date must be in YYYY-MM-DD format and be later than the start\_dateparameter.</td>
+         <td>Date must be in YYYY-MM-DD format and be later than the start\_date parameter.</td>
          <td>The end of the date range for which to retrieve blocks.</td>
       </tr>
       <tr>
@@ -65,7 +71,28 @@ https://sendgrid.com/api/blocks.get.json?api_user=your_sendgrid_username&api_key
 
 ### Response
 
-
+{% codeblock lang:javascript %}
+[
+  {
+    "status": "4.0.0",
+    "created": "2012-09-02 00:12:12",
+    "reason": "550 Access denied...04d52d35b93501d500a9bca895ddad5cddd1a9f8486c89ace8c5e959398198cd49cd58288c9d11313975284d852811... (throttled)",
+    "email": "example@juno.com"
+  },
+  {
+    "status": "4.0.0",
+    "created": "2012-09-02 00:21:29",
+    "reason": "Connection timed out",
+    "email": "example2@band.la"
+  },
+  {
+    "status": "4.0.0",
+    "created": "2012-09-02 00:25:33",
+    "reason": "Unable to resolve MX record for exampledomain.com: nxdomain",
+    "email": "example3@exampledomain.com"
+  }
+]
+{% endcodeblock %}
 
 </div>
 <div class="tab-pane" id="get-xml">
@@ -84,17 +111,14 @@ https://sendgrid.com/api/blocks.get.xml?api_user=your_sendgrid_username&api_key=
    <block>
       <email>email1@domain.com</email>
       <status>5.1.1</status>
-      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user:
-email1@domain.com</reason>
+      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com</reason>
       <created>2009-06-10 12:40:30</created>
    </block>
    <block>
       <email>email2@domain2.com</email>
       <status>5.1.1</status>
-      <reason>host [127.0.0.1] said: 550 5.1.1 unknown
-or illegal user: email2@domain2.com</reason>
-      <created>2009-08-01
-10:16:30</created>
+      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com</reason>
+      <created>2009-08-01 10:16:30</created>
    </block>
 </blocks>
 
@@ -105,8 +129,9 @@ or illegal user: email2@domain2.com</reason>
 
 * * * * *
 
-{% anchor h2 %} delete {% endanchor %}Delete an address from the Block
-list.
+
+{% anchor h2 %} delete {% endanchor %}
+Delete an address from the Block list.
 
 <table class="table table-bordered table-striped">
    <tbody>

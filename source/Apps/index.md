@@ -1,8 +1,12 @@
---- layout: page weight: 100 title: Apps Index navigation: show: true
+---
+layout: page
+weight: 100
+title: Apps Index
+navigation:
+  show: true
 ---
 
-You can access the list of Apps available to your account by clicking
-the [Apps](http://sendgrid.com/app) menu item after logging in.
+You can access the list of Apps available to your account by clicking the [Apps](http://sendgrid.com/app) menu item after logging in.
 
 -   [**Address Whitelisting**](address_whitelisting.html)\*
 -   [**BCC**](bcc.html)\*
@@ -21,6 +25,4 @@ the [Apps](http://sendgrid.com/app) menu item after logging in.
 -   [**Spam Checker**](spam_checker.html)\*
 -   [**Subscription Tracking**](subscription_tracking.html)
 
-*\*Only available for Silver and above packages.* Please refer to our
-[Pricing Guide](http://sendgrid.com/pricing.html) for more details on
-our offerings.
+*\*Only available for Silver and above packages.* Please refer to our [Pricing Guide](http://sendgrid.com/pricing.html) for more details on our offerings.

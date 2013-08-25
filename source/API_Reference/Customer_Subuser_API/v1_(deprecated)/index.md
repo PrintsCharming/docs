@@ -1,15 +1,15 @@
---- layout: page weight: 100 title: Customer Subuser API v1 (deprecated)
-navigation: show: true ---
+---
+layout: page
+weight: 100
+title: Customer Subuser API v1 (deprecated)
+navigation:
+  show: true
+---
 
 Customer Subuser Management API
 ===============================
 
-Customer Subuser API v1 is only available for customers who integrated
-SendGrid into their application before v2 of the API was released. [If
-you are new to SendGrid, please use v2 of this
-API](http://docs.sendgrid.com/documentation/api/customer-subuser-api/customer-api/).
-Following are brief descriptions of the various API calls needed to
-manage your subusers, click the API call name for further details:
+Customer Subuser API v1 is only available for customers who integrated SendGrid into their application before v2 of the API was released. [If you are new to SendGrid, please use v2 of this API](http://docs.sendgrid.com/documentation/api/customer-subuser-api/customer-api/). Following are brief descriptions of the various API calls needed to manage your subusers, click the API call name for further details:
 
 ****  
 [**Email List Management**](http://docs.sendgrid.com/documentation/api/customer-subuser-api/customer-subuser-api-v1/email-list-management/ "Email List Management")  

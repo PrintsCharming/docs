@@ -1,5 +1,13 @@
---- layout: page weight: 0 title: Invalid Emails navigation: show: true
---- {% anchor h2 %} Retrieve Invalid Emails {% endanchor %}
+---
+layout: page
+weight: 0
+title: Invalid Emails
+navigation:
+   show: true
+---
+
+{% anchor h2 %} Retrieve Invalid Emails {% endanchor %}
+
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -19,13 +27,13 @@
          <td>task</td>
          <td>Yes</td>
          <td>Must be set to *get*</td>
-         <td>This will allow you to retrieve the invalid emails for the specifiedsubuser</td>
+         <td>This will allow you to retrieve the invalid emails for the specified subuser</td>
       </tr>
       <tr>
          <td>date</td>
          <td>No</td>
          <td>Must be set to 1</td>
-         <td>Retrieves the timestamps, it will return a date in a MySQL timestampformat - YYYY-MM-DD HH:MM:SS</td>
+         <td>Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
       </tr>
    </tbody>
 </table>
@@ -100,10 +108,9 @@ https://sendgrid.com/apiv2/customer.invalidemails.xml?api_user=your_sendgrid_use
 
 * * * * *
 
-{% anchor h2 %} Delete Invalid Emails {% endanchor %} Since SendGrid
-does not deliver to invalid emails, users can remove invalid emails from
-their list at any time if re-delivery to a spam reported address is
-desired.
+
+{% anchor h2 %} Delete Invalid Emails {% endanchor %}
+ Since SendGrid does not deliver to invalid emails, users can remove invalid emails from their list at any time if re-delivery to a spam reported address is desired.
 
 <table class="table table-bordered table-striped">
    <tbody>

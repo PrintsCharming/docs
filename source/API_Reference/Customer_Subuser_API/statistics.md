@@ -1,11 +1,18 @@
---- layout: page weight: 0 title: Statistics navigation: show: true ---
+---
+layout: page
+weight: 0
+title: Statistics
+navigation:
+   show: true
+---
 
 Subuser Statistics
 
+
 {% anchor h2 %} Retrieve Subuser Statistics {% endanchor %}
 
-Note that you can use *either* the days parameter *or* the start\_date
-and end\_date parameter.
+
+Note that you can use *either* the days parameter *or* the start\_date and end\_date parameter.
 
 <table>
 <tbody>
@@ -127,7 +134,9 @@ https://sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&a
 
 </div>
 </div>
+
 {% anchor h2 %} Retrieve Aggregates {% endanchor %}
+
 
 Retrieve all-time totals for your subuser
 
@@ -203,7 +212,9 @@ https://sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&a
 
 </div>
 </div>
+
 {% anchor h2 %} Category List {% endanchor %}
+
 
 Retrieve a list of all the categories used in your subusers account.
 
@@ -273,12 +284,11 @@ https://sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&a
 
 </div>
 </div>
+
 {% anchor h2 %} Category Statistics {% endanchor %}
 
-Retrieve statistics broken down by category. If the category does not
-exist, there will be an empty result set. Note that you can use 
-*either* the days parameter *or* the start\_date and end\_date
-parameter.
+
+Retrieve statistics broken down by category. If the category does not exist, there will be an empty result set. Note that you can use  *either* the days parameter *or* the start\_date and end\_date parameter.
 
 <table>
 <tbody>

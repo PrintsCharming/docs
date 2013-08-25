@@ -1,8 +1,15 @@
---- layout: page weight: 0 title: Customer Unsubscribes navigation:
-show: true --- {% anchor h2 %} Retrieve Unsubscribes {% endanchor %}
+---
+layout: page
+weight: 0
+title: Customer Unsubscribes
+navigation:
+   show: true
+---
 
-Note that you can use *either* the days parameter *or* the start\_date
-and end\_date parameter.
+{% anchor h2 %} Retrieve Unsubscribes {% endanchor %}
+
+
+Note that you can use *either* the days parameter *or* the start\_date and end\_date parameter.
 
 <table>
 <thead>
@@ -97,11 +104,11 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 
 * * * * *
 
+
 {% anchor h2 %} Delete Unsubscribes {% endanchor %}
 
-Since SendGrid does not deliver to unsubscribe addresses, users can
-remove unsubscribes from their list at any time if re-delivery to an
-unsubscribed address is desired.
+
+Since SendGrid does not deliver to unsubscribe addresses, users can remove unsubscribes from their list at any time if re-delivery to an unsubscribed address is desired.
 
 <table>
 <thead>
@@ -195,10 +202,11 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 
 * * * * *
 
+
 {% anchor h2 %} Add Unsubscribes {% endanchor %}
 
-Add unsubscribe email records to their account if they need to stop
-sending email messages to a specific recipient.
+
+Add unsubscribe email records to their account if they need to stop sending email messages to a specific recipient.
 
 <table>
 <thead>

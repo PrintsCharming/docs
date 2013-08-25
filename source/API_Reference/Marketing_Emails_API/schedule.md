@@ -1,11 +1,18 @@
---- layout: page weight: 0 title: Schedule navigation: show: true ---
+---
+layout: page
+weight: 0
+title: Schedule
+navigation:
+  show: true
+---
 
-This endpoint allows you to add, view, or remove scheduled delivery
-events for Marketing Emails.
+This endpoint allows you to add, view, or remove scheduled delivery events for Marketing Emails.
 
-{% info %} If you wish to send a marketing email immediately, leave off
-the **at** and **after** parameters. {% endinfo %} {% anchor h2 %} add
-{% endanchor %}
+
+{% info %} If you wish to send a marketing email immediately, leave off the **at** and **after** parameters. {% endinfo %}
+ 
+{% anchor h2 %} add {% endanchor %}
+
 
 Schedule a delivery time for an existing Marketing Email.
 
@@ -104,7 +111,9 @@ https://sendgrid.com/api/newsletter/schedule/add.xml?name=test&at=2012-09-05_18%
 
 * * * * *
 
+
 {% anchor h2 %} get {% endanchor %}
+
 
 Retrieve the scheduled delivery time for an existing Marketing Email.
 
@@ -191,7 +200,9 @@ https://sendgrid.com/api/newsletter/schedule/get.xml?name=SendGrid_Test2&api_use
 
 * * * * *
 
+
 {% anchor h2 %} delete {% endanchor %}
+
 
 Cancel a scheduled send for a Marketing Email.
 

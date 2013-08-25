@@ -1,5 +1,11 @@
---- layout: page weight: 0 title: Understanding Marketing Statistics
-breadcrumbs: true navigation: show: true ---
+---
+layout: page
+weight: 0
+title: Understanding Marketing Statistics
+breadcrumbs: true
+navigation:
+  show: true
+---
 
 <div class="wel">
 <div class="video-container">
@@ -8,8 +14,7 @@ breadcrumbs: true navigation: show: true ---
 </div>
 ### Understanding Marketing Email Statistics
 
-After sending your Marketing Email watch this video by Keanon in order
-to understand how to interpret your statistics and delivery metrics.
+After sending your Marketing Email watch this video by Keanon in order to understand how to interpret your statistics and delivery metrics.
 
 </div>
 

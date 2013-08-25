@@ -1,10 +1,16 @@
---- layout: page weight: 0 title: Sender Address navigation: show: true
+---
+layout: page
+weight: 0
+title: Sender Address
+navigation:
+  show: true
 ---
 
-This endpoint allows you to manage and create Sender Addresses (formerly
-Identities) associated with the Marketing Email feature.
+This endpoint allows you to manage and create Sender Addresses (formerly Identities) associated with the Marketing Email feature.
+
 
 {% anchor h2 %} add {% endanchor %}
+
 
 Create a new Address.
 
@@ -30,14 +36,14 @@ Create a new Address.
    <tr>
       <td>email</td>
       <td>Yes</td>
-      <td>Email address format, complying with [RFC5322](http://tools.ietf.org/html/rfc5322)</td>
+      <td>Email address format, complying with [RFC 5322](http://tools.ietf.org/html/rfc5322)</td>
       <td>Specify the email address to be used for this Address.</td>
    </tr>
    <tr>
       <td>replyto</td>
       <td>No</td>
-      <td>Email address format, complying with [RFC5322](http://tools.ietf.org/html/rfc5322)</td>
-      <td>Specify an email address to be used in the Reply-To field. If notdefined, will default to the *email* parameter.</td>
+      <td>Email address format, complying with [RFC 5322](http://tools.ietf.org/html/rfc5322)</td>
+      <td>Specify an email address to be used in the Reply-To field. If not defined, will default to the *email* parameter.</td>
    </tr>
    <tr>
       <td>address</td>
@@ -111,7 +117,9 @@ https://sendgrid.com/api/newsletter/identity/add.xml?identity=Sender_Address1&na
 
 * * * * *
 
+
 {% anchor h2 %} edit {% endanchor %}
+
 
 Edit an existing Address.
 
@@ -143,14 +151,14 @@ Edit an existing Address.
    <tr>
       <td>email</td>
       <td>Yes</td>
-      <td>Email address format, complying with [RFC5322](http://tools.ietf.org/html/rfc5322)</td>
+      <td>Email address format, complying with [RFC 5322](http://tools.ietf.org/html/rfc5322)</td>
       <td>Specify the email address to be used for this Address.</td>
    </tr>
    <tr>
       <td>replyto</td>
       <td>No</td>
-      <td>Email address format, complying with [RFC5322](http://tools.ietf.org/html/rfc5322)</td>
-      <td>Specify an email address to be used in the Reply-To field. If notdefined, will default to the *email* parameter.</td>
+      <td>Email address format, complying with [RFC 5322](http://tools.ietf.org/html/rfc5322)</td>
+      <td>Specify an email address to be used in the Reply-To field. If not defined, will default to the *email* parameter.</td>
    </tr>
    <tr>
       <td>address</td>
@@ -224,7 +232,9 @@ https://sendgrid.com/api/newsletter/identity/edit.xml?identity=Sender_Address2&n
 
 * * * * *
 
+
 {% anchor h2 %} get {% endanchor %}
+
 
 Retrieve information associated with a particular Address.
 
@@ -309,8 +319,7 @@ https://sendgrid.com/api/newsletter/identity/get.xml?identity=Sender_Address&api
 
 </address>
    <email>example@sendgrid.com</email>
-   <identity>Sender\_Address
-</identity>
+   <identity>Sender\_Address </identity>
 </identity>
 
 {% endcodeblock %}
@@ -331,10 +340,11 @@ https://sendgrid.com/api/newsletter/identity/get.xml?identity=Sender_Address&api
 
 * * * * *
 
+
 {% anchor h2 %} list {% endanchor %}
 
-List all Addresses on your account, or check if a particular Address
-exists.
+
+List all Addresses on your account, or check if a particular Address exists.
 
 <table>
 <thead>
@@ -423,7 +433,9 @@ https://sendgrid.com/api/newsletter/identity/list.xml?identity=Sender_Address4&a
 
 * * * * *
 
+
 {% anchor h2 %} delete {% endanchor %}
+
 
 Remove an Address from your account.
 

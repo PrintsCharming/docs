@@ -1,4 +1,10 @@
---- layout: page weight: 0 title: Profile navigation: show: true ---
+---
+layout: page
+weight: 0
+title: Profile
+navigation:
+  show: true
+---
 
 View your SendGrid Profile
 
@@ -16,7 +22,24 @@ https://sendgrid.com/api/profile.get.json?api_user=your_sendgrid_username&api_ke
 
 ### Response
 
-
+{% codeblock lang:javascript %}
+[
+  {
+    "username": "sampleuser@example.com",
+    "email": "sampleemail@example.com",
+    "active": "true",
+    "first_name": "john",
+    "last_name": "doe",
+    "address": "555 any street",
+    "city": "any city",
+    "state": "CA",
+    "zip": "91234",
+    "country": "US",
+    "phone": "555-555-5555",
+    "website": "example.com"
+  }
+]
+{% endcodeblock %}
 
 </div>
 <div class="tab-pane" id="get-xml">
@@ -58,7 +81,9 @@ https://sendgrid.com/api/profile.get.xml?api_user=your_sendgrid_username&api_key
 
 * * * * *
 
+
 {% anchor h2 %} set {% endanchor %}
+
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -172,8 +197,7 @@ https://sendgrid.com/api/profile.set.xml?api_user=your_sendgrid_username&api_key
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
    @nodes
@@ -186,7 +210,9 @@ https://sendgrid.com/api/profile.set.xml?api_user=your_sendgrid_username&api_key
 
 * * * * *
 
+
 {% anchor h2 %} setPassword {% endanchor %}
+
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -262,8 +288,7 @@ https://sendgrid.com/api/password.set.xml?api_user=your_sendgrid_username&api_ke
 ### Response: Error
 
 {% codeblock %}
-<result> <message>error</message> <errors> ...
-<error>... error messages ...</error> ... </errors> @nodes
+<result> <message>error</message> <errors> ... <error>... error messages ...</error> ... </errors> @nodes
 {% endcodeblock %}
 
 </div>
@@ -271,9 +296,11 @@ https://sendgrid.com/api/password.set.xml?api_user=your_sendgrid_username&api_ke
 
 * * * * *
 
-{% anchor h2 %} setUsername {% endanchor %} {% warning %} Please note,
-your account username is used to login to our SMTP server and the
-website. Changes will take effect immediately. {% endwarning %}
+
+{% anchor h2 %} setUsername {% endanchor %}
+ 
+{% warning %} Please note, your account username is used to login to our SMTP server and the website. Changes will take effect immediately. {% endwarning %}
+
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -286,8 +313,8 @@ website. Changes will take effect immediately. {% endwarning %}
       <tr>
          <td>username</td>
          <td>Yes</td>
-         <td>Must not exceed 100 characters. The username cannot be already taken orcontain the SendGrid.com domain</td>
-         <td>This is the new username we will be authenticating with our SMTP serversand our website. Changes take effect immediately</td>
+         <td>Must not exceed 100 characters. The username cannot be already taken or contain the SendGrid.com domain</td>
+         <td>This is the new username we will be authenticating with our SMTP servers and our website. Changes take effect immediately</td>
       </tr>
    </tbody>
 </table>
@@ -343,8 +370,7 @@ https://sendgrid.com/api/profile.setUsername.xml?api_user=your_sendgrid_username
 ### Response: Error
 
 {% codeblock %}
-<result> <message>error</message> <errors> ...
-<error>... error messages ...</error> ... </errors> @nodes
+<result> <message>error</message> <errors> ... <error>... error messages ...</error> ... </errors> @nodes
 {% endcodeblock %}
 
 </div>
@@ -352,10 +378,11 @@ https://sendgrid.com/api/profile.setUsername.xml?api_user=your_sendgrid_username
 
 * * * * *
 
-{% anchor h2 %} setEmail {% endanchor %} {% info %} Please note, we send
-out a confirmation email to the new email account in order to be
-validated. Your email address changes when you click on the confirmation
-link. {% endinfo %}
+
+{% anchor h2 %} setEmail {% endanchor %}
+ 
+{% info %} Please note, we send out a confirmation email to the new email account in order to be validated. Your email address changes when you click on the confirmation link. {% endinfo %}
+
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -369,7 +396,7 @@ link. {% endinfo %}
          <td>email</td>
          <td>Yes</td>
          <td>Must be in email format and not more than 100 characters</td>
-         <td>This is the new email address we will be contacting you with. Changestake effect immediately</td>
+         <td>This is the new email address we will be contacting you with. Changes take effect immediately</td>
       </tr>
    </tbody>
 </table>

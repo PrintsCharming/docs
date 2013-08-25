@@ -1,8 +1,12 @@
---- layout: page weight: 0 title: Retrieving As-You-Go Usage navigation:
-show: true ---
+---
+layout: page
+weight: 0
+title: Retrieving As-You-Go Usage
+navigation:
+   show: true
+---
 
-Retrieve invoices/usages from end users before your scheduled billing
-date.
+Retrieve invoices/usages from end users before your scheduled billing date.
 
 <table>
 <thead>
@@ -41,8 +45,7 @@ https://sendgrid.com/apiv2/reseller.billing.xml?api_user=your_sendgrid_username&
       <invoice>
          <number>201001000100</number>
          <credits>123456</credits>
-         <date_invoiced>2010-09-01
-00:00:00</date_invoiced>
+         <date_invoiced>2010-09-01 00:00:00</date_invoiced>
          <status>Unpaid</status>
          <amount>1001</amount>
          <overage>6.95</overage>

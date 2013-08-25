@@ -1,13 +1,18 @@
---- layout: page weight: 0 title: Invalid Emails navigation: show: true
+---
+layout: page
+weight: 0
+title: Invalid Emails
+navigation:
+  show: true
 ---
 
-This endpoint allows you to retrieve and delete entries in the Invalid
-Emails list.
+This endpoint allows you to retrieve and delete entries in the Invalid Emails list.
+
 
 {% anchor h2 %} get {% endanchor %}
 
-Retrieve a list of invalid emails with addresses and response codes,
-optionally with dates.
+
+Retrieve a list of invalid emails with addresses and response codes, optionally with dates.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -21,24 +26,24 @@ optionally with dates.
          <td>date</td>
          <td>No</td>
          <td>Must be set to 1</td>
-         <td>Retrieve the timestamp of the invalid email records. It will return adate in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
+         <td>Retrieve the timestamp of the invalid email records. It will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
       </tr>
       <tr>
          <td>days</td>
          <td>No</td>
          <td>If specified, must be an integer greater than 0</td>
-         <td>Number of days in the past for which to retrieve invalid emails(includes today)</td>
+         <td>Number of days in the past for which to retrieve invalid emails (includes today)</td>
       </tr>
       <tr>
          <td>start\_date</td>
          <td>No</td>
-         <td>Date must be in YYYY-MM-DD format and be earlier than the end\_dateparameter.</td>
+         <td>Date must be in YYYY-MM-DD format and be earlier than the end\_date parameter.</td>
          <td>The start of the date range for which to retrieve invalid emails.</td>
       </tr>
       <tr>
          <td>end\_date</td>
          <td>No</td>
-         <td>Date must be in YYYY-MM-DD format and be later than the start\_dateparameter.</td>
+         <td>Date must be in YYYY-MM-DD format and be later than the start\_date parameter.</td>
          <td>The end of the date range for which to retrieve invalid emails.</td>
       </tr>
       <tr>
@@ -122,7 +127,9 @@ https://sendgrid.com/api/invalidemails.get.xml?api_user=your_sendgrid_username&a
 
 * * * * *
 
+
 {% anchor h2 %} delete {% endanchor %}
+
 
 Delete an address from the Invalid Email list.
 

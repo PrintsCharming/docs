@@ -1,10 +1,5 @@
 Hello -name-,  
- Thank you for your interest in our products. I have set up an
-appointment to call you at -time- EST to discuss your needs in more
-detail. If you would like to reschedule this call please visit the
-following link:
-[reschedule](http://sendgrid.com/reschedule?id=-customerID-) Regards,
--salesContact- -contactPhoneNumber-  
+ Thank you for your interest in our products. I have set up an appointment to call you at -time- EST to discuss your needs in more detail. If you would like to reschedule this call please visit the following link: [reschedule](http://sendgrid.com/reschedule?id=-customerID-) Regards, -salesContact- -contactPhoneNumber-  
 
 {% endcodeblock %}
 
@@ -46,10 +41,6 @@ The final email for John would look like this:
 {% codeblock lang:html %}
 
 Hello John,  
- Thank you for your interest in our products. I have set up an
-appointment to call you at 3:00pm EST to discuss your needs in more
-detail. If you would like to reschedule this call please visit the
-following link: [reschedule](http://sendgrid.com/reschedule?id=1234)
-Regards, Jared 555.555.5555  
+ Thank you for your interest in our products. I have set up an appointment to call you at 3:00pm EST to discuss your needs in more detail. If you would like to reschedule this call please visit the following link: [reschedule](http://sendgrid.com/reschedule?id=1234) Regards, Jared 555.555.5555  
 
 {% endcodeblock %}

@@ -1,22 +1,25 @@
---- layout: page weight: 0 title: Section Tags navigation: show: true
+---
+layout: page
+weight: 0
+title: Section Tags
+navigation:
+  show: true
 ---
 
-Sections are an extension of [substitution
-values]({{root_url}}/API_Reference/SMTP_API/substitution_tags.html) that
-allow a user to specify large text blocks that will be mostly the same
-that can then be selected and customized on a per user basis. This is
-useful for sending dynamic content where a large section of the body
-will be similar across several users, as opposed to duplicating that
-text each time.
+Sections are an extension of [substitution values]({{root_url}}/API_Reference/SMTP_API/substitution_tags.html) that allow a user to specify large text blocks that will be mostly the same that can then be selected and customized on a per user basis. This is useful for sending dynamic content where a large section of the body will be similar across several users, as opposed to duplicating that text each time.
 
 The format of the SMTP section key has the form:
 
+{% codeblock lang:javascript %}
+{
+  "section": {
+    "-sectionName1-": "section 1 text",
+    "sectionName2": "section 2 text"
+  }
+}
+{% endcodeblock %}
 
-
-Typical usage is to have a tag in the body of your email that references
-a per user substitution tag. This user tag will contain a reference to a
-section tag. Section text may contain references to per recipient
-substitution variables.
+Typical usage is to have a tag in the body of your email that references a per user substitution tag. This user tag will contain a reference to a section tag. Section text may contain references to per recipient substitution variables.
 
 ### Section Tag Example
 
@@ -29,11 +32,30 @@ Hi -name-,
 
 An accompanying SMTPAPI JSON header might look something like this:
 
- The final email for Alice would look like this: {%
-codeblock lang:html %}
+{% codeblock lang:javascript %}
+{
+  "to": [
+    "alice@example.com",
+    "joe@example.com"
+  ],
+  "sub": {
+    "-body-": [
+      "-bodyFemale-",
+      "-bodyMale-"
+    ],
+    "-name-": [
+      "Alice",
+      "Joe"
+    ]
+  },
+  "section": {
+    "-bodyFemale-": "Check out this dress -name-!",
+    "-bodyMale-": "Check out this tie -name-!"
+  }
+}
+{% endcodeblock %} The final email for Alice would look like this: {% codeblock lang:html %}
 
 Hi Alice,  
- We thought you might be interested in this special offer. Check out
-this dress Alice!
+ We thought you might be interested in this special offer. Check out this dress Alice!
 
 {% endcodeblock %}

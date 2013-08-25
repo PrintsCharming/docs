@@ -1,5 +1,13 @@
---- layout: page weight: 0 title: Subuser Spam Reports navigation: show:
-true --- {% anchor h2 %} Retrieve Spam Reports {% endanchor %}
+---
+layout: page
+weight: 0
+title: Subuser Spam Reports
+navigation:
+   show: true
+---
+
+{% anchor h2 %} Retrieve Spam Reports {% endanchor %}
+
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -25,7 +33,7 @@ true --- {% anchor h2 %} Retrieve Spam Reports {% endanchor %}
          <td>date</td>
          <td>No</td>
          <td>Must be set to 1</td>
-         <td>Retrieves the timestamps, it will return a date in a MySQL timestampformat - YYYY-MM-DD HH:MM:SS</td>
+         <td>Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
       </tr>
    </tbody>
 </table>
@@ -86,10 +94,9 @@ https://sendgrid.com/api/user.spamreports.json?api_user=your_sendgrid_username&a
 
 * * * * *
 
-{% anchor h2 %} Delete Spam Reports {% endanchor %} Since SendGrid does
-not deliver to spam reported addresses, users can remove spam reports
-from their list at any time if re-delivery to a spam reported address is
-desired.
+
+{% anchor h2 %} Delete Spam Reports {% endanchor %}
+ Since SendGrid does not deliver to spam reported addresses, users can remove spam reports from their list at any time if re-delivery to a spam reported address is desired.
 
 <table class="table table-bordered table-striped">
    <tbody>

@@ -1,12 +1,18 @@
---- layout: page weight: 0 title: Unsubscribes navigation: show: true
+---
+layout: page
+weight: 0
+title: Unsubscribes
+navigation:
+  show: true
 ---
 
 Retrieve, delete and add entries in the Unsubscribes list.
 
+
 {% anchor h2 %} get {% endanchor %}
 
-Retrieve a list of Unsubscribes with addresses and optionally with
-dates.
+
+Retrieve a list of Unsubscribes with addresses and optionally with dates.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -20,24 +26,24 @@ dates.
          <td>date</td>
          <td>No</td>
          <td>Must be set to 1</td>
-         <td>Retrieve the timestamp of the unsubscribe records. It will return a datein a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
+         <td>Retrieve the timestamp of the unsubscribe records. It will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
       </tr>
       <tr>
          <td>days</td>
          <td>No</td>
          <td>If specified, must be an integer greater than 0</td>
-         <td>Number of days in the past for which to retrieve unsubscribes (includestoday)</td>
+         <td>Number of days in the past for which to retrieve unsubscribes (includes today)</td>
       </tr>
       <tr>
          <td>start\_date</td>
          <td>No</td>
-         <td>Date must be in YYYY-MM-DD format and be earlier than the end\_dateparameter.</td>
+         <td>Date must be in YYYY-MM-DD format and be earlier than the end\_date parameter.</td>
          <td>The start of the date range for which to retrieve unsubscribes.</td>
       </tr>
       <tr>
          <td>end\_date</td>
          <td>No</td>
-         <td>Date must be in YYYY-MM-DD format and be later than the start\_dateparameter.</td>
+         <td>Date must be in YYYY-MM-DD format and be later than the start\_date parameter.</td>
          <td>The end of the date range for which to retrieve unsubscribes.</td>
       </tr>
       <tr>
@@ -93,8 +99,7 @@ https://sendgrid.com/api/unsubscribes.get.json?api_user=your_sendgrid_username&a
 ### Response
 
 {% codeblock %}
-<unsubscribes><unsubscribe><email>brandon.west@sendgrid.com</email><created>2012-09-06
-14:03:18</created></unsubscribe></unsubscribes>
+<unsubscribes><unsubscribe><email>brandon.west@sendgrid.com</email><created>2012-09-06 14:03:18</created></unsubscribe></unsubscribes>
 {% endcodeblock %}
 
 </div>
@@ -102,11 +107,11 @@ https://sendgrid.com/api/unsubscribes.get.json?api_user=your_sendgrid_username&a
 
 * * * * *
 
+
 {% anchor h2 %} delete {% endanchor %}
 
-Delete an address from the Unsubscribe list. Please note that if no
-parameters are provided or if empty parameters are provided the ENTIRE
-list will be removed.
+
+Delete an address from the Unsubscribe list. Please note that if no parameters are provided or if empty parameters are provided the ENTIRE list will be removed.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -173,8 +178,7 @@ https://sendgrid.com/api/unsubscribes.delete.xml?api_user=your_sendgrid_username
 @nodes {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<result> Email does not
-exist @nodes </result>
+<result> Email does not exist @nodes </result>
 
 {% endcodeblock %} </result></result></result>
 
@@ -183,7 +187,9 @@ exist @nodes </result>
 
 * * * * *
 
+
 {% anchor h2 %} add {% endanchor %}
+
 
 Add email addresses to the Unsubscribe list.
 

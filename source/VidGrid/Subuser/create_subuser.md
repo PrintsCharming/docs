@@ -1,5 +1,11 @@
---- layout: page weight: 1000 title: Creating a Subuser breadcrumbs:
-true navigation: show: true ---
+---
+layout: page
+weight: 1000
+title: Creating a Subuser
+breadcrumbs: true
+navigation:
+  show: true
+---
 
 <div class="well">
 <div class="video-container">
@@ -8,8 +14,7 @@ true navigation: show: true ---
 </div>
 ### Creating a Subuser
 
-In this video, Anthony walks us through the creation of a subuser
-account that shares a Whitelable with its Parent account.
+In this video, Anthony walks us through the creation of a subuser account that shares a Whitelable with its Parent account.
 
 </div>
 

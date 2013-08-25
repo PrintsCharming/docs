@@ -17,6 +17,10 @@ If you are using ASP.NET, you can specify SMTP settings in web.config.
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <system.net>
    <mailSettings>
       <smtp from="test@domain.com">

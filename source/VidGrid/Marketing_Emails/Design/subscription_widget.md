@@ -1,5 +1,11 @@
---- layout: page weight: 50 title: Subscription Widget breadcrumbs: true
-navigation: show: true ---
+---
+layout: page
+weight: 50
+title: Subscription Widget
+breadcrumbs: true
+navigation:
+  show: true
+---
 
 <div class="well">
 <div class="video-container">
@@ -8,9 +14,7 @@ navigation: show: true ---
 </div>
 ### Subscription Widget
 
-Don’t miss Kyle demonstrating how to setup the Subscription Widget. This
-is code that you can place on your webpage empowering individuals to
-sign up for your Marketing Email.
+Don’t miss Kyle demonstrating how to setup the Subscription Widget. This is code that you can place on your webpage empowering individuals to sign up for your Marketing Email.
 
 </div>
 

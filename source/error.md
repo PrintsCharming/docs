@@ -3,8 +3,9 @@
 Uh-Oh! (Error 404)
 ==================
 
-{% anchor h2 %} The page you are trying to access does not exist. {%
-endanchor %}
+
+{% anchor h2 %} The page you are trying to access does not exist. {% endanchor %}
+
 
 <form action="{{ site.root }}search.html" method="get">
 Try searching for what you are looking for:
@@ -15,9 +16,7 @@ Try searching for what you are looking for:
   
   
 
-Otherwise, let's go back to the[Home]({{%20site.root%20}}index.html)
-page instead. If you believe you have reached this page by mistake,
-please contact us at [help@sendgrid.com](mailto:help@sendgrid.com)
+Otherwise, let's go back to the[Home]({{%20site.root%20}}index.html) page instead. If you believe you have reached this page by mistake, please contact us at [help@sendgrid.com](mailto:help@sendgrid.com)
 
 </div>
 <div id="logo">

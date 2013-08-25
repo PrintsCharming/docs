@@ -1,6 +1,13 @@
---- layout: page weight: 0 title: Customer Subuser Parse Settingsf
-navigation: show: true --- {% anchor h2 %} Get Current Settings {%
-endanchor %}
+---
+layout: page
+weight: 0
+title: Customer Subuser Parse Settingsf
+navigation:
+   show: true
+---
+
+{% anchor h2 %} Get Current Settings {% endanchor %}
+
 
 <table>
 <thead>
@@ -91,7 +98,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_us
 
 * * * * *
 
+
 {% anchor h2 %} Create New Entry {% endanchor %}
+
 
 <table>
 <thead>
@@ -160,8 +169,7 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>
@@ -200,7 +208,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_us
 
 * * * * *
 
+
 {% anchor h2 %} Edit Entry {% endanchor %}
+
 
 <table>
 <thead>
@@ -269,8 +279,7 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>
@@ -309,7 +318,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_us
 
 * * * * *
 
+
 {% anchor h2 %} Delete Entry {% endanchor %}
+
 
 <table>
 <thead>
@@ -372,8 +383,7 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>

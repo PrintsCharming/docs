@@ -1,13 +1,18 @@
---- layout: page weight: 0 title: Account Limits navigation: show: true
+---
+layout: page
+weight: 0
+title: Account Limits
+navigation:
+   show: true
 ---
 
-<span>Throttle your subuser when you need them to send only a specific
-amount of emails at a specified interval.</span>
+<span>Throttle your subuser when you need them to send only a specific amount of emails at a specified interval.</span>
+
 
 {% anchor h2 %} Retrieve {% endanchor %}
 
-Retrieve account limits for a specific subuser. If the API call response
-is empty that means the subuser has the limits removed.
+
+Retrieve account limits for a specific subuser. If the API call response is empty that means the subuser has the limits removed.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -79,8 +84,7 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&ap
 <result>
    <message>error</message>
    <errors>
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
    </errors>
 </result>
 
@@ -91,7 +95,9 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&ap
 
 * * * * *
 
+
 {% anchor h2 %} No Limit {% endanchor %}
+
 
 Remove the limit for a subuser.
 
@@ -175,8 +181,7 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&ap
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>
@@ -188,9 +193,9 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&ap
 
 * * * * *
 
-{% anchor h2 %} Recurring Reset {% endanchor %} A recurring reset will
-allow you to periodically reset a subusers credits to a number you
-specify. This can be either daily, weekly or monthly.
+
+{% anchor h2 %} Recurring Reset {% endanchor %}
+ A recurring reset will allow you to periodically reset a subusers credits to a number you specify. This can be either daily, weekly or monthly.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -240,7 +245,7 @@ specify. This can be either daily, weekly or monthly.
          <td>initial\_credits</td>
          <td>No</td>
          <td>Must be an integer greater than 0</td>
-         <td>The number of credits you initially want the account reset to. If thisis not set, the credits will be reset using the credits parameter</td>
+         <td>The number of credits you initially want the account reset to. If this is not set, the credits will be reset using the credits parameter</td>
       </tr>
    </tbody>
 </table>
@@ -302,8 +307,7 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&ap
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>
@@ -315,8 +319,9 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&ap
 
 * * * * *
 
-{% anchor h2 %} Total Credits {% endanchor %} Set a subusers credits to
-a specified amount.
+
+{% anchor h2 %} Total Credits {% endanchor %}
+ Set a subusers credits to a specified amount.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -398,8 +403,7 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&ap
 ### Response: Error
 
 {% codeblock %}
-<result><message>error</message><errors> ... <error>...
-error messages ...</error> ... </errors></result>
+<result><message>error</message><errors> ... <error>... error messages ...</error> ... </errors></result>
 {% endcodeblock %}
 
 </div>
@@ -407,8 +411,9 @@ error messages ...</error> ... </errors></result>
 
 * * * * *
 
-{% anchor h2 %} Increment Credits {% endanchor %} Increment a subusers
-credits by a specified amount.
+
+{% anchor h2 %} Increment Credits {% endanchor %}
+ Increment a subusers credits by a specified amount.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -496,8 +501,7 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&ap
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>
@@ -509,8 +513,9 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&ap
 
 * * * * *
 
-{% anchor h2 %} Decrement Credits {% endanchor %} Decrement a subusers
-credits by a specified amount.
+
+{% anchor h2 %} Decrement Credits {% endanchor %}
+ Decrement a subusers credits by a specified amount.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -599,8 +604,7 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&ap
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>

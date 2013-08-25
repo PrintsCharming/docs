@@ -1,7 +1,13 @@
---- layout: page weight: 0 title: Subuser Unsubscribes navigation: show:
-true --- {% anchor h2 %} Retrieve Unsubscribes {% endanchor %} Note that
-you can use *either* the days parameter *or* the start\_date and
-end\_date parameter.
+---
+layout: page
+weight: 0
+title: Subuser Unsubscribes
+navigation:
+   show: true
+---
+
+{% anchor h2 %} Retrieve Unsubscribes {% endanchor %}
+ Note that you can use *either* the days parameter *or* the start\_date and end\_date parameter.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -21,13 +27,13 @@ end\_date parameter.
          <td>task</td>
          <td>Yes</td>
          <td>Must be set to *get*</td>
-         <td>This will allow you to retrieve the unsubscribes for the specifiedsubuser</td>
+         <td>This will allow you to retrieve the unsubscribes for the specified subuser</td>
       </tr>
       <tr>
          <td>date</td>
          <td>No</td>
          <td>Must be set to 1</td>
-         <td>Retrieves the timestamps, it will return a date in a MySQL timestampformat - YYYY-MM-DD HH:MM:SS</td>
+         <td>Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
       </tr>
    </tbody>
 </table>
@@ -88,10 +94,9 @@ https://sendgrid.com/api/user.unsubscribes.xml?api_user=your_sendgrid_username&a
 
 * * * * *
 
-{% anchor h2 %} Delete Unsubscribes {% endanchor %} Since SendGrid does
-not deliver to unsubscribe addresses, users can remove unsubscribes from
-their list at any time if re-delivery to an unsubscribed address is
-desired.
+
+{% anchor h2 %} Delete Unsubscribes {% endanchor %}
+ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsubscribes from their list at any time if re-delivery to an unsubscribed address is desired.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -111,7 +116,7 @@ desired.
          <td>task</td>
          <td>Yes</td>
          <td>Must be set to *delete*</td>
-         <td>This will allow you to delete an unsubscribe record for the specifiedsubuser</td>
+         <td>This will allow you to delete an unsubscribe record for the specified subuser</td>
       </tr>
       <tr>
          <td>email</td>
@@ -183,9 +188,9 @@ https://sendgrid.com/api/user.unsubscribes.json?api_user=your_sendgrid_username&
 
 * * * * *
 
-{% anchor h2 %} Add Unsubscribes {% endanchor %} Add unsubscribe email
-records to their account if they need to stop sending email messages to
-a specific recipient.
+
+{% anchor h2 %} Add Unsubscribes {% endanchor %}
+ Add unsubscribe email records to their account if they need to stop sending email messages to a specific recipient.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -205,7 +210,7 @@ a specific recipient.
          <td>task</td>
          <td>Yes</td>
          <td>Must be set to *add*</td>
-         <td>This will allow you to add an unsubscribe record for the specifiedsubuser</td>
+         <td>This will allow you to add an unsubscribe record for the specified subuser</td>
       </tr>
       <tr>
          <td>email</td>

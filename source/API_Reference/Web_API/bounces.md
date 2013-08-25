@@ -1,12 +1,18 @@
---- layout: page weight: 0 title: Bounces navigation: show: true ---
+---
+layout: page
+weight: 0
+title: Bounces
+navigation:
+  show: true
+---
 
-This endpoint allows you to retrieve and delete entries in the Bounces
-list.
+This endpoint allows you to retrieve and delete entries in the Bounces list.
+
 
 {% anchor h2 %} get {% endanchor %}
 
-Retrieve a list of bounces with addresses and response codes, optionally
-with dates.
+
+Retrieve a list of bounces with addresses and response codes, optionally with dates.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -20,24 +26,24 @@ with dates.
          <td>date</td>
          <td>No</td>
          <td>Must be set to 1</td>
-         <td>Retrieve the timestamp of the bounce records. It will return a date in aMySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
+         <td>Retrieve the timestamp of the bounce records. It will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
       </tr>
       <tr>
          <td>days</td>
          <td>No</td>
          <td>If specified, must be an integer greater than 0</td>
-         <td>Number of days in the past for which to retrieve bounces (includestoday)</td>
+         <td>Number of days in the past for which to retrieve bounces (includes today)</td>
       </tr>
       <tr>
          <td>start\_date</td>
          <td>No</td>
-         <td>Date must be in YYYY-MM-DD format and be earlier than the end\_dateparameter.</td>
+         <td>Date must be in YYYY-MM-DD format and be earlier than the end\_date parameter.</td>
          <td>The start of the date range for which to retrieve bounces.</td>
       </tr>
       <tr>
          <td>end\_date</td>
          <td>No</td>
-         <td>Date must be in YYYY-MM-DD format and be later than the start\_dateparameter.</td>
+         <td>Date must be in YYYY-MM-DD format and be later than the start\_date parameter.</td>
          <td>The end of the date range for which to retrieve bounces.</td>
       </tr>
       <tr>
@@ -79,7 +85,46 @@ https://sendgrid.com/api/bounces.get.json?api_user=your_sendgrid_username&api_ke
 
 ### Response
 
-
+{% codeblock lang:javascript %}
+[
+  {
+    "status": "4.0.0",
+    "created": "2011-09-16 22:02:19",
+    "reason": "Unable to resolve MX host sendgrid.ne",
+    "email": "esting@sendgrid.ne"
+  },
+  {
+    "status": "4.0.0",
+    "created": "2011-09-19 17:47:15",
+    "reason": "Connection timed out",
+    "email": "rawest@gmail.co"
+  },
+  {
+    "status": "5.1.1",
+    "created": "2011-10-17 11:07:10",
+    "reason": "550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. Learn more at http://mail.google.com/support/bin/answer.py?answer=6596 z10si838244anz.171 ",
+    "email": "claims@msp.org"
+  },
+  {
+    "status": "5.7.1",
+    "created": "2011-10-26 23:06:22",
+    "reason": "550 5.7.1 <info@bnl.co.uk>... Relaying denied. Proper authentication required. ",
+    "email": "info@bnl.co.uk"
+  },
+  {
+    "status": "5.7.1",
+    "created": "2011-12-01 01:45:55",
+    "reason": "554 5.7.1 <richard@hengseng.com>: Relay access denied ",
+    "email": "richard@hengseng.com"
+  },
+  {
+    "status": "550",
+    "created": "2012-06-01 14:10:15",
+    "reason": "550 support.sendgrid.net [74.63.202.100] is currently not permitted to relay through this server. Perhaps you have not logged into the pop/imap server in the last 30 minutes or do not have SMTP Authentication turned on in your email client. ",
+    "email": "test@brandonmwest.com"
+  }
+]
+{% endcodeblock %}
 
 </div>
 <div class="tab-pane" id="get-xml">
@@ -98,18 +143,14 @@ https://sendgrid.com/api/bounces.get.xml?api_user=your_sendgrid_username&api_key
    <bounce>
       <email>email1@domain.com</email>
       <status>5.1.1</status>
-      <reason>host [127.0.0.1] said: 550 5.1.1 unknown
-or illegal user: email1@domain.com</reason>
-      <created>2009-06-10
-12:40:30</created>
+      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com</reason>
+      <created>2009-06-10 12:40:30</created>
    </bounce>
    <bounce>
       <email>email2@domain2.com</email>
       <status>5.1.1</status>
-      <reason>host [127.0.0.1] said: 550 5.1.1 unknown
-or illegal user: email2@domain2.com</reason>
-      <created>2009-08-01
-10:16:30</created>
+      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com</reason>
+      <created>2009-08-01 10:16:30</created>
    </bounce>
 </bounces>
 
@@ -120,10 +161,11 @@ or illegal user: email2@domain2.com</reason>
 
 * * * * *
 
+
 {% anchor h2 %} delete {% endanchor %}
 
-Delete an address from the Bounce list. Please note that if no
-parameters are specified the ENTIRE list will be deleted.
+
+Delete an address from the Bounce list. Please note that if no parameters are specified the ENTIRE list will be deleted.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -220,7 +262,9 @@ https://sendgrid.com/api/bounces.delete.xml?api_user=your_sendgrid_username&api_
 
 * * * * *
 
+
 {% anchor h2 %} Count {% endanchor %}
+
 
 <table>
 <tbody>

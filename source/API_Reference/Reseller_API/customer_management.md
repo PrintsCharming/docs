@@ -1,7 +1,13 @@
---- layout: page weight: 0 title: Customer Management navigation: show:
-true --- These are actions that directly affect your customer. We
-provide access via XML and JSON. {% anchor h2 %} Create a Customer {%
-endanchor %}
+---
+layout: page
+weight: 0
+title: Customer Management
+navigation:
+   show: true
+---
+These are actions that directly affect your customer. We provide access via XML and JSON. 
+{% anchor h2 %} Create a Customer {% endanchor %}
+
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -69,7 +75,7 @@ endanchor %}
          <td>zip</td>
          <td>Yes</td>
          <td>No more than 50 characters</td>
-         <td>Zip of new customer. This field is not validated for correct value. It'sup to developer to check for valid zip code.</td>
+         <td>Zip of new customer. This field is not validated for correct value. It's up to developer to check for valid zip code.</td>
       </tr>
       <tr>
          <td>country</td>
@@ -110,7 +116,7 @@ endanchor %}
       <tr>
          <td>ip\_group[]</td>
          <td>No</td>
-         <td>No more than 255 characters for each ip\_group name. It must belong toyou.</td>
+         <td>No more than 255 characters for each ip\_group name. It must belong to you.</td>
          <td>Name of the IP Group you wish to optionally add.</td>
       </tr>
       <tr>
@@ -122,14 +128,14 @@ endanchor %}
       <tr>
          <td>free\_user</td>
          <td>Maybe</td>
-         <td>If the new customer is a free customer, you need to specify thisparameter. Either true or false.</td>
+         <td>If the new customer is a free customer, you need to specify this parameter. Either true or false.</td>
          <td>Create a free customer</td>
       </tr>
       <tr>
          <td>billing\_date</td>
          <td>No</td>
-         <td>If the new customer's billing anniversary date is on a different datefrom the time you create the customer, you need to specify thisparameter. Must be in YYYY-mm-dd format. This date must be within onebilling cycle from the time you create this customer. (e.g. if they signup on 2/28/11, then the latest date you can use is 3/28/11)</td>
-         <td>If the new customer's billing anniversary date is different from today(or when you execute this API call), you can specify the first billinganniversary date</td>
+         <td>If the new customer's billing anniversary date is on a different date from the time you create the customer, you need to specify this parameter. Must be in YYYY-mm-dd format. This date must be within one billing cycle from the time you create this customer. (e.g. if they sign up on 2/28/11, then the latest date you can use is 3/28/11)</td>
+         <td>If the new customer's billing anniversary date is different from today (or when you execute this API call), you can specify the first billing anniversary date</td>
       </tr>
    </tbody>
 </table>
@@ -164,8 +170,7 @@ https://sendgrid.com/apiv2/reseller.add.xml?api_user=your_sendgrid_username&api_
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>
@@ -204,12 +209,9 @@ https://sendgrid.com/apiv2/reseller.add.json?api_user=your_sendgrid_username&api
 
 * * * * *
 
-{% anchor h2 %} Delete a Customer {% endanchor %} Remove a customer from
-your account. This is **not** the same as disabling a customer on our
-system. However, the removed user will still be stored within the system
-so that you cannot re-register a new user with this new username. This
-is the same thing as closing out a customers account at the end of their
-billing cycle.
+
+{% anchor h2 %} Delete a Customer {% endanchor %}
+ Remove a customer from your account. This is **not** the same as disabling a customer on our system. However, the removed user will still be stored within the system so that you cannot re-register a new user with this new username. This is the same thing as closing out a customers account at the end of their billing cycle.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -258,8 +260,7 @@ https://sendgrid.com/apiv2/reseller.delete.xml?api_user=your_sendgrid_username&a
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>
@@ -489,9 +490,9 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 
 * * * * *
 
-{% anchor h2 %} Enable a Customer {% endanchor %} Enable a customer so
-they may start sending out emails again. This call will not enable
-website access.
+
+{% anchor h2 %} Enable a Customer {% endanchor %}
+ Enable a customer so they may start sending out emails again. This call will not enable website access.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -577,8 +578,9 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 
 * * * * *
 
-{% anchor h2 %} Disable a Customer {% endanchor %} This prevents them
-from sending out emails with SendGrid.
+
+{% anchor h2 %} Disable a Customer {% endanchor %}
+ This prevents them from sending out emails with SendGrid.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -664,9 +666,9 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 
 * * * * *
 
+
 {% anchor h2 %} Enable Website Access To A Customer {% endanchor %}
-Allow a customer to login to the SendGrid.com website. This call will
-not enable the customer from sending out emails.
+ Allow a customer to login to the SendGrid.com website. This call will not enable the customer from sending out emails.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -752,9 +754,9 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 
 * * * * *
 
+
 {% anchor h2 %} Disable Website Access To A Customer {% endanchor %}
-Disallow a customer to login to the SendGrid.com website. This call will
-not prevent them from sending out emails.
+ Disallow a customer to login to the SendGrid.com website. This call will not prevent them from sending out emails.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -840,8 +842,9 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 
 * * * * *
 
-{% anchor h2 %} Update Customer Profile {% endanchor %} Allows you to
-update your customers profile information
+
+{% anchor h2 %} Update Customer Profile {% endanchor %}
+ Allows you to update your customers profile information
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -948,8 +951,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>
@@ -988,9 +990,9 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 
 * * * * *
 
-{% anchor h2 %} Update Customer Password {% endanchor %} Passwords are
-encrypted by default and therefore cannot be retrieved; however, you can
-reset a customers password.
+
+{% anchor h2 %} Update Customer Password {% endanchor %}
+ Passwords are encrypted by default and therefore cannot be retrieved; however, you can reset a customers password.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -1057,8 +1059,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>
@@ -1097,9 +1098,9 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 
 * * * * *
 
-{% anchor h2 %} Update Customer Username {% endanchor %} Note that your
-customer account username is used to login to our SMTP server *and* the
-website and changes take effect immediately.
+
+{% anchor h2 %} Update Customer Username {% endanchor %}
+ Note that your customer account username is used to login to our SMTP server *and* the website and changes take effect immediately.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -1113,7 +1114,7 @@ website and changes take effect immediately.
          <td>task</td>
          <td>Yes</td>
          <td>Must be set to **setUsername**</td>
-         <td>This will let us know you want to update your customers username. Thisis the new username your customer will be authenticating with our SMTPservers *and* to access the website. This update takes effectimmediately</td>
+         <td>This will let us know you want to update your customers username. This is the new username your customer will be authenticating with our SMTP servers *and* to access the website. This update takes effect immediately</td>
       </tr>
       <tr>
          <td>user</td>
@@ -1124,8 +1125,8 @@ website and changes take effect immediately.
       <tr>
          <td>username</td>
          <td>Yes</td>
-         <td>Must be in email format, not more than 100 characters, cannot be alreadytaken and cannot contain SendGrid.com in the domain name</td>
-         <td>This is the new username we will be authenticating with our SMTP servers*and* to access our site. This update takes effect immediately</td>
+         <td>Must be in email format, not more than 100 characters, cannot be already taken and cannot contain SendGrid.com in the domain name</td>
+         <td>This is the new username we will be authenticating with our SMTP servers *and* to access our site. This update takes effect immediately</td>
       </tr>
       <tr>
          <td>method</td>
@@ -1166,8 +1167,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>
@@ -1206,9 +1206,9 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 
 * * * * *
 
-{% anchor h2 %} Update Customer Email Address {% endanchor %} This is
-the contact email we use for your customers. Changes take place
-immediately. It is your responsibility to validate the contact email.
+
+{% anchor h2 %} Update Customer Email Address {% endanchor %}
+ This is the contact email we use for your customers. Changes take place immediately. It is your responsibility to validate the contact email.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -1222,7 +1222,7 @@ immediately. It is your responsibility to validate the contact email.
          <td>task</td>
          <td>Yes</td>
          <td>Must be set to **setEmail**</td>
-         <td>This will let us know you want to update your customers email address.This update takes effect immediately</td>
+         <td>This will let us know you want to update your customers email address. This update takes effect immediately</td>
       </tr>
       <tr>
          <td>user</td>
@@ -1234,7 +1234,7 @@ immediately. It is your responsibility to validate the contact email.
          <td>email</td>
          <td>Yes</td>
          <td>Must be in email format, not more than 100 characters</td>
-         <td>This is the new email address we will use for contacting customer. Thisupdate takes effect immediately</td>
+         <td>This is the new email address we will use for contacting customer. This update takes effect immediately</td>
       </tr>
       <tr>
          <td>method</td>
@@ -1275,8 +1275,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
    <message>error</message>
    <errors>
       ...
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
       ...
    </errors>
 </result>

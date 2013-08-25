@@ -1,16 +1,20 @@
---- layout: page weight: 0 title: Customer Subuser Account Limits
-navigation: show: true ---
+---
+layout: page
+weight: 0
+title: Customer Subuser Account Limits
+navigation:
+   show: true
+---
 
-Throttle your customer subuser when you need them to send only a
-specific amount of emails at a specified interval.
+Throttle your customer subuser when you need them to send only a specific amount of emails at a specified interval.
 
 * * * * *
 
+
 {% anchor h2 %} Retrieve {% endanchor %}
 
-Retrieve account limits for a specific customer subuser. If the API call
-response is empty that means the customer subuser has the limits
-removed.
+
+Retrieve account limits for a specific customer subuser. If the API call response is empty that means the customer subuser has the limits removed.
 
 <table>
 <thead>
@@ -46,8 +50,7 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_us
 ### Response: Success
 
 {% codeblock %}
-<credits><credit>0</credit><credit_remain>2000</credit_remain><last_reset>2011-02-21</last_reset></credits>Response:
-Error
+<credits><credit>0</credit><credit_remain>2000</credit_remain><last_reset>2011-02-21</last_reset></credits>Response: Error
 
 </h3>
 {% codeblock lang:xml %}
@@ -56,8 +59,7 @@ Error
 <result>
    <message>error</message>
    <errors>
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
    </errors>
 </result>
 {% endcodeblock %}
@@ -87,7 +89,9 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 
 * * * * *
 
+
 {% anchor h2 %} No Limit {% endanchor %}
+
 
 Obtain a complete list of all customer subuser.
 
@@ -136,8 +140,7 @@ result\><message>success</message></result>
 <result>
    <message>error</message>
    <errors>
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
    </errors>
 </result>
 
@@ -170,11 +173,11 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 
 * * * * *
 
+
 {% anchor h2 %} Recurring Reset {% endanchor %}
 
-A recurring reset will allow you to periodically reset a subusers
-credits to a number you specify. This can be either daily, weekly or
-monthly.
+
+A recurring reset will allow you to periodically reset a subusers credits to a number you specify. This can be either daily, weekly or monthly.
 
 <table>
 <thead>
@@ -251,8 +254,7 @@ result\><message>success</message></result>
 <result>
    <message>error</message>
    <errors>
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
    </errors>
 </result>
 
@@ -285,7 +287,9 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 
 * * * * *
 
+
 {% anchor h2 %} Total Credits {% endanchor %}
+
 
 Set a subusers credits to a specified amount.
 
@@ -338,8 +342,7 @@ result\><message>success</message></result>
 <result>
    <message>error</message>
    <errors>
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
    </errors>
 </result>
 
@@ -372,7 +375,9 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 
 * * * * *
 
+
 {% anchor h2 %} Increment Credits {% endanchor %}
+
 
 Increment a subusers credits by a specified amount.
 
@@ -427,8 +432,7 @@ result\><message>success</message></result>
 <result>
    <message>error</message>
    <errors>
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
    </errors>
 </result>
 
@@ -461,7 +465,9 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 
 * * * * *
 
+
 {% anchor h2 %} Decrement Credits {% endanchor %}
+
 
 Decrement a subusers credits by a specified amount.
 
@@ -516,8 +522,7 @@ result\><message>success</message></result>
 <result>
    <message>error</message>
    <errors>
-      <error>... error messages
-...</error>
+      <error>... error messages ...</error>
    </errors>
 </result>
 

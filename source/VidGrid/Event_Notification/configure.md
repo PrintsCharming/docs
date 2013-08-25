@@ -1,5 +1,11 @@
---- layout: page weight: 1000 title: Event Notification App breadcrumbs:
-true navigation: show: true ---
+---
+layout: page
+weight: 1000
+title: Event Notification App
+breadcrumbs: true
+navigation:
+  show: true
+---
 
 <div class="well">
 <div class="video-container">
@@ -8,10 +14,7 @@ true navigation: show: true ---
 </div>
 ### Configuring the Event Notification App
 
-The Event Notification App allows you to monitor all activity through
-your SendGrid account in real-time. Tom goes into detail on how to set
-this up using the Event Notification App in your account and adding the
-necessary files to your host server.
+The Event Notification App allows you to monitor all activity through your SendGrid account in real-time. Tom goes into detail on how to set this up using the Event Notification App in your account and adding the necessary files to your host server.
 
 </div>
 

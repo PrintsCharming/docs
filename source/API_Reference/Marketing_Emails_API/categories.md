@@ -1,9 +1,16 @@
---- layout: page weight: 0 title: Categories navigation: show: true ---
+---
+layout: page
+weight: 0
+title: Categories
+navigation:
+  show: true
+---
 
-This module allows you to create and manage categories within your
-Marketing Emails.
+This module allows you to create and manage categories within your Marketing Emails.
+
 
 {% anchor h2 %} create {% endanchor %}
+
 
 Create a new Category.
 
@@ -90,7 +97,9 @@ https://sendgrid.com/api/newsletter/category/create.xml?api_user=your_sendgrid_u
 
 * * * * *
 
+
 {% anchor h2 %} add {% endanchor %}
+
 
 Assign a Category to an existing Marketing Email.
 
@@ -183,7 +192,9 @@ https://sendgrid.com/api/newsletter/category/add.xml?&api_user=your_sendgrid_use
 
 * * * * *
 
+
 {% anchor h2 %} remove {% endanchor %}
+
 
 Remove specific categories, or all categories from a Marketing Email.\\
 
@@ -276,7 +287,9 @@ https://sendgrid.com/api/newsletter/category/remove.xml?api_user=your_sendgrid_u
 
 * * * * *
 
+
 {% anchor h2 %} list {% endanchor %}
+
 
 List all categories.
 
