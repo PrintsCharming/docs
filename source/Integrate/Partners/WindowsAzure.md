@@ -186,11 +186,7 @@ In your index.html file add the following code near the closing body tag to add 
 
 In the js/app.js file, after the “$(“#queue”).append …” line, add the following code:
 
-{%codeblock lang:javascript%}
-var client = new WindowsAzure.MobileServiceClient("https://website.azure-mobile.net/",  "<Password>");
-var item = { request: data.name, song: data.track, user: data.user };
-client.getTable("playlist_songs").insert(item);
-{%endcodeblock%}
+
 
 Now, to allow for your app to have access to the DB, your URL to the cross origin resource sharing (cors) setting.
 

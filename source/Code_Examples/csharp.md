@@ -15,13 +15,16 @@ Using .NET's Built-in SMTP Library
 If you are using ASP.NET, you can specify SMTP settings in web.config.
 
 {% codeblock lang:xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <system.net>
-  <mailSettings>
-    <smtp from="test@domain.com">
-      <network host="smtp.sendgrid.net" password="password" userName="username" port="587" />
-    </smtp>
-  </mailSettings>
+   <mailSettings>
+      <smtp from="test@domain.com">
+         <network host="smtp.sendgrid.net" password="password" userName="username" port="587"/>
+      </smtp>
+   </mailSettings>
 </system.net>
+
 {% endcodeblock %}
 
 This C# program will build a MIME email and send it through SendGrid.  .NET already has built in libraries to send and receive emails. 
@@ -83,7 +86,7 @@ Using the SendGrid C# Library
 To use SendGrid in your C# project, you can either <a href="https://github.com/sendgrid/sendgrid-csharp.git">download the SendGrid C# .NET libraries directly from our Github repository</a> or, if you have the NuGet package manager installed, you can grab them automatically.
 
 {% codeblock %}
-PM> Install-Package SendGrid 
+PM> Install-Package SendGrid
 {% endcodeblock %}
 
 The SendGrid library depends on [RestSharp](https://github.com/restsharp/RestSharp). NuGet will handle this dependency automatically, otherwise you will need to add it manually. 
