@@ -1,0 +1,115 @@
+--- layout: page weight: 0 title: View Available Packages navigation:
+show: true ---
+
+List all packages available to your account.
+
+There are no extra parameters required for this call
+
+{% xmljsontabs get %}
+
+<div class="tab-content">
+<div class="tab-pane" id="get-xml">
+### Call
+
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.packages.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password
+{% endcodeblock %}
+
+### Response: Success
+
+{% codeblock lang:xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <packages>
+      <package>
+         <name>Basic Package</name>
+         <price>9.95</price>
+         <description>Basic Package description</description>
+         <credits>10000</credits>
+         <overage>0.001</overage>
+         <has_reseller>false</has_reseller>
+         <has_ip>false</has_ip>
+         <distributor_price>50</distributor_price>
+      </package>
+      <package>
+         <name>Silver Package</name>
+         <price>79.95</price>
+         <description>Silver
+Package Description</description>
+         <credits>50000</credits>
+         <overage>0.001</overage>
+         <has_reseller>false</has_reseller>
+         <has_ip>false</has_ip>
+         <distributor_price>50</distributor_price>
+      </package>
+   </packages>
+</result>
+
+{% endcodeblock %}
+
+### Response: Error
+
+{% codeblock lang:xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error</message>
+   <errors>
+      ...
+      <error>... error messages
+...</error>
+      ...
+   </errors>
+</result>
+
+{% endcodeblock %}
+
+</div>
+<div class="tab-pane active" id="get-json">
+### Call
+
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.packages.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
+{% endcodeblock %}
+
+### Response: Success
+
+{% codeblock lang:javascript %}
+[
+  {
+    "name": "Basic Package",
+    "price": 9.95,
+    "description": "Basic Package description",
+    "credits": 10000,
+    "overage": 0.001,
+    "has_reseller": false,
+    "has_ip": false,
+    "distributor_price": 50
+  },
+  {
+    "name": "Silver Package",
+    "price": 79.95,
+    "description": "Silver Package description",
+    "credits": 50000,
+    "overage": 0.001,
+    "has_reseller": false,
+    "has_ip": true
+  }
+]
+{% endcodeblock %}
+
+### Response: Error
+
+{% codeblock lang:javascript %}
+{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
+{% endcodeblock %}
+
+</div>
+</div>
+

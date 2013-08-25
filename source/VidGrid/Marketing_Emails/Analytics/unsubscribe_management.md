@@ -1,0 +1,17 @@
+--- layout: page weight: 0 title: Managing Marketing Email Unsubscribe
+List breadcrumbs: true navigation: show: true ---
+
+<div class="well">
+<div class="video-container">
+<iframe width="100%" height="100%" src="http://www.youtube.com/embed/2v1J4QVgYVo?rel=0" frameborder="0" allowfullscreen></iframe>
+
+</div>
+### Managing Marketing Email Unsubscribe Requests
+
+This must-see video by Keanon shows you how to manage the list of people
+that unsubscribe from your Marketing Email. It is important to learn how
+they are unsubscribing from a specific list and not necessarily all
+future lists that you create or clone.
+
+</div>
+
