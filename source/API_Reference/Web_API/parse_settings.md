@@ -209,7 +209,7 @@ set
 
 <div class="tab-content">
   <div class="tab-pane active" id="set-json">
-     <h3>Call</h3>
+   <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/parse.set.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1
 {% endcodeblock %}

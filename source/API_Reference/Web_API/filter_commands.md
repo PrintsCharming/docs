@@ -138,7 +138,7 @@ https://sendgrid.com/api/filter.activate.xml?api_user=your_sendgrid_username&api
 {% codeblock %}
 https://sendgrid.com/api/filter.deactivate.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
 {% endcodeblock %}
-     <h3>Response</h3>
+   <h3>Response</h3>
 
 
 {% codeblock lang:javascript %}

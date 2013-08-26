@@ -96,7 +96,7 @@ Retrieves the timestamps, it will return a date in a MySQL timestamp format - YY
 {% codeblock %}
 https://sendgrid.com/api/user.spamreports.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=
 {% endcodeblock %}
-  <h3>Response</h3>
+<h3>Response</h3>
   
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -126,7 +126,7 @@ https://sendgrid.com/api/user.spamreports.xml?api_user=your_sendgrid_username&ap
 {% codeblock %}
 https://sendgrid.com/api/user.spamreports.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=
 {% endcodeblock %}
-  <h3>Response</h3>
+<h3>Response</h3>
   
 {% codeblock lang:javascript %}
 [
@@ -240,7 +240,7 @@ You must specify the spam reports to remove
 {% codeblock %}
 https://sendgrid.com/api/user.spamreports.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=spamreport@domain.com
 {% endcodeblock %}
-  <h3>Response: Success</h3>
+<h3>Response: Success</h3>
   
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -280,7 +280,7 @@ https://sendgrid.com/api/user.spamreports.xml?api_user=your_sendgrid_username&ap
 {% codeblock %}
 https://sendgrid.com/api/user.spamreports.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=spamreport@domain.com
 {% endcodeblock %}
-  <h3>Response: Success</h3>
+<h3>Response: Success</h3>
   
 {% codeblock lang:javascript %}
 {

@@ -45,18 +45,18 @@ add
 
   <div class="tab-content">
     <div class="tab-pane active" id="add-json">
-  <h3>Call</h3>
+<h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/recipients/add.json?name=SendGrid%20NL%20Test2&list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %}
 
-  <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 {% codeblock lang:javascript %}
 {
   "message": "success"
 }
 {% endcodeblock %}
-  <h3>Response: Error</h3>
+<h3>Response: Error</h3>
 {% codeblock lang:javascript %}
 {
   "message": "error",
@@ -79,7 +79,7 @@ https://sendgrid.com/api/newsletter/recipients/add.xml?name=SendGrid%20NL%20Test
 </result>
 
 {% endcodeblock %}
-  <h3>Response: Error</h3>
+<h3>Response: Error</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
@@ -123,19 +123,19 @@ get
 
   <div class="tab-content">
     <div class="tab-pane active" id="get-json">
-  <h3>Call</h3>
+<h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/recipients/get.json?name=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %}
 
-  <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 {% codeblock lang:javascript %}[
   {
     "list": "Training Contacts"
   }
 ]
 {% endcodeblock %}
-  <h3>Response: Error</h3>
+<h3>Response: Error</h3>
 {% codeblock lang:javascript %}
 {
   "message": "error",
@@ -160,7 +160,7 @@ https://sendgrid.com/api/newsletter/recipients/get.xml?name=test&api_user=your_s
 </lists>
 
 {% endcodeblock %}
-  <h3>Response: Error</h3>
+<h3>Response: Error</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
@@ -212,18 +212,18 @@ delete
 
   <div class="tab-content">
     <div class="tab-pane active" id="delete-json">
-  <h3>Call</h3>
+<h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/delete.json?name=SendGrid%20NL%20Test1&list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %}
 
-  <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 {% codeblock lang:javascript %}
 {
   "message": "success"
 }
 {% endcodeblock %}
-  <h3>Response: Error</h3>
+<h3>Response: Error</h3>
 {% codeblock lang:javascript %}
 {
   "message": "error",
@@ -246,7 +246,7 @@ https://sendgrid.com/api/newsletter/delete.xml?name=SendGrid%20NL%20Test1&list=t
 </result>
 
 {% endcodeblock %}
-  <h3>Response: Error</h3>
+<h3>Response: Error</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>

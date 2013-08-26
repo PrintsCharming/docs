@@ -253,7 +253,7 @@ This is returned if that filter has no settings or is not enabled.
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="customize-json">
-     <h3>Call</h3>
+   <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=setup&user=example@example.com
 {% endcodeblock %}
@@ -302,7 +302,7 @@ Get Current Settings
 
 <div class="tab-content">
   <div class="tab-pane" id="settings-xml">
-     <h3>Call</h3>
+   <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=example@example.com&method=app
 {% endcodeblock %}
@@ -347,7 +347,7 @@ This is returned if that filter has no settings or is not enabled.
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="settings-json">
-     <h3>Call</h3>
+   <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=example@example.com&method=app
 {% endcodeblock %}

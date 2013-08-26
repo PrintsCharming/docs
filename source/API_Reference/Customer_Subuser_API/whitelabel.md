@@ -56,7 +56,7 @@ Must be set to *list*
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.whitelabel.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list
 {% endcodeblock %}
-  <h3>Response</h3>
+<h3>Response</h3>
   
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -86,7 +86,7 @@ https://sendgrid.com/apiv2/customer.whitelabel.xml?api_user=your_sendgrid_userna
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.whitelabel.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list
 {% endcodeblock %}
-  <h3>Response</h3>
+<h3>Response</h3>
   
 {% codeblock lang:xml %}
 
@@ -175,7 +175,7 @@ Whitelabel mail\_domain used to append a whitelabel record to a subuser
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.whitelabel.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&user=example@example.com&mail_domain=email.sendgrid.com
 {% endcodeblock %}
-  <h3>Response: Success</h3>
+<h3>Response: Success</h3>
   
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -220,7 +220,7 @@ https://sendgrid.com/apiv2/customer.whitelabel.xml?api_user=your_sendgrid_userna
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.whitelabel.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&user=example@example.com&mail_domain=email.sendgrid.com
 {% endcodeblock %}
-  <h3>Response: Success</h3>
+<h3>Response: Success</h3>
   
 {% codeblock lang:javascript %}
 {

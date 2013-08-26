@@ -73,18 +73,18 @@ add
 
   <div class="tab-content">
     <div class="tab-pane active" id="add-json">
-  <h3>Call</h3>
+<h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/variations/add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=variation_name&subject=variation_subject&html=variation_body
 {% endcodeblock %}
 
-  <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 {% codeblock lang:javascript %}
 {
   "message": "success"
 }
 {% endcodeblock %}
-  <h3>Response: Error</h3>
+<h3>Response: Error</h3>
 {% codeblock lang:javascript %}
 {
   "message": "error",
@@ -107,7 +107,7 @@ https://sendgrid.com/api/newsletter/variations/add.xml?api_user=your_sendgrid_us
 </result>
 
 {% endcodeblock %}
-  <h3>Response: Error</h3>
+<h3>Response: Error</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
@@ -181,18 +181,18 @@ Edit an existing Variation.
 
   <div class="tab-content">
     <div class="tab-pane active" id="edit-json">
-  <h3>Call</h3>
+<h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/variations/edit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=existing_variation_name&newvariation=new_variation_name&subject=variation_subject&html=variation_body
 {% endcodeblock %}
 
-  <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 {% codeblock lang:javascript %}
 {
   "message": "success"
 }
 {% endcodeblock %}
-  <h3>Response: Error</h3>
+<h3>Response: Error</h3>
 {% codeblock lang:javascript %}
 {
   "message": "error",
@@ -215,7 +215,7 @@ https://sendgrid.com/api/newsletter/variations/edit.xml?api_user=your_sendgrid_u
 </result>
 
 {% endcodeblock %}
-  <h3>Response: Error</h3>
+<h3>Response: Error</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
@@ -260,14 +260,14 @@ Retrieve the contents of an existing Variation.
 
   <div class="tab-content">
     <div class="tab-pane active" id="get-json">
-  <h3>Call</h3>
+<h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/variations/get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=existing_variation_name
 {% endcodeblock %}
 
-  <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
-  <h3>Response: Error</h3>
+<h3>Response: Error</h3>
 {% codeblock lang:javascript %}
 {
   "message": "error",
@@ -287,7 +287,7 @@ https://sendgrid.com/api/newsletter/variations/get.xml?api_user=your_sendgrid_us
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 {% endcodeblock %}
-  <h3>Response: Error</h3>
+<h3>Response: Error</h3>
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -327,7 +327,7 @@ Cancels a current Variation send that is in progress.
 
   <div class="tab-content">
     <div class="tab-pane active" id="cancel-json">
-  <h3>Call</h3>
+<h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/variations/cancel.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft
 {% endcodeblock %}
@@ -409,7 +409,7 @@ Delete the contents of an existing Variation.
 
   <div class="tab-content">
     <div class="tab-pane active" id="delete-json">
-  <h3>Call</h3>
+<h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/variations/delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_delete
 {% endcodeblock %}
@@ -489,7 +489,7 @@ Retrieve a list of all Variations attached to a Marketing Email.
 
   <div class="tab-content">
     <div class="tab-pane active" id="list-json">
-  <h3>Call</h3>
+<h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/variations/list.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_find
 {% endcodeblock %}
@@ -570,7 +570,7 @@ Select the Variation you would like to send.
 
   <div class="tab-content">
     <div class="tab-pane active" id="delete-json">
-  <h3>Call</h3>
+<h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/variations/pickwinner.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_that_wins
 {% endcodeblock %}
@@ -675,7 +675,7 @@ Schedule a send time and percentage for your variations.
 
   <div class="tab-content">
     <div class="tab-pane active" id="schedule-json">
-  <h3>Call</h3>
+<h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/variations/schedule.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&percent=50
 {% endcodeblock %}

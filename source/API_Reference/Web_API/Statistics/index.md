@@ -118,7 +118,7 @@ This is used to indicate you are interested in all-time totals
 {% codeblock %}
 https://sendgrid.com/api/stats.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&days=2
 {% endcodeblock %}
-     <h3>Response</h3>
+   <h3>Response</h3>
 
 {% codeblock lang:javascript %}
 [
@@ -239,7 +239,7 @@ https://sendgrid.com/api/stats.get.xml?api_user=your_sendgrid_username&api_key=y
 {% codeblock %}
 https://sendgrid.com/api/stats.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=true
 {% endcodeblock %}
-     <h3>Response</h3>
+   <h3>Response</h3>
 
 {% codeblock lang:javascript %}
 [

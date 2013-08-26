@@ -83,7 +83,7 @@ The subuser who will have their account limits retrieved
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=retrieve
 {% endcodeblock %}
-  <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -122,7 +122,7 @@ https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&a
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=retrieve
 {% endcodeblock %}
-  <h3>Response: Error</h3>
+<h3>Response: Error</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -219,7 +219,7 @@ The subuser who will have their account limits removed
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=none
 {% endcodeblock %}
-  <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -256,7 +256,7 @@ https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&a
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=none
 {% endcodeblock %}
-  <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -460,7 +460,7 @@ The number of credits you initially want the account reset to. If this is not se
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=recurring&credits=200&period=daily
 {% endcodeblock %}
-  <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -497,7 +497,7 @@ https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&a
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=recurring&credits=200&period=daily
 {% endcodeblock %}
-  <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -629,7 +629,7 @@ The total number of credits the subuser will be reset to
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=total&credits=200
 {% endcodeblock %}
-	  <h3>Response: Success</h3>
+	<h3>Response: Success</h3>
 	
 {% codeblock lang:javascript %}
 {
@@ -666,7 +666,7 @@ https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&a
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=total&credits=200
 {% endcodeblock %}
-  <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -737,7 +737,7 @@ Increment Credits
 
 <div class="tab-content">
 	  <div class="tab-pane active" id="increment-json">
-	     <h3>Call</h3>
+	   <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=increment&credits=20
 {% endcodeblock %}
@@ -784,7 +784,7 @@ https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&a
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=increment&credits=200
 {% endcodeblock %}
-  <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -916,7 +916,7 @@ The total number of credits the subuser will be decremented by
 {% codeblock %}
 	https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=decrement&credits=200
 	{% endcodeblock %}
-	  <h3>Response: Success</h3>
+	<h3>Response: Success</h3>
 	
 {% codeblock lang:javascript %}
 {
@@ -953,7 +953,7 @@ The total number of credits the subuser will be decremented by
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=decrement&credits=200
 {% endcodeblock %}
-  <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>

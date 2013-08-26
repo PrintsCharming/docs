@@ -36,11 +36,11 @@ Get Current Settings
 
 <div class="tab-content">
   <div class="tab-pane" id="get-xml">
-     <h3>Call</h3>
+   <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com
 {% endcodeblock %}
-  <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <parse>
@@ -52,7 +52,7 @@ https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&ap
 </parse>
 
 {% endcodeblock %}
-  <h3>Response: Empty</h3>
+<h3>Response: Empty</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <parse/>
@@ -60,11 +60,11 @@ https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&ap
 {% endcodeblock %}
     </div>
   <div class="tab-pane active" id="get-json">
-     <h3>Call</h3>
+   <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com
 {% endcodeblock %}
-  <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 {% codeblock lang:javascript %}
 {
   "parse": [
@@ -76,7 +76,7 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&a
   ]
 }
 {% endcodeblock %}
-  <h3>Response: Empty</h3>
+<h3>Response: Empty</h3>
 {% codeblock lang:javascript %}
 {
   "parse": [
@@ -128,11 +128,11 @@ Create New Entry
 
 <div class="tab-content">
   <div class="tab-pane" id="create-xml">
-     <h3>Call</h3>
+   <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=set&user=example@example.com
 {% endcodeblock %}
-  <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
@@ -140,7 +140,7 @@ https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&ap
 </result>
 
 {% endcodeblock %}
-  <h3>Response: Error</h3>
+<h3>Response: Error</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
@@ -155,17 +155,17 @@ https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&ap
 {% endcodeblock %}
     </div>
   <div class="tab-pane active" id="create-json">
-     <h3>Call</h3>
+   <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=set&user=example@example.com
 {% endcodeblock %}
-  <h3>Response</h3>
+<h3>Response</h3>
 {% codeblock lang:javascript %}
 {
   "message": "success"
 }
 {% endcodeblock %}
-  <h3>Response: Error</h3>
+<h3>Response: Error</h3>
 {% codeblock lang:javascript %}
 {
   "message": "error",
@@ -218,11 +218,11 @@ Edit Entry
 
 <div class="tab-content">
   <div class="tab-pane" id="edit-xml">
-     <h3>Call</h3>
+   <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=update&user=example@example.com
 {% endcodeblock %}
-  <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
@@ -230,7 +230,7 @@ https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&ap
 </result>
 
 {% endcodeblock %}
-  <h3>Response: Error</h3>
+<h3>Response: Error</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
@@ -245,17 +245,17 @@ https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&ap
 {% endcodeblock %}
     </div>
   <div class="tab-pane active" id="edit-json">
-     <h3>Call</h3>
+   <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=parse&user=example@example.com
 {% endcodeblock %}
-  <h3>Response</h3>
+<h3>Response</h3>
 {% codeblock lang:javascript %}
 {
   "message": "success"
 }
 {% endcodeblock %}
-  <h3>Response: Error</h3>
+<h3>Response: Error</h3>
 {% codeblock lang:javascript %}
 {
   "message": "error",
@@ -302,11 +302,11 @@ Delete Entry
 
 <div class="tab-content">
   <div class="tab-pane" id="data-xml">
-     <h3>Call</h3>
+   <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&user=example@example.com
 {% endcodeblock %}
-  <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
@@ -314,7 +314,7 @@ https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&ap
 </result>
 
 {% endcodeblock %}
-  <h3>Response: Error</h3>
+<h3>Response: Error</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
@@ -329,17 +329,17 @@ https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&ap
 {% endcodeblock %}
     </div>
   <div class="tab-pane active" id="data-json">
-     <h3>Call</h3>
+   <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&user=example@example.com
 {% endcodeblock %}
-  <h3>Response</h3>
+<h3>Response</h3>
 {% codeblock lang:javascript %}
 {
   "message": "success"
 }
 {% endcodeblock %}
-  <h3>Response: Error</h3>
+<h3>Response: Error</h3>
 {% codeblock lang:javascript %}
 {
   "message": "error",

@@ -34,7 +34,7 @@ Create a new Marketing Email.
 https://sendgrid.com/api/newsletter/add.json?identity=Sender_Address&name=SendGrid_Test&subject=testsubject&text=testtextbody&html=%3Chtml%3E%3Cp%3Etest_html_body%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %}
 
-          <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -254,7 +254,7 @@ The new html portion of the Marketing Email being edited.
 https://sendgrid.com/api/newsletter/edit.json?identity=Sender_Address&name=SendGrid_Edit_Test&newname=new_name_test&subject=test_subject&text=test_text&html=%3Chtml%3E%3Cp%3ETest_html_text%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %}
 
-          <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -349,7 +349,7 @@ Retrieve the contents of an existing Marketing Email.
 https://sendgrid.com/api/newsletter/get.json?name=SendGrid_Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %}
 
-          <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -462,7 +462,7 @@ Retrieve a list of all existing Marketing Email.
 https://sendgrid.com/api/newsletter/list.json?&api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %}
 
-          <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 [
@@ -587,7 +587,7 @@ Remove an existing Marketing Email.
 https://sendgrid.com/api/newsletter/delete.json?name=SendGrid_Test1&api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %}
 
-          <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {

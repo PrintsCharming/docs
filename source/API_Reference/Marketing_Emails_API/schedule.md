@@ -34,7 +34,7 @@ Schedule a delivery time for an existing Marketing Email.
 https://sendgrid.com/api/newsletter/schedule/add.json?name=test&at=2012-09-05_18%3A35%3A00&api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %}
 
-          <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -129,7 +129,7 @@ Retrieve the scheduled delivery time for an existing Marketing Email.
 https://sendgrid.com/api/newsletter/schedule/get.json?name=SendGrid_Test2&api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %}
 
-          <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -226,7 +226,7 @@ Cancel a scheduled send for a Marketing Email.
 sendgrid.com/api/newsletter/schedule/delete.json?name=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %}
 
-          <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {

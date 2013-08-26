@@ -78,7 +78,7 @@ The username of the subuser
 {% codeblock %}
 	https://sendgrid.com/apiv2/customer.eventposturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com
 	{% endcodeblock %}
-	  <h3>Response</h3>
+	<h3>Response</h3>
 	  
 {% codeblock lang:javascript %}
 {
@@ -98,7 +98,7 @@ The username of the subuser
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.eventposturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.co
 {% endcodeblock %}
-  <h3>Response</h3>
+<h3>Response</h3>
   
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -206,7 +206,7 @@ This is the new event notification URL
 {% codeblock %}
 	https://sendgrid.com/apiv2/customer.eventposturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.co
 	{% endcodeblock %}
-	  <h3>Response</h3>
+	<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -226,7 +226,7 @@ This is the new event notification URL
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.eventposturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.co
 {% endcodeblock %}
-  <h3>Response</h3>
+<h3>Response</h3>
   
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -318,7 +318,7 @@ The name of the subuser
 {% codeblock %}
 	https://sendgrid.com/apiv2/customer.eventposturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.co
 	{% endcodeblock %}
-	  <h3>Response</h3>
+	<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -338,7 +338,7 @@ The name of the subuser
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.eventposturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.co
 {% endcodeblock %}
-  <h3>Response</h3>
+<h3>Response</h3>
   
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>

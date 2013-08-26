@@ -172,7 +172,7 @@ optional email addresses to search for.
 https://sendgrid.com/api/spamreports.get.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;date=1
 {% endcodeblock %}
 
-     <h3>Response</h3>
+   <h3>Response</h3>
 
 {% codeblock lang:javascript %}
 [

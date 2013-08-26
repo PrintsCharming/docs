@@ -171,7 +171,7 @@ This parameter is only used for when *data\_type=geo*
 {% codeblock %}
 https://sendgrid.com/api/stats.getAdvanced.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2013-01-01&end_date=2013-01-02&data_type=global
 {% endcodeblock %}
-     <h3>Response</h3>
+   <h3>Response</h3>
 
 {% codeblock lang:javascript %}
 [

@@ -82,7 +82,7 @@ Authenticate the subuser with this API call.
 {% codeblock %}
 https://sendgrid.com/api/user.geturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
 {% endcodeblock %}
-  <h3>Response</h3>
+<h3>Response</h3>
   
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -105,7 +105,7 @@ https://sendgrid.com/api/user.geturl.xml?api_user=your_sendgrid_username&api_key
 {% codeblock %}
 https://sendgrid.com/api/user.geturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
 {% endcodeblock %}
-  <h3>Response</h3>
+<h3>Response</h3>
   
 {% codeblock lang:javascript %}
 {

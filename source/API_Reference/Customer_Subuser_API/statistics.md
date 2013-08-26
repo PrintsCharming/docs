@@ -32,7 +32,7 @@ Note that you can use *either* the days parameter *or* the start\_date and e
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
 {% endcodeblock %}
-    <h3>Response</h3>
+  <h3>Response</h3>
     
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -78,7 +78,7 @@ https://sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&ap
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
 {% endcodeblock %}
-    <h3>Response</h3>
+  <h3>Response</h3>
     
 {% codeblock lang:javascript %}
 [
@@ -136,7 +136,7 @@ Retrieve all-time totals for your subuser
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&aggregate=1
 {% endcodeblock %}
-    <h3>Response</h3>
+  <h3>Response</h3>
     
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -165,7 +165,7 @@ https://sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&ap
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&aggregate=1
 {% endcodeblock %}
-    <h3>Response</h3>
+  <h3>Response</h3>
     
 {% codeblock lang:javascript %}
 {
@@ -204,7 +204,7 @@ Retrieve a list of all the categories used in your subusers account.
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&list=true
 {% endcodeblock %}
-    <h3>Response</h3>
+  <h3>Response</h3>
     
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -229,7 +229,7 @@ https://sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&ap
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&list=true
 {% endcodeblock %}
-    <h3>Response</h3>
+  <h3>Response</h3>
     
 {% codeblock lang:javascript %}
 [

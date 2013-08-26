@@ -78,7 +78,7 @@ The subuser who we will update
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com
 {% endcodeblock %}
-  <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -120,7 +120,7 @@ https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&ap
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com
 {% endcodeblock %}
-  <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -265,7 +265,7 @@ The subuser who we will update
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=set&user=example@example.com
 {% endcodeblock %}
-  <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -310,7 +310,7 @@ https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&ap
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=set&user=example@example.com
 {% endcodeblock %}
-  <h3>Response</h3>
+<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -450,7 +450,7 @@ The subuser who we will update
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=update&user=example@example.com
 {% endcodeblock %}
-  <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -495,7 +495,7 @@ https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&ap
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=parse&user=example@example.com
 {% endcodeblock %}
-  <h3>Response</h3>
+<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -619,7 +619,7 @@ The host name you will remove for your subuser
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&user=example@example.com
 {% endcodeblock %}
-  <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -664,7 +664,7 @@ https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&ap
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&user=example@example.com
 {% endcodeblock %}
-  <h3>Response</h3>
+<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 {

@@ -38,7 +38,7 @@ Create a new Variation.
 https://sendgrid.com/api/newsletter/variations/add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=variation_name&subject=variation_subject&html=variation_body
 {% endcodeblock %}
 
-          <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -137,7 +137,7 @@ https://sendgrid.com/api/newsletter/variations/add.xml?api_user=your_sendgrid_us
 https://sendgrid.com/api/newsletter/variations/edit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=existing_variation_name&newvariation=new_variation_name&subject=variation_subject&html=variation_body
 {% endcodeblock %}
 
-          <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -231,9 +231,9 @@ https://sendgrid.com/api/newsletter/variations/edit.xml?api_user=your_sendgrid_u
 https://sendgrid.com/api/newsletter/variations/get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=existing_variation_name
 {% endcodeblock %}
 
-          <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
-          <h3>Response: Error</h3>
+<h3>Response: Error</h3>
 
 {% codeblock lang:javascript %}
 {

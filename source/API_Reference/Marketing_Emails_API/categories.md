@@ -30,7 +30,7 @@ Create a new Category.
 https://sendgrid.com/api/newsletter/category/create.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY
 {% endcodeblock %}
 
-          <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -126,7 +126,7 @@ Assign a Category to an existing Marketing Email.
 https://sendgrid.com/api/newsletter/category/add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY&name=NEWSLETTER
 {% endcodeblock %}
 
-          <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -223,7 +223,7 @@ Remove specific categories, or all categories from a Marketing Email.\\
 https://sendgrid.com/api/newsletter/category/remove.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY&name=NEWSLETTER
 {% endcodeblock %}
 
-          <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -318,7 +318,7 @@ List all categories.
 https://sendgrid.com/api/newsletter/category/list.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %}
 
-          <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 [

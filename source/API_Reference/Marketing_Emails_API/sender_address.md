@@ -212,7 +212,7 @@ Specify the country code to be used for this Address.
 https://sendgrid.com/api/newsletter/identity/add.json?identity=Sender_Address1&name=Grant&email=grant.hull%40sendgrid.com&address=929_Pearl_Stree&city=Boulder&state=Colorado&zip=80302&country=US&api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %}
 
-          <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -507,7 +507,7 @@ Specify the new country code to be used for this Address.
 https://sendgrid.com/api/newsletter/identity/edit.json?identity=Sender_Address2&newidentity=Sender_Address3&name=Grant&email=grant.hull%40sendgrid.com&address=929_Pearl_Street&city=Boulder&state=Colorado&zip=80302&country=US&api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %}
 
-          <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -602,7 +602,7 @@ Retrieve information associated with a particular Address.
 https://sendgrid.com/api/newsletter/identity/get.json?identity=Sender_Address&api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %}
 
-          <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -713,7 +713,7 @@ List all Addresses on your account, or check if a particular Address exists.
 https://sendgrid.com/api/newsletter/identity/list.json?identity=Sender_Address4&api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %}
 
-          <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 [
@@ -812,7 +812,7 @@ Remove an Address from your account.
 https://sendgrid.com/api/newsletter/identity/delete.json?identity=Sender_Address4&api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %}
 
-          <h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {

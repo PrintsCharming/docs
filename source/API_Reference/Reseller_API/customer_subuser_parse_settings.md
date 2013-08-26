@@ -52,7 +52,7 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="get-json">
-     <h3>Call</h3>
+   <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&method=parse&user=example@example.com
 {% endcodeblock %}
@@ -135,7 +135,7 @@ Create New Entry
 
 <div class="tab-content">
   <div class="tab-pane" id="create-xml">
-     <h3>Call</h3>
+   <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=set&method=parse&user=example@example.com
 {% endcodeblock %}

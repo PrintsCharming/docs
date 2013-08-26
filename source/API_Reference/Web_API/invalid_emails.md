@@ -174,7 +174,7 @@ Optional email addresses to search for.
 https://sendgrid.com/api/invalidemails.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1
 {% endcodeblock %}
 
-     <h3>Response</h3>
+   <h3>Response</h3>
 
 
 {% codeblock lang:javascript %}
