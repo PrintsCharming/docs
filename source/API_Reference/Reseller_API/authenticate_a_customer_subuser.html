@@ -26,8 +26,8 @@ navigation:
 </table>
 {% xmljsontabs auth %}
 
-<div class="tab-content">
-  <div class="tab-pane" id="auth-xml">
+<div markdown="1" class="tab-content">
+  <div markdown="1" class="tab-pane" id="auth-xml">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=theirsubmittedpassword&method=auth
@@ -54,7 +54,7 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
 
 {% endcodeblock %}
   </div>
-  <div class="tab-pane active" id="auth-json">
+  <div markdown="1" class="tab-pane active" id="auth-json">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=theirsubmittedpassword&method=auth

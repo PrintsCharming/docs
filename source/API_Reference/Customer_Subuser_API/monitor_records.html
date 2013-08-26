@@ -50,8 +50,8 @@ Create Monitor Record
   
 {% xmljsontabs create %}
 
-<div class="tab-content">
-  <div class="tab-pane" id="create-xml">
+<div markdown="1" class="tab-content">
+  <div markdown="1" class="tab-pane" id="create-xml">
      <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=create&name=myMonitor&email=example@example.com&frequency=1000
@@ -78,7 +78,7 @@ https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
     </div>
-  <div class="tab-pane active" id="create-json">
+  <div markdown="1" class="tab-pane active" id="create-json">
      <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=create&name=myMonitor&email=example@example.com&frequency=1000
@@ -147,8 +147,8 @@ Edit Monitor Record
   
 {% xmljsontabs edit %}
 
-<div class="tab-content">
-  <div class="tab-pane" id="edit-xml">
+<div markdown="1" class="tab-content">
+  <div markdown="1" class="tab-pane" id="edit-xml">
      <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5
@@ -175,7 +175,7 @@ https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
     </div>
-  <div class="tab-pane active" id="edit-json">
+  <div markdown="1" class="tab-pane active" id="edit-json">
      <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5
@@ -226,8 +226,8 @@ Delete Monitor Record
   
 {% xmljsontabs delete %}
 
-<div class="tab-content">
-  <div class="tab-pane" id="delete-xml">
+<div markdown="1" class="tab-content">
+  <div markdown="1" class="tab-pane" id="delete-xml">
      <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&name=recordToDelete
@@ -254,7 +254,7 @@ https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
     </div>
-  <div class="tab-pane active" id="delete-json">
+  <div markdown="1" class="tab-pane active" id="delete-json">
      <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&name=recordToDelete
@@ -299,8 +299,8 @@ List All Monitor Records
   
 {% xmljsontabs listrecords %}
 
-<div class="tab-content">
-  <div class="tab-pane" id="listrecords-xml">
+<div markdown="1" class="tab-content">
+  <div markdown="1" class="tab-pane" id="listrecords-xml">
      <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list
@@ -328,7 +328,7 @@ https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
     </div>
-  <div class="tab-pane active" id="listrecords-json">
+  <div markdown="1" class="tab-pane active" id="listrecords-json">
      <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list
@@ -391,8 +391,8 @@ Append A Subuser To A Monitor Record
   
 {% xmljsontabs append %}
 
-<div class="tab-content">
-  <div class="tab-pane" id="append-xml">
+<div markdown="1" class="tab-content">
+  <div markdown="1" class="tab-pane" id="append-xml">
      <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&name=myMonitor&user=example@example.com
@@ -419,7 +419,7 @@ https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
     </div>
-  <div class="tab-pane active" id="append-json">
+  <div markdown="1" class="tab-pane active" id="append-json">
      <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&name=myMonitor&user=example@example.com
@@ -470,8 +470,8 @@ Detach A Monitor Record From A Subuser
   
 {% xmljsontabs detach %}
 
-<div class="tab-content">
-  <div class="tab-pane" id="detach-xml">
+<div markdown="1" class="tab-content">
+  <div markdown="1" class="tab-pane" id="detach-xml">
      <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=detach&user=example@example.com
@@ -498,7 +498,7 @@ https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
     </div>
-  <div class="tab-pane active" id="detach-json">
+  <div markdown="1" class="tab-pane active" id="detach-json">
      <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=detach&user=example@example.com

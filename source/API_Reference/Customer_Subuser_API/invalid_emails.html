@@ -38,8 +38,8 @@ Retrieve Invalid Emails
   </tbody></table>
 {% xmljsontabs get %}
 
-<div class="tab-content">
-	  <div class="tab-pane active" id="get-json">
+<div markdown="1" class="tab-content">
+	  <div markdown="1" class="tab-pane active" id="get-json">
 	     <h3>Call</h3>
 	{% codeblock %}
 	https://sendgrid.com/apiv2/customer.invalidemails.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=1
@@ -64,7 +64,7 @@ Retrieve Invalid Emails
 ]
 {% endcodeblock %}
 	</div>
-  <div class="tab-pane" id="get-xml">
+  <div markdown="1" class="tab-pane" id="get-xml">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.invalidemails.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=1
@@ -127,8 +127,8 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
   </tbody></table>
 {% xmljsontabs delete %}
 
-<div class="tab-content">
-	  <div class="tab-pane active" id="delete-json">
+<div markdown="1" class="tab-content">
+	  <div markdown="1" class="tab-pane active" id="delete-json">
 	     <h3>Call</h3>
 	{% codeblock %}
 	https://sendgrid.com/apiv2/customer.invalidemails.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=invalidemail@example.com
@@ -146,7 +146,7 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
 }
 {% endcodeblock %}
 	</div>
-  <div class="tab-pane" id="delete-xml">
+  <div markdown="1" class="tab-pane" id="delete-xml">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.invalidemails.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=invalidemail@example.com
