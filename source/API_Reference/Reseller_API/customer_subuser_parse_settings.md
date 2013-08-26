@@ -40,11 +40,10 @@ navigation:
 <div class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=parse&task=get&method=parse&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=parse&task=get&method=parse&user=example@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -59,21 +58,19 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
 
 {% endcodeblock %}
 
+
 ### Response: Empty
 
-{% codeblock %}
-<parse></parse>
-{% endcodeblock %}
+{% codeblock %} <parse></parse> {% endcodeblock %}
 
 </div>
 <div class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&method=parse&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&method=parse&user=example@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -87,11 +84,10 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_us
 }
 {% endcodeblock %}
 
+
 ### Response: Empty
 
-{% codeblock %}
-"parse":[]
-{% endcodeblock %}
+{% codeblock %} "parse":[] {% endcodeblock %}
 
 </div>
 </div>
@@ -145,11 +141,10 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_us
 <div class="tab-pane" id="create-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=set&method=parse&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=set&method=parse&user=example@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -160,7 +155,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -176,15 +173,15 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="create-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=set&method=parse&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=set&method=parse&user=example@example.com {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 {
@@ -192,7 +189,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_us
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -202,6 +201,7 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_us
   ]
 }
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -255,11 +255,10 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_us
 <div class="tab-pane" id="edit-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=update&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=update&user=example@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -270,7 +269,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -286,15 +287,15 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="edit-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=parse&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=parse&user=example@example.com {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 {
@@ -302,7 +303,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_us
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -312,6 +315,7 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_us
   ]
 }
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -359,11 +363,10 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_us
 <div class="tab-pane" id="delete-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&method=parse&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&method=parse&user=example@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -374,7 +377,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -390,15 +395,15 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="delete-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&method=parse&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&method=parse&user=example@example.com {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 {
@@ -406,7 +411,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_us
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -416,6 +423,7 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_us
   ]
 }
 {% endcodeblock %}
+
 
 </div>
 </div>

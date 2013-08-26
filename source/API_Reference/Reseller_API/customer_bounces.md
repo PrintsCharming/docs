@@ -9,7 +9,7 @@ navigation:
 {% anchor h2 %} Retrieve Bounces {% endanchor %}
 
 
-Note that you can use *either* the days parameter *or* the start\_date and end\_date parameter.
+Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
 <table>
 <thead>
@@ -54,11 +54,10 @@ Note that you can use *either* the days parameter *or* the start\_date and end\_
 <div class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=customer@example.com&task=get&date=
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=customer@example.com&task=get&date= {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -80,15 +79,15 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=customer@example.com&task=get&date=
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=customer@example.com&task=get&date= {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 [
@@ -106,6 +105,7 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
   }
 ]
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -161,11 +161,10 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
 <div class="tab-pane" id="delete-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=customer@example.com&task=delete&email=bounce@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=customer@example.com&task=delete&email=bounce@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -176,7 +175,9 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -187,15 +188,15 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="delete-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=customer@example.com&task=delete&email=bounce@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=customer@example.com&task=delete&email=bounce@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -203,13 +204,16 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
   "message": "Email does not exist"
 }
 {% endcodeblock %}
+
 
 </div>
 </div>

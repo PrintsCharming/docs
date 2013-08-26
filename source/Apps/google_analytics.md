@@ -63,6 +63,4 @@ We default the settings to Google's recommendations. Anything you enter into tho
 
 
 {% anchor h2 %} Example {% endanchor %}
- {% codeblock %}
-http://sendgrid.com/?utm_source=sendgrid&utm_medium=email&utm_term=variationC&utm_content=newsletter4&utm_campaign=flagshipproduct
-{% endcodeblock %}
+ {% codeblock %} http://sendgrid.com/?utm_source=sendgrid&utm_medium=email&utm_term=variationC&utm_content=newsletter4&utm_campaign=flagshipproduct {% endcodeblock %}

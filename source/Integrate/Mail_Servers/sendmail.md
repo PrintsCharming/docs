@@ -13,9 +13,9 @@ Set the authorization credentials in **/etc/mail/access**
 
 {% codeblock lang:bash %} AuthInfo:smtp.sendgrid.net "U:yourUserName" "P:yourPassword" "M:PLAIN" {% endcodeblock %}
 
-Define the Smart Host in **/etc/mail/sendmail.mc** You should add these lines just after the commented "\#dnl define('SMART\_HOST', 'smtp.your.provider')dnl" line in the file
+Define the Smart Host in **/etc/mail/sendmail.mc** You should add these lines just after the commented "\#dnl define('SMART_HOST', 'smtp.your.provider')dnl" line in the file
 
-{% codeblock lang:bash %} define(\`SMART\_HOST', \`smtp.sendgrid.net')dnl FEATURE(\`access\_db')dnl define(\`RELAY\_MAILER\_ARGS', \`TCP \$h 587')dnl define(\`ESMTP\_MAILER\_ARGS', \`TCP \$h 587')dnl {% endcodeblock %}
+{% codeblock lang:bash %} define(\`SMART_HOST', \`smtp.sendgrid.net')dnl FEATURE(\`access_db')dnl define(\`RELAY_MAILER_ARGS', \`TCP \$h 587')dnl define(\`ESMTP_MAILER_ARGS', \`TCP \$h 587')dnl {% endcodeblock %}
 
 Update sendmail.cf and access.db files
 

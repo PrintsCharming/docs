@@ -55,11 +55,10 @@ The first step is to create a Monitor Record. Once the monitor record has been c
 <div class="tab-pane" id="create-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=create&name=myMonitor&email=example@example.com&frequency=1000
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=create&name=myMonitor&email=example@example.com&frequency=1000 {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -70,7 +69,9 @@ https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -86,15 +87,15 @@ https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="create-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=create&name=myMonitor&email=example@example.com&frequency=1000
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=create&name=myMonitor&email=example@example.com&frequency=1000 {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -102,7 +103,9 @@ https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -112,6 +115,7 @@ https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username
   ]
 }
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -143,19 +147,19 @@ https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username
          <td>The monitor record we are going to edit</td>
       </tr>
       <tr>
-         <td>new\_name</td>
+         <td>new_name</td>
          <td>No</td>
          <td>New name must be unique and can't be more than 255 characters</td>
          <td>The new monitor record name</td>
       </tr>
       <tr>
-         <td>new\_email</td>
+         <td>new_email</td>
          <td>No</td>
          <td>Must be in email format</td>
          <td>The new email destination to send the email sample to</td>
       </tr>
       <tr>
-         <td>new\_frequency</td>
+         <td>new_frequency</td>
          <td>No</td>
          <td>Must be an integer and greater than 0</td>
          <td>The new frequency of emails to be sent out</td>
@@ -169,11 +173,10 @@ https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username
 <div class="tab-pane" id="edit-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5 {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -184,7 +187,9 @@ https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -200,15 +205,15 @@ https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="edit-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5 {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -216,7 +221,9 @@ https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -226,6 +233,7 @@ https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username
   ]
 }
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -265,11 +273,10 @@ https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username
 <div class="tab-pane" id="delete-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&name=recordToDelete
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&name=recordToDelete {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -280,7 +287,9 @@ https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -296,15 +305,15 @@ https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="delete-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&name=recordToDelete
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&name=recordToDelete {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -312,7 +321,9 @@ https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -322,6 +333,7 @@ https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username
   ]
 }
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -355,11 +367,10 @@ https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username
 <div class="tab-pane" id="listrecords-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -384,15 +395,15 @@ https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="listrecords-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 [
@@ -415,6 +426,7 @@ https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username
   }
 ]
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -460,11 +472,10 @@ https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username
 <div class="tab-pane" id="append-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&name=myMonitor&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&name=myMonitor&user=example@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -475,7 +486,9 @@ https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -491,15 +504,15 @@ https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="append-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&name=myMonitor&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&name=myMonitor&user=example@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -507,7 +520,9 @@ https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -517,6 +532,7 @@ https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&
   ]
 }
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -556,11 +572,10 @@ https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&
 <div class="tab-pane" id="detach-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=detach&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=detach&user=example@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -571,7 +586,9 @@ https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -587,15 +604,15 @@ https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="detach-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=detach&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=detach&user=example@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -603,7 +620,9 @@ https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -613,6 +632,7 @@ https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username
   ]
 }
 {% endcodeblock %}
+
 
 </div>
 </div>

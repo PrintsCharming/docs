@@ -9,7 +9,7 @@ show: true
 {% anchor h2 %} Retrieve Bounces {% endanchor %}
 
 
-Note that you can use *either* the days parameter *or* the start\_date and end\_date parameter.
+Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
 <table>
 <thead>
@@ -44,24 +44,18 @@ Note that you can use *either* the days parameter *or* the start\_date and end\_
 
 ### XML Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=get&date=
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=get&date= {% endcodeblock %}
 
 ### Response
 
-{% codeblock %}
-bounces\><bounce><email>email1@domain.com</email><status>5.1.1</status><reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com</reason><created>2009-06-10 12:40:30</created></bounce><bounce><email>email2@domain2.com</email><status>5.1.1</status><reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com</reason><created>2009-06-10 12:40:30</created></bounce></bounces>JSON Call
+{% codeblock %} bounces\><bounce><email>email1@domain.com</email><status>5.1.1</status><reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com</reason><created>2009-06-10 12:40:30</created></bounce><bounce><email>email2@domain2.com</email><status>5.1.1</status><reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com</reason><created>2009-06-10 12:40:30</created></bounce></bounces>JSON Call
 
 </h3>
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=get&date=
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=get&date= {% endcodeblock %}
 
 ### Response
 
-{% codeblock %}
-{"email":"email1@domain.com","status":"5.1.1","reason":"host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","status":"5.1.1","reason":"host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com","created":"2009-06-01 19:41:39"}]
-{% endcodeblock %}
+{% codeblock %} {"email":"email1@domain.com","status":"5.1.1","reason":"host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","status":"5.1.1","reason":"host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com","created":"2009-06-01 19:41:39"}] {% endcodeblock %}
 
 * * * * *
 
@@ -104,29 +98,22 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
 
 ### XML Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=delete&email=bounce@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=delete&email=bounce@example.com {% endcodeblock %}
 
 ### Response: Success
 
-{% codeblock %}
-result\><message>success</message></result>
-{% endcodeblock %}
+{% codeblock %} result\><message>success</message></result> {% endcodeblock %}
 
 ### Response: Error
 
-{% codeblock %}
-result\><message>Email does not exist</message></result>
-{% endcodeblock %}
+{% codeblock %} result\><message>Email does not exist</message></result> {% endcodeblock %}
 
 ### JSON Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=delete&email=bounce@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=delete&email=bounce@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -134,10 +121,13 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
   "message": "Email does not exist"
 }
 {% endcodeblock %}
+

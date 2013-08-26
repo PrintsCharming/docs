@@ -35,15 +35,15 @@ Retrieve a list of Unsubscribes with addresses and optionally with dates.
          <td>Number of days in the past for which to retrieve unsubscribes (includes today)</td>
       </tr>
       <tr>
-         <td>start\_date</td>
+         <td>start_date</td>
          <td>No</td>
-         <td>Date must be in YYYY-MM-DD format and be earlier than the end\_date parameter.</td>
+         <td>Date must be in YYYY-MM-DD format and be earlier than the end_date parameter.</td>
          <td>The start of the date range for which to retrieve unsubscribes.</td>
       </tr>
       <tr>
-         <td>end\_date</td>
+         <td>end_date</td>
          <td>No</td>
-         <td>Date must be in YYYY-MM-DD format and be later than the start\_date parameter.</td>
+         <td>Date must be in YYYY-MM-DD format and be later than the start_date parameter.</td>
          <td>The end of the date range for which to retrieve unsubscribes.</td>
       </tr>
       <tr>
@@ -73,11 +73,10 @@ Retrieve a list of Unsubscribes with addresses and optionally with dates.
 <div class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/unsubscribes.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/unsubscribes.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1 {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 [
@@ -88,19 +87,20 @@ https://sendgrid.com/api/unsubscribes.get.json?api_user=your_sendgrid_username&a
 ]
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="get-xml">
 ### Call
+
 
 {% codeblock lang:xml %}
 
 {% endcodeblock %}
 
+
 ### Response
 
-{% codeblock %}
-<unsubscribes><unsubscribe><email>brandon.west@sendgrid.com</email><created>2012-09-06 14:03:18</created></unsubscribe></unsubscribes>
-{% endcodeblock %}
+{% codeblock %} <unsubscribes><unsubscribe><email>brandon.west@sendgrid.com</email><created>2012-09-06 14:03:18</created></unsubscribe></unsubscribes> {% endcodeblock %}
 
 </div>
 </div>
@@ -136,11 +136,10 @@ Delete an address from the Unsubscribe list. Please note that if no parameters a
 <div class="tab-pane active" id="delete-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/unsubscribes.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/unsubscribes.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -148,7 +147,9 @@ https://sendgrid.com/api/unsubscribes.delete.json?api_user=your_sendgrid_usernam
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -159,28 +160,27 @@ https://sendgrid.com/api/unsubscribes.delete.json?api_user=your_sendgrid_usernam
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="delete-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/unsubscribes.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/unsubscribes.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com {% endcodeblock %}
 
 ### Response: Success
 
-{% codeblock %}
-<result> success <result>
-{% endcodeblock %}
+{% codeblock %} <result> success <result> {% endcodeblock %}
 
 ### Response: Error
 
-@nodes {% codeblock lang:xml %}
+@nodes 
+{% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result> Email does not exist @nodes </result>
 
-{% endcodeblock %} </result></result></result>
+{% endcodeblock %}
+ </result></result></result>
 
 </div>
 </div>
@@ -216,11 +216,10 @@ Add email addresses to the Unsubscribe list.
 <div class="tab-pane active" id="add-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/unsubscribes.add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=email2@domain.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/unsubscribes.add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=email2@domain.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -228,7 +227,9 @@ https://sendgrid.com/api/unsubscribes.add.json?api_user=your_sendgrid_username&a
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -239,15 +240,15 @@ https://sendgrid.com/api/unsubscribes.add.json?api_user=your_sendgrid_username&a
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="add-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/unsubscribes.add.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=email2@domain.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/unsubscribes.add.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=email2@domain.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -258,7 +259,9 @@ https://sendgrid.com/api/unsubscribes.add.xml?api_user=your_sendgrid_username&ap
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -267,7 +270,8 @@ https://sendgrid.com/api/unsubscribes.add.xml?api_user=your_sendgrid_username&ap
    <message>Email does not exist</message>
 </result>
 
-{% endcodeblock %} </result></result>
+{% endcodeblock %}
+ </result></result>
 
 </div>
 </div>

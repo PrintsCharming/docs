@@ -39,11 +39,10 @@ Create a new Category.
 <div class="tab-pane active" id="create-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/category/create.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/category/create.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -51,7 +50,9 @@ https://sendgrid.com/api/newsletter/category/create.json?api_user=your_sendgrid_
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -62,15 +63,15 @@ https://sendgrid.com/api/newsletter/category/create.json?api_user=your_sendgrid_
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="create-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/category/create.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/category/create.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -81,7 +82,9 @@ https://sendgrid.com/api/newsletter/category/create.xml?api_user=your_sendgrid_u
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -91,6 +94,7 @@ https://sendgrid.com/api/newsletter/category/create.xml?api_user=your_sendgrid_u
 </result>
 
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -134,11 +138,10 @@ Assign a Category to an existing Marketing Email.
 <div class="tab-pane active" id="add-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/category/add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY&name=NEWSLETTER
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/category/add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY&name=NEWSLETTER {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -146,7 +149,9 @@ https://sendgrid.com/api/newsletter/category/add.json?api_user=your_sendgrid_use
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -157,15 +162,15 @@ https://sendgrid.com/api/newsletter/category/add.json?api_user=your_sendgrid_use
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="add-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/category/add.xml?&api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY&name=NEWSLETTER
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/category/add.xml?&api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY&name=NEWSLETTER {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -176,7 +181,9 @@ https://sendgrid.com/api/newsletter/category/add.xml?&api_user=your_sendgrid_use
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -186,6 +193,7 @@ https://sendgrid.com/api/newsletter/category/add.xml?&api_user=your_sendgrid_use
 </result>
 
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -229,11 +237,10 @@ Remove specific categories, or all categories from a Marketing Email.\\
 <div class="tab-pane active" id="remove-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/category/remove.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY&name=NEWSLETTER
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/category/remove.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY&name=NEWSLETTER {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -241,7 +248,9 @@ https://sendgrid.com/api/newsletter/category/remove.json?api_user=your_sendgrid_
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -252,15 +261,15 @@ https://sendgrid.com/api/newsletter/category/remove.json?api_user=your_sendgrid_
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="remove-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/category/remove.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY&name=NEWSLETTER
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/category/remove.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY&name=NEWSLETTER {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -271,7 +280,9 @@ https://sendgrid.com/api/newsletter/category/remove.xml?api_user=your_sendgrid_u
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -281,6 +292,7 @@ https://sendgrid.com/api/newsletter/category/remove.xml?api_user=your_sendgrid_u
 </result>
 
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -318,11 +330,10 @@ List all categories.
 <div class="tab-pane active" id="list-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/category/list.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/category/list.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 [
@@ -335,7 +346,9 @@ https://sendgrid.com/api/newsletter/category/list.json?api_user=your_sendgrid_us
 ]
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -346,15 +359,15 @@ https://sendgrid.com/api/newsletter/category/list.json?api_user=your_sendgrid_us
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="list-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/category/list.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/category/list.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -370,7 +383,9 @@ https://sendgrid.com/api/newsletter/category/list.xml?api_user=your_sendgrid_use
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -380,6 +395,7 @@ https://sendgrid.com/api/newsletter/category/list.xml?api_user=your_sendgrid_use
 </result>
 
 {% endcodeblock %}
+
 
 </div>
 </div>

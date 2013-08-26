@@ -11,14 +11,14 @@ navigation:
 
 The following configuration file, which can be found at **/etc/exim4/update-exim4.conf.conf**, was pulled from Ubuntu Server 10.4 and is for example purposes only:
 
-{% codeblock lang:bash %} dc\_eximconfig\_configtype='smarthost' dc\_other\_hostnames='' dc\_local\_interfaces='127.0.0.1' dc\_readhost='your.server.name' dc\_relay\_domains='' dc\_minimaldns='false' dc\_relay\_nets='' dc\_smarthost='smtp.sendgrid.net::587' CFILEMODE='644' dc\_use\_split\_config='false' dc\_hide\_mailname='true' dc\_mailname\_in\_oh='true' {% endcodeblock %}
+{% codeblock lang:bash %} dc_eximconfig_configtype='smarthost' dc_other_hostnames='' dc_local_interfaces='127.0.0.1' dc_readhost='your.server.name' dc_relay_domains='' dc_minimaldns='false' dc_relay_nets='' dc_smarthost='smtp.sendgrid.net::587' CFILEMODE='644' dc_use_split_config='false' dc_hide_mailname='true' dc_mailname_in_oh='true' {% endcodeblock %}
 
 Enable TLS support in **/etc/exim4/exim4.conf.localmacros**.
 
   
  
 {% info %} If this file does not exist, you will need to create it: {% endinfo %}
- {% codeblock lang:bash %} MAIN\_TLS\_ENABLE = 1 {% endcodeblock %}
+ {% codeblock lang:bash %} MAIN_TLS_ENABLE = 1 {% endcodeblock %}
 
 Enter credentials that will allow Exim to access SendGrid in **/etc/exim4/passwd.client**:
 
@@ -32,17 +32,17 @@ Once you have completed and saved all changes to Exim's configuration files, you
 
 If you are using cPanel with Exim and want to relay your email through SendGrid, go to **Main \> Service Configuration \> Exim Configuration Editor**, click on the Advanced Editor button, and enter the following:
 
-{% codeblock lang:bash %} begin authenticators sendgrid\_login: driver = plaintext public\_name = LOGIN client\_send = : username@example.com : YourSendGridPassword {% endcodeblock %} 
+{% codeblock lang:bash %} begin authenticators sendgrid_login: driver = plaintext public_name = LOGIN client_send = : username@example.com : YourSendGridPassword {% endcodeblock %} 
 {% info %} Only include "begin authenticators" if it's not already in the configuration. {% endinfo %}
 
 
 Add a route in the **Router Configuration** Box:
 
-{% codeblock lang:bash %} send\_via\_sendgrid: driver = manualroute domains = ! +local\_domains transport = sendgrid\_smtp route\_list = "\* smtp.sendgrid.net::587 byname" host\_find\_failed = defer no\_more {% endcodeblock %}
+{% codeblock lang:bash %} send_via_sendgrid: driver = manualroute domains = ! +local_domains transport = sendgrid_smtp route_list = "\* smtp.sendgrid.net::587 byname" host_find_failed = defer no_more {% endcodeblock %}
 
 Add a transport to the **Transport Configuration** Box:
 
-{% codeblock lang:bash %} sendgrid\_smtp: driver = smtp hosts = smtp.sendgrid.net hosts\_require\_auth = smtp.sendgrid.net hosts\_require\_tls = smtp.sendgrid.net {% endcodeblock %}
+{% codeblock lang:bash %} sendgrid_smtp: driver = smtp hosts = smtp.sendgrid.net hosts_require_auth = smtp.sendgrid.net hosts_require_tls = smtp.sendgrid.net {% endcodeblock %}
 
 Once you have completed and saved all changes to Exim's configuration files, you will need to restart it to activate those changes:
 

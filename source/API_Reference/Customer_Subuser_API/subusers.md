@@ -35,7 +35,7 @@ These are actions that directly affect your subuser. We provide access via XML a
          <td>New password of subuser</td>
       </tr>
       <tr>
-         <td>confirm\_password</td>
+         <td>confirm_password</td>
          <td>Yes</td>
          <td>Must match password parameter, must be at least 6 characters</td>
          <td>Confirm new password</td>
@@ -47,13 +47,13 @@ These are actions that directly affect your subuser. We provide access via XML a
          <td>Email address of new subuser</td>
       </tr>
       <tr>
-         <td>first\_name</td>
+         <td>first_name</td>
          <td>Yes</td>
          <td>No more than 50 characters</td>
          <td>First name of new subuser</td>
       </tr>
       <tr>
-         <td>last\_name</td>
+         <td>last_name</td>
          <td>Yes</td>
          <td>No more than 50 characters</td>
          <td>Last name of new subuser</td>
@@ -107,7 +107,7 @@ These are actions that directly affect your subuser. We provide access via XML a
          <td>Company of new subuser</td>
       </tr>
       <tr>
-         <td>mail\_domain</td>
+         <td>mail_domain</td>
          <td>No</td>
          <td>A mail domain must already be setup with SendGrid, please contact [support@sendgrid.com](mailto:support@sendgrid.com) to have one setup</td>
          <td>Mail domain of new subuser</td>
@@ -121,11 +121,10 @@ These are actions that directly affect your subuser. We provide access via XML a
 <div class="tab-pane" id="create-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.add.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=example@example.com&country=US&phone=555-5555
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.add.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=example@example.com&country=US&phone=555-5555 {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -136,7 +135,9 @@ https://sendgrid.com/apiv2/customer.add.xml?api_user=your_sendgrid_username&api_
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -147,15 +148,15 @@ https://sendgrid.com/apiv2/customer.add.xml?api_user=your_sendgrid_username&api_
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="create-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=example@example.com&country=US&phone=555-5555
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=example@example.com&country=US&phone=555-5555 {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -163,7 +164,9 @@ https://sendgrid.com/apiv2/customer.add.json?api_user=your_sendgrid_username&api
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -173,6 +176,7 @@ https://sendgrid.com/apiv2/customer.add.json?api_user=your_sendgrid_username&api
   ]
 }
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -206,11 +210,10 @@ https://sendgrid.com/apiv2/customer.add.json?api_user=your_sendgrid_username&api
 <div class="tab-pane" id="delete-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -221,7 +224,9 @@ https://sendgrid.com/apiv2/customer.delete.xml?api_user=your_sendgrid_username&a
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -232,15 +237,15 @@ https://sendgrid.com/apiv2/customer.delete.xml?api_user=your_sendgrid_username&a
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="delete-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -248,7 +253,9 @@ https://sendgrid.com/apiv2/customer.delete.json?api_user=your_sendgrid_username&
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -258,6 +265,7 @@ https://sendgrid.com/apiv2/customer.delete.json?api_user=your_sendgrid_username&
   ]
 }
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -296,12 +304,12 @@ https://sendgrid.com/apiv2/customer.delete.json?api_user=your_sendgrid_username&
          <td>Search filter, whether or not the subuser is currently active</td>
       </tr>
       <tr>
-         <td>first\_name</td>
+         <td>first_name</td>
          <td>No</td>
          <td>Search filter, first name of subuser</td>
       </tr>
       <tr>
-         <td>last\_name</td>
+         <td>last_name</td>
          <td>No</td>
          <td>Search filter, last name of subuser</td>
       </tr>
@@ -354,11 +362,10 @@ https://sendgrid.com/apiv2/customer.delete.json?api_user=your_sendgrid_username&
 <div class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -402,15 +409,15 @@ https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 [
@@ -445,6 +452,7 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username
 ]
 {% endcodeblock %}
 
+
 </div>
 </div>
 
@@ -477,11 +485,10 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username
 <div class="tab-pane" id="enable-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.enable.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.enable.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -492,7 +499,9 @@ https://sendgrid.com/apiv2/customer.enable.xml?api_user=your_sendgrid_username&a
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -503,15 +512,15 @@ https://sendgrid.com/apiv2/customer.enable.xml?api_user=your_sendgrid_username&a
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="enable-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.enable.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.enable.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -519,13 +528,16 @@ https://sendgrid.com/apiv2/customer.enable.json?api_user=your_sendgrid_username&
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
   "message": "User not found"
 }
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -559,11 +571,10 @@ https://sendgrid.com/apiv2/customer.enable.json?api_user=your_sendgrid_username&
 <div class="tab-pane" id="disable-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.disable.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.disable.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -574,7 +585,9 @@ https://sendgrid.com/apiv2/customer.disable.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -585,27 +598,26 @@ https://sendgrid.com/apiv2/customer.disable.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="disable-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.disable.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.disable.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
 
-{% codeblock %}
-{"message":"success"}
-{% endcodeblock %}
+{% codeblock %} {"message":"success"} {% endcodeblock %}
 
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
   "message": "User not found"
 }
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -639,11 +651,10 @@ https://sendgrid.com/apiv2/customer.disable.json?api_user=your_sendgrid_username
 <div class="tab-pane" id="enablewebsite-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.website_enable.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.website_enable.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -654,7 +665,9 @@ https://sendgrid.com/apiv2/customer.website_enable.xml?api_user=your_sendgrid_us
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -665,27 +678,26 @@ https://sendgrid.com/apiv2/customer.website_enable.xml?api_user=your_sendgrid_us
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="enablewebsite-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.website_enable.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.website_enable.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com {% endcodeblock %}
 
 ### Response: Success
 
-{% codeblock %}
-{"message":"success"}
-{% endcodeblock %}
+{% codeblock %} {"message":"success"} {% endcodeblock %}
 
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
   "message": "User not found"
 }
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -719,11 +731,10 @@ https://sendgrid.com/apiv2/customer.website_enable.json?api_user=your_sendgrid_u
 <div class="tab-pane" id="disablewebsite-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.website_disable.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.website_disable.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -734,7 +745,9 @@ https://sendgrid.com/apiv2/customer.website_disable.xml?api_user=your_sendgrid_u
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -745,27 +758,26 @@ https://sendgrid.com/apiv2/customer.website_disable.xml?api_user=your_sendgrid_u
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="disablewebsite-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.website_disable.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.website_disable.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
 
-{% codeblock %}
-{"message":"success"}
-{% endcodeblock %}
+{% codeblock %} {"message":"success"} {% endcodeblock %}
 
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
   "message": "User not found"
 }
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -794,12 +806,12 @@ https://sendgrid.com/apiv2/customer.website_disable.json?api_user=your_sendgrid_
          <td>Subuser that is registered under you</td>
       </tr>
       <tr>
-         <td>first\_name</td>
+         <td>first_name</td>
          <td>No</td>
          <td>First name of subuser</td>
       </tr>
       <tr>
-         <td>last\_name</td>
+         <td>last_name</td>
          <td>No</td>
          <td>Last name of subuser</td>
       </tr>
@@ -852,11 +864,10 @@ https://sendgrid.com/apiv2/customer.website_disable.json?api_user=your_sendgrid_
 <div class="tab-pane" id="updateprofile-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&first_name=newFirstName&last_name=&newLastNam
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&first_name=newFirstName&last_name=&newLastNam {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -867,7 +878,9 @@ https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -878,25 +891,20 @@ https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="updateprofile-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&first_name=newFirstName&last_name=&newLastNam
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&first_name=newFirstName&last_name=&newLastNam {% endcodeblock %}
 
 ### Response: Success
 
-{% codeblock %}
-{"message":"success"}
-{% endcodeblock %}
+{% codeblock %} {"message":"success"} {% endcodeblock %}
 
 ### Response: Error
 
-{% codeblock %}
-{ "message": "error", "errors": [ "...error messages..." ] }
-{% endcodeblock %}
+{% codeblock %} { "message": "error", "errors": [ "...error messages..." ] } {% endcodeblock %}
 
 </div>
 </div>
@@ -928,7 +936,7 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username
          <td>New password of subuser</td>
       </tr>
       <tr>
-         <td>confirm\_password</td>
+         <td>confirm_password</td>
          <td>Yes</td>
          <td>Must match password parameter and be at least 6 characters</td>
          <td>Confirm new password</td>
@@ -942,11 +950,10 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username
 <div class="tab-pane" id="updateSubuserPassword-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.password.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=newPasword&confirm_password=newPasswor
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.password.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=newPasword&confirm_password=newPasswor {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -957,7 +964,9 @@ https://sendgrid.com/apiv2/customer.password.xml?api_user=your_sendgrid_username
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -968,25 +977,20 @@ https://sendgrid.com/apiv2/customer.password.xml?api_user=your_sendgrid_username
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="updateSubuserPassword-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.password.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=newPasword&confirm_password=newPasswor
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.password.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=newPasword&confirm_password=newPasswor {% endcodeblock %}
 
 ### Response: Success
 
-{% codeblock %}
-{"message":"success"}
-{% endcodeblock %}
+{% codeblock %} {"message":"success"} {% endcodeblock %}
 
 ### Response: Error
 
-{% codeblock %}
-{ "message": "error", "errors": [ "...error messages..." ] }
-{% endcodeblock %}
+{% codeblock %} { "message": "error", "errors": [ "...error messages..." ] } {% endcodeblock %}
 
 </div>
 </div>
@@ -1032,11 +1036,10 @@ https://sendgrid.com/apiv2/customer.password.json?api_user=your_sendgrid_usernam
 <div class="tab-pane" id="updateSubuserUsername-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setUsername&user=example@example.com&username=newexample@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setUsername&user=example@example.com&username=newexample@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -1047,7 +1050,9 @@ https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -1058,25 +1063,20 @@ https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="updateSubuserUsername-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setUsername&user=example@example.com&username=newexample@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setUsername&user=example@example.com&username=newexample@example.com {% endcodeblock %}
 
 ### Response: Success
 
-{% codeblock %}
-{"message":"success"}
-{% endcodeblock %}
+{% codeblock %} {"message":"success"} {% endcodeblock %}
 
 ### Response: Error
 
-{% codeblock %}
-{ "message": "error", "errors": [ "...error messages..." ] }
-{% endcodeblock %}
+{% codeblock %} { "message": "error", "errors": [ "...error messages..." ] } {% endcodeblock %}
 
 </div>
 </div>
@@ -1122,11 +1122,10 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username
 <div class="tab-pane" id="updateSubuserEmailAddress-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setEmail&user=example@example.com&email=newexample@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setEmail&user=example@example.com&email=newexample@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -1137,7 +1136,9 @@ https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -1148,25 +1149,20 @@ https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="updateSubuserEmailAddress-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setEmail&user=example@example.com&email=newexample@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setEmail&user=example@example.com&email=newexample@example.com {% endcodeblock %}
 
 ### Response: Success
 
-{% codeblock %}
-{"message":"success"}
-{% endcodeblock %}
+{% codeblock %} {"message":"success"} {% endcodeblock %}
 
 ### Response: Error
 
-{% codeblock %}
-{ "message": "error", "errors": [ "...error messages..." ] }
-{% endcodeblock %}
+{% codeblock %} { "message": "error", "errors": [ "...error messages..." ] } {% endcodeblock %}
 
 </div>
 </div>

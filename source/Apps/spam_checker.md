@@ -67,12 +67,9 @@ The HTTP POST request that you receive at the designated URL will contain parame
 {% anchor h2 %} Example POST: {% endanchor %}
  
 {% anchor h3 %} Headers {% endanchor %}
- {% codeblock %}
-Content-Type: multipart/form-data; boundary=xYzZY User-Agent: SendGrid 1.0 Version: HTTP/1.1
-{% endcodeblock %} 
+ {% codeblock %} Content-Type: multipart/form-data; boundary=xYzZY User-Agent: SendGrid 1.0 Version: HTTP/1.1 {% endcodeblock %} 
 {% anchor h3 %} Parameters {% endanchor %}
- {% codeblock %}
-email: Date: Tue, 12 June 2012 11:59:34 PST From: Hip Recall Claim Center <hiprecallclaimcenter> Subject: Thousands of Hip Implants Recalled Due to Failure! To: Undisclosed Recipient <mail> X-BID: 11117965 22049 MIME-Version: 1.0 Content-Type: text/html Content-Transfer-Encoding: 7bit Message-ID:
+ {% codeblock %} email: Date: Tue, 12 June 2012 11:59:34 PST From: Hip Recall Claim Center <hiprecallclaimcenter> Subject: Thousands of Hip Implants Recalled Due to Failure! To: Undisclosed Recipient <mail> X-BID: 11117965 22049 MIME-Version: 1.0 Content-Type: text/html Content-Transfer-Encoding: 7bit Message-ID:
 
 <center>
 Please click "Not Spam" above if delivered to spam folder
@@ -171,5 +168,4 @@ title: Spam Checker
 navigation:
   show: true
 ---
--- 1.1 INVALID_DATE Invalid Date: header (not RFC 2822) -0.0 NO_RELAYS Informational: message was not relayed via SMTP 1.6 URIBL_WS_SURBL Contains an URL listed in the WS SURBL blocklist [URIs: xgwi112oswing.com] 1.7 URIBL_DBL_SPAM Contains an URL listed in the DBL blocklist [URIs: xgwi112oswing.com] 0.6 HS_INDEX_PARAM URI: Link contains a common tracker pattern. 0.0 HTML_MESSAGE BODY: HTML included in message 1.7 HTML_IMAGE_ONLY_08 BODY: HTML: images with 400-800 bytes of words 0.8 BAYES_50 BODY: Bayes spam probability is 40 to 60% [score: 0.4993] 0.7 MIME_HTML_ONLY BODY: Message only has text/html MIME parts 0.4 HTML_MIME_NO_HTML_TAG HTML-only message, but there is no HTML tag 0.0 HTML_SHORT_LINK_IMG_1 HTML is very short with a linked image -0.0 NO_RECEIVED Informational: message has no Received headers 0.0 T_REMOTE_IMAGE Message contains an external image 0.0 TO_EQ_FM_DOM_HTML_IMG To domain == From domain and HTML image link
-{% endcodeblock %}</mail></hiprecallclaimcenter>
+-- 1.1 INVALID_DATE Invalid Date: header (not RFC 2822) -0.0 NO_RELAYS Informational: message was not relayed via SMTP 1.6 URIBL_WS_SURBL Contains an URL listed in the WS SURBL blocklist [URIs: xgwi112oswing.com] 1.7 URIBL_DBL_SPAM Contains an URL listed in the DBL blocklist [URIs: xgwi112oswing.com] 0.6 HS_INDEX_PARAM URI: Link contains a common tracker pattern. 0.0 HTML_MESSAGE BODY: HTML included in message 1.7 HTML_IMAGE_ONLY_08 BODY: HTML: images with 400-800 bytes of words 0.8 BAYES_50 BODY: Bayes spam probability is 40 to 60% [score: 0.4993] 0.7 MIME_HTML_ONLY BODY: Message only has text/html MIME parts 0.4 HTML_MIME_NO_HTML_TAG HTML-only message, but there is no HTML tag 0.0 HTML_SHORT_LINK_IMG_1 HTML is very short with a linked image -0.0 NO_RECEIVED Informational: message has no Received headers 0.0 T_REMOTE_IMAGE Message contains an external image 0.0 TO_EQ_FM_DOM_HTML_IMG To domain == From domain and HTML image link {% endcodeblock %}</mail></hiprecallclaimcenter>

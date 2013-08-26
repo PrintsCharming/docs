@@ -36,24 +36,18 @@ navigation:
 
 ### XML Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com&method=eventpostur
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com&method=eventpostur {% endcodeblock %}
 
 ### Response
 
-{% codeblock %}
-url\>http://www.SubUserPostUrlHere.com</url>JSON Call
+{% codeblock %} url\>http://www.SubUserPostUrlHere.com</url>JSON Call
 
 </h3>
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com&method=eventpostur
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com&method=eventpostur {% endcodeblock %}
 
 ### Response
 
-{% codeblock %}
-{"url":"http:\\/\\/www.SubUserPostUrlHere.com"}
-{% endcodeblock %}
+{% codeblock %} {"url":"http:\\/\\/www.SubUserPostUrlHere.com"} {% endcodeblock %}
 
 * * * * *
 
@@ -94,29 +88,25 @@ url\>http://www.SubUserPostUrlHere.com</url>JSON Call
 
 ### XML Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.com&method=eventpostur
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.com&method=eventpostur {% endcodeblock %}
 
 ### Response
 
-{% codeblock %}
-result\><message>success</message></result>
-{% endcodeblock %}
+{% codeblock %} result\><message>success</message></result> {% endcodeblock %}
 
 ### JSON Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.com&method=eventpostur
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.com&method=eventpostur {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 {
   "message": "success"
 }
 {% endcodeblock %}
+
 
 * * * * *
 
@@ -151,26 +141,22 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 
 ### XML Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.com&method=eventpostur
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.com&method=eventpostur {% endcodeblock %}
 
 ### Response
 
-{% codeblock %}
-result\><message>success</message></result>
-{% endcodeblock %}
+{% codeblock %} result\><message>success</message></result> {% endcodeblock %}
 
 ### JSON Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.com&method=eventpostur
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.com&method=eventpostur {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 {
   "message": "success"
 }
 {% endcodeblock %}
+

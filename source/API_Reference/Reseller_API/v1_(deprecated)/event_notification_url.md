@@ -42,24 +42,18 @@ navigation:
 
 ### XML Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=customer@example.com&method=eventpostur
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=customer@example.com&method=eventpostur {% endcodeblock %}
 
 ### Response
 
-{% codeblock %}
-<url>http://www.SubUserPostUrlHere.com</url>JSON Call
+{% codeblock %} <url>http://www.SubUserPostUrlHere.com</url>JSON Call
 
 </h3>
-{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=customer@example.com&method=eventpostur
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=customer@example.com&method=eventpostur {% endcodeblock %}
 
 ### Response
 
-{% codeblock %}
-{"url":"http:\\/\\/www.SubUserPostUrlHere.com"}
-{% endcodeblock %}
+{% codeblock %} {"url":"http:\\/\\/www.SubUserPostUrlHere.com"} {% endcodeblock %}
 
 * * * * *
 
@@ -106,11 +100,10 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 
 ### XML Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=customer@example.com&url=http://www.SubUserPostUrlHere.com&method=eventpostur
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=customer@example.com&url=http://www.SubUserPostUrlHere.com&method=eventpostur {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -121,19 +114,20 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 
+
 ### JSON Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=customer@example.com&url=http://www.SubUserPostUrlHere.com&method=eventpostur
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=customer@example.com&url=http://www.SubUserPostUrlHere.com&method=eventpostur {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 {
   "message": "success"
 }
 {% endcodeblock %}
+
 
 * * * * *
 
@@ -174,11 +168,10 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 ### XML Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com&method=eventpostur
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com&method=eventpostur {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -189,16 +182,17 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 
+
 ### JSON Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com&method=eventpostur
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com&method=eventpostur {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 {
   "message": "success"
 }
 {% endcodeblock %}
+

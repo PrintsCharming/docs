@@ -16,11 +16,10 @@ View your SendGrid Profile
 <div class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/profile.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/profile.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 [
@@ -41,15 +40,15 @@ https://sendgrid.com/api/profile.get.json?api_user=your_sendgrid_username&api_ke
 ]
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/profile.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/profile.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -76,6 +75,7 @@ https://sendgrid.com/api/profile.get.xml?api_user=your_sendgrid_username&api_key
 
 {% endcodeblock %}
 
+
 </div>
 </div>
 
@@ -93,12 +93,12 @@ https://sendgrid.com/api/profile.get.xml?api_user=your_sendgrid_username&api_key
          <th>Description</th>
       </tr>
       <tr>
-         <td>first\_name</td>
+         <td>first_name</td>
          <td>No</td>
          <td>Your first name</td>
       </tr>
       <tr>
-         <td>last\_name</td>
+         <td>last_name</td>
          <td>No</td>
          <td>Your last name</td>
       </tr>
@@ -146,11 +146,10 @@ https://sendgrid.com/api/profile.get.xml?api_user=your_sendgrid_username&api_key
 <div class="tab-pane active" id="set-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/profile.set.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&first_name=newFirstName&last_name=&newLastName
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/profile.set.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&first_name=newFirstName&last_name=&newLastName {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -158,7 +157,9 @@ https://sendgrid.com/api/profile.set.json?api_user=your_sendgrid_username&api_ke
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -169,15 +170,15 @@ https://sendgrid.com/api/profile.set.json?api_user=your_sendgrid_username&api_ke
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="set-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/profile.set.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&first_name=newFirstName&last_name=&newLastName
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/profile.set.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&first_name=newFirstName&last_name=&newLastName {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -188,7 +189,9 @@ https://sendgrid.com/api/profile.set.xml?api_user=your_sendgrid_username&api_key
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -204,6 +207,7 @@ https://sendgrid.com/api/profile.set.xml?api_user=your_sendgrid_username&api_key
 </result>
 
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -229,7 +233,7 @@ https://sendgrid.com/api/profile.set.xml?api_user=your_sendgrid_username&api_key
          <td>Your new password</td>
       </tr>
       <tr>
-         <td>confirm\_password</td>
+         <td>confirm_password</td>
          <td>Yes</td>
          <td>Must match password parameter and be at least 6 characters long</td>
          <td>Confrim new password</td>
@@ -243,11 +247,10 @@ https://sendgrid.com/api/profile.set.xml?api_user=your_sendgrid_username&api_key
 <div class="tab-pane active" id="reset-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/password.set.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&password=newPasword&confirm_password=newPassword
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/password.set.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&password=newPasword&confirm_password=newPassword {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -255,7 +258,9 @@ https://sendgrid.com/api/password.set.json?api_user=your_sendgrid_username&api_k
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -266,15 +271,15 @@ https://sendgrid.com/api/password.set.json?api_user=your_sendgrid_username&api_k
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="reset-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/password.set.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&password=newPasword&confirm_password=newPassword
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/password.set.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&password=newPasword&confirm_password=newPassword {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -285,11 +290,10 @@ https://sendgrid.com/api/password.set.xml?api_user=your_sendgrid_username&api_ke
 
 {% endcodeblock %}
 
+
 ### Response: Error
 
-{% codeblock %}
-<result> <message>error</message> <errors> ... <error>... error messages ...</error> ... </errors> @nodes
-{% endcodeblock %}
+{% codeblock %} <result> <message>error</message> <errors> ... <error>... error messages ...</error> ... </errors> @nodes {% endcodeblock %}
 
 </div>
 </div>
@@ -325,11 +329,10 @@ https://sendgrid.com/api/password.set.xml?api_user=your_sendgrid_username&api_ke
 <div class="tab-pane active" id="setusername-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/profile.setUsername.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=yournewusername@domain.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/profile.setUsername.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=yournewusername@domain.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -337,7 +340,9 @@ https://sendgrid.com/api/profile.setUsername.json?api_user=your_sendgrid_usernam
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -348,15 +353,15 @@ https://sendgrid.com/api/profile.setUsername.json?api_user=your_sendgrid_usernam
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="setusername-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/profile.setUsername.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=yournewusername@domain.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/profile.setUsername.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=yournewusername@domain.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -367,11 +372,10 @@ https://sendgrid.com/api/profile.setUsername.xml?api_user=your_sendgrid_username
 
 {% endcodeblock %}
 
+
 ### Response: Error
 
-{% codeblock %}
-<result> <message>error</message> <errors> ... <error>... error messages ...</error> ... </errors> @nodes
-{% endcodeblock %}
+{% codeblock %} <result> <message>error</message> <errors> ... <error>... error messages ...</error> ... </errors> @nodes {% endcodeblock %}
 
 </div>
 </div>
@@ -407,11 +411,10 @@ https://sendgrid.com/api/profile.setUsername.xml?api_user=your_sendgrid_username
 <div class="tab-pane active" id="setemail-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/profile.setEmail.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=yournewemail@domain.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/profile.setEmail.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=yournewemail@domain.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -419,7 +422,9 @@ https://sendgrid.com/api/profile.setEmail.json?api_user=your_sendgrid_username&a
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -430,15 +435,15 @@ https://sendgrid.com/api/profile.setEmail.json?api_user=your_sendgrid_username&a
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="setemail-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/profile.setEmail.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=yournewemail@domain.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/profile.setEmail.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=yournewemail@domain.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -447,7 +452,9 @@ https://sendgrid.com/api/profile.setEmail.xml?api_user=your_sendgrid_username&ap
 
 {% endcodeblock %}
 
+
 Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -455,6 +462,7 @@ Response: Error
 <message>error</message>
 
 {% endcodeblock %}
+
 
 </div>
 </div>

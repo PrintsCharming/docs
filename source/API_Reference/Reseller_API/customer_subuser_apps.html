@@ -65,7 +65,8 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
 https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:javascript %}
+{
   "name": "twitter",
   "title": "Twitter",
   "description": "This plugin allows you to send an email message to twitter",
@@ -125,7 +126,8 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
 https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=activate&user=example@example.com
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:javascript %}
+{
   "message": "success"
 }
 {% endcodeblock %}
@@ -182,7 +184,8 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
 https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=deactivate&user=example@example.com
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:javascript %}
+{
   "message": "success"
 }
 {% endcodeblock %}
@@ -293,7 +296,8 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_us
 
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:javascript %}
+{
   "message": "error",
   "errors": [
     "...error messages..."

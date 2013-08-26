@@ -45,17 +45,14 @@ Returns all of the users who have pending changes within your account.
 
 ### XML Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.pending.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=lis
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.pending.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=lis {% endcodeblock %}
 
 ### Response: Success
 
-{% codeblock %}
-result\><pending><user><username>user4</username><type>Account Upgrade</type><current>Main Reseller - Silver Package</current><update>Main Reseller - Gold Package</update><date>2010-09-30</date><ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip></ips><ip_groups></ip_groups></user><user><username>user5</username><type>Account Downgrade</type><current>Main Reseller - Gold Package</current><update>Main Reseller - Basic Package</update><date>2010-10-07</date><ips></ips><ip_groups><ip_group>Reseller Group</ip_group></ip_groups></user></pending></result>
-{% endcodeblock %}
+{% codeblock %} result\><pending><user><username>user4</username><type>Account Upgrade</type><current>Main Reseller - Silver Package</current><update>Main Reseller - Gold Package</update><date>2010-09-30</date><ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip></ips><ip_groups></ip_groups></user><user><username>user5</username><type>Account Downgrade</type><current>Main Reseller - Gold Package</current><update>Main Reseller - Basic Package</update><date>2010-10-07</date><ips></ips><ip_groups><ip_group>Reseller Group</ip_group></ip_groups></user></pending></result> {% endcodeblock %}
 
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -69,19 +66,17 @@ result\><pending><user><username>user4</username><type>Account Upgrade</type><cu
 
 {% endcodeblock %}
 
+
 ### JSON Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.pending.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=lis
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.pending.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=lis {% endcodeblock %}
 
 ### Response: Success
 
-{% codeblock %}
-{"username":"user4","type":"Account Upgrade","current":"Main Reseller - Silver Package","update":"Main Reseller - Gold Package","ip_groups":[],"ips":["255.255.255.0","255.255.254.0"],"date":"2010-09-30"},{"username":"user5","type":"Account Downgrade","current":"Main Reseller - Gold Package","update":"Main Reseller - Basic Package","ip_groups":["Reseller Group"],"ips":[],"date":"2010-10-07"}
-{% endcodeblock %}
+{% codeblock %} {"username":"user4","type":"Account Upgrade","current":"Main Reseller - Silver Package","update":"Main Reseller - Gold Package","ip_groups":[],"ips":["255.255.255.0","255.255.254.0"],"date":"2010-09-30"},{"username":"user5","type":"Account Downgrade","current":"Main Reseller - Gold Package","update":"Main Reseller - Basic Package","ip_groups":["Reseller Group"],"ips":[],"date":"2010-10-07"} {% endcodeblock %}
 
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -91,6 +86,7 @@ https://sendgrid.com/api/distributor.pending.json?api_user=your_sendgrid_usernam
   ]
 }
 {% endcodeblock %}
+
 
 * * * * *
 
@@ -124,17 +120,14 @@ Cancel/Revert a pending change.
 
 ### XML Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.pending.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.pending.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com {% endcodeblock %}
 
 ### Response: Success
 
-{% codeblock %}
-result\><message>success</message></result>
-{% endcodeblock %}
+{% codeblock %} result\><message>success</message></result> {% endcodeblock %}
 
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -148,13 +141,13 @@ result\><message>success</message></result>
 
 {% endcodeblock %}
 
+
 ### JSON Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.pending.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.pending.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -162,7 +155,9 @@ https://sendgrid.com/api/distributor.pending.json?api_user=your_sendgrid_usernam
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -172,6 +167,7 @@ https://sendgrid.com/api/distributor.pending.json?api_user=your_sendgrid_usernam
   ]
 }
 {% endcodeblock %}
+
 
 * * * * *
 
@@ -220,17 +216,14 @@ Once an upgrade happens, an invoice is generated for that user. If it's a free u
 
 ### XML Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou {% endcodeblock %}
 
 ### Response: Success
 
-{% codeblock %}
-result\><message>success</message></result>
-{% endcodeblock %}
+{% codeblock %} result\><message>success</message></result> {% endcodeblock %}
 
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -244,13 +237,13 @@ result\><message>success</message></result>
 
 {% endcodeblock %}
 
+
 ### JSON Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -258,7 +251,9 @@ https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_usernam
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -268,6 +263,7 @@ https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_usernam
   ]
 }
 {% endcodeblock %}
+
 
 * * * * *
 
@@ -316,17 +312,14 @@ Once a downgrade happens, an invoice is generated for that user. Free customers 
 
 ### XML Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou {% endcodeblock %}
 
 ### Response: Success
 
-{% codeblock %}
-result\><message>success</message></result>
-{% endcodeblock %}
+{% codeblock %} result\><message>success</message></result> {% endcodeblock %}
 
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -340,13 +333,13 @@ result\><message>success</message></result>
 
 {% endcodeblock %}
 
+
 ### JSON Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -354,7 +347,9 @@ https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_usernam
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -364,6 +359,7 @@ https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_usernam
   ]
 }
 {% endcodeblock %}
+
 
 * * * * *
 
@@ -402,17 +398,14 @@ Close or revert an account to a free user immediately. An invoice is generated f
 
 ### XML Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Grou
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Grou {% endcodeblock %}
 
 ### Response: Success
 
-{% codeblock %}
-result\><message>success</message></result>
-{% endcodeblock %}
+{% codeblock %} result\><message>success</message></result> {% endcodeblock %}
 
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -426,13 +419,13 @@ result\><message>success</message></result>
 
 {% endcodeblock %}
 
+
 ### JSON Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Grou
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Grou {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -440,7 +433,9 @@ https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_usernam
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -450,6 +445,7 @@ https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_usernam
   ]
 }
 {% endcodeblock %}
+
 
 * * * * *
 
@@ -498,17 +494,14 @@ Apply an upgrade at the end of the user's billing cycle. Once an upgrade happens
 
 ### XML Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou {% endcodeblock %}
 
 ### Response: Success
 
-{% codeblock %}
-result\><message>success</message></result>
-{% endcodeblock %}
+{% codeblock %} result\><message>success</message></result> {% endcodeblock %}
 
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -522,13 +515,13 @@ result\><message>success</message></result>
 
 {% endcodeblock %}
 
+
 ### JSON Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -536,7 +529,9 @@ https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_usernam
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -546,6 +541,7 @@ https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_usernam
   ]
 }
 {% endcodeblock %}
+
 
 * * * * *
 
@@ -594,17 +590,14 @@ Apply a downgrade at the end of the user's billing cycle. Once a downgrade happe
 
 ### XML Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou {% endcodeblock %}
 
 ### Response: Success
 
-{% codeblock %}
-result\><message>success</message></result>
-{% endcodeblock %}
+{% codeblock %} result\><message>success</message></result> {% endcodeblock %}
 
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -618,13 +611,13 @@ result\><message>success</message></result>
 
 {% endcodeblock %}
 
+
 ### JSON Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -632,7 +625,9 @@ https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_usernam
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -642,6 +637,7 @@ https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_usernam
   ]
 }
 {% endcodeblock %}
+
 
 * * * * *
 
@@ -680,17 +676,14 @@ Close or revert an account to a free user at the end of the user's billing cycle
 
 ### XML Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Grou
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Grou {% endcodeblock %}
 
 ### Response: Success
 
-{% codeblock %}
-result\><message>success</message></result>
-{% endcodeblock %}
+{% codeblock %} result\><message>success</message></result> {% endcodeblock %}
 
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -704,13 +697,13 @@ result\><message>success</message></result>
 
 {% endcodeblock %}
 
+
 ### JSON Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Grou
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Grou {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -718,7 +711,9 @@ https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_usernam
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -728,3 +723,4 @@ https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_usernam
   ]
 }
 {% endcodeblock %}
+

@@ -33,15 +33,18 @@ The actual statistics included vary depending upon the set of enabled [Apps]({{r
 
 You can use SendGrid's [SMTPAPI]({{root_url}}/API_Reference/SMTP_API/) to add these categories to your email. The following should be added to the email's header:
 
+
 {% codeblock lang:javascript %}
 {
   "category": "Example Category"
 }
 {% endcodeblock %}
 
+
 In this example, SendGrid would associate statistics for the email containing that header with the category **Example Category**.
 
 You can assign multiple categories per message, up to 10:
+
 
 {% codeblock lang:javascript %}
 {
@@ -53,3 +56,4 @@ You can assign multiple categories per message, up to 10:
   ]
 }
 {% endcodeblock %}
+

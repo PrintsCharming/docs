@@ -45,11 +45,10 @@ All available IP addresses for the reseller including all free IP addresses. If 
 <div class="tab-pane active" id="list-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=all
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=all {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 [
@@ -65,15 +64,15 @@ https://sendgrid.com/apiv2/customer.ip.xml?api_user=your_sendgrid_username&api_k
 ]
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="list-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=all
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=all {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -85,6 +84,7 @@ https://sendgrid.com/apiv2/customer.ip.xml?api_user=your_sendgrid_username&api_k
 </ips>
 
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -121,11 +121,10 @@ https://sendgrid.com/apiv2/customer.ip.xml?api_user=your_sendgrid_username&api_k
 <div class="tab-pane" id="usage-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.sendip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.sendip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list&user=example@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -143,7 +142,9 @@ https://sendgrid.com/apiv2/customer.sendip.xml?api_user=your_sendgrid_username&a
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -154,15 +155,15 @@ https://sendgrid.com/apiv2/customer.sendip.xml?api_user=your_sendgrid_username&a
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="usage-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.sendip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.sendip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list&user=example@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -191,7 +192,9 @@ https://sendgrid.com/apiv2/customer.sendip.json?api_user=your_sendgrid_username&
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -201,6 +204,7 @@ https://sendgrid.com/apiv2/customer.sendip.json?api_user=your_sendgrid_username&
   }
 }
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -247,11 +251,10 @@ https://sendgrid.com/apiv2/customer.sendip.json?api_user=your_sendgrid_username&
 <div class="tab-pane" id="subuser-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.sendip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&set=specify&user=example@example.com&ip[]=255.255.255.250&ip[]=255.255.255.255
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.sendip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&set=specify&user=example@example.com&ip[]=255.255.255.250&ip[]=255.255.255.255 {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -262,7 +265,9 @@ https://sendgrid.com/apiv2/customer.sendip.xml?api_user=your_sendgrid_username&a
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -278,15 +283,15 @@ https://sendgrid.com/apiv2/customer.sendip.xml?api_user=your_sendgrid_username&a
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="subuser-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.sendip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&set=specify&user=example@example.com&ip[]=255.255.255.250&ip[]=255.255.255.255
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.sendip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&set=specify&user=example@example.com&ip[]=255.255.255.250&ip[]=255.255.255.255 {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -294,7 +299,9 @@ https://sendgrid.com/apiv2/customer.sendip.json?api_user=your_sendgrid_username&
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -304,6 +311,7 @@ https://sendgrid.com/apiv2/customer.sendip.json?api_user=your_sendgrid_username&
   ]
 }
 {% endcodeblock %}
+
 
 </div>
 </div>

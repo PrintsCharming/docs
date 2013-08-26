@@ -84,12 +84,12 @@ The following records are needed for links, SPF, DomainKeys, and DKIM to work co
          <td>v=spf1 a mx include:sendgrid.net \~all</td>
       </tr>
       <tr>
-         <td>smtpapi.\_domainkey.example.com.</td>
+         <td>smtpapi._domainkey.example.com.</td>
          <td>CNAME</td>
          <td>dkim.sendgrid.net.</td>
       </tr>
       <tr>
-         <td>smtpapi.\_domainkey.email.example.com.</td>
+         <td>smtpapi._domainkey.email.example.com.</td>
          <td>CNAME</td>
          <td>dkim.sendgrid.net.</td>
       </tr>
@@ -100,7 +100,7 @@ The following records are needed for links, SPF, DomainKeys, and DKIM to work co
 {% info %} If you already have an SPF record, you can simply add include:sendgrid.net to this entry. Make sure to add it BEFORE the "all" mechanism as "all" always matches and typically goes at the end of the SPF record. {% endinfo %}
  **Underscore Problems?**
 
-If your DNS server does not allow underscores in CNAMES you will have problems adding the smtpapi.\_domainkey CNAME records. If that is the case please create the following TXT records instead:
+If your DNS server does not allow underscores in CNAMES you will have problems adding the smtpapi._domainkey CNAME records. If that is the case please create the following TXT records instead:
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -110,12 +110,12 @@ If your DNS server does not allow underscores in CNAMES you will have problems a
          <th>value</th>
       </tr>
       <tr>
-         <td>smtpapi.\_domainkey.example.com.</td>
+         <td>smtpapi._domainkey.example.com.</td>
          <td>TXT</td>
          <td>See Below.</td>
       </tr>
       <tr>
-         <td>smtpapi.\_domainkey.email.example.com.</td>
+         <td>smtpapi._domainkey.email.example.com.</td>
          <td>TXT</td>
          <td>See Below.</td>
       </tr>
@@ -124,9 +124,7 @@ If your DNS server does not allow underscores in CNAMES you will have problems a
 
 DomainKey Value:
 
-{% codeblock %}
-k=rsa; t=s; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDPtW5iwpXVPiH5FzJ7Nrl8USzuY9zqqzjE0D1r04xDN6qwziDnmgcFNNfMewVKN2D1O+2J9N14hRprzByFwfQW76yojh54Xu3uSbQ3JP0A7k8o8GutRF8zbFUA8n0ZH2y0cIEjMliXY4W4LwPA7m4q0ObmvSjhd63O9d8z1XkUBwIDAQAB
-{% endcodeblock %} 
+{% codeblock %} k=rsa; t=s; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDPtW5iwpXVPiH5FzJ7Nrl8USzuY9zqqzjE0D1r04xDN6qwziDnmgcFNNfMewVKN2D1O+2J9N14hRprzByFwfQW76yojh54Xu3uSbQ3JP0A7k8o8GutRF8zbFUA8n0ZH2y0cIEjMliXY4W4LwPA7m4q0ObmvSjhd63O9d8z1XkUBwIDAQAB {% endcodeblock %} 
 {% anchor h2 %} Dedicated IP Setup {% endanchor %}
 
 

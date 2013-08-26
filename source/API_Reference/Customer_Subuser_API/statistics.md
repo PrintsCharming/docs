@@ -12,7 +12,7 @@ Subuser Statistics
 {% anchor h2 %} Retrieve Subuser Statistics {% endanchor %}
 
 
-Note that you can use *either* the days parameter *or* the start\_date and end\_date parameter.
+Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
 <table>
 <tbody>
@@ -55,11 +55,10 @@ Note that you can use *either* the days parameter *or* the start\_date and e
 <div class="tab-pane" id="stats-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -93,15 +92,15 @@ https://sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&ap
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="stats-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 [
@@ -131,6 +130,7 @@ https://sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&a
   }
 ]
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -169,11 +169,10 @@ Retrieve all-time totals for your subuser
 <div class="tab-pane" id="agg-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&aggregate=1
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&aggregate=1 {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -188,17 +187,17 @@ https://sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&ap
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="agg-json">
 ### Call
 
 #### Command
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&aggregate=1
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&aggregate=1 {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 {
@@ -209,6 +208,7 @@ https://sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&a
   "spamreports": "5"
 }
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -247,11 +247,10 @@ Retrieve a list of all the categories used in your subusers account.
 <div class="tab-pane" id="cat-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&list=true
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&list=true {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -264,15 +263,15 @@ https://sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&ap
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="cat-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&list=true
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&list=true {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 [
@@ -282,13 +281,14 @@ https://sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&a
 ]
 {% endcodeblock %}
 
+
 </div>
 </div>
 
 {% anchor h2 %} Category Statistics {% endanchor %}
 
 
-Retrieve statistics broken down by category. If the category does not exist, there will be an empty result set. Note that you can use  *either* the days parameter *or* the start\_date and end\_date parameter.
+Retrieve statistics broken down by category. If the category does not exist, there will be an empty result set. Note that you can use  *either* the days parameter *or* the start_date and end_date parameter.
 
 <table>
 <tbody>
@@ -337,17 +337,14 @@ Retrieve statistics broken down by category. If the category does not exist, the
 <div class="tab-pane" id="catstats-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category=categoryA
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category=categoryA {% endcodeblock %}
 
 #### Call - Using an array of categories
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -375,21 +372,19 @@ https://sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&ap
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="catstats-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category=categoryA
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category=categoryA {% endcodeblock %}
 
 #### Call - Using an array of categories
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 [
@@ -413,6 +408,7 @@ https://sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&a
   }
 ]
 {% endcodeblock %}
+
 
 </div>
 

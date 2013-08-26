@@ -25,13 +25,13 @@ This API call allows user to add a new set of credentials to their account.
          <th>Description</th>
       </tr>
       <tr>
-         <td>api\_user</td>
+         <td>api_user</td>
          <td>Yes</td>
          <td>alphanumeric</td>
          <td>The primary account holder's user ID creating the new account</td>
       </tr>
       <tr>
-         <td>api\_key</td>
+         <td>api_key</td>
          <td>Yes</td>
          <td>alphanumeric</td>
          <td>The primary account holder's password</td>
@@ -63,11 +63,10 @@ This API call allows user to add a new set of credentials to their account.
 <div class="tab-pane active" id="add-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/credentials/add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=name&password=password&permissions={"email": 0, "web": 1, "api": 0}
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/credentials/add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=name&password=password&permissions={"email": 0, "web": 1, "api": 0} {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -75,7 +74,9 @@ https://sendgrid.com/api/credentials/add.json?api_user=your_sendgrid_username&ap
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -83,15 +84,15 @@ https://sendgrid.com/api/credentials/add.json?api_user=your_sendgrid_username&ap
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="add-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/credentials/add.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=name&password=password&permissions={"email": 0, "web": 1, "api": 0}
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/credentials/add.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=name&password=password&permissions={"email": 0, "web": 1, "api": 0} {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -102,7 +103,9 @@ https://sendgrid.com/api/credentials/add.xml?api_user=your_sendgrid_username&api
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -112,6 +115,7 @@ https://sendgrid.com/api/credentials/add.xml?api_user=your_sendgrid_username&api
 </result>
 
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -139,13 +143,13 @@ navigation:
          <th>Description</th>
       </tr>
       <tr>
-         <td>api\_user</td>
+         <td>api_user</td>
          <td>Yes</td>
          <td>alphanumeric</td>
          <td>The primary account holder's user ID creating the new account</td>
       </tr>
       <tr>
-         <td>api\_key</td>
+         <td>api_key</td>
          <td>Yes</td>
          <td>alphanumeric</td>
          <td>The primary account holder's password</td>
@@ -165,11 +169,10 @@ navigation:
 <div class="tab-pane active" id="remove-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/credentials/remove.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example_user
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/credentials/remove.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example_user {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -177,7 +180,9 @@ https://sendgrid.com/api/credentials/remove.json?api_user=your_sendgrid_username
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -185,15 +190,15 @@ https://sendgrid.com/api/credentials/remove.json?api_user=your_sendgrid_username
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="remove-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/credentials/remove.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example_user
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/credentials/remove.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example_user {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -204,7 +209,9 @@ https://sendgrid.com/api/credentials/remove.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -214,6 +221,7 @@ https://sendgrid.com/api/credentials/remove.xml?api_user=your_sendgrid_username&
 </result>
 
 {% endcodeblock %}
+
 
 </div>
 </div>

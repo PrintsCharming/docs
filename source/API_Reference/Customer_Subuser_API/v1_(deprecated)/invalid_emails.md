@@ -41,11 +41,10 @@ navigation:
 <div class="tab-pane active" id="get-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/user.invalidemails.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/user.invalidemails.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date= {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -70,15 +69,15 @@ https://sendgrid.com/api/user.invalidemails.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/user.invalidemails.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/user.invalidemails.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date= {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 [
@@ -99,6 +98,7 @@ https://sendgrid.com/api/user.invalidemails.json?api_user=your_sendgrid_username
   }
 ]
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -144,11 +144,10 @@ https://sendgrid.com/api/user.invalidemails.json?api_user=your_sendgrid_username
 <div class="tab-pane active" id="delete-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/user.invalidemails.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=invalidemail@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/user.invalidemails.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=invalidemail@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -159,7 +158,9 @@ https://sendgrid.com/api/user.invalidemails.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -170,14 +171,14 @@ https://sendgrid.com/api/user.invalidemails.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 
+
 ### JSON Request
 
-{% codeblock %}
-https://sendgrid.com/api/user.invalidemails.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=invalidemail@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/user.invalidemails.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=invalidemail@example.com {% endcodeblock %}
 
 <div class="tab-pane active" id="delete-json">
 ### Call
+
 
 {% codeblock lang:javascript %}
 {
@@ -185,13 +186,16 @@ https://sendgrid.com/api/user.invalidemails.json?api_user=your_sendgrid_username
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
   "message": "Email does not exist"
 }
 {% endcodeblock %}
+
 
 </div>
 </div>

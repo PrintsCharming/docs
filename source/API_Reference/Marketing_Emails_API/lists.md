@@ -49,11 +49,10 @@ Create a new Recipient List.
 <div class="tab-pane active" id="add-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/lists/add.json?list=test789&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/lists/add.json?list=test789&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -61,7 +60,9 @@ https://sendgrid.com/api/newsletter/lists/add.json?list=test789&api_user=your_se
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -72,15 +73,15 @@ https://sendgrid.com/api/newsletter/lists/add.json?list=test789&api_user=your_se
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="add-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/lists/add.xml?list=test789&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/lists/add.xml?list=test789&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -91,7 +92,9 @@ https://sendgrid.com/api/newsletter/lists/add.xml?list=test789&api_user=your_sen
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -100,7 +103,8 @@ https://sendgrid.com/api/newsletter/lists/add.xml?list=test789&api_user=your_sen
    <message>error: reason</message>
 </result>
 
-{% endcodeblock %} </result>
+{% endcodeblock %}
+ </result>
 
 </div>
 </div>
@@ -142,11 +146,10 @@ Rename a Recipient List.
 <div class="tab-pane active" id="edit-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/lists/edit.json?list=test7890&newlist=test567&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/lists/edit.json?list=test7890&newlist=test567&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -154,7 +157,9 @@ https://sendgrid.com/api/newsletter/lists/edit.json?list=test7890&newlist=test56
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -165,15 +170,15 @@ https://sendgrid.com/api/newsletter/lists/edit.json?list=test7890&newlist=test56
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="edit-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/lists/edit.xml?list=test7890&newlist=test567&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/lists/edit.xml?list=test7890&newlist=test567&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -184,7 +189,9 @@ https://sendgrid.com/api/newsletter/lists/edit.xml?list=test7890&newlist=test567
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -193,7 +200,8 @@ https://sendgrid.com/api/newsletter/lists/edit.xml?list=test7890&newlist=test567
    <message>error: reason</message>
 </result>
 
-{% endcodeblock %} </result>
+{% endcodeblock %}
+ </result>
 
 </div>
 </div>
@@ -229,11 +237,10 @@ List all Recipient Lists on your account, or check if a particular List exists.
 <div class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/lists/get.json?list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/lists/get.json?list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 [
@@ -243,7 +250,9 @@ https://sendgrid.com/api/newsletter/lists/get.json?list=test&api_user=your_sendg
 ]
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -254,15 +263,15 @@ https://sendgrid.com/api/newsletter/lists/get.json?list=test&api_user=your_sendg
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/lists/get.xml?list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/lists/get.xml?list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -275,7 +284,9 @@ https://sendgrid.com/api/newsletter/lists/get.xml?list=test&api_user=your_sendgr
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -284,7 +295,8 @@ https://sendgrid.com/api/newsletter/lists/get.xml?list=test&api_user=your_sendgr
    <message>error: reason</message>
 </result>
 
-{% endcodeblock %} </result>
+{% endcodeblock %}
+ </result>
 
 </div>
 </div>
@@ -320,11 +332,10 @@ Remove a Recipient List from your account.
 <div class="tab-pane active" id="delete-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/lists/delete.json?list=test5678&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/lists/delete.json?list=test5678&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -332,7 +343,9 @@ https://sendgrid.com/api/newsletter/lists/delete.json?list=test5678&api_user=you
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -343,15 +356,15 @@ https://sendgrid.com/api/newsletter/lists/delete.json?list=test5678&api_user=you
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="delete-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/lists/delete.xml?list=test5678&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/lists/delete.xml?list=test5678&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -362,7 +375,9 @@ https://sendgrid.com/api/newsletter/lists/delete.xml?list=test5678&api_user=your
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -371,7 +386,8 @@ https://sendgrid.com/api/newsletter/lists/delete.xml?list=test5678&api_user=your
    <message>error: reason</message>
 </result>
 
-{% endcodeblock %} </result>
+{% endcodeblock %}
+ </result>
 
 </div>
 </div>

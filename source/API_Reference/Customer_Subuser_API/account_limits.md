@@ -43,11 +43,10 @@ Retrieve account limits for a specific subuser. If the API call response is empt
 <div class="tab-pane active" id="limit-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=retrieve
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=retrieve {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -57,7 +56,9 @@ https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&a
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -68,15 +69,15 @@ https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&a
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="limit-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=retrieve
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=retrieve {% endcodeblock %}
 
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -89,6 +90,7 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&ap
 </result>
 
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -130,11 +132,10 @@ Remove the limit for a subuser.
 <div class="tab-pane active" id="list-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=none
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=none {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -142,7 +143,9 @@ https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&a
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -153,15 +156,15 @@ https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&a
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="list-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=none
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=none {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -172,7 +175,9 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&ap
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -187,6 +192,7 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&ap
 </result>
 
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -242,7 +248,7 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&ap
          <td>The date you want to stop resetting the subusers credits</td>
       </tr>
       <tr>
-         <td>initial\_credits</td>
+         <td>initial_credits</td>
          <td>No</td>
          <td>Must be an integer greater than 0</td>
          <td>The number of credits you initially want the account reset to. If this is not set, the credits will be reset using the credits parameter</td>
@@ -256,11 +262,10 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&ap
 <div class="tab-pane" id="reset-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=recurring&credits=200&period=daily
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=recurring&credits=200&period=daily {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -268,7 +273,9 @@ https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&a
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -279,15 +286,15 @@ https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&a
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="reset-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=recurring&credits=200&period=daily
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=recurring&credits=200&period=daily {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -298,7 +305,9 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&ap
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -313,6 +322,7 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&ap
 </result>
 
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -358,11 +368,10 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&ap
 <div class="tab-pane active" id="total-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=total&credits=200
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=total&credits=200 {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -370,7 +379,9 @@ https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&a
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -381,15 +392,15 @@ https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&a
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="total-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=total&credits=200
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=total&credits=200 {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -400,11 +411,10 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&ap
 
 {% endcodeblock %}
 
+
 ### Response: Error
 
-{% codeblock %}
-<result><message>error</message><errors> ... <error>... error messages ...</error> ... </errors></result>
-{% endcodeblock %}
+{% codeblock %} <result><message>error</message><errors> ... <error>... error messages ...</error> ... </errors></result> {% endcodeblock %}
 
 </div>
 </div>
@@ -450,11 +460,10 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&ap
 <div class="tab-pane active" id="increment-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=increment&credits=20
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=increment&credits=20 {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -462,7 +471,9 @@ https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&a
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -473,15 +484,15 @@ https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&a
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="increment-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=increment&credits=200
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=increment&credits=200 {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -492,7 +503,9 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&ap
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -507,6 +520,7 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&ap
 </result>
 
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -552,11 +566,10 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&ap
 <div class="tab-pane active" id="decrement-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=decrement&credits=200
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=decrement&credits=200 {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -564,7 +577,9 @@ https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&a
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -575,15 +590,15 @@ https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&a
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="decrement-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=decrement&credits=200
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=decrement&credits=200 {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -595,7 +610,9 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&ap
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -610,6 +627,7 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&ap
 </result>
 
 {% endcodeblock %}
+
 
 </div>
 </div>

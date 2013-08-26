@@ -59,11 +59,10 @@ Create a new Address.
 <div class="tab-pane active" id="add-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/identity/add.json?identity=Sender_Address1&name=Grant&email=grant.hull%40sendgrid.com&address=929_Pearl_Stree&city=Boulder&state=Colorado&zip=80302&country=US&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/identity/add.json?identity=Sender_Address1&name=Grant&email=grant.hull%40sendgrid.com&address=929_Pearl_Stree&city=Boulder&state=Colorado&zip=80302&country=US&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -71,7 +70,9 @@ https://sendgrid.com/api/newsletter/identity/add.json?identity=Sender_Address1&n
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -82,15 +83,15 @@ https://sendgrid.com/api/newsletter/identity/add.json?identity=Sender_Address1&n
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="add-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/identity/add.xml?identity=Sender_Address1&name=Grant&email=grant.hull%40sendgrid.com&address=929_Pearl_Stree&city=Boulder&state=Colorado&zip=80302&country=US&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/identity/add.xml?identity=Sender_Address1&name=Grant&email=grant.hull%40sendgrid.com&address=929_Pearl_Stree&city=Boulder&state=Colorado&zip=80302&country=US&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -101,7 +102,9 @@ https://sendgrid.com/api/newsletter/identity/add.xml?identity=Sender_Address1&na
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -111,6 +114,7 @@ https://sendgrid.com/api/newsletter/identity/add.xml?identity=Sender_Address1&na
 </result>
 
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -174,11 +178,10 @@ Edit an existing Address.
 <div class="tab-pane active" id="edit-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/identity/edit.json?identity=Sender_Address2&newidentity=Sender_Address3&name=Grant&email=grant.hull%40sendgrid.com&address=929_Pearl_Street&city=Boulder&state=Colorado&zip=80302&country=US&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/identity/edit.json?identity=Sender_Address2&newidentity=Sender_Address3&name=Grant&email=grant.hull%40sendgrid.com&address=929_Pearl_Street&city=Boulder&state=Colorado&zip=80302&country=US&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -186,7 +189,9 @@ https://sendgrid.com/api/newsletter/identity/edit.json?identity=Sender_Address2&
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -197,15 +202,15 @@ https://sendgrid.com/api/newsletter/identity/edit.json?identity=Sender_Address2&
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="edit-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/identity/edit.xml?identity=Sender_Address2&newidentity=Sender_Address3&name=Grant&email=grant.hull%40sendgrid.com&address=929_Pearl_Street&city=Boulder&state=Colorado&zip=80302&country=US&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/identity/edit.xml?identity=Sender_Address2&newidentity=Sender_Address3&name=Grant&email=grant.hull%40sendgrid.com&address=929_Pearl_Street&city=Boulder&state=Colorado&zip=80302&country=US&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -216,7 +221,9 @@ https://sendgrid.com/api/newsletter/identity/edit.xml?identity=Sender_Address2&n
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -226,6 +233,7 @@ https://sendgrid.com/api/newsletter/identity/edit.xml?identity=Sender_Address2&n
 </result>
 
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -263,11 +271,10 @@ Retrieve information associated with a particular Address.
 <div class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/identity/get.json?identity=Sender_Address&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/identity/get.json?identity=Sender_Address&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -283,7 +290,9 @@ https://sendgrid.com/api/newsletter/identity/get.json?identity=Sender_Address&ap
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -294,15 +303,15 @@ https://sendgrid.com/api/newsletter/identity/get.json?identity=Sender_Address&ap
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/identity/get.xml?identity=Sender_Address&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/identity/get.xml?identity=Sender_Address&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -319,12 +328,14 @@ https://sendgrid.com/api/newsletter/identity/get.xml?identity=Sender_Address&api
 
 </address>
    <email>example@sendgrid.com</email>
-   <identity>Sender\_Address </identity>
+   <identity>Sender_Address </identity>
 </identity>
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -334,6 +345,7 @@ https://sendgrid.com/api/newsletter/identity/get.xml?identity=Sender_Address&api
 </result>
 
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -371,11 +383,10 @@ List all Addresses on your account, or check if a particular Address exists.
 <div class="tab-pane active" id="list-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/identity/list.json?identity=Sender_Address4&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/identity/list.json?identity=Sender_Address4&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 [
@@ -385,7 +396,9 @@ https://sendgrid.com/api/newsletter/identity/list.json?identity=Sender_Address4&
 ]
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -396,15 +409,15 @@ https://sendgrid.com/api/newsletter/identity/list.json?identity=Sender_Address4&
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="list-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/identity/list.xml?identity=Sender_Address4&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/identity/list.xml?identity=Sender_Address4&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -415,18 +428,21 @@ https://sendgrid.com/api/newsletter/identity/list.xml?identity=Sender_Address4&a
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <identities>
    <identity>
-      <identity>Sender\_Address4</identity>
+      <identity>Sender_Address4</identity>
    </identity>
 </identities>
 
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -464,11 +480,10 @@ Remove an Address from your account.
 <div class="tab-pane active" id="delete-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/identity/delete.json?identity=Sender_Address4&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/identity/delete.json?identity=Sender_Address4&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -476,7 +491,9 @@ https://sendgrid.com/api/newsletter/identity/delete.json?identity=Sender_Address
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -487,15 +504,15 @@ https://sendgrid.com/api/newsletter/identity/delete.json?identity=Sender_Address
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="delete-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/identity/delete.xml?identity=Sender_Address4&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/identity/delete.xml?identity=Sender_Address4&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -506,7 +523,9 @@ https://sendgrid.com/api/newsletter/identity/delete.xml?identity=Sender_Address4
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -516,6 +535,7 @@ https://sendgrid.com/api/newsletter/identity/delete.xml?identity=Sender_Address4
 </result>
 
 {% endcodeblock %}
+
 
 </div>
 </div>

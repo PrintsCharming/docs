@@ -5,6 +5,7 @@ Hello -name-,
 
 An accompanying SMTP API JSON header might look something like this:
 
+
 {% codeblock lang:javascript %}
 {
   "to": [
@@ -35,6 +36,7 @@ An accompanying SMTP API JSON header might look something like this:
   }
 }
 {% endcodeblock %}
+
 
 The final email for John would look like this:
 

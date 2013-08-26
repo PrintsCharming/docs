@@ -36,11 +36,10 @@ Retrieve invoices/usages from customers.
 <div class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/reseller.billing.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&number=2010010001&task=usag
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/reseller.billing.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&number=2010010001&task=usag {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -85,7 +84,9 @@ https://sendgrid.com/apiv2/reseller.billing.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -101,15 +102,15 @@ https://sendgrid.com/apiv2/reseller.billing.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/reseller.billing.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&number=2010010001&task=usag
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/reseller.billing.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&number=2010010001&task=usag {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 {
@@ -151,7 +152,9 @@ https://sendgrid.com/apiv2/reseller.billing.json?api_user=your_sendgrid_username
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -161,6 +164,7 @@ https://sendgrid.com/apiv2/reseller.billing.json?api_user=your_sendgrid_username
   ]
 }
 {% endcodeblock %}
+
 
 </div>
 </div>

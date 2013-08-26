@@ -8,9 +8,7 @@ navigation:
 
 If you are using Node.js and would like to send email through SendGrid, use the SendGrid nodejs module. Full documentation for this module can be found on [github](http://github.com/sendgrid/sendgrid-nodejs).
 
-{% codeblock %}
-npm install sendgrid
-{% endcodeblock %}
+{% codeblock %} npm install sendgrid {% endcodeblock %}
 
 Once you have the module installed, it can be as simple as the following code snippet, modified to your specifics, of course:
 
@@ -86,12 +84,8 @@ Tests located in the *test/lib* folder can be ran as-is and should all pass if y
 
 When you're ready, you can run your tests with this command:
 
-{% codeblock %}
-make test
-{% endcodeblock %}
+{% codeblock %} make test {% endcodeblock %}
 
 You can run individual tests:
 
-{% codeblock %}
-mocha /path/to/test.test.js
-{% endcodeblock %}
+{% codeblock %} mocha /path/to/test.test.js {% endcodeblock %}

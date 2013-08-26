@@ -63,11 +63,10 @@ Create a new Marketing Email.
 <div class="tab-pane active" id="create-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/add.json?identity=Sender_Address&name=SendGrid_Test&subject=testsubject&text=testtextbody&html=%3Chtml%3E%3Cp%3Etest_html_body%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/add.json?identity=Sender_Address&name=SendGrid_Test&subject=testsubject&text=testtextbody&html=%3Chtml%3E%3Cp%3Etest_html_body%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -75,7 +74,9 @@ https://sendgrid.com/api/newsletter/add.json?identity=Sender_Address&name=SendGr
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -86,15 +87,15 @@ https://sendgrid.com/api/newsletter/add.json?identity=Sender_Address&name=SendGr
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="create-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/add.xml?identity=Sender_Address&name=SendGrid_Test&subject=testsubject&text=testtextbody&html=%3Chtml%3E%3Cp%3Etest_html_body%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/add.xml?identity=Sender_Address&name=SendGrid_Test&subject=testsubject&text=testtextbody&html=%3Chtml%3E%3Cp%3Etest_html_body%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -105,7 +106,9 @@ https://sendgrid.com/api/newsletter/add.xml?identity=Sender_Address&name=SendGri
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -115,6 +118,7 @@ https://sendgrid.com/api/newsletter/add.xml?identity=Sender_Address&name=SendGri
 </result>
 
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -146,11 +150,10 @@ Edit an existing Marketing Email.
 <div class="tab-pane active" id="edit-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/edit.json?identity=Sender_Address&name=SendGrid_Edit_Test&newname=new_name_test&subject=test_subject&text=test_text&html=%3Chtml%3E%3Cp%3ETest_html_text%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/edit.json?identity=Sender_Address&name=SendGrid_Edit_Test&newname=new_name_test&subject=test_subject&text=test_text&html=%3Chtml%3E%3Cp%3ETest_html_text%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -158,7 +161,9 @@ https://sendgrid.com/api/newsletter/edit.json?identity=Sender_Address&name=SendG
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -169,15 +174,15 @@ https://sendgrid.com/api/newsletter/edit.json?identity=Sender_Address&name=SendG
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="edit-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/edit.xml?identity=Sender_Address&name=SendGrid_Edit_Test&newname=new_name_test&subject=test_subject&text=test_text&html=%3Chtml%3E%3Cp%3ETest_html_text%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/edit.xml?identity=Sender_Address&name=SendGrid_Edit_Test&newname=new_name_test&subject=test_subject&text=test_text&html=%3Chtml%3E%3Cp%3ETest_html_text%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -188,7 +193,9 @@ https://sendgrid.com/api/newsletter/edit.xml?identity=Sender_Address&name=SendGr
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -198,6 +205,7 @@ https://sendgrid.com/api/newsletter/edit.xml?identity=Sender_Address&name=SendGr
 </result>
 
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -235,11 +243,10 @@ Retrieve the contents of an existing Marketing Email.
 <div class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/get.json?name=SendGrid_Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/get.json?name=SendGrid_Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -256,7 +263,9 @@ https://sendgrid.com/api/newsletter/get.json?name=SendGrid_Test&api_user=your_se
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -267,15 +276,15 @@ https://sendgrid.com/api/newsletter/get.json?name=SendGrid_Test&api_user=your_se
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/get.xml?name=SendGrid_Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/get.xml?name=SendGrid_Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -294,7 +303,9 @@ https://sendgrid.com/api/newsletter/get.xml?name=SendGrid_Test&api_user=your_sen
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -304,6 +315,7 @@ https://sendgrid.com/api/newsletter/get.xml?name=SendGrid_Test&api_user=your_sen
 </result>
 
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -341,11 +353,10 @@ Retrieve a list of all existing Marketing Email.
 <div class="tab-pane active" id="list-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/list.json?&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/list.json?&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 [
@@ -368,7 +379,9 @@ https://sendgrid.com/api/newsletter/list.json?&api_user=your_sendgrid_username&a
 ]
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -379,15 +392,15 @@ https://sendgrid.com/api/newsletter/list.json?&api_user=your_sendgrid_username&a
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="list-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/list.xml?&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/list.xml?&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -413,7 +426,9 @@ https://sendgrid.com/api/newsletter/list.xml?&api_user=your_sendgrid_username&ap
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -423,6 +438,7 @@ https://sendgrid.com/api/newsletter/list.xml?&api_user=your_sendgrid_username&ap
 </result>
 
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -460,11 +476,10 @@ Remove an existing Marketing Email.
 <div class="tab-pane active" id="delete-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/delete.json?name=SendGrid_Test1&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/delete.json?name=SendGrid_Test1&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -472,7 +487,9 @@ https://sendgrid.com/api/newsletter/delete.json?name=SendGrid_Test1&api_user=you
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -483,15 +500,15 @@ https://sendgrid.com/api/newsletter/delete.json?name=SendGrid_Test1&api_user=you
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="delete-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/delete.xml?name=SendGrid_Test1&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/delete.xml?name=SendGrid_Test1&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -502,7 +519,9 @@ https://sendgrid.com/api/newsletter/delete.xml?name=SendGrid_Test1&api_user=your
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -512,6 +531,7 @@ https://sendgrid.com/api/newsletter/delete.xml?name=SendGrid_Test1&api_user=your
 </result>
 
 {% endcodeblock %}
+
 
 </div>
 </div>

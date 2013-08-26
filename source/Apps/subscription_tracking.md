@@ -12,9 +12,7 @@ Add automatic subscription management links to the bottom of emails. SendGrid wi
 
 You can customize the text attached to emails and customize the landing page. The links will look something like the following, though can be configured in whatever fashion suits your needs:
 
-{% codeblock %}
-sendgrid.net/submgmt/[encryptedString]
-{% endcodeblock %}
+{% codeblock %} sendgrid.net/submgmt/[encryptedString] {% endcodeblock %}
 
 If you would like to customize your links, create a CNAME that points to sendgrid.net and fill out the Whitelabel setting (available for Silver accounts and higher) in your account.
 
@@ -58,7 +56,7 @@ If you would like to customize your links, create a CNAME that points to sendgri
          <td/>
          <td>replace</td>
          <td>No</td>
-         <td>a tag that can be added to the content that will be replaced by SendGrid with the subscription management link, e.g. [unsubscribe\_tag]</td>
+         <td>a tag that can be added to the content that will be replaced by SendGrid with the subscription management link, e.g. [unsubscribe_tag]</td>
       </tr>
    </tbody>
 </table>

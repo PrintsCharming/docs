@@ -42,36 +42,36 @@ Allow subusers to manage their account from your website using an iframe to our 
 <div class="tab-pane" id="call-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/user.geturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/user.geturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <params>
-   <params>al\_username=username=example@example.com=b478ab36ebc306990dd283b1c341898e</params>
+   <params>al_username=username=example@example.com=b478ab36ebc306990dd283b1c341898e</params>
 </params>
 
 {% endcodeblock %}
+
 
 </div>
 <div class="tab-pane active" id="call-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/user.geturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/user.geturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 {
   "params": "al_username=username&al_subuser_name=example@example.com&al_hash=aa39649af578679d3a90d2cc43245d56"
 }
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -80,9 +80,7 @@ https://sendgrid.com/api/user.geturl.json?api_user=your_sendgrid_username&api_ke
 
 
 {% anchor h2 %} iFrame Usage {% endanchor %}
- Using the parameters returned from the Initial API Call, you can construct the iFrame URL as shown below. {% codeblock %}
-iframe src="https://sendgrid.com/account?al_username=username&al_subuser_name=example@example.com&al_hash=aa39649af578679d3a90d2cc43245d56"\></iframe>
-{% endcodeblock %}
+ Using the parameters returned from the Initial API Call, you can construct the iFrame URL as shown below. {% codeblock %} iframe src="https://sendgrid.com/account?al_username=username&al_subuser_name=example@example.com&al_hash=aa39649af578679d3a90d2cc43245d56"\></iframe> {% endcodeblock %}
 
 </div>
 

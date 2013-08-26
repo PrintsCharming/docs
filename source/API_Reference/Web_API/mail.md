@@ -97,7 +97,7 @@ Send email.
                <td>No</td>
                <td>Required for sending inline images</td>
                <td>
-                  Content IDs of the files to be used as inline images. Content IDs should match the cid's used in the HTML markup. Ex: content[file1.jpg]=ii\_139db99fdb5c3704 would correspond with the HTML `
+                  Content IDs of the files to be used as inline images. Content IDs should match the cid's used in the HTML markup. Ex: content[file1.jpg]=ii_139db99fdb5c3704 would correspond with the HTML `
                   <img src="cid:ii_139db99fdb5c3704">`</img>
                   <tr>
                      <td>headers</td>
@@ -118,13 +118,12 @@ Send email.
 <div class="tab-pane active" id="mail-json">
 ### Call: Send to One Recipient
 
-{% codeblock %}
-https://sendgrid.com/api/mail.send.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&to=destination@example.com&toname=Destination&subject=Example_Subject&text=testingtextbody&from=info@domain.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/mail.send.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&to=destination@example.com&toname=Destination&subject=Example_Subject&text=testingtextbody&from=info@domain.com {% endcodeblock %}
 
-### Call: Send to Multiple Recipients {% codeblock lang:bash %} https://sendgrid.com/api/mail.send.json?api\_user=your\_sendgrid\_username&api\_key=your\_sendgrid\_password&to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example\_Subject&text=testingtextbody&from=info@domain.com {% endcodeblock %}
+### Call: Send to Multiple Recipients {% codeblock lang:bash %} https://sendgrid.com/api/mail.send.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example_Subject&text=testingtextbody&from=info@domain.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -132,7 +131,9 @@ https://sendgrid.com/api/mail.send.json?api_user=your_sendgrid_username&api_key=
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -143,17 +144,17 @@ https://sendgrid.com/api/mail.send.json?api_user=your_sendgrid_username&api_key=
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="mail-xml">
 ### Call: Send to One Recipient
 
-{% codeblock %}
-https://sendgrid.com/api/mail.send.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&to=destination@example.com&toname=Destination&subject=Example_Subject&text=testingtextbody&from=info@domain.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/mail.send.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&to=destination@example.com&toname=Destination&subject=Example_Subject&text=testingtextbody&from=info@domain.com {% endcodeblock %}
 
-### Call: Send to Multiple Recipients {% codeblock lang:bash %} https://sendgrid.com/api/mail.send.xml?api\_user=your\_sendgrid\_username&api\_key=your\_sendgrid\_password&to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example\_Subject&text=testingtextbody&from=info@domain.com {% endcodeblock %}
+### Call: Send to Multiple Recipients {% codeblock lang:bash %} https://sendgrid.com/api/mail.send.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example_Subject&text=testingtextbody&from=info@domain.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -165,7 +166,9 @@ https://sendgrid.com/api/mail.send.xml?api_user=your_sendgrid_username&api_key=y
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -181,6 +184,7 @@ https://sendgrid.com/api/mail.send.xml?api_user=your_sendgrid_username&api_key=y
 
 {% endcodeblock %}
 
+
 </div>
 </div>
 
@@ -190,30 +194,27 @@ https://sendgrid.com/api/mail.send.xml?api_user=your_sendgrid_username&api_key=y
 
 Send to one email recipient
 
-{% codeblock lang:bash %} \$ curl -d 'to=destination@example.com&toname=Destination&subject=Example Subject&text=testingtextbody&from=info@domain.com&api\_user=your\_sendgrid\_username&api\_key=your\_sendgrid\_password' https://sendgrid.com/api/mail.send.json {% endcodeblock %}
+{% codeblock lang:bash %} \$ curl -d 'to=destination@example.com&toname=Destination&subject=Example Subject&text=testingtextbody&from=info@domain.com&api_user=your_sendgrid_username&api_key=your_sendgrid_password' https://sendgrid.com/api/mail.send.json {% endcodeblock %}
 
 Send to multiple email recipients
 
-{% codeblock lang:bash %} \$ curl -d 'to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example Subject&text=testingtextbody&from=info@domain.com&api\_user=your\_sendgrid\_username&api\_key=your\_sendgrid\_password' https://sendgrid.com/api/mail.send.json {% endcodeblock %}
+{% codeblock lang:bash %} \$ curl -d 'to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example Subject&text=testingtextbody&from=info@domain.com&api_user=your_sendgrid_username&api_key=your_sendgrid_password' https://sendgrid.com/api/mail.send.json {% endcodeblock %}
 
 Send a test with attachment
 
-{% codeblock lang:bash %} \$ curl https://sendgrid.com/api/mail.send.json \\ -F to=recipient@domain.com -F toname=test -F subject="Example Subject" \\ -F text="testing text body" --form-string html="**testing html body**" \\ -F from=test@yourdomain.com -F api\_user=your\_sendgrid\_username -F api\_key=your\_sendgrid\_password \\ -F files[attachment.gz]=@f.php.gz https://sendgrid.com/api/mail.send.json {% endcodeblock %}
+{% codeblock lang:bash %} \$ curl https://sendgrid.com/api/mail.send.json \\ -F to=recipient@domain.com -F toname=test -F subject="Example Subject" \\ -F text="testing text body" --form-string html="**testing html body**" \\ -F from=test@yourdomain.com -F api_user=your_sendgrid_username -F api_key=your_sendgrid_password \\ -F files[attachment.gz]=@f.php.gz https://sendgrid.com/api/mail.send.json {% endcodeblock %}
 
 <span class="label label-info">Note</span> To ensure that it uploads from a local file, use \<@filename\>.
 
 Send a test specifying the file content type by appending ';type=<mime type>' to the file name
 
-{% codeblock lang:bash %} \$ curl https://sendgrid.com/api/mail.send.json \\ -F to=recipient@domain.com -F toname=test -F subject="Example Subject" \\ -F text="testing text body" --form-string html="**testing html body**" \\ -F from=test@yourdomain.com -F api\_user=your\_sendgrid\_username -F api\_key=your\_sendgrid\_password \\ -F files[attachment.pdf]=@attachment.pdf;type=application/pdf {% endcodeblock %}
+{% codeblock lang:bash %} \$ curl https://sendgrid.com/api/mail.send.json \\ -F to=recipient@domain.com -F toname=test -F subject="Example Subject" \\ -F text="testing text body" --form-string html="**testing html body**" \\ -F from=test@yourdomain.com -F api_user=your_sendgrid_username -F api_key=your_sendgrid_password \\ -F files[attachment.pdf]=@attachment.pdf;type=application/pdf {% endcodeblock %}
 
 ### Raw HTTP Dump
 
 The following is a dump of the HTTP data sent to our server to generate an email via our web API.
 
-{% codeblock %}
-POST /api/mail.send.json HTTP/1.1
-{% endcodeblock %} {% codeblock %}
-Host: sendgrid.com Accept: \*/\* Content-Length: 999 Expect: 100-continue Content-Type: multipart/form-data; boundary=---
+{% codeblock %} POST /api/mail.send.json HTTP/1.1 {% endcodeblock %} {% codeblock %} Host: sendgrid.com Accept: \*/\* Content-Length: 999 Expect: 100-continue Content-Type: multipart/form-data; boundary=---
 layout: page
 weight: 0
 title: Mail
@@ -556,7 +557,4 @@ title: Mail
 navigation:
   show: true
 ---
----400f182a9360-- HTTP/1.1 200 OK Server: nginx/0.7.65 Date: Fri, 03 Jun 2011 22:30:58 GMT Content-Type: application/json Transfer-Encoding: chunked Connection: keep-alive
-{% endcodeblock %} {% codeblock %}
-{"message":"success"}
-{% endcodeblock %}
+---400f182a9360-- HTTP/1.1 200 OK Server: nginx/0.7.65 Date: Fri, 03 Jun 2011 22:30:58 GMT Content-Type: application/json Transfer-Encoding: chunked Connection: keep-alive {% endcodeblock %} {% codeblock %} {"message":"success"} {% endcodeblock %}

@@ -10,6 +10,7 @@ Sections are an extension of [substitution values]({{root_url}}/API_Reference/SM
 
 The format of the SMTP section key has the form:
 
+
 {% codeblock lang:javascript %}
 {
   "section": {
@@ -18,6 +19,7 @@ The format of the SMTP section key has the form:
   }
 }
 {% endcodeblock %}
+
 
 Typical usage is to have a tag in the body of your email that references a per user substitution tag. This user tag will contain a reference to a section tag. Section text may contain references to per recipient substitution variables.
 
@@ -31,6 +33,7 @@ Hi -name-,
 {% endcodeblock %}
 
 An accompanying SMTPAPI JSON header might look something like this:
+
 
 {% codeblock lang:javascript %}
 {
@@ -53,7 +56,8 @@ An accompanying SMTPAPI JSON header might look something like this:
     "-bodyMale-": "Check out this tie -name-!"
   }
 }
-{% endcodeblock %} The final email for Alice would look like this: {% codeblock lang:html %}
+{% endcodeblock %}
+ The final email for Alice would look like this: {% codeblock lang:html %}
 
 Hi Alice,  
  We thought you might be interested in this special offer. Check out this dress Alice!

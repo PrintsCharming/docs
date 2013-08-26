@@ -38,11 +38,10 @@ navigation:
 <div class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -57,7 +56,9 @@ https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&ap
 
 {% endcodeblock %}
 
+
 ### Response: Empty
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -66,15 +67,15 @@ https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&ap
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -88,7 +89,9 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&a
 }
 {% endcodeblock %}
 
+
 ### Response: Empty
+
 
 {% codeblock lang:javascript %}
 {
@@ -97,6 +100,7 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&a
   ]
 }
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -148,11 +152,10 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&a
 <div class="tab-pane" id="create-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=set&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=set&user=example@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -163,7 +166,9 @@ https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&ap
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -179,15 +184,15 @@ https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&ap
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="create-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=set&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=set&user=example@example.com {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 {
@@ -195,7 +200,9 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&a
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -205,6 +212,7 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&a
   ]
 }
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -256,11 +264,10 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&a
 <div class="tab-pane" id="edit-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=update&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=update&user=example@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -271,7 +278,9 @@ https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&ap
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -287,15 +296,15 @@ https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&ap
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="edit-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=parse&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=parse&user=example@example.com {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 {
@@ -303,7 +312,9 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&a
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -313,6 +324,7 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&a
   ]
 }
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -358,11 +370,10 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&a
 <div class="tab-pane" id="data-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&user=example@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -373,7 +384,9 @@ https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&ap
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -389,15 +402,15 @@ https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&ap
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="data-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&user=example@example.com {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 {
@@ -405,7 +418,9 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&a
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -415,6 +430,7 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&a
   ]
 }
 {% endcodeblock %}
+
 
 </div>
 </div>

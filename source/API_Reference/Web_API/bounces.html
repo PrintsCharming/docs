@@ -244,12 +244,14 @@ delete
 https://sendgrid.com/api/bounces.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com
 {% endcodeblock %} 
 	<h3>Response: Success</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:javascript %}
+{
   "message": "success"
 }
 {% endcodeblock %}
 	<h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:javascript %}
+{
   "message": "Email does not exist"
 }
 {% endcodeblock %}
@@ -323,12 +325,14 @@ Count
 https://sendgrid.com/api/bounces.count.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %} 
 	<h3>Response: Success</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:javascript %}
+{
   "count": "4"
 }
 {% endcodeblock %}
 	<h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:javascript %}
+{
   "message": "error",
   "errors": [
     "...error messages..."

@@ -20,13 +20,13 @@ Retrieve settings already configured for parsing incoming email.
          <th>Description</th>
       </tr>
       <tr>
-         <td>api\_user</td>
+         <td>api_user</td>
          <td>Yes</td>
          <td>alphanumeric</td>
          <td>SendGrid Username</td>
       </tr>
       <tr>
-         <td>api\_key</td>
+         <td>api_key</td>
          <td>Yes</td>
          <td>alphanumeric</td>
          <td>SendGrid password</td>
@@ -40,11 +40,10 @@ Retrieve settings already configured for parsing incoming email.
 <div class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/parse.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/parse.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -58,7 +57,9 @@ https://sendgrid.com/api/parse.get.json?api_user=your_sendgrid_username&api_key=
 }
 {% endcodeblock %}
 
+
 ### Response: Empty
+
 
 {% codeblock lang:javascript %}
 {
@@ -68,15 +69,15 @@ https://sendgrid.com/api/parse.get.json?api_user=your_sendgrid_username&api_key=
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/parse.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/parse.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -91,11 +92,10 @@ https://sendgrid.com/api/parse.get.xml?api_user=your_sendgrid_username&api_key=y
 
 {% endcodeblock %}
 
+
 ### Response: Empty
 
-{% codeblock %}
-<parse></parse>
-{% endcodeblock %}
+{% codeblock %} <parse></parse> {% endcodeblock %}
 
 </div>
 </div>
@@ -117,13 +117,13 @@ Specify the hostname and url for parsing incoming emails.
          <th>Description</th>
       </tr>
       <tr>
-         <td>api\_user</td>
+         <td>api_user</td>
          <td>Yes</td>
          <td>alphanumeric</td>
          <td>SendGrid Username</td>
       </tr>
       <tr>
-         <td>api\_key</td>
+         <td>api_key</td>
          <td>Yes</td>
          <td>alphanumeric</td>
          <td>SendGrid password</td>
@@ -141,7 +141,7 @@ Specify the hostname and url for parsing incoming emails.
          <td>The callback URL to which Parse Webhook payloads will be POSTed.</td>
       </tr>
       <tr>
-         <td>spam\_check</td>
+         <td>spam_check</td>
          <td>No</td>
          <td>0 or 1</td>
          <td>If spam check is enabled, messages that look like spam will not be POSTed.</td>
@@ -155,11 +155,10 @@ Specify the hostname and url for parsing incoming emails.
 <div class="tab-pane active" id="set-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/parse.set.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/parse.set.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1 {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -167,7 +166,9 @@ https://sendgrid.com/api/parse.set.json?api_user=your_sendgrid_username&api_key=
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -178,17 +179,17 @@ https://sendgrid.com/api/parse.set.json?api_user=your_sendgrid_username&api_key=
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="set-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/parse.set.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/parse.set.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1 {% endcodeblock %}
 
 ### Response: Success
 
-### {% codeblock lang:xml %}
+### 
+{% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
@@ -197,7 +198,9 @@ https://sendgrid.com/api/parse.set.xml?api_user=your_sendgrid_username&api_key=y
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -213,6 +216,7 @@ https://sendgrid.com/api/parse.set.xml?api_user=your_sendgrid_username&api_key=y
 </result>
 
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -234,13 +238,13 @@ Delete the existing settings for parsing incoming emails.
          <th>Description</th>
       </tr>
       <tr>
-         <td>api\_user</td>
+         <td>api_user</td>
          <td>Yes</td>
          <td>alphanumeric</td>
          <td>SendGrid Username</td>
       </tr>
       <tr>
-         <td>api\_key</td>
+         <td>api_key</td>
          <td>Yes</td>
          <td>alphanumeric</td>
          <td>SendGrid password</td>
@@ -260,11 +264,10 @@ Delete the existing settings for parsing incoming emails.
 <div class="tab-pane active" id="delete-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/parse.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/parse.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -272,7 +275,9 @@ https://sendgrid.com/api/parse.delete.json?api_user=your_sendgrid_username&api_k
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -283,15 +288,15 @@ https://sendgrid.com/api/parse.delete.json?api_user=your_sendgrid_username&api_k
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="delete-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/parse.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/parse.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -302,7 +307,9 @@ https://sendgrid.com/api/parse.delete.xml?api_user=your_sendgrid_username&api_ke
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -318,6 +325,7 @@ https://sendgrid.com/api/parse.delete.xml?api_user=your_sendgrid_username&api_ke
 </result>
 
 {% endcodeblock %}
+
 
 </div>
 </div>

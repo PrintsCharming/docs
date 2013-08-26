@@ -34,11 +34,10 @@ With the whitelabel API calls you will be able to retrieve whitelabel settings r
 <div class="tab-pane" id="list-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.whitelabel.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.whitelabel.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -56,19 +55,20 @@ https://sendgrid.com/apiv2/customer.whitelabel.xml?api_user=your_sendgrid_userna
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="list-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.whitelabel.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.whitelabel.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:xml %}
 
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -97,9 +97,9 @@ https://sendgrid.com/apiv2/customer.whitelabel.json?api_user=your_sendgrid_usern
          <td>Subuser must be registered under your account</td>
       </tr>
       <tr>
-         <td>mail\_domain</td>
+         <td>mail_domain</td>
          <td>Yes</td>
-         <td>Whitelabel mail\_domain used to append a whitelabel record to a subuser</td>
+         <td>Whitelabel mail_domain used to append a whitelabel record to a subuser</td>
       </tr>
    </tbody>
 </table>
@@ -110,11 +110,10 @@ https://sendgrid.com/apiv2/customer.whitelabel.json?api_user=your_sendgrid_usern
 <div class="tab-pane" id="append-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.whitelabel.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&user=example@example.com&mail_domain=email.sendgrid.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.whitelabel.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&user=example@example.com&mail_domain=email.sendgrid.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -125,7 +124,9 @@ https://sendgrid.com/apiv2/customer.whitelabel.xml?api_user=your_sendgrid_userna
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -141,15 +142,15 @@ https://sendgrid.com/apiv2/customer.whitelabel.xml?api_user=your_sendgrid_userna
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="append-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.whitelabel.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&user=example@example.com&mail_domain=email.sendgrid.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.whitelabel.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&user=example@example.com&mail_domain=email.sendgrid.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -157,7 +158,9 @@ https://sendgrid.com/apiv2/customer.whitelabel.json?api_user=your_sendgrid_usern
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -167,6 +170,7 @@ https://sendgrid.com/apiv2/customer.whitelabel.json?api_user=your_sendgrid_usern
   ]
 }
 {% endcodeblock %}
+
 
 </div>
 </div>

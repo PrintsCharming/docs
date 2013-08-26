@@ -49,11 +49,10 @@ Return an array of invoice numbers to your account.
 <div class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/billing.list.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/billing.list.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -69,15 +68,15 @@ https://sendgrid.com/api/billing.list.xml?api_user=your_sendgrid_username&api_ke
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/billing.list.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/billing.list.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 [
@@ -89,6 +88,7 @@ https://sendgrid.com/api/billing.list.json?api_user=your_sendgrid_username&api_k
   }
 ]
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -134,11 +134,10 @@ Return an array of invoices.
 <div class="tab-pane" id="invoices-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/billing.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/billing.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -163,15 +162,15 @@ https://sendgrid.com/api/billing.get.xml?api_user=your_sendgrid_username&api_key
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="invoices-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/billing.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/billing.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 {
@@ -190,6 +189,7 @@ https://sendgrid.com/api/billing.get.json?api_user=your_sendgrid_username&api_ke
   "final_amount": 110
 }
 {% endcodeblock %}
+
 
 </div>
 </div>

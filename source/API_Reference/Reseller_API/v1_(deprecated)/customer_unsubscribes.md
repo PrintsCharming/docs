@@ -9,7 +9,7 @@ navigation:
 {% anchor h2 %} Retrieve Unsubscribes {% endanchor %}
 
 
-Note that you can use *either* the days parameter *or* the start\_date and end\_date parameter.
+Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
 <table>
 <thead>
@@ -50,24 +50,18 @@ Note that you can use *either* the days parameter *or* the start\_date and end\_
 
 ### XML Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=get&date=
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=get&date= {% endcodeblock %}
 
 ### Response
 
-{% codeblock %}
-unsubscribes\><unsubscribe><email>email1@domain.com</email><created>2009-06-10 12:40:30</created></unsubscribe><unsubscribe><email>email2@domain2.com</email><created>2009-06-10 12:40:30</created></unsubscribe></unsubscribes>JSON Call
+{% codeblock %} unsubscribes\><unsubscribe><email>email1@domain.com</email><created>2009-06-10 12:40:30</created></unsubscribe><unsubscribe><email>email2@domain2.com</email><created>2009-06-10 12:40:30</created></unsubscribe></unsubscribes>JSON Call
 
 </h3>
-{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=get&date=
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=get&date= {% endcodeblock %}
 
 ### Response
 
-{% codeblock %}
-{"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}]
-{% endcodeblock %}
+{% codeblock %} {"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}] {% endcodeblock %}
 
 * * * * *
 
@@ -110,29 +104,22 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 
 ### XML Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=delete&email=unsubscribe@sample.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=delete&email=unsubscribe@sample.com {% endcodeblock %}
 
 ### Response: Success
 
-{% codeblock %}
-result\><message>success</message></result>
-{% endcodeblock %}
+{% codeblock %} result\><message>success</message></result> {% endcodeblock %}
 
 ### Response: Error
 
-{% codeblock %}
-result\><message>Email does not exist</message></result>
-{% endcodeblock %}
+{% codeblock %} result\><message>Email does not exist</message></result> {% endcodeblock %}
 
 ### JSON Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=delete&email=unsubscribe@sample.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=delete&email=unsubscribe@sample.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -140,13 +127,16 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
   "message": "Email does not exist"
 }
 {% endcodeblock %}
+
 
 * * * * *
 
@@ -189,29 +179,22 @@ Add unsubscribe email records to their account if they need to stop sending emai
 
 ### XML Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=add&email=unsubscribe@sample.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=add&email=unsubscribe@sample.com {% endcodeblock %}
 
 ### Response: Success
 
-{% codeblock %}
-result\><message>success</message></result>
-{% endcodeblock %}
+{% codeblock %} result\><message>success</message></result> {% endcodeblock %}
 
 ### Response: Error
 
-{% codeblock %}
-result\><message>Email already exists</message></result>
-{% endcodeblock %}
+{% codeblock %} result\><message>Email already exists</message></result> {% endcodeblock %}
 
 ### JSON Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=add&email=unsubscribe@sample.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=add&email=unsubscribe@sample.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -219,10 +202,13 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
   "message": "Email already exists"
 }
 {% endcodeblock %}
+

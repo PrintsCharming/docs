@@ -45,7 +45,8 @@ The formats supported are XML and JSON. Errors and success responses are describ
 {% anchor h2 %} Errors {% endanchor %}
 
 
--   XML {% codeblock lang:xml %}
+-   XML 
+{% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
@@ -58,7 +59,9 @@ The formats supported are XML and JSON. Errors and success responses are describ
 </result>
 
 {% endcodeblock %}
--   JSON {% codeblock lang:javascript %}
+
+-   JSON 
+{% codeblock lang:javascript %}
 {
   "message": "error",
   "errors": [
@@ -67,19 +70,24 @@ The formats supported are XML and JSON. Errors and success responses are describ
 }
 {% endcodeblock %}
 
+
 ### Success
 
--   XML {% codeblock lang:xml %}
+-   XML 
+{% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result> success </result>
 
 {% endcodeblock %}
--   JSON {% codeblock lang:javascript %}
+
+-   JSON 
+{% codeblock lang:javascript %}
 {
   "message": "success"
 }
 {% endcodeblock %}
+
 
 * * * * *
 
@@ -89,8 +97,8 @@ The formats supported are XML and JSON. Errors and success responses are describ
 
 Each API call requires authentication. You must send the following HTTP parameters on your API calls. Your credentials are the same used for your SMTP authentication and/or website.
 
--   **api\_user** - This is the same credential used for your SMTP settings, and for logging into the website.
--   **api\_key** - This is the same password to authenticate over SMTP, and for logging into the website.
+-   **api_user** - This is the same credential used for your SMTP settings, and for logging into the website.
+-   **api_key** - This is the same password to authenticate over SMTP, and for logging into the website.
 
 * * * * *
 

@@ -76,7 +76,8 @@ Activate App
 https://sendgrid.com/api/filter.activate.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
 {% endcodeblock %}
 		<h3>Response</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:javascript %}
+{
   "message": "success"
 }
 {% endcodeblock %}
@@ -112,7 +113,8 @@ https://sendgrid.com/api/filter.deactivate.json?api_user=your_sendgrid_username&
 {% endcodeblock %}
      <h3>Response</h3>
 
-{% codeblock lang:javascript %}{
+{% codeblock lang:javascript %}
+{
   "message": "success"
 }
 {% endcodeblock %}
@@ -210,7 +212,8 @@ https://sendgrid.com/api/filter.getsettings.json?api_user=your_sendgrid_username
 {% endcodeblock %}
 
 	<h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:javascript %}
+{
   "message": "error",
   "errors": [
     "...error messages..."
@@ -220,7 +223,8 @@ https://sendgrid.com/api/filter.getsettings.json?api_user=your_sendgrid_username
 
 	<h3>Response: Empty</h3>
 <em>*This is returned if that filter has no settings or is not enabled.</em>
-{% codeblock lang:javascript %}{
+{% codeblock lang:javascript %}
+{
   "settings": null
 }
 {% endcodeblock %}

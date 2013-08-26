@@ -63,12 +63,14 @@ https://sendgrid.com/api/newsletter/add.json?identity=Sender_Address&name=SendGr
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:javascript %}
+{
   "message": "success"
 }
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:javascript %}
+{
   "message": "error",
   "errors": [
     "...error messages..."
@@ -166,12 +168,14 @@ https://sendgrid.com/api/newsletter/edit.json?identity=Sender_Address&name=SendG
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:javascript %}
+{
   "message": "success"
 }
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:javascript %}
+{
   "message": "error",
   "errors": [
     "...error messages..."
@@ -237,7 +241,8 @@ https://sendgrid.com/api/newsletter/get.json?name=SendGrid_Test&api_user=your_se
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:javascript %}
+{
   "can_edit": true,
   "name": "SendGrid NL Test",
   "text": null,
@@ -251,7 +256,8 @@ https://sendgrid.com/api/newsletter/get.json?name=SendGrid_Test&api_user=your_se
 }
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:javascript %}
+{
   "message": "error",
   "errors": [
     "...error messages..."
@@ -346,7 +352,8 @@ https://sendgrid.com/api/newsletter/list.json?&api_user=your_sendgrid_username&a
 ]
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:javascript %}
+{
   "message": "error",
   "errors": [
     "...error messages..."
@@ -427,12 +434,14 @@ https://sendgrid.com/api/newsletter/delete.json?name=SendGrid_Test1&api_user=you
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:javascript %}
+{
   "message": "success"
 }
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:javascript %}
+{
   "message": "error",
   "errors": [
     "...error messages..."

@@ -44,7 +44,7 @@ Once that has been completed you can [setup your Inbound Parse](http://sendgrid.
 {% anchor h3 %} Seeing the results {% endanchor %}
 
 
-After completing the setup for your chosen webhook, the results can be found by heading to your Hook Debug unique URL in a browser, or you can monitor it via CURL by running the following command in your console: {% codeblock lang:html %} curl -X GET http://your\_unique\_hook\_debug\_url {% endcodeblock %} 
+After completing the setup for your chosen webhook, the results can be found by heading to your Hook Debug unique URL in a browser, or you can monitor it via CURL by running the following command in your console: {% codeblock lang:html %} curl -X GET http://your_unique_hook_debug_url {% endcodeblock %} 
 {% info %} Hook Debug only buffers 10 events at a time, we don't keep historical events or inbound parses, you will only find the most recent 10 events. {% endinfo %}
  
 {% anchor h2 %} LocalTunnel {% endanchor %}
@@ -64,7 +64,7 @@ Start by installing LocalTunnel on your machine via [RubyGems](http://rubygems.o
 
 The first time you run LocalTunnel, you'll need to pass a location of a public key for security reasons, you can do that with the following command:
 
-{% codeblock lang:html %} \$ localtunnel -k \~/.ssh/id\_rsa.pub 8080 {% endcodeblock %}
+{% codeblock lang:html %} \$ localtunnel -k \~/.ssh/id_rsa.pub 8080 {% endcodeblock %}
 
 This will open up port 8080 to the outside world via a unique URL. The next time you run LocalTunnel you will not need to pass the public key option. Simply pass a port to LocalTunnel:
 

@@ -38,11 +38,10 @@ navigation:
 <div class="tab-pane active" id="retrieve-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.eventposturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.eventposturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 {
@@ -50,15 +49,15 @@ https://sendgrid.com/apiv2/customer.eventposturl.json?api_user=your_sendgrid_use
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="retrieve-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.eventposturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.co
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.eventposturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.co {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -66,6 +65,7 @@ https://sendgrid.com/apiv2/customer.eventposturl.xml?api_user=your_sendgrid_user
 <url>http://www.SubUserPostUrlHere.com</url>
 
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -111,11 +111,10 @@ https://sendgrid.com/apiv2/customer.eventposturl.xml?api_user=your_sendgrid_user
 <div class="tab-pane active" id="set-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.eventposturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.co
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.eventposturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.co {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 {
@@ -123,15 +122,15 @@ https://sendgrid.com/apiv2/customer.eventposturl.json?api_user=your_sendgrid_use
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="set-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.eventposturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.co
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.eventposturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.co {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -141,6 +140,7 @@ https://sendgrid.com/apiv2/customer.eventposturl.xml?api_user=your_sendgrid_user
 </result>
 
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -180,11 +180,10 @@ https://sendgrid.com/apiv2/customer.eventposturl.xml?api_user=your_sendgrid_user
 <div class="tab-pane active" id="delete-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.eventposturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.co
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.eventposturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.co {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 {
@@ -192,15 +191,15 @@ https://sendgrid.com/apiv2/customer.eventposturl.json?api_user=your_sendgrid_use
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="delete-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.eventposturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.co
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.eventposturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.co {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -210,6 +209,7 @@ https://sendgrid.com/apiv2/customer.eventposturl.xml?api_user=your_sendgrid_user
 </result>
 
 {% endcodeblock %}
+
 
 </div>
 </div>

@@ -7,7 +7,7 @@ navigation:
 ---
 
 {% anchor h2 %} Retrieve Customer Subuser Statistics {% endanchor %}
- Note that you can use *either* the days parameter *or* the start\_date and end\_date parameter.
+ Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -30,15 +30,15 @@ navigation:
          <td>Number of days in the past to include statistics (includes today)</td>
       </tr>
       <tr>
-         <td>start\_date</td>
+         <td>start_date</td>
          <td>No</td>
-         <td>Date must be in YYYY-mm-dd format and be before the end\_date parameter</td>
+         <td>Date must be in YYYY-mm-dd format and be before the end_date parameter</td>
          <td>The start date to look up statistics</td>
       </tr>
       <tr>
-         <td>end\_date</td>
+         <td>end_date</td>
          <td>No</td>
-         <td>Date must be in YYYY-mm-dd format and be after the start\_date parameter</td>
+         <td>Date must be in YYYY-mm-dd format and be after the start_date parameter</td>
          <td>The end date to look up statistics</td>
       </tr>
    </tbody>
@@ -46,24 +46,18 @@ navigation:
 
 ### XML Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com {% endcodeblock %}
 
 ### Response
 
-{% codeblock %}
-<stats><day><date>2009-06-20</date><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></day><day><date>2009-06-21</date><requests>32342</requests><bounces>10</bounces><clicks>14323</clicks><opens>10995</opens><spamreports>7</spamreports></day><day><date>2009-06-22</date><requests>52342</requests><bounces>11</bounces><clicks>19223</clicks><opens>12992</opens><spamreports>2</spamreports></day></stats>JSON Call
+{% codeblock %} <stats><day><date>2009-06-20</date><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></day><day><date>2009-06-21</date><requests>32342</requests><bounces>10</bounces><clicks>14323</clicks><opens>10995</opens><spamreports>7</spamreports></day><day><date>2009-06-22</date><requests>52342</requests><bounces>11</bounces><clicks>19223</clicks><opens>12992</opens><spamreports>2</spamreports></day></stats>JSON Call
 
 </h3>
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com {% endcodeblock %}
 
 ### Response
 
-{% codeblock %}
-{"date":"2009-06-20","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5},{"date":"2009-06-21","requests":32342,"bounces":10,"clicks":14323,"opens":10995,"spamreports":7},{"date":"2009-06-22","requests":52342,"bounces":11,"clicks":19223,"opens":12992,"spamreports":2}
-{% endcodeblock %}
+{% codeblock %} {"date":"2009-06-20","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5},{"date":"2009-06-21","requests":32342,"bounces":10,"clicks":14323,"opens":10995,"spamreports":7},{"date":"2009-06-22","requests":52342,"bounces":11,"clicks":19223,"opens":12992,"spamreports":2} {% endcodeblock %}
 
 * * * * *
 
@@ -96,24 +90,18 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_us
 
 ### XML Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&;user=example@example.com&aggregate=
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&;user=example@example.com&aggregate= {% endcodeblock %}
 
 ### Response
 
-{% codeblock %}
-<stats><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></stats>JSON Call
+{% codeblock %} <stats><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></stats>JSON Call
 
 </h3>
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&aggregate=
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&aggregate= {% endcodeblock %}
 
 ### Response
 
-{% codeblock %}
-"requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5
-{% endcodeblock %}
+{% codeblock %} "requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5 {% endcodeblock %}
 
 * * * * *
 
@@ -146,30 +134,24 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_us
 
 ### XML Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&list=tru
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&list=tru {% endcodeblock %}
 
 ### Response
 
-{% codeblock %}
-<categories><category>categoryA</category><category>categoryB</category><category>categoryC</category></categories>JSON Call
+{% codeblock %} <categories><category>categoryA</category><category>categoryB</category><category>categoryC</category></categories>JSON Call
 
 </h3>
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&list=tru
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&list=tru {% endcodeblock %}
 
 ### Response
 
-{% codeblock %}
-{"category":"categoryA","category":"categoryB","category":"categoryC"}
-{% endcodeblock %}
+{% codeblock %} {"category":"categoryA","category":"categoryB","category":"categoryC"} {% endcodeblock %}
 
 * * * * *
 
 
 {% anchor h2 %} Category Statistics {% endanchor %}
- Retrieve statistics broken down by category. If the category does not exist, there will be an empty result set. Note that you can use *either* the days parameter *or* the start\_date and end\_date parameter.
+ Retrieve statistics broken down by category. If the category does not exist, there will be an empty result set. Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -198,15 +180,15 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_us
          <td>Number of days in the past to include statistics (Includes today)</td>
       </tr>
       <tr>
-         <td>start\_date</td>
+         <td>start_date</td>
          <td>No</td>
-         <td>Date must be in YYYY-mm-dd format and be before the end\_date parameter</td>
+         <td>Date must be in YYYY-mm-dd format and be before the end_date parameter</td>
          <td>The start date to look up statistics</td>
       </tr>
       <tr>
-         <td>end\_date</td>
+         <td>end_date</td>
          <td>No</td>
-         <td>Date must be in YYYY-mm-dd format and be after the start\_date parameter</td>
+         <td>Date must be in YYYY-mm-dd format and be after the start_date parameter</td>
          <td>The end date to look up statistics</td>
       </tr>
    </tbody>
@@ -214,33 +196,23 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_us
 
 ### XML Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category {% endcodeblock %}
 
 #### Command - Using an array of categories
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=category
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=category {% endcodeblock %}
 
 ### Response
 
-{% codeblock %}
-<stats><day><date>2009-06-20</date><category>categoryA</category><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></day><day><date>2009-06-21</date><category>categoryB</category><requests>32342</requests><bounces>10</bounces><clicks>14323</clicks><opens>10995</opens><spamreports>7</spamreports></day></stats>JSON Call
+{% codeblock %} <stats><day><date>2009-06-20</date><category>categoryA</category><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></day><day><date>2009-06-21</date><category>categoryB</category><requests>32342</requests><bounces>10</bounces><clicks>14323</clicks><opens>10995</opens><spamreports>7</spamreports></day></stats>JSON Call
 
 </h3>
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category {% endcodeblock %}
 
 #### Command - Using an array of categories
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=category
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=category {% endcodeblock %}
 
 ### Response
 
-{% codeblock %}
-{"date":"2009-06-20","category":,"categoryA","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5},{"date":"2009-06-21",,"category":,"categoryB","requests":32342,"bounces":10,"clicks":14323,"opens":10995,"spamreports":7}
-{% endcodeblock %}
+{% codeblock %} {"date":"2009-06-20","category":,"categoryA","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5},{"date":"2009-06-21",,"category":,"categoryB","requests":32342,"bounces":10,"clicks":14323,"opens":10995,"spamreports":7} {% endcodeblock %}

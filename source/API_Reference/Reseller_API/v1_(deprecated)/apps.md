@@ -46,14 +46,11 @@ Note: The *name* entry is used in all the other API calls to identify a app.
 
 ### XML Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=customer@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=customer@example.com {% endcodeblock %}
 
 ### Response: Success
 
-{% codeblock %}
-filters\><filter><name>twitter</name>
+{% codeblock %} filters\><filter><name>twitter</name>
 
 <title>
 Twitter
@@ -62,14 +59,11 @@ Twitter
 <description>This plugin allows you to send an email message to twitter</description><activated>0</activated></filter> ... </filters>JSON Call
 
 </h3>
-{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=customer@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=customer@example.com {% endcodeblock %}
 
 ### Response: Success
 
-{% codeblock %}
-{"name":"twitter","title":"Twitter","description":"This plugin allows you to send an email message to twitter","activated":false}
-{% endcodeblock %} 
+{% codeblock %} {"name":"twitter","title":"Twitter","description":"This plugin allows you to send an email message to twitter","activated":false} {% endcodeblock %} 
 {% anchor h2 %} Activate App {% endanchor %}
 
 
@@ -106,29 +100,25 @@ Twitter
 
 ### XML Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=activate&user=customer@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=activate&user=customer@example.com {% endcodeblock %}
 
 ### Response: Success
 
-{% codeblock %}
-result\><message>success</message></result>
-{% endcodeblock %}
+{% codeblock %} result\><message>success</message></result> {% endcodeblock %}
 
 ### JSON Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=activate&user=customer@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=activate&user=customer@example.com {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 {
   "message": "success"
 }
 {% endcodeblock %}
+
 
 * * * * *
 
@@ -169,29 +159,25 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 ### XML Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=deactivate&user=customer@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=deactivate&user=customer@example.com {% endcodeblock %}
 
 ### Response: Success
 
-{% codeblock %}
-result\><message>success</message></result>
-{% endcodeblock %}
+{% codeblock %} result\><message>success</message></result> {% endcodeblock %}
 
 ### JSON Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=deactivate&user=customer@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=deactivate&user=customer@example.com {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 {
   "message": "success"
 }
 {% endcodeblock %}
+
 
 * * * * *
 
@@ -203,29 +189,23 @@ These API calls require that settings are passed using POST.
 
 ### XML Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=setup&user=customer@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=setup&user=customer@example.com {% endcodeblock %}
 
 ### Response: Success
 
-{% codeblock %}
-filter\><field_name>field_value</field_name> ... </filter>Response: Error
+{% codeblock %} filter\><field_name>field_value</field_name> ... </filter>Response: Error
 
 </h3>
-{% codeblock %} result\><message>error</message><message>... error messages ...</message></result>
-{% endcodeblock %}
+{% codeblock %} result\><message>error</message><message>... error messages ...</message></result> {% endcodeblock %}
 
 #### Return - Empty
 
 This is returned if that filter has no settings or is not enabled.
 
-{% codeblock %}
-filter\></filter>JSON Call
+{% codeblock %} filter\></filter>JSON Call
 
 </h3>
-{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=setup&user=customer@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=setup&user=customer@example.com {% endcodeblock %}
 
 ### Response: Success
 
@@ -235,9 +215,7 @@ filter\></filter>JSON Call
 
 This is returned if that filter has no settings or is not enabled.
 
-{% codeblock %}
-"settings":null}
-{% endcodeblock %}
+{% codeblock %} "settings":null} {% endcodeblock %}
 
 * * * * *
 
@@ -247,35 +225,30 @@ This is returned if that filter has no settings or is not enabled.
 
 ### XML Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=customer@example.com&method=app
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=customer@example.com&method=app {% endcodeblock %}
 
 ### Response: Success
 
-{% codeblock %}
-filter\><field_name>field_value</field_name> ... </filter>Response: Error
+{% codeblock %} filter\><field_name>field_value</field_name> ... </filter>Response: Error
 
 </h3>
-{% codeblock %} result\><message>error</message><message>... error messages ...</message></result>
-{% endcodeblock %}
+{% codeblock %} result\><message>error</message><message>... error messages ...</message></result> {% endcodeblock %}
 
 #### Return - Empty
 
 This is returned if that filter has no settings or is not enabled.
 
-{% codeblock %}
-filter\></filter>JSON Call
+{% codeblock %} filter\></filter>JSON Call
 
 </h3>
-{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=customer@example.com&method=app
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=customer@example.com&method=app {% endcodeblock %}
 
 ### Response: Success
 
 
 
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -286,10 +259,9 @@ filter\></filter>JSON Call
 }
 {% endcodeblock %}
 
+
 #### Return - Empty
 
 This is returned if that filter has no settings or is not enabled.
 
-{% codeblock %}
-"settings":null
-{% endcodeblock %}
+{% codeblock %} "settings":null {% endcodeblock %}

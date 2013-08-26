@@ -23,7 +23,7 @@ The Settings that need to be entered include:
 -   **Port -** 465
 -   **Connection security -** SSL/TLS
 -   **Authentication method -** Normal password
--   **User Name -** sendgrid\_username
+-   **User Name -** sendgrid_username
 
 ![]({{root_url}}/images/thunderbird_2.png "thunderbird_settings")
 

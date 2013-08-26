@@ -135,7 +135,7 @@ For a more detailed description of each of the Apps below, please visit the [App
       <th>Description</th>
       <th>Example</th>
    </tr>
-   <td>text\_html</td>
+   <td>text_html</td>
    <td>A string that holds the template html body</td>
    <td>Content</td>
 </table>

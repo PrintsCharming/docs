@@ -34,11 +34,10 @@ navigation:
 <div class="tab-pane active" id="auth-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.auth.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=theirsubmittedpassword
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.auth.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=theirsubmittedpassword {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -46,7 +45,9 @@ https://sendgrid.com/apiv2/customer.auth.json?api_user=your_sendgrid_username&ap
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -57,15 +58,15 @@ https://sendgrid.com/apiv2/customer.auth.json?api_user=your_sendgrid_username&ap
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="auth-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.auth.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=theirsubmittedpasswor
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.auth.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=theirsubmittedpasswor {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -76,7 +77,9 @@ https://sendgrid.com/apiv2/customer.auth.xml?api_user=your_sendgrid_username&api
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -91,6 +94,7 @@ https://sendgrid.com/apiv2/customer.auth.xml?api_user=your_sendgrid_username&api
 </result>
 
 {% endcodeblock %}
+
 
 </div>
 </div>

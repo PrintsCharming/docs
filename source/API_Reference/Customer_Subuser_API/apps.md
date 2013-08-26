@@ -38,11 +38,10 @@ navigation:
 <div class="tab-pane active" id="list-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&user=example@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -53,15 +52,15 @@ https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&ap
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="list-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&user=example@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -79,6 +78,7 @@ Twitter
 </filters>
 
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -118,11 +118,10 @@ Twitter
 <div class="tab-pane active" id="activate-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=activate&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=activate&user=example@example.com {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 {
@@ -130,15 +129,15 @@ https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&ap
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="activate-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=activate&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=activate&user=example@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -148,6 +147,7 @@ https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api
 </result>
 
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -187,11 +187,10 @@ https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api
 <div class="tab-pane active" id="deactivate-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=deactivate&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=deactivate&user=example@example.com {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 {
@@ -199,15 +198,15 @@ https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&ap
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="deactivate-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=deactivate&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=deactivate&user=example@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -217,6 +216,7 @@ https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api
 </result>
 
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -231,11 +231,10 @@ https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api
 <div class="tab-pane active" id="customize-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=setup&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=setup&user=example@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -248,35 +247,39 @@ https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&ap
 }
 {% endcodeblock %}
 
+
 #### Return - Empty
 
-This is returned if that filter has no settings or is not enabled. {% codeblock lang:javascript %}
+This is returned if that filter has no settings or is not enabled. 
+{% codeblock lang:javascript %}
 {
   "settings": null
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="customize-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=setup&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=setup&user=example@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <filter>
-   <field_name>field\_value</field_name>
+   <field_name>field_value</field_name>
    ...
 </filter>
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -288,14 +291,17 @@ https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api
 
 {% endcodeblock %}
 
+
 #### Return - Empty
 
-This is returned if that filter has no settings or is not enabled. {% codeblock lang:xml %}
+This is returned if that filter has no settings or is not enabled. 
+{% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <filter/>
 
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -310,11 +316,10 @@ This is returned if that filter has no settings or is not enabled. {% codeblock 
 <div class="tab-pane active" id="settings-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=example@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -327,7 +332,9 @@ https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&ap
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -338,48 +345,51 @@ https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&ap
 }
 {% endcodeblock %}
 
+
 #### Return - Empty
 
-This is returned if that filter has no settings or is not enabled. {% codeblock lang:javascript %}
+This is returned if that filter has no settings or is not enabled. 
+{% codeblock lang:javascript %}
 {
   "settings": null
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="settings-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=example@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=example@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <filter>
-   <field_name>field\_value</field_name>
+   <field_name>field_value</field_name>
    ...
 </filter>
 
 {% endcodeblock %}
 
+
 ### Response: Error
 
-{% codeblock %}
-<result><message>error</message><message>... error messages ...</message></result>
-{% endcodeblock %}
+{% codeblock %} <result><message>error</message><message>... error messages ...</message></result> {% endcodeblock %}
 
 #### Return - Empty
 
-This is returned if that filter has no settings or is not enabled. {% codeblock lang:xml %}
+This is returned if that filter has no settings or is not enabled. 
+{% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <filter/>
 
 {% endcodeblock %}
+
 
 </div>
 </div>

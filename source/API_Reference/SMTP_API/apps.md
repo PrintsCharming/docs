@@ -293,7 +293,7 @@ url
 
 </td>
 <td>
-http://www.example.com/spam\_post.php
+http://www.example.com/spam_post.php
 
 </td>
 <td>
@@ -342,7 +342,7 @@ Disable or enable this App
 </tr>
 <tr>
 <td>
-utm\_source
+utm_source
 
 </td>
 <td>
@@ -350,13 +350,13 @@ string
 
 </td>
 <td>
-Value for the utm\_source field
+Value for the utm_source field
 
 </td>
 </tr>
 <tr>
 <td>
-utm\_medium
+utm_medium
 
 </td>
 <td>
@@ -364,13 +364,13 @@ string
 
 </td>
 <td>
-Value for the utm\_medium field
+Value for the utm_medium field
 
 </td>
 </tr>
 <tr>
 <td>
-utm\_term
+utm_term
 
 </td>
 <td>
@@ -378,13 +378,13 @@ string
 
 </td>
 <td>
-Value for the utm\_term field
+Value for the utm_term field
 
 </td>
 </tr>
 <tr>
 <td>
-utm\_content
+utm_content
 
 </td>
 <td>
@@ -392,13 +392,13 @@ string
 
 </td>
 <td>
-Value for the utm\_content field
+Value for the utm_content field
 
 </td>
 </tr>
 <tr>
 <td>
-utm\_campaign
+utm_campaign
 
 </td>
 <td>
@@ -406,7 +406,7 @@ string
 
 </td>
 <td>
-Value for the utm\_campaign field
+Value for the utm_campaign field
 
 </td>
 </tr>
@@ -518,7 +518,7 @@ example.com
 </tr>
 <tr>
 <td>
-use\_from
+use_from
 
 </td>
 <td>
@@ -666,7 +666,7 @@ email address destination for the bcc message
 
 * * * * *
 
-### Filter - 'bypass\_list\_management':
+### Filter - 'bypass_list_management':
 
 Some emails are too important to do normal list management checks, such as password resets or critical alerts. Enabling this filter will bypass the normal unsubscribe / bounce / spam report checks and queue the e-mail for delivery.
 

@@ -10,9 +10,7 @@ This library allows you to quickly and easily send emails through SendGrid using
 
 
 {% anchor h2 %} How To Install The Libraries {% endanchor %}
- {% codeblock %}
-git clone git://github.com/sendgrid/sendgrid-php.git
-{% endcodeblock %} 
+ {% codeblock %} git clone git://github.com/sendgrid/sendgrid-php.git {% endcodeblock %} 
 {% anchor h2 %} SendGrid APIs {% endanchor %}
 
 

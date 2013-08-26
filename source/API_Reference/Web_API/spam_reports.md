@@ -33,15 +33,15 @@ Retrieve and delete entries in the Spam Reports list.
          <td>Number of days in the past for which to retrieve spam reports (includes today)</td>
       </tr>
       <tr>
-         <td>start\_date</td>
+         <td>start_date</td>
          <td>No</td>
-         <td>Date must be in YYYY-MM-DD format and be earlier than the end\_date parameter.</td>
+         <td>Date must be in YYYY-MM-DD format and be earlier than the end_date parameter.</td>
          <td>The start of the date range for which to retrieve spam reports.</td>
       </tr>
       <tr>
-         <td>end\_date</td>
+         <td>end_date</td>
          <td>No</td>
-         <td>Date must be in YYYY-MM-DD format and be later than the start\_date parameter.</td>
+         <td>Date must be in YYYY-MM-DD format and be later than the start_date parameter.</td>
          <td>The end of the date range for which to retrieve spam reports.</td>
       </tr>
       <tr>
@@ -71,11 +71,10 @@ Retrieve and delete entries in the Spam Reports list.
 <div class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/spamreports.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/spamreports.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1 {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 [
@@ -92,15 +91,15 @@ https://sendgrid.com/api/spamreports.get.json?api_user=your_sendgrid_username&ap
 ]
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/spamreports.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/spamreports.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1 {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -119,6 +118,7 @@ https://sendgrid.com/api/spamreports.get.xml?api_user=your_sendgrid_username&api
 </spamreports>
 
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -154,11 +154,10 @@ Delete an address from the Spam Reports list.
 <div class="tab-pane active" id="delete-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/spamreports.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/spamreports.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -166,7 +165,9 @@ https://sendgrid.com/api/spamreports.delete.json?api_user=your_sendgrid_username
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -177,15 +178,15 @@ https://sendgrid.com/api/spamreports.delete.json?api_user=your_sendgrid_username
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="delete-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/spamreports.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/spamreports.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -196,7 +197,9 @@ https://sendgrid.com/api/spamreports.delete.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -205,7 +208,8 @@ https://sendgrid.com/api/spamreports.delete.xml?api_user=your_sendgrid_username&
    <message>Email does not exist</message>
 </result>
 
-{% endcodeblock %} </result></result>
+{% endcodeblock %}
+ </result></result>
 
 </div>
 </div>

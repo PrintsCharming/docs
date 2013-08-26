@@ -7,7 +7,7 @@ navigation:
 ---
 
 {% anchor h2 %} Retrieve Bounces {% endanchor %}
- Note that you can use *either* the days parameter *or* the start\_date and end\_date parameter.
+ Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -44,11 +44,10 @@ navigation:
 <div class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/user.bounces.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/user.bounces.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date= {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -70,15 +69,15 @@ https://sendgrid.com/api/user.bounces.xml?api_user=your_sendgrid_username&api_ke
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/user.bounces.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=1
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/user.bounces.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=1 {% endcodeblock %}
 
 ### Response
+
 
 {% codeblock lang:javascript %}
 [
@@ -96,6 +95,7 @@ https://sendgrid.com/api/user.bounces.json?api_user=your_sendgrid_username&api_k
   }
 ]
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -141,11 +141,10 @@ https://sendgrid.com/api/user.bounces.json?api_user=your_sendgrid_username&api_k
 <div class="tab-pane" id="delete-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/user.bounces.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=bounce@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/user.bounces.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=bounce@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -156,7 +155,9 @@ https://sendgrid.com/api/user.bounces.xml?api_user=your_sendgrid_username&api_ke
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -167,15 +168,15 @@ https://sendgrid.com/api/user.bounces.xml?api_user=your_sendgrid_username&api_ke
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="delete-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/user.bounces.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=bounce@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/user.bounces.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=bounce@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -183,13 +184,16 @@ https://sendgrid.com/api/user.bounces.json?api_user=your_sendgrid_username&api_k
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
   "message": "Email does not exist"
 }
 {% endcodeblock %}
+
 
 </div>
 </div>

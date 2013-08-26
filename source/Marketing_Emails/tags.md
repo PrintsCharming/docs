@@ -38,7 +38,7 @@ Place the `[unsubscribe]` tag in the body to provide an unsubscribe link. The ta
 
 There are several tags you can use to embed sender address information in your email body. Available tags are `[%from_name%]`, `[%address%]`, `[%city%]`, `[%state%]`, and `[%zip%]`.
 
-{% codeblock lang:html %} [%from\_name%] [%address%], [%city%], [%state%], [%zip%] {% endcodeblock %}
+{% codeblock lang:html %} [%from_name%] [%address%], [%city%], [%state%], [%zip%] {% endcodeblock %}
 
 * * * * *
 

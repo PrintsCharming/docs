@@ -53,11 +53,10 @@ Schedule a delivery time for an existing Marketing Email.
 <div class="tab-pane active" id="add-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/schedule/add.json?name=test&at=2012-09-05_18%3A35%3A00&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/schedule/add.json?name=test&at=2012-09-05_18%3A35%3A00&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -65,7 +64,9 @@ https://sendgrid.com/api/newsletter/schedule/add.json?name=test&at=2012-09-05_18
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -76,15 +77,15 @@ https://sendgrid.com/api/newsletter/schedule/add.json?name=test&at=2012-09-05_18
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="add-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/schedule/add.xml?name=test&at=2012-09-05_18%3A35%3A00&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/schedule/add.xml?name=test&at=2012-09-05_18%3A35%3A00&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -95,7 +96,9 @@ https://sendgrid.com/api/newsletter/schedule/add.xml?name=test&at=2012-09-05_18%
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -105,6 +108,7 @@ https://sendgrid.com/api/newsletter/schedule/add.xml?name=test&at=2012-09-05_18%
 </result>
 
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -142,11 +146,10 @@ Retrieve the scheduled delivery time for an existing Marketing Email.
 <div class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/schedule/get.json?name=SendGrid_Test2&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/schedule/get.json?name=SendGrid_Test2&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -154,7 +157,9 @@ https://sendgrid.com/api/newsletter/schedule/get.json?name=SendGrid_Test2&api_us
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -165,15 +170,15 @@ https://sendgrid.com/api/newsletter/schedule/get.json?name=SendGrid_Test2&api_us
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/api/newsletter/schedule/get.xml?name=SendGrid_Test2&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/newsletter/schedule/get.xml?name=SendGrid_Test2&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -184,7 +189,9 @@ https://sendgrid.com/api/newsletter/schedule/get.xml?name=SendGrid_Test2&api_use
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -194,6 +201,7 @@ https://sendgrid.com/api/newsletter/schedule/get.xml?name=SendGrid_Test2&api_use
 </scheduled>
 
 {% endcodeblock %}
+
 
 </div>
 </div>
@@ -231,11 +239,10 @@ Cancel a scheduled send for a Marketing Email.
 <div class="tab-pane active" id="delete-json">
 ### Call
 
-{% codeblock %}
-sendgrid.com/api/newsletter/schedule/delete.json?name=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} sendgrid.com/api/newsletter/schedule/delete.json?name=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 {
@@ -243,7 +250,9 @@ sendgrid.com/api/newsletter/schedule/delete.json?name=test&api_user=your_sendgri
 }
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -254,15 +263,15 @@ sendgrid.com/api/newsletter/schedule/delete.json?name=test&api_user=your_sendgri
 }
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane" id="delete-xml">
 ### Call
 
-{% codeblock %}
-sendgrid.com/api/newsletter/schedule/delete.xml?name=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} sendgrid.com/api/newsletter/schedule/delete.xml?name=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -273,7 +282,9 @@ sendgrid.com/api/newsletter/schedule/delete.xml?name=test&api_user=your_sendgrid
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -283,6 +294,7 @@ sendgrid.com/api/newsletter/schedule/delete.xml?name=test&api_user=your_sendgrid
 </result>
 
 {% endcodeblock %}
+
 
 </div>
 </div>

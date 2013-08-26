@@ -16,11 +16,10 @@ There are no extra parameters required for this call
 <div class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/reseller.packages.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/reseller.packages.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -52,7 +51,9 @@ https://sendgrid.com/apiv2/reseller.packages.xml?api_user=your_sendgrid_username
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -68,15 +69,15 @@ https://sendgrid.com/apiv2/reseller.packages.xml?api_user=your_sendgrid_username
 
 {% endcodeblock %}
 
+
 </div>
 <div class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %}
-https://sendgrid.com/apiv2/reseller.packages.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/apiv2/reseller.packages.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:javascript %}
 [
@@ -102,7 +103,9 @@ https://sendgrid.com/apiv2/reseller.packages.json?api_user=your_sendgrid_usernam
 ]
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -112,6 +115,7 @@ https://sendgrid.com/apiv2/reseller.packages.json?api_user=your_sendgrid_usernam
   ]
 }
 {% endcodeblock %}
+
 
 </div>
 </div>

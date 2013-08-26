@@ -21,11 +21,9 @@ Here you will add recipients to your list. You can choose one of three following
 
 #### Upload List
 
-Only CSV files are accepted at this time. A standard file chooser will allow you to select a file on your local machine. After you upload your file, the system will parse it, auto-detect column headers, and display a sample (5 rows) of your list. You can position the "Email" and "Name" columns (required) by dragging and dropping over the suitable column(s). You can also add other columns to the list if needed. You can keep extra columns by simply defining a new column as desired. Any columns with undefined\_tag in the column head, will be discarded. An example CSV file might look as follows:
+Only CSV files are accepted at this time. A standard file chooser will allow you to select a file on your local machine. After you upload your file, the system will parse it, auto-detect column headers, and display a sample (5 rows) of your list. You can position the "Email" and "Name" columns (required) by dragging and dropping over the suitable column(s). You can also add other columns to the list if needed. You can keep extra columns by simply defining a new column as desired. Any columns with undefined_tag in the column head, will be discarded. An example CSV file might look as follows:
 
-{% codeblock %}
-name,email "SG Support","support@sendgrid.com" "Sales Team","sales@sendgrid.com"
-{% endcodeblock %}
+{% codeblock %} name,email "SG Support","support@sendgrid.com" "Sales Team","sales@sendgrid.com" {% endcodeblock %}
 
 Sendgrid supports Unicode (UTF-8), ASCII, and extended ASCII characters. When importing your list into Sendgrid, make sure that the characters are all encoded as UTF-8 in order to prevent syntax errors from occurring.
 
@@ -160,10 +158,10 @@ On the "Manage Recipients Lists" page, you can click on the "Subscription Widget
 {% anchor h3 %} Use the embedded code {% endanchor %}
  Once the embedded code is generated, you may use it in your website. This JavaScript code will generate a basic subscription form which can be styled using CSS. The following classes are available for customization:
 
--   SG\_widget\_form\_label - for input labels
--   SG\_widget\_form\_input - for inputs
--   SG\_widget\_form\_submit - for submit button
--   SG\_widget\_form\_error - for error messages
--   SG\_widget\_form\_success - for success message
+-   SG_widget_form_label - for input labels
+-   SG_widget_form_input - for inputs
+-   SG_widget_form_submit - for submit button
+-   SG_widget_form_error - for error messages
+-   SG_widget_form_success - for success message
 
 The form will take all the custom fields defined in the list for which the widget was generated. Once you add a new field in the list, the widget will be updated (in real-time). The email and name fields are required. Note: There is a difference in how we submit the form, depending on browser support for cross-domain AJAX. For browsers which support cross-domain AJAX, the recipient will be added into the SendGrid database directly from your website, but for the browsers without this capability, we redirect the user to an internal page where he can submit the data, then forward that data to your website.

@@ -49,24 +49,18 @@ In order to login your customer, you need to contact our web API to retrieve the
 
 ### XML Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=geturl&user=customer@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=geturl&user=customer@example.com {% endcodeblock %}
 
 ### Response
 
-{% codeblock %}
-params\><params>al_username=username&al_subuser_name=customer@example.com&al_hash=b478ab36ebc306990dd283b1c341898e</params></params>JSON Call
+{% codeblock %} params\><params>al_username=username&al_subuser_name=customer@example.com&al_hash=b478ab36ebc306990dd283b1c341898e</params></params>JSON Call
 
 </h3>
-{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=geturl&user=customer@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=geturl&user=customer@example.com {% endcodeblock %}
 
 ### Response
 
-{% codeblock %}
-"params":"al_username=username&al_subuser_name=customer@example.com&al_hash=aa39649af578679d3a90d2cc43245d56"
-{% endcodeblock %}
+{% codeblock %} "params":"al_username=username&al_subuser_name=customer@example.com&al_hash=aa39649af578679d3a90d2cc43245d56" {% endcodeblock %}
 
 * * * * *
 
@@ -76,4 +70,4 @@ params\><params>al_username=username&al_subuser_name=customer@example.com&al_has
 
 Using the parameters returned from the Initial API Call, you can construct the iFrame URL as shown below.
 
-{% codeblock %} iframe src="https://sendgrid.com/account?al\_username=username&al\_subuser\_name=example@example.com&al\_hash=aa39649af578679d3a90d2cc43245d56"\></iframe>
+{% codeblock %} iframe src="https://sendgrid.com/account?al_username=username&al_subuser_name=example@example.com&al_hash=aa39649af578679d3a90d2cc43245d56"\></iframe>

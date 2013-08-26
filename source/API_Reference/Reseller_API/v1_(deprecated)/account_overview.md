@@ -33,11 +33,10 @@ View general account information regarding your customers, including billing cyc
 
 ### XML Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=overview&user=customer@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=overview&user=customer@example.com {% endcodeblock %}
 
 ### Response: Success
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -59,7 +58,9 @@ https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username
 
 {% endcodeblock %}
 
+
 ### Response: Error
+
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -74,19 +75,17 @@ https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username
 
 {% endcodeblock %}
 
+
 ### JSON Call
 
-{% codeblock %}
-https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=overview&user=customer@example.com
-{% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=overview&user=customer@example.com {% endcodeblock %}
 
 ### Response: Success
 
-{% codeblock %}
-"reputation":100,"requests":500000,"package":"Silver Package","credits_allowed":50000,"credits_used":100000,"credits_remain":0,"credits_overage":50000,"billing_start_date":"2010-08-30","billing_end_date":"2010-09-29","billing_process_date":"2010-09-30"
-{% endcodeblock %}
+{% codeblock %} "reputation":100,"requests":500000,"package":"Silver Package","credits_allowed":50000,"credits_used":100000,"credits_remain":0,"credits_overage":50000,"billing_start_date":"2010-08-30","billing_end_date":"2010-09-29","billing_process_date":"2010-09-30" {% endcodeblock %}
 
 ### Response: Error
+
 
 {% codeblock lang:javascript %}
 {
@@ -96,3 +95,4 @@ https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_usernam
   ]
 }
 {% endcodeblock %}
+
