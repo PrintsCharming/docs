@@ -50,15 +50,16 @@ Note: The *name* entry is used in all the other API calls to identify a app.
 
 ### Response: Success
 
-{% codeblock %} filters\><filter><name>twitter</name>
+{% codeblock %} <filters><filter><name>twitter</name>
 
 <title>
 Twitter
 
 </title>
-<description>This plugin allows you to send an email message to twitter</description><activated>0</activated></filter> ... </filters>JSON Call
+<description>This plugin allows you to send an email message to twitter</description><activated>0</activated></filter> ... </filters> {% endcodeblock %}
 
-</h3>
+### JSON Call
+
 {% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=customer@example.com {% endcodeblock %}
 
 ### Response: Success
@@ -104,7 +105,7 @@ Twitter
 
 ### Response: Success
 
-{% codeblock %} result\><message>success</message></result> {% endcodeblock %}
+{% codeblock %} <result><message>success</message></result> {% endcodeblock %}
 
 ### JSON Call
 
@@ -193,18 +194,20 @@ These API calls require that settings are passed using POST.
 
 ### Response: Success
 
-{% codeblock %} filter\><field_name>field_value</field_name> ... </filter>Response: Error
+{% codeblock %} filter\><field_name>field_value</field_name> ... </filter> {% endcodeblock %}
 
-</h3>
+### Response: Error
+
 {% codeblock %} result\><message>error</message><message>... error messages ...</message></result> {% endcodeblock %}
 
 #### Return - Empty
 
 This is returned if that filter has no settings or is not enabled.
 
-{% codeblock %} filter\></filter>JSON Call
+{% codeblock %} <filter></filter> {% endcodeblock %}
 
-</h3>
+### JSON Call
+
 {% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=setup&user=customer@example.com {% endcodeblock %}
 
 ### Response: Success
@@ -215,7 +218,7 @@ This is returned if that filter has no settings or is not enabled.
 
 This is returned if that filter has no settings or is not enabled.
 
-{% codeblock %} "settings":null} {% endcodeblock %}
+{% codeblock %} {"settings":null} {% endcodeblock %}
 
 * * * * *
 
@@ -229,18 +232,20 @@ This is returned if that filter has no settings or is not enabled.
 
 ### Response: Success
 
-{% codeblock %} filter\><field_name>field_value</field_name> ... </filter>Response: Error
+{% codeblock %} <filter><field_name>field_value</field_name> ... </filter> {% endcodeblock %}
 
-</h3>
-{% codeblock %} result\><message>error</message><message>... error messages ...</message></result> {% endcodeblock %}
+### Response: Error
+
+{% codeblock %} <result><message>error</message><message>... error messages ...</message></result> {% endcodeblock %}
 
 #### Return - Empty
 
 This is returned if that filter has no settings or is not enabled.
 
-{% codeblock %} filter\></filter>JSON Call
+{% codeblock %} <filter></filter> {% endcodeblock %}
 
-</h3>
+### JSON Call
+
 {% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=customer@example.com&method=app {% endcodeblock %}
 
 ### Response: Success
@@ -264,4 +269,4 @@ This is returned if that filter has no settings or is not enabled.
 
 This is returned if that filter has no settings or is not enabled.
 
-{% codeblock %} "settings":null {% endcodeblock %}
+{% codeblock %} {"settings":null} {% endcodeblock %}

@@ -424,7 +424,7 @@ This is returned if that filter has no settings or is not enabled.
 
 This is returned if that filter has no settings or is not enabled.
 
-{% codeblock %} "settings":null {% endcodeblock %}
+{% codeblock %} {"settings":null} {% endcodeblock %}
 
 </div>
 </div>

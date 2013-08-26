@@ -305,8 +305,6 @@ Create a new Variation.
 
 ### Response: Success
 
-
-
 ### Response: Error
 
 
