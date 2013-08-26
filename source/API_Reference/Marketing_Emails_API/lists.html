@@ -49,18 +49,18 @@ add
 {% xmljsontabs add %}
 <div class="tab-content">
     <div class="tab-pane active" id="add-json">
-          <h3>Call</h3>
+  <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/lists/add.json?list=test789&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 
-          <h3>Response: Success</h3>
+  <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
 {
   "message": "success"
 }
 {% endcodeblock %}
-          <h3>Response: Error</h3>
+  <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
 {
   "message": "error",
@@ -71,7 +71,7 @@ https://sendgrid.com/api/newsletter/lists/add.json?list=test789&amp;api_user=you
 {% endcodeblock %}
     </div>
     <div class="tab-pane" id="add-xml">
-        <h3>Call</h3>
+<h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/lists/add.xml?list=test789&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
@@ -83,7 +83,7 @@ https://sendgrid.com/api/newsletter/lists/add.xml?list=test789&amp;api_user=your
 </result>
 
 {% endcodeblock %}
-          <h3>Response: Error</h3>
+  <h3>Response: Error</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
@@ -126,18 +126,18 @@ edit
 {% xmljsontabs edit %}
 <div class="tab-content">
     <div class="tab-pane active" id="edit-json">
-          <h3>Call</h3>
+  <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/lists/edit.json?list=test7890&amp;newlist=test567&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 
-          <h3>Response: Success</h3>
+  <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
 {
   "message": "success"
 }
 {% endcodeblock %}
-          <h3>Response: Error</h3>
+  <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
 {
   "message": "error",
@@ -148,7 +148,7 @@ https://sendgrid.com/api/newsletter/lists/edit.json?list=test7890&amp;newlist=te
 {% endcodeblock %}
     </div>
     <div class="tab-pane" id="edit-xml">
-        <h3>Call</h3>
+<h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/lists/edit.xml?list=test7890&amp;newlist=test567&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
@@ -160,7 +160,7 @@ https://sendgrid.com/api/newsletter/lists/edit.xml?list=test7890&amp;newlist=tes
 </result>
 
 {% endcodeblock %}
-          <h3>Response: Error</h3>
+  <h3>Response: Error</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
@@ -197,19 +197,19 @@ get
 {% xmljsontabs get %}
 <div class="tab-content">
     <div class="tab-pane active" id="get-json">
-          <h3>Call</h3>
+  <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/lists/get.json?list=test&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 
-          <h3>Response: Success</h3>
+  <h3>Response: Success</h3>
 {% codeblock lang:javascript %}[
   {
     "list": "test"
   }
 ]
 {% endcodeblock %}
-          <h3>Response: Error</h3>
+  <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
 {
   "message": "error",
@@ -220,7 +220,7 @@ https://sendgrid.com/api/newsletter/lists/get.json?list=test&amp;api_user=your_s
 {% endcodeblock %}
     </div>
     <div class="tab-pane" id="get-xml">
-        <h3>Call</h3>
+<h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/lists/get.xml?list=test&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
@@ -234,7 +234,7 @@ https://sendgrid.com/api/newsletter/lists/get.xml?list=test&amp;api_user=your_se
 </lists>
 
 {% endcodeblock %}
-          <h3>Response: Error</h3>
+  <h3>Response: Error</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
@@ -271,18 +271,18 @@ delete
 {% xmljsontabs delete %}
 <div class="tab-content">
     <div class="tab-pane active" id="delete-json">
-          <h3>Call</h3>
+  <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/lists/delete.json?list=test5678&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 
-          <h3>Response: Success</h3>
+  <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
 {
   "message": "success"
 }
 {% endcodeblock %}
-          <h3>Response: Error</h3>
+  <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
 {
   "message": "error",
@@ -293,7 +293,7 @@ https://sendgrid.com/api/newsletter/lists/delete.json?list=test5678&amp;api_user
 {% endcodeblock %}
     </div>
     <div class="tab-pane" id="delete-xml">
-        <h3>Call</h3>
+<h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/lists/delete.xml?list=test5678&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
@@ -305,7 +305,7 @@ https://sendgrid.com/api/newsletter/lists/delete.xml?list=test5678&amp;api_user=
 </result>
 
 {% endcodeblock %}
-          <h3>Response: Error</h3>
+  <h3>Response: Error</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
