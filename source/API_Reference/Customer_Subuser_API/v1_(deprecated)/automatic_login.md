@@ -72,6 +72,3 @@ https://sendgrid.com/api/user.geturl.json?api_user=your_sendgrid_username&api_ke
 Using the parameters returned from the Initial API Call, you can construct the iFrame URL as shown below.
 
 {% codeblock %} <iframe src="https://sendgrid.com/account?al_username=username&amp;al_subuser_name=example@example.com&amp;al_hash=aa39649af578679d3a90d2cc43245d56"></iframe> {% endcodeblock %}
-
-</div>
-

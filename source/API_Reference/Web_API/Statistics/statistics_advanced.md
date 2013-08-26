@@ -6,9 +6,7 @@ navigation:
   show: true
 ---
 
-{% anchor h2 %}
-Get Statistics for: Browsers, Clients, Devices, Geo, Global, Isp
-{% endanchor %}
+{% anchor h2 %} Get Statistics for: Browsers, Clients, Devices, Geo, Global, Isp {% endanchor %}
 
 <table class="table table-bordered table-striped">
   <tbody>
@@ -129,13 +127,17 @@ Get Statistics for: Browsers, Clients, Devices, Geo, Global, Isp
 
 {% xmljsontabs activate %}
 
-<div class="tab-content">
-  <div class="tab-pane active" id="activate-json">
-<h3>Call</h3>
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="activate-json">
+### Call
+
+
+
 {% codeblock %}
 https://sendgrid.com/api/stats.getAdvanced.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2013-01-01&end_date=2013-01-02&data_type=global
 {% endcodeblock %}
 <h3>Response</h3>
+
 {% codeblock lang:javascript %}
 [
   {
@@ -158,17 +160,27 @@ https://sendgrid.com/api/stats.getAdvanced.json?api_user=your_sendgrid_username&
   }
 ]
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane" id="activate-xml">
-<h3>Call</h3>
+
+
+
+
+</div>
+<div markdown="1" class="tab-pane" id="activate-xml">
+### Call
+
+
+
 {% codeblock %}
 https://sendgrid.com/api/stats.getAdvanced.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2013-01-01&end_date=2013-01-02&data_type=global
 {% endcodeblock %}
 <h3>Response</h3>
+
 {% codeblock lang:xml %}
-  <?xml version='1.0' encoding='UTF-8'?>
-  <stats>
-    <day>
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<?xml version='1.0' encoding='UTF-8'?>
+<stats>
+   <day>
       <delivered>41</delivered>
       <request>41</request>
       <unique_open>1</unique_open>
@@ -177,17 +189,22 @@ https://sendgrid.com/api/stats.getAdvanced.xml?api_user=your_sendgrid_username&a
       <date>2013-01-01</date>
       <open>2</open>
       <click>1</click>
-    </day>
-    <day>
+   </day>
+   <day>
       <delivered>224</delivered>
       <unique_open>1</unique_open>
       <request>224</request>
       <processed>224</processed>
       <date>2013-01-02</date>
       <open>3</open>
-    </day>
-  </stats>
+   </day>
+</stats>
+
 {% endcodeblock %}
 
-  </div>
+
+
+
 </div>
+</div>
+
