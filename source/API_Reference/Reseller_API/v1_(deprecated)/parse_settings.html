@@ -44,22 +44,23 @@ Get Current Settings
 https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=parse&task=get&method=parse&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}  <parse><entry><hostname>www.example.com</hostname><url>www.mydomain.com/parse.php</url><spam_check>1</spam_check></entry></parse
+{% codeblock lang:xml %}
+<parse><entry><hostname>www.example.com</hostname><url>www.mydomain.com/parse.php</url><spam_check>1</spam_check></entry></parse>
 {% endcodeblock %}
 <h3>Response: Empty</h3>
-{% codeblock %}  <parse></parse
+{% codeblock %}  <parse></parse>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&method=parse&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}
-"parse":[{"hostname":"www.example.com","url":"www.mydomain.com\/parse.php","spam_check":1}]
+{% codeblock lang:javascript %}
+{"parse":[{"hostname":"www.example.com","url":"www.mydomain.com\/parse.php","spam_check":"1"}]}
 {% endcodeblock %}
 <h3>Response: Empty</h3>
-{% codeblock %}
-"parse":[]
+{% codeblock lang:javascript %}
+{"parse":[]}
 {% endcodeblock %}
 <hr/>
 

@@ -42,15 +42,16 @@ All
 https://sendgrid.com/api/distributor.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=al
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock %}  <ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips
+{% codeblock lang:xml %}
+<ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=al
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}
-"255.255.255.0","255.255.254.0","255.255.253.0","255.255.252.0"
+{% codeblock lang:javascript %}
+{"ips":["255.255.255.0","255.255.254.0","255.255.253.0","255.255.252.0"]}
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
@@ -92,7 +93,8 @@ Free
 https://sendgrid.com/api/distributor.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=fre
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock %}  <ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips
+{% codeblock lang:xml %}
+<ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
@@ -142,7 +144,8 @@ Taken
 https://sendgrid.com/api/distributor.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=take
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock %}  <ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips
+{% codeblock lang:xml %}
+<ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
@@ -194,7 +197,8 @@ Available
 https://sendgrid.com/api/distributor.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=availabl
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock %}  <ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips
+{% codeblock lang:xml %}
+<ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
@@ -263,7 +267,8 @@ Usage
 https://sendgrid.com/api/distributor.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=usage&user=example.com
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock %}  <ips><entry><ip>255.255.253.0</ip><user>user4@example.com</user></entry><entry><ip>255.255.254.0</ip><user>user4@example.com</user></entry></ips
+{% codeblock lang:xml %}
+<ips><entry><ip>255.255.253.0</ip><user>user4@example.com</user></entry><entry><ip>255.255.254.0</ip><user>user4@example.com</user></entry></ips>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
