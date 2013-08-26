@@ -94,6 +94,12 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 {% endcodeblock %}
 <h3>Response</h3>
 
+{% codeblock lang:javascript %}
+
+{"email":"isaac@hotmail.comm","reason":"Mail domain mentioned in email address is unknown","created":"2009-06-01 19:41:39"},{"email":"isaac@hotmail","reason":"Bad Syntax","created":"2009-06-01 19:41:39"},{"email":"isaac@example.com","reason":"Known bad domain","created":"2009-06-01 19:41:39"}
+
+{% endcodeblock %}
+
 
 
 

@@ -319,10 +319,10 @@ A recurring reset will allow you to periodically reset a subusers credits to a n
 </table>
 
 
-{% xmljsontabs reset %}
+{% xmljsontabs recurring %}
 
 <div markdown="1" class="tab-content">
-<div markdown="1" class="tab-pane" id="reset-xml">
+<div markdown="1" class="tab-pane" id="recurring-xml">
 ### Call
 
 
@@ -367,7 +367,7 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
 
 
 </div>
-<div markdown="1" class="tab-pane active" id="reset-json">
+<div markdown="1" class="tab-pane active" id="recurring-json">
 ### Call
 
 

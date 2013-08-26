@@ -78,6 +78,12 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
+{% codeblock lang:javascript %}
+
+{"name":"twitter","title":"Twitter","description":"This plugin allows you to send an email message to twitter","activated":false}, ... 
+
+{% endcodeblock %}
+
 
 
 
@@ -303,6 +309,13 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
+{% codeblock lang:javascript %}
+
+{"message":"success","settings":{"field_name":"field_value"}
+
+
+{% endcodeblock %}
+
 
 
 
@@ -393,6 +406,13 @@ This is returned if that filter has no settings or is not enabled.
 https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=example@example.com&method=app
 {% endcodeblock %}
 <h3>Response: Success</h3>
+
+{% codeblock lang:javascript %}
+
+"message":"success","settings":{"field_name":"field_value"}
+
+
+{% endcodeblock %}
 
 
 

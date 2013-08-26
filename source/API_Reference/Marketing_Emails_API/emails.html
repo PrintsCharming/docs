@@ -69,25 +69,22 @@ https://sendgrid.com/api/newsletter/lists/email/add.xml?list=Test&data=%7B%22ema
 
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
-<result>
-   <inserted>1</inserted>
-</result>
+  <result>
+     <inserted>1</inserted>
+  </result>
 
 {% endcodeblock %}
 	  <h4>Response: Error</h4> 
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
-<result>
-   <message>error: reason</message>
-</result>
+  <result>
+     <message>error: reason</message>
+  </result>
 
 {% endcodeblock %}
     </div>
   </div>
-<h3>Response</h3>
 
-<p>Success: (X records inserted)</p>
-{% codeblock %}{"inserted": X}{% endcodeblock %}
 <h3>Examples</h3>
 
 <p>Add an email recipient to a list:</p>

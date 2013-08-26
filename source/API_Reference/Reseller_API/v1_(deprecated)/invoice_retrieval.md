@@ -79,6 +79,12 @@ https://sendgrid.com/api/billing.list.json?api_user=your_sendgrid_username&api_k
 {% endcodeblock %}
 <h3>Response</h3>
 
+{% codeblock lang:javascript %}
+
+{"number":"2010010001"},{"number":"2010010002"}
+
+{% endcodeblock %}
+
 
 
 

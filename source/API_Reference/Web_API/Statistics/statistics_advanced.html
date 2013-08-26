@@ -26,7 +26,7 @@ Get Statistics for: Browsers, Clients, Devices, Geo, Global, Isp
       <td>Yes</td>
 
       <td>
-        <p>One of the following:</p>
+        One of the following:
         <ul>
           <li><i>browsers</i>: Browser data obtained from click events</li>
           <li><i>clients</i>: Email client data obtained from open events</li>
@@ -59,7 +59,7 @@ Get Statistics for: Browsers, Clients, Devices, Geo, Global, Isp
       <td>No</td>
 
       <td>
-        <p>Date format is based on aggregated_by value (default is yyyy-mm-dd):</p>
+        Date format is based on aggregated_by value (default is yyyy-mm-dd):
         <ul>
           <li><i>yyyy-mm-dd</i> (i.e 2012-12-13) if aggregated_by=day (default)</li>
           <li><i>yyyy-ww</i> (i.e 2012-43) if aggregated_by=week</li>
@@ -72,7 +72,7 @@ Get Statistics for: Browsers, Clients, Devices, Geo, Global, Isp
       <td>metric</td>
       <td>No</td>
       <td>
-        <p>One of the following (default is <i>all</i>):</p>
+        One of the following (default is <i>all</i>):
         <ul>
           <li><i>open</i>: Opens</li>
           <li><i>click</i>: Clicks</li>
@@ -104,7 +104,7 @@ Get Statistics for: Browsers, Clients, Devices, Geo, Global, Isp
       <td>No</td>
 
       <td>
-        <p>Aggregate the data by the given period (default is <i>day</i>):</p>
+        Aggregate the data by the given period (default is <i>day</i>):
         <ul>
           <li><i>day</i>: Keys are returned in the format yyyy-mm-dd (i.e 2012-12-13)</li>
           <li><i>week</i>: Keys are return in the format yyyy-ww (i.e 2012-43)</li>
@@ -165,7 +165,7 @@ https://sendgrid.com/api/stats.getAdvanced.json?api_user=your_sendgrid_username&
 https://sendgrid.com/api/stats.getAdvanced.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2013-01-01&end_date=2013-01-02&data_type=global
 {% endcodeblock %}
 <h3>Response</h3>
-	{% codeblock lang:xml %}
+{% codeblock lang:xml %}
   <?xml version='1.0' encoding='UTF-8'?>
   <stats>
     <day>
@@ -187,7 +187,7 @@ https://sendgrid.com/api/stats.getAdvanced.xml?api_user=your_sendgrid_username&a
       <open>3</open>
     </day>
   </stats>
-  {% endcodeblock %}
+{% endcodeblock %}
 
   </div>
 </div>

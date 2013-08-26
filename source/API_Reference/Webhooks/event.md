@@ -136,6 +136,14 @@ Batched Events
 <p>Batched event POSTs have a content-type header of <em>application/json</em>, and contain exactly one JSON string per line, with each line representing one event. Please note that currently the POST headers define this post as <em>application/json</em>, though it's not; each line is a valid JSON string, but the overall POST body is not. For example: </p>
 
 
+{% codeblock lang:javascript %}
+
+{"email":"foo@bar.com","timestamp":1322000095,"unique_arg":"my unique arg","event":"delivered"}
+{"email":"foo@bar.com","timestamp":1322000096,"unique_arg":"my unique arg","event":"open"}
+
+
+{% endcodeblock %}
+
 
  
 {% info %} Batched events currently post every 1 second, or when the batch size reaches 1MB (one megabyte), whichever occurs first. {% endinfo %}

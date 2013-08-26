@@ -237,10 +237,10 @@ Recurring Reset
 		the credits parameter</td>
   </tr>
 </table>
-{% xmljsontabs reset %}
+{% xmljsontabs recurring %}
 
 <div class="tab-content">
-  <div class="tab-pane" id="reset-xml">
+  <div class="tab-pane" id="recurring-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=recurring&credits=200&period=daily
@@ -267,7 +267,7 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
 
 {% endcodeblock %}
   </div>
-  <div class="tab-pane active" id="reset-json">
+  <div class="tab-pane active" id="recurring-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=recurring&credits=200&period=daily

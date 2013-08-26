@@ -122,81 +122,58 @@ https://sendgrid.com/api/newsletter/lists/email/add.xml?list=Test&data=%7B%22ema
 
 </div>
 </div>
-### Response
+### Examples
 
-Success: (X records inserted)
+Add an email recipient to a list:
 
 
 
-{% codeblock %}{"inserted": X}{% endcodeblock %}
-<h3>Examples</h3>
-
-<p>Add an email recipient to a list:</p>
 {% codeblock %}
 #curl -d 'api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=my_list&data={"email":"address@domain.com","name":"contactName"}' https://sendgrid.com/api/newsletter/lists/email/add.json
 {% endcodeblock %}
 
-
-
-Add an email recipient with multiple data fields:
-
-
-
+<p>Add an email recipient with multiple data fields:</p>
 {% codeblock %}#curl -d 'api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=my_list&data={"email":"grouch@trashcan.com","name":"Oscar","city":"New York","street":"123 Sesame St"}' https://sendgrid.com/api/newsletter/lists/email/add.json{% endcodeblock %}
 
-<p>Add multiple email recipients to a list:</p>
+
+
+Add multiple email recipients to a list:
+
+
+
 {% codeblock %}
 #curl -d 'api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=my_list&data[]={"email":"address1@domain.com","name":"contactName1"}&data[]={"email":"address2@domain.com","name":"contactName2"}' https://sendgrid.com/api/newsletter/lists/email/add.json
 {% endcodeblock %}
 
+<hr/>
 
 
-* * * * *
+
+{% anchor h2 %}
+get 
+{% endanchor %}
 
 
-{% anchor h2 %} get {% endanchor %}
+<p>Get the email addresses and associated fields for a Recipient List.</p>
 
 
-Get the email addresses and associated fields for a Recipient List.
-
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>list</td>
-         <td>Yes</td>
-         <td>Must be an existing Recipient List.</td>
-         <td>The list you are searching.</td>
-      </tr>
-      <tr>
-         <td>email</td>
-         <td>No</td>
-         <td>Must be an email address or list of addresses.</td>
-         <td>Optional email addresses to search for in the Recipient List.</td>
-      </tr>
-   </tbody>
-</table>
 
 
 {% xmljsontabs get %}
 
-<div markdown="1" class="tab-content">
-<div markdown="1" class="tab-pane active" id="get-json">
-### Call
-
-
-
+  <div class="tab-content">
+    <div class="tab-pane active" id="get-json">
+<h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/lists/email/get.json?list=Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %}
-<h3>Response: Success</h3>
+
+
+
+### Response: Success
+
+
+
 
 {% codeblock lang:javascript %}
 [

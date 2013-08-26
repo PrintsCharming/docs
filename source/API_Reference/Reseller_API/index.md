@@ -13,128 +13,86 @@ For compatibility with the deprecated version of this API, see documentation for
 
 Following are brief descriptions of the various API calls needed to manage your customers, click the API call name for further details:
 
-
-{% anchor h2 %} [Customers](customer_management.html "Customer Management") {% endanchor %}
-
+[Customers](customer_management.html "Customer Management")
 
 Retrieve/Create/Enable/Disable your customers. Change a customer email address and username
 
-
-{% anchor h2 %} [Customer Statistics](customer_statistics.html "Customer Statistics") {% endanchor %}
-
+[Customer Statistics](customer_statistics.html "Customer Statistics")
 
 Statistics regarding your customers
 
-
-{% anchor h2 %} [Customer Bounces](customer_bounces.html "Customer Bounces") {% endanchor %}
-
+[Customer Bounces](customer_bounces.html "Customer Bounces")
 
 Manage bounce records of your customers
 
-
-{% anchor h2 %} [Customer Unsubscribes](customer_unsubscribes.html "Customer Unsubscribes") {% endanchor %}
-
+[Customer Unsubscribes](customer_unsubscribes.html "Customer Unsubscribes")
 
 Manage unsubscribes of your customers
 
-
-{% anchor h2 %} [Customer Invalid Emails](customer_invalid_emails.html "Customer Invalid Emails") {% endanchor %}
-
+[Customer Invalid Emails](customer_invalid_emails.html "Customer Invalid Emails")
 
 Manage invalid emails of your customers
 
-
-{% anchor h2 %} [Customer Spam Reports](customer_spam_reports.html "Customer Spam Reports") {% endanchor %}
-
+[Customer Spam Reports](customer_spam_reports.html "Customer Spam Reports")
 
 Manage spam reports of your customers
 
-
-{% anchor h2 %} [Customer Account Limits](customer_account_limits.html "Customer Account Limits") {% endanchor %}
-
+[Customer Account Limits](customer_account_limits.html "Customer Account Limits")
 
 Manage the rate of emails your customers are able to send
 
-
-{% anchor h2 %} [Monitor Records](monitor_records.html "Monitor Records") {% endanchor %}
-
+[Monitor Records](monitor_records.html "Monitor Records")
 
 Make sure your customers arent sending out spam by getting a sample of their outgoing messages
 
-
-{% anchor h2 %} [IP Management](ip_management.html "IP Management") {% endanchor %}
-
+[IP Management](ip_management.html "IP Management")
 
 List all IP addresses you have under your account and retrieve details about them
 
-
-{% anchor h2 %} [Whitelabel](whitelabel.html "Whitelabel") {% endanchor %}
-
+[Whitelabel](whitelabel.html "Whitelabel")
 
 Manage whitelabel settings for your customers
 
-
-{% anchor h2 %} [Automatic Login](automatic_login.html "Automatic Login") {% endanchor %}
-
+[Automatic Login](automatic_login.html "Automatic Login")
 
 Allow users to manage your customers via iframe using our site
 
-
-{% anchor h2 %} [Event Notification Url](event_notification_url.html "Event Notification Url") {% endanchor %}
-
+[Event Notification Url](event_notification_url.html "Event Notification Url")
 
 Manage customers event notification url
 
-
-{% anchor h2 %} [Authenticate a Customer](authenticate_a_customer.html "Authenticate a Customer") {% endanchor %}
-
+[Authenticate a Customer](authenticate_a_customer.html "Authenticate a Customer")
 
 Check customers password with our system to see if its valid
 
-
-{% anchor h2 %} [Parse Settings](parse_settings.html "Parse Settings") {% endanchor %}
-
+[Parse Settings](parse_settings.html "Parse Settings")
 
 Setup customers parse settings
 
-
-{% anchor h2 %} [Filter / Apps](apps.html "Filter / Apps") {% endanchor %}
-
+[Filter / Apps](apps.html "Filter / Apps")
 
 Setup customers app settings
 
-
-{% anchor h2 %} [Invoice Retrieval](invoice_retrieval.html "Invoice Retrieval") {% endanchor %}
-
+[Invoice Retrieval](invoice_retrieval.html "Invoice Retrieval")
 
 Retrieve your invoices
 
-
-{% anchor h2 %} [Billing: Retrieving End User Invoices](billing_retrieving_end_users_invoices_usage.html "Retrieving End User Invoices") {% endanchor %}
-
+[Billing: Retrieving End User Invoices](billing_retrieving_end_users_invoices_usage.html "Retrieving End User Invoices")
 
 Retrieve your customers invoices and usage
 
-
-{% anchor h2 %} [Billing: Retrieving As-You-Go Usage](billing_retrieving_as_you_go_usage.html "Retrieving As-You-Go Usage") {% endanchor %}
-
+[Billing: Retrieving As-You-Go Usage](billing_retrieving_as_you_go_usage.html "Retrieving As-You-Go Usage")
 
 Retrieve invoices/usages from end users before your scheduled billing date.
 
-
-{% anchor h2 %} [Pending Account Changes](pending_account_changes.html "Pending Account Changes") {% endanchor %}
-
+[Pending Account Changes](pending_account_changes.html "Pending Account Changes")
 
 Review what customers have pending changes to their account
 
-
-{% anchor h2 %} [View Available Packages](view_available_packages.html "View Available Packages") {% endanchor %}
-
+[View Available Packages](view_available_packages.html "View Available Packages")
 
 View Available Packages
 
-
-{% anchor h2 %} [Account Overview](account_overview.html "Account Overview") {% endanchor %}
-
+[Account Overview](account_overview.html "Account Overview")
 
 Review account overview of your customer

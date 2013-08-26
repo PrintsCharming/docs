@@ -393,5 +393,11 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 
 
+{% codeblock lang:javascript %}
+
+{"date":"2009-06-20","category":,"categoryA","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5},{"date":"2009-06-21",,"category":,"categoryB","requests":32342,"bounces":10,"clicks":14323,"opens":10995,"spamreports":7}
+
+{% endcodeblock %}
+
 
 

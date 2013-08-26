@@ -80,6 +80,12 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 {% endcodeblock %}
 <h3>Response</h3>
 
+{% codeblock lang:javascript %}
+
+{[{"mail_domain":"email.sendgrid.com","url_domain":"email.sendgrid.com"},{"mail_domain":"email.example.com","url_domain":"email.example.com"}]}
+
+{% endcodeblock %}
+
 
 
 

@@ -484,6 +484,13 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 
 
 
+{% codeblock lang:javascript %}
+
+{"message":"success","settings":{"field_name":"field_value"}
+
+
+{% endcodeblock %}
+
 
 
 

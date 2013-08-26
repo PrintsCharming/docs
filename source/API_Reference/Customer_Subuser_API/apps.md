@@ -45,8 +45,8 @@ navigation:
 
 
 {% codeblock %}
-	https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&user=example@example.com
-	{% endcodeblock %}
+https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&user=example@example.com
+{% endcodeblock %}
 <h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
@@ -71,7 +71,7 @@ navigation:
 https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-  
+
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -134,8 +134,8 @@ https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api
 
 
 {% codeblock %}
-	https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=activate&user=example@example.com
-	{% endcodeblock %}
+https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=activate&user=example@example.com
+{% endcodeblock %}
 <h3>Response</h3>
 
 {% codeblock lang:javascript %}
@@ -157,7 +157,7 @@ https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api
 https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=activate&user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-  
+
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -215,8 +215,8 @@ https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api
 
 
 {% codeblock %}
-	https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=deactivate&user=example@example.com
-	{% endcodeblock %}
+https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=deactivate&user=example@example.com
+{% endcodeblock %}
 <h3>Response</h3>
 
 {% codeblock lang:javascript %}
@@ -238,7 +238,7 @@ https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api
 https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=deactivate&user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-  
+
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -258,7 +258,11 @@ https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api
 
 
 {% anchor h2 %} Customize App {% endanchor %}
- These API calls require that settings are passed using POST. {% xmljsontabs customize %}
+
+
+These API calls require that settings are passed using POST.
+
+{% xmljsontabs customize %}
 
 <div markdown="1" class="tab-content">
 <div markdown="1" class="tab-pane active" id="customize-json">
@@ -267,10 +271,10 @@ https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api
 
 
 {% codeblock %}
-	https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=setup&user=example@example.com
-	{% endcodeblock %}
+https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=setup&user=example@example.com
+{% endcodeblock %}
 <h3>Response: Success</h3>
-	  
+
 {% codeblock lang:javascript %}
 {
   "message": "success",
@@ -296,10 +300,10 @@ This is returned if that filter has no settings or is not enabled.
 }
 {% endcodeblock %}
 
-	</div>
-  <div class="tab-pane" id="customize-xml">
+</div>
+<div class="tab-pane" id="customize-xml">
 <h3>Call</h3>
-  {% codeblock %}
+{% codeblock %}
 https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=setup&user=example@example.com
 {% endcodeblock %}
 
@@ -353,11 +357,11 @@ This is returned if that filter has no settings or is not enabled.
 
 {% endcodeblock %}
 
-    </div>
+</div>
 
 </div>
-  <hr/>
-  
+<hr/>
+
 {% anchor h2 %}
 Get Current Settings 
 {% endanchor %}
@@ -366,11 +370,11 @@ Get Current Settings
 {% xmljsontabs settings %}
 
 <div class="tab-content">
-	  <div class="tab-pane active" id="settings-json">
+<div class="tab-pane active" id="settings-json">
 <h3>Call</h3>
-	{% codeblock %}
-	https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=example@example.com
-	{% endcodeblock %}
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=example@example.com
+{% endcodeblock %}
 
 
 
@@ -410,20 +414,6 @@ Get Current Settings
 
 
 
-#### Return - Empty
-
-This is returned if that filter has no settings or is not enabled. 
-
-
-{% codeblock lang:javascript %}
-{
-  "settings": null
-}
-{% endcodeblock %}
-
-
-
-
 </div>
 <div markdown="1" class="tab-pane" id="settings-xml">
 ### Call
@@ -434,7 +424,7 @@ This is returned if that filter has no settings or is not enabled.
 https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-  
+
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -454,9 +444,9 @@ https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api
 
 {% codeblock %}    <result><message>error</message><message>... error messages ...</message></result>
 {% endcodeblock %}
-  <h4>Return - Empty</h4>
-  This is returned if that filter has no settings or is not enabled.
-  
+<h4>Return - Empty</h4>
+This is returned if that filter has no settings or is not enabled.
+
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

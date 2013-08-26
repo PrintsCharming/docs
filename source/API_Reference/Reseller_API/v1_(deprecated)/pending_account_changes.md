@@ -122,6 +122,12 @@ https://sendgrid.com/api/distributor.pending.json?api_user=your_sendgrid_usernam
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
+{% codeblock lang:javascript %}
+
+{"username":"user4","type":"Account Upgrade","current":"Main Reseller - Silver Package","update":"Main Reseller - Gold Package","ip_groups":[],"ips":["255.255.255.0","255.255.254.0"],"date":"2010-09-30"},{"username":"user5","type":"Account Downgrade","current":"Main Reseller - Gold Package","update":"Main Reseller - Basic Package","ip_groups":["Reseller Group"],"ips":[],"date":"2010-10-07"}
+
+{% endcodeblock %}
+
 
 
 

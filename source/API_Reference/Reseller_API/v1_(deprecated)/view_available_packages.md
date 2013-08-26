@@ -81,6 +81,15 @@ https://sendgrid.com/api/distributor.packages.json?api_user=your_sendgrid_userna
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
+{% codeblock lang:javascript %}
+
+{[{"name":"Basic Package","price":9.95,"description":"Basic Package
+description","credits":10000,"overage":0.001,"has_reseller":false,"has_ip":false,"distributor_price":50},{"name":"Silver
+Package","price":79.95,"description":"Silver Package
+description","credits":50000,"overage":0.001,"has_reseller":false,"has_ip":true}]}
+
+{% endcodeblock %}
+
 
 
 

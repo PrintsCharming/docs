@@ -493,6 +493,12 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 {% endcodeblock %}
 <h3>Response</h3>
 
+{% codeblock lang:javascript %}
+
+{"username":"username","email":"example1@example.com","active":"true","first_name":"john","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"},{"username":"username","email":"example2@example.com","active":"false","first_name":"jane","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"}
+
+{% endcodeblock %}
+
 
 
 

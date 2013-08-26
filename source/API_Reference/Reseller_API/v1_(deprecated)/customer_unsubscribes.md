@@ -94,6 +94,13 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 {% endcodeblock %}
 <h3>Response</h3>
 
+{% codeblock lang:javascript %}
+
+{"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}
+
+
+{% endcodeblock %}
+
 
 
 

@@ -278,6 +278,13 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
+{% codeblock lang:javascript %}
+
+{"message":"success","settings":{"field_name":"field_value"}
+
+
+{% endcodeblock %}
+
 
 
 
@@ -342,6 +349,13 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 
 
+
+{% codeblock lang:javascript %}
+
+{"message":"success","settings":{"field_name":"field_value"}
+
+
+{% endcodeblock %}
 
 
 

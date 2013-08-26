@@ -476,6 +476,12 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 {% endcodeblock %}
 <h3>Response</h3>
 
+{% codeblock lang:javascript %}
+
+{"name":"sampleNameA","email":"example@example.com","frequency":"1000","users":[]},{"name":"sampleNameB","email":"example@example.com","frequency":"10000","users":["user1@example.com","user2@example.com"]}
+
+{% endcodeblock %}
+
 
 
 
