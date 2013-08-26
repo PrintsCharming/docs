@@ -64,7 +64,7 @@ available
 {% codeblock %}
 	https://sendgrid.com/apiv2/customer.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=all
 	{% endcodeblock %}
-	<h3>Response</h3>
+<h3>Response</h3>
 	
 {% codeblock lang:javascript %}
 [

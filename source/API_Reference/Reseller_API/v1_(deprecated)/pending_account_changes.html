@@ -34,7 +34,8 @@ List Pending Changes
     <td>Must be either upgrade, downgrade, close.
 			Optional search parameter.</td>
   </tr>
-</table><h3>XML Call</h3>
+</table>
+<h3>XML Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.pending.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=lis
 {% endcodeblock %}
@@ -93,7 +94,8 @@ Delete Pending Changes
     <td>Yes</td>
     <td>Must be an User under your account.</td>
   </tr>
-</table><h3>XML Call</h3>
+</table>
+<h3>XML Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.pending.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com
 {% endcodeblock %}
@@ -174,7 +176,8 @@ Immediate Upgrade
 			does not require an IP or whitelabel, you must place them in an IP
 			group.</td>
   </tr>
-</table><h3>XML Call</h3>
+</table>
+<h3>XML Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
@@ -255,7 +258,8 @@ Immediate Downgrade
 			to does not require an IP or whitelabel, you may place them in an IP
 			group.</td>
   </tr>
-</table><h3>XML Call</h3>
+</table>
+<h3>XML Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
@@ -325,7 +329,8 @@ are incurred, a invoice with zero amount due is generated.</p>
     <td>Define an ip group you will place the user
 			into once the customers account is closed.</td>
   </tr>
-</table><h3>XML Call</h3>
+</table>
+<h3>XML Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
@@ -406,7 +411,8 @@ Scheduled Upgrade
 			does not require an IP or whitelabel, you must place them in an IP
 			group.</td>
   </tr>
-</table><h3>XML Call</h3>
+</table>
+<h3>XML Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
@@ -487,7 +493,8 @@ Scheduled Downgrade
 			does not require an IP or whitelabel, you must place them in an IP
 			group.</td>
   </tr>
-</table><h3>XML Call</h3>
+</table>
+<h3>XML Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
@@ -557,7 +564,8 @@ invoice with zero amount due is generated.</p>
     <td>Define an ip group you will place the user
 			into once the customers account is closed.</td>
   </tr>
-</table><h3>XML Call</h3>
+</table>
+<h3>XML Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}

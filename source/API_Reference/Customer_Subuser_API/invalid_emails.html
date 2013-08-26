@@ -40,11 +40,11 @@ Retrieve Invalid Emails
 
 <div class="tab-content">
 	  <div class="tab-pane active" id="get-json">
-	   <h3>Call</h3>
+<h3>Call</h3>
 	{% codeblock %}
 	https://sendgrid.com/apiv2/customer.invalidemails.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=1
 	{% endcodeblock %}
-	<h3>Response</h3>
+<h3>Response</h3>
 	{% codeblock lang:javascript %}[
   {
     "email": "isaac@hotmail.comm",
@@ -65,7 +65,7 @@ Retrieve Invalid Emails
 {% endcodeblock %}
 	</div>
   <div class="tab-pane" id="get-xml">
-   <h3>Call</h3>
+<h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.invalidemails.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=1
 {% endcodeblock %}
@@ -129,17 +129,17 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
 
 <div class="tab-content">
 	  <div class="tab-pane active" id="delete-json">
-	   <h3>Call</h3>
+<h3>Call</h3>
 	{% codeblock %}
 	https://sendgrid.com/apiv2/customer.invalidemails.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=invalidemail@example.com
 	{% endcodeblock %}
-	<h3>Response: Success</h3>
+<h3>Response: Success</h3>
 	{% codeblock lang:javascript %}
 {
   "message": "success"
 }
 {% endcodeblock %}
-	<h3>Response: Error</h3>
+<h3>Response: Error</h3>
 	{% codeblock lang:javascript %}
 {
   "message": "Email does not exist"
@@ -147,7 +147,7 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
 {% endcodeblock %}
 	</div>
   <div class="tab-pane" id="delete-xml">
-   <h3>Call</h3>
+<h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.invalidemails.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=invalidemail@example.com
 {% endcodeblock %}

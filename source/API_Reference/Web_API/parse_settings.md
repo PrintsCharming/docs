@@ -79,7 +79,7 @@ SendGrid password
 
 {% codeblock %}
 https://sendgrid.com/api/parse.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %} 
+{% endcodeblock %}
 <h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
@@ -209,7 +209,7 @@ set
 
 <div class="tab-content">
   <div class="tab-pane active" id="set-json">
-   <h3>Call</h3>
+<h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/parse.set.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1
 {% endcodeblock %}
@@ -256,8 +256,8 @@ https://sendgrid.com/api/parse.set.json?api_user=your_sendgrid_username&api_key=
 {% codeblock %}
 https://sendgrid.com/api/parse.set.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1
 {% endcodeblock %}
-
-<h3>Response: Success<h3>
+<h3>Response: Success
+<h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -392,7 +392,6 @@ The hostname (domain or subdomain) for which you would like to delete Parse Webh
 {% codeblock %}
 https://sendgrid.com/api/parse.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com
 {% endcodeblock %}
-
 <h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
@@ -430,7 +429,6 @@ https://sendgrid.com/api/parse.delete.json?api_user=your_sendgrid_username&api_k
 {% codeblock %}
 https://sendgrid.com/api/parse.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com
 {% endcodeblock %}
-
 <h3>Response: Success</h3>
 
 {% codeblock lang:xml %}

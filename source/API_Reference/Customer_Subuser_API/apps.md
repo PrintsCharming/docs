@@ -25,7 +25,7 @@ navigation:
 {% codeblock %}
 	https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&user=example@example.com
 	{% endcodeblock %}
-	<h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -92,7 +92,7 @@ https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api
 {% codeblock %}
 	https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=activate&user=example@example.com
 	{% endcodeblock %}
-	<h3>Response</h3>
+<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -151,7 +151,7 @@ https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api
 {% codeblock %}
 	https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=deactivate&user=example@example.com
 	{% endcodeblock %}
-	<h3>Response</h3>
+<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -203,7 +203,7 @@ https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api
 {% codeblock %}
 	https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=setup&user=example@example.com
 	{% endcodeblock %}
-	<h3>Response: Success</h3>
+<h3>Response: Success</h3>
 	  
 {% codeblock lang:javascript %}
 {
@@ -232,7 +232,7 @@ This is returned if that filter has no settings or is not enabled.
 
 	</div>
   <div class="tab-pane" id="customize-xml">
-   <h3>Call</h3>
+<h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=setup&user=example@example.com
 {% endcodeblock %}
@@ -301,7 +301,7 @@ Get Current Settings
 
 <div class="tab-content">
 	  <div class="tab-pane active" id="settings-json">
-	   <h3>Call</h3>
+<h3>Call</h3>
 	{% codeblock %}
 	https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=example@example.com
 	{% endcodeblock %}

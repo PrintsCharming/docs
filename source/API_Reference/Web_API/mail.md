@@ -281,8 +281,7 @@ A collection of key/value pairs in JSON format. Each key represents a header nam
 {% codeblock %}
 https://sendgrid.com/api/mail.send.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&to=destination@example.com&toname=Destination&subject=Example_Subject&text=testingtextbody&from=info@domain.com
 {% endcodeblock %}
-
-	<h3>Call: Send to Multiple Recipients
+<h3>Call: Send to Multiple Recipients
 {% codeblock lang:bash %}
 https://sendgrid.com/api/mail.send.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example_Subject&text=testingtextbody&from=info@domain.com
 {% endcodeblock %}
@@ -329,8 +328,7 @@ https://sendgrid.com/api/mail.send.json?api_user=your_sendgrid_username&api_key=
 {% codeblock %}
 https://sendgrid.com/api/mail.send.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&to=destination@example.com&toname=Destination&subject=Example_Subject&text=testingtextbody&from=info@domain.com
 {% endcodeblock %}
-
-		<h3>Call: Send to Multiple Recipients
+<h3>Call: Send to Multiple Recipients
 {% codeblock lang:bash %}
 https://sendgrid.com/api/mail.send.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example_Subject&text=testingtextbody&from=info@domain.com
 {% endcodeblock %}

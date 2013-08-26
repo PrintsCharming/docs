@@ -77,7 +77,6 @@ add
 {% codeblock %}
 https://sendgrid.com/api/newsletter/variations/add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=variation_name&subject=variation_subject&html=variation_body
 {% endcodeblock %}
-
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
 {
@@ -185,7 +184,6 @@ Edit an existing Variation.
 {% codeblock %}
 https://sendgrid.com/api/newsletter/variations/edit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=existing_variation_name&newvariation=new_variation_name&subject=variation_subject&html=variation_body
 {% endcodeblock %}
-
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
 {
@@ -264,9 +262,7 @@ Retrieve the contents of an existing Variation.
 {% codeblock %}
 https://sendgrid.com/api/newsletter/variations/get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=existing_variation_name
 {% endcodeblock %}
-
 <h3>Response: Success</h3>
-
 <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
 {
@@ -331,14 +327,13 @@ Cancels a current Variation send that is in progress.
 {% codeblock %}
 https://sendgrid.com/api/newsletter/variations/cancel.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft
 {% endcodeblock %}
-
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
 {
   "message": "success"
 }
 {% endcodeblock %}
- <h3>Response: Error</h3>
+<h3>Response: Error</h3>
 {% codeblock lang:javascript %}
 {
   "message": "error",
@@ -413,14 +408,13 @@ Delete the contents of an existing Variation.
 {% codeblock %}
 https://sendgrid.com/api/newsletter/variations/delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_delete
 {% endcodeblock %}
-
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
 {
   "message": "success"
 }
 {% endcodeblock %}
- <h3>Response: Error</h3>
+<h3>Response: Error</h3>
 {% codeblock lang:javascript %}
 {
   "message": "error",
@@ -493,14 +487,13 @@ Retrieve a list of all Variations attached to a Marketing Email.
 {% codeblock %}
 https://sendgrid.com/api/newsletter/variations/list.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_find
 {% endcodeblock %}
-
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
 {
   "message": "success"
 }
 {% endcodeblock %}
- <h3>Response: Error</h3>
+<h3>Response: Error</h3>
 {% codeblock lang:javascript %}
 {
   "message": "error",
@@ -574,14 +567,13 @@ Select the Variation you would like to send.
 {% codeblock %}
 https://sendgrid.com/api/newsletter/variations/pickwinner.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_that_wins
 {% endcodeblock %}
-
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
 {
   "message": "success"
 }
 {% endcodeblock %}
- <h3>Response: Error</h3>
+<h3>Response: Error</h3>
 {% codeblock lang:javascript %}
 {
   "message": "error",
@@ -679,14 +671,13 @@ Schedule a send time and percentage for your variations.
 {% codeblock %}
 https://sendgrid.com/api/newsletter/variations/schedule.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&percent=50
 {% endcodeblock %}
-
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
 {
   "message": "success"
 }
 {% endcodeblock %}
- <h3>Response: Error</h3>
+<h3>Response: Error</h3>
 {% codeblock lang:javascript %}
 {
   "message": "error",

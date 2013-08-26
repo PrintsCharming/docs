@@ -188,13 +188,11 @@ send
 {% codeblock %}
 https://sendgrid.com/api/mail.send.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&to=destination@example.com&toname=Destination&subject=Example_Subject&text=testingtextbody&from=info@domain.com
 {% endcodeblock %}
-
-	<h3>Call: Send to Multiple Recipients
+<h3>Call: Send to Multiple Recipients
 {% codeblock lang:bash %}
 https://sendgrid.com/api/mail.send.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example_Subject&text=testingtextbody&from=info@domain.com
 {% endcodeblock %}
-
-	<h3>Response: Success</h3>
+<h3>Response: Success</h3>
 {% codeblock lang:javascript %}
 {
   "message": "success"
@@ -217,12 +215,11 @@ https://sendgrid.com/api/mail.send.json?api_user=your_sendgrid_username&api_key=
 {% codeblock %}
 https://sendgrid.com/api/mail.send.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&to=destination@example.com&toname=Destination&subject=Example_Subject&text=testingtextbody&from=info@domain.com
 {% endcodeblock %}
-
-		<h3>Call: Send to Multiple Recipients
+<h3>Call: Send to Multiple Recipients
 {% codeblock lang:bash %}
 https://sendgrid.com/api/mail.send.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example_Subject&text=testingtextbody&from=info@domain.com
 {% endcodeblock %}
-		<h3>Response: Success</h3>
+<h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
@@ -232,7 +229,6 @@ https://sendgrid.com/api/mail.send.xml?api_user=your_sendgrid_username&api_key=y
 </result>
 
 {% endcodeblock %}
-
 <h3>Response: Error</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -252,7 +248,6 @@ https://sendgrid.com/api/mail.send.xml?api_user=your_sendgrid_username&api_key=y
 </div>
 
 <hr/>
-
 <h3>cURL Examples</h3>
 
 <p>Send to one email recipient</p>
@@ -280,9 +275,6 @@ $ curl https://sendgrid.com/api/mail.send.json \
 -F from=test@yourdomain.com -F api_user=your_sendgrid_username -F api_key=your_sendgrid_password \
 -F files[attachment.pdf]=@attachment.pdf;type=application/pdf
 {% endcodeblock %}
-
-
-	
 <h3>Raw HTTP Dump</h3>
 <p>The following is a dump of the HTTP data sent to our server to generate an email via our web API.</p>
 

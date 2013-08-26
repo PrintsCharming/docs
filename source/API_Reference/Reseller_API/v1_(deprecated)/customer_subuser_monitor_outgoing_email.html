@@ -50,7 +50,8 @@ sample to</td>
 account</td>
       <td>The frequency of emails to be sent out</td>
     </tr>
-  </tbody></table><h3>XML Call</h3>
+  </tbody></table>
+<h3>XML Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=create&name=myMonitor&email=example@example.com&frequency=1000
 {% endcodeblock %}
@@ -141,7 +142,8 @@ sample to</td>
       <td>Must be an integer and greater than 0</td>
       <td>The new frequency of emails to be sent out</td>
     </tr>
-  </tbody></table><h3>XML Call</h3>
+  </tbody></table>
+<h3>XML Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5
 {% endcodeblock %}
@@ -214,7 +216,8 @@ Deleting a monitor record will remove it from SendGrid's system.
       <td>The unique name to identify this monitor
 record</td>
     </tr>
-  </tbody></table><h3>XML Call</h3>
+  </tbody></table>
+<h3>XML Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=delete&name=recordToDelet
 {% endcodeblock %}
@@ -279,7 +282,8 @@ List all available monitor records a reseller has.
       </td>
       <td>The task required to list all monitor records</td>
     </tr>
-  </tbody></table><h3>XML Call</h3>
+  </tbody></table>
+<h3>XML Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=lis
 {% endcodeblock %}
@@ -331,7 +335,8 @@ account</td>
       <td>The name of the monitor record we will be
 appending</td>
     </tr>
-  </tbody></table><h3>XML Call</h3>
+  </tbody></table>
+<h3>XML Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=append&name=myMonitor&user=example@example.com
 {% endcodeblock %}
@@ -405,7 +410,8 @@ account</td>
       <td>The customer subuser we will detach the
 monitor record from</td>
     </tr>
-  </tbody></table><h3>XML Call</h3>
+  </tbody></table>
+<h3>XML Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=detach&user=example@example.com
 {% endcodeblock %}

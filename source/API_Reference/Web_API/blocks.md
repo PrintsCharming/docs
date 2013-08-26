@@ -152,8 +152,8 @@ optional beginning point in the list to retrieve from.
 
 {% codeblock %}
 https://sendgrid.com/api/blocks.get.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;date=1
-{% endcodeblock %} 
-    <h3>Response</h3>
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 [
@@ -190,7 +190,7 @@ https://sendgrid.com/api/blocks.get.json?api_user=your_sendgrid_username&amp;api
 {% codeblock %}
 https://sendgrid.com/api/blocks.get.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;date=1
 {% endcodeblock %}
-    <h3>Response</h3>
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -275,7 +275,6 @@ Email block address to remove
 {% codeblock %}
 https://sendgrid.com/api/blocks.delete.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=emailToDelete@domain.com
 {% endcodeblock %}
-
 <h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}

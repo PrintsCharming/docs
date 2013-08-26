@@ -56,20 +56,16 @@ Custom Tag Sending Best Practices
 {% endanchor %}
 
 <p>At SendGrid we are always trying to help our customers send marketing email more efficiently. We recently did some research and attempted to provide some best practices when creating email custom tags.  Below are some tests we ran to provide our customers custom tag benchmarks to consider when sending large volumes of marketing email.</p>
-
 <h3>The Test</h3>
 <p>The total number of custom tags was computed based on:</p>
 <li> The MAX size of the POST Request allowed by the WEBAPID (20480000 b = almost 20Mb)</li>
 <li> The MAX size of the content (characters) of each custom tag.</li>
 <li> Batch sending (of 1000 recipients per batch)</li>
-
- 
 <h3>Tests Results</h3>
 
 <li>256 characters per content - total allowed custom tags: 75 </li>
 <li>128 chars per content - total allowed custom tags: 140 </li>
 <li>64 chars per content - total allowed custom tags: 250 </li>
-
 <h3>Recommendations</h3>
 
 <p>You should try to keep your custom tag total character count relatively small especially if you want to use more custom tags in your emails. If you choose to have custom tags with a lot of characters then try to limit the total amount of custom tags in your recipient lists. Referencing the tests above you can determine a safe amount of tags to use depending on the size of those tags that can result in efficient email batching when sending Marketing Email with SendGrid.</p>

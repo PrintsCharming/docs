@@ -113,12 +113,11 @@ get
 
 <div class="tab-content">
   <div class="tab-pane active" id="get-json">
-   <h3>Call</h3>
+<h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/invalidemails.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1
 {% endcodeblock %}
-
-   <h3>Response</h3>
+<h3>Response</h3>
 
 {% codeblock lang:javascript %}[
   {
@@ -139,8 +138,7 @@ https://sendgrid.com/api/invalidemails.get.json?api_user=your_sendgrid_username&
 {% codeblock %}
 https://sendgrid.com/api/invalidemails.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1
 {% endcodeblock %}
-
-		<h3>Response</h3>
+<h3>Response</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <invalidemails>
@@ -192,11 +190,10 @@ delete
 
 <div class="tab-content">
   <div class="tab-pane active" id="delete-json">
-   <h3>Call</h3>
+<h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/invalidemails.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com
 {% endcodeblock %}
-
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
 {
@@ -220,13 +217,12 @@ https://sendgrid.com/api/invalidemails.delete.json?api_user=your_sendgrid_userna
 {% codeblock %}
 https://sendgrid.com/api/invalidemails.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com
 {% endcodeblock %}
-		<h3>Response: Success</h3>
+<h3>Response: Success</h3>
 {% codeblock %}
 <result>
   success
 <result>
 {% endcodeblock %}
-
 <h3>Response: Error</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 

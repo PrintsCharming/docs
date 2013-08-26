@@ -40,7 +40,8 @@ Retrieve Spam Reports
     <td>Retrieves the timestamps, it will return a
 			date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
   </tr>
-</table><h3>XML Call</h3>
+</table>
+<h3>XML Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=example@example.com&task=get&date=
 {% endcodeblock %}
@@ -94,7 +95,8 @@ Delete Spam Reports
     <td>Must be a spam reports</td>
     <td>You must specify the spam reports to remove</td>
   </tr>
-</table><h3>XML Call</h3>
+</table>
+<h3>XML Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=example@example.com&task=delete&email=spamreport@domain.com
 {% endcodeblock %}

@@ -65,7 +65,7 @@ Password the subuser submitted.
 {% codeblock %}
 	https://sendgrid.com/apiv2/customer.auth.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=theirsubmittedpassword
 	{% endcodeblock %}
-	<h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {

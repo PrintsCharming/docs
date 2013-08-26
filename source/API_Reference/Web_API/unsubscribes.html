@@ -107,12 +107,11 @@ get
 {% xmljsontabs get %}
 <div class="tab-content">
   <div class="tab-pane active" id="get-json">
-   <h3>Call</h3>
+<h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/unsubscribes.get.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;date=1
 {% endcodeblock %}
-
-  <h3>Response</h3>
+<h3>Response</h3>
 {% codeblock lang:javascript %}[
   {
     "email": "brandon.west@sendgrid.com",
@@ -126,8 +125,7 @@ https://sendgrid.com/api/unsubscribes.get.json?api_user=your_sendgrid_username&a
 <h3>Call</h3>
 {% codeblock lang:xml %}
 {% endcodeblock %}
-
-		<h3>Response</h3>
+<h3>Response</h3>
 {% codeblock %}
 <unsubscribes><unsubscribe><email>brandon.west@sendgrid.com</email><created>2012-09-06 14:03:18</created></unsubscribe></unsubscribes>
 {% endcodeblock %}
@@ -164,7 +162,7 @@ delete
 {% xmljsontabs delete %}
 <div class="tab-content">
   <div class="tab-pane active" id="delete-json">
-   <h3>Call</h3>
+<h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/unsubscribes.delete.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=emailToDelete@domain.com
 {% endcodeblock %}
@@ -190,7 +188,6 @@ https://sendgrid.com/api/unsubscribes.delete.json?api_user=your_sendgrid_usernam
 {% codeblock %}
 https://sendgrid.com/api/unsubscribes.delete.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=emailToDelete@domain.com
 {% endcodeblock %}
-
 <h3>Response: Success</h3>
 
 {% codeblock %}
@@ -198,7 +195,6 @@ https://sendgrid.com/api/unsubscribes.delete.xml?api_user=your_sendgrid_username
   success
 <result>
 {% endcodeblock %}
-
 <h3>Response: Error</h3>
 
 @nodes
@@ -238,11 +234,10 @@ add
 {% xmljsontabs add %}
 <div class="tab-content">
   <div class="tab-pane active" id="add-json">
-   <h3>Call</h3>
+<h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/unsubscribes.add.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=email2@domain.com
 {% endcodeblock %}
-
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
 {
@@ -265,7 +260,6 @@ https://sendgrid.com/api/unsubscribes.add.json?api_user=your_sendgrid_username&a
 {% codeblock %}
 https://sendgrid.com/api/unsubscribes.add.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=email2@domain.com
 {% endcodeblock %}
-
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 

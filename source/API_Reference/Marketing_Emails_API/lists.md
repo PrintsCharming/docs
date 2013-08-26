@@ -105,7 +105,6 @@ Specify additional column names. The format needs to be
 {% codeblock %}
 https://sendgrid.com/api/newsletter/lists/add.json?list=test789&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
-
 <h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
@@ -254,7 +253,6 @@ Specify the new name for the Recipient List.
 {% codeblock %}
 https://sendgrid.com/api/newsletter/lists/edit.json?list=test7890&amp;newlist=test567&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
-
 <h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
@@ -385,7 +383,6 @@ Check for this particular list. (To list all Recipient Lists on your account exc
 {% codeblock %}
 https://sendgrid.com/api/newsletter/lists/get.json?list=test&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
-
 <h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
@@ -520,7 +517,6 @@ Remove this Recipient List.
 {% codeblock %}
 https://sendgrid.com/api/newsletter/lists/delete.json?list=test5678&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
-
 <h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}

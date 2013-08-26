@@ -29,17 +29,17 @@ navigation:
 
 <div class="tab-content">
 	  <div class="tab-pane active" id="auth-json">
-	   <h3>Call</h3>
+<h3>Call</h3>
 	  {% codeblock %}
 	https://sendgrid.com/apiv2/customer.auth.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=theirsubmittedpassword
 	{% endcodeblock %}
-	<h3>Response: Success</h3>
+<h3>Response: Success</h3>
 {% codeblock lang:javascript %}
 {
   "message": "success"
 }
 {% endcodeblock %}
-	<h3>Response: Error</h3>
+<h3>Response: Error</h3>
 {% codeblock lang:javascript %}
 {
   "message": "error",
@@ -50,7 +50,7 @@ navigation:
 {% endcodeblock %}
 	</div>
   <div class="tab-pane" id="auth-xml">
-   <h3>Call</h3>
+<h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.auth.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=theirsubmittedpasswor
 {% endcodeblock %}

@@ -290,7 +290,7 @@ https://sendgrid.com/api/user.invalidemails.xml?api_user=your_sendgrid_username&
 https://sendgrid.com/api/user.invalidemails.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=invalidemail@example.com
 {% endcodeblock %}
 <div class="tab-pane active" id="delete-json">
- <h3>Call</h3>
+<h3>Call</h3>
   
 {% codeblock lang:javascript %}
 {

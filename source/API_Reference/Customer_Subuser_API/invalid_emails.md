@@ -96,7 +96,7 @@ Retrieves the timestamps, it will return a date in a MySQL timestamp format - YY
 {% codeblock %}
 	https://sendgrid.com/apiv2/customer.invalidemails.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=1
 	{% endcodeblock %}
-	<h3>Response</h3>
+<h3>Response</h3>
 	
 {% codeblock lang:javascript %}
 [
@@ -254,7 +254,7 @@ You must specify the invalid emails to remove
 {% codeblock %}
 	https://sendgrid.com/apiv2/customer.invalidemails.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=invalidemail@example.com
 	{% endcodeblock %}
-	<h3>Response: Success</h3>
+<h3>Response: Success</h3>
 	
 {% codeblock lang:javascript %}
 {

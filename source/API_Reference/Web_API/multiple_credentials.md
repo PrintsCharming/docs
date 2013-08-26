@@ -96,7 +96,7 @@ If a username is supplied, the API returns the JSON permissions for that user
 
 {% codeblock %}
 https://sendgrid.com/api/credentials/get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %} 
+{% endcodeblock %}
 <h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
@@ -333,8 +333,8 @@ The following example allows the specified username/password to log into the das
 
 {% codeblock %}
 https://sendgrid.com/api/credentials/add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=name&password=password&permissions={"email": 0, "web": 1, "api": 0}
-{% endcodeblock %} 
-    <h3>Response: Success</h3>
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -537,8 +537,8 @@ If you do not specify any additional parameters (i.e., email, web, api), then no
 
 {% codeblock %}
 https://sendgrid.com/api/credentials/edit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=name&password=password&permissions={"email": 0, "web": 1, "api": 0}
-{% endcodeblock %} 
-    <h3>Response: Success</h3>
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -696,7 +696,7 @@ The credential to remove
 
 {% codeblock %}
 https://sendgrid.com/api/credentials/remove.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example_user
-{% endcodeblock %} 
+{% endcodeblock %}
 <h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}

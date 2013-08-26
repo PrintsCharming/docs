@@ -1630,7 +1630,7 @@ Update Subuser Password
 
 <div class="tab-content">
   <div class="tab-pane" id="updateSubuserPassword-xml">
-   <h3>Call</h3>
+<h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.password.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=newPasword&confirm_password=newPasswor
 {% endcodeblock %}
@@ -1753,7 +1753,7 @@ Update Subuser Username
 
 <div class="tab-content">
   <div class="tab-pane" id="updateSubuserUsername-xml">
-   <h3>Call</h3>
+<h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setUsername&user=example@example.com&username=newexample@example.com
 {% endcodeblock %}
@@ -1868,7 +1868,7 @@ Update Subuser Email Address
 
 <div class="tab-content">
   <div class="tab-pane" id="updateSubuserEmailAddress-xml">
-   <h3>Call</h3>
+<h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setEmail&user=example@example.com&email=newexample@example.com
 {% endcodeblock %}

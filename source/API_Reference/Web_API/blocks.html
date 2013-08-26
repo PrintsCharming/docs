@@ -79,11 +79,11 @@ get
 {% xmljsontabs get %}
 <div class="tab-content">
     <div class="tab-pane active" id="get-json">
-    <h3>Call</h3>
+<h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/blocks.get.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;date=1
-{% endcodeblock %} 
-    <h3>Response</h3>
+{% endcodeblock %}
+<h3>Response</h3>
 {% codeblock lang:javascript %}[
   {
     "status": "4.0.0",
@@ -107,11 +107,11 @@ https://sendgrid.com/api/blocks.get.json?api_user=your_sendgrid_username&amp;api
 {% endcodeblock %}
     </div>
     <div class="tab-pane" id="get-xml">
-    <h3>Call</h3>
+<h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/blocks.get.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;date=1
 {% endcodeblock %}
-    <h3>Response</h3>
+<h3>Response</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <blocks>
@@ -166,7 +166,6 @@ delete
 {% codeblock %}
 https://sendgrid.com/api/blocks.delete.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=emailToDelete@domain.com
 {% endcodeblock %}
-
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
 {

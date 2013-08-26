@@ -118,7 +118,7 @@ This is used to indicate you are interested in all-time totals
 {% codeblock %}
 https://sendgrid.com/api/stats.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&days=2
 {% endcodeblock %}
-   <h3>Response</h3>
+<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 [
@@ -170,8 +170,7 @@ https://sendgrid.com/api/stats.get.json?api_user=your_sendgrid_username&api_key=
 {% codeblock %}
 https://sendgrid.com/api/stats.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&days=2
 {% endcodeblock %}
-
-	<h3>Response</h3>
+<h3>Response</h3>
 	
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -239,7 +238,7 @@ https://sendgrid.com/api/stats.get.xml?api_user=your_sendgrid_username&api_key=y
 {% codeblock %}
 https://sendgrid.com/api/stats.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=true
 {% endcodeblock %}
-   <h3>Response</h3>
+<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 [
@@ -267,8 +266,7 @@ https://sendgrid.com/api/stats.get.json?api_user=your_sendgrid_username&api_key=
 {% codeblock %}
 https://sendgrid.com/api/stats.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=true
 {% endcodeblock %}
-
-		<h3>Response</h3>
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -478,8 +476,7 @@ https://sendgrid.com/api/stats.get.json?api_user=your_sendgrid_username&api_key=
 {% codeblock %}
 https://sendgrid.com/api/stats.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category=categoryA
 {% endcodeblock %}
-
-		<h3>Call - Using an array of categories</h3>
+<h3>Call - Using an array of categories</h3>
 {% codeblock %}
 https://sendgrid.com/api/stats.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB
 {% endcodeblock %}

@@ -629,7 +629,7 @@ The total number of credits the subuser will be reset to
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=total&credits=200
 {% endcodeblock %}
-	<h3>Response: Success</h3>
+<h3>Response: Success</h3>
 	
 {% codeblock lang:javascript %}
 {
@@ -737,7 +737,7 @@ Increment Credits
 
 <div class="tab-content">
 	  <div class="tab-pane active" id="increment-json">
-	   <h3>Call</h3>
+<h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=increment&credits=20
 {% endcodeblock %}
@@ -916,7 +916,7 @@ The total number of credits the subuser will be decremented by
 {% codeblock %}
 	https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=decrement&credits=200
 	{% endcodeblock %}
-	<h3>Response: Success</h3>
+<h3>Response: Success</h3>
 	
 {% codeblock lang:javascript %}
 {

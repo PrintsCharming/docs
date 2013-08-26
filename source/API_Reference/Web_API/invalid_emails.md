@@ -173,8 +173,7 @@ Optional email addresses to search for.
 {% codeblock %}
 https://sendgrid.com/api/invalidemails.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1
 {% endcodeblock %}
-
-   <h3>Response</h3>
+<h3>Response</h3>
 
 
 {% codeblock lang:javascript %}
@@ -204,8 +203,7 @@ https://sendgrid.com/api/invalidemails.get.json?api_user=your_sendgrid_username&
 {% codeblock %}
 https://sendgrid.com/api/invalidemails.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1
 {% endcodeblock %}
-
-		<h3>Response</h3>
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -292,7 +290,6 @@ Email Invalid Email address to remove
 {% codeblock %}
 https://sendgrid.com/api/invalidemails.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com
 {% endcodeblock %}
-
 <h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
@@ -330,7 +327,7 @@ https://sendgrid.com/api/invalidemails.delete.json?api_user=your_sendgrid_userna
 {% codeblock %}
 https://sendgrid.com/api/invalidemails.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com
 {% endcodeblock %}
-		<h3>Response: Success</h3>
+<h3>Response: Success</h3>
 {% codeblock %}
 <result>
   success

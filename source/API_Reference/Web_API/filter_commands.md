@@ -49,7 +49,6 @@ https://sendgrid.com/api/filter.getavailable.json?api_user=your_sendgrid_usernam
 {% codeblock %}
 https://sendgrid.com/api/filter.getavailable.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %}
-
 <h3>Response</h3>
 
 {% codeblock lang:xml %}
@@ -88,7 +87,7 @@ https://sendgrid.com/api/filter.getavailable.xml?api_user=your_sendgrid_username
 {% codeblock %}
 https://sendgrid.com/api/filter.activate.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
 {% endcodeblock %}
-		<h3>Response</h3>
+<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -108,7 +107,7 @@ https://sendgrid.com/api/filter.activate.json?api_user=your_sendgrid_username&ap
 {% codeblock %}
 https://sendgrid.com/api/filter.activate.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
 {% endcodeblock %}
-		<h3>Response</h3>
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -138,7 +137,7 @@ https://sendgrid.com/api/filter.activate.xml?api_user=your_sendgrid_username&api
 {% codeblock %}
 https://sendgrid.com/api/filter.deactivate.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
 {% endcodeblock %}
-   <h3>Response</h3>
+<h3>Response</h3>
 
 
 {% codeblock lang:javascript %}
@@ -159,8 +158,7 @@ https://sendgrid.com/api/filter.deactivate.json?api_user=your_sendgrid_username&
 {% codeblock %}
 https://sendgrid.com/api/filter.deactivate.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
 {% endcodeblock %}
-
-		<h3>Response</h3>
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -247,7 +245,7 @@ print_r($response);
 {% codeblock %}
 https://sendgrid.com/api/filter.getsettings.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
 {% endcodeblock %}
-	<h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -303,7 +301,7 @@ https://sendgrid.com/api/filter.getsettings.json?api_user=your_sendgrid_username
 {% codeblock %}
 https://sendgrid.com/api/filter.getsettings.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
 {% endcodeblock %}
-		<h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>

@@ -29,8 +29,8 @@ Add one or more emails to a Recipient List.
 
 {% codeblock %}
 https://sendgrid.com/api/newsletter/lists/email/add.json?list=Test&data=%7B%22email%22%3A%22example%40gmail.com%22%2C%22name%22%3A%22example%22%7D&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %} 
-	<h3>Response: Success</h3>
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -67,7 +67,7 @@ https://sendgrid.com/api/newsletter/lists/email/add.json?list=Test&data=%7B%22em
 {% codeblock %}
 https://sendgrid.com/api/newsletter/lists/email/add.xml?list=Test&data=%7B%22email%22%3A%22example%40gmail.com%22%2C%22name%22%3A%22example%22%7D&api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %}
-	<h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 
 {% codeblock lang:xml %}
@@ -108,7 +108,6 @@ Success: (X records inserted)
 
 
 {% codeblock %}{"inserted": X}{% endcodeblock %}
-
 <h3>Examples</h3>
 
 <p>Add an email recipient to a list:</p>
@@ -154,8 +153,8 @@ Get the email addresses and associated fields for a Recipient List.
 
 {% codeblock %}
 https://sendgrid.com/api/newsletter/lists/email/get.json?list=Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %} 
-	<h3>Response: Success</h3>
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 [
@@ -195,7 +194,7 @@ https://sendgrid.com/api/newsletter/lists/email/get.json?list=Test&api_user=your
 {% codeblock %}
 https://sendgrid.com/api/newsletter/lists/email/get.xml?list=Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %}
-	<h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 
 {% codeblock lang:xml %}
@@ -257,8 +256,8 @@ Remove one or more emails from a Recipient List.
 
 {% codeblock %}
 https://sendgrid.com/api/newsletter/lists/email/delete.json?list=Test&email=example%40gmail.com&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %} 
-	<h3>Response: Success</h3>
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -295,7 +294,7 @@ https://sendgrid.com/api/newsletter/lists/email/delete.json?list=Test&email=exam
 {% codeblock %}
 https://sendgrid.com/api/newsletter/lists/email/delete.xml?list=Test&email=example%40gmail.com&api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %}
-	<h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 
 {% codeblock lang:xml %}

@@ -173,8 +173,7 @@ optional email addresses to search for.
 {% codeblock %}
 https://sendgrid.com/api/unsubscribes.get.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;date=1
 {% endcodeblock %}
-
-  <h3>Response</h3>
+<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 [
@@ -241,7 +240,7 @@ delete
 {% xmljsontabs delete %}
 <div class="tab-content">
   <div class="tab-pane active" id="delete-json">
-   <h3>Call</h3>
+<h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/unsubscribes.delete.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=emailToDelete@domain.com
 {% endcodeblock %}
@@ -288,7 +287,6 @@ https://sendgrid.com/api/unsubscribes.delete.json?api_user=your_sendgrid_usernam
 {% codeblock %}
 https://sendgrid.com/api/unsubscribes.delete.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=emailToDelete@domain.com
 {% endcodeblock %}
-
 <h3>Response: Success</h3>
 
 {% codeblock %}
@@ -379,7 +377,6 @@ Email address to add to unsubscribe list
 {% codeblock %}
 https://sendgrid.com/api/unsubscribes.add.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=email2@domain.com
 {% endcodeblock %}
-
 <h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
@@ -417,7 +414,6 @@ https://sendgrid.com/api/unsubscribes.add.json?api_user=your_sendgrid_username&a
 {% codeblock %}
 https://sendgrid.com/api/unsubscribes.add.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=email2@domain.com
 {% endcodeblock %}
-
 <h3>Response: Success</h3>
 
 {% codeblock lang:xml %}

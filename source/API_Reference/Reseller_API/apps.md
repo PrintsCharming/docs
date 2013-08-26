@@ -376,7 +376,7 @@ This is returned if that filter has no settings or is not enabled.
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="settings-json">
-   <h3>Call</h3>
+<h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=customer@example.com&method=app
 {% endcodeblock %}

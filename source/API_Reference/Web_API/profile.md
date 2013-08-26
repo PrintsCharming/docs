@@ -21,7 +21,7 @@ View your SendGrid Profile
 {% codeblock %}
 https://sendgrid.com/api/profile.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %}
-   <h3>Response</h3>
+<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 [
@@ -54,8 +54,7 @@ https://sendgrid.com/api/profile.get.json?api_user=your_sendgrid_username&api_ke
 {% codeblock %}
 https://sendgrid.com/api/profile.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %}
-
-		<h3>Response</h3>
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -398,8 +397,7 @@ Confrim new password
 {% codeblock %}
 https://sendgrid.com/api/password.set.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&password=newPasword&confirm_password=newPassword
 {% endcodeblock %}
-
-	<h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -436,7 +434,6 @@ https://sendgrid.com/api/password.set.json?api_user=your_sendgrid_username&api_k
 {% codeblock %}
 https://sendgrid.com/api/password.set.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&password=newPasword&confirm_password=newPassword
 {% endcodeblock %}
-
 <h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
@@ -507,7 +504,7 @@ Please note, your account username is used to login to our SMTP server and the w
 
 <div class="tab-content">
   <div class="tab-pane active" id="setusername-json">
-   <h3>Call</h3>
+<h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/profile.setUsername.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=yournewusername@domain.com
 {% endcodeblock %}
@@ -624,7 +621,7 @@ Please note, we send out a confirmation email to the new email account in order 
 
 <div class="tab-content">
   <div class="tab-pane active" id="setemail-json">
-   <h3>Call</h3>
+<h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/profile.setEmail.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=yournewemail@domain.com
 {% endcodeblock %}

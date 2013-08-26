@@ -145,7 +145,6 @@ https://sendgrid.com/apiv2/reseller.credential.xml?api_user=your_sendgrid_userna
 
 {% endcodeblock %}
 
-
 <h3>JSON API Request</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.credential.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=reseller_customer&task=add&credential_name=reseller_customer_credential&credential_password=reseller_customer_password

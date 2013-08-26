@@ -191,7 +191,7 @@ optional email addresses to search for.
 {% codeblock %}
 https://sendgrid.com/api/bounces.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1
 {% endcodeblock %}
-    <h3>Response</h3>
+<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 [
@@ -246,7 +246,7 @@ https://sendgrid.com/api/bounces.get.json?api_user=your_sendgrid_username&api_ke
 {% codeblock %}
 https://sendgrid.com/api/bounces.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1
 {% endcodeblock %}
-    <h3>Response</h3>
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -388,8 +388,8 @@ Email bounce address to remove
 
 {% codeblock %}
 https://sendgrid.com/api/bounces.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com
-{% endcodeblock %} 
-	<h3>Response: Success</h3>
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -423,7 +423,7 @@ https://sendgrid.com/api/bounces.delete.json?api_user=your_sendgrid_username&api
 {% codeblock %}
 https://sendgrid.com/api/bounces.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com
 {% endcodeblock %}
-	<h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -464,12 +464,82 @@ https://sendgrid.com/api/bounces.delete.xml?api_user=your_sendgrid_username&api_
 {% anchor h2 %} Count {% endanchor %}
 
 
-||
-|Parameter|Required|Requirements|Description|
-|start\_date|No|Date must be in YYYY-mm-dd format and be before the end\_date parameter|Optional date to start counting from.|
-|end\_date|No|Date must be in YYYY-mm-dd format and be after the start\_date parameter|Optional date to end counting from.|
-|type|No|hard or soft|choose the type of bounce to search for.|
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+Parameter
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Requirements
+
+</th>
+<th markdown="1">
+Description
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+start\_date
+
+</td>
+<td markdown="1">
+No
+
+</td>
+<td markdown="1">
+Date must be in YYYY-mm-dd format and be before the end\_date parameter
+
+</td>
+<td markdown="1">
+Optional date to start counting from.
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+end\_date
+
+</td>
+<td markdown="1">
+No
+
+</td>
+<td markdown="1">
+Date must be in YYYY-mm-dd format and be after the start\_date parameter
+
+</td>
+<td markdown="1">
+Optional date to end counting from.
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+type
+
+</td>
+<td markdown="1">
+No
+
+</td>
+<td markdown="1">
+hard or soft
+
+</td>
+<td markdown="1">
+choose the type of bounce to search for.
+
+</td>
+</tr>
+</tbody>
+</table>
 {% xmljsontabs count %}
 
 <div markdown="1" class="tab-content">
@@ -480,8 +550,8 @@ https://sendgrid.com/api/bounces.delete.xml?api_user=your_sendgrid_username&api_
 
 {% codeblock %}
 https://sendgrid.com/api/bounces.count.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %} 
-	<h3>Response: Success</h3>
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -518,7 +588,7 @@ https://sendgrid.com/api/bounces.count.json?api_user=your_sendgrid_username&api_
 {% codeblock %}
 https://sendgrid.com/api/bounces.count.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %}
-	<h3>Response: Success</h3>
+<h3>Response: Success</h3>
 
 
 {% codeblock lang:xml %}
