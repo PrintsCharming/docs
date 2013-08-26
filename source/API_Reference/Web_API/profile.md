@@ -16,10 +16,12 @@ View your SendGrid Profile
 <div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/profile.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/profile.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
+{% endcodeblock %}
+     <h3>Response</h3>
 
 {% codeblock lang:javascript %}
 [
@@ -41,14 +43,19 @@ View your SendGrid Profile
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/profile.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/profile.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password
+{% endcodeblock %}
+
+		<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -60,10 +67,7 @@ View your SendGrid Profile
       <active>true</active>
       <first_name>john</first_name>
       <last_name>doe</last_name>
-      <address markdown="1">
-555 any street
-
-</address>
+      <address>555 any street</address>
       <city>any city</city>
       <state>CA</state>
       <zip>91234</zip>
@@ -74,6 +78,8 @@ View your SendGrid Profile
 </users>
 
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -103,7 +109,7 @@ Description
 </tr>
 <tr markdown="1">
 <td markdown="1">
-first_name
+first\_name
 
 </td>
 <td markdown="1">
@@ -117,7 +123,7 @@ Your first name
 </tr>
 <tr markdown="1">
 <td markdown="1">
-last_name
+last\_name
 
 </td>
 <td markdown="1">
@@ -235,10 +241,12 @@ Your company's website
 <div markdown="1" class="tab-pane active" id="set-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/profile.set.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&first_name=newFirstName&last_name=&newLastName {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/profile.set.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&first_name=newFirstName&last_name=&newLastName
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -247,7 +255,11 @@ Your company's website
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -260,14 +272,18 @@ Your company's website
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="set-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/profile.set.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&first_name=newFirstName&last_name=&newLastName {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/profile.set.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&first_name=newFirstName&last_name=&newLastName
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -279,7 +295,11 @@ Your company's website
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -296,6 +316,8 @@ Your company's website
 </result>
 
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -347,7 +369,7 @@ Your new password
 </tr>
 <tr markdown="1">
 <td markdown="1">
-confirm_password
+confirm\_password
 
 </td>
 <td markdown="1">
@@ -371,10 +393,13 @@ Confrim new password
 <div markdown="1" class="tab-pane active" id="reset-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/password.set.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&password=newPasword&confirm_password=newPassword {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/password.set.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&password=newPasword&confirm_password=newPassword
+{% endcodeblock %}
+
+	<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -383,7 +408,11 @@ Confrim new password
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -394,16 +423,21 @@ Confrim new password
   ]
 }
 {% endcodeblock %}
+
+
 
 
 </div>
 <div markdown="1" class="tab-pane" id="reset-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/password.set.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&password=newPasword&confirm_password=newPassword {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/password.set.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&password=newPasword&confirm_password=newPassword
+{% endcodeblock %}
+
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -415,70 +449,74 @@ Confrim new password
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
 
-{% codeblock %} <result> <message>error</message> <errors> ... <error>... error messages ...</error> ... </errors> @nodes {% endcodeblock %}
 
+
+{% codeblock %}
+<result>
+  <message>error</message>
+  <errors>
+    ...
+    <error>... error messages ...</error>
+    ...
+  </errors>
+@nodes
+{% endcodeblock %}
+
+  </div>
 </div>
-</div>
 
-* * * * *
+<hr/>
 
 
-{% anchor h2 %} setUsername {% endanchor %}
+
  
-{% warning %} Please note, your account username is used to login to our SMTP server and the website. Changes will take effect immediately. {% endwarning %}
+{% anchor h2 %}
+setUsername 
+{% endanchor %}
+ 
+
+{% warning %}
+Please note, your account username is used to login to our SMTP server and the website. Changes will take effect immediately.
+{% endwarning %}
 
 
-<table markdown="1" class="table table-bordered table-striped">
-<tbody markdown="1">
-<tr markdown="1">
-<th markdown="1">
-Parameter
-
-</th>
-<th markdown="1">
-Required
-
-</th>
-<th markdown="1">
-Requirements
-
-</th>
-<th markdown="1">
-Description
-
-</th>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-username
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-Must not exceed 100 characters. The username cannot be already taken or contain the SendGrid.com domain
-
-</td>
-<td markdown="1">
-This is the new username we will be authenticating with our SMTP servers and our website. Changes take effect immediately
-
-</td>
-</tr>
-</tbody>
+ <table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>username</td>
+         <td>Yes</td>
+         <td>Must not exceed 100 characters. The username cannot be already taken or       contain the SendGrid.com domain</td>
+         <td>This is the new username we will be authenticating with our SMTP servers and       our website. Changes take effect immediately</td>
+      </tr>
+   </tbody>
 </table>
+
+
+
 {% xmljsontabs setusername %}
 
-<div markdown="1" class="tab-content">
-<div markdown="1" class="tab-pane active" id="setusername-json">
-### Call
+<div class="tab-content">
+  <div class="tab-pane active" id="setusername-json">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/profile.setUsername.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=yournewusername@domain.com
+{% endcodeblock %}
 
-{% codeblock %} https://sendgrid.com/api/profile.setUsername.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=yournewusername@domain.com {% endcodeblock %}
+
 
 ### Response: Success
+
+
 
 
 {% codeblock lang:javascript %}
@@ -488,7 +526,11 @@ This is the new username we will be authenticating with our SMTP servers and our
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -499,16 +541,20 @@ This is the new username we will be authenticating with our SMTP servers and our
   ]
 }
 {% endcodeblock %}
+
+
 
 
 </div>
 <div markdown="1" class="tab-pane" id="setusername-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/profile.setUsername.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=yournewusername@domain.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/profile.setUsername.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=yournewusername@domain.com
+{% endcodeblock %}
+<h3>Response: Success</H3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -520,70 +566,74 @@ This is the new username we will be authenticating with our SMTP servers and our
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
 
-{% codeblock %} <result> <message>error</message> <errors> ... <error>... error messages ...</error> ... </errors> @nodes {% endcodeblock %}
 
+
+{% codeblock %}
+<result>
+  <message>error</message>
+  <errors>
+    ...
+    <error>... error messages ...</error>
+    ...
+  </errors>
+@nodes
+{% endcodeblock %}
+
+  </div>
 </div>
-</div>
 
-* * * * *
-
-
-{% anchor h2 %} setEmail {% endanchor %}
- 
-{% info %} Please note, we send out a confirmation email to the new email account in order to be validated. Your email address changes when you click on the confirmation link. {% endinfo %}
+<hr/>
 
 
-<table markdown="1" class="table table-bordered table-striped">
-<tbody markdown="1">
-<tr markdown="1">
-<th markdown="1">
-Parameter
 
-</th>
-<th markdown="1">
-Required
+{% anchor h2 %}
+setEmail 
+{% endanchor %}
 
-</th>
-<th markdown="1">
-Requirements
 
-</th>
-<th markdown="1">
-Description
 
-</th>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-email
+{% info %}
+Please note, we send out a confirmation email to the new email account in order to be validated. Your email address changes when you click on the confirmation link.
+{% endinfo %}
 
-</td>
-<td markdown="1">
-Yes
 
-</td>
-<td markdown="1">
-Must be in email format and not more than 100 characters
-
-</td>
-<td markdown="1">
-This is the new email address we will be contacting you with. Changes take effect immediately
-
-</td>
-</tr>
-</tbody>
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>email</td>
+         <td>Yes</td>
+         <td>Must be in email format and not more than 100 characters</td>
+         <td>This is the new email address we will be contacting you with. Changes take      effect immediately</td>
+      </tr>
+   </tbody>
 </table>
+
+
+
 {% xmljsontabs setemail %}
 
-<div markdown="1" class="tab-content">
-<div markdown="1" class="tab-pane active" id="setemail-json">
-### Call
+<div class="tab-content">
+  <div class="tab-pane active" id="setemail-json">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/profile.setEmail.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=yournewemail@domain.com
+{% endcodeblock %}
 
-{% codeblock %} https://sendgrid.com/api/profile.setEmail.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=yournewemail@domain.com {% endcodeblock %}
+
 
 ### Response: Success
+
+
 
 
 {% codeblock lang:javascript %}
@@ -593,7 +643,11 @@ This is the new email address we will be contacting you with. Changes take effec
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -606,14 +660,18 @@ This is the new email address we will be contacting you with. Changes take effec
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="setemail-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/profile.setEmail.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=yournewemail@domain.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/profile.setEmail.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=yournewemail@domain.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -623,7 +681,11 @@ This is the new email address we will be contacting you with. Changes take effec
 {% endcodeblock %}
 
 
+
+
 Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -632,6 +694,8 @@ Response: Error
 <message>error</message>
 
 {% endcodeblock %}
+
+
 
 
 </div>

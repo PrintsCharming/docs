@@ -18,10 +18,10 @@ These are actions that directly affect your customer. We provide access via XML 
 |:--------|:-------|:-----------|:----------|
 |username|Yes|No more than 64 characters|The customers new username|
 |password|Yes|Must be at least 6 characters|New password of customer|
-|confirm_password|Yes|Must match password parameter, must be at least 6 characters|Confirm new password|
+|confirm\_password|Yes|Must match password parameter, must be at least 6 characters|Confirm new password|
 |email|Yes|Must be in email format, no more than 64 characters|Email address of new customer|
-|first_name|Yes|No more than 50 characters|First name of new customer|
-|last_name|Yes|No more than 50 characters|Last name of new customer|
+|first\_name|Yes|No more than 50 characters|First name of new customer|
+|last\_name|Yes|No more than 50 characters|Last name of new customer|
 |address|Yes|No more than 100 characters|Address of new customer|
 |city|Yes|No more than 100 characters|City of new customer|
 |state|Yes|No more than 100 characters|State of new customer|
@@ -32,17 +32,19 @@ These are actions that directly affect your customer. We provide access via XML 
 |company|Yes|No more than 255 characters|Company of new customer|
 |package|Yes|No more than 255 characters|Name of the Package to assign to customer|
 |whitelabel|Yes|No more than 255 characters|The domain name for whitelabel|
-|ip_group[]|No|No more than 255 characters for each ip_group name. It must belong to you.|Name of the IP Group you wish to optionally add.|
+|ip\_group[]|No|No more than 255 characters for each ip\_group name. It must belong to you.|Name of the IP Group you wish to optionally add.|
 |ip[]|No|Valid ip address that belongs to you.|If package allows it, you can optionally add additional IP addresses.|
-|free_user|Maybe|If the new customer is a free customer, you need to specify this parameter. Either true or false.|Create a free customer|
-|billing_date|No|If the new customer's billing anniversary date is on a different date from the time you create the customer, you need to specify this parameter. Must be in YYYY-mm-dd format. This date must be within one billing cycle from the time you create this customer. (e.g. if they sign up on 2/28/11, then the latest date you can use is 3/28/11)|If the new customer's billing anniversary date is different from today (or when you execute this API call), you can specify the first billing anniversary date|
+|free\_user|Maybe|If the new customer is a free customer, you need to specify this parameter. Either true or false.|Create a free customer|
+|billing\_date|No|If the new customer's billing anniversary date is on a different date from the time you create the customer, you need to specify this parameter. Must be in YYYY-mm-dd format. This date must be within one billing cycle from the time you create this customer. (e.g. if they sign up on 2/28/11, then the latest date you can use is 3/28/11)|If the new customer's billing anniversary date is different from today (or when you execute this API call), you can specify the first billing anniversary date|
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.add.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=newcustomer@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=newcustomer@example.com&country=US&phone=555-555&free_user=tru {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.add.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=newcustomer@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=newcustomer@example.com&country=US&phone=555-555&free_user=tru
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -54,7 +56,11 @@ These are actions that directly affect your customer. We provide access via XML 
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -72,12 +78,16 @@ These are actions that directly affect your customer. We provide access via XML 
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=newcustomer@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=newcustomer@example.com&country=US&phone=555-55 {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=newcustomer@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=newcustomer@example.com&country=US&phone=555-55
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -86,7 +96,11 @@ These are actions that directly affect your customer. We provide access via XML 
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -97,6 +111,8 @@ These are actions that directly affect your customer. We provide access via XML 
   ]
 }
 {% endcodeblock %}
+
+
 
 
 * * * * *
@@ -115,10 +131,12 @@ This is the same thing as closing out a customers account at the end of their bi
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=customer@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=customer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -130,7 +148,11 @@ This is the same thing as closing out a customers account at the end of their bi
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -148,12 +170,16 @@ This is the same thing as closing out a customers account at the end of their bi
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=customer@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=customer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -162,7 +188,11 @@ This is the same thing as closing out a customers account at the end of their bi
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -173,6 +203,8 @@ This is the same thing as closing out a customers account at the end of their bi
   ]
 }
 {% endcodeblock %}
+
+
 
 
 * * * * *
@@ -187,8 +219,8 @@ Obtain a complete list of all customers.
 |username|No|Search filter, customer that is registered under you|
 |email|No|Search filter, email address customer was registered with|
 |active|No|Search filter, whether or not the customer is currently active|
-|first_name|No|Search filter, first name of customer|
-|last_name|No|Search filter, last name of customer|
+|first\_name|No|Search filter, first name of customer|
+|last\_name|No|Search filter, last name of customer|
 |address|No|Search filter, address of customer|
 |city|No|Search filter, city of customer|
 |state|No|Search filter, state of customer|
@@ -201,10 +233,12 @@ Obtain a complete list of all customers.
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=ge {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=ge
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -216,10 +250,7 @@ Obtain a complete list of all customers.
       <active>true</active>
       <first_name>john</first_name>
       <last_name>doe</last_name>
-      <address markdown="1">
-555 any street
-
-</address>
+      <address>555 any street</address>
       <city>any city</city>
       <state>CA</state>
       <zip>91234</zip>
@@ -233,11 +264,9 @@ Obtain a complete list of all customers.
       <active>false</active>
       <first_name>jane</first_name>
       <last_name>doe</last_name>
-      <address markdown="1">
-555 any street
-
-</address>
-      <city>any city</city>
+      <address>555 any street</address>
+      <city>any
+      city</city>
       <state>CA</state>
       <zip>91234</zip>
       <country>US</country>
@@ -249,11 +278,17 @@ Obtain a complete list of all customers.
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=ge {% endcodeblock %}
 
-### Response
+
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=ge
+{% endcodeblock %}
+<h3>Response</h3>
+
 
 
 
@@ -272,10 +307,12 @@ Enable a customer so they may start sending out emails again. This call will not
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=enable&user=customer@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=enable&user=customer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -287,7 +324,11 @@ Enable a customer so they may start sending out emails again. This call will not
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -300,12 +341,16 @@ Enable a customer so they may start sending out emails again. This call will not
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=enable&user=customer@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=enable&user=customer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -314,7 +359,11 @@ Enable a customer so they may start sending out emails again. This call will not
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -322,6 +371,8 @@ Enable a customer so they may start sending out emails again. This call will not
   "message": "User not found"
 }
 {% endcodeblock %}
+
+
 
 
 * * * * *
@@ -339,10 +390,12 @@ This prevents them from sending out emails with SendGrid.
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=disable&user=customer@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=disable&user=customer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -354,7 +407,11 @@ This prevents them from sending out emails with SendGrid.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -367,12 +424,16 @@ This prevents them from sending out emails with SendGrid.
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=disabl {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=disabl
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -381,7 +442,11 @@ This prevents them from sending out emails with SendGrid.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -389,6 +454,8 @@ This prevents them from sending out emails with SendGrid.
   "message": "User not found"
 }
 {% endcodeblock %}
+
+
 
 
 * * * * *
@@ -402,14 +469,16 @@ Allow a customer to login to the SendGrid.com website. This call will not enable
 |Parameter|Required|Requirements|Description|
 |:--------|:-------|:-----------|:----------|
 |user|Yes|Must be in email format|The customer you are planning to grant website access|
-|method|Yes|Must be set to *website_enable*|The customer you are planning to grant website access|
+|method|Yes|Must be set to *website\_enable*|The customer you are planning to grant website access|
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_enable&user=customer@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_enable&user=customer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -421,7 +490,11 @@ Allow a customer to login to the SendGrid.com website. This call will not enable
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -434,12 +507,16 @@ Allow a customer to login to the SendGrid.com website. This call will not enable
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_enable&user=customer@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_enable&user=customer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -448,7 +525,11 @@ Allow a customer to login to the SendGrid.com website. This call will not enable
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -456,6 +537,8 @@ Allow a customer to login to the SendGrid.com website. This call will not enable
   "message": "User not found"
 }
 {% endcodeblock %}
+
+
 
 
 * * * * *
@@ -469,14 +552,16 @@ Disallow a customer to login to the SendGrid.com website. This call will not pre
 |Parameter|Required|Requirements|Description|
 |:--------|:-------|:-----------|:----------|
 |user|Yes|Must be in email format|The customer you are planning to disallow website access|
-|method|Yes|Must be set to *website_disable*|The customer you are planning to disallow website access|
+|method|Yes|Must be set to *website\_disable*|The customer you are planning to disallow website access|
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_disable&user=customer@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_disable&user=customer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -488,7 +573,11 @@ Disallow a customer to login to the SendGrid.com website. This call will not pre
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -501,12 +590,16 @@ Disallow a customer to login to the SendGrid.com website. This call will not pre
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_disabl {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_disabl
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -515,7 +608,11 @@ Disallow a customer to login to the SendGrid.com website. This call will not pre
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -523,6 +620,8 @@ Disallow a customer to login to the SendGrid.com website. This call will not pre
   "message": "User not found"
 }
 {% endcodeblock %}
+
+
 
 
 * * * * *
@@ -538,8 +637,8 @@ Allows you to update your customers profile information
 |task|Yes|Must be set to **set** in order to update profile information|
 |method|Yes|Must be set to *profile*|
 |user|Yes|Customer that is registered under you|
-|first_name|No|First name of customer|
-|last_name|No|Last name of customer|
+|first\_name|No|First name of customer|
+|last\_name|No|Last name of customer|
 |address|No|Address of customer|
 |city|No|City of customer|
 |state|No|State of customer|
@@ -551,10 +650,12 @@ Allows you to update your customers profile information
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=&newLastNam {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=&newLastNam
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -566,7 +667,11 @@ Allows you to update your customers profile information
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -584,12 +689,16 @@ Allows you to update your customers profile information
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=&newLastNam {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=&newLastNam
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -598,7 +707,11 @@ Allows you to update your customers profile information
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -609,6 +722,8 @@ Allows you to update your customers profile information
   ]
 }
 {% endcodeblock %}
+
+
 
 
 * * * * *
@@ -623,15 +738,17 @@ Passwords are encrypted by default and therefore cannot be retrieved; however, y
 |:--------|:-------|:-----------|:----------|
 |user|Yes|Customer must be registered under you|The customer you are planning to reset the password|
 |password|Yes|Must be at least 6 characters|New password of customer|
-|confirm_password|Yes|Must match password parameter and be at least 6 characters|Confirm new password|
+|confirm\_password|Yes|Must match password parameter and be at least 6 characters|Confirm new password|
 |method|Yes|Must be set to *password*|Allows you to access password functionality|
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=password&user=customer@example.com&password=newPasword&confirm_password=newPasswor {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=password&user=customer@example.com&password=newPasword&confirm_password=newPasswor
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -643,7 +760,11 @@ Passwords are encrypted by default and therefore cannot be retrieved; however, y
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -661,12 +782,16 @@ Passwords are encrypted by default and therefore cannot be retrieved; however, y
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=password&user=customer@example.com&password=newPasword&confirm_password=newPasswor {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=password&user=customer@example.com&password=newPasword&confirm_password=newPasswor
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -675,7 +800,11 @@ Passwords are encrypted by default and therefore cannot be retrieved; however, y
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -686,6 +815,8 @@ Passwords are encrypted by default and therefore cannot be retrieved; however, y
   ]
 }
 {% endcodeblock %}
+
+
 
 
 * * * * *
@@ -705,10 +836,12 @@ Note that your customer account username is used to login to our SMTP server *an
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setUsername&user=customer@example.com&username=newcustomer@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setUsername&user=customer@example.com&username=newcustomer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -720,7 +853,11 @@ Note that your customer account username is used to login to our SMTP server *an
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -738,12 +875,16 @@ Note that your customer account username is used to login to our SMTP server *an
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setUsername&user=customer@example.com&username=newcustomer@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setUsername&user=customer@example.com&username=newcustomer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -752,7 +893,11 @@ Note that your customer account username is used to login to our SMTP server *an
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -763,6 +908,8 @@ Note that your customer account username is used to login to our SMTP server *an
   ]
 }
 {% endcodeblock %}
+
+
 
 
 * * * * *
@@ -782,10 +929,12 @@ This is the contact email we use for your customers. Changes take place immediat
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setEmail&user=customer@example.com&email=newcustomer@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setEmail&user=customer@example.com&email=newcustomer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -797,7 +946,11 @@ This is the contact email we use for your customers. Changes take place immediat
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -815,12 +968,16 @@ This is the contact email we use for your customers. Changes take place immediat
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setEmail&user=customer@example.com&email=newcustomer@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setEmail&user=customer@example.com&email=newcustomer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -829,7 +986,11 @@ This is the contact email we use for your customers. Changes take place immediat
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -840,4 +1001,6 @@ This is the contact email we use for your customers. Changes take place immediat
   ]
 }
 {% endcodeblock %}
+
+
 

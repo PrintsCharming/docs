@@ -72,7 +72,7 @@ Number of days in the past for which to retrieve bounces (includes today)
 </tr>
 <tr markdown="1">
 <td markdown="1">
-start_date
+start\_date
 
 </td>
 <td markdown="1">
@@ -80,7 +80,7 @@ No
 
 </td>
 <td markdown="1">
-Date must be in YYYY-MM-DD format and be earlier than the end_date parameter.
+Date must be in YYYY-MM-DD format and be earlier than the end\_date parameter.
 
 </td>
 <td markdown="1">
@@ -90,7 +90,7 @@ The start of the date range for which to retrieve bounces.
 </tr>
 <tr markdown="1">
 <td markdown="1">
-end_date
+end\_date
 
 </td>
 <td markdown="1">
@@ -98,7 +98,7 @@ No
 
 </td>
 <td markdown="1">
-Date must be in YYYY-MM-DD format and be later than the start_date parameter.
+Date must be in YYYY-MM-DD format and be later than the start\_date parameter.
 
 </td>
 <td markdown="1">
@@ -186,10 +186,12 @@ optional email addresses to search for.
 <div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/bounces.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1 {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/bounces.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1
+{% endcodeblock %}
+      <h3>Response</h3>
 
 {% codeblock lang:javascript %}
 [
@@ -233,14 +235,18 @@ optional email addresses to search for.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/bounces.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1 {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/bounces.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1
+{% endcodeblock %}
+      <h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -261,6 +267,8 @@ optional email addresses to search for.
 </bounces>
 
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -296,7 +304,7 @@ Description
 </tr>
 <tr markdown="1">
 <td markdown="1">
-start_date
+start\_date
 
 </td>
 <td markdown="1">
@@ -304,7 +312,7 @@ No
 
 </td>
 <td markdown="1">
-Date must be in YYYY-mm-dd format and be before the end_date parameter
+Date must be in YYYY-mm-dd format and be before the end\_date parameter
 
 </td>
 <td markdown="1">
@@ -314,7 +322,7 @@ Optional date to start deleting from.
 </tr>
 <tr markdown="1">
 <td markdown="1">
-end_date
+end\_date
 
 </td>
 <td markdown="1">
@@ -322,7 +330,7 @@ No
 
 </td>
 <td markdown="1">
-Date must be in YYYY-mm-dd format and be after the start_date parameter
+Date must be in YYYY-mm-dd format and be after the start\_date parameter
 
 </td>
 <td markdown="1">
@@ -376,10 +384,12 @@ Email bounce address to remove
 <div markdown="1" class="tab-pane active" id="delete-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/bounces.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/bounces.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com
+{% endcodeblock %} 
+	<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -388,7 +398,11 @@ Email bounce address to remove
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -398,24 +412,35 @@ Email bounce address to remove
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="delete-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/bounces.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/bounces.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com
+{% endcodeblock %}
+	<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<result> success @nodes </result>
+<result>
+  success
+@nodes
+</result>
 
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -426,6 +451,8 @@ Email bounce address to remove
 </result>
 
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -439,8 +466,8 @@ Email bounce address to remove
 
 ||
 |Parameter|Required|Requirements|Description|
-|start_date|No|Date must be in YYYY-mm-dd format and be before the end_date parameter|Optional date to start counting from.|
-|end_date|No|Date must be in YYYY-mm-dd format and be after the start_date parameter|Optional date to end counting from.|
+|start\_date|No|Date must be in YYYY-mm-dd format and be before the end\_date parameter|Optional date to start counting from.|
+|end\_date|No|Date must be in YYYY-mm-dd format and be after the start\_date parameter|Optional date to end counting from.|
 |type|No|hard or soft|choose the type of bounce to search for.|
 
 {% xmljsontabs count %}
@@ -449,10 +476,12 @@ Email bounce address to remove
 <div markdown="1" class="tab-pane active" id="count-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/bounces.count.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/bounces.count.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
+{% endcodeblock %} 
+	<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -461,7 +490,11 @@ Email bounce address to remove
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -474,13 +507,18 @@ Email bounce address to remove
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="count-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/bounces.count.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
-### Response: Success
+
+{% codeblock %}
+https://sendgrid.com/api/bounces.count.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password
+{% endcodeblock %}
+	<h3>Response: Success</h3>
 
 
 {% codeblock lang:xml %}
@@ -494,7 +532,11 @@ Email bounce address to remove
 {% endcodeblock %}
 
 
+
+
 #### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -505,6 +547,8 @@ Email bounce address to remove
 </result>
 
 {% endcodeblock %}
+
+
 
 
 </div>

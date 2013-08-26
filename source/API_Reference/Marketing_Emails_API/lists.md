@@ -100,10 +100,13 @@ Specify additional column names. The format needs to be
 <div markdown="1" class="tab-pane active" id="add-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/lists/add.json?list=test789&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/newsletter/lists/add.json?list=test789&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
+{% endcodeblock %}
+
+          <h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -112,7 +115,11 @@ Specify additional column names. The format needs to be
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -125,14 +132,18 @@ Specify additional column names. The format needs to be
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="add-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/lists/add.xml?list=test789&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/newsletter/lists/add.xml?list=test789&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -144,7 +155,11 @@ Specify additional column names. The format needs to be
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -155,6 +170,8 @@ Specify additional column names. The format needs to be
 </result>
 
 {% endcodeblock %}
+
+
  </result>
 
 </div>
@@ -232,10 +249,13 @@ Specify the new name for the Recipient List.
 <div markdown="1" class="tab-pane active" id="edit-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/lists/edit.json?list=test7890&newlist=test567&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/newsletter/lists/edit.json?list=test7890&amp;newlist=test567&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
+{% endcodeblock %}
+
+          <h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -244,7 +264,11 @@ Specify the new name for the Recipient List.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -257,14 +281,18 @@ Specify the new name for the Recipient List.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="edit-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/lists/edit.xml?list=test7890&newlist=test567&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/newsletter/lists/edit.xml?list=test7890&amp;newlist=test567&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -276,7 +304,11 @@ Specify the new name for the Recipient List.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -287,6 +319,8 @@ Specify the new name for the Recipient List.
 </result>
 
 {% endcodeblock %}
+
+
  </result>
 
 </div>
@@ -346,10 +380,13 @@ Check for this particular list. (To list all Recipient Lists on your account exc
 <div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/lists/get.json?list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/newsletter/lists/get.json?list=test&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
+{% endcodeblock %}
+
+          <h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 [
@@ -360,7 +397,11 @@ Check for this particular list. (To list all Recipient Lists on your account exc
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -373,14 +414,18 @@ Check for this particular list. (To list all Recipient Lists on your account exc
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/lists/get.xml?list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/newsletter/lists/get.xml?list=test&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -394,7 +439,11 @@ Check for this particular list. (To list all Recipient Lists on your account exc
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -405,6 +454,8 @@ Check for this particular list. (To list all Recipient Lists on your account exc
 </result>
 
 {% endcodeblock %}
+
+
  </result>
 
 </div>
@@ -464,10 +515,13 @@ Remove this Recipient List.
 <div markdown="1" class="tab-pane active" id="delete-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/lists/delete.json?list=test5678&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/newsletter/lists/delete.json?list=test5678&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
+{% endcodeblock %}
+
+          <h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -476,7 +530,11 @@ Remove this Recipient List.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -489,14 +547,18 @@ Remove this Recipient List.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="delete-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/lists/delete.xml?list=test5678&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/newsletter/lists/delete.xml?list=test5678&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -508,7 +570,11 @@ Remove this Recipient List.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -519,6 +585,8 @@ Remove this Recipient List.
 </result>
 
 {% endcodeblock %}
+
+
  </result>
 
 </div>

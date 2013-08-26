@@ -116,7 +116,7 @@ No
 
 </td>
 <td markdown="1">
-a tag that can be added to the content that will be replaced by SendGrid with the subscription management link, e.g. [unsubscribe_tag]
+a tag that can be added to the content that will be replaced by SendGrid with the subscription management link, e.g. [unsubscribe\_tag]
 
 </td>
 </tr>

@@ -11,20 +11,55 @@ navigation:
 
 Set the authorization credentials in **/etc/mail/access**
 
-{% codeblock lang:bash %} AuthInfo:smtp.sendgrid.net "U:yourUserName" "P:yourPassword" "M:PLAIN" {% endcodeblock %}
 
-Define the Smart Host in **/etc/mail/sendmail.mc** You should add these lines just after the commented "\#dnl define('SMART_HOST', 'smtp.your.provider')dnl" line in the file
 
-{% codeblock lang:bash %} define(\`SMART_HOST', \`smtp.sendgrid.net')dnl FEATURE(\`access_db')dnl define(\`RELAY_MAILER_ARGS', \`TCP \$h 587')dnl define(\`ESMTP_MAILER_ARGS', \`TCP \$h 587')dnl {% endcodeblock %}
+{% codeblock lang:bash %}
+AuthInfo:smtp.sendgrid.net "U:yourUserName" "P:yourPassword" "M:PLAIN"
+{% endcodeblock %}
+
+
+
+Define the Smart Host in **/etc/mail/sendmail.mc** You should add these lines just after the commented "\#dnl define('SMART\_HOST', 'smtp.your.provider')dnl" line in the file
+
+
+
+{% codeblock lang:bash %}
+define(`SMART_HOST', `smtp.sendgrid.net')dnl
+FEATURE(`access_db')dnl
+define(`RELAY_MAILER_ARGS', `TCP $h 587')dnl
+define(`ESMTP_MAILER_ARGS', `TCP $h 587')dnl
+{% endcodeblock %}
+
+
 
 Update sendmail.cf and access.db files
 
-(You will need to run these commands as 'su' or 'root') {% codeblock lang:bash %} \$ cd /etc/mail \$ m4 sendmail.mc \>sendmail.cf \$ makemap hash access \< access {% endcodeblock %}
+(You will need to run these commands as 'su' or 'root') 
+
+{% codeblock lang:bash %}
+$ cd /etc/mail
+$ m4 sendmail.mc >sendmail.cf
+$ makemap hash access < access
+{% endcodeblock %}
+
+
 
 On older distros, you can run restart sendmail like so:
 
-{% codeblock lang:bash %} \$ /etc/init.d/sendmail restart {% endcodeblock %}
+
+
+{% codeblock lang:bash %}
+$ /etc/init.d/sendmail restart
+{% endcodeblock %}
+
+
 
 If, however, you're using a newer version, do the following to restart:
 
-{% codeblock lang:bash %} \$ service sendmail restart {% endcodeblock %}
+
+
+{% codeblock lang:bash %}
+$ service sendmail restart
+{% endcodeblock %}
+
+

@@ -20,10 +20,12 @@ navigation:
 <div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=parse&task=get&method=parse&user=example@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=parse&task=get&method=parse&user=example@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -39,17 +41,27 @@ navigation:
 {% endcodeblock %}
 
 
+
+
 ### Response: Empty
 
-{% codeblock %} <parse></parse> {% endcodeblock %}
 
-</div>
-<div markdown="1" class="tab-pane active" id="get-json">
-### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&method=parse&user=example@example.com {% endcodeblock %}
+{% codeblock %}
+<parse></parse>
+{% endcodeblock %}
+  </div>
+  <div class="tab-pane active" id="get-json">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&method=parse&user=example@example.com
+{% endcodeblock %}
+
+
 
 ### Response: Success
+
+
 
 
 {% codeblock lang:javascript %}
@@ -65,35 +77,74 @@ navigation:
 {% endcodeblock %}
 
 
+
+
 ### Response: Empty
 
-{% codeblock %} "parse":[] {% endcodeblock %}
 
+
+{% codeblock %}
+"parse":[]
+{% endcodeblock %}
+  </div>
 </div>
-</div>
-
-* * * * *
+<hr/>
 
 
-{% anchor h2 %} Create New Entry {% endanchor %}
+{% anchor h2 %}
+Create New Entry 
+{% endanchor %}
 
-
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to *set*|Set Parse settings|
-|hostname|Yes|No more than 255 characters|Hostname we will use with your email|
-|url|Yes||The parse destination|
-|user|Yes|Customer subuser must be registered under your account|The customer subuser who we will update|
+<table class="table table-bordered table-striped">
+   <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+   </tr>
+   <tr>
+      <td>task</td>
+      <td>Yes</td>
+      <td>
+         Must be set to
+         <em>set</em>
+      </td>
+      <td>Set Parse settings</td>
+   </tr>
+   <tr>
+      <td>hostname</td>
+      <td>Yes</td>
+      <td>No more than 255 characters</td>
+      <td>Hostname we will use with your email</td>
+   </tr>
+   <tr>
+      <td>url</td>
+      <td>Yes</td>
+      <td/>
+      <td>The parse destination</td>
+   </tr>
+   <tr>
+      <td>user</td>
+      <td>Yes</td>
+      <td>Customer subuser must be registered under		your account</td>
+      <td>The customer subuser who we will update</td>
+   </tr>
+</table>
 
 {% xmljsontabs create %}
 
-<div markdown="1" class="tab-content">
-<div markdown="1" class="tab-pane" id="create-xml">
-### Call
+<div class="tab-content">
+  <div class="tab-pane" id="create-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=set&method=parse&user=example@example.com
+{% endcodeblock %}
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=set&method=parse&user=example@example.com {% endcodeblock %}
+
 
 ### Response: Success
+
+
 
 
 {% codeblock lang:xml %}
@@ -106,7 +157,11 @@ navigation:
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -124,14 +179,18 @@ navigation:
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="create-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=set&method=parse&user=example@example.com {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=set&method=parse&user=example@example.com
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -140,7 +199,11 @@ navigation:
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -151,6 +214,8 @@ navigation:
   ]
 }
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -175,10 +240,12 @@ navigation:
 <div markdown="1" class="tab-pane" id="edit-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=update&user=example@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=update&user=example@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -190,7 +257,11 @@ navigation:
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -208,14 +279,18 @@ navigation:
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="edit-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=parse&user=example@example.com {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=parse&user=example@example.com
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -224,7 +299,11 @@ navigation:
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -235,6 +314,8 @@ navigation:
   ]
 }
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -258,10 +339,12 @@ navigation:
 <div markdown="1" class="tab-pane" id="delete-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&method=parse&user=example@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&method=parse&user=example@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -273,7 +356,11 @@ navigation:
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -291,14 +378,18 @@ navigation:
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="delete-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&method=parse&user=example@example.com {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&method=parse&user=example@example.com
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -307,7 +398,11 @@ navigation:
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -318,6 +413,8 @@ navigation:
   ]
 }
 {% endcodeblock %}
+
+
 
 
 </div>

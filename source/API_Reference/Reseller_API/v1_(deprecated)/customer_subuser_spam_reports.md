@@ -17,10 +17,12 @@ navigation:
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=example@example.com&task=get&date= {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=example@example.com&task=get&date=
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -28,22 +30,30 @@ navigation:
 <spamreports>
    <spamreport>
       <email>email1@domain.com</email>
-      <created>2009-06-10 12:40:30</created>
+      <created>2009-06-10
+12:40:30</created>
    </spamreport>
    <spamreport>
       <email>email2@domain2.com</email>
-      <created>2009-06-10 12:40:30</created>
+      <created>2009-06-10
+12:40:30</created>
    </spamreport>
 </spamreports>
 
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=example@example.com&task=get&date= {% endcodeblock %}
 
-### Response
+
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=example@example.com&task=get&date=
+{% endcodeblock %}
+<h3>Response</h3>
+
 
 
 
@@ -63,21 +73,35 @@ Since SendGrid does not deliver to spam reported addresses, users can remove spa
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=example@example.com&task=delete&email=spamreport@domain.com {% endcodeblock %}
 
-### Response: Success
 
-{% codeblock %} result\><message>success</message></result> {% endcodeblock %}
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=example@example.com&task=delete&email=spamreport@domain.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+result><message>success</message></result>
+{% endcodeblock %}
+
+
 
 ### Response: Error
 
-{% codeblock %} result\><message>Email does not exist</message></result> {% endcodeblock %}
 
-### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=example@example.com&task=delete&email=spamreport@domain.com {% endcodeblock %}
+{% codeblock %}
+result><message>Email does not exist</message></result>
+{% endcodeblock %}
+<h3>JSON Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=example@example.com&task=delete&email=spamreport@domain.com
+{% endcodeblock %}
+
+
 
 ### Response: Success
+
+
 
 
 {% codeblock lang:javascript %}
@@ -87,7 +111,11 @@ Since SendGrid does not deliver to spam reported addresses, users can remove spa
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -95,4 +123,6 @@ Since SendGrid does not deliver to spam reported addresses, users can remove spa
   "message": "Email does not exist"
 }
 {% endcodeblock %}
+
+
 

@@ -7,7 +7,7 @@ navigation:
   show: true
 ---
 <form markdown="1" class="form-search" id="search">
-<input class="input-large search-query" type="text" id="page-query" name="query"></input> <input type="hidden" id="root" name="root" value="{{ site.root }}"> <input class="btn" type="submit"></input>
+<input class="input-large search-query" type="text" id="page-query" name="query"></input> <input type="hidden" id="root" name="root" value="{{ site.root }}"></input> <input class="btn" type="submit"></input>
 </form>
 <div markdown="1" class="bar-indicator" style="display:none;">
 </div>

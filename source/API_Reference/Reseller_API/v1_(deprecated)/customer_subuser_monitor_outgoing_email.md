@@ -109,10 +109,12 @@ The frequency of emails to be sent out
 </table>
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=create&name=myMonitor&email=example@example.com&frequency=1000 {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=create&name=myMonitor&email=example@example.com&frequency=1000
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -124,7 +126,11 @@ The frequency of emails to be sent out
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -142,12 +148,16 @@ The frequency of emails to be sent out
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=create&name=myMonitor&email=example@example.com&frequency=1000 {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=create&name=myMonitor&email=example@example.com&frequency=1000
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -156,7 +166,11 @@ The frequency of emails to be sent out
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -167,6 +181,8 @@ The frequency of emails to be sent out
   ]
 }
 {% endcodeblock %}
+
+
 
 
 * * * * *
@@ -233,7 +249,7 @@ The monitor record we are going to edit
 </tr>
 <tr markdown="1">
 <td markdown="1">
-new_name
+new\_name
 
 </td>
 <td markdown="1">
@@ -251,7 +267,7 @@ The new monitor record name
 </tr>
 <tr markdown="1">
 <td markdown="1">
-new_email
+new\_email
 
 </td>
 <td markdown="1">
@@ -269,7 +285,7 @@ The new email destination to send the email sample to
 </tr>
 <tr markdown="1">
 <td markdown="1">
-new_frequency
+new\_frequency
 
 </td>
 <td markdown="1">
@@ -289,10 +305,12 @@ The new frequency of emails to be sent out
 </table>
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5 {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -304,7 +322,11 @@ The new frequency of emails to be sent out
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -322,12 +344,16 @@ The new frequency of emails to be sent out
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5 {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -336,7 +362,11 @@ The new frequency of emails to be sent out
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -347,6 +377,8 @@ The new frequency of emails to be sent out
   ]
 }
 {% endcodeblock %}
+
+
 
 
 * * * * *
@@ -415,10 +447,12 @@ The unique name to identify this monitor record
 </table>
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=delete&name=recordToDelet {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=delete&name=recordToDelet
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -430,7 +464,11 @@ The unique name to identify this monitor record
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -448,12 +486,16 @@ The unique name to identify this monitor record
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=delete&name=recordToDelet {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=delete&name=recordToDelet
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -462,7 +504,11 @@ The unique name to identify this monitor record
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -473,6 +519,8 @@ The unique name to identify this monitor record
   ]
 }
 {% endcodeblock %}
+
+
 
 
 * * * * *
@@ -523,10 +571,12 @@ The task required to list all monitor records
 </table>
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=lis {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=lis
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -552,11 +602,17 @@ The task required to list all monitor records
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=lis {% endcodeblock %}
 
-### Response
+
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=lis
+{% endcodeblock %}
+<h3>Response</h3>
+
 
 
 
@@ -644,10 +700,12 @@ The name of the monitor record we will be appending
 </table>
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=append&name=myMonitor&user=example@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=append&name=myMonitor&user=example@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -659,7 +717,11 @@ The name of the monitor record we will be appending
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -677,12 +739,16 @@ The name of the monitor record we will be appending
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=append&name=myMonitor&user=example@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=append&name=myMonitor&user=example@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -691,7 +757,11 @@ The name of the monitor record we will be appending
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -702,6 +772,8 @@ The name of the monitor record we will be appending
   ]
 }
 {% endcodeblock %}
+
+
 
 
 * * * * *
@@ -770,10 +842,12 @@ The customer subuser we will detach the monitor record from
 </table>
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=detach&user=example@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=detach&user=example@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -785,7 +859,11 @@ The customer subuser we will detach the monitor record from
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -803,12 +881,16 @@ The customer subuser we will detach the monitor record from
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=detach&user=example@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=detach&user=example@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -817,7 +899,11 @@ The customer subuser we will detach the monitor record from
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -828,4 +914,6 @@ The customer subuser we will detach the monitor record from
   ]
 }
 {% endcodeblock %}
+
+
 

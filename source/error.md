@@ -1,7 +1,6 @@
 <div markdown="1" id="wrap">
 <div markdown="1" id="intro">
-Uh-Oh! (Error 404)
-==================
+# Uh-Oh! (Error 404)
 
 
 {% anchor h2 %} The page you are trying to access does not exist. {% endanchor %}

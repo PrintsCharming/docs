@@ -19,10 +19,12 @@ Authenticate a customer subuser on your website before displaying their account 
 <div markdown="1" class="tab-pane" id="auth-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=theirsubmittedpassword&method=auth {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=theirsubmittedpassword&method=auth
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -34,7 +36,11 @@ Authenticate a customer subuser on your website before displaying their account 
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -52,14 +58,18 @@ Authenticate a customer subuser on your website before displaying their account 
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="auth-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=theirsubmittedpassword&method=auth {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=theirsubmittedpassword&method=auth
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -68,7 +78,11 @@ Authenticate a customer subuser on your website before displaying their account 
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -79,6 +93,8 @@ Authenticate a customer subuser on your website before displaying their account 
   ]
 }
 {% endcodeblock %}
+
+
 
 
 </div>

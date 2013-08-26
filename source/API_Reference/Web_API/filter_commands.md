@@ -19,10 +19,12 @@ List all of the available apps.
 <div markdown="1" class="tab-pane active" id="getavailable-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/filter.getavailable.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/filter.getavailable.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 [
@@ -36,14 +38,19 @@ List all of the available apps.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="getavailable-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/filter.getavailable.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/filter.getavailable.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password
+{% endcodeblock %}
+
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -51,10 +58,7 @@ List all of the available apps.
 <filters>
    <filter>
       <name>twitter</name>
-      <title markdown="1">
-Twitter
-
-</title>
+      <title>Twitter</title>
       <description>This plugin allows you to send an email message to twitter</description>
       <activated>0</activated>
    </filter>
@@ -62,6 +66,8 @@ Twitter
 </filters>
 
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -77,10 +83,12 @@ Twitter
 <div markdown="1" class="tab-pane active" id="activate-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/filter.activate.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/filter.activate.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
+{% endcodeblock %}
+		<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -89,14 +97,18 @@ Twitter
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="activate-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/filter.activate.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/filter.activate.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
+{% endcodeblock %}
+		<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -106,6 +118,8 @@ Twitter
 </result>
 
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -119,9 +133,12 @@ Twitter
 <div markdown="1" class="tab-pane active" id="deactivate-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/filter.deactivate.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter {% endcodeblock %}
 
-### Response
+
+{% codeblock %}
+https://sendgrid.com/api/filter.deactivate.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
+{% endcodeblock %}
+     <h3>Response</h3>
 
 
 {% codeblock lang:javascript %}
@@ -131,14 +148,19 @@ Twitter
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="deactivate-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/filter.deactivate.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/filter.deactivate.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
+{% endcodeblock %}
+
+		<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -148,6 +170,8 @@ Twitter
 </result>
 
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -168,7 +192,45 @@ These API calls require that settings are passed using POST.
 
 Code Example
 
-{% codeblock lang:php %} <?php $url="sendgrid.com" ; $user="username" ; $pass="password" ; $params="array(" "api_user" = ?> \$user, 'api_key' =\> \$pass, 'name' =\> 'twitter', 'username' =\> 'twitterusername', 'password' =\> 'twitterpassword', ); \$request = \$url.'/api/filter.setup.xml'; // Generate curl request \$session = curl_init(\$request); // Tell curl to use HTTP POST curl_setopt (\$session, CURLOPT_POST, true); // Tell curl that this is the body of the POST curl_setopt (\$session, CURLOPT_POSTFIELDS, \$params); // Tell curl not to return headers, but do return the response curl_setopt(\$session, CURLOPT_HEADER, false); curl_setopt(\$session, CURLOPT_RETURNTRANSFER, true); // obtain response \$response = curl_exec(\$session); curl_close(\$session); // print everything out print_r(\$response); ?\> {% endcodeblock %}
+
+
+{% codeblock lang:php %}
+<?php
+ 
+$url = 'sendgrid.com';
+$user = 'username';
+$pass = 'password';
+
+$params = array(
+  'api_user' => $user,
+  'api_key' => $pass,
+  'name' => 'twitter',
+  'username' => 'twitterusername',
+  'password' => 'twitterpassword',
+);
+
+$request = $url.'/api/filter.setup.xml';
+
+// Generate curl request
+$session = curl_init($request);
+// Tell curl to use HTTP POST
+curl_setopt ($session, CURLOPT_POST, true);
+// Tell curl that this is the body of the POST
+curl_setopt ($session, CURLOPT_POSTFIELDS, $params);
+// Tell curl not to return headers, but do return the response
+curl_setopt($session, CURLOPT_HEADER, false);
+curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
+ 
+// obtain response
+$response = curl_exec($session);
+curl_close($session);
+ 
+// print everything out
+print_r($response);
+?>
+{% endcodeblock %}
+
+
 
 * * * * *
 
@@ -180,10 +242,12 @@ Code Example
 <div markdown="1" class="tab-pane active" id="getsettings-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/filter.getsettings.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/filter.getsettings.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
+{% endcodeblock %}
+	<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -197,7 +261,11 @@ Code Example
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -210,9 +278,13 @@ Code Example
 {% endcodeblock %}
 
 
+
+
 ### Response: Empty
 
 *\*This is returned if that filter has no settings or is not enabled.* 
+
+
 {% codeblock lang:javascript %}
 {
   "settings": null
@@ -220,14 +292,18 @@ Code Example
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="getsettings-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/filter.getsettings.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/filter.getsettings.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
+{% endcodeblock %}
+		<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -240,7 +316,11 @@ Code Example
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -254,15 +334,21 @@ Code Example
 {% endcodeblock %}
 
 
+
+
 ### Response: Empty
 
 *\*This is returned if that filter has no settings or is not enabled.* 
+
+
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <filter/>
 
 {% endcodeblock %}
+
+
 
 
 </div>

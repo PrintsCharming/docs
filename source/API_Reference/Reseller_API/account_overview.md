@@ -19,10 +19,12 @@ View general account information regarding your customers, including billing cyc
 <div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=overview&user=customer@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=overview&user=customer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -45,7 +47,11 @@ View general account information regarding your customers, including billing cyc
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -63,14 +69,18 @@ View general account information regarding your customers, including billing cyc
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=overview&user=customer@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=overview&user=customer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -88,7 +98,11 @@ View general account information regarding your customers, including billing cyc
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -99,6 +113,8 @@ View general account information regarding your customers, including billing cyc
   ]
 }
 {% endcodeblock %}
+
+
 
 
 </div>

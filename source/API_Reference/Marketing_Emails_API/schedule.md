@@ -28,10 +28,13 @@ Schedule a delivery time for an existing Marketing Email.
 <div markdown="1" class="tab-pane active" id="add-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/schedule/add.json?name=test&at=2012-09-05_18%3A35%3A00&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/newsletter/schedule/add.json?name=test&at=2012-09-05_18%3A35%3A00&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+{% endcodeblock %}
+
+          <h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -40,7 +43,11 @@ Schedule a delivery time for an existing Marketing Email.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -53,14 +60,18 @@ Schedule a delivery time for an existing Marketing Email.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="add-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/schedule/add.xml?name=test&at=2012-09-05_18%3A35%3A00&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/newsletter/schedule/add.xml?name=test&at=2012-09-05_18%3A35%3A00&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -72,7 +83,11 @@ Schedule a delivery time for an existing Marketing Email.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -83,6 +98,8 @@ Schedule a delivery time for an existing Marketing Email.
 </result>
 
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -106,10 +123,13 @@ Retrieve the scheduled delivery time for an existing Marketing Email.
 <div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/schedule/get.json?name=SendGrid_Test2&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/newsletter/schedule/get.json?name=SendGrid_Test2&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+{% endcodeblock %}
+
+          <h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -118,7 +138,11 @@ Retrieve the scheduled delivery time for an existing Marketing Email.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -131,14 +155,18 @@ Retrieve the scheduled delivery time for an existing Marketing Email.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/schedule/get.xml?name=SendGrid_Test2&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/newsletter/schedule/get.xml?name=SendGrid_Test2&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -150,17 +178,25 @@ Retrieve the scheduled delivery time for an existing Marketing Email.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <scheduled>
-   <date> 2012-09-05 21:22:02 </date>
+   <date>
+    2012-09-05 21:22:02
+  </date>
 </scheduled>
 
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -184,10 +220,13 @@ Cancel a scheduled send for a Marketing Email.
 <div markdown="1" class="tab-pane active" id="delete-json">
 ### Call
 
-{% codeblock %} sendgrid.com/api/newsletter/schedule/delete.json?name=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+sendgrid.com/api/newsletter/schedule/delete.json?name=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+{% endcodeblock %}
+
+          <h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -196,7 +235,11 @@ Cancel a scheduled send for a Marketing Email.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -209,14 +252,18 @@ Cancel a scheduled send for a Marketing Email.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="delete-xml">
 ### Call
 
-{% codeblock %} sendgrid.com/api/newsletter/schedule/delete.xml?name=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+sendgrid.com/api/newsletter/schedule/delete.xml?name=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -228,7 +275,11 @@ Cancel a scheduled send for a Marketing Email.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -239,6 +290,8 @@ Cancel a scheduled send for a Marketing Email.
 </result>
 
 {% endcodeblock %}
+
+
 
 
 </div>

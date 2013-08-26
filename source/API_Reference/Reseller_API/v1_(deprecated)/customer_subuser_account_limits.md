@@ -23,13 +23,21 @@ Retrieve account limits for a specific customer subuser. If the API call respons
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=retriev {% endcodeblock %}
 
-### Response: Success
 
-{% codeblock %} <credits><credit>0</credit><credit_remain>2000<!--<credit_remain--><last_reset>2011-02-21</last_reset></credits> {% endcodeblock %}
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=retriev
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+<credits><credit>0</credit><credit_remain>2000</<credit_remain><last_reset>2011-02-21</last_reset></credits>
+{% endcodeblock %}
+
+
 
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -45,15 +53,25 @@ Retrieve account limits for a specific customer subuser. If the API call respons
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=retriev {% endcodeblock %}
 
-### Response: Success
 
-{% codeblock %} {"credit":"0","credit_remain":"2000","last_reset":"2011-02-21"} {% endcodeblock %}
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=retriev
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+{"credit":"0","credit_remain":"2000","last_reset":"2011-02-21"}
+{% endcodeblock %}
+
+
 
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -64,6 +82,8 @@ Retrieve account limits for a specific customer subuser. If the API call respons
   ]
 }
 {% endcodeblock %}
+
+
 
 
 * * * * *
@@ -81,13 +101,21 @@ Obtain a complete list of all customer subuser.
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=non {% endcodeblock %}
 
-### Response: Success
 
-{% codeblock %} <result><message>success</message></result> {% endcodeblock %}
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=non
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+<result><message>success</message></result>
+{% endcodeblock %}
+
+
 
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -103,12 +131,16 @@ Obtain a complete list of all customer subuser.
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=non {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=non
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -117,7 +149,11 @@ Obtain a complete list of all customer subuser.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -128,6 +164,8 @@ Obtain a complete list of all customer subuser.
   ]
 }
 {% endcodeblock %}
+
+
 
 
 * * * * *
@@ -146,17 +184,25 @@ A recurring reset will allow you to periodically reset a subusers credits to a n
 |period|Yes|Must be either daily, weekly, or monthly|How often you want SendGrid to reset your customer subusers credits|
 |startdate|No|Date must be in YYYY-mm-dd format|The date you want to start resetting the customer subusers credits|
 |enddate|No|Date must be in YYYY-mm-dd format|The date you want to stop resetting the customer subusers credits|
-|initial_credits|No|Must be an integer greater than 0|The number of credits you initially want the account reset to. If this is not set, the credits will be reset using the credits parameter|
+|initial\_credits|No|Must be an integer greater than 0|The number of credits you initially want the account reset to. If this is not set, the credits will be reset using the credits parameter|
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=recurring&credits=200&period=dail {% endcodeblock %}
 
-### Response: Success
 
-{% codeblock %} result\><message>success</message></result> {% endcodeblock %}
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=recurring&credits=200&period=dail
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+result><message>success</message></result>
+{% endcodeblock %}
+
+
 
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -172,12 +218,16 @@ A recurring reset will allow you to periodically reset a subusers credits to a n
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=recurring&credits=200&period=dail {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=recurring&credits=200&period=dail
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -186,7 +236,11 @@ A recurring reset will allow you to periodically reset a subusers credits to a n
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -197,6 +251,8 @@ A recurring reset will allow you to periodically reset a subusers credits to a n
   ]
 }
 {% endcodeblock %}
+
+
 
 
 * * * * *
@@ -215,13 +271,21 @@ Set a subusers credits to a specified amount.
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=total&credits=20 {% endcodeblock %}
 
-### Response: Success
 
-{% codeblock %} <result><message>success</message></result> {% endcodeblock %}
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=total&credits=20
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+<result><message>success</message></result>
+{% endcodeblock %}
+
+
 
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -237,12 +301,16 @@ Set a subusers credits to a specified amount.
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=total&credits=20 {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=total&credits=20
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -251,7 +319,11 @@ Set a subusers credits to a specified amount.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -262,6 +334,8 @@ Set a subusers credits to a specified amount.
   ]
 }
 {% endcodeblock %}
+
+
 
 
 * * * * *
@@ -280,13 +354,21 @@ Increment a subusers credits by a specified amount.
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=increment&credits=20 {% endcodeblock %}
 
-### Response: Success
 
-{% codeblock %} result\><message>success</message></result> {% endcodeblock %}
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=increment&credits=20
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+result><message>success</message></result>
+{% endcodeblock %}
+
+
 
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -302,12 +384,16 @@ Increment a subusers credits by a specified amount.
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=increment&credits=20 {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=increment&credits=20
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -316,7 +402,11 @@ Increment a subusers credits by a specified amount.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -327,6 +417,8 @@ Increment a subusers credits by a specified amount.
   ]
 }
 {% endcodeblock %}
+
+
 
 
 * * * * *
@@ -345,13 +437,21 @@ Decrement a subusers credits by a specified amount.
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=decrement&credits=20 {% endcodeblock %}
 
-### Response: Success
 
-{% codeblock %} <result><message>success</message></result> {% endcodeblock %}
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=decrement&credits=20
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+<result><message>success</message></result>
+{% endcodeblock %}
+
+
 
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -367,12 +467,16 @@ Decrement a subusers credits by a specified amount.
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=decrement&credits=20 {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=decrement&credits=20
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -381,7 +485,11 @@ Decrement a subusers credits by a specified amount.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -392,4 +500,6 @@ Decrement a subusers credits by a specified amount.
   ]
 }
 {% endcodeblock %}
+
+
 

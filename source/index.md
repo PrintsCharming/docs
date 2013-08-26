@@ -9,8 +9,7 @@ navigation:
 ---
 
 <header markdown="1" class="page-header">
-Getting Started With SendGrid
-=============================
+# Getting Started With SendGrid
 
 </header>
 <div markdown="1" class="row-fluid">
@@ -35,7 +34,7 @@ Add email capability to your application, whether it's WordPress, Ruby on Rails,
 
 </div>
 <div markdown="1" class="span4 well callout">
-[</span>]({{root_url}}/Code_Examples/index.html)
+[<span class="icon-18 pull-right"></span>]({{root_url}}/Code_Examples/index.html)
 
 ### [Code Examples]({{root_url}}/Code_Examples/index.html)
 
@@ -46,8 +45,7 @@ Code for common use cases in a variety of languages to help you get going on you
 </div>
 </div>
 <header markdown="1" class="page-header">
-Reference
-=========
+# Reference
 
 </header>
 <div markdown="1" class="row-fluid">

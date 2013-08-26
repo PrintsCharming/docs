@@ -72,7 +72,7 @@ Number of days in the past for which to retrieve invalid emails (includes today)
 </tr>
 <tr markdown="1">
 <td markdown="1">
-start_date
+start\_date
 
 </td>
 <td markdown="1">
@@ -80,7 +80,7 @@ No
 
 </td>
 <td markdown="1">
-Date must be in YYYY-MM-DD format and be earlier than the end_date parameter.
+Date must be in YYYY-MM-DD format and be earlier than the end\_date parameter.
 
 </td>
 <td markdown="1">
@@ -90,7 +90,7 @@ The start of the date range for which to retrieve invalid emails.
 </tr>
 <tr markdown="1">
 <td markdown="1">
-end_date
+end\_date
 
 </td>
 <td markdown="1">
@@ -98,7 +98,7 @@ No
 
 </td>
 <td markdown="1">
-Date must be in YYYY-MM-DD format and be later than the start_date parameter.
+Date must be in YYYY-MM-DD format and be later than the start\_date parameter.
 
 </td>
 <td markdown="1">
@@ -168,9 +168,13 @@ Optional email addresses to search for.
 <div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/invalidemails.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1 {% endcodeblock %}
 
-### Response
+
+{% codeblock %}
+https://sendgrid.com/api/invalidemails.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1
+{% endcodeblock %}
+
+     <h3>Response</h3>
 
 
 {% codeblock lang:javascript %}
@@ -189,14 +193,19 @@ Optional email addresses to search for.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/invalidemails.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1 {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/invalidemails.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1
+{% endcodeblock %}
+
+		<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -215,6 +224,8 @@ Optional email addresses to search for.
 </invalidemails>
 
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -276,10 +287,13 @@ Email Invalid Email address to remove
 <div markdown="1" class="tab-pane active" id="delete-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/invalidemails.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/invalidemails.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com
+{% endcodeblock %}
+
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -288,7 +302,11 @@ Email Invalid Email address to remove
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -301,25 +319,42 @@ Email Invalid Email address to remove
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="delete-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/invalidemails.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com {% endcodeblock %}
 
-### Response: Success
 
-{% codeblock %} <result> success <result> {% endcodeblock %}
+{% codeblock %}
+https://sendgrid.com/api/invalidemails.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com
+{% endcodeblock %}
+		<h3>Response: Success</h3>
+{% codeblock %}
+<result>
+  success
+<result>
+{% endcodeblock %}
+
+
 
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<result> Email does not exist @nodes </result>
+<result>
+  Email does not exist
+@nodes
+</result>
 
 {% endcodeblock %}
+
+
 
 
 </div>

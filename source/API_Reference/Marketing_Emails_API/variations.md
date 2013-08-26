@@ -24,7 +24,7 @@ Create a new Variation.
 |text|Yes|None|The text portion of the Marketing Email Variation being added.|
 |html|No|If the `type` parameter is set to "html" this parameter is required.|The html portion of the Marketing Email Variation being added.|
 |type|Yes|Value must be either "text" or "html".|The Variation type, either plain text, or multipart-alternative text and html.|
-|identity_name|No|Must be an existing Marketing Email Identity|Identity name that is needed if the Marketing Email name does not already exist. Will be used to create a parent Marketing Email.|
+|identity\_name|No|Must be an existing Marketing Email Identity|Identity name that is needed if the Marketing Email name does not already exist. Will be used to create a parent Marketing Email.|
 
 {% xmljsontabs add %}
 
@@ -32,10 +32,13 @@ Create a new Variation.
 <div markdown="1" class="tab-pane active" id="add-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/variations/add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=variation_name&subject=variation_subject&html=variation_body {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/newsletter/variations/add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=variation_name&subject=variation_subject&html=variation_body
+{% endcodeblock %}
+
+          <h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -44,7 +47,11 @@ Create a new Variation.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -57,14 +64,18 @@ Create a new Variation.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="add-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/variations/add.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=variation_name&subject=variation_subject&html=variation_body {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/newsletter/variations/add.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=variation_name&subject=variation_subject&html=variation_body
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -76,7 +87,11 @@ Create a new Variation.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -87,6 +102,8 @@ Create a new Variation.
 </result>
 
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -114,10 +131,13 @@ Create a new Variation.
 <div markdown="1" class="tab-pane active" id="edit-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/variations/edit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=existing_variation_name&newvariation=new_variation_name&subject=variation_subject&html=variation_body {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/newsletter/variations/edit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=existing_variation_name&newvariation=new_variation_name&subject=variation_subject&html=variation_body
+{% endcodeblock %}
+
+          <h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -126,7 +146,11 @@ Create a new Variation.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -139,14 +163,18 @@ Create a new Variation.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="edit-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/variations/edit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=existing_variation_name&newvariation=new_variation_name&subject=variation_subject&html=variation_body {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/newsletter/variations/edit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=existing_variation_name&newvariation=new_variation_name&subject=variation_subject&html=variation_body
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -158,7 +186,11 @@ Create a new Variation.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -169,6 +201,8 @@ Create a new Variation.
 </result>
 
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -191,12 +225,15 @@ Create a new Variation.
 <div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/variations/get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=existing_variation_name {% endcodeblock %}
 
-### Response: Success
 
-### Response: Error
+{% codeblock %}
+https://sendgrid.com/api/newsletter/variations/get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=existing_variation_name
+{% endcodeblock %}
 
+          <h3>Response: Success</h3>
+
+          <h3>Response: Error</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -208,35 +245,45 @@ Create a new Variation.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="edit-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/variations/get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=existing_variation_name {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/newsletter/variations/get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=existing_variation_name
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 {% endcodeblock %}
+
+
 
 
 ### Response: Error
 
 
+
+
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <result>
    <message>error: reason</message>
 </result>
 
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -258,10 +305,13 @@ Create a new Variation.
 <div markdown="1" class="tab-pane active" id="cancel-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/variations/cancel.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/newsletter/variations/cancel.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft
+{% endcodeblock %}
+
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -270,7 +320,11 @@ Create a new Variation.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -283,19 +337,23 @@ Create a new Variation.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="edit-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/variations/cancel.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/newsletter/variations/cancel.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <result>
    <message>success</message>
 </result>
@@ -303,18 +361,24 @@ Create a new Variation.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <result>
    <message>error: reason</message>
 </result>
 
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -337,10 +401,13 @@ Create a new Variation.
 <div markdown="1" class="tab-pane active" id="delete-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/variations/delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_delete {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/newsletter/variations/delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_delete
+{% endcodeblock %}
+
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -349,7 +416,11 @@ Create a new Variation.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -362,19 +433,23 @@ Create a new Variation.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="edit-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/variations/delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_delete {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/newsletter/variations/delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_delete
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <result>
    <message>success</message>
 </result>
@@ -382,18 +457,24 @@ Create a new Variation.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <result>
    <message>error: reason</message>
 </result>
 
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -416,10 +497,13 @@ Create a new Variation.
 <div markdown="1" class="tab-pane active" id="list-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/variations/list.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_find {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/newsletter/variations/list.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_find
+{% endcodeblock %}
+
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -428,7 +512,11 @@ Create a new Variation.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -441,19 +529,23 @@ Create a new Variation.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="list-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/variations/list.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_find {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/newsletter/variations/list.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_find
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <result>
    <message>success</message>
 </result>
@@ -461,18 +553,24 @@ Create a new Variation.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <result>
    <message>error: reason</message>
 </result>
 
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -495,10 +593,13 @@ Create a new Variation.
 <div markdown="1" class="tab-pane active" id="delete-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/variations/pickwinner.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_that_wins {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/newsletter/variations/pickwinner.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_that_wins
+{% endcodeblock %}
+
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -507,7 +608,11 @@ Create a new Variation.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -520,19 +625,23 @@ Create a new Variation.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="edit-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/variations/pickwinner.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_that_wins {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/newsletter/variations/pickwinner.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_that_wins
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <result>
    <message>success</message>
 </result>
@@ -540,18 +649,24 @@ Create a new Variation.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <result>
    <message>error: reason</message>
 </result>
 
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -568,7 +683,7 @@ Create a new Variation.
 |name|Yes|Must be an existing Marketing Email|Select the Marketing Email you'de like to schedule Variation testing on.|
 |percent|Yes|Must be a number 0-100|Percentage of the total recipients that will be emailed in the test.|
 |delay|No|Must be numeric.|The number of units specified by `delay_type` by which to delay the send.|
-|delay_type|No|"minutes", "hours", or "days"|The units used to specify the `delay`|
+|delay\_type|No|"minutes", "hours", or "days"|The units used to specify the `delay`|
 |date|No|Must be an existing Variation|An optional list of names's to check for.|
 |timezone|No|Must be an existing Variation|An optional timezone of specific date (timezones are in the Olson Database name format).|
 
@@ -578,10 +693,13 @@ Create a new Variation.
 <div markdown="1" class="tab-pane active" id="schedule-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/variations/schedule.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&percent=50 {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/newsletter/variations/schedule.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&percent=50
+{% endcodeblock %}
+
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -590,7 +708,11 @@ Create a new Variation.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -603,19 +725,23 @@ Create a new Variation.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="schedule-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/variations/schedule.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&percent=50 {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/newsletter/variations/schedule.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&percent=50
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <result>
    <message>success</message>
 </result>
@@ -623,18 +749,24 @@ Create a new Variation.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <result>
    <message>error: reason</message>
 </result>
 
 {% endcodeblock %}
+
+
 
 
 </div>

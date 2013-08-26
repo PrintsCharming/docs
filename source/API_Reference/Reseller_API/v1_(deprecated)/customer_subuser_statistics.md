@@ -7,7 +7,7 @@ navigation:
 ---
 
 {% anchor h2 %} Retrieve Customer Subuser Statistics {% endanchor %}
- Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
+ Note that you can use *either* the days parameter *or* the start\_date and end\_date parameter.
 
 <table markdown="1" class="table table-bordered table-striped">
 <tbody markdown="1">
@@ -67,7 +67,7 @@ Number of days in the past to include statistics (includes today)
 </tr>
 <tr markdown="1">
 <td markdown="1">
-start_date
+start\_date
 
 </td>
 <td markdown="1">
@@ -75,7 +75,7 @@ No
 
 </td>
 <td markdown="1">
-Date must be in YYYY-mm-dd format and be before the end_date parameter
+Date must be in YYYY-mm-dd format and be before the end\_date parameter
 
 </td>
 <td markdown="1">
@@ -85,7 +85,7 @@ The start date to look up statistics
 </tr>
 <tr markdown="1">
 <td markdown="1">
-end_date
+end\_date
 
 </td>
 <td markdown="1">
@@ -93,7 +93,7 @@ No
 
 </td>
 <td markdown="1">
-Date must be in YYYY-mm-dd format and be after the start_date parameter
+Date must be in YYYY-mm-dd format and be after the start\_date parameter
 
 </td>
 <td markdown="1">
@@ -105,10 +105,12 @@ The end date to look up statistics
 </table>
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -143,11 +145,17 @@ The end date to look up statistics
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com {% endcodeblock %}
 
-### Response
+
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com
+{% endcodeblock %}
+<h3>Response</h3>
+
 
 
 
@@ -217,10 +225,12 @@ This is used to let us know that you are interested in all time totals
 </table>
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&;user=example@example.com&aggregate= {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&;user=example@example.com&aggregate=
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -236,12 +246,16 @@ This is used to let us know that you are interested in all time totals
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&aggregate= {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&aggregate=
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -252,6 +266,8 @@ This is used to let us know that you are interested in all time totals
   "spamreports": 5
 }
 {% endcodeblock %}
+
+
 
 
 * * * * *
@@ -320,10 +336,12 @@ The subuser we are retrieving category statistics from
 </table>
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&list=tru {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&list=tru
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -337,12 +355,16 @@ The subuser we are retrieving category statistics from
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&list=tru {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&list=tru
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -351,11 +373,13 @@ The subuser we are retrieving category statistics from
 {% endcodeblock %}
 
 
+
+
 * * * * *
 
 
 {% anchor h2 %} Category Statistics {% endanchor %}
- Retrieve statistics broken down by category. If the category does not exist, there will be an empty result set. Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
+ Retrieve statistics broken down by category. If the category does not exist, there will be an empty result set. Note that you can use *either* the days parameter *or* the start\_date and end\_date parameter.
 
 <table markdown="1" class="table table-bordered table-striped">
 <tbody markdown="1">
@@ -433,7 +457,7 @@ Number of days in the past to include statistics (Includes today)
 </tr>
 <tr markdown="1">
 <td markdown="1">
-start_date
+start\_date
 
 </td>
 <td markdown="1">
@@ -441,7 +465,7 @@ No
 
 </td>
 <td markdown="1">
-Date must be in YYYY-mm-dd format and be before the end_date parameter
+Date must be in YYYY-mm-dd format and be before the end\_date parameter
 
 </td>
 <td markdown="1">
@@ -451,7 +475,7 @@ The start date to look up statistics
 </tr>
 <tr markdown="1">
 <td markdown="1">
-end_date
+end\_date
 
 </td>
 <td markdown="1">
@@ -459,7 +483,7 @@ No
 
 </td>
 <td markdown="1">
-Date must be in YYYY-mm-dd format and be after the start_date parameter
+Date must be in YYYY-mm-dd format and be after the start\_date parameter
 
 </td>
 <td markdown="1">
@@ -471,13 +495,21 @@ The end date to look up statistics
 </table>
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category {% endcodeblock %}
 
-#### Command - Using an array of categories
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=category {% endcodeblock %}
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category
+{% endcodeblock %}
+<h4>Command - Using an array of categories</h4>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=category
+{% endcodeblock %}
+
+
 
 ### Response
+
+
 
 
 {% codeblock lang:xml %}
@@ -507,18 +539,30 @@ The end date to look up statistics
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category {% endcodeblock %}
 
-#### Command - Using an array of categories
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=category {% endcodeblock %}
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category
+{% endcodeblock %}
+<h4>Command - Using an array of categories</h4>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=category
+{% endcodeblock %}
+
+
 
 ### Response
+
+
 
 
 {% codeblock lang:xml %}
 
 {% endcodeblock %}
+
+
 

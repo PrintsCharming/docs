@@ -29,10 +29,12 @@ Obtain a complete list of all customer subuser.
 <div markdown="1" class="tab-pane" id="create-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=create&name=myMonitor&email=example@example.com&frequency=1000 {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=create&name=myMonitor&email=example@example.com&frequency=1000
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -44,7 +46,11 @@ Obtain a complete list of all customer subuser.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -62,14 +68,18 @@ Obtain a complete list of all customer subuser.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="create-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=create&name=myMonitor&email=example@example.com&frequency=1000 {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=create&name=myMonitor&email=example@example.com&frequency=1000
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -78,7 +88,11 @@ Obtain a complete list of all customer subuser.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -89,6 +103,8 @@ Obtain a complete list of all customer subuser.
   ]
 }
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -106,9 +122,9 @@ Make modifications to an existing Monitor record.
 |:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *edit*|The task required to edit a monitor|
 |name|Yes|The name of the previous monitor record|The monitor record we are going to edit|
-|new_name|No|New name must be unique and can't be more than 255 characters|The new monitor record name|
-|new_email|No|Must be in email format|The new email destination to send the email sample to|
-|new_frequency|No|Must be an integer and greater than 0|The new frequency of emails to be sent out|
+|new\_name|No|New name must be unique and can't be more than 255 characters|The new monitor record name|
+|new\_email|No|Must be in email format|The new email destination to send the email sample to|
+|new\_frequency|No|Must be an integer and greater than 0|The new frequency of emails to be sent out|
 
 {% xmljsontabs edit %}
 
@@ -116,10 +132,12 @@ Make modifications to an existing Monitor record.
 <div markdown="1" class="tab-pane" id="edit-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5 {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -131,7 +149,11 @@ Make modifications to an existing Monitor record.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -149,14 +171,18 @@ Make modifications to an existing Monitor record.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="edit-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5 {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -165,7 +191,11 @@ Make modifications to an existing Monitor record.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -176,6 +206,8 @@ Make modifications to an existing Monitor record.
   ]
 }
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -200,10 +232,12 @@ Deleting a monitor record will remove it from SendGrid's system. **Make sure no 
 <div markdown="1" class="tab-pane" id="delete-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=delete&name=recordToDelet {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=delete&name=recordToDelet
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -215,7 +249,11 @@ Deleting a monitor record will remove it from SendGrid's system. **Make sure no 
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -233,14 +271,18 @@ Deleting a monitor record will remove it from SendGrid's system. **Make sure no 
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="delete-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=delete&name=recordToDelete {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=delete&name=recordToDelete
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -249,7 +291,11 @@ Deleting a monitor record will remove it from SendGrid's system. **Make sure no 
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -260,6 +306,8 @@ Deleting a monitor record will remove it from SendGrid's system. **Make sure no 
   ]
 }
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -283,10 +331,12 @@ List all available monitor records a reseller has.
 <div markdown="1" class="tab-pane" id="list-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=list {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=list
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -312,14 +362,18 @@ List all available monitor records a reseller has.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="list-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=lis {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=lis
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 [
@@ -342,6 +396,8 @@ List all available monitor records a reseller has.
   }
 ]
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -367,10 +423,12 @@ Append a monitor record to a existing record onto a customer subuser.
 <div markdown="1" class="tab-pane" id="append-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=append&name=myMonitor&user=example@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=append&name=myMonitor&user=example@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -382,7 +440,11 @@ Append a monitor record to a existing record onto a customer subuser.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -400,14 +462,18 @@ Append a monitor record to a existing record onto a customer subuser.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="append-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=append&name=myMonitor&user=example@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=append&name=myMonitor&user=example@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -416,7 +482,11 @@ Append a monitor record to a existing record onto a customer subuser.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -427,6 +497,8 @@ Append a monitor record to a existing record onto a customer subuser.
   ]
 }
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -451,10 +523,12 @@ Detach a customer subuser from a monitor record.
 <div markdown="1" class="tab-pane" id="detach-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=detach&user=example@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=detach&user=example@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -466,7 +540,11 @@ Detach a customer subuser from a monitor record.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -484,14 +562,18 @@ Detach a customer subuser from a monitor record.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="detach-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=detach&user=example@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=detach&user=example@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -500,7 +582,11 @@ Detach a customer subuser from a monitor record.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -511,6 +597,8 @@ Detach a customer subuser from a monitor record.
   ]
 }
 {% endcodeblock %}
+
+
 
 
 </div>

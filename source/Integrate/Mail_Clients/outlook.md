@@ -23,7 +23,7 @@ The following 'Change E-mail Account' window will appear. This setting (in the r
 After you are finished, click the 'More Settings' button. The following 'Internet E-mail Settings' window will appear. Click on the  'Outgoing Server' tab and input the settings shown (username and password are your SendGrid credentials).
 
 
-{% info %} Your SendGrid username may not necessarily be an email address. If your SendGrid username is example_user, enter example_user in the User Name field, not example_user@sendgrid.com. {% endinfo %}
+{% info %} Your SendGrid username may not necessarily be an email address. If your SendGrid username is example\_user, enter example\_user in the User Name field, not example\_user@sendgrid.com. {% endinfo %}
 
 
 ![]({{root_url}}/images/outlook_2007_4.png "IntMail_Settings_2")

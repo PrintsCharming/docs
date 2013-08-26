@@ -68,10 +68,12 @@ The customer
 </table>
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=overview&user=customer@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=overview&user=customer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -94,7 +96,11 @@ The customer
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -103,7 +109,9 @@ The customer
 <result>
    <message>error</message>
    <errors>
-      <error> ... error messages ... </error>
+      <error>
+        ... error messages ...
+      </error>
       ...
    </errors>
 </result>
@@ -111,15 +119,26 @@ The customer
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=overview&user=customer@example.com {% endcodeblock %}
 
-### Response: Success
 
-{% codeblock %} "reputation":100,"requests":500000,"package":"Silver Package","credits_allowed":50000,"credits_used":100000,"credits_remain":0,"credits_overage":50000,"billing_start_date":"2010-08-30","billing_end_date":"2010-09-29","billing_process_date":"2010-09-30" {% endcodeblock %}
+{% codeblock %}
+https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=overview&user=customer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+"reputation":100,"requests":500000,"package":"Silver
+Package","credits_allowed":50000,"credits_used":100000,"credits_remain":0,"credits_overage":50000,"billing_start_date":"2010-08-30","billing_end_date":"2010-09-29","billing_process_date":"2010-09-30"
+{% endcodeblock %}
+
+
 
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -130,4 +149,6 @@ The customer
   ]
 }
 {% endcodeblock %}
+
+
 

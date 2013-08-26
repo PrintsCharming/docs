@@ -24,10 +24,12 @@ Note: The *name* entry is used in all the other API calls to identify a app.
 <div markdown="1" class="tab-pane" id="list-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=example@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=example@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -35,10 +37,7 @@ Note: The *name* entry is used in all the other API calls to identify a app.
 <filters>
    <filter>
       <name>twitter</name>
-      <title markdown="1">
-Twitter
-
-</title>
+      <title>Twitter</title>
       <description>This plugin allows you to send an email message to twitter</description>
       <activated>0</activated>
    </filter>
@@ -48,14 +47,18 @@ Twitter
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="list-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=example@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=example@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -65,6 +68,8 @@ Twitter
   "activated": false
 }
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -87,10 +92,12 @@ Twitter
 <div markdown="1" class="tab-pane" id="activate-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=activate&user=example@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=activate&user=example@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -102,20 +109,26 @@ Twitter
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="activate-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=activate&user=example@example.com {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=activate&user=example@example.com
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 {
   "message": "success"
 }
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -138,10 +151,12 @@ Twitter
 <div markdown="1" class="tab-pane" id="deactivate-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=deactivate&user=example@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=deactivate&user=example@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -153,20 +168,26 @@ Twitter
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="deactivate-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=deactivate&user=example@example.com {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=deactivate&user=example@example.com
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 {
   "message": "success"
 }
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -186,13 +207,22 @@ These API calls require that settings are passed using POST.
 <div markdown="1" class="tab-pane" id="customize-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=setup&user=example@example.com {% endcodeblock %}
 
-### Response: Success
 
-{% codeblock %} <filter><field_name>field_value</field_name> ... </filter> {% endcodeblock %}
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=setup&user=example@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}  <filter><field_name>field_value</field_name>
+    ...
+  </filter>
+{% endcodeblock %}
+
+
 
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -210,19 +240,29 @@ These API calls require that settings are passed using POST.
 {% endcodeblock %}
 
 
+
+
 #### Return - Empty
 
 This is returned if that filter has no settings or is not enabled.
 
-{% codeblock %} <filter></filter> {% endcodeblock %}
 
-</div>
-<div markdown="1" class="tab-pane active" id="customize-json">
-### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=setup&user=example@example.com {% endcodeblock %}
+{% codeblock %}
+<filter></filter>
+{% endcodeblock %}
+  </div>
+  <div class="tab-pane active" id="customize-json">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=setup&user=example@example.com
+{% endcodeblock %}
+
+
 
 ### Response: Success
+
+
 
 
 {% codeblock lang:javascript %}
@@ -237,33 +277,47 @@ This is returned if that filter has no settings or is not enabled.
 {% endcodeblock %}
 
 
+
+
 #### Return - Empty
 
 This is returned if that filter has no settings or is not enabled.
 
-{% codeblock %} "settings":null} {% endcodeblock %}
 
+
+{% codeblock %}
+"settings":null}
+{% endcodeblock %}
+  </div>
 </div>
-</div>
-
-* * * * *
+<hr/>
 
 
-{% anchor h2 %} Get Current Settings {% endanchor %}
- {% xmljsontabs settings %}
+{% anchor h2 %}
+Get Current Settings 
+{% endanchor %}
 
-<div markdown="1" class="tab-content">
-<div markdown="1" class="tab-pane" id="settings-xml">
-### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=example@example.com&method=app {% endcodeblock %}
+{% xmljsontabs settings %}
+
+<div class="tab-content">
+  <div class="tab-pane" id="settings-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=example@example.com&method=app
+{% endcodeblock %}
+
+
 
 ### Response: Success
 
-{% codeblock %} <filter><field_name>field_value</field_name> ... </filter> {% endcodeblock %}
 
-### Response: Error
 
+{% codeblock %}  <filter><field_name>field_value</field_name>
+    ...
+  </filter>
+{% endcodeblock %}
+<h3>Response: Error</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -280,19 +334,29 @@ This is returned if that filter has no settings or is not enabled.
 {% endcodeblock %}
 
 
+
+
 #### Return - Empty
 
 This is returned if that filter has no settings or is not enabled.
 
-{% codeblock %} <filter></filter> {% endcodeblock %}
 
-</div>
-<div markdown="1" class="tab-pane active" id="settings-json">
-### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=example@example.com&method=app {% endcodeblock %}
+{% codeblock %}
+<filter></filter>
+{% endcodeblock %}
+  </div>
+  <div class="tab-pane active" id="settings-json">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=example@example.com&method=app
+{% endcodeblock %}
+
+
 
 ### Response: Success
+
+
 
 
 {% codeblock lang:javascript %}
@@ -307,7 +371,11 @@ This is returned if that filter has no settings or is not enabled.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -318,6 +386,8 @@ This is returned if that filter has no settings or is not enabled.
   ]
 }
 {% endcodeblock %}
+
+
 
 
 #### Return - Empty

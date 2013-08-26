@@ -25,10 +25,12 @@ Add one or more emails to a Recipient List.
 <div markdown="1" class="tab-pane active" id="add-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/lists/email/add.json?list=Test&data=%7B%22email%22%3A%22example%40gmail.com%22%2C%22name%22%3A%22example%22%7D&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/newsletter/lists/email/add.json?list=Test&data=%7B%22email%22%3A%22example%40gmail.com%22%2C%22name%22%3A%22example%22%7D&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+{% endcodeblock %} 
+	<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -37,7 +39,11 @@ Add one or more emails to a Recipient List.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -50,13 +56,18 @@ Add one or more emails to a Recipient List.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="add-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/lists/email/add.xml?list=Test&data=%7B%22email%22%3A%22example%40gmail.com%22%2C%22name%22%3A%22example%22%7D&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
-### Response: Success
+
+{% codeblock %}
+https://sendgrid.com/api/newsletter/lists/email/add.xml?list=Test&data=%7B%22email%22%3A%22example%40gmail.com%22%2C%22name%22%3A%22example%22%7D&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+{% endcodeblock %}
+	<h3>Response: Success</h3>
 
 
 {% codeblock lang:xml %}
@@ -69,7 +80,11 @@ Add one or more emails to a Recipient List.
 {% endcodeblock %}
 
 
+
+
 #### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -82,27 +97,39 @@ Add one or more emails to a Recipient List.
 {% endcodeblock %}
 
 
+
+
 </div>
 </div>
 ### Response
 
 Success: (X records inserted)
 
+
+
 {% codeblock %}{"inserted": X}{% endcodeblock %}
 
-### Examples
+<h3>Examples</h3>
 
-Add an email recipient to a list:
+<p>Add an email recipient to a list:</p>
+{% codeblock %}
+#curl -d 'api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=my_list&data={"email":"address@domain.com","name":"contactName"}' https://sendgrid.com/api/newsletter/lists/email/add.json
+{% endcodeblock %}
 
-{% codeblock %} \#curl -d 'api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=my_list&data={"email":"address@domain.com","name":"contactName"}' https://sendgrid.com/api/newsletter/lists/email/add.json {% endcodeblock %}
+
 
 Add an email recipient with multiple data fields:
 
-{% codeblock %}\#curl -d 'api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=my_list&data={"email":"grouch@trashcan.com","name":"Oscar","city":"New York","street":"123 Sesame St"}' https://sendgrid.com/api/newsletter/lists/email/add.json{% endcodeblock %}
 
-Add multiple email recipients to a list:
 
-{% codeblock %} \#curl -d 'api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=my_list&data[]={"email":"address1@domain.com","name":"contactName1"}&data[]={"email":"address2@domain.com","name":"contactName2"}' https://sendgrid.com/api/newsletter/lists/email/add.json {% endcodeblock %}
+{% codeblock %}#curl -d 'api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=my_list&data={"email":"grouch@trashcan.com","name":"Oscar","city":"New York","street":"123 Sesame St"}' https://sendgrid.com/api/newsletter/lists/email/add.json{% endcodeblock %}
+
+<p>Add multiple email recipients to a list:</p>
+{% codeblock %}
+#curl -d 'api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=my_list&data[]={"email":"address1@domain.com","name":"contactName1"}&data[]={"email":"address2@domain.com","name":"contactName2"}' https://sendgrid.com/api/newsletter/lists/email/add.json
+{% endcodeblock %}
+
+
 
 * * * * *
 
@@ -123,10 +150,12 @@ Get the email addresses and associated fields for a Recipient List.
 <div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/lists/email/get.json?list=Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/newsletter/lists/email/get.json?list=Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+{% endcodeblock %} 
+	<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 [
@@ -138,7 +167,11 @@ Get the email addresses and associated fields for a Recipient List.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -151,13 +184,18 @@ Get the email addresses and associated fields for a Recipient List.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/lists/email/get.xml?list=Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
-### Response: Success
+
+{% codeblock %}
+https://sendgrid.com/api/newsletter/lists/email/get.xml?list=Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+{% endcodeblock %}
+	<h3>Response: Success</h3>
 
 
 {% codeblock lang:xml %}
@@ -166,14 +204,19 @@ Get the email addresses and associated fields for a Recipient List.
 <emails>
    <email>
       <email>dominic.may@sendgrid.com</email>
-      <name> </name>
+      <name>
+    </name>
    </email>
 </emails>
 
 {% endcodeblock %}
 
 
+
+
 #### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -184,6 +227,8 @@ Get the email addresses and associated fields for a Recipient List.
 </result>
 
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -208,10 +253,12 @@ Remove one or more emails from a Recipient List.
 <div markdown="1" class="tab-pane active" id="delete-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/lists/email/delete.json?list=Test&email=example%40gmail.com&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/newsletter/lists/email/delete.json?list=Test&email=example%40gmail.com&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+{% endcodeblock %} 
+	<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -220,7 +267,11 @@ Remove one or more emails from a Recipient List.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -233,13 +284,18 @@ Remove one or more emails from a Recipient List.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="delete-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/newsletter/lists/email/delete.xml?list=Test&email=example%40gmail.com&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
-### Response: Success
+
+{% codeblock %}
+https://sendgrid.com/api/newsletter/lists/email/delete.xml?list=Test&email=example%40gmail.com&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+{% endcodeblock %}
+	<h3>Response: Success</h3>
 
 
 {% codeblock lang:xml %}
@@ -252,7 +308,11 @@ Remove one or more emails from a Recipient List.
 {% endcodeblock %}
 
 
+
+
 #### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -263,6 +323,8 @@ Remove one or more emails from a Recipient List.
 </result>
 
 {% endcodeblock %}
+
+
 
 
 </div>

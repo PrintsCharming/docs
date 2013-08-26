@@ -22,7 +22,13 @@ Each time you visit [Hook Debug](http://hookdebug.sendgrid.com/) a new unique UR
 
 The URL looks like this:
 
-{% codeblock lang:html %} http://hookdebug.sendgrid.com/v1/events/4bf029e6cda8215883aff1090fff204b {% endcodeblock %} 
+
+
+{% codeblock lang:html %}
+http://hookdebug.sendgrid.com/v1/events/4bf029e6cda8215883aff1090fff204b
+{% endcodeblock %}
+
+ 
 {% info %} Hook Debug does not store unique URLs against your SendGrid account and a new URL will be generated each time you visit the site. You should keep a note of which URLs you're using for your apps, so you can revisit them if needed. {% endinfo %}
  
 {% anchor h3 %} Receive Event Notifications Data {% endanchor %}
@@ -44,7 +50,13 @@ Once that has been completed you can [setup your Inbound Parse](http://sendgrid.
 {% anchor h3 %} Seeing the results {% endanchor %}
 
 
-After completing the setup for your chosen webhook, the results can be found by heading to your Hook Debug unique URL in a browser, or you can monitor it via CURL by running the following command in your console: {% codeblock lang:html %} curl -X GET http://your_unique_hook_debug_url {% endcodeblock %} 
+After completing the setup for your chosen webhook, the results can be found by heading to your Hook Debug unique URL in a browser, or you can monitor it via CURL by running the following command in your console: 
+
+{% codeblock lang:html %}
+curl -X GET http://your_unique_hook_debug_url
+{% endcodeblock %}
+
+ 
 {% info %} Hook Debug only buffers 10 events at a time, we don't keep historical events or inbound parses, you will only find the most recent 10 events. {% endinfo %}
  
 {% anchor h2 %} LocalTunnel {% endanchor %}
@@ -60,19 +72,43 @@ You would use this to route Event Notification POSTs and Inbound Parse POSTs dir
 
 Start by installing LocalTunnel on your machine via [RubyGems](http://rubygems.org/)
 
-{% codeblock lang:html %} \$ gem install localtunnel {% endcodeblock %}
+
+
+{% codeblock lang:html %}
+$ gem install localtunnel
+{% endcodeblock %}
+
+
 
 The first time you run LocalTunnel, you'll need to pass a location of a public key for security reasons, you can do that with the following command:
 
-{% codeblock lang:html %} \$ localtunnel -k \~/.ssh/id_rsa.pub 8080 {% endcodeblock %}
+
+
+{% codeblock lang:html %}
+$ localtunnel -k ~/.ssh/id_rsa.pub 8080
+{% endcodeblock %}
+
+
 
 This will open up port 8080 to the outside world via a unique URL. The next time you run LocalTunnel you will not need to pass the public key option. Simply pass a port to LocalTunnel:
 
-{% codeblock lang:html %} \$ localtunnel 8080 {% endcodeblock %}
+
+
+{% codeblock lang:html %}
+$ localtunnel 8080
+{% endcodeblock %}
+
+
 
 This will return a URL that looks something like this:
 
-{% codeblock lang:html %} http://8bv2.localtunnel.com {% endcodeblock %}
+
+
+{% codeblock lang:html %}
+http://8bv2.localtunnel.com
+{% endcodeblock %}
+
+
 
 This is the URL that you would then enter into your Event Notification app or Inbound Parse settings. Once you have this set up, real time notifications will be passed directly through to your development environment without the need to deploy to a server to test your integrations.
 

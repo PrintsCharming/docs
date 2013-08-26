@@ -18,10 +18,12 @@ Retrieve invoices/usages from end users before your scheduled billing date.
 <div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.billing.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&number=2010010001&task=curren {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.billing.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&number=2010010001&task=curren
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -50,14 +52,18 @@ Retrieve invoices/usages from end users before your scheduled billing date.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.billing.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&number=2010010001&task=curren {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.billing.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&number=2010010001&task=curren
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -77,6 +83,8 @@ Retrieve invoices/usages from end users before your scheduled billing date.
   "final_amount": 1007.95
 }
 {% endcodeblock %}
+
+
 
 
 </div>

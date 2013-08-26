@@ -91,11 +91,13 @@ Retrieves the timestamps, it will return a date in a MySQL timestamp format - YY
 <div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/customer.invalidemails.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=1 {% endcodeblock %}
-
-### Response
 
 
+{% codeblock %}
+	https://sendgrid.com/apiv2/customer.invalidemails.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=1
+	{% endcodeblock %}
+	<h3>Response</h3>
+	
 {% codeblock lang:javascript %}
 [
   {
@@ -117,14 +119,18 @@ Retrieves the timestamps, it will return a date in a MySQL timestamp format - YY
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/customer.invalidemails.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=1 {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.invalidemails.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=1
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -148,6 +154,8 @@ Retrieves the timestamps, it will return a date in a MySQL timestamp format - YY
 </invalidemails>
 
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -241,11 +249,13 @@ You must specify the invalid emails to remove
 <div markdown="1" class="tab-pane active" id="delete-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/customer.invalidemails.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=invalidemail@example.com {% endcodeblock %}
-
-### Response: Success
 
 
+{% codeblock %}
+	https://sendgrid.com/apiv2/customer.invalidemails.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=invalidemail@example.com
+	{% endcodeblock %}
+	<h3>Response: Success</h3>
+	
 {% codeblock lang:javascript %}
 {
   "message": "success"
@@ -253,7 +263,11 @@ You must specify the invalid emails to remove
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -263,14 +277,18 @@ You must specify the invalid emails to remove
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="delete-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/customer.invalidemails.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=invalidemail@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.invalidemails.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=invalidemail@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -282,7 +300,11 @@ You must specify the invalid emails to remove
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -293,6 +315,8 @@ You must specify the invalid emails to remove
 </result>
 
 {% endcodeblock %}
+
+
 
 
 </div>

@@ -73,11 +73,13 @@ The username of the subuser
 <div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/user.eventposturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com {% endcodeblock %}
-
-### Response
 
 
+{% codeblock %}
+https://sendgrid.com/api/user.eventposturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com
+{% endcodeblock %}
+  <h3>Response</h3>
+  
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -86,20 +88,26 @@ The username of the subuser
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/user.eventposturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com {% endcodeblock %}
-
-### Response
 
 
+{% codeblock %}
+https://sendgrid.com/api/user.eventposturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com
+{% endcodeblock %}
+  <h3>Response</h3>
+  
 {% codeblock lang:javascript %}
 {
   "url": "http://www.SubUserPostUrlHere.com"
 }
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -193,11 +201,13 @@ This is the new event notification URL
 <div markdown="1" class="tab-pane" id="set-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/user.eventposturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.com {% endcodeblock %}
-
-### Response
 
 
+{% codeblock %}
+https://sendgrid.com/api/user.eventposturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.com
+{% endcodeblock %}
+  <h3>Response</h3>
+  
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -208,20 +218,26 @@ This is the new event notification URL
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="set-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/user.eventposturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.com {% endcodeblock %}
-
-### Response
 
 
+{% codeblock %}
+https://sendgrid.com/api/user.eventposturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.com
+{% endcodeblock %}
+  <h3>Response</h3>
+  
 {% codeblock lang:javascript %}
 {
   "message": "success"
 }
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -297,11 +313,13 @@ The name of the subuser
 <div markdown="1" class="tab-pane" id="delete-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/user.eventposturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.com {% endcodeblock %}
-
-### Response
 
 
+{% codeblock %}
+https://sendgrid.com/api/user.eventposturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.com
+{% endcodeblock %}
+  <h3>Response</h3>
+  
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -312,20 +330,26 @@ The name of the subuser
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="delete-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/user.eventposturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.com {% endcodeblock %}
-
-### Response
 
 
+{% codeblock %}
+https://sendgrid.com/api/user.eventposturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.com
+{% endcodeblock %}
+  <h3>Response</h3>
+  
 {% codeblock lang:javascript %}
 {
   "message": "success"
 }
 {% endcodeblock %}
+
+
 
 
 </div>

@@ -15,18 +15,18 @@ The following configuration file, which can be found at <strong>/etc/exim4/updat
 </p>
 
 {% codeblock lang:bash %}
-dc_eximconfig_configtype='smarthost'
-dc_other_hostnames=''
-dc_local_interfaces='127.0.0.1'
-dc_readhost='your.server.name'
-dc_relay_domains=''
-dc_minimaldns='false'
-dc_relay_nets=''
-dc_smarthost='smtp.sendgrid.net::587'
-CFILEMODE='644'
-dc_use_split_config='false'
-dc_hide_mailname='true'
-dc_mailname_in_oh='true' 
+  dc_eximconfig_configtype='smarthost'
+  dc_other_hostnames=''
+  dc_local_interfaces='127.0.0.1'
+  dc_readhost='your.server.name'
+  dc_relay_domains=''
+  dc_minimaldns='false'
+  dc_relay_nets=''
+  dc_smarthost='smtp.sendgrid.net::587'
+  CFILEMODE='644'
+  dc_use_split_config='false'
+  dc_hide_mailname='true'
+  dc_mailname_in_oh='true' 
 {% endcodeblock %}
 
 <p>Enable TLS support in <strong>/etc/exim4/exim4.conf.localmacros</strong>.</p>

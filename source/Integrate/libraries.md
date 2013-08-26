@@ -73,7 +73,7 @@ Open source library contributions from the awesome SendGrid community.
 -   [sendgrid-php](http://github.com/sendgrid/sendgrid-php) *by SendGrid* - Official PHP wrapper for the SendGrid API
 -   [sendgrid-openshift-php](https://github.com/sendgrid/openshift-sendgrid-php) *by SendGrid* - Official PHP wrapper for use with Red Hat OpenShift
 -   [SendGrid-PHP-Library](https://github.com/alonbendavid/SendGrid-PHP-Library) *by Alon Ben David* - PHP wrapper for the SendGrid API including Marketing Email API
--   [messaging_sendgrid](http://github.com/josereyero/messaging_sendgrid) *by Jose Reyero* - Drupal 7 plugin that adds bulk messaging capabilities via SendGrid
+-   [messaging\_sendgrid](http://github.com/josereyero/messaging_sendgrid) *by Jose Reyero* - Drupal 7 plugin that adds bulk messaging capabilities via SendGrid
 -   [codeigniter-sendgrid-newsletter](http://github.com/bold/codeigniter-sendgrid-newsletter) *by Garrett St John* - CodeIgniter wrapper for the SendGrid Marketing Email API
 -   [codeigniter-sendgrid-mail](http://github.com/bold/codeigniter-sendgrid-mail) *by Garrett St John* - CodeIgniter wrapper for the SendGrid Mail API
 -   [sendgrid-component](http://github.com/damusnet/sendgrid-component) *by Damien Varron* - CakePHP component that extends the base email component with SendGrid functionality
@@ -94,7 +94,7 @@ Open source library contributions from the awesome SendGrid community.
 -   [gridhook](https://github.com/injekt/gridhook) *by Lee Jarvis* - Ruby Gem for handling inbound batches from our Event API
 -   [griddler](https://github.com/thoughtbot/griddler) *by Thoughtbot* - Rails engine that provides an endpoint for SendGrid's Parse API
 -   [heroku-sendgrid-stats](https://github.com/hone/heroku-sendgrid-stats) *by Terence Lee* - Heroku CLI plugin to pull SendGrid stats
--   [sendgrid_toolkit](http://github.com/freerobby/sendgrid_toolkit) *by Robby Grossman* - Ruby wrapper for the SendGrid Web API
+-   [sendgrid\_toolkit](http://github.com/freerobby/sendgrid_toolkit) *by Robby Grossman* - Ruby wrapper for the SendGrid Web API
 -   [sendgrid-rails](http://github.com/PavelTyk/sendgrid-rails) *by Pavel Tsiukhtsiayeu* - Extends ActionMailer with SendGrid methods
--   [gatling_gun](http://github.com/okrb/gatling_gun) *by James Edward Gray II* - Simple wrapper over SendGrid's Marketing Email API.
+-   [gatling\_gun](http://github.com/okrb/gatling_gun) *by James Edward Gray II* - Simple wrapper over SendGrid's Marketing Email API.
 

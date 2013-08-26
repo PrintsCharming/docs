@@ -10,8 +10,7 @@ navigation:
 <div markdown="1" class="span4 well callout">
 [<span class="pull-right icon-17"></span>](interspire.html)
 
-[Interspire Email Marketer](interspire.html)
---------------------------------------------
+## [Interspire Email Marketer](interspire.html)
 
 </div>
 </div>

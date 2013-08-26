@@ -18,7 +18,13 @@ Be sure to use a tag name the corresponds with an actual column of data in your 
 
 Place the `[weblink]` tag in the body to provide a link to a hosted copy of the email content. The tag is replaced with the URL, so to create a link, use the following HTML:
 
-{% codeblock lang:html %} [View this email in your browser]([weblink]) {% endcodeblock %}
+
+
+{% codeblock lang:html %}
+<a href="[weblink]">View this email in your browser</a>
+{% endcodeblock %}
+
+
 
 * * * * *
 
@@ -28,7 +34,13 @@ Place the `[weblink]` tag in the body to provide a link to a hosted copy of the 
 
 Place the `[unsubscribe]` tag in the body to provide an unsubscribe link. The tag is replaced with the URL, so to create a link, use the following HTML:
 
-{% codeblock lang:html %} [Unsubscribe from these emails]([unsubscribe]) {% endcodeblock %}
+
+
+{% codeblock lang:html %}
+<a href="[unsubscribe]">Unsubscribe from these emails</a>
+{% endcodeblock %}
+
+
 
 * * * * *
 
@@ -38,7 +50,14 @@ Place the `[unsubscribe]` tag in the body to provide an unsubscribe link. The ta
 
 There are several tags you can use to embed sender address information in your email body. Available tags are `[%from_name%]`, `[%address%]`, `[%city%]`, `[%state%]`, and `[%zip%]`.
 
-{% codeblock lang:html %} [%from_name%] [%address%], [%city%], [%state%], [%zip%] {% endcodeblock %}
+
+
+{% codeblock lang:html %}
+[%from_name%]
+[%address%], [%city%], [%state%], [%zip%]
+{% endcodeblock %}
+
+
 
 * * * * *
 

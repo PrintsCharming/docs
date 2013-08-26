@@ -69,7 +69,7 @@ The task we are setting so we create a credential.
 </tr>
 <tr markdown="1">
 <td markdown="1">
-credential_name
+credential\_name
 
 </td>
 <td markdown="1">
@@ -77,7 +77,7 @@ Yes
 
 </td>
 <td markdown="1">
-The credential_name must be be between 3 and 64 characters and cannot be completely numeric.
+The credential\_name must be be between 3 and 64 characters and cannot be completely numeric.
 
 </td>
 <td markdown="1">
@@ -87,7 +87,7 @@ The credential we are creating under the child account.
 </tr>
 <tr markdown="1">
 <td markdown="1">
-credential_password
+credential\_password
 
 </td>
 <td markdown="1">
@@ -107,10 +107,12 @@ The password used to authenticate the newly generated credential.
 </table>
 ### XML API Request
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.credential.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=reseller_customer&task=add&credential_name=reseller_customer_credential&credential_password=reseller_customer_password {% endcodeblock %}
 
-#### Return - Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.credential.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=reseller_customer&task=add&credential_name=reseller_customer_credential&credential_password=reseller_customer_password
+{% endcodeblock %}
+<h4>Return - Success</h4>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -122,7 +124,11 @@ The password used to authenticate the newly generated credential.
 {% endcodeblock %}
 
 
+
+
 #### Return - Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -140,11 +146,16 @@ The password used to authenticate the newly generated credential.
 {% endcodeblock %}
 
 
-### JSON API Request
+<h3>JSON API Request</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.credential.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=reseller_customer&task=add&credential_name=reseller_customer_credential&credential_password=reseller_customer_password
+{% endcodeblock %}
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.credential.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=reseller_customer&task=add&credential_name=reseller_customer_credential&credential_password=reseller_customer_password {% endcodeblock %}
+
 
 #### Return - Success
+
+
 
 
 {% codeblock lang:javascript %}
@@ -154,7 +165,11 @@ The password used to authenticate the newly generated credential.
 {% endcodeblock %}
 
 
+
+
 #### Return - Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -165,6 +180,8 @@ The password used to authenticate the newly generated credential.
   ]
 }
 {% endcodeblock %}
+
+
 
 
 * * * * *
@@ -233,7 +250,7 @@ The task we are setting so we edit a credential password
 </tr>
 <tr markdown="1">
 <td markdown="1">
-credential_name
+credential\_name
 
 </td>
 <td markdown="1">
@@ -241,7 +258,7 @@ Yes
 
 </td>
 <td markdown="1">
-The credential_name must be be between 3 and 64 characters and cannot be completely numeric.
+The credential\_name must be be between 3 and 64 characters and cannot be completely numeric.
 
 </td>
 <td markdown="1">
@@ -251,7 +268,7 @@ The credential we want to modify
 </tr>
 <tr markdown="1">
 <td markdown="1">
-new_credential_password
+new\_credential\_password
 
 </td>
 <td markdown="1">
@@ -271,10 +288,12 @@ The updated password
 </table>
 ### XML API Request
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.credential.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=reseller_customer&task=edit&credential_name=reseller_customer_credential&new_credential_password=reseller_customer_password {% endcodeblock %}
 
-#### Return - Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.credential.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=reseller_customer&task=edit&credential_name=reseller_customer_credential&new_credential_password=reseller_customer_password
+{% endcodeblock %}
+<h4>Return - Success</h4>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -286,7 +305,11 @@ The updated password
 {% endcodeblock %}
 
 
+
+
 #### Return - Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -304,12 +327,17 @@ The updated password
 {% endcodeblock %}
 
 
+
+
 ### JSON API Request
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.credential.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=reseller_customer&task=edit&credential_name=reseller_customer_credential&new_credential_password=reseller_customer_password {% endcodeblock %}
 
-#### Return - Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.credential.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=reseller_customer&task=edit&credential_name=reseller_customer_credential&new_credential_password=reseller_customer_password
+{% endcodeblock %}
+
+<h4>Return - Success</h4>
 
 {% codeblock lang:javascript %}
 {
@@ -318,7 +346,11 @@ The updated password
 {% endcodeblock %}
 
 
+
+
 #### Return - Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -329,6 +361,8 @@ The updated password
   ]
 }
 {% endcodeblock %}
+
+
 
 
 </h4>
@@ -396,7 +430,7 @@ The task we are setting so we delete a credential
 </tr>
 <tr markdown="1">
 <td markdown="1">
-credential_name
+credential\_name
 
 </td>
 <td markdown="1">
@@ -404,7 +438,7 @@ Yes
 
 </td>
 <td markdown="1">
-The credential_name must be be between 3 and 64 characters and cannot be completely numeric.
+The credential\_name must be be between 3 and 64 characters and cannot be completely numeric.
 
 </td>
 <td markdown="1">
@@ -416,10 +450,12 @@ The credential we want to remove
 </table>
 ### XML API Request
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.credential.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=reseller_customer&task=delete&credential_name=reseller_customer_credential {% endcodeblock %}
 
-#### Return - Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.credential.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=reseller_customer&task=delete&credential_name=reseller_customer_credential
+{% endcodeblock %}
+<h4>Return - Success</h4>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -431,7 +467,11 @@ The credential we want to remove
 {% endcodeblock %}
 
 
+
+
 #### Return - Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -449,12 +489,17 @@ The credential we want to remove
 {% endcodeblock %}
 
 
+
+
 ### JSON API Request
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.credential.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=reseller_customer&task=delete&credential_name=reseller_customer_credential {% endcodeblock %}
 
-#### Return - Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.credential.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=reseller_customer&task=delete&credential_name=reseller_customer_credential
+{% endcodeblock %}
+
+<h4>Return - Success</h4>
 
 {% codeblock lang:javascript %}
 {
@@ -463,7 +508,11 @@ The credential we want to remove
 {% endcodeblock %}
 
 
+
+
 #### Return - Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -474,4 +523,6 @@ The credential we want to remove
   ]
 }
 {% endcodeblock %}
+
+
 

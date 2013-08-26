@@ -8,7 +8,7 @@ navigation:
 
 {% anchor h2 %} Retrieve Statistics {% endanchor %}
  
-{% info %} You can specify either the days parameter or the start_date and end_date parameters. If provided with no parameters, the current day's statistics are returned. {% endinfo %}
+{% info %} You can specify either the days parameter or the start\_date and end\_date parameters. If provided with no parameters, the current day's statistics are returned. {% endinfo %}
  
 {% anchor h2 %} Parameters {% endanchor %}
 
@@ -53,7 +53,7 @@ Number of days in the past to include statistics (Includes today)
 </tr>
 <tr markdown="1">
 <td markdown="1">
-start_date
+start\_date
 
 </td>
 <td markdown="1">
@@ -61,7 +61,7 @@ No
 
 </td>
 <td markdown="1">
-Date must be in YYYY-MM-DD format and be before the end_date parameter
+Date must be in YYYY-MM-DD format and be before the end\_date parameter
 
 </td>
 <td markdown="1">
@@ -71,7 +71,7 @@ The start date to look up statistics
 </tr>
 <tr markdown="1">
 <td markdown="1">
-end_date
+end\_date
 
 </td>
 <td markdown="1">
@@ -79,7 +79,7 @@ No
 
 </td>
 <td markdown="1">
-Date must be in YYYY-MM-DD format and be after the start_date parameter
+Date must be in YYYY-MM-DD format and be after the start\_date parameter
 
 </td>
 <td markdown="1">
@@ -113,10 +113,12 @@ This is used to indicate you are interested in all-time totals
 <div markdown="1" class="tab-pane active" id="activate-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/stats.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&days=2 {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/stats.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&days=2
+{% endcodeblock %}
+     <h3>Response</h3>
 
 {% codeblock lang:javascript %}
 [
@@ -157,15 +159,20 @@ This is used to indicate you are interested in all-time totals
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="activate-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/stats.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&days=2 {% endcodeblock %}
-
-### Response
 
 
+{% codeblock %}
+https://sendgrid.com/api/stats.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&days=2
+{% endcodeblock %}
+
+	<h3>Response</h3>
+	
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -208,6 +215,8 @@ This is used to indicate you are interested in all-time totals
 {% endcodeblock %}
 
 
+
+
 </div>
 </div>
 
@@ -225,10 +234,12 @@ This is used to indicate you are interested in all-time totals
 <div markdown="1" class="tab-pane active" id="list-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/stats.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=true {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/stats.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=true
+{% endcodeblock %}
+     <h3>Response</h3>
 
 {% codeblock lang:javascript %}
 [
@@ -245,14 +256,19 @@ This is used to indicate you are interested in all-time totals
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="list-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/stats.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=true {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/stats.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=true
+{% endcodeblock %}
+
+		<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -264,6 +280,8 @@ This is used to indicate you are interested in all-time totals
 </categories>
 
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -278,7 +296,7 @@ This is used to indicate you are interested in all-time totals
 ### Retrieve statistics broken down by category. If the category does not exist, there will be an empty result set.
 
 
-{% info %} Note that you can use either the days parameter or the start_date and end_date parameter. {% endinfo %}
+{% info %} Note that you can use either the days parameter or the start\_date and end\_date parameter. {% endinfo %}
  
 {% anchor h2 %} Parameters {% endanchor %}
 
@@ -341,7 +359,7 @@ Number of days in the past to include statistics (Includes today)
 </tr>
 <tr markdown="1">
 <td markdown="1">
-start_date
+start\_date
 
 </td>
 <td markdown="1">
@@ -349,7 +367,7 @@ No
 
 </td>
 <td markdown="1">
-Date must be in YYYY-MM-DD format and be before the end_date parameter
+Date must be in YYYY-MM-DD format and be before the end\_date parameter
 
 </td>
 <td markdown="1">
@@ -359,7 +377,7 @@ The start date to look up statistics
 </tr>
 <tr markdown="1">
 <td markdown="1">
-end_date
+end\_date
 
 </td>
 <td markdown="1">
@@ -367,7 +385,7 @@ No
 
 </td>
 <td markdown="1">
-Date must be in YYYY-MM-DD format and be after the start_date parameter
+Date must be in YYYY-MM-DD format and be after the start\_date parameter
 
 </td>
 <td markdown="1">
@@ -401,13 +419,22 @@ This is used to indicate you are interested in all-time totals
 <div markdown="1" class="tab-pane active" id="category-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/stats.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category=categoryA {% endcodeblock %}
 
-### Call - Using an array of categories
 
-{% codeblock %} https://sendgrid.com/api/stats.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB {% endcodeblock %}
+{% codeblock %}
+https://sendgrid.com/api/stats.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category=categoryA
+{% endcodeblock %}
+<h3>Call - Using an array of categories</h3>
+
+{% codeblock %}
+https://sendgrid.com/api/stats.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB
+{% endcodeblock %}
+
+
 
 ### Response
+
+
 
 
 {% codeblock lang:javascript %}
@@ -440,17 +467,28 @@ This is used to indicate you are interested in all-time totals
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="category-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/stats.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category=categoryA {% endcodeblock %}
 
-### Call - Using an array of categories
 
-{% codeblock %} https://sendgrid.com/api/stats.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB {% endcodeblock %}
+{% codeblock %}
+https://sendgrid.com/api/stats.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category=categoryA
+{% endcodeblock %}
+
+		<h3>Call - Using an array of categories</h3>
+{% codeblock %}
+https://sendgrid.com/api/stats.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB
+{% endcodeblock %}
+
+
 
 ### Response
+
+
 
 
 {% codeblock lang:xml %}
@@ -478,6 +516,8 @@ This is used to indicate you are interested in all-time totals
 </stats>
 
 {% endcodeblock %}
+
+
 
 
 </div>

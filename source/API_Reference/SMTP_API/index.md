@@ -9,11 +9,15 @@ navigation:
 SendGrid's SMTP API allows developers to specify custom handling instructions for e-mail. This is accomplished through a header, X-SMTPAPI, that is inserted into the message. The header is a JSON encoded list of instructions and options for that email. An example header looks like this:
 
 
+
+
 {% codeblock lang:javascript %}
 {
   "category": "newuser"
 }
 {% endcodeblock %}
+
+
 
 
 In this case, the header is telling the processing routine to assign this email the [category]({{root_url}}/Delivery_Metrics/categories.html) of "newuser".
@@ -27,6 +31,8 @@ The X-SMTPAPI header is a JSON-encoded associative array consisting of several s
 To: An array of addresses to send the message to, optionally including the display name.
 
 
+
+
 {% codeblock lang:javascript %}
 {
   "to": [
@@ -37,7 +43,11 @@ To: An array of addresses to send the message to, optionally including the displ
 {% endcodeblock %}
 
 
+
+
 [Substitution]({{root_url}}/API_Reference/SMTP_API/substitution_tags.html): An associative array of substitution tags, where each tag is associated with a list of replacement text for the tag in the body text. Each Substitution value corresponds to an email in the "To" section of the JSON string.
+
+
 
 
 {% codeblock lang:javascript %}
@@ -56,7 +66,11 @@ To: An array of addresses to send the message to, optionally including the displ
 {% endcodeblock %}
 
 
+
+
 [Section]({{root_url}}/API_Reference/SMTP_API/section_tags.html): Sections can be used to simplify substitution values that are common to many recipients. This is an associative array of sections that can be used in substitution values.
+
+
 
 
 {% codeblock lang:javascript %}
@@ -69,7 +83,11 @@ To: An array of addresses to send the message to, optionally including the displ
 {% endcodeblock %}
 
 
+
+
 [Category]({{root_url}}/Delivery_Metrics/categories.html): Associates the category of email this should be logged as. You may insert up to 10 categories as an array, these categories are not predefined.
+
+
 
 
 {% codeblock lang:javascript %}
@@ -82,7 +100,11 @@ To: An array of addresses to send the message to, optionally including the displ
 {% endcodeblock %}
 
 
+
+
 [Unique Arguments]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html): An associative array of arguments and their values to be applied to all emails sent in this SMTP API transaction.
+
+
 
 
 {% codeblock lang:javascript %}
@@ -95,7 +117,11 @@ To: An array of addresses to send the message to, optionally including the displ
 {% endcodeblock %}
 
 
+
+
 [Apps]({{root_url}}/API_Reference/SMTP_API/apps.html): An associative array of filters and their settings, used to override filter settings already setup for your account. Settings are an associative array of the setting names and their values.
+
+
 
 
 {% codeblock lang:javascript %}
@@ -110,7 +136,11 @@ To: An array of addresses to send the message to, optionally including the displ
   }
 }
 {% endcodeblock %}
+
+
  All of the above examples can then be combined into one larger JSON string placed in a header named X-SMTPAPI, and would look like this: 
+
+
 {% codeblock lang:javascript %}
 {
   "to": [
@@ -148,11 +178,38 @@ To: An array of addresses to send the message to, optionally including the displ
 {% endcodeblock %}
 
 
+
+
 The above example is formatted for readability. Headers must be wrapped to keep the line length under 72. By RFC 821 no line can be longer than 1,000, so if you are going to generate this string yourself it is a good idea to make sure that you wrap it.
 
 Here is a full example of generating the above JSON header in a Perl script:
 
-{% codeblock lang:perl %} \#!/usr/bin/perl use strict; use JSON; my \$header = { to =\> ['ben@sendgrid.com', 'joe@sendgrid.com], sub =\> { '%name%' =\> [ 'Ben', 'Joe' ], '%role%' =\>; [ 'sellerSection', 'buyerSection' ] }, section =\> { '%sellerSection%' =\>; 'Seller information for: %name%', '%buyerSection%' =\> 'Buyer information for: %name%' }, category =\> 'Orders', unique_args =\> { 'orderNumber' =\> '12345', 'eventID' =\> '6789' }, filters =\> { 'footer' =\> {'settings' =\> {'text/plain' =\> "Thank you for your business"}}}}; my \$json = JSON-\>new; \$json-\>space_before(1); \$json-\>space_after(1); my \$js = \$json-\>encode(\$header); \# This regex breaks the string up at whitespaces to keep the line length short \$js =\~ s/(.{1,72})(\\s)/\$1\\n   /g; my \$hdr = "X-SMTPAPI: \$js"; print "\$hdr\\n"; {% endcodeblock %} 
+
+
+{% codeblock lang:perl %}
+
+#!/usr/bin/perl
+use strict;
+use JSON;
+
+my $header = { to => ['ben@sendgrid.com', 'joe@sendgrid.com],
+sub => { '%name%' => [ 'Ben', 'Joe' ], '%role%' =>; [ 'sellerSection', 'buyerSection' ] },
+section => { '%sellerSection%' =>; 'Seller information for: %name%', '%buyerSection%' => 'Buyer information for: %name%' },
+category => 'Orders',
+unique_args => { 'orderNumber' => '12345', 'eventID' => '6789' },
+filters => { 'footer' => {'settings' => {'text/plain' => "Thank you for your business"}}}};
+
+my $json = JSON->new;
+$json->space_before(1);
+$json->space_after(1);
+my $js = $json->encode($header);
+# This regex breaks the string up at whitespaces to keep the line length short
+$js =~ s/(.{1,72})(\s)/$1\n   /g;
+my $hdr = "X-SMTPAPI: $js";
+print "$hdr\n";
+{% endcodeblock %}
+
+ 
 {% anchor h2 %} Requirements and Limitations {% endanchor %}
 
 

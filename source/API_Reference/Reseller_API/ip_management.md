@@ -23,10 +23,12 @@ View all IPs under your account.
 <div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=all {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=all
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -41,14 +43,18 @@ View all IPs under your account.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=all {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=all
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 [
@@ -74,7 +80,11 @@ View all IPs under your account.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -85,6 +95,8 @@ View all IPs under your account.
   ]
 }
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -109,10 +121,12 @@ A listing of all free IPs under your account. A Free IP is any IP that is not in
 <div markdown="1" class="tab-pane" id="free-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=free {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=free
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -127,14 +141,18 @@ A listing of all free IPs under your account. A Free IP is any IP that is not in
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="free-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=free {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=free
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 [
@@ -160,7 +178,11 @@ A listing of all free IPs under your account. A Free IP is any IP that is not in
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -171,6 +193,8 @@ A listing of all free IPs under your account. A Free IP is any IP that is not in
   ]
 }
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -195,10 +219,12 @@ A listing of all taken IPs under your account. A Taken IP is any IP that is in u
 <div markdown="1" class="tab-pane" id="taken-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=taken {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=taken
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -213,14 +239,18 @@ A listing of all taken IPs under your account. A Taken IP is any IP that is in u
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="taken-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=taken {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=taken
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 [
@@ -246,7 +276,11 @@ A listing of all taken IPs under your account. A Taken IP is any IP that is in u
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -257,6 +291,8 @@ A listing of all taken IPs under your account. A Taken IP is any IP that is in u
   ]
 }
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -281,10 +317,12 @@ A listing of all available IPs under your account. An Available IP is any IP tha
 <div markdown="1" class="tab-pane" id="available-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=available {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=available
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -299,14 +337,18 @@ A listing of all available IPs under your account. An Available IP is any IP tha
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="available-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=available {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=available
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 [
@@ -332,7 +374,11 @@ A listing of all available IPs under your account. An Available IP is any IP tha
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -343,6 +389,8 @@ A listing of all available IPs under your account. An Available IP is any IP tha
   ]
 }
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -370,10 +418,12 @@ The current breakdown of users who are using your IPs.
 <div markdown="1" class="tab-pane" id="usage-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=usage&user=example.com {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=usage&user=example.com
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -392,14 +442,18 @@ The current breakdown of users who are using your IPs.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="usage-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=usage&user=example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=usage&user=example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 [
@@ -415,7 +469,11 @@ The current breakdown of users who are using your IPs.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -426,6 +484,8 @@ The current breakdown of users who are using your IPs.
   ]
 }
 {% endcodeblock %}
+
+
 
 
 </div>

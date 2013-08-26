@@ -24,10 +24,12 @@ Returns all of the users who have pending changes within your account.
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.pending.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=lis {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.pending.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=lis
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -63,7 +65,11 @@ Returns all of the users who have pending changes within your account.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -79,15 +85,23 @@ Returns all of the users who have pending changes within your account.
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.pending.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=lis {% endcodeblock %}
 
-### Response: Success
+
+{% codeblock %}
+https://sendgrid.com/api/distributor.pending.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=lis
+{% endcodeblock %}
+<h3>Response: Success</h3>
+
 
 
 
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -98,6 +112,8 @@ Returns all of the users who have pending changes within your account.
   ]
 }
 {% endcodeblock %}
+
+
 
 
 * * * * *
@@ -115,13 +131,21 @@ Cancel/Revert a pending change.
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.pending.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com {% endcodeblock %}
 
-### Response: Success
 
-{% codeblock %} result\><message>success</message></result> {% endcodeblock %}
+{% codeblock %}
+https://sendgrid.com/api/distributor.pending.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+result><message>success</message></result>
+{% endcodeblock %}
+
+
 
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -137,12 +161,16 @@ Cancel/Revert a pending change.
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.pending.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.pending.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -151,7 +179,11 @@ Cancel/Revert a pending change.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -162,6 +194,8 @@ Cancel/Revert a pending change.
   ]
 }
 {% endcodeblock %}
+
+
 
 
 * * * * *
@@ -174,21 +208,29 @@ Once an upgrade happens, an invoice is generated for that user. If it's a free u
 
 |Parameter|Required|Requirements|
 |:--------|:-------|:-----------|
-|task|Yes|Must be set to *immediate_upgrade*.|
+|task|Yes|Must be set to *immediate\_upgrade*.|
 |user|Yes|Must be an User under your account.|
 |package|Yes|The name of the package you will be upgrading the User to.|
 |ip[]|Maybe Yes|If the package you are upgrading your user requires a whitelabel and/or an unique IP, you must assign a free IP to this user.|
-|ip_group[]|Maybe Yes|If the package you are upgrading your user to does not require an IP or whitelabel, you must place them in an IP group.|
+|ip\_group[]|Maybe Yes|If the package you are upgrading your user to does not require an IP or whitelabel, you must place them in an IP group.|
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou {% endcodeblock %}
 
-### Response: Success
 
-{% codeblock %} result\><message>success</message></result> {% endcodeblock %}
+{% codeblock %}
+https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+result><message>success</message></result>
+{% endcodeblock %}
+
+
 
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -204,12 +246,16 @@ Once an upgrade happens, an invoice is generated for that user. If it's a free u
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -218,7 +264,11 @@ Once an upgrade happens, an invoice is generated for that user. If it's a free u
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -229,6 +279,8 @@ Once an upgrade happens, an invoice is generated for that user. If it's a free u
   ]
 }
 {% endcodeblock %}
+
+
 
 
 * * * * *
@@ -241,18 +293,20 @@ Once a downgrade happens, an invoice is generated for that user. Free customers 
 
 |Parameter|Required|Requirements|
 |:--------|:-------|:-----------|
-|task|Yes|Must be set to *immediate_downgrade*.|
+|task|Yes|Must be set to *immediate\_downgrade*.|
 |user|Yes|Must be an User under your account.|
 |package|Yes|The name of the package you will be downgrading the User to.|
 |ip[]|Optional|If the package you are downgrading your user requires a whitelabel and/or an unique IP, you may assign a free IP to this customer using your assigned IPs in suppliment from SendGrid.|
-|ip_group[]|Optional|If the package you are downgrading your user to does not require an IP or whitelabel, you may place them in an IP group.|
+|ip\_group[]|Optional|If the package you are downgrading your user to does not require an IP or whitelabel, you may place them in an IP group.|
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -264,7 +318,11 @@ Once a downgrade happens, an invoice is generated for that user. Free customers 
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -280,12 +338,17 @@ Once a downgrade happens, an invoice is generated for that user. Free customers 
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic
+Package&user=customer@example.com&ip_group[]=Reseller Group
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -294,7 +357,11 @@ Once a downgrade happens, an invoice is generated for that user. Free customers 
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -305,6 +372,8 @@ Once a downgrade happens, an invoice is generated for that user. Free customers 
   ]
 }
 {% endcodeblock %}
+
+
 
 
 * * * * *
@@ -317,16 +386,18 @@ Close or revert an account to a free user immediately. An invoice is generated f
 
 |Parameter|Required|Requirements|
 |:--------|:-------|:-----------|
-|task|Yes|Must be set to *immediate_close*.|
+|task|Yes|Must be set to *immediate\_close*.|
 |user|Yes|Must be an customer under your account.|
-|ip_group[]|No|Define an ip group you will place the user into once the customers account is closed.|
+|ip\_group[]|No|Define an ip group you will place the user into once the customers account is closed.|
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Grou {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Grou
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -338,7 +409,11 @@ Close or revert an account to a free user immediately. An invoice is generated f
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -354,12 +429,16 @@ Close or revert an account to a free user immediately. An invoice is generated f
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Grou {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Grou
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -368,7 +447,11 @@ Close or revert an account to a free user immediately. An invoice is generated f
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -379,6 +462,8 @@ Close or revert an account to a free user immediately. An invoice is generated f
   ]
 }
 {% endcodeblock %}
+
+
 
 
 * * * * *
@@ -391,18 +476,20 @@ Apply an upgrade at the end of the user's billing cycle. Once an upgrade happens
 
 |Parameter|Required|Requirements|
 |:--------|:-------|:-----------|
-|task|Yes|Must be set to *scheduled_upgrade*.|
+|task|Yes|Must be set to *scheduled\_upgrade*.|
 |user|Yes|Must be an User under your account.|
 |package|Yes|The name of the package you will be upgrading the User to.|
 |ip[]|Maybe Yes|If the package you are upgrading your user requires a whitelabel and/or an unique IP, you must assign a free IP to this user.|
-|ip_group[]|Maybe Yes|If the package you are upgrading your user to does not require an IP or whitelabel, you must place them in an IP group.|
+|ip\_group[]|Maybe Yes|If the package you are upgrading your user to does not require an IP or whitelabel, you must place them in an IP group.|
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -414,7 +501,11 @@ Apply an upgrade at the end of the user's billing cycle. Once an upgrade happens
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -430,12 +521,16 @@ Apply an upgrade at the end of the user's billing cycle. Once an upgrade happens
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -444,7 +539,11 @@ Apply an upgrade at the end of the user's billing cycle. Once an upgrade happens
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -455,6 +554,8 @@ Apply an upgrade at the end of the user's billing cycle. Once an upgrade happens
   ]
 }
 {% endcodeblock %}
+
+
 
 
 * * * * *
@@ -467,18 +568,20 @@ Apply a downgrade at the end of the user's billing cycle. Once a downgrade happe
 
 |Parameter|Required|Requirements|
 |:--------|:-------|:-----------|
-|task|Yes|Must be set to *scheduled_downgrade*.|
+|task|Yes|Must be set to *scheduled\_downgrade*.|
 |user|Yes|Must be an User under your account.|
 |package|Yes|The name of the package you will be downgrading the User to.|
 |ip[]|Maybe Yes|If the package you are upgrading your user requires a whitelabel and/or an unique IP, you must assign a free IP to this user.|
-|ip_group[]|Maybe Yes|If the package you are upgrading your user to does not require an IP or whitelabel, you must place them in an IP group.|
+|ip\_group[]|Maybe Yes|If the package you are upgrading your user to does not require an IP or whitelabel, you must place them in an IP group.|
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -490,7 +593,11 @@ Apply a downgrade at the end of the user's billing cycle. Once a downgrade happe
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -506,12 +613,16 @@ Apply a downgrade at the end of the user's billing cycle. Once a downgrade happe
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -520,7 +631,11 @@ Apply a downgrade at the end of the user's billing cycle. Once a downgrade happe
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -531,6 +646,8 @@ Apply a downgrade at the end of the user's billing cycle. Once a downgrade happe
   ]
 }
 {% endcodeblock %}
+
+
 
 
 * * * * *
@@ -543,16 +660,18 @@ Close or revert an account to a free user at the end of the user's billing cycle
 
 |Parameter|Required|Requirements|
 |:--------|:-------|:-----------|
-|task|Yes|Must be set to *scheduled_close*.|
+|task|Yes|Must be set to *scheduled\_close*.|
 |user|Yes|Must be an User under your account.|
-|ip_group[]|No|Define an ip group you will place the user into once the customers account is closed.|
+|ip\_group[]|No|Define an ip group you will place the user into once the customers account is closed.|
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Grou {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Grou
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -564,7 +683,11 @@ Close or revert an account to a free user at the end of the user's billing cycle
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -580,12 +703,16 @@ Close or revert an account to a free user at the end of the user's billing cycle
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Grou {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Grou
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -594,7 +721,11 @@ Close or revert an account to a free user at the end of the user's billing cycle
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -605,4 +736,6 @@ Close or revert an account to a free user at the end of the user's billing cycle
   ]
 }
 {% endcodeblock %}
+
+
 

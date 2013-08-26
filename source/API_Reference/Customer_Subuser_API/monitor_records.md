@@ -114,11 +114,13 @@ The frequency of emails to be sent out
 <div markdown="1" class="tab-pane" id="create-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=create&name=myMonitor&email=example@example.com&frequency=1000 {% endcodeblock %}
-
-### Response: Success
 
 
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=create&name=myMonitor&email=example@example.com&frequency=1000
+{% endcodeblock %}
+  <h3>Response: Success</h3>
+  
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -129,7 +131,11 @@ The frequency of emails to be sent out
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -147,15 +153,19 @@ The frequency of emails to be sent out
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="create-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=create&name=myMonitor&email=example@example.com&frequency=1000 {% endcodeblock %}
-
-### Response: Success
 
 
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=create&name=myMonitor&email=example@example.com&frequency=1000
+{% endcodeblock %}
+  <h3>Response: Success</h3>
+  
 {% codeblock lang:javascript %}
 {
   "message": "success"
@@ -163,7 +173,11 @@ The frequency of emails to be sent out
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -174,6 +188,8 @@ The frequency of emails to be sent out
   ]
 }
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -243,7 +259,7 @@ The monitor record we are going to edit
 </tr>
 <tr markdown="1">
 <td markdown="1">
-new_name
+new\_name
 
 </td>
 <td markdown="1">
@@ -261,7 +277,7 @@ The new monitor record name
 </tr>
 <tr markdown="1">
 <td markdown="1">
-new_email
+new\_email
 
 </td>
 <td markdown="1">
@@ -279,7 +295,7 @@ The new email destination to send the email sample to
 </tr>
 <tr markdown="1">
 <td markdown="1">
-new_frequency
+new\_frequency
 
 </td>
 <td markdown="1">
@@ -303,11 +319,13 @@ The new frequency of emails to be sent out
 <div markdown="1" class="tab-pane" id="edit-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5 {% endcodeblock %}
-
-### Response: Success
 
 
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5
+{% endcodeblock %}
+  <h3>Response: Success</h3>
+  
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -318,7 +336,11 @@ The new frequency of emails to be sent out
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -336,15 +358,19 @@ The new frequency of emails to be sent out
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="edit-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5 {% endcodeblock %}
-
-### Response: Success
 
 
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5
+{% endcodeblock %}
+  <h3>Response: Success</h3>
+  
 {% codeblock lang:javascript %}
 {
   "message": "success"
@@ -352,7 +378,11 @@ The new frequency of emails to be sent out
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -363,6 +393,8 @@ The new frequency of emails to be sent out
   ]
 }
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -438,11 +470,13 @@ The unique name to identify this monitor record
 <div markdown="1" class="tab-pane" id="delete-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&name=recordToDelete {% endcodeblock %}
-
-### Response: Success
 
 
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&name=recordToDelete
+{% endcodeblock %}
+  <h3>Response: Success</h3>
+  
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -453,7 +487,11 @@ The unique name to identify this monitor record
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -471,15 +509,19 @@ The unique name to identify this monitor record
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="delete-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&name=recordToDelete {% endcodeblock %}
-
-### Response: Success
 
 
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&name=recordToDelete
+{% endcodeblock %}
+  <h3>Response: Success</h3>
+  
 {% codeblock lang:javascript %}
 {
   "message": "success"
@@ -487,7 +529,11 @@ The unique name to identify this monitor record
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -498,6 +544,8 @@ The unique name to identify this monitor record
   ]
 }
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -555,11 +603,13 @@ The task required to list all monitor records
 <div markdown="1" class="tab-pane" id="listrecords-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list {% endcodeblock %}
-
-### Response
 
 
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list
+{% endcodeblock %}
+  <h3>Response</h3>
+  
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -584,15 +634,19 @@ The task required to list all monitor records
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="listrecords-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list {% endcodeblock %}
-
-### Response
 
 
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list
+{% endcodeblock %}
+  <h3>Response</h3>
+  
 {% codeblock lang:javascript %}
 [
   {
@@ -614,6 +668,8 @@ The task required to list all monitor records
   }
 ]
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -707,11 +763,13 @@ The name of the monitor record we will be appending
 <div markdown="1" class="tab-pane" id="append-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&name=myMonitor&user=example@example.com {% endcodeblock %}
-
-### Response: Success
 
 
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&name=myMonitor&user=example@example.com
+{% endcodeblock %}
+  <h3>Response: Success</h3>
+  
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -722,7 +780,11 @@ The name of the monitor record we will be appending
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -740,15 +802,19 @@ The name of the monitor record we will be appending
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="append-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&name=myMonitor&user=example@example.com {% endcodeblock %}
-
-### Response: Success
 
 
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&name=myMonitor&user=example@example.com
+{% endcodeblock %}
+  <h3>Response: Success</h3>
+  
 {% codeblock lang:javascript %}
 {
   "message": "success"
@@ -756,7 +822,11 @@ The name of the monitor record we will be appending
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -767,6 +837,8 @@ The name of the monitor record we will be appending
   ]
 }
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -842,11 +914,13 @@ The subuser we will detach the monitor record from
 <div markdown="1" class="tab-pane" id="detach-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=detach&user=example@example.com {% endcodeblock %}
-
-### Response: Success
 
 
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=detach&user=example@example.com
+{% endcodeblock %}
+  <h3>Response: Success</h3>
+  
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -857,7 +931,11 @@ The subuser we will detach the monitor record from
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -875,15 +953,19 @@ The subuser we will detach the monitor record from
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="detach-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=detach&user=example@example.com {% endcodeblock %}
-
-### Response: Success
 
 
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=detach&user=example@example.com
+{% endcodeblock %}
+  <h3>Response: Success</h3>
+  
 {% codeblock lang:javascript %}
 {
   "message": "success"
@@ -891,7 +973,11 @@ The subuser we will detach the monitor record from
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -902,6 +988,8 @@ The subuser we will detach the monitor record from
   ]
 }
 {% endcodeblock %}
+
+
 
 
 </div>

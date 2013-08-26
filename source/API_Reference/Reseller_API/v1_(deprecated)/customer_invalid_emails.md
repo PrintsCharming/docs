@@ -18,19 +18,37 @@ navigation:
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=customer@example.com&task=get&date= {% endcodeblock %}
 
-### Response
 
-{% codeblock %} <invalidemails><invalidemail><email>isaac@hotmail.comm</email><reason>Mail domain mentioned in email address is unknown</reason><created>2009-06-10 12:40:30</created></invalidemail><invalidemail><email>isaac@hotmail</email><reason>Bad Syntax</reason><created>2009-06-10 12:40:30</created></invalidemail><invalidemail><email>isaac@example.com</email><reason>Known bad domain</reason><created>2009-06-10 12:40:30</created></invalidemail></invalidemails> {% endcodeblock %}
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=customer@example.com&task=get&date=
+{% endcodeblock %}
+<h3>Response</h3>
+{% codeblock %}
+<invalidemails><invalidemail><email>isaac@hotmail.comm</email><reason>Mail
+domain mentioned in email address is unknown</reason><created>2009-06-10
+12:40:30</created></invalidemail><invalidemail><email>isaac@hotmail</email><reason>Bad
+Syntax</reason><created>2009-06-10
+12:40:30</created></invalidemail><invalidemail><email>isaac@example.com</email><reason>Known
+bad domain</reason><created>2009-06-10
+12:40:30</created></invalidemail></invalidemails>
+{% endcodeblock %}
+
+
 
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=customer@example.com&task=get&date= {% endcodeblock %}
 
-### Response
 
-{% codeblock %} {"email":"isaac@hotmail.comm","reason":"Mail domain mentioned in email address is unknown","created":"2009-06-01 19:41:39"},{"email":"isaac@hotmail","reason":"Bad Syntax","created":"2009-06-01 19:41:39"},{"email":"isaac@example.com","reason":"Known bad domain","created":"2009-06-01 19:41:39"} {% endcodeblock %}
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=customer@example.com&task=get&date=
+{% endcodeblock %}
+<h3>Response</h3>
+{% codeblock %}
+{"email":"isaac@hotmail.comm","reason":"Mail domain mentioned in email address is unknown","created":"2009-06-01 19:41:39"},{"email":"isaac@hotmail","reason":"Bad Syntax","created":"2009-06-01 19:41:39"},{"email":"isaac@example.com","reason":"Known bad domain","created":"2009-06-01 19:41:39"}
+{% endcodeblock %}
+
+
 
 * * * * *
 
@@ -49,21 +67,35 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=customer@example.com&task=delete&email=invalidemail@example.com {% endcodeblock %}
 
-### Response: Success
 
-{% codeblock %} <result><message>success</message></result> {% endcodeblock %}
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=customer@example.com&task=delete&email=invalidemail@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+<result><message>success</message></result>
+{% endcodeblock %}
+
+
 
 ### Response: Error
 
-{% codeblock %} <result><message>Email does not exist</message></result> {% endcodeblock %}
 
-### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=customer@example.com&task=delete&email=invalidemail@example.com {% endcodeblock %}
+{% codeblock %}
+<result><message>Email does not exist</message></result>
+{% endcodeblock %}
+<h3>JSON Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=customer@example.com&task=delete&email=invalidemail@example.com
+{% endcodeblock %}
+
+
 
 ### Response: Success
+
+
 
 
 {% codeblock lang:javascript %}
@@ -73,7 +105,11 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -81,4 +117,6 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
   "message": "Email does not exist"
 }
 {% endcodeblock %}
+
+
 

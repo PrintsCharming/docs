@@ -77,11 +77,13 @@ Authenticate the subuser with this API call.
 <div markdown="1" class="tab-pane" id="call-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/user.geturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com {% endcodeblock %}
-
-### Response
 
 
+{% codeblock %}
+https://sendgrid.com/api/user.geturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
+{% endcodeblock %}
+  <h3>Response</h3>
+  
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -92,20 +94,26 @@ Authenticate the subuser with this API call.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="call-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/user.geturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com {% endcodeblock %}
-
-### Response
 
 
+{% codeblock %}
+https://sendgrid.com/api/user.geturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
+{% endcodeblock %}
+  <h3>Response</h3>
+  
 {% codeblock lang:javascript %}
 {
   "params": "al_username=username&al_subuser_name=example@example.com&al_hash=aa39649af578679d3a90d2cc43245d56"
 }
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -115,7 +123,7 @@ Authenticate the subuser with this API call.
 
 
 {% anchor h2 %} iFrame Usage {% endanchor %}
- Using the parameters returned from the Initial API Call, you can construct the iFrame URL as shown below. {% codeblock %} iframe src="https://sendgrid.com/account?al_username=username&al_subuser_name=example@example.com&al_hash=aa39649af578679d3a90d2cc43245d56"\></iframe> {% endcodeblock %}
+ Using the parameters returned from the Initial API Call, you can construct the iFrame URL as shown below. {% codeblock %} iframe src="https://sendgrid.com/account?al\_username=username&al\_subuser\_name=example@example.com&al\_hash=aa39649af578679d3a90d2cc43245d56"\></iframe> {% endcodeblock %}
 
 </div>
 

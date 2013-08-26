@@ -6,8 +6,7 @@ navigation:
   show: true
 ---
 
-Get
----
+## Get
 
 Retrieve a list of all credentials, or permissions for a specific credential.
 
@@ -33,7 +32,7 @@ Description
 </tr>
 <tr markdown="1">
 <td markdown="1">
-api_user
+api\_user
 
 </td>
 <td markdown="1">
@@ -51,7 +50,7 @@ The primary account holder's user ID creating the new account
 </tr>
 <tr markdown="1">
 <td markdown="1">
-api_key
+api\_key
 
 </td>
 <td markdown="1">
@@ -93,10 +92,12 @@ If a username is supplied, the API returns the JSON permissions for that user
 <div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/credentials/get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/credentials/get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
+{% endcodeblock %} 
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 [
@@ -120,7 +121,11 @@ If a username is supplied, the API returns the JSON permissions for that user
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -130,14 +135,18 @@ If a username is supplied, the API returns the JSON permissions for that user
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/credentials/get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/credentials/get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -170,7 +179,11 @@ If a username is supplied, the API returns the JSON permissions for that user
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -183,13 +196,14 @@ If a username is supplied, the API returns the JSON permissions for that user
 {% endcodeblock %}
 
 
+
+
 </div>
 </div>
 
 * * * * *
 
-Add
----
+## Add
 
 This API call allows user to add a new set of credentials to their account.
 
@@ -215,7 +229,7 @@ Description
 </tr>
 <tr markdown="1">
 <td markdown="1">
-api_user
+api\_user
 
 </td>
 <td markdown="1">
@@ -233,7 +247,7 @@ The primary account holder's user ID creating the new account
 </tr>
 <tr markdown="1">
 <td markdown="1">
-api_key
+api\_key
 
 </td>
 <td markdown="1">
@@ -315,10 +329,12 @@ The following example allows the specified username/password to log into the das
 <div markdown="1" class="tab-pane active" id="add-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/credentials/add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=name&password=password&permissions={"email": 0, "web": 1, "api": 0} {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/credentials/add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=name&password=password&permissions={"email": 0, "web": 1, "api": 0}
+{% endcodeblock %} 
+      <h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -327,7 +343,11 @@ The following example allows the specified username/password to log into the das
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -337,14 +357,18 @@ The following example allows the specified username/password to log into the das
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="add-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/credentials/add.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=name&password=password&permissions={"email": 0, "web": 1, "api": 0} {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/credentials/add.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=name&password=password&permissions={"email": 0, "web": 1, "api": 0}
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -356,7 +380,11 @@ The following example allows the specified username/password to log into the das
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -369,6 +397,8 @@ The following example allows the specified username/password to log into the das
 {% endcodeblock %}
 
 
+
+
 </div>
 </div>
 
@@ -377,8 +407,7 @@ The following example allows the specified username/password to log into the das
 
 * * * * *
 
-Edit
-----
+## Edit
 
 <table markdown="1" class="table table-bordered table-striped">
 <tbody markdown="1">
@@ -402,7 +431,7 @@ Description
 </tr>
 <tr markdown="1">
 <td markdown="1">
-api_user
+api\_user
 
 </td>
 <td markdown="1">
@@ -420,7 +449,7 @@ The primary account holder's user ID creating the new account
 </tr>
 <tr markdown="1">
 <td markdown="1">
-api_key
+api\_key
 
 </td>
 <td markdown="1">
@@ -504,10 +533,12 @@ If you do not specify any additional parameters (i.e., email, web, api), then no
 <div markdown="1" class="tab-pane active" id="edit-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/credentials/edit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=name&password=password&permissions={"email": 0, "web": 1, "api": 0} {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/credentials/edit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=name&password=password&permissions={"email": 0, "web": 1, "api": 0}
+{% endcodeblock %} 
+      <h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -516,7 +547,11 @@ If you do not specify any additional parameters (i.e., email, web, api), then no
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -526,14 +561,18 @@ If you do not specify any additional parameters (i.e., email, web, api), then no
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="edit-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/credentials/edit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=name&password=password&permissions={"email": 0, "web": 1, "api": 0} {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/credentials/edit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=name&password=password&permissions={"email": 0, "web": 1, "api": 0}
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -545,7 +584,11 @@ If you do not specify any additional parameters (i.e., email, web, api), then no
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -558,13 +601,14 @@ If you do not specify any additional parameters (i.e., email, web, api), then no
 {% endcodeblock %}
 
 
+
+
 </div>
 </div>
 
 * * * * *
 
-Delete
-------
+## Delete
 
 <table markdown="1" class="table table-bordered table-striped">
 <tbody markdown="1">
@@ -588,7 +632,7 @@ Description
 </tr>
 <tr markdown="1">
 <td markdown="1">
-api_user
+api\_user
 
 </td>
 <td markdown="1">
@@ -606,7 +650,7 @@ The primary account holder's user ID creating the new account
 </tr>
 <tr markdown="1">
 <td markdown="1">
-api_key
+api\_key
 
 </td>
 <td markdown="1">
@@ -648,10 +692,12 @@ The credential to remove
 <div markdown="1" class="tab-pane active" id="remove-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/credentials/remove.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example_user {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/credentials/remove.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example_user
+{% endcodeblock %} 
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -660,7 +706,11 @@ The credential to remove
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -670,14 +720,18 @@ The credential to remove
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="remove-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/credentials/remove.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example_user {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/credentials/remove.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example_user
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -689,7 +743,11 @@ The credential to remove
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -700,6 +758,8 @@ The credential to remove
 </result>
 
 {% endcodeblock %}
+
+
 
 
 </div>

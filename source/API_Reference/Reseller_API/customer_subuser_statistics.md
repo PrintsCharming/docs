@@ -9,14 +9,14 @@ navigation:
 {% anchor h2 %} Retrieve Customer Subuser Statistics {% endanchor %}
 
 
-Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
+Note that you can use *either* the days parameter *or* the start\_date and end\_date parameter.
 
 |Parameter|Required|Requirements|Description|
 |:--------|:-------|:-----------|:----------|
 |user|Yes|Customer subuser must be registered under your account|The customer subuser we are retrieving statistics from|
 |days|No|Must be an integer greater than 0|Number of days in the past to include statistics (includes today)|
-|start_date|No|Date must be in YYYY-mm-dd format and be before the end_date parameter|The start date to look up statistics|
-|end_date|No|Date must be in YYYY-mm-dd format and be after the start_date parameter|The end date to look up statistics|
+|start\_date|No|Date must be in YYYY-mm-dd format and be before the end\_date parameter|The start date to look up statistics|
+|end\_date|No|Date must be in YYYY-mm-dd format and be after the start\_date parameter|The end date to look up statistics|
 
 {% xmljsontabs get %}
 
@@ -24,10 +24,12 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 <div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -62,14 +64,18 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 [
@@ -101,6 +107,8 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 {% endcodeblock %}
 
 
+
+
 </div>
 </div>
 
@@ -123,10 +131,12 @@ Retrieve all-time totals for your customer subuser
 <div markdown="1" class="tab-pane" id="agg-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&aggregate= {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&aggregate=
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -142,14 +152,18 @@ Retrieve all-time totals for your customer subuser
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="agg-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&aggregate= {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&aggregate=
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -160,6 +174,8 @@ Retrieve all-time totals for your customer subuser
   "spamreports": 5
 }
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -184,10 +200,12 @@ Retrieve a list of all the categories used in your customer subusers account.
 <div markdown="1" class="tab-pane" id="cat-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&list=tru {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&list=tru
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -201,20 +219,26 @@ Retrieve a list of all the categories used in your customer subusers account.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="cat-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&list=tru {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&list=tru
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 {
   "category": "categoryC"
 }
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -228,15 +252,15 @@ Retrieve a list of all the categories used in your customer subusers account.
 
 Retrieve statistics broken down by category. If the category does not exist, there will be an empty result set.
 
-Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
+Note that you can use *either* the days parameter *or* the start\_date and end\_date parameter.
 
 |Parameter|Required|Requirements|Description|
 |:--------|:-------|:-----------|:----------|
 |category|Yes|Must be an existing category that has statistics. You can pass in an array of categories|The category you will specify to retrieve detailed stats|
 |user|Yes|Customer subuser must be registered under you|The customer subuser we are retrieving statistics from|
 |days|No|Must be an integer greater than 0|Number of days in the past to include statistics (Includes today)|
-|start_date|No|Date must be in YYYY-mm-dd format and be before the end_date parameter|The start date to look up statistics|
-|end_date|No|Date must be in YYYY-mm-dd format and be after the start_date parameter|The end date to look up statistics|
+|start\_date|No|Date must be in YYYY-mm-dd format and be before the end\_date parameter|The start date to look up statistics|
+|end\_date|No|Date must be in YYYY-mm-dd format and be after the start\_date parameter|The end date to look up statistics|
 
 {% xmljsontabs catstat %}
 
@@ -244,13 +268,21 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 <div markdown="1" class="tab-pane" id="catstat-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category {% endcodeblock %}
 
-#### Command - Using an array of categories
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=category {% endcodeblock %}
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category
+{% endcodeblock %}
+<h4>Command - Using an array of categories</h4>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=category
+{% endcodeblock %}
+
+
 
 ### Response
+
+
 
 
 {% codeblock lang:xml %}
@@ -280,17 +312,27 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="catstat-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category {% endcodeblock %}
 
-#### Command - Using an array of categories
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=category {% endcodeblock %}
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category
+{% endcodeblock %}
+<h4>Command - Using an array of categories</h4>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=category
+{% endcodeblock %}
+
+
 
 ### Response
+
+
 
 
 {% codeblock lang:javascript %}
@@ -315,6 +357,8 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
   }
 ]
 {% endcodeblock %}
+
+
 
 
 </div>

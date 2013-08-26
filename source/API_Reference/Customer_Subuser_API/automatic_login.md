@@ -73,10 +73,12 @@ Authenticate the subuser with this API call.
 <div markdown="1" class="tab-pane" id="auto-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/customer.geturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.geturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -88,20 +90,26 @@ Authenticate the subuser with this API call.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="auto-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/customer.geturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.geturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 {
   "params": "al_username=username&al_subuser_name=example@example.com&al_hash=aa39649af578679d3a90d2cc43245d56"
 }
 {% endcodeblock %}
+
+
 
 
 </div>

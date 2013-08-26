@@ -28,13 +28,21 @@ Obtain a complete list of all customer.
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=create&name=myMonitor&email=example@example.com&frequency=1000 {% endcodeblock %}
 
-### Response: Success
 
-{% codeblock %} result\><message>success</message></result> {% endcodeblock %}
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=create&name=myMonitor&email=example@example.com&frequency=1000
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+result><message>success</message></result>
+{% endcodeblock %}
+
+
 
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -50,12 +58,16 @@ Obtain a complete list of all customer.
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=create&name=myMonitor&email=example@example.com&frequency=1000 {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=create&name=myMonitor&email=example@example.com&frequency=1000
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -64,7 +76,11 @@ Obtain a complete list of all customer.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -75,6 +91,8 @@ Obtain a complete list of all customer.
   ]
 }
 {% endcodeblock %}
+
+
 
 
 * * * * *
@@ -89,20 +107,28 @@ Make modifications to an existing Monitor record.
 |:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *edit*|The task required to edit a monitor|
 |name|Yes|The name of the previous monitor record|The monitor record we are going to edit|
-|new_name|No|New name must be unique and can't be more than 255 characters|The new monitor record name|
-|new_email|No|Must be in email format|The new email destination to send the email sample to|
-|new_frequency|No|Must be an integer and greater than 0|The new frequency of emails to be sent out|
+|new\_name|No|New name must be unique and can't be more than 255 characters|The new monitor record name|
+|new\_email|No|Must be in email format|The new email destination to send the email sample to|
+|new\_frequency|No|Must be an integer and greater than 0|The new frequency of emails to be sent out|
 |method|Yes|Must be set to *monitor*|Allows you to access monitor functionality|
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5 {% endcodeblock %}
 
-### Response: Success
 
-{% codeblock %} result\><message>success</message></result> {% endcodeblock %}
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+result><message>success</message></result>
+{% endcodeblock %}
+
+
 
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -118,12 +144,16 @@ Make modifications to an existing Monitor record.
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5 {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -132,7 +162,11 @@ Make modifications to an existing Monitor record.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -143,6 +177,8 @@ Make modifications to an existing Monitor record.
   ]
 }
 {% endcodeblock %}
+
+
 
 
 * * * * *
@@ -161,10 +197,12 @@ Deleting a monitor record will remove it from SendGrid's system. **Make sure no 
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=delete&name=recordToDelet {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=delete&name=recordToDelet
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -176,7 +214,11 @@ Deleting a monitor record will remove it from SendGrid's system. **Make sure no 
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -192,12 +234,16 @@ Deleting a monitor record will remove it from SendGrid's system. **Make sure no 
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=delete&name=recordToDelet {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=delete&name=recordToDelet
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -206,7 +252,11 @@ Deleting a monitor record will remove it from SendGrid's system. **Make sure no 
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -217,6 +267,8 @@ Deleting a monitor record will remove it from SendGrid's system. **Make sure no 
   ]
 }
 {% endcodeblock %}
+
+
 
 
 * * * * *
@@ -234,10 +286,12 @@ List all available monitor records a reseller has.
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=lis {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=lis
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -263,11 +317,17 @@ List all available monitor records a reseller has.
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=lis {% endcodeblock %}
 
-### Response
+
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=lis
+{% endcodeblock %}
+<h3>Response</h3>
+
 
 
 
@@ -288,13 +348,21 @@ Append a monitor record to a existing record onto a customer.
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=append&name=myMonitor&user=customer@example.com {% endcodeblock %}
 
-### Response: Success
 
-{% codeblock %} result\><message>success</message></result> {% endcodeblock %}
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=append&name=myMonitor&user=customer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+result><message>success</message></result>
+{% endcodeblock %}
+
+
 
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -310,12 +378,16 @@ Append a monitor record to a existing record onto a customer.
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=append&name=myMonitor&user=customer@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=append&name=myMonitor&user=customer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -324,7 +396,11 @@ Append a monitor record to a existing record onto a customer.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -335,6 +411,8 @@ Append a monitor record to a existing record onto a customer.
   ]
 }
 {% endcodeblock %}
+
+
 
 
 * * * * *
@@ -353,13 +431,21 @@ Detach a customer from a monitor record.
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=detach&user=customer@example.com {% endcodeblock %}
 
-### Response: Success
 
-{% codeblock %} result\><message>success</message></result> {% endcodeblock %}
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=detach&user=customer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+result><message>success</message></result>
+{% endcodeblock %}
+
+
 
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -375,12 +461,16 @@ Detach a customer from a monitor record.
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=detach&user=customer@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=detach&user=customer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -389,7 +479,11 @@ Detach a customer from a monitor record.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -400,4 +494,6 @@ Detach a customer from a monitor record.
   ]
 }
 {% endcodeblock %}
+
+
 

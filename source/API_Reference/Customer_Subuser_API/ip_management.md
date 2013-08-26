@@ -59,11 +59,13 @@ available
 <div markdown="1" class="tab-pane active" id="list-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/customer.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=all {% endcodeblock %}
-
-### Response
 
 
+{% codeblock %}
+	https://sendgrid.com/apiv2/customer.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=all
+	{% endcodeblock %}
+	  <h3>Response</h3>
+	
 {% codeblock lang:javascript %}
 [
   {
@@ -79,14 +81,18 @@ available
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="list-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/customer.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=all {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=all
+{% endcodeblock %}
+  <h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -98,6 +104,8 @@ available
 </ips>
 
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -161,10 +169,12 @@ Subuser must be registered under your account
 <div markdown="1" class="tab-pane" id="usage-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/customer.sendip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list&user=example@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.sendip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list&user=example@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -183,7 +193,11 @@ Subuser must be registered under your account
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -196,14 +210,18 @@ Subuser must be registered under your account
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="usage-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/customer.sendip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list&user=example@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.sendip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list&user=example@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -233,7 +251,11 @@ Subuser must be registered under your account
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -244,6 +266,8 @@ Subuser must be registered under your account
   }
 }
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -335,10 +359,12 @@ If the *set* parameter is set, then you must specify the IPs. Use the ip[] par
 <div markdown="1" class="tab-pane" id="subuser-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/customer.sendip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&set=specify&user=example@example.com&ip[]=255.255.255.250&ip[]=255.255.255.255 {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.sendip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&set=specify&user=example@example.com&ip[]=255.255.255.250&ip[]=255.255.255.255
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -350,7 +376,11 @@ If the *set* parameter is set, then you must specify the IPs. Use the ip[] par
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -368,14 +398,18 @@ If the *set* parameter is set, then you must specify the IPs. Use the ip[] par
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="subuser-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/customer.sendip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&set=specify&user=example@example.com&ip[]=255.255.255.250&ip[]=255.255.255.255 {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.sendip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&set=specify&user=example@example.com&ip[]=255.255.255.250&ip[]=255.255.255.255
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -384,7 +418,11 @@ If the *set* parameter is set, then you must specify the IPs. Use the ip[] par
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -395,6 +433,8 @@ If the *set* parameter is set, then you must specify the IPs. Use the ip[] par
   ]
 }
 {% endcodeblock %}
+
+
 
 
 </div>

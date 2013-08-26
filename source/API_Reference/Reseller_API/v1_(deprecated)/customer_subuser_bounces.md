@@ -9,7 +9,7 @@ show: true
 {% anchor h2 %} Retrieve Bounces {% endanchor %}
 
 
-Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
+Note that you can use *either* the days parameter *or* the start\_date and end\_date parameter.
 
 |Parameter|Required|Requirements|Description|
 |:--------|:-------|:-----------|:----------|
@@ -19,10 +19,12 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=get&date= {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=get&date=
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -31,25 +33,37 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
    <bounce>
       <email>email1@domain.com</email>
       <status>5.1.1</status>
-      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com</reason>
-      <created>2009-06-10 12:40:30</created>
+      <reason>host
+[127.0.0.1] said: 550 5.1.1 unknown or illegal user:
+email1@domain.com</reason>
+      <created>2009-06-10
+12:40:30</created>
    </bounce>
    <bounce>
       <email>email2@domain2.com</email>
       <status>5.1.1</status>
-      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com</reason>
-      <created>2009-06-10 12:40:30</created>
+      <reason>host
+[127.0.0.1] said: 550 5.1.1 unknown or illegal user:
+email2@domain2.com</reason>
+      <created>2009-06-10
+12:40:30</created>
    </bounce>
 </bounces>
 
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=get&date= {% endcodeblock %}
 
-### Response
+
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=get&date=
+{% endcodeblock %}
+<h3>Response</h3>
+
 
 
 
@@ -69,10 +83,12 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=delete&email=bounce@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=delete&email=bounce@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -84,15 +100,25 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
 
-{% codeblock %} result\><message>Email does not exist</message></result> {% endcodeblock %}
 
-### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=delete&email=bounce@example.com {% endcodeblock %}
+{% codeblock %}
+result><message>Email does not exist</message></result>
+{% endcodeblock %}
+<h3>JSON Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=delete&email=bounce@example.com
+{% endcodeblock %}
+
+
 
 ### Response: Success
+
+
 
 
 {% codeblock lang:javascript %}
@@ -102,7 +128,11 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -110,4 +140,6 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
   "message": "Email does not exist"
 }
 {% endcodeblock %}
+
+
 

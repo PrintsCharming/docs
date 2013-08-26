@@ -70,7 +70,7 @@ Number of days in the past for which to retrieve spam reports (includes today)
 </tr>
 <tr markdown="1">
 <td markdown="1">
-start_date
+start\_date
 
 </td>
 <td markdown="1">
@@ -78,7 +78,7 @@ No
 
 </td>
 <td markdown="1">
-Date must be in YYYY-MM-DD format and be earlier than the end_date parameter.
+Date must be in YYYY-MM-DD format and be earlier than the end\_date parameter.
 
 </td>
 <td markdown="1">
@@ -88,7 +88,7 @@ The start of the date range for which to retrieve spam reports.
 </tr>
 <tr markdown="1">
 <td markdown="1">
-end_date
+end\_date
 
 </td>
 <td markdown="1">
@@ -96,7 +96,7 @@ No
 
 </td>
 <td markdown="1">
-Date must be in YYYY-MM-DD format and be later than the start_date parameter.
+Date must be in YYYY-MM-DD format and be later than the start\_date parameter.
 
 </td>
 <td markdown="1">
@@ -166,10 +166,13 @@ optional email addresses to search for.
 <div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/spamreports.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1 {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/spamreports.get.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;date=1
+{% endcodeblock %}
+
+     <h3>Response</h3>
 
 {% codeblock lang:javascript %}
 [
@@ -187,14 +190,19 @@ optional email addresses to search for.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/spamreports.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1 {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/spamreports.get.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;date=1
+{% endcodeblock %}
+
+		<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -213,6 +221,8 @@ optional email addresses to search for.
 </spamreports>
 
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -272,10 +282,13 @@ Email spam reports address to remove
 <div markdown="1" class="tab-pane active" id="delete-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/spamreports.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/spamreports.delete.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=emailToDelete@domain.com
+{% endcodeblock %}
+
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -284,7 +297,11 @@ Email spam reports address to remove
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -297,14 +314,18 @@ Email spam reports address to remove
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="delete-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/spamreports.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/spamreports.delete.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=emailToDelete@domain.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -316,7 +337,11 @@ Email spam reports address to remove
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -327,6 +352,8 @@ Email spam reports address to remove
 </result>
 
 {% endcodeblock %}
+
+
  </result></result>
 
 </div>

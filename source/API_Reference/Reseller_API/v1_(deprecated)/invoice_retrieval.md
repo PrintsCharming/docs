@@ -18,16 +18,18 @@ Return an array of invoice numbers to your account.
 
 |Parameter|Required|Description|
 |:--------|:-------|:----------|
-|start_date|No|Must be in YYYY-mm-dd format. This is the start date to begin your invoice search from.|
-|end_date|No|Must be in YYYY-mm-dd format and also include a start_date in the API call. This is the end date you wish to end your invoice search from.|
+|start\_date|No|Must be in YYYY-mm-dd format. This is the start date to begin your invoice search from.|
+|end\_date|No|Must be in YYYY-mm-dd format and also include a start\_date in the API call. This is the end date you wish to end your invoice search from.|
 |status|No|Must be either paid, unpaid, refunded, deferred, canceled. This is used to specify what kind of invoice you would like returned.|
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/billing.list.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/billing.list.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -44,11 +46,17 @@ Return an array of invoice numbers to your account.
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/billing.list.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai {% endcodeblock %}
 
-### Response
+
+{% codeblock %}
+https://sendgrid.com/api/billing.list.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai
+{% endcodeblock %}
+<h3>Response</h3>
+
 
 
 
@@ -62,16 +70,18 @@ Return an array of invoices.
 
 |Parameter|Required|Description|
 |:--------|:-------|:----------|
-|start_date|No|Must be in YYYY-mm-dd format. This is the start date to begin your invoice search from.|
-|end_date|No|Must be in YYYY-mm-dd format and also include a start_date in the API call. This is the end date you wish to end your invoice search from.|
+|start\_date|No|Must be in YYYY-mm-dd format. This is the start date to begin your invoice search from.|
+|end\_date|No|Must be in YYYY-mm-dd format and also include a start\_date in the API call. This is the end date you wish to end your invoice search from.|
 |status|No|Must be either paid, unpaid, refunded, deferred, canceled. This is used to specify what kind of invoice you would like returned.|
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/billing.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/billing.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -79,14 +89,17 @@ Return an array of invoices.
 <invoices>
    <invoice>
       <number>2010010001</number>
-      <package>Basic Package</package>
+      <package>Basic
+Package</package>
       <credits>10000000</credits>
-      <date_invoiced>2010-01-01 00:00:00</date_invoiced>
+      <date_invoiced>2010-01-01
+00:00:00</date_invoiced>
       <status>Paid</status>
       <amount>100</amount>
       <additional_charges>0</additional_charges>
       <overage>10</overage>
-      <type>Recurring Bill</type>
+      <type>Recurring
+Bill</type>
       <prorated>0</prorated>
       <start_date>2009-12-01</start_date>
       <end_date>2009-12-31</end_date>
@@ -97,12 +110,16 @@ Return an array of invoices.
 {% endcodeblock %}
 
 
+
+
 ### JSON Call
 
-{% codeblock %} https://sendgrid.com/api/billing.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/billing.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -121,4 +138,6 @@ Return an array of invoices.
   "final_amount": 110
 }
 {% endcodeblock %}
+
+
 

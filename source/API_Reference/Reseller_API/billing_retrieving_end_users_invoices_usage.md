@@ -19,10 +19,12 @@ Retrieve invoices/usages from customers.
 <div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.billing.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&number=2010010001&task=usag {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.billing.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&number=2010010001&task=usag
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -68,7 +70,11 @@ Retrieve invoices/usages from customers.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -86,14 +92,18 @@ Retrieve invoices/usages from customers.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.billing.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&number=2010010001&task=usag {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.billing.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&number=2010010001&task=usag
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -136,7 +146,11 @@ Retrieve invoices/usages from customers.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -147,6 +161,8 @@ Retrieve invoices/usages from customers.
   ]
 }
 {% endcodeblock %}
+
+
 
 
 </div>

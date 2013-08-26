@@ -14,7 +14,7 @@ Some e-mails are too important to do normal list management checks, such as pass
 
 |App Name|Setting Field|Description|
 |:-------|:------------|:----------|
-|bypass_list_management|enable|0 to disable  
+|bypass\_list\_management|enable|0 to disable  
 1 to enable|
 
 

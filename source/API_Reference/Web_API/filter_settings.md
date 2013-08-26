@@ -36,7 +36,7 @@ For a more detailed description of each of the Apps below, please visit the [App
 
 |Parameter|Description|Example|
 |:--------|:----------|:------|
-|enable_text|Enable click tracking in plain text emails.|0|1|
+|enable\_text|Enable click tracking in plain text emails.|0|1|
 
 * * * * *
 
@@ -84,7 +84,7 @@ example.com
 </td>
 </tr>
 <td markdown="1">
-use_from
+use\_from
 
 </td>
 <td markdown="1">
@@ -120,7 +120,7 @@ Example
 </th>
 </tr>
 <td markdown="1">
-text_html
+text\_html
 
 </td>
 <td markdown="1">
@@ -214,11 +214,11 @@ Content
 
 |Parameter|Description|Example|
 |:--------|:----------|:------|
-|utm_source|Name of the referrer source|Google, SomeDomain.com, or Marketing EmailA|
-|utm_medium|Name of the marketing medium|Email, Affiliate, or MobileApp|
-|utm_campaign|Name of the campaign|Quarter1, FallShoeSale|
-|utm_term|Identify paid keywords|Poultry, Health|
-|utm_content|Use to differentiate ads|PageA, PageB|
+|utm\_source|Name of the referrer source|Google, SomeDomain.com, or Marketing EmailA|
+|utm\_medium|Name of the marketing medium|Email, Affiliate, or MobileApp|
+|utm\_campaign|Name of the campaign|Quarter1, FallShoeSale|
+|utm\_term|Identify paid keywords|Poultry, Health|
+|utm\_content|Use to differentiate ads|PageA, PageB|
 
 * * * * *
 
@@ -314,7 +314,7 @@ Example
 </tr>
 <tr markdown="1">
 <td markdown="1">
-seedlist_option
+seedlist\_option
 
 </td>
 <td markdown="1">
@@ -336,7 +336,7 @@ The number of times per day the Seedlist should be used
 </tr>
 <tr markdown="1">
 <td markdown="1">
-keyword_frequency
+keyword\_frequency
 
 </td>
 <td markdown="1">
@@ -516,7 +516,7 @@ a tag that can be added to the content that will be replaced by SendGrid with th
 
 </td>
 <td markdown="1">
-[unsubscribe_tag]
+[unsubscribe\_tag]
 
 </td>
 </tr>

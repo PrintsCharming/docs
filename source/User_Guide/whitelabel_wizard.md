@@ -100,7 +100,7 @@ v=spf1 a mx include:sendgrid.net \~all
 </tr>
 <tr markdown="1">
 <td markdown="1">
-smtpapi._domainkey.example.com.
+smtpapi.\_domainkey.example.com.
 
 </td>
 <td markdown="1">
@@ -114,7 +114,7 @@ dkim.sendgrid.net.
 </tr>
 <tr markdown="1">
 <td markdown="1">
-smtpapi._domainkey.email.example.com.
+smtpapi.\_domainkey.email.example.com.
 
 </td>
 <td markdown="1">
@@ -132,7 +132,7 @@ dkim.sendgrid.net.
 {% info %} If you already have an SPF record, you can simply add include:sendgrid.net to this entry. Make sure to add it BEFORE the "all" mechanism as "all" always matches and typically goes at the end of the SPF record. {% endinfo %}
  **Underscore Problems?**
 
-If your DNS server does not allow underscores in CNAMES you will have problems adding the smtpapi._domainkey CNAME records. If that is the case please create the following TXT records instead:
+If your DNS server does not allow underscores in CNAMES you will have problems adding the smtpapi.\_domainkey CNAME records. If that is the case please create the following TXT records instead:
 
 <table markdown="1" class="table table-bordered table-striped">
 <tbody markdown="1">
@@ -152,7 +152,7 @@ value
 </tr>
 <tr markdown="1">
 <td markdown="1">
-smtpapi._domainkey.example.com.
+smtpapi.\_domainkey.example.com.
 
 </td>
 <td markdown="1">
@@ -166,7 +166,7 @@ See Below.
 </tr>
 <tr markdown="1">
 <td markdown="1">
-smtpapi._domainkey.email.example.com.
+smtpapi.\_domainkey.email.example.com.
 
 </td>
 <td markdown="1">

@@ -67,7 +67,7 @@ New password of customer
 </tr>
 <tr markdown="1">
 <td markdown="1">
-confirm_password
+confirm\_password
 
 </td>
 <td markdown="1">
@@ -103,7 +103,7 @@ Email address of new customer
 </tr>
 <tr markdown="1">
 <td markdown="1">
-first_name
+first\_name
 
 </td>
 <td markdown="1">
@@ -121,7 +121,7 @@ First name of new customer
 </tr>
 <tr markdown="1">
 <td markdown="1">
-last_name
+last\_name
 
 </td>
 <td markdown="1">
@@ -319,7 +319,7 @@ The domain name for whitelabel
 </tr>
 <tr markdown="1">
 <td markdown="1">
-ip_group[]
+ip\_group[]
 
 </td>
 <td markdown="1">
@@ -327,7 +327,7 @@ No
 
 </td>
 <td markdown="1">
-No more than 255 characters for each ip_group name. It must belong to you.
+No more than 255 characters for each ip\_group name. It must belong to you.
 
 </td>
 <td markdown="1">
@@ -355,7 +355,7 @@ If package allows it, you can optionally add additional IP addresses.
 </tr>
 <tr markdown="1">
 <td markdown="1">
-free_user
+free\_user
 
 </td>
 <td markdown="1">
@@ -373,7 +373,7 @@ Create a free customer
 </tr>
 <tr markdown="1">
 <td markdown="1">
-billing_date
+billing\_date
 
 </td>
 <td markdown="1">
@@ -397,10 +397,12 @@ If the new customer's billing anniversary date is different from today (or when 
 <div markdown="1" class="tab-pane" id="create-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.add.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=newcustomer@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=newcustomer@example.com&country=US&phone=555-555&free_user=tru {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.add.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=newcustomer@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=newcustomer@example.com&country=US&phone=555-555&free_user=tru
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -412,7 +414,11 @@ If the new customer's billing anniversary date is different from today (or when 
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -430,14 +436,18 @@ If the new customer's billing anniversary date is different from today (or when 
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="create-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=newcustomer@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=newcustomer@example.com&country=US&phone=555-55 {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=newcustomer@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=newcustomer@example.com&country=US&phone=555-55
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -446,7 +456,11 @@ If the new customer's billing anniversary date is different from today (or when 
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -457,6 +471,8 @@ If the new customer's billing anniversary date is different from today (or when 
   ]
 }
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -514,10 +530,12 @@ The customers username you wish to delete.
 <div markdown="1" class="tab-pane" id="delete-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=customer@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=customer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -529,7 +547,11 @@ The customers username you wish to delete.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -547,14 +569,18 @@ The customers username you wish to delete.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="delete-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=customer@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=customer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -563,7 +589,11 @@ The customers username you wish to delete.
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -574,6 +604,8 @@ The customers username you wish to delete.
   ]
 }
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -659,7 +691,7 @@ Search filter, whether or not the customer is currently active
 </tr>
 <tr markdown="1">
 <td markdown="1">
-first_name
+first\_name
 
 </td>
 <td markdown="1">
@@ -673,7 +705,7 @@ Search filter, first name of customer
 </tr>
 <tr markdown="1">
 <td markdown="1">
-last_name
+last\_name
 
 </td>
 <td markdown="1">
@@ -819,10 +851,12 @@ Must be set to *profile*
 <div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=ge {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=ge
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -834,10 +868,7 @@ Must be set to *profile*
       <active>true</active>
       <first_name>john</first_name>
       <last_name>doe</last_name>
-      <address markdown="1">
-555 any street
-
-</address>
+      <address>555 any street</address>
       <city>any city</city>
       <state>CA</state>
       <zip>91234</zip>
@@ -851,10 +882,7 @@ Must be set to *profile*
       <active>false</active>
       <first_name>jane</first_name>
       <last_name>doe</last_name>
-      <address markdown="1">
-555 any street
-
-</address>
+      <address>555 any street</address>
       <city>any city</city>
       <state>CA</state>
       <zip>91234</zip>
@@ -867,14 +895,18 @@ Must be set to *profile*
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=get {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=get
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 [
@@ -908,6 +940,8 @@ Must be set to *profile*
   }
 ]
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -983,10 +1017,12 @@ The customer you are planning to enabling
 <div markdown="1" class="tab-pane" id="enable-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=enable&user=customer@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=enable&user=customer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -998,7 +1034,11 @@ The customer you are planning to enabling
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -1011,14 +1051,18 @@ The customer you are planning to enabling
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="enable-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=enable&user=customer@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=enable&user=customer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -1027,7 +1071,11 @@ The customer you are planning to enabling
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -1035,6 +1083,8 @@ The customer you are planning to enabling
   "message": "User not found"
 }
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -1110,10 +1160,12 @@ The customer you are planning to disabling
 <div markdown="1" class="tab-pane" id="disable-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=disable&user=customer@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=disable&user=customer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -1125,7 +1177,11 @@ The customer you are planning to disabling
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -1138,14 +1194,18 @@ The customer you are planning to disabling
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="disable-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=disabl {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=disabl
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -1154,7 +1214,11 @@ The customer you are planning to disabling
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -1162,6 +1226,8 @@ The customer you are planning to disabling
   "message": "User not found"
 }
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -1221,7 +1287,7 @@ Yes
 
 </td>
 <td markdown="1">
-Must be set to *website_enable*
+Must be set to *website\_enable*
 
 </td>
 <td markdown="1">
@@ -1237,10 +1303,12 @@ The customer you are planning to grant website access
 <div markdown="1" class="tab-pane" id="website-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_enable&user=customer@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_enable&user=customer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -1252,7 +1320,11 @@ The customer you are planning to grant website access
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -1265,14 +1337,18 @@ The customer you are planning to grant website access
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="website-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_enable&user=customer@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_enable&user=customer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -1281,7 +1357,11 @@ The customer you are planning to grant website access
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -1289,6 +1369,8 @@ The customer you are planning to grant website access
   "message": "User not found"
 }
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -1348,7 +1430,7 @@ Yes
 
 </td>
 <td markdown="1">
-Must be set to *website_disable*
+Must be set to *website\_disable*
 
 </td>
 <td markdown="1">
@@ -1364,10 +1446,12 @@ The customer you are planning to disallow website access
 <div markdown="1" class="tab-pane" id="unwebsite-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_disable&user=customer@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_disable&user=customer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -1379,7 +1463,11 @@ The customer you are planning to disallow website access
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -1392,14 +1480,18 @@ The customer you are planning to disallow website access
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="unwebsite-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_disabl {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_disabl
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -1408,7 +1500,11 @@ The customer you are planning to disallow website access
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -1416,6 +1512,8 @@ The customer you are planning to disallow website access
   "message": "User not found"
 }
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -1487,7 +1585,7 @@ Customer that is registered under you
 </tr>
 <tr markdown="1">
 <td markdown="1">
-first_name
+first\_name
 
 </td>
 <td markdown="1">
@@ -1501,7 +1599,7 @@ First name of customer
 </tr>
 <tr markdown="1">
 <td markdown="1">
-last_name
+last\_name
 
 </td>
 <td markdown="1">
@@ -1633,10 +1731,12 @@ Company of customer
 <div markdown="1" class="tab-pane" id="update-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=&newLastNam {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=&newLastNam
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -1648,7 +1748,11 @@ Company of customer
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -1666,14 +1770,18 @@ Company of customer
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="update-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=&newLastNam {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=&newLastNam
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -1682,7 +1790,11 @@ Company of customer
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -1693,6 +1805,8 @@ Company of customer
   ]
 }
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -1762,7 +1876,7 @@ New password of customer
 </tr>
 <tr markdown="1">
 <td markdown="1">
-confirm_password
+confirm\_password
 
 </td>
 <td markdown="1">
@@ -1804,10 +1918,12 @@ Allows you to access password functionality
 <div markdown="1" class="tab-pane" id="password-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=password&user=customer@example.com&password=newPasword&confirm_password=newPasswor {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=password&user=customer@example.com&password=newPasword&confirm_password=newPasswor
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -1819,7 +1935,11 @@ Allows you to access password functionality
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -1837,14 +1957,18 @@ Allows you to access password functionality
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="password-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=password&user=customer@example.com&password=newPasword&confirm_password=newPasswor {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=password&user=customer@example.com&password=newPasword&confirm_password=newPasswor
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -1853,7 +1977,11 @@ Allows you to access password functionality
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -1864,6 +1992,8 @@ Allows you to access password functionality
   ]
 }
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -1975,10 +2105,12 @@ Allows you to access profile functionality
 <div markdown="1" class="tab-pane" id="name-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setUsername&user=customer@example.com&username=newcustomer@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setUsername&user=customer@example.com&username=newcustomer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -1990,7 +2122,11 @@ Allows you to access profile functionality
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -2008,14 +2144,18 @@ Allows you to access profile functionality
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="name-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setUsername&user=customer@example.com&username=newcustomer@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setUsername&user=customer@example.com&username=newcustomer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -2024,7 +2164,11 @@ Allows you to access profile functionality
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -2035,6 +2179,8 @@ Allows you to access profile functionality
   ]
 }
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -2146,10 +2292,12 @@ Allows you to access password functionality
 <div markdown="1" class="tab-pane" id="email-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setEmail&user=customer@example.com&email=newcustomer@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setEmail&user=customer@example.com&email=newcustomer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -2161,7 +2309,11 @@ Allows you to access password functionality
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -2179,14 +2331,18 @@ Allows you to access password functionality
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="email-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setEmail&user=customer@example.com&email=newcustomer@example.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setEmail&user=customer@example.com&email=newcustomer@example.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -2195,7 +2351,11 @@ Allows you to access password functionality
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -2206,6 +2366,8 @@ Allows you to access password functionality
   ]
 }
 {% endcodeblock %}
+
+
 
 
 </div>

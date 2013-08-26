@@ -10,4 +10,32 @@ CodeIgniter comes with an email sending library built in. See more information o
 
 
 {% info %} It is important to use the correct end of lines using "crlf" =\> "\\r\\n" and "newline" =\> "\\r\\n". {% endinfo %}
- {% codeblock lang:php %} <?php $this- ?>load-\>library('email'); \$this-\>email-\>initialize(array( 'protocol' =\> 'smtp', 'smtp_host' =\> 'smtp.sendgrid.net', 'smtp_user' =\> 'sendgridusername', 'smtp_pass' =\> 'sendgridpassword', 'smtp_port' =\> 587, 'crlf' =\> "\\r\\n", 'newline' =\> "\\r\\n" )); \$this-\>email-\>from('your@example.com', 'Your Name'); \$this-\>email-\>to('someone@example.com'); \$this-\>email-\>cc('another@another-example.com'); \$this-\>email-\>bcc('them@their-example.com'); \$this-\>email-\>subject('Email Test'); \$this-\>email-\>message('Testing the email class.'); \$this-\>email-\>send(); echo \$this-\>email-\>print_debugger(); ?\> {% endcodeblock %}
+ 
+
+{% codeblock lang:php %}
+<?php
+$this->load->library('email');
+
+$this->email->initialize(array(
+  'protocol' => 'smtp',
+  'smtp_host' => 'smtp.sendgrid.net',
+  'smtp_user' => 'sendgridusername',
+  'smtp_pass' => 'sendgridpassword',
+  'smtp_port' => 587,
+  'crlf' => "\r\n",
+  'newline' => "\r\n"
+));
+
+$this->email->from('your@example.com', 'Your Name');
+$this->email->to('someone@example.com');
+$this->email->cc('another@another-example.com');
+$this->email->bcc('them@their-example.com');
+$this->email->subject('Email Test');
+$this->email->message('Testing the email class.');
+$this->email->send();
+
+echo $this->email->print_debugger();
+?>
+{% endcodeblock %}
+
+

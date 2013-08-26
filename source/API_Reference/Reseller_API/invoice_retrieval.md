@@ -18,8 +18,8 @@ Return an array of invoice numbers to your account.
 
 |Parameter|Required|Description|
 |:--------|:-------|:----------|
-|start_date|No|Must be in YYYY-mm-dd format. This is the start date to begin your invoice search from.|
-|end_date|No|Must be in YYYY-mm-dd format and also include a start_date in the API call. This is the end date you wish to end your invoice search from.|
+|start\_date|No|Must be in YYYY-mm-dd format. This is the start date to begin your invoice search from.|
+|end\_date|No|Must be in YYYY-mm-dd format and also include a start\_date in the API call. This is the end date you wish to end your invoice search from.|
 |status|No|Must be either paid, unpaid, refunded, deferred, canceled. This is used to specify what kind of invoice you would like returned.|
 
 {% xmljsontabs get %}
@@ -28,10 +28,12 @@ Return an array of invoice numbers to your account.
 <div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/billing.list.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/billing.list.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -48,14 +50,18 @@ Return an array of invoice numbers to your account.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/billing.list.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/billing.list.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 [
@@ -67,6 +73,8 @@ Return an array of invoice numbers to your account.
   }
 ]
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -82,8 +90,8 @@ Return an array of invoices.
 
 |Parameter|Required|Description|
 |:--------|:-------|:----------|
-|start_date|No|Must be in YYYY-mm-dd format. This is the start date to begin your invoice search from.|
-|end_date|No|Must be in YYYY-mm-dd format and also include a start_date in the API call. This is the end date you wish to end your invoice search from.|
+|start\_date|No|Must be in YYYY-mm-dd format. This is the start date to begin your invoice search from.|
+|end\_date|No|Must be in YYYY-mm-dd format and also include a start\_date in the API call. This is the end date you wish to end your invoice search from.|
 |status|No|Must be either paid, unpaid, refunded, deferred, canceled. This is used to specify what kind of invoice you would like returned.|
 
 {% xmljsontabs invoices %}
@@ -92,10 +100,12 @@ Return an array of invoices.
 <div markdown="1" class="tab-pane" id="invoices-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/billing.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/billing.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -121,14 +131,18 @@ Return an array of invoices.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane active" id="invoices-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/billing.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/billing.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai
+{% endcodeblock %}
+<h3>Response</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -147,6 +161,8 @@ Return an array of invoices.
   "final_amount": 110
 }
 {% endcodeblock %}
+
+
 
 
 </div>

@@ -70,7 +70,7 @@ Number of days in the past for which to retrieve blocks (includes today)
 </tr>
 <tr markdown="1">
 <td markdown="1">
-start_date
+start\_date
 
 </td>
 <td markdown="1">
@@ -78,7 +78,7 @@ No
 
 </td>
 <td markdown="1">
-Date must be in YYYY-MM-DD format and be earlier than the end_date parameter.
+Date must be in YYYY-MM-DD format and be earlier than the end\_date parameter.
 
 </td>
 <td markdown="1">
@@ -88,7 +88,7 @@ The start of the date range for which to retrieve blocks.
 </tr>
 <tr markdown="1">
 <td markdown="1">
-end_date
+end\_date
 
 </td>
 <td markdown="1">
@@ -96,7 +96,7 @@ No
 
 </td>
 <td markdown="1">
-Date must be in YYYY-MM-DD format and be later than the start_date parameter.
+Date must be in YYYY-MM-DD format and be later than the start\_date parameter.
 
 </td>
 <td markdown="1">
@@ -148,10 +148,12 @@ optional beginning point in the list to retrieve from.
 <div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/blocks.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1 {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/blocks.get.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;date=1
+{% endcodeblock %} 
+      <h3>Response</h3>
 
 {% codeblock lang:javascript %}
 [
@@ -177,14 +179,18 @@ optional beginning point in the list to retrieve from.
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/blocks.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1 {% endcodeblock %}
 
-### Response
 
+{% codeblock %}
+https://sendgrid.com/api/blocks.get.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;date=1
+{% endcodeblock %}
+      <h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -205,6 +211,8 @@ optional beginning point in the list to retrieve from.
 </blocks>
 
 {% endcodeblock %}
+
+
 
 
 </div>
@@ -262,10 +270,13 @@ Email block address to remove
 <div markdown="1" class="tab-pane active" id="delete-json">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/blocks.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/blocks.delete.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=emailToDelete@domain.com
+{% endcodeblock %}
+
+          <h3>Response: Success</h3>
 
 {% codeblock lang:javascript %}
 {
@@ -274,7 +285,11 @@ Email block address to remove
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:javascript %}
@@ -287,14 +302,18 @@ Email block address to remove
 {% endcodeblock %}
 
 
+
+
 </div>
 <div markdown="1" class="tab-pane" id="delete-xml">
 ### Call
 
-{% codeblock %} https://sendgrid.com/api/blocks.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com {% endcodeblock %}
 
-### Response: Success
 
+{% codeblock %}
+https://sendgrid.com/api/blocks.delete.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=emailToDelete@domain.com
+{% endcodeblock %}
+<h3>Response: Success</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -307,7 +326,11 @@ Email block address to remove
 {% endcodeblock %}
 
 
+
+
 ### Response: Error
+
+
 
 
 {% codeblock lang:xml %}
@@ -318,6 +341,8 @@ Email block address to remove
 </result>
 
 {% endcodeblock %}
+
+
 
 
 </div>

@@ -30,7 +30,6 @@ Then enter the server details:
 -   **User Name:** SendGrid account username
 -   **Password:** SendGrid account password
 
-</p>
 ![Settings for Mail to use SendGrid SMTP]({{root_url}}/images/apple_mail_3.png "SendGrid SMTP server settings")
 
 When writing a message, there is a dropdown beneath the Subject field, where you can define the outgoing server you wish to use. This way, you can send individual messages to your regular SMTP, and the messages you need to send through SendGrid can go through us. Please note that when you select this, it will be remembered until you change the selection.
