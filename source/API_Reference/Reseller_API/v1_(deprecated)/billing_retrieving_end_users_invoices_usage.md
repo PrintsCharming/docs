@@ -6,10 +6,32 @@ navigation:
    show: true
 ---
 
-|Parameter|Required|Description|
-|:--------|:-------|:----------|
-|task|Yes|Must be set to *usage*.|
-|number|Yes|Must be the invoice number you received from SendGrid.|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>usage</em>
+            .
+         </td>
+      </tr>
+      <tr>
+         <td>number</td>
+         <td>Yes</td>
+         <td>Must be the invoice number you received from SendGrid.</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 

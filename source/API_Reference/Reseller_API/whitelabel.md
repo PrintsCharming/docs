@@ -14,10 +14,34 @@ With the whitelabel API calls you will be able to retrieve whitelabel settings r
 {% anchor h2 %} List {% endanchor %}
 
 
-|Parameter|Required|Requirements|
-|:--------|:-------|:-----------|
-|list|Yes|Must be set to *list*|
-|method|Yes|Must be set to *whitelabel*|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>list</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>list</em>
+         </td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>whitelabel</em>
+         </td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs get %}
 
@@ -87,12 +111,44 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 {% anchor h2 %} Append {% endanchor %}
 
 
-|Parameter|Required|Requirements|
-|:--------|:-------|:-----------|
-|list|Yes|Must be set to *append*|
-|user|Yes|Subuser must be registered under your account|
-|mail\_domain|Yes|Whitelabel mail\_domain used to append a whitelabel record to a subuser|
-|method|Yes|Must be set to *whitelabel*|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>list</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>append</em>
+         </td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Subuser must be registered under your account</td>
+      </tr>
+      <tr>
+         <td>mail_domain</td>
+         <td>Yes</td>
+         <td>Whitelabel mail_domain used to append a whitelabel record to a subuser</td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>whitelabel</em>
+         </td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs append %}
 

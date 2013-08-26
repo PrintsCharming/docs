@@ -8,11 +8,37 @@ navigation:
 
 Authenticate a customer on your website before displaying their account information so that you can have users manage their SendGrid account on your website completely.
 
-|Parameter|Required|Requirements|
-|:--------|:-------|:-----------|
-|user|Yes|Customer that is registered under your account.|
-|password|Yes|Password the customer submitted.|
-|method|Yes|Must be set to *auth*. Allows you to access authentication functionality|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer that is registered under your account.</td>
+      </tr>
+      <tr>
+         <td>password</td>
+         <td>Yes</td>
+         <td>Password the customer submitted.</td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>auth</em>
+            . Allows you to access authentication functionality
+         </td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 

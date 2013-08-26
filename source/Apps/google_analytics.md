@@ -18,13 +18,49 @@ We default the settings to Google's recommendations. Anything you enter into tho
 {% anchor h2 %} Settings {% endanchor %}
 
 
-|Name|Required|Description|Default Value|
-|:---|:-------|:----------|:------------|
-|Campaign Source|No|Name of the referrer source. (e.g. Google, SomeDomain.com, Marketing EmailA)|sendgrid.com|
-|Campaign Medium|No|Name of the marketing medium. (e.g. Email)|email|
-|Campaign Term|No|Identify paid keywords..||
-|Campaign Content|No|Use to differentiate ads.||
-|Campaign Name|No|Name of the campaign.|website|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Name</th>
+         <th>Required</th>
+         <th>Description</th>
+         <th>Default Value</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Campaign Source</td>
+         <td>No</td>
+         <td>Name of the referrer source. (e.g. Google, SomeDomain.com, Marketing EmailA)</td>
+         <td>sendgrid.com</td>
+      </tr>
+      <tr>
+         <td>Campaign Medium</td>
+         <td>No</td>
+         <td>Name of the marketing medium. (e.g. Email)</td>
+         <td>email</td>
+      </tr>
+      <tr>
+         <td>Campaign Term</td>
+         <td>No</td>
+         <td>Identify paid keywords..</td>
+         <td/>
+      </tr>
+      <tr>
+         <td>Campaign Content</td>
+         <td>No</td>
+         <td>Use to differentiate ads.</td>
+         <td/>
+      </tr>
+      <tr>
+         <td>Campaign Name</td>
+         <td>No</td>
+         <td>Name of the campaign.</td>
+         <td>website</td>
+      </tr>
+   </tbody>
+</table>
+
 
 
 {% anchor h2 %} Example {% endanchor %}

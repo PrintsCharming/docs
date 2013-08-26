@@ -9,10 +9,34 @@ navigation:
 {% anchor h2 %} Get Current Settings {% endanchor %}
 
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to *get*|Retrieve Parse settings|
-|user|Yes|Customer subuser must be registered under your account|The customer subuser who we will update|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>get</em>
+         </td>
+         <td>Retrieve Parse settings</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer subuser must be registered under your account</td>
+         <td>The customer subuser who we will update</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 
@@ -95,12 +119,46 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 {% anchor h2 %} Create New Entry {% endanchor %}
 
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to *set*|Set Parse settings|
-|hostname|Yes|No more than 255 characters|Hostname we will use with your email|
-|url|Yes||The parse destination|
-|user|Yes|Customer subuser must be registered under your account|The customer subuser who we will update|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>set</em>
+         </td>
+         <td>Set Parse settings</td>
+      </tr>
+      <tr>
+         <td>hostname</td>
+         <td>Yes</td>
+         <td>No more than 255 characters</td>
+         <td>Hostname we will use with your email</td>
+      </tr>
+      <tr>
+         <td>url</td>
+         <td>Yes</td>
+         <td/>
+         <td>The parse destination</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer subuser must be registered under your account</td>
+         <td>The customer subuser who we will update</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 
@@ -177,12 +235,46 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 {% anchor h2 %} Edit Entry {% endanchor %}
 
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to *update*|Set Parse settings|
-|hostname|Yes|No more than 255 characters|Hostname entry you want to update|
-|url|Yes||The parse destination|
-|user|Yes|Customer subuser must be registered under your account|The customer subuser who we will update|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>update</em>
+         </td>
+         <td>Set Parse settings</td>
+      </tr>
+      <tr>
+         <td>hostname</td>
+         <td>Yes</td>
+         <td>No more than 255 characters</td>
+         <td>Hostname entry you want to update</td>
+      </tr>
+      <tr>
+         <td>url</td>
+         <td>Yes</td>
+         <td/>
+         <td>The parse destination</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer subuser must be registered under your account</td>
+         <td>The customer subuser who we will update</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 
@@ -259,11 +351,40 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 {% anchor h2 %} Delete Entry {% endanchor %}
 
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to *delete*|Set Parse settings|
-|user|Yes|Customer subuser must be registered under your account|The customer subuser who we will update|
-|hostname|Yes|Must be the hostname you wish to delete.|The host name you will remove for your customer subuser|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>delete</em>
+         </td>
+         <td>Set Parse settings</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer subuser must be registered under your account</td>
+         <td>The customer subuser who we will update</td>
+      </tr>
+      <tr>
+         <td>hostname</td>
+         <td>Yes</td>
+         <td>Must be the hostname you wish to delete.</td>
+         <td>The host name you will remove for your customer subuser</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 

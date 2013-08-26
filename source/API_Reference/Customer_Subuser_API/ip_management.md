@@ -10,38 +10,7 @@ List
 
 Obtain a complete list of all IP's and which are free, taken or available.
 
-<table markdown="1" class="table table-bordered table-striped">
-<tbody markdown="1">
-<tr markdown="1">
-<th markdown="1">
-Parameter
 
-</th>
-<th markdown="1">
-Required
-
-</th>
-<th markdown="1">
-Requirements
-
-</th>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-list
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-Must be set to either ( all / free / taken / available )
-
-</td>
-</tr>
-</tbody>
-</table>
 Here is a brief explanation of each option available for the list parameter:
 
 all
@@ -117,52 +86,7 @@ https://sendgrid.com/apiv2/customer.ip.xml?api_user=your_sendgrid_username&api_k
 {% anchor h2 %} Subuser IP Usage {% endanchor %}
  If your account has more than one IP address, you can manage what IPs your subusers are allowed to send from. If you remove all IPs from a specified user, they will use all IPs from from your list.
 
-<table markdown="1" class="table table-bordered table-striped">
-<tbody markdown="1">
-<tr markdown="1">
-<th markdown="1">
-Parameter
 
-</th>
-<th markdown="1">
-Required
-
-</th>
-<th markdown="1">
-Requirements
-
-</th>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-task
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-Must be set to *list*
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-user
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-Subuser must be registered under your account
-
-</td>
-</tr>
-</tbody>
-</table>
 {% xmljsontabs usage %}
 
 <div markdown="1" class="tab-content">
@@ -279,80 +203,7 @@ https://sendgrid.com/apiv2/customer.sendip.json?api_user=your_sendgrid_username&
 {% anchor h2 %} Subuser IP Assignment {% endanchor %}
  You need to assign at least ONE IP to your subuser.
 
-<table markdown="1" class="table table-bordered table-striped">
-<tbody markdown="1">
-<tr markdown="1">
-<th markdown="1">
-Parameter
 
-</th>
-<th markdown="1">
-Required
-
-</th>
-<th markdown="1">
-Requirements
-
-</th>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-task
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-Must be set to *append*
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-user
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-Subuser must be registered under your account
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-set
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-Must be either: **none**: Remove all ips. **all**: Apply all possible ips to subuser. **specify**: Specify the ips to the subser. Must be a valid set of IPs (use the list call to determine valid IPs)
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-ip[]
-
-</td>
-<td markdown="1">
-No
-
-</td>
-<td markdown="1">
-If the *set* parameter is set, then you must specify the IPs. Use the ip[] parameter to specify an IP. [ IE - ip[]=255.255.255.0&ip[]=255.255.255.1 ]
-
-</td>
-</tr>
-</tbody>
-</table>
 {% xmljsontabs subuser %}
 
 <div markdown="1" class="tab-content">

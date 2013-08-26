@@ -14,28 +14,139 @@ These are actions that directly affect your customer. We provide access via XML 
 {% anchor h2 %} Create a Customer {% endanchor %}
 
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|username|Yes|No more than 64 characters|The customers new username|
-|password|Yes|Must be at least 6 characters|New password of customer|
-|confirm\_password|Yes|Must match password parameter, must be at least 6 characters|Confirm new password|
-|email|Yes|Must be in email format, no more than 64 characters|Email address of new customer|
-|first\_name|Yes|No more than 50 characters|First name of new customer|
-|last\_name|Yes|No more than 50 characters|Last name of new customer|
-|address|Yes|No more than 100 characters|Address of new customer|
-|city|Yes|No more than 100 characters|City of new customer|
-|state|Yes|No more than 100 characters|State of new customer|
-|zip|Yes|No more than 50 characters|Zip of new customer. This field is not validated for correct value. It's up to developer to check for valid zip code.|
-|country|Yes|No more than 100 characters|Country of new customer|
-|phone|Yes|No more than 50 characters|Phone number of new customer|
-|website|Yes|No more than 255 characters|Website of new customer|
-|company|Yes|No more than 255 characters|Company of new customer|
-|package|Yes|No more than 255 characters|Name of the Package to assign to customer|
-|whitelabel|Yes|No more than 255 characters|The domain name for whitelabel|
-|ip\_group[]|No|No more than 255 characters for each ip\_group name. It must belong to you.|Name of the IP Group you wish to optionally add.|
-|ip[]|No|Valid ip address that belongs to you.|If package allows it, you can optionally add additional IP addresses.|
-|free\_user|Maybe|If the new customer is a free customer, you need to specify this parameter. Either true or false.|Create a free customer|
-|billing\_date|No|If the new customer's billing anniversary date is on a different date from the time you create the customer, you need to specify this parameter. Must be in YYYY-mm-dd format. This date must be within one billing cycle from the time you create this customer. (e.g. if they sign up on 2/28/11, then the latest date you can use is 3/28/11)|If the new customer's billing anniversary date is different from today (or when you execute this API call), you can specify the first billing anniversary date|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>username</td>
+         <td>Yes</td>
+         <td>No more than 64 characters</td>
+         <td>The customers new username</td>
+      </tr>
+      <tr>
+         <td>password</td>
+         <td>Yes</td>
+         <td>Must be at least 6 characters</td>
+         <td>New password of customer</td>
+      </tr>
+      <tr>
+         <td>confirm_password</td>
+         <td>Yes</td>
+         <td>Must match password parameter, must be at least 6 characters</td>
+         <td>Confirm new password</td>
+      </tr>
+      <tr>
+         <td>email</td>
+         <td>Yes</td>
+         <td>Must be in email format, no more than 64 characters</td>
+         <td>Email address of new customer</td>
+      </tr>
+      <tr>
+         <td>first_name</td>
+         <td>Yes</td>
+         <td>No more than 50 characters</td>
+         <td>First name of new customer</td>
+      </tr>
+      <tr>
+         <td>last_name</td>
+         <td>Yes</td>
+         <td>No more than 50 characters</td>
+         <td>Last name of new customer</td>
+      </tr>
+      <tr>
+         <td>address</td>
+         <td>Yes</td>
+         <td>No more than 100 characters</td>
+         <td>Address of new customer</td>
+      </tr>
+      <tr>
+         <td>city</td>
+         <td>Yes</td>
+         <td>No more than 100 characters</td>
+         <td>City of new customer</td>
+      </tr>
+      <tr>
+         <td>state</td>
+         <td>Yes</td>
+         <td>No more than 100 characters</td>
+         <td>State of new customer</td>
+      </tr>
+      <tr>
+         <td>zip</td>
+         <td>Yes</td>
+         <td>No more than 50 characters</td>
+         <td>Zip of new customer. This field is not validated for correct value. It's up to developer to check for valid zip code.</td>
+      </tr>
+      <tr>
+         <td>country</td>
+         <td>Yes</td>
+         <td>No more than 100 characters</td>
+         <td>Country of new customer</td>
+      </tr>
+      <tr>
+         <td>phone</td>
+         <td>Yes</td>
+         <td>No more than 50 characters</td>
+         <td>Phone number of new customer</td>
+      </tr>
+      <tr>
+         <td>website</td>
+         <td>Yes</td>
+         <td>No more than 255 characters</td>
+         <td>Website of new customer</td>
+      </tr>
+      <tr>
+         <td>company</td>
+         <td>Yes</td>
+         <td>No more than 255 characters</td>
+         <td>Company of new customer</td>
+      </tr>
+      <tr>
+         <td>package</td>
+         <td>Yes</td>
+         <td>No more than 255 characters</td>
+         <td>Name of the Package to assign to customer</td>
+      </tr>
+      <tr>
+         <td>whitelabel</td>
+         <td>Yes</td>
+         <td>No more than 255 characters</td>
+         <td>The domain name for whitelabel</td>
+      </tr>
+      <tr>
+         <td>ip_group[]</td>
+         <td>No</td>
+         <td>No more than 255 characters for each ip_group name. It must belong to you.</td>
+         <td>Name of the IP Group you wish to optionally add.</td>
+      </tr>
+      <tr>
+         <td>ip[]</td>
+         <td>No</td>
+         <td>Valid ip address that belongs to you.</td>
+         <td>If package allows it, you can optionally add additional IP addresses.</td>
+      </tr>
+      <tr>
+         <td>free_user</td>
+         <td>Maybe</td>
+         <td>If the new customer is a free customer, you need to specify this parameter. Either true or false.</td>
+         <td>Create a free customer</td>
+      </tr>
+      <tr>
+         <td>billing_date</td>
+         <td>No</td>
+         <td>If the new customer's billing anniversary date is on a different date from the time you create the customer, you need to specify this parameter. Must be in YYYY-mm-dd format. This date must be within one billing cycle from the time you create this customer. (e.g. if they sign up on 2/28/11, then the latest date you can use is 3/28/11)</td>
+         <td>If the new customer's billing anniversary date is different from today (or when you execute this API call), you can specify the first billing anniversary date</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 
@@ -125,9 +236,25 @@ Remove a customer from your account. This is **not** the same as disabling a cus
 
 This is the same thing as closing out a customers account at the end of their billing cycle.
 
-|Parameter|Required|Requirements|Parameter|
-|:--------|:-------|:-----------|:--------|
-|user|Yes|Must be a customer registered under your account.|The customers username you wish to delete.|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Parameter</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Must be a customer registered under your account.</td>
+         <td>The customers username you wish to delete.</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 
@@ -213,23 +340,100 @@ Retrieve Customers
 
 Obtain a complete list of all customers.
 
-|Parameter|Required|Description|
-|:--------|:-------|:----------|
-|task|Yes|Must be set to **get** in order to retrieve user information|
-|username|No|Search filter, customer that is registered under you|
-|email|No|Search filter, email address customer was registered with|
-|active|No|Search filter, whether or not the customer is currently active|
-|first\_name|No|Search filter, first name of customer|
-|last\_name|No|Search filter, last name of customer|
-|address|No|Search filter, address of customer|
-|city|No|Search filter, city of customer|
-|state|No|Search filter, state of customer|
-|country|No|Search filter, country of customer|
-|zip|No|Search filter, zipcode of customer|
-|phone|No|Search filter, phone number of customer|
-|website|No|Search filter, website of customer|
-|company|No|Search filter, company of customer|
-|method|Yes|Must be set to *profile*|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <strong>get</strong>
+            in order to retrieve user information
+         </td>
+      </tr>
+      <tr>
+         <td>username</td>
+         <td>No</td>
+         <td>Search filter, customer that is registered under you</td>
+      </tr>
+      <tr>
+         <td>email</td>
+         <td>No</td>
+         <td>Search filter, email address customer was registered with</td>
+      </tr>
+      <tr>
+         <td>active</td>
+         <td>No</td>
+         <td>Search filter, whether or not the customer is currently active</td>
+      </tr>
+      <tr>
+         <td>first_name</td>
+         <td>No</td>
+         <td>Search filter, first name of customer</td>
+      </tr>
+      <tr>
+         <td>last_name</td>
+         <td>No</td>
+         <td>Search filter, last name of customer</td>
+      </tr>
+      <tr>
+         <td>address</td>
+         <td>No</td>
+         <td>Search filter, address of customer</td>
+      </tr>
+      <tr>
+         <td>city</td>
+         <td>No</td>
+         <td>Search filter, city of customer</td>
+      </tr>
+      <tr>
+         <td>state</td>
+         <td>No</td>
+         <td>Search filter, state of customer</td>
+      </tr>
+      <tr>
+         <td>country</td>
+         <td>No</td>
+         <td>Search filter, country of customer</td>
+      </tr>
+      <tr>
+         <td>zip</td>
+         <td>No</td>
+         <td>Search filter, zipcode of customer</td>
+      </tr>
+      <tr>
+         <td>phone</td>
+         <td>No</td>
+         <td>Search filter, phone number of customer</td>
+      </tr>
+      <tr>
+         <td>website</td>
+         <td>No</td>
+         <td>Search filter, website of customer</td>
+      </tr>
+      <tr>
+         <td>company</td>
+         <td>No</td>
+         <td>Search filter, company of customer</td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>profile</em>
+         </td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 
@@ -300,10 +504,34 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 Enable a customer so they may start sending out emails again. This call will not enable website access.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|user|Yes|Must be in email format|The customer you are planning to enabling|
-|method|Yes|Must be set to *enable*|The customer you are planning to enabling|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Must be in email format</td>
+         <td>The customer you are planning to enabling</td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>enable</em>
+         </td>
+         <td>The customer you are planning to enabling</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 
@@ -383,10 +611,34 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 This prevents them from sending out emails with SendGrid.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|username|Yes|Must be in email format|The customer you are planning to disabling|
-|method|Yes|Must be set to *disable*|The customer you are planning to disabling|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>username</td>
+         <td>Yes</td>
+         <td>Must be in email format</td>
+         <td>The customer you are planning to disabling</td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>disable</em>
+         </td>
+         <td>The customer you are planning to disabling</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 
@@ -466,10 +718,34 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 Allow a customer to login to the SendGrid.com website. This call will not enable the customer from sending out emails.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|user|Yes|Must be in email format|The customer you are planning to grant website access|
-|method|Yes|Must be set to *website\_enable*|The customer you are planning to grant website access|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Must be in email format</td>
+         <td>The customer you are planning to grant website access</td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>website_enable</em>
+         </td>
+         <td>The customer you are planning to grant website access</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 
@@ -549,10 +825,34 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 Disallow a customer to login to the SendGrid.com website. This call will not prevent them from sending out emails.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|user|Yes|Must be in email format|The customer you are planning to disallow website access|
-|method|Yes|Must be set to *website\_disable*|The customer you are planning to disallow website access|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Must be in email format</td>
+         <td>The customer you are planning to disallow website access</td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>website_disable</em>
+         </td>
+         <td>The customer you are planning to disallow website access</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 
@@ -632,21 +932,90 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 Allows you to update your customers profile information
 
-|Parameter|Required|Description|
-|:--------|:-------|:----------|
-|task|Yes|Must be set to **set** in order to update profile information|
-|method|Yes|Must be set to *profile*|
-|user|Yes|Customer that is registered under you|
-|first\_name|No|First name of customer|
-|last\_name|No|Last name of customer|
-|address|No|Address of customer|
-|city|No|City of customer|
-|state|No|State of customer|
-|country|No|Country of customer|
-|zip|No|Zipcode of customer|
-|phone|No|Phone number of customer|
-|website|No|Website of customer|
-|company|No|Company of customer|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <strong>set</strong>
+            in order to update profile information
+         </td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>profile</em>
+         </td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer that is registered under you</td>
+      </tr>
+      <tr>
+         <td>first_name</td>
+         <td>No</td>
+         <td>First name of customer</td>
+      </tr>
+      <tr>
+         <td>last_name</td>
+         <td>No</td>
+         <td>Last name of customer</td>
+      </tr>
+      <tr>
+         <td>address</td>
+         <td>No</td>
+         <td>Address of customer</td>
+      </tr>
+      <tr>
+         <td>city</td>
+         <td>No</td>
+         <td>City of customer</td>
+      </tr>
+      <tr>
+         <td>state</td>
+         <td>No</td>
+         <td>State of customer</td>
+      </tr>
+      <tr>
+         <td>country</td>
+         <td>No</td>
+         <td>Country of customer</td>
+      </tr>
+      <tr>
+         <td>zip</td>
+         <td>No</td>
+         <td>Zipcode of customer</td>
+      </tr>
+      <tr>
+         <td>phone</td>
+         <td>No</td>
+         <td>Phone number of customer</td>
+      </tr>
+      <tr>
+         <td>website</td>
+         <td>No</td>
+         <td>Website of customer</td>
+      </tr>
+      <tr>
+         <td>company</td>
+         <td>No</td>
+         <td>Company of customer</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 
@@ -734,12 +1103,46 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 Passwords are encrypted by default and therefore cannot be retrieved; however, you can reset a customers password.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|user|Yes|Customer must be registered under you|The customer you are planning to reset the password|
-|password|Yes|Must be at least 6 characters|New password of customer|
-|confirm\_password|Yes|Must match password parameter and be at least 6 characters|Confirm new password|
-|method|Yes|Must be set to *password*|Allows you to access password functionality|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer must be registered under you</td>
+         <td>The customer you are planning to reset the password</td>
+      </tr>
+      <tr>
+         <td>password</td>
+         <td>Yes</td>
+         <td>Must be at least 6 characters</td>
+         <td>New password of customer</td>
+      </tr>
+      <tr>
+         <td>confirm_password</td>
+         <td>Yes</td>
+         <td>Must match password parameter and be at least 6 characters</td>
+         <td>Confirm new password</td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>password</em>
+         </td>
+         <td>Allows you to access password functionality</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 
@@ -827,12 +1230,57 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 Note that your customer account username is used to login to our SMTP server *and* the website and changes take effect immediately.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to **setUsername**|This will let us know you want to update your customers username. This is the new username your customer will be authenticating with our SMTP servers *and* to access the website. This update takes effect immediately|
-|user|Yes|Customer must be registered under your account|The user we will be updating their username for|
-|username|Yes|Must be in email format, not more than 100 characters, cannot be already taken and cannot contain SendGrid.com in the domain name|This is the new username we will be authenticating with our SMTP servers *and* to access our site. This update takes effect immediately|
-|method|Yes|Must be set to *profile*|Allows you to access profile functionality|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <strong>setUsername</strong>
+         </td>
+         <td>
+            This will let us know you want to update your customers username. This is the new username your customer will be authenticating with our SMTP servers
+            <em>and</em>
+            to access the website. This update takes effect immediately
+         </td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer must be registered under your account</td>
+         <td>The user we will be updating their username for</td>
+      </tr>
+      <tr>
+         <td>username</td>
+         <td>Yes</td>
+         <td>Must be in email format, not more than 100 characters, cannot be already taken and cannot contain SendGrid.com in the domain name</td>
+         <td>
+            This is the new username we will be authenticating with our SMTP servers
+            <em>and</em>
+            to access our site. This update takes effect immediately
+         </td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>profile</em>
+         </td>
+         <td>Allows you to access profile functionality</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 
@@ -920,12 +1368,49 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 This is the contact email we use for your customers. Changes take place immediately. It is your responsibility to validate the contact email.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to **setEmail**|This will let us know you want to update your customers email address. This update takes effect immediately|
-|user|Yes|Customer must be registered under your account|The user we will be updating their username for|
-|email|Yes|Must be in email format, not more than 100 characters|This is the new email address we will use for contacting customer. This update takes effect immediately|
-|method|Yes|Must be set to *password*|Allows you to access password functionality|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <strong>setEmail</strong>
+         </td>
+         <td>This will let us know you want to update your customers email address. This update takes effect immediately</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer must be registered under your account</td>
+         <td>The user we will be updating their username for</td>
+      </tr>
+      <tr>
+         <td>email</td>
+         <td>Yes</td>
+         <td>Must be in email format, not more than 100 characters</td>
+         <td>This is the new email address we will use for contacting customer. This update takes effect immediately</td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>password</em>
+         </td>
+         <td>Allows you to access password functionality</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 

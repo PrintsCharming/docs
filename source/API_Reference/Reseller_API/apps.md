@@ -13,11 +13,43 @@ List all of the available apps.
 
 Note: The *name* entry is used in all the other API calls to identify a app.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to *getavailable*|Retrieve Available Apps|
-|user|Yes|Customer must be registered under your account|The customer who we will update|
-|method|Yes|Must be set to *apps*|Allows you to access apps functionality|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>getavailable</em>
+         </td>
+         <td>Retrieve Available Apps</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer must be registered under your account</td>
+         <td>The customer who we will update</td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>apps</em>
+         </td>
+         <td>Allows you to access apps functionality</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs get %}
 
@@ -82,11 +114,43 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 {% anchor h2 %} Activate App {% endanchor %}
 
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to *activate*|Retrieve Available Apps|
-|user|Yes|Customer must be registered under your account|The customer who we will update|
-|method|Yes|Must be set to *apps*|Allows you to access apps functionality|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>activate</em>
+         </td>
+         <td>Retrieve Available Apps</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer must be registered under your account</td>
+         <td>The customer who we will update</td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>apps</em>
+         </td>
+         <td>Allows you to access apps functionality</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs activate %}
 
@@ -142,11 +206,43 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 {% anchor h2 %} Deactivate App {% endanchor %}
 
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to *deactivate*|Retrieve Available Apps|
-|user|Yes|Customer must be registered under your account|The customer who we will update|
-|method|Yes|Must be set to *apps*|Allows you to access apps functionality|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>deactivate</em>
+         </td>
+         <td>Retrieve Available Apps</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer must be registered under your account</td>
+         <td>The customer who we will update</td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>apps</em>
+         </td>
+         <td>Allows you to access apps functionality</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs deactivate %}
 

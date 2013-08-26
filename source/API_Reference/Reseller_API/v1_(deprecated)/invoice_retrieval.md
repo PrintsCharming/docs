@@ -16,11 +16,33 @@ Retrieve your invoice information.
 
 Return an array of invoice numbers to your account.
 
-|Parameter|Required|Description|
-|:--------|:-------|:----------|
-|start\_date|No|Must be in YYYY-mm-dd format. This is the start date to begin your invoice search from.|
-|end\_date|No|Must be in YYYY-mm-dd format and also include a start\_date in the API call. This is the end date you wish to end your invoice search from.|
-|status|No|Must be either paid, unpaid, refunded, deferred, canceled. This is used to specify what kind of invoice you would like returned.|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>start_date</td>
+         <td>No</td>
+         <td>Must be in YYYY-mm-dd format. This is the start date to begin your invoice search from.</td>
+      </tr>
+      <tr>
+         <td>end_date</td>
+         <td>No</td>
+         <td>Must be in YYYY-mm-dd format and also include a start_date in the API call. This is the end date you wish to end your invoice search from.</td>
+      </tr>
+      <tr>
+         <td>status</td>
+         <td>No</td>
+         <td>Must be either paid, unpaid, refunded, deferred, canceled. This is used to specify what kind of invoice you would like returned.</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 
@@ -68,11 +90,33 @@ https://sendgrid.com/api/billing.list.json?api_user=your_sendgrid_username&api_k
 
 Return an array of invoices.
 
-|Parameter|Required|Description|
-|:--------|:-------|:----------|
-|start\_date|No|Must be in YYYY-mm-dd format. This is the start date to begin your invoice search from.|
-|end\_date|No|Must be in YYYY-mm-dd format and also include a start\_date in the API call. This is the end date you wish to end your invoice search from.|
-|status|No|Must be either paid, unpaid, refunded, deferred, canceled. This is used to specify what kind of invoice you would like returned.|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>start_date</td>
+         <td>No</td>
+         <td>Must be in YYYY-mm-dd format. This is the start date to begin your invoice search from.</td>
+      </tr>
+      <tr>
+         <td>end_date</td>
+         <td>No</td>
+         <td>Must be in YYYY-mm-dd format and also include a start_date in the API call. This is the end date you wish to end your invoice search from.</td>
+      </tr>
+      <tr>
+         <td>status</td>
+         <td>No</td>
+         <td>Must be either paid, unpaid, refunded, deferred, canceled. This is used to specify what kind of invoice you would like returned.</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 

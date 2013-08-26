@@ -90,150 +90,7 @@ https://sendgrid.com/api/profile.get.xml?api_user=your_sendgrid_username&api_key
 {% anchor h2 %} set {% endanchor %}
 
 
-<table markdown="1" class="table table-bordered table-striped">
-<tbody markdown="1">
-<tr markdown="1">
-<th markdown="1">
-Parameter
 
-</th>
-<th markdown="1">
-Required
-
-</th>
-<th markdown="1">
-Description
-
-</th>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-first\_name
-
-</td>
-<td markdown="1">
-No
-
-</td>
-<td markdown="1">
-Your first name
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-last\_name
-
-</td>
-<td markdown="1">
-No
-
-</td>
-<td markdown="1">
-Your last name
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-address
-
-</td>
-<td markdown="1">
-No
-
-</td>
-<td markdown="1">
-Company address
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-city
-
-</td>
-<td markdown="1">
-No
-
-</td>
-<td markdown="1">
-City where your company is located
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-state
-
-</td>
-<td markdown="1">
-No
-
-</td>
-<td markdown="1">
-State where your company is located
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-country
-
-</td>
-<td markdown="1">
-No
-
-</td>
-<td markdown="1">
-Country where your company is located
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-zip
-
-</td>
-<td markdown="1">
-No
-
-</td>
-<td markdown="1">
-Zipcode where your company is located
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-phone
-
-</td>
-<td markdown="1">
-No
-
-</td>
-<td markdown="1">
-Valid phone number where we can reach you
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-website
-
-</td>
-<td markdown="1">
-No
-
-</td>
-<td markdown="1">
-Your company's website
-
-</td>
-</tr>
-</tbody>
-</table>
 {% xmljsontabs set %}
 
 <div markdown="1" class="tab-content">
@@ -328,64 +185,7 @@ https://sendgrid.com/api/profile.set.xml?api_user=your_sendgrid_username&api_key
 {% anchor h2 %} setPassword {% endanchor %}
 
 
-<table markdown="1" class="table table-bordered table-striped">
-<tbody markdown="1">
-<tr markdown="1">
-<th markdown="1">
-Parameter
 
-</th>
-<th markdown="1">
-Required
-
-</th>
-<th markdown="1">
-Requirements
-
-</th>
-<th markdown="1">
-Description
-
-</th>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-password
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-Must be at least 6 characters
-
-</td>
-<td markdown="1">
-Your new password
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-confirm\_password
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-Must match password parameter and be at least 6 characters long
-
-</td>
-<td markdown="1">
-Confrim new password
-
-</td>
-</tr>
-</tbody>
-</table>
 {% xmljsontabs reset %}
 
 <div markdown="1" class="tab-content">
@@ -481,23 +281,7 @@ Please note, your account username is used to login to our SMTP server and the w
 {% endwarning %}
 
 
- <table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>username</td>
-         <td>Yes</td>
-         <td>Must not exceed 100 characters. The username cannot be already taken or       contain the SendGrid.com domain</td>
-         <td>This is the new username we will be authenticating with our SMTP servers and       our website. Changes take effect immediately</td>
-      </tr>
-   </tbody>
-</table>
-
+ 
 
 
 {% xmljsontabs setusername %}
@@ -598,22 +382,6 @@ Please note, we send out a confirmation email to the new email account in order 
 {% endinfo %}
 
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>email</td>
-         <td>Yes</td>
-         <td>Must be in email format and not more than 100 characters</td>
-         <td>This is the new email address we will be contacting you with. Changes take      effect immediately</td>
-      </tr>
-   </tbody>
-</table>
 
 
 

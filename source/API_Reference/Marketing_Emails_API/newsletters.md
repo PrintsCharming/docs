@@ -14,13 +14,49 @@ This endpoint allows you to add, view, or remove marketing emails.
 
 Create a new Marketing Email.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|identity|Yes|Must be an existing Identity|The Identity that will be used for the Marketing Email being created.|
-|name|Yes|None|The name that will be used for the Marketing Email being created.|
-|subject|Yes|None|The subject that will be used for the Marketing Email being created.|
-|text|Yes|None|The text portion of the Marketing Email being created.|
-|html|Yes|None|The html portion of the Marketing Email being created.|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>identity</td>
+         <td>Yes</td>
+         <td>Must be an existing Identity</td>
+         <td>The Identity that will be used for the Marketing Email being created.</td>
+      </tr>
+      <tr>
+         <td>name</td>
+         <td>Yes</td>
+         <td>None</td>
+         <td>The name that will be used for the Marketing Email being created.</td>
+      </tr>
+      <tr>
+         <td>subject</td>
+         <td>Yes</td>
+         <td>None</td>
+         <td>The subject that will be used for the Marketing Email being created.</td>
+      </tr>
+      <tr>
+         <td>text</td>
+         <td>Yes</td>
+         <td>None</td>
+         <td>The text portion of the Marketing Email being created.</td>
+      </tr>
+      <tr>
+         <td>html</td>
+         <td>Yes</td>
+         <td>None</td>
+         <td>The html portion of the Marketing Email being created.</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs create %}
 
@@ -112,135 +148,7 @@ https://sendgrid.com/api/newsletter/add.xml?identity=Sender_Address&name=SendGri
 
 Edit an existing Marketing Email.
 
-<table markdown="1" class="table table-bordered table-striped">
-<tr markdown="1">
-<th markdown="1">
-Parameter
 
-</th>
-<th markdown="1">
-Required
-
-</th>
-<th markdown="1">
-Requirements
-
-</th>
-<th markdown="1">
-Description
-
-</th>
-</tr>
-<td markdown="1">
-name
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-Must be an existing Identity
-
-</td>
-<td markdown="1">
-The name of the Marketing Email being updated.
-
-</td>
-</tr>
-<tr markdown="1">
-<tr markdown="1">
-<td markdown="1">
-newname
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-None
-
-</td>
-<td markdown="1">
-The new name for the Marketing Email being edited.
-
-</td>
-</tr>
-<tr markdown="1">
-<tr markdown="1">
-<td markdown="1">
-identity
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-Must be an existing Identity
-
-</td>
-<td markdown="1">
-The new Identity for the Marketing Email being edited.
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-subject
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-None
-
-</td>
-<td markdown="1">
-The new subject that will be used for the Marketing Email being edited.
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-text
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-None
-
-</td>
-<td markdown="1">
-The new text portion of the Marketing Email being edited.
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-html
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-None
-
-</td>
-<td markdown="1">
-The new html portion of the Marketing Email being edited.
-
-</td>
-</tr>
-</table>
 {% xmljsontabs edit %}
 
 <div markdown="1" class="tab-content">
@@ -331,9 +239,25 @@ https://sendgrid.com/api/newsletter/edit.xml?identity=Sender_Address&name=SendGr
 
 Retrieve the contents of an existing Marketing Email.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|name|Yes|Must be an existing Marketing Email|Retrieve the content of an existing Marketing Email.|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>name</td>
+         <td>Yes</td>
+         <td>Must be an existing Marketing Email</td>
+         <td>Retrieve the content of an existing Marketing Email.</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs get %}
 
@@ -443,9 +367,25 @@ https://sendgrid.com/api/newsletter/get.xml?name=SendGrid_Test&api_user=your_sen
 
 Retrieve a list of all existing Marketing Email.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|name|No|Must be an existing Marketing Email|Search to see if a specific Marketing Email exists rather than a list of all Marketing Emails.|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>name</td>
+         <td>No</td>
+         <td>Must be an existing Marketing Email</td>
+         <td>Search to see if a specific Marketing Email exists rather than a list of all Marketing Emails.</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs list %}
 
@@ -567,9 +507,25 @@ https://sendgrid.com/api/newsletter/list.xml?&api_user=your_sendgrid_username&ap
 
 Remove an existing Marketing Email.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|name|Yes|Must be an existing Marketing Email|Remove the Marketing Email with this name.|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>name</td>
+         <td>Yes</td>
+         <td>Must be an existing Marketing Email</td>
+         <td>Remove the Marketing Email with this name.</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs delete %}
 

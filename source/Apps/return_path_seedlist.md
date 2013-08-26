@@ -15,11 +15,37 @@ The Return Path Seedlist App allows customers to easily use Return Path's Mailbo
 {% anchor h2 %} Settings {% endanchor %}
 
 
-|Name|Required|Description|
-|:---|:-------|:----------|
-|Global Frequency|No|If you are not using subject based keywords, select this option.|
-|Use Lists|No|Select this option to specify subjects that will be used to identify this category of message.|
-|Frequency|Yes|The number of times per day the Seedlist should be used.|
-|Email List|Yes|The addresses in the Seedlist.|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Name</th>
+         <th>Required</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Global Frequency</td>
+         <td>No</td>
+         <td>If you are not using subject based keywords, select this option.</td>
+      </tr>
+      <tr>
+         <td>Use Lists</td>
+         <td>No</td>
+         <td>Select this option to specify subjects that will be used to identify this category of message.</td>
+      </tr>
+      <tr>
+         <td>Frequency</td>
+         <td>Yes</td>
+         <td>The number of times per day the Seedlist should be used.</td>
+      </tr>
+      <tr>
+         <td>Email List</td>
+         <td>Yes</td>
+         <td>The addresses in the Seedlist.</td>
+      </tr>
+   </tbody>
+</table>
+
 
 

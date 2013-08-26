@@ -12,8 +12,22 @@ Automatically sends a blind carbon copy to an address for every e-mail sent with
 {% anchor h2 %} Settings {% endanchor %}
 
 
-|Name|Required|Description|
-|:---|:-------|:----------|
-|Email|Yes|Sets the entered address to be the BCC recipient.|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Name</th>
+         <th>Required</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Email</td>
+         <td>Yes</td>
+         <td>Sets the entered address to be the BCC recipient.</td>
+      </tr>
+   </tbody>
+</table>
+
 
 

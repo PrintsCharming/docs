@@ -8,9 +8,27 @@ navigation:
 
 Retrieve invoices/usages from end users before your scheduled billing date.
 
-|Parameter|Required|Description|
-|:--------|:-------|:----------|
-|task|Yes|Must be set to *current*.|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>current</em>
+            .
+         </td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 

@@ -9,12 +9,49 @@ navigation:
 {% anchor h2 %} Retrieve Invalid Emails {% endanchor %}
 
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|user|Yes|Customer must be registered under your account|The customer we are retrieving invalid emails from|
-|task|Yes|Must be set to *get*|This will allow you to retrieve the invalid emails for the specified customer|
-|date|No|Must be set to 1|Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS|
-|method|Yes|Must be set to *invalidemails*|Allows you to access invalid email functionality|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer must be registered under your account</td>
+         <td>The customer we are retrieving invalid emails from</td>
+      </tr>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>get</em>
+         </td>
+         <td>This will allow you to retrieve the invalid emails for the specified customer</td>
+      </tr>
+      <tr>
+         <td>date</td>
+         <td>No</td>
+         <td>Must be set to 1</td>
+         <td>Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>invalidemails</em>
+         </td>
+         <td>Allows you to access invalid email functionality</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs get %}
 
@@ -100,12 +137,49 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 
 Since SendGrid does not deliver to invalid emails, users can remove invalid emails from their list at any time if re-delivery to a spam reported address is desired.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|user|Yes|Customer must be registered under your account|The customer we are retrieving invalid emails from|
-|task|Yes|Must be set to *delete*|This will allow you to delete a invalid email for the specified customer|
-|email|No|Must be a invalid email|You must specify the invalid emails to remove|
-|method|Yes|Must be set to *invalidemails*|Allows you to access invalid emails functionality|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer must be registered under your account</td>
+         <td>The customer we are retrieving invalid emails from</td>
+      </tr>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>delete</em>
+         </td>
+         <td>This will allow you to delete a invalid email for the specified customer</td>
+      </tr>
+      <tr>
+         <td>email</td>
+         <td>No</td>
+         <td>Must be a invalid email</td>
+         <td>You must specify the invalid emails to remove</td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>invalidemails</em>
+         </td>
+         <td>Allows you to access invalid emails functionality</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs delete %}
 

@@ -9,10 +9,34 @@ navigation:
 {% anchor h2 %} Retrieve {% endanchor %}
 
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to *get*|This will allow you to retrieve the event notification url for the specified customer subuser|
-|user|Yes|Customer subuser must be registered under your account|The username of the customer subuser|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>get</em>
+         </td>
+         <td>This will allow you to retrieve the event notification url for the specified customer subuser</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer subuser must be registered under your account</td>
+         <td>The username of the customer subuser</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs get %}
 
@@ -66,11 +90,40 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_us
 {% anchor h2 %} Update / Set URL {% endanchor %}
 
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to *set*|This will allow you to retrieve the event notification url for the specified customer subuser|
-|user|Yes|Customer subuser must be registered under your account|The name of the customer subuser|
-|url|Yes|The notification URL|This is the new event notification URL|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>set</em>
+         </td>
+         <td>This will allow you to retrieve the event notification url for the specified customer subuser</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer subuser must be registered under your account</td>
+         <td>The name of the customer subuser</td>
+      </tr>
+      <tr>
+         <td>url</td>
+         <td>Yes</td>
+         <td>The notification URL</td>
+         <td>This is the new event notification URL</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs update %}
 
@@ -126,10 +179,34 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_us
 {% anchor h2 %} Delete {% endanchor %}
 
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to *delete*|This will allow you to delete the event notification url for the specified customer subuser|
-|user|Yes|Customer subuser must be registered under your account|The name of the customer subuser|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>delete</em>
+         </td>
+         <td>This will allow you to delete the event notification url for the specified customer subuser</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer subuser must be registered under your account</td>
+         <td>The name of the customer subuser</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs delete %}
 

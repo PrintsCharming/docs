@@ -14,10 +14,31 @@ This endpoint allows you to manage entries in your Recipient Lists.
 
 Add one or more emails to a Recipient List.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|list|Yes|Must be an existing Recipient List.|The list which you are adding email addresses too.|
-|data|Yes|Must be a valid JSON string matching the required format. Limited to a 1000 entries maximum.|Specify the name, email address, and additional fields to add to the specified Recipient List.|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>list</td>
+         <td>Yes</td>
+         <td>Must be an existing Recipient List.</td>
+         <td>The list which you are adding email addresses too.</td>
+      </tr>
+      <tr>
+         <td>data</td>
+         <td>Yes</td>
+         <td>Must be a valid JSON string matching the required format. Limited to a 1000 entries maximum.</td>
+         <td>Specify the name, email address, and additional fields to add to the specified Recipient List.</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs add %}
 
@@ -138,10 +159,31 @@ Add an email recipient with multiple data fields:
 
 Get the email addresses and associated fields for a Recipient List.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|list|Yes|Must be an existing Recipient List.|The list you are searching.|
-|email|No|Must be an email address or list of addresses.|Optional email addresses to search for in the Recipient List.|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>list</td>
+         <td>Yes</td>
+         <td>Must be an existing Recipient List.</td>
+         <td>The list you are searching.</td>
+      </tr>
+      <tr>
+         <td>email</td>
+         <td>No</td>
+         <td>Must be an email address or list of addresses.</td>
+         <td>Optional email addresses to search for in the Recipient List.</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs get %}
 
@@ -241,10 +283,31 @@ https://sendgrid.com/api/newsletter/lists/email/get.xml?list=Test&api_user=your_
 
 Remove one or more emails from a Recipient List.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|list|Yes|Must be an existing Recipient List.|The list which you are removing email addresses from.|
-|email|Yes|Must be an email or emails in the Recipient List.|Specify the email address or email addresses you wish to remove from the specified Recipient List.|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>list</td>
+         <td>Yes</td>
+         <td>Must be an existing Recipient List.</td>
+         <td>The list which you are removing email addresses from.</td>
+      </tr>
+      <tr>
+         <td>email</td>
+         <td>Yes</td>
+         <td>Must be an email or emails in the Recipient List.</td>
+         <td>Specify the email address or email addresses you wish to remove from the specified Recipient List.</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs delete %}
 

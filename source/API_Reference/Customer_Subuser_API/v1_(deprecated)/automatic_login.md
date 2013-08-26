@@ -13,64 +13,7 @@ Allow subusers to manage their account from your website using an iframe to our 
 {% anchor h2 %} Initial API Call {% endanchor %}
  In order to login your subuser, you need to contact our web API to retrieve the unique URL to automatically login your subuser. Then display the generated URL to automatically login your subuser.
 
-<table markdown="1" class="table table-bordered table-striped">
-<tbody markdown="1">
-<tr markdown="1">
-<th markdown="1">
-Parameter
 
-</th>
-<th markdown="1">
-Required
-
-</th>
-<th markdown="1">
-Requirements
-
-</th>
-<th markdown="1">
-Description
-
-</th>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-user
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-Must be set in email format
-
-</td>
-<td markdown="1">
-This is the subuser you will attempt to automatically login
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-password
-
-</td>
-<td markdown="1">
-No
-
-</td>
-<td markdown="1">
-Your subuser password.
-
-</td>
-<td markdown="1">
-Authenticate the subuser with this API call.
-
-</td>
-</tr>
-</tbody>
-</table>
 {% xmljsontabs call %}
 
 <div markdown="1" class="tab-content">

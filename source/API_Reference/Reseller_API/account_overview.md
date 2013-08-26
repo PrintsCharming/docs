@@ -8,10 +8,35 @@ navigation:
 
 View general account information regarding your customers, including billing cycle, current billing cycle, credit usage, package, overage credits, etc.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to *overview*.|The task that allows us to present the customers information.|
-|user|Yes|Customer that is registered under your account.|The customer|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>overview</em>
+            .
+         </td>
+         <td>The task that allows us to present the customers information.</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer that is registered under your account.</td>
+         <td>The customer</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs get %}
 

@@ -14,9 +14,25 @@ This module allows you to create and manage categories within your Marketing Ema
 
 Create a new Category.
 
-|Parameter|Required|Requirements|Description.|
-|:--------|:-------|:-----------|:-----------|
-|category|Yes|None|The name that will be used for the Category being created.|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description.</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>category</td>
+         <td>Yes</td>
+         <td>None</td>
+         <td>The name that will be used for the Category being created.</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs create %}
 
@@ -108,10 +124,31 @@ https://sendgrid.com/api/newsletter/category/create.xml?api_user=your_sendgrid_u
 
 Assign a Category to an existing Marketing Email.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|category|Yes|Must be an existing Category.|The Category that will be added to the marketing email.|
-|name|Yes|Must be an existing Marketing Email|The Marketing Email to which the categories will be added.|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>category</td>
+         <td>Yes</td>
+         <td>Must be an existing Category.</td>
+         <td>The Category that will be added to the marketing email.</td>
+      </tr>
+      <tr>
+         <td>name</td>
+         <td>Yes</td>
+         <td>Must be an existing Marketing Email</td>
+         <td>The Marketing Email to which the categories will be added.</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs add %}
 
@@ -204,10 +241,31 @@ https://sendgrid.com/api/newsletter/category/add.xml?&api_user=your_sendgrid_use
 
 Remove specific categories, or all categories from a Marketing Email.\\
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|name|Yes|Must be an existing Marketing Email|The Marketing Email that will have Category(ies) deleted from it.|
-|category|No|Must be an existing category currently added to the Marketing Email|Remove the Category with this name. If the category is not specified. all categories will be deleted from the Marketing Email.|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>name</td>
+         <td>Yes</td>
+         <td>Must be an existing Marketing Email</td>
+         <td>The Marketing Email that will have Category(ies) deleted from it.</td>
+      </tr>
+      <tr>
+         <td>category</td>
+         <td>No</td>
+         <td>Must be an existing category currently added to the Marketing Email</td>
+         <td>Remove the Category with this name. If the category is not specified. all categories will be deleted from the Marketing Email.</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs remove %}
 
@@ -299,9 +357,25 @@ https://sendgrid.com/api/newsletter/category/remove.xml?api_user=your_sendgrid_u
 
 List all categories.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|category|No|Must be an existing Category|Search to see if a specific Category exists rather than a list of all Categories.|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>category</td>
+         <td>No</td>
+         <td>Must be an existing Category</td>
+         <td>Search to see if a specific Category exists rather than a list of all Categories.</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs list %}
 

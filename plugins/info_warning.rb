@@ -7,7 +7,7 @@ module Jekyll
     def render(context)
       contents = super
       source = '<blockquote><span class="label label-info">Info</span> '
-      source += contents
+      source += Kramdown::Document.new(contents).to_html.sub!("<p>","").sub!("</p>","")
       source += '</blockquote>'
       
       source
@@ -22,7 +22,7 @@ module Jekyll
     def render(context)
       contents = super
       source = '<blockquote><span class="label label-warning">Warning</span> '
-      source += contents
+      source += Kramdown::Document.new(contents).to_html.sub!("<p>","").sub!("</p>","")
       source += '</blockquote>'
 
       source

@@ -16,10 +16,28 @@ We use SpamAssassin to process the spam checks for this filter. The default thre
 {% anchor h2 %} Settings {% endanchor %}
 
 
-|Name|Required|Description|
-|:---|:-------|:----------|
-|URL to Post Spam Messages|No|SendGrid will send an HTTP POST request when it detects emails that are above the threshold to the URL specified.|
-|Spam Threshhold|No (default:5)|Emails with a spam score over this value will be considered spam and will not be delivered to the recipient. We use SpamAssassin to process the spam checks for this App, so you can base your Spam Threshold setting on values typically used with SpamAssassin. The more negative a score is, the less likely it is to be spam, conversely increasing positive numbers suggest a message is spam.|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Name</th>
+         <th>Required</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>URL to Post Spam Messages</td>
+         <td>No</td>
+         <td>SendGrid will send an HTTP POST request when it detects emails that are above the threshold to the URL specified.</td>
+      </tr>
+      <tr>
+         <td>Spam Threshhold</td>
+         <td>No (default:5)</td>
+         <td>Emails with a spam score over this value will be considered spam and will not be delivered to the recipient. We use SpamAssassin to process the spam checks for this App, so you can base your Spam Threshold setting on values typically used with SpamAssassin. The more negative a score is, the less likely it is to be spam, conversely increasing positive numbers suggest a message is spam.</td>
+      </tr>
+   </tbody>
+</table>
+
 
 The HTTP POST request that you receive at the designated URL will contain parameters with details about the spam checker event. If the URL is not specified, this HTTP POST request will simply not occur.
 
@@ -27,10 +45,25 @@ The HTTP POST request that you receive at the designated URL will contain parame
 {% anchor h2 %} Parameters: {% endanchor %}
 
 
-|Name|Description|
-|:---|:----------|
-|email|The contents of the email that was flagged as spam.|
-|report|The detailed SpamAssassin report describing why the email was designated as spam.|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Name</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>email</td>
+         <td>The contents of the email that was flagged as spam.</td>
+      </tr>
+      <tr>
+         <td>report</td>
+         <td>The detailed SpamAssassin report describing why the email was designated as spam.</td>
+      </tr>
+   </tbody>
+</table>
+
 
 
 {% anchor h2 %} Example POST: {% endanchor %}

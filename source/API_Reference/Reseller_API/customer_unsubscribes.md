@@ -11,12 +11,49 @@ navigation:
 
 Note that you can use *either* the days parameter *or* the start\_date and end\_date parameter.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|user|Yes|Customer must be registered under your account|The customer we are retrieving unsubscribes from|
-|task|Yes|Must be set to *get*|This will allow you to retrieve the unsubscribes for the specified customer|
-|date|No|Must be set to 1|Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS|
-|method|Yes|Must be set to *unsubscribes*|Allows you to access unsubscribe functionality|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer must be registered under your account</td>
+         <td>The customer we are retrieving unsubscribes from</td>
+      </tr>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>get</em>
+         </td>
+         <td>This will allow you to retrieve the unsubscribes for the specified customer</td>
+      </tr>
+      <tr>
+         <td>date</td>
+         <td>No</td>
+         <td>Must be set to 1</td>
+         <td>Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>unsubscribes</em>
+         </td>
+         <td>Allows you to access unsubscribe functionality</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs get %}
 
@@ -88,11 +125,40 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 
 Since SendGrid does not deliver to unsubscribe addresses, users can remove unsubscribes from their list at any time if re-delivery to an unsubscribed address is desired.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|user|Yes|Customer must be registered under your account|The customer we are retrieving unsubscribes from|
-|task|Yes|Must be set to *delete*|This will allow you to delete an unsubscribe record for the specified customer|
-|email|No|Must be an unsubscribe record|You must specify the unsubscribe record to remove|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer must be registered under your account</td>
+         <td>The customer we are retrieving unsubscribes from</td>
+      </tr>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>delete</em>
+         </td>
+         <td>This will allow you to delete an unsubscribe record for the specified customer</td>
+      </tr>
+      <tr>
+         <td>email</td>
+         <td>No</td>
+         <td>Must be an unsubscribe record</td>
+         <td>You must specify the unsubscribe record to remove</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs delete %}
 
@@ -181,11 +247,40 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 
 Add unsubscribe email records to their account if they need to stop sending email messages to a specific recipient.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|user|Yes|Customer must be registered under your account|The customer we are retrieving unsubscribes from|
-|task|Yes|Must be set to *add*|This will allow you to add an unsubscribe record for the specified customer|
-|email|No|Must be an unsubscribe record|You must specify the unsubscribe record to add|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer must be registered under your account</td>
+         <td>The customer we are retrieving unsubscribes from</td>
+      </tr>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>add</em>
+         </td>
+         <td>This will allow you to add an unsubscribe record for the specified customer</td>
+      </tr>
+      <tr>
+         <td>email</td>
+         <td>No</td>
+         <td>Must be an unsubscribe record</td>
+         <td>You must specify the unsubscribe record to add</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs add %}
 

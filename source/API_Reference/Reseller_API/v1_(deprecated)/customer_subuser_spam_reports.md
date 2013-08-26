@@ -9,11 +9,40 @@ navigation:
 {% anchor h2 %} Retrieve Spam Reports {% endanchor %}
 
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|user|Yes|Customer subuser must be registered under your account|The customer subuser we are retrieving spam reports from|
-|task|Yes|Must be set to *get*|This will allow you to retrieve the spam reports for the specified user|
-|date|No|Must be set to 1|Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer subuser must be registered under your account</td>
+         <td>The customer subuser we are retrieving spam reports from</td>
+      </tr>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>get</em>
+         </td>
+         <td>This will allow you to retrieve the spam reports for the specified user</td>
+      </tr>
+      <tr>
+         <td>date</td>
+         <td>No</td>
+         <td>Must be set to 1</td>
+         <td>Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 
@@ -65,11 +94,40 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 
 Since SendGrid does not deliver to spam reported addresses, users can remove spam reports from their list at any time if re-delivery to a spam reported address is desired.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|user|Yes|Customer subuser must be registered under your account|The customer subuser we are retrieving spam reports from|
-|task|Yes|Must be set to *delete*|This will allow you to delete a spam report for the specified user|
-|email|No|Must be a spam reports|You must specify the spam reports to remove|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer subuser must be registered under your account</td>
+         <td>The customer subuser we are retrieving spam reports from</td>
+      </tr>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>delete</em>
+         </td>
+         <td>This will allow you to delete a spam report for the specified user</td>
+      </tr>
+      <tr>
+         <td>email</td>
+         <td>No</td>
+         <td>Must be a spam reports</td>
+         <td>You must specify the spam reports to remove</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 

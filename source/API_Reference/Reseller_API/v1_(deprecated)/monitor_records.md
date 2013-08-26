@@ -18,13 +18,55 @@ The first step is to create a Monitor Record. Once the monitor record has been c
 
 Obtain a complete list of all customer.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to *create*|Create a monitor record|
-|name|Yes|Name must be unique. Can't be more than 255 characters|The unique name to identify this monitor record|
-|email|Yes|Must be in email format|The email destination to send the email sample to|
-|frequency|Yes|Customer must be registered under your account|The frequency of emails to be sent out|
-|method|Yes|Must be set to *monitor*|Allows you to access monitor functionality|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>create</em>
+         </td>
+         <td>Create a monitor record</td>
+      </tr>
+      <tr>
+         <td>name</td>
+         <td>Yes</td>
+         <td>Name must be unique. Can't be more than 255 characters</td>
+         <td>The unique name to identify this monitor record</td>
+      </tr>
+      <tr>
+         <td>email</td>
+         <td>Yes</td>
+         <td>Must be in email format</td>
+         <td>The email destination to send the email sample to</td>
+      </tr>
+      <tr>
+         <td>frequency</td>
+         <td>Yes</td>
+         <td>Customer must be registered under your account</td>
+         <td>The frequency of emails to be sent out</td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>monitor</em>
+         </td>
+         <td>Allows you to access monitor functionality</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 
@@ -103,14 +145,61 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 Make modifications to an existing Monitor record.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to *edit*|The task required to edit a monitor|
-|name|Yes|The name of the previous monitor record|The monitor record we are going to edit|
-|new\_name|No|New name must be unique and can't be more than 255 characters|The new monitor record name|
-|new\_email|No|Must be in email format|The new email destination to send the email sample to|
-|new\_frequency|No|Must be an integer and greater than 0|The new frequency of emails to be sent out|
-|method|Yes|Must be set to *monitor*|Allows you to access monitor functionality|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>edit</em>
+         </td>
+         <td>The task required to edit a monitor</td>
+      </tr>
+      <tr>
+         <td>name</td>
+         <td>Yes</td>
+         <td>The name of the previous monitor record</td>
+         <td>The monitor record we are going to edit</td>
+      </tr>
+      <tr>
+         <td>new_name</td>
+         <td>No</td>
+         <td>New name must be unique and can't be more than 255 characters</td>
+         <td>The new monitor record name</td>
+      </tr>
+      <tr>
+         <td>new_email</td>
+         <td>No</td>
+         <td>Must be in email format</td>
+         <td>The new email destination to send the email sample to</td>
+      </tr>
+      <tr>
+         <td>new_frequency</td>
+         <td>No</td>
+         <td>Must be an integer and greater than 0</td>
+         <td>The new frequency of emails to be sent out</td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>monitor</em>
+         </td>
+         <td>Allows you to access monitor functionality</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 
@@ -189,11 +278,43 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 Deleting a monitor record will remove it from SendGrid's system. **Make sure no users are currently using the monitor record when removing, or removal will fail.**
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to *delete*|The task required to remove a monitor|
-|name|Yes|Must be a monitor record to remove|The unique name to identify this monitor record|
-|method|Yes|Must be set to *monitor*|Allows you to access monitor functionality|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>delete</em>
+         </td>
+         <td>The task required to remove a monitor</td>
+      </tr>
+      <tr>
+         <td>name</td>
+         <td>Yes</td>
+         <td>Must be a monitor record to remove</td>
+         <td>The unique name to identify this monitor record</td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>monitor</em>
+         </td>
+         <td>Allows you to access monitor functionality</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 
@@ -279,10 +400,37 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 List all available monitor records a reseller has.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to *list*|The task required to list all monitor records|
-|method|Yes|Must be set to *monitor*|Allows you to access monitor functionality|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>list</em>
+         </td>
+         <td>The task required to list all monitor records</td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>monitor</em>
+         </td>
+         <td>Allows you to access monitor functionality</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 
@@ -339,12 +487,49 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 Append a monitor record to a existing record onto a customer.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to *append*|The task required to append a monitor record to a customer|
-|user|Yes|Customer must be registered under your account|The user we will append a monitor record to|
-|name|No|Must be a valid monitor record|The name of the monitor record we will be appending|
-|method|Yes|Must be set to *monitor*|Allows you to access monitor functionality|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>append</em>
+         </td>
+         <td>The task required to append a monitor record to a customer</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer must be registered under your account</td>
+         <td>The user we will append a monitor record to</td>
+      </tr>
+      <tr>
+         <td>name</td>
+         <td>No</td>
+         <td>Must be a valid monitor record</td>
+         <td>The name of the monitor record we will be appending</td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>monitor</em>
+         </td>
+         <td>Allows you to access monitor functionality</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 
@@ -423,11 +608,43 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 Detach a customer from a monitor record.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to *detach*|The task required to detach a monitor record to a customer|
-|user|Yes|Customer must be registered under your account|The customer we will detach the monitor record from|
-|method|Yes|Must be set to *monitor*|Allows you to access monitor functionality|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>detach</em>
+         </td>
+         <td>The task required to detach a monitor record to a customer</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer must be registered under your account</td>
+         <td>The customer we will detach the monitor record from</td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>monitor</em>
+         </td>
+         <td>Allows you to access monitor functionality</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 

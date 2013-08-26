@@ -14,192 +14,7 @@ This endpoint allows you to manage and create Sender Addresses (formerly Identit
 
 Create a new Address.
 
-<table markdown="1" class="table table-bordered table-striped">
-<tr markdown="1">
-<th markdown="1">
-Parameter
 
-</th>
-<th markdown="1">
-Required
-
-</th>
-<th markdown="1">
-Requirements
-
-</th>
-<th markdown="1">
-Description
-
-</th>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-Identity
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-None
-
-</td>
-<td markdown="1">
-Create an Address named this.
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-name
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-None
-
-</td>
-<td markdown="1">
-Specify the name to be used for this Address.
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-email
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-Email address format, complying with [RFC 5322](http://tools.ietf.org/html/rfc5322)
-
-</td>
-<td markdown="1">
-Specify the email address to be used for this Address.
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-replyto
-
-</td>
-<td markdown="1">
-No
-
-</td>
-<td markdown="1">
-Email address format, complying with [RFC 5322](http://tools.ietf.org/html/rfc5322)
-
-</td>
-<td markdown="1">
-Specify an email address to be used in the Reply-To field. If not defined, will default to the *email* parameter.
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-address
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-None
-
-</td>
-<td markdown="1">
-Specify the physical address to be used for this Address.
-
-</td>
-</tr>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-city
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-None
-
-</td>
-<td markdown="1">
-Specify the city to be used for this Address.
-
-</td>
-</tr>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-state
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-None
-
-</td>
-<td markdown="1">
-Specify the state code to be used for this Address.
-
-</td>
-</tr>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-zip
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-None
-
-</td>
-<td markdown="1">
-Specify the zip code to be used for this Address.
-
-</td>
-</tr>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-country
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-None
-
-</td>
-<td markdown="1">
-Specify the country code to be used for this Address.
-
-</td>
-</tr>
-</table>
 {% xmljsontabs add %}
 
 <div markdown="1" class="tab-content">
@@ -290,210 +105,7 @@ https://sendgrid.com/api/newsletter/identity/add.xml?identity=Sender_Address1&na
 
 Edit an existing Address.
 
-<table markdown="1" class="table table-bordered table-striped">
-<tr markdown="1">
-<th markdown="1">
-Parameter
 
-</th>
-<th markdown="1">
-Required
-
-</th>
-<th markdown="1">
-Requirements
-
-</th>
-<th markdown="1">
-Description
-
-</th>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-Identity
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-Must be an existing Address.
-
-</td>
-<td markdown="1">
-The Address you wish to edit.
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-newidentity
-
-</td>
-<td markdown="1">
-No
-
-</td>
-<td markdown="1">
-None
-
-</td>
-<td markdown="1">
-Specify the new name to be used for this Address.
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-name
-
-</td>
-<td markdown="1">
-No
-
-</td>
-<td markdown="1">
-None
-
-</td>
-<td markdown="1">
-Specify the new name to be used for this Address.
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-email
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-Email address format, complying with [RFC 5322](http://tools.ietf.org/html/rfc5322)
-
-</td>
-<td markdown="1">
-Specify the email address to be used for this Address.
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-replyto
-
-</td>
-<td markdown="1">
-No
-
-</td>
-<td markdown="1">
-Email address format, complying with [RFC 5322](http://tools.ietf.org/html/rfc5322)
-
-</td>
-<td markdown="1">
-Specify an email address to be used in the Reply-To field. If not defined, will default to the *email* parameter.
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-address
-
-</td>
-<td markdown="1">
-No
-
-</td>
-<td markdown="1">
-None
-
-</td>
-<td markdown="1">
-Specify the new physical address to be used for this Address.
-
-</td>
-</tr>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-city
-
-</td>
-<td markdown="1">
-No
-
-</td>
-<td markdown="1">
-None
-
-</td>
-<td markdown="1">
-Specify the new city to be used for this Address.
-
-</td>
-</tr>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-state
-
-</td>
-<td markdown="1">
-No
-
-</td>
-<td markdown="1">
-None
-
-</td>
-<td markdown="1">
-Specify the new state code to be used for this Address.
-
-</td>
-</tr>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-zip
-
-</td>
-<td markdown="1">
-No
-
-</td>
-<td markdown="1">
-None
-
-</td>
-<td markdown="1">
-Specify the new zip code to be used for this Address.
-
-</td>
-</tr>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-country
-
-</td>
-<td markdown="1">
-No
-
-</td>
-<td markdown="1">
-None
-
-</td>
-<td markdown="1">
-Specify the new country code to be used for this Address.
-
-</td>
-</tr>
-</table>
 {% xmljsontabs edit %}
 
 <div markdown="1" class="tab-content">
@@ -584,9 +196,25 @@ https://sendgrid.com/api/newsletter/identity/edit.xml?identity=Sender_Address2&n
 
 Retrieve information associated with a particular Address.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|identity|Yes|Must be an existing Address.|Retrieve contents of the specified Address.|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>identity</td>
+         <td>Yes</td>
+         <td>Must be an existing Address.</td>
+         <td>Retrieve contents of the specified Address.</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs get %}
 
@@ -694,9 +322,25 @@ https://sendgrid.com/api/newsletter/identity/get.xml?identity=Sender_Address&api
 
 List all Addresses on your account, or check if a particular Address exists.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|identity|No|Must be an existing Address.|Check for this particular Identity. (To list all Addresses on your account exclude this parameter)|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>identity</td>
+         <td>No</td>
+         <td>Must be an existing Address.</td>
+         <td>Check for this particular Identity. (To list all Addresses on your account exclude this parameter)</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs list %}
 
@@ -792,9 +436,25 @@ https://sendgrid.com/api/newsletter/identity/list.xml?identity=Sender_Address4&a
 
 Remove an Address from your account.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|identity|Yes|Must be an existing Address.|Remove the specified Address from your account.|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>identity</td>
+         <td>Yes</td>
+         <td>Must be an existing Address.</td>
+         <td>Remove the specified Address from your account.</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs delete %}
 

@@ -18,10 +18,28 @@ By default, SendGrid signs all e-mail with Domain Keys to improve its deliverabi
 {% anchor h2 %} Settings {% endanchor %}
 
 
-|Name|Required|Description|
-|:---|:-------|:----------|
-|Domain|Yes|Sets the sender domain.|
-|Enable sender header|Yes|Enables the Domain Keys sender header.|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Name</th>
+         <th>Required</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Domain</td>
+         <td>Yes</td>
+         <td>Sets the sender domain.</td>
+      </tr>
+      <tr>
+         <td>Enable sender header</td>
+         <td>Yes</td>
+         <td>Enables the Domain Keys sender header.</td>
+      </tr>
+   </tbody>
+</table>
+
 
 Some ISPs or e-mail clients (such as Hotmail or Outlook) will display a message with the Sender header reading "on behalf of" followed by the address that is in the Sender header. To remove this, do one of the following:
 

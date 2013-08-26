@@ -9,11 +9,40 @@ navigation:
 {% anchor h2 %} Retrieve Invalid Emails {% endanchor %}
 
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|user|Yes|Customer subuser must be registered under your account|The customer subuser we are retrieving invalid emails from|
-|task|Yes|Must be set to *get*|This will allow you to retrieve the invalid emails for the specified customer subuser|
-|date|No|Must be set to 1|Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer subuser must be registered under your account</td>
+         <td>The customer subuser we are retrieving invalid emails from</td>
+      </tr>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>get</em>
+         </td>
+         <td>This will allow you to retrieve the invalid emails for the specified customer subuser</td>
+      </tr>
+      <tr>
+         <td>date</td>
+         <td>No</td>
+         <td>Must be set to 1</td>
+         <td>Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs get %}
 
@@ -99,11 +128,40 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_us
 
 Since SendGrid does not deliver to invalid emails, users can remove invalid emails from their list at any time if re-delivery to a spam reported address is desired.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|user|Yes|Customer subuser must be registered under your account|The customer subuser we are retrieving invalid emails from|
-|task|Yes|Must be set to *delete*|This will allow you to delete a invalid email for the specified customer subuser|
-|email|No|Must be a invalid email|You must specify the invalid emails to remove|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer subuser must be registered under your account</td>
+         <td>The customer subuser we are retrieving invalid emails from</td>
+      </tr>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>delete</em>
+         </td>
+         <td>This will allow you to delete a invalid email for the specified customer subuser</td>
+      </tr>
+      <tr>
+         <td>email</td>
+         <td>No</td>
+         <td>Must be a invalid email</td>
+         <td>You must specify the invalid emails to remove</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs delete %}
 

@@ -11,64 +11,7 @@ navigation:
 
 Retrieve settings already configured for parsing incoming email.
 
-<table markdown="1" class="table table-bordered table-striped">
-<tbody markdown="1">
-<tr markdown="1">
-<th markdown="1">
-Parameter
 
-</th>
-<th markdown="1">
-Required
-
-</th>
-<th markdown="1">
-Requirements
-
-</th>
-<th markdown="1">
-Description
-
-</th>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-api\_user
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-alphanumeric
-
-</td>
-<td markdown="1">
-SendGrid Username
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-api\_key
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-alphanumeric
-
-</td>
-<td markdown="1">
-SendGrid password
-
-</td>
-</tr>
-</tbody>
-</table>
 {% xmljsontabs get %}
 
 <div markdown="1" class="tab-content">
@@ -163,46 +106,6 @@ set
 
 
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>api_user</td>
-         <td>Yes</td>
-         <td>alphanumeric</td>
-         <td>SendGrid Username</td>
-      </tr>
-      <tr>
-         <td>api_key</td>
-         <td>Yes</td>
-         <td>alphanumeric</td>
-         <td>SendGrid password</td>
-      </tr>
-      <tr>
-         <td>hostname</td>
-         <td>Yes</td>
-         <td>alphanumeric</td>
-         <td>The hostname (domain or subdomain) for which you would like to configure a Parse Webhook callback URL.</td>
-      </tr>
-      <tr>
-         <td>url</td>
-         <td>Yes</td>
-         <td>alphanumeric</td>
-         <td>The callback URL to which Parse Webhook payloads will be POSTed.</td>
-      </tr>
-      <tr>
-         <td>spam_check</td>
-         <td>No</td>
-         <td>0 or 1</td>
-         <td>If spam check is enabled, messages that look like spam will not be POSTed.</td>
-      </tr>
-   </tbody>
-</table>
 
 
 {% xmljsontabs set %}
@@ -305,82 +208,7 @@ https://sendgrid.com/api/parse.set.xml?api_user=your_sendgrid_username&api_key=y
 
 Delete the existing settings for parsing incoming emails.
 
-<table markdown="1" class="table table-bordered table-striped">
-<tbody markdown="1">
-<tr markdown="1">
-<th markdown="1">
-Parameter
 
-</th>
-<th markdown="1">
-Required
-
-</th>
-<th markdown="1">
-Requirements
-
-</th>
-<th markdown="1">
-Description
-
-</th>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-api\_user
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-alphanumeric
-
-</td>
-<td markdown="1">
-SendGrid Username
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-api\_key
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-alphanumeric
-
-</td>
-<td markdown="1">
-SendGrid password
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-hostname
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-alphanumeric
-
-</td>
-<td markdown="1">
-The hostname (domain or subdomain) for which you would like to delete Parse Webhook settings.
-
-</td>
-</tr>
-</tbody>
-</table>
 {% xmljsontabs delete %}
 
 <div markdown="1" class="tab-content">

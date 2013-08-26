@@ -16,10 +16,31 @@ Allow customer subusers to manage their account from your website using an ifram
 
 In order to login your customer subuser, you need to contact our web API to retrieve the unique URL to automatically login your customer subuser. Then display the generated URL to automatically login yourcustomer subuser.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|user|Yes|Must be set in email format|This is the customer subuser you will attempt to automatically login|
-|password|No|Your customer subuser password.|Authenticate the customer subuser with this API call.|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Must be set in email format</td>
+         <td>This is the customer subuser you will attempt to automatically login</td>
+      </tr>
+      <tr>
+         <td>password</td>
+         <td>No</td>
+         <td>Your customer subuser password.</td>
+         <td>Authenticate the customer subuser with this API call.</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 

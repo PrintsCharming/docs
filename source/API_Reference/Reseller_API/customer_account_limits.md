@@ -14,10 +14,34 @@ Throttle your customer when you need them to send only a specific amount of emai
 
 Retrieve account limits for a specific customer. If the API call response is empty that means the customer has the limits removed.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to *retrieve*|Retrieve account limits|
-|user|Yes|Customer must be registered under your account|The customer who will have their account limits retrieved|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>retrieve</em>
+         </td>
+         <td>Retrieve account limits</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer must be registered under your account</td>
+         <td>The customer who will have their account limits retrieved</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs get %}
 
@@ -118,11 +142,43 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 
 Obtain a complete list of all customer.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to *none*|Remove account limits|
-|user|Yes|Customer must be registered under your account|The customer who will have their account limits removed|
-|method|Yes|Must be set to *limit*|Allows you to access limit functionality|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>none</em>
+         </td>
+         <td>Remove account limits</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer must be registered under your account</td>
+         <td>The customer who will have their account limits removed</td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>limit</em>
+         </td>
+         <td>Allows you to access limit functionality</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs list %}
 
@@ -220,16 +276,73 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 
 A recurring reset will allow you to periodically reset a subusers credits to a number you specify. This can be either daily, weekly or monthly.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to *recurring*|The task required to set the recurring reset|
-|user|Yes|Customer must be registered under your account|The customer you will be applying a recurring reset to|
-|credits|Yes|Must be an integer and greater than 0|The number of credits the customer will be reset to|
-|period|Yes|Must be either daily, weekly, or monthly|How often you want SendGrid to reset your customers credits|
-|startdate|No|Date must be in YYYY-mm-dd format|The date you want to start resetting the customers credits|
-|enddate|No|Date must be in YYYY-mm-dd format|The date you want to stop resetting the customers credits|
-|initial\_credits|No|Must be an integer greater than 0|The number of credits you initially want the account reset to. If this is not set, the credits will be reset using the credits parameter|
-|method|Yes|Must be set to *limit*|Allows you to access account limit functionality|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>recurring</em>
+         </td>
+         <td>The task required to set the recurring reset</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer must be registered under your account</td>
+         <td>The customer you will be applying a recurring reset to</td>
+      </tr>
+      <tr>
+         <td>credits</td>
+         <td>Yes</td>
+         <td>Must be an integer and greater than 0</td>
+         <td>The number of credits the customer will be reset to</td>
+      </tr>
+      <tr>
+         <td>period</td>
+         <td>Yes</td>
+         <td>Must be either daily, weekly, or monthly</td>
+         <td>How often you want SendGrid to reset your customers credits</td>
+      </tr>
+      <tr>
+         <td>startdate</td>
+         <td>No</td>
+         <td>Date must be in YYYY-mm-dd format</td>
+         <td>The date you want to start resetting the customers credits</td>
+      </tr>
+      <tr>
+         <td>enddate</td>
+         <td>No</td>
+         <td>Date must be in YYYY-mm-dd format</td>
+         <td>The date you want to stop resetting the customers credits</td>
+      </tr>
+      <tr>
+         <td>initial_credits</td>
+         <td>No</td>
+         <td>Must be an integer greater than 0</td>
+         <td>The number of credits you initially want the account reset to. If this is not set, the credits will be reset using the credits parameter</td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>limit</em>
+         </td>
+         <td>Allows you to access account limit functionality</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs reset %}
 
@@ -327,12 +440,49 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 
 Set a subusers credits to a specified amount.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to *total*|Set the credits to the specified amount|
-|user|Yes|Customer must be registered under your account|The customer who will have their credits updated|
-|credits|Yes|Must be an integer and greater than 0|The total number of credits the customer will be reset to|
-|method|Yes|Must be set to *limit*|Allows you to access account limit functionality|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>total</em>
+         </td>
+         <td>Set the credits to the specified amount</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer must be registered under your account</td>
+         <td>The customer who will have their credits updated</td>
+      </tr>
+      <tr>
+         <td>credits</td>
+         <td>Yes</td>
+         <td>Must be an integer and greater than 0</td>
+         <td>The total number of credits the customer will be reset to</td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>limit</em>
+         </td>
+         <td>Allows you to access account limit functionality</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs total %}
 
@@ -430,12 +580,49 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 
 Increment a subusers credits by a specified amount.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to *increment*|Increment the credits by the specified amount|
-|user|Yes|Customer must be registered under your account|The customer who will have their credits incremented|
-|credits|Yes|Must be an integer and greater than 0|The total number of credits the customer will be incremented by|
-|method|Yes|Must be set to *limit*|Allows you to access account limit functionality|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>increment</em>
+         </td>
+         <td>Increment the credits by the specified amount</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer must be registered under your account</td>
+         <td>The customer who will have their credits incremented</td>
+      </tr>
+      <tr>
+         <td>credits</td>
+         <td>Yes</td>
+         <td>Must be an integer and greater than 0</td>
+         <td>The total number of credits the customer will be incremented by</td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>limit</em>
+         </td>
+         <td>Allows you to access account limit functionality</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs increment %}
 
@@ -533,12 +720,49 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 
 Decrement a subusers credits by a specified amount.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to *increment*|Decrement the credits by the specified amount|
-|user|Yes|Customer must be registered under your account|The customer who will have their credits decremented|
-|credits|Yes|Must be an integer and greater than 0|The total number of credits the customer will be decremented by|
-|method|Yes|Must be set to *limit*|Allows you to access account limit functionality|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>increment</em>
+         </td>
+         <td>Decrement the credits by the specified amount</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer must be registered under your account</td>
+         <td>The customer who will have their credits decremented</td>
+      </tr>
+      <tr>
+         <td>credits</td>
+         <td>Yes</td>
+         <td>Must be an integer and greater than 0</td>
+         <td>The total number of credits the customer will be decremented by</td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>limit</em>
+         </td>
+         <td>Allows you to access account limit functionality</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs decrement %}
 

@@ -13,38 +13,7 @@ With the whitelabel API calls you will be able to retrieve whitelabel settings r
 {% anchor h2 %} List {% endanchor %}
 
 
-<table markdown="1" class="table table-bordered table-striped">
-<tbody markdown="1">
-<tr markdown="1">
-<th markdown="1">
-Parameter
 
-</th>
-<th markdown="1">
-Required
-
-</th>
-<th markdown="1">
-Requirements
-
-</th>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-list
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-Must be set to *list*
-
-</td>
-</tr>
-</tbody>
-</table>
 {% xmljsontabs list %}
 
 <div markdown="1" class="tab-content">
@@ -104,66 +73,7 @@ https://sendgrid.com/apiv2/customer.whitelabel.json?api_user=your_sendgrid_usern
 {% anchor h2 %} Append {% endanchor %}
 
 
-<table markdown="1" class="table table-bordered table-striped">
-<tbody markdown="1">
-<tr markdown="1">
-<th markdown="1">
-Parameter
 
-</th>
-<th markdown="1">
-Required
-
-</th>
-<th markdown="1">
-Requirements
-
-</th>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-list
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-Must be set to *append*
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-user
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-Subuser must be registered under your account
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-mail\_domain
-
-</td>
-<td markdown="1">
-Yes
-
-</td>
-<td markdown="1">
-Whitelabel mail\_domain used to append a whitelabel record to a subuser
-
-</td>
-</tr>
-</tbody>
-</table>
 {% xmljsontabs append %}
 
 <div markdown="1" class="tab-content">

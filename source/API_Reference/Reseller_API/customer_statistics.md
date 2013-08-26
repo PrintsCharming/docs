@@ -11,13 +11,52 @@ navigation:
 
 Note that you can use *either* the days parameter *or* the start\_date and end\_date parameter.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|user|Yes|Customer must be registered under your account|The customer we are retrieving statistics from|
-|days|No|Must be an integer greater than 0|Number of days in the past to include statistics (includes today)|
-|start\_date|No|Date must be in YYYY-mm-dd format and be before the end\_date parameter|The start date to look up statistics|
-|end\_date|No|Date must be in YYYY-mm-dd format and be after the start\_date parameter|The end date to look up statistics|
-|method|Yes|Must be set to *stats*|Allows you to access stats functionality|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer must be registered under your account</td>
+         <td>The customer we are retrieving statistics from</td>
+      </tr>
+      <tr>
+         <td>days</td>
+         <td>No</td>
+         <td>Must be an integer greater than 0</td>
+         <td>Number of days in the past to include statistics (includes today)</td>
+      </tr>
+      <tr>
+         <td>start_date</td>
+         <td>No</td>
+         <td>Date must be in YYYY-mm-dd format and be before the end_date parameter</td>
+         <td>The start date to look up statistics</td>
+      </tr>
+      <tr>
+         <td>end_date</td>
+         <td>No</td>
+         <td>Date must be in YYYY-mm-dd format and be after the start_date parameter</td>
+         <td>The end date to look up statistics</td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>stats</em>
+         </td>
+         <td>Allows you to access stats functionality</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs get %}
 
@@ -121,11 +160,40 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_us
 
 Retrieve all-time totals for your customer
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|user|Yes|Customer must be registered under your account|The subuser we are retrieving statistics from|
-|aggregate|Yes|Must be set to 1|This is used to let us know that you are interested in all time totals|
-|method|Yes|Must be set to *stats*|Allows you to access stats functionality|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer must be registered under your account</td>
+         <td>The subuser we are retrieving statistics from</td>
+      </tr>
+      <tr>
+         <td>aggregate</td>
+         <td>Yes</td>
+         <td>Must be set to 1</td>
+         <td>This is used to let us know that you are interested in all time totals</td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>stats</em>
+         </td>
+         <td>Allows you to access stats functionality</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs agg %}
 
@@ -191,11 +259,43 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 
 Retrieve a list of all the categories used in your customers account.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|list|Yes|The value must be set to *true*|This will allow you to retrieve a list of all categories used in your customers account.|
-|user|Yes|Subuser must be registered under your account|The subuser we are retrieving category statistics from|
-|method|Yes|Must be set to *stats*|Allows you to access stats functionality|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>list</td>
+         <td>Yes</td>
+         <td>
+            The value must be set to
+            <em>true</em>
+         </td>
+         <td>This will allow you to retrieve a list of all categories used in your customers account.</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Subuser must be registered under your account</td>
+         <td>The subuser we are retrieving category statistics from</td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>stats</em>
+         </td>
+         <td>Allows you to access stats functionality</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs cat %}
 
@@ -257,14 +357,58 @@ Retrieve statistics broken down by category. If the category does not exist, the
 
 Note that you can use *either* the days parameter *or* the start\_date and end\_date parameter.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|category|Yes|Must be an existing category that has statistics. You can pass in an array of categories|The category you will specify to retrieve detailed stats|
-|user|Yes|Customer must be registered under you|The customer we are retrieving statistics from|
-|days|No|Must be an integer greater than 0|Number of days in the past to include statistics (Includes today)|
-|start\_date|No|Date must be in YYYY-mm-dd format and be before the end\_date parameter|The start date to look up statistics|
-|end\_date|No|Date must be in YYYY-mm-dd format and be after the start\_date parameter|The end date to look up statistics|
-|method|Yes|Must be set to *stats*|Allows you to access stats functionality|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>category</td>
+         <td>Yes</td>
+         <td>Must be an existing category that has statistics. You can pass in an array of categories</td>
+         <td>The category you will specify to retrieve detailed stats</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer must be registered under you</td>
+         <td>The customer we are retrieving statistics from</td>
+      </tr>
+      <tr>
+         <td>days</td>
+         <td>No</td>
+         <td>Must be an integer greater than 0</td>
+         <td>Number of days in the past to include statistics (Includes today)</td>
+      </tr>
+      <tr>
+         <td>start_date</td>
+         <td>No</td>
+         <td>Date must be in YYYY-mm-dd format and be before the end_date parameter</td>
+         <td>The start date to look up statistics</td>
+      </tr>
+      <tr>
+         <td>end_date</td>
+         <td>No</td>
+         <td>Date must be in YYYY-mm-dd format and be after the start_date parameter</td>
+         <td>The end date to look up statistics</td>
+      </tr>
+      <tr>
+         <td>method</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>stats</em>
+         </td>
+         <td>Allows you to access stats functionality</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs catstat %}
 

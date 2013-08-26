@@ -13,10 +13,34 @@ List all of the available apps.
 
 Note: The *name* entry is used in all the other API calls to identify a app.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to *getavailable*|Retrieve Available Apps|
-|user|Yes|Customer subuser must be registered under your account|The customer subuser who we will update|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>getavailable</em>
+         </td>
+         <td>Retrieve Available Apps</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer subuser must be registered under your account</td>
+         <td>The customer subuser who we will update</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 
@@ -63,10 +87,34 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 {% anchor h2 %} Activate App {% endanchor %}
 
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to *activate*|Retrieve Available Apps|
-|user|Yes|Customer subuser must be registered under your account|The customer subuser who we will update|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>activate</em>
+         </td>
+         <td>Retrieve Available Apps</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer subuser must be registered under your account</td>
+         <td>The customer subuser who we will update</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 
@@ -113,10 +161,34 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 {% anchor h2 %} Deactivate App {% endanchor %}
 
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to *deactivate*|Retrieve Available Apps|
-|user|Yes|Customer subuser must be registered under your account|The customer subuser who we will update|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>deactivate</em>
+         </td>
+         <td>Retrieve Available Apps</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer subuser must be registered under your account</td>
+         <td>The customer subuser who we will update</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 

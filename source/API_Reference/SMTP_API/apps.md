@@ -20,38 +20,7 @@ For more information on the utility of these apps, please check out the [Apps]({
 
 Inserts an img tag at the bottom of the html section of an e-mail to display the gravatar associated with the mail sender.
 
-<table markdown="1" class="table table-striped table-bordered">
-<tbody markdown="1">
-<tr markdown="1">
-<th markdown="1">
-Parameter Name
 
-</th>
-<th markdown="1">
-Parameter Value
-
-</th>
-<th markdown="1">
-Parameter Description
-
-</th>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-enable
-
-</td>
-<td markdown="1">
-0|1
-
-</td>
-<td markdown="1">
-Disable or enable this App
-
-</td>
-</tr>
-</tbody>
-</table>
 
 * * * * *
 
@@ -59,38 +28,7 @@ Disable or enable this App
 
 Rewrites links in e-mail text and html bodies to go through our webservers, allowing for tracking when a link is clicked on.
 
-<table markdown="1" class="table table-striped table-bordered">
-<tbody markdown="1">
-<tr markdown="1">
-<th markdown="1">
-Parameter Name
 
-</th>
-<th markdown="1">
-Parameter Value
-
-</th>
-<th markdown="1">
-Parameter Description
-
-</th>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-enable
-
-</td>
-<td markdown="1">
-0|1
-
-</td>
-<td markdown="1">
-Disable or enable this App
-
-</td>
-</tr>
-</tbody>
-</table>
 
 * * * * *
 
@@ -98,38 +36,7 @@ Disable or enable this App
 
 Inserts a subscription management link at the bottom of the text and html bodies. Custom text is set in the settings, with the subscription management link being substituted into the text either as '% %' for plain text bodies, and as a link where the text in between the '%' and '%' is the link text.
 
-<table markdown="1" class="table table-striped table-bordered">
-<tbody markdown="1">
-<tr markdown="1">
-<th markdown="1">
-Parameter Name
 
-</th>
-<th markdown="1">
-Parameter Value
-
-</th>
-<th markdown="1">
-Parameter Description
-
-</th>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-enable
-
-</td>
-<td markdown="1">
-0|1
-
-</td>
-<td markdown="1">
-Disable or enable this App
-
-</td>
-</tr>
-</tbody>
-</table>
 
 * * * * *
 
@@ -137,38 +44,7 @@ Disable or enable this App
 
 Inserts an `` tag at the bottom of the html section of an e-mail which will be used to track if an e-mail is opened.
 
-<table markdown="1" class="table table-striped table-bordered">
-<tbody markdown="1">
-<tr markdown="1">
-<th markdown="1">
-Parameter Name
 
-</th>
-<th markdown="1">
-Parameter Value
-
-</th>
-<th markdown="1">
-Parameter Description
-
-</th>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-enable
-
-</td>
-<td markdown="1">
-0|1
-
-</td>
-<td markdown="1">
-Disable or enable this App
-
-</td>
-</tr>
-</tbody>
-</table>
 
 * * * * *
 
@@ -176,66 +52,7 @@ Disable or enable this App
 
 Inserts a footer at the bottom of the text and HTML bodies.
 
-<table markdown="1" class="table table-striped table-bordered">
-<tbody markdown="1">
-<tr markdown="1">
-<th markdown="1">
-Parameter Name
 
-</th>
-<th markdown="1">
-Parameter Value
-
-</th>
-<th markdown="1">
-Parameter Description
-
-</th>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-enable
-
-</td>
-<td markdown="1">
-0|1
-
-</td>
-<td markdown="1">
-Disable or enable this App
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-text/html
-
-</td>
-<td markdown="1">
-...
-
-</td>
-<td markdown="1">
-String containing html body
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-text/plain
-
-</td>
-<td markdown="1">
-string
-
-</td>
-<td markdown="1">
-String containing text body
-
-</td>
-</tr>
-</tbody>
-</table>
 
 * * * * *
 
@@ -243,66 +60,7 @@ String containing text body
 
 Tests message with SpamAssassin to determine if it is spam, and drop it if it is.
 
-<table markdown="1" class="table table-striped table-bordered">
-<tbody markdown="1">
-<tr markdown="1">
-<th markdown="1">
-Parameter Name
 
-</th>
-<th markdown="1">
-Parameter Value
-
-</th>
-<th markdown="1">
-Parameter Description
-
-</th>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-enable
-
-</td>
-<td markdown="1">
-0|1
-
-</td>
-<td markdown="1">
-Disable or enable this App
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-maxscore
-
-</td>
-<td markdown="1">
--10.0 to 10.0
-
-</td>
-<td markdown="1">
-Score after which the message will be dropped (default is 5.0)
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-url
-
-</td>
-<td markdown="1">
-http://www.example.com/spam\_post.php
-
-</td>
-<td markdown="1">
-an optional url to post the email and a copy of the report to
-
-</td>
-</tr>
-</tbody>
-</table>
 
 * * * * *
 
@@ -310,108 +68,7 @@ an optional url to post the email and a copy of the report to
 
 Re-writes links to integrate with Google Analytics.
 
-<table markdown="1" class="table table-striped table-bordered">
-<tbody markdown="1">
-<tr markdown="1">
-<th markdown="1">
-Parameter Name
 
-</th>
-<th markdown="1">
-Parameter Value
-
-</th>
-<th markdown="1">
-Parameter Description
-
-</th>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-enable
-
-</td>
-<td markdown="1">
-0|1
-
-</td>
-<td markdown="1">
-Disable or enable this App
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-utm\_source
-
-</td>
-<td markdown="1">
-string
-
-</td>
-<td markdown="1">
-Value for the utm\_source field
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-utm\_medium
-
-</td>
-<td markdown="1">
-string
-
-</td>
-<td markdown="1">
-Value for the utm\_medium field
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-utm\_term
-
-</td>
-<td markdown="1">
-string
-
-</td>
-<td markdown="1">
-Value for the utm\_term field
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-utm\_content
-
-</td>
-<td markdown="1">
-string
-
-</td>
-<td markdown="1">
-Value for the utm\_content field
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-utm\_campaign
-
-</td>
-<td markdown="1">
-string
-
-</td>
-<td markdown="1">
-Value for the utm\_campaign field
-
-</td>
-</tr>
-</tbody>
-</table>
 
 * * * * *
 
@@ -419,66 +76,7 @@ Value for the utm\_campaign field
 
 Allows you to specify the domain to use to sign messages with Domain Keys. This domain should match the domain in the From address of your e-mail. For more info, check out these [details on Domain Keys.]({{root_url}}/Apps/domain_keys.html)
 
-<table markdown="1" class="table table-striped table-bordered">
-<tbody markdown="1">
-<tr markdown="1">
-<th markdown="1">
-Parameter Name
 
-</th>
-<th markdown="1">
-Parameter Value
-
-</th>
-<th markdown="1">
-Parameter Description
-
-</th>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-enable
-
-</td>
-<td markdown="1">
-0|1
-
-</td>
-<td markdown="1">
-Disable or enable this App
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-domain
-
-</td>
-<td markdown="1">
-www.example.com
-
-</td>
-<td markdown="1">
-The domain to sign messages as
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-sender
-
-</td>
-<td markdown="1">
-0|1
-
-</td>
-<td markdown="1">
-1 - Insert a Sender header if the domain specified does not match the From address. 0 - never insert a Sender header
-
-</td>
-</tr>
-</tbody>
-</table>
 
 * * * * *
 
@@ -486,52 +84,7 @@ sender
 
 Allows you to specify the domain to use to sign messages with DKIM certification. This domain should match the domain in the From address of your e-mail. For more info, check out these [details on DKIM.]({{root_url}}/Apps/dkim.html)
 
-<table markdown="1" class="table table-striped table-bordered">
-<tbody markdown="1">
-<tr markdown="1">
-<th markdown="1">
-Parameter
 
-</th>
-<th markdown="1">
-Description
-
-</th>
-<th markdown="1">
-Example
-
-</th>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-domain
-
-</td>
-<td markdown="1">
-The domain you would like your DKIM certification signed with
-
-</td>
-<td markdown="1">
-example.com
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-use\_from
-
-</td>
-<td markdown="1">
-If enabled, the domain in the From: header of the email will be used to sign your DKIM
-
-</td>
-<td markdown="1">
-0|1
-
-</td>
-</tr>
-</tbody>
-</table>
 
 * * * * *
 
@@ -539,52 +92,7 @@ If enabled, the domain in the From: header of the email will be used to sign you
 
 Wraps a template around your email content. Useful for sending out marketing email and other nicely formatted messages.
 
-<table markdown="1" class="table table-striped table-bordered">
-<tbody markdown="1">
-<tr markdown="1">
-<th markdown="1">
-Parameter Name
 
-</th>
-<th markdown="1">
-Parameter Value
-
-</th>
-<th markdown="1">
-Parameter Description
-
-</th>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-enable
-
-</td>
-<td markdown="1">
-0|1
-
-</td>
-<td markdown="1">
-Disable or enable this App
-
-</td>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-text/html
-
-</td>
-<td markdown="1">
-......
-
-</td>
-<td markdown="1">
-String containing html content for the template (must contain tag)
-
-</td>
-</tr>
-</tbody>
-</table>
 
 * * * * *
 
@@ -592,38 +100,7 @@ String containing html content for the template (must contain tag)
 
 Sends a BCC copy of the email created in this transaction to the address specified.
 
-<table markdown="1" class="table table-striped table-bordered">
-<tbody markdown="1">
-<tr markdown="1">
-<th markdown="1">
-Parameter Name
 
-</th>
-<th markdown="1">
-Parameter Value
-
-</th>
-<th markdown="1">
-Parameter Description
-
-</th>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-email
-
-</td>
-<td markdown="1">
-name@domain.com
-
-</td>
-<td markdown="1">
-email address destination for the bcc message
-
-</td>
-</tr>
-</tbody>
-</table>
 
 * * * * *
 
@@ -631,38 +108,7 @@ email address destination for the bcc message
 
 Allows for a copy of spam reports to be forwarded to an email address.
 
-<table markdown="1" class="table table-striped table-bordered">
-<tbody markdown="1">
-<tr markdown="1">
-<th markdown="1">
-Parameter Name
 
-</th>
-<th markdown="1">
-Parameter Value
-
-</th>
-<th markdown="1">
-Parameter Description
-
-</th>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-email
-
-</td>
-<td markdown="1">
-name@domain.com
-
-</td>
-<td markdown="1">
-email address destination for the bcc message
-
-</td>
-</tr>
-</tbody>
-</table>
 
 * * * * *
 
@@ -670,36 +116,5 @@ email address destination for the bcc message
 
 Some emails are too important to do normal list management checks, such as password resets or critical alerts. Enabling this filter will bypass the normal unsubscribe / bounce / spam report checks and queue the e-mail for delivery.
 
-<table markdown="1" class="table table-striped table-bordered">
-<tbody markdown="1">
-<tr markdown="1">
-<th markdown="1">
-Parameter Name
 
-</th>
-<th markdown="1">
-Parameter Value
-
-</th>
-<th markdown="1">
-Parameter Description
-
-</th>
-</tr>
-<tr markdown="1">
-<td markdown="1">
-enable
-
-</td>
-<td markdown="1">
-0|1
-
-</td>
-<td markdown="1">
-Disable or enable this App
-
-</td>
-</tr>
-</tbody>
-</table>
 

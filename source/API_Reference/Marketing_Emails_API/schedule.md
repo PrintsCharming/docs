@@ -16,11 +16,37 @@ This endpoint allows you to add, view, or remove scheduled delivery events for M
 
 Schedule a delivery time for an existing Marketing Email.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|name|Yes|Must be an existing Marketing Email.|Marketing Email to schedule delivery for. (If Marketing Email should be sent now, include no additional parameters.)|
-|at|No|Date / Time must be provided in ISO 8601 format (YYYY-MM-DD HH:MM:SS+-HH:MM)|Date / Time to schedule marketing email Delivery.|
-|after|No|Must be a positive integer.|Number of minutes until delivery should occur.|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>name</td>
+         <td>Yes</td>
+         <td>Must be an existing Marketing Email.</td>
+         <td>Marketing Email to schedule delivery for. (If Marketing Email should be sent now, include no additional parameters.)</td>
+      </tr>
+      <tr>
+         <td>at</td>
+         <td>No</td>
+         <td>Date / Time must be provided in ISO 8601 format (YYYY-MM-DD HH:MM:SS+-HH:MM)</td>
+         <td>Date / Time to schedule marketing email Delivery.</td>
+      </tr>
+      <tr>
+         <td>after</td>
+         <td>No</td>
+         <td>Must be a positive integer.</td>
+         <td>Number of minutes until delivery should occur.</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs add %}
 
@@ -112,9 +138,25 @@ https://sendgrid.com/api/newsletter/schedule/add.xml?name=test&at=2012-09-05_18%
 
 Retrieve the scheduled delivery time for an existing Marketing Email.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|name|Yes|Must be an existing Marketing Email.|Retrieve the delivery time scheduled for this Marketing Email.|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>name</td>
+         <td>Yes</td>
+         <td>Must be an existing Marketing Email.</td>
+         <td>Retrieve the delivery time scheduled for this Marketing Email.</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs get %}
 
@@ -208,9 +250,25 @@ https://sendgrid.com/api/newsletter/schedule/get.xml?name=SendGrid_Test2&api_use
 
 Cancel a scheduled send for a Marketing Email.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|name|Yes|Must be an existing Marketing Email|Remove the scheduled delivery time from an existing Marketing Email.|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>name</td>
+         <td>Yes</td>
+         <td>Must be an existing Marketing Email</td>
+         <td>Remove the scheduled delivery time from an existing Marketing Email.</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs delete %}
 

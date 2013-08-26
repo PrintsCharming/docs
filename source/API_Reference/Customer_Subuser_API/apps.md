@@ -9,10 +9,32 @@ navigation:
 {% anchor h2 %} List {% endanchor %}
  List all of the available apps. Note: The *name* entry is used in all the other API calls to identify a app.
 
-||
-|Parameter|Required|Requirements|Description|
-|task|Yes|Must be set to *getavailable*|Retrieve Available Apps|
-|user|Yes|Subuser must be registered under your account|The subuser who we will update|
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <td>Parameter</td>
+         <td>Required</td>
+         <td>Requirements</td>
+         <td>Description</td>
+      </tr>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>getavailable</em>
+         </td>
+         <td>Retrieve Available Apps</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Subuser must be registered under your account</td>
+         <td>The subuser who we will update</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs list %}
 
@@ -76,10 +98,32 @@ https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api
 {% anchor h2 %} Activate App {% endanchor %}
 
 
-||
-|Parameter|Required|Requirements|Description|
-|task|Yes|Must be set to *activate*|Retrieve Available Apps|
-|user|Yes|Subuser must be registered under your account|The subuser who we will update|
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <td>Parameter</td>
+         <td>Required</td>
+         <td>Requirements</td>
+         <td>Description</td>
+      </tr>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>activate</em>
+         </td>
+         <td>Retrieve Available Apps</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Subuser must be registered under your account</td>
+         <td>The subuser who we will update</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs activate %}
 
@@ -135,10 +179,32 @@ https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api
 {% anchor h2 %} Deactivate App {% endanchor %}
 
 
-||
-|Parameter|Required|Requirements|Description|
-|task|Yes|Must be set to *deactivate*|Retrieve Available Apps|
-|user|Yes|Subuser must be registered under your account|The subuser who we will update|
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <td>Parameter</td>
+         <td>Required</td>
+         <td>Requirements</td>
+         <td>Description</td>
+      </tr>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>deactivate</em>
+         </td>
+         <td>Retrieve Available Apps</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Subuser must be registered under your account</td>
+         <td>The subuser who we will update</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs deactivate %}
 

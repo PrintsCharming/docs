@@ -8,10 +8,28 @@ navigation:
 
 Authenticate a customer subuser on your website before displaying their account information so that you can have users manage their SendGrid account on your website completely.
 
-|Parameter|Required|Requirements|
-|:--------|:-------|:-----------|
-|user|Yes|Customer subuser that is registered under your account.|
-|password|Yes|Password the customer subuser submitted.|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer subuser that is registered under your account.</td>
+      </tr>
+      <tr>
+         <td>password</td>
+         <td>Yes</td>
+         <td>Password the customer subuser submitted.</td>
+      </tr>
+   </tbody>
+</table>
+
 
 {% xmljsontabs auth %}
 

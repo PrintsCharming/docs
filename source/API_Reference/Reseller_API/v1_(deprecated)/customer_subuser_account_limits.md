@@ -16,10 +16,34 @@ Throttle your customer subuser when you need them to send only a specific amount
 
 Retrieve account limits for a specific customer subuser. If the API call response is empty that means the customer subuser has the limits removed.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to *retrieve*|Retrieve account limits|
-|user|Yes|Customer subuser must be registered under your account|The customer subuser who will have their account limits retrieved|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>retrieve</em>
+         </td>
+         <td>Retrieve account limits</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer subuser must be registered under your account</td>
+         <td>The customer subuser who will have their account limits retrieved</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 
@@ -94,10 +118,34 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 
 Obtain a complete list of all customer subuser.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to *none*|Remove account limits|
-|user|Yes|Customer subuser must be registered under your account|The customer subuser who will have their account limits removed|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>none</em>
+         </td>
+         <td>Remove account limits</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer subuser must be registered under your account</td>
+         <td>The customer subuser who will have their account limits removed</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 
@@ -176,15 +224,64 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 
 A recurring reset will allow you to periodically reset a subusers credits to a number you specify. This can be either daily, weekly or monthly.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to *recurring*|The task required to set the recurring reset|
-|user|Yes|Customer subuser must be registered under your account|The customer subuser you will be applying a recurring reset to|
-|credits|Yes|Must be an integer and greater than 0|The number of credits the customer subuser will be reset to|
-|period|Yes|Must be either daily, weekly, or monthly|How often you want SendGrid to reset your customer subusers credits|
-|startdate|No|Date must be in YYYY-mm-dd format|The date you want to start resetting the customer subusers credits|
-|enddate|No|Date must be in YYYY-mm-dd format|The date you want to stop resetting the customer subusers credits|
-|initial\_credits|No|Must be an integer greater than 0|The number of credits you initially want the account reset to. If this is not set, the credits will be reset using the credits parameter|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>recurring</em>
+         </td>
+         <td>The task required to set the recurring reset</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer subuser must be registered under your account</td>
+         <td>The customer subuser you will be applying a recurring reset to</td>
+      </tr>
+      <tr>
+         <td>credits</td>
+         <td>Yes</td>
+         <td>Must be an integer and greater than 0</td>
+         <td>The number of credits the customer subuser will be reset to</td>
+      </tr>
+      <tr>
+         <td>period</td>
+         <td>Yes</td>
+         <td>Must be either daily, weekly, or monthly</td>
+         <td>How often you want SendGrid to reset your customer subusers credits</td>
+      </tr>
+      <tr>
+         <td>startdate</td>
+         <td>No</td>
+         <td>Date must be in YYYY-mm-dd format</td>
+         <td>The date you want to start resetting the customer subusers credits</td>
+      </tr>
+      <tr>
+         <td>enddate</td>
+         <td>No</td>
+         <td>Date must be in YYYY-mm-dd format</td>
+         <td>The date you want to stop resetting the customer subusers credits</td>
+      </tr>
+      <tr>
+         <td>initial_credits</td>
+         <td>No</td>
+         <td>Must be an integer greater than 0</td>
+         <td>The number of credits you initially want the account reset to. If this is not set, the credits will be reset using the credits parameter</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 
@@ -263,11 +360,38 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 
 Set a subusers credits to a specified amount.
 
-||
-|Parameter|Required|Requirements|Description|
-|task|Yes|Must be set to *total*|Set the credits to the specified amount|
-|user|Yes|Customer subuser must be registered under your account|The customer subuser who will have their credits updated|
-|credits|Yes|Must be an integer and greater than 0|The total number of credits the customer subuser will be reset to|
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <td>Parameter</td>
+         <td>Required</td>
+         <td>Requirements</td>
+         <td>Description</td>
+      </tr>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>total</em>
+         </td>
+         <td>Set the credits to the specified amount</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer subuser must be registered under your account</td>
+         <td>The customer subuser who will have their credits updated</td>
+      </tr>
+      <tr>
+         <td>credits</td>
+         <td>Yes</td>
+         <td>Must be an integer and greater than 0</td>
+         <td>The total number of credits the customer subuser will be reset to</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 
@@ -346,11 +470,40 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 
 Increment a subusers credits by a specified amount.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to *increment*|Increment the credits by the specified amount|
-|user|Yes|Customer subuser must be registered under your account|The customer subuser who will have their credits incremented|
-|credits|Yes|Must be an integer and greater than 0|The total number of credits the customer subuser will be incremented by|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>increment</em>
+         </td>
+         <td>Increment the credits by the specified amount</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer subuser must be registered under your account</td>
+         <td>The customer subuser who will have their credits incremented</td>
+      </tr>
+      <tr>
+         <td>credits</td>
+         <td>Yes</td>
+         <td>Must be an integer and greater than 0</td>
+         <td>The total number of credits the customer subuser will be incremented by</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 
@@ -429,11 +582,40 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 
 Decrement a subusers credits by a specified amount.
 
-|Parameter|Required|Requirements|Description|
-|:--------|:-------|:-----------|:----------|
-|task|Yes|Must be set to *increment*|Decrement the credits by the specified amount|
-|user|Yes|Customer subuser must be registered under your account|The customer subuser who will have their credits decremented|
-|credits|Yes|Must be an integer and greater than 0|The total number of credits the customer subuser will be decremented by|
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <em>increment</em>
+         </td>
+         <td>Decrement the credits by the specified amount</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer subuser must be registered under your account</td>
+         <td>The customer subuser who will have their credits decremented</td>
+      </tr>
+      <tr>
+         <td>credits</td>
+         <td>Yes</td>
+         <td>Must be an integer and greater than 0</td>
+         <td>The total number of credits the customer subuser will be decremented by</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ### XML Call
 
