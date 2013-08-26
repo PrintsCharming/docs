@@ -9,28 +9,7 @@ navigation:
 Retrieve invoices/usages from customers.
 
 |Parameter|Required|Description|
-|:---
-layout: page
-weight: 0
-title: Retrieving Invoice Usage
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Retrieving Invoice Usage
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Retrieving Invoice Usage
-navigation:
-   show: true
----
-----|
+|:--------|:-------|:----------|
 |task|Yes|Must be set to *usage*.|
 |number|Yes|Must be the invoice number you received from SendGrid.|
 

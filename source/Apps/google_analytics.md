@@ -19,42 +19,7 @@ We default the settings to Google's recommendations. Anything you enter into tho
 
 
 |Name|Required|Description|Default Value|
-|:---
-layout: page
-weight: 0
-title: Google Analytics
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Google Analytics
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Google Analytics
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Google Analytics
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Google Analytics
-navigation:
-  show: true
----
-|
+|:---|:-------|:----------|:------------|
 |Campaign Source|No|Name of the referrer source. (e.g. Google, SomeDomain.com, Marketing EmailA)|sendgrid.com|
 |Campaign Medium|No|Name of the marketing medium. (e.g. Email)|email|
 |Campaign Term|No|Identify paid keywords..||

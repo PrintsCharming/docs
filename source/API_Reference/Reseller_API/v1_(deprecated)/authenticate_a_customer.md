@@ -9,28 +9,7 @@ navigation:
 Authenticate a customer on your website before displaying their account information so that you can have users manage their SendGrid account on your website completely.
 
 |Parameter|Required|Requirements|
-|:---
-layout: page
-weight: 0
-title: Authenticate a Customer
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Authenticate a Customer
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Authenticate a Customer
-navigation:
-   show: true
----
------|
+|:--------|:-------|:-----------|
 |user|Yes|Customer that is registered under your account.|
 |password|Yes|Password the customer submitted.|
 |method|Yes|Must be set to *auth*. Allows you to access authentication functionality|

@@ -15,42 +15,7 @@ These are actions that directly affect your customer. We provide access via XML 
 
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |username|Yes|No more than 64 characters|The customers new username|
 |password|Yes|Must be at least 6 characters|New password of customer|
 |confirm_password|Yes|Must match password parameter, must be at least 6 characters|Confirm new password|
@@ -145,63 +110,79 @@ Remove a customer from your account. This is **not** the same as disabling a cus
 This is the same thing as closing out a customers account at the end of their billing cycle.
 
 |Parameter|Required|Requirements|Parameter|
-|:---
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:--------|
+|user|Yes|Must be a customer registered under your account.|The customers username you wish to delete.|
+
+### XML Call
+
+{% codeblock %} https://sendgrid.com/api/distributor.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=customer@example.com {% endcodeblock %}
+
+### Response: Success
+
+
+{% codeblock lang:xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
+{% endcodeblock %}
+
+
+### Response: Error
+
+
+{% codeblock lang:xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error</message>
+   <errors>
+      ...
+      <error>... error messages ...</error>
+      ...
+   </errors>
+</result>
+
+{% endcodeblock %}
+
+
+### JSON Call
+
+{% codeblock %} https://sendgrid.com/api/distributor.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=customer@example.com {% endcodeblock %}
+
+### Response: Success
+
+
+{% codeblock lang:javascript %}
+{
+  "message": "success"
+}
+{% endcodeblock %}
+
+
+### Response: Error
+
+
+{% codeblock lang:javascript %}
+{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
+{% endcodeblock %}
+
+
+* * * * *
+
+Retrieve Customers
+
+Obtain a complete list of all customers.
+
+|Parameter|Required|Description|
+|:--------|:-------|:----------|
 |task|Yes|Must be set to **get** in order to retrieve user information|
 |username|No|Search filter, customer that is registered under you|
 |email|No|Search filter, email address customer was registered with|
@@ -285,42 +266,7 @@ navigation:
 Enable a customer so they may start sending out emails again. This call will not enable website access.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |user|Yes|Must be in email format|The customer you are planning to enabling|
 |method|Yes|Must be set to *enable*|The customer you are planning to enabling|
 
@@ -387,42 +333,7 @@ navigation:
 This prevents them from sending out emails with SendGrid.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |username|Yes|Must be in email format|The customer you are planning to disabling|
 |method|Yes|Must be set to *disable*|The customer you are planning to disabling|
 
@@ -489,42 +400,7 @@ navigation:
 Allow a customer to login to the SendGrid.com website. This call will not enable the customer from sending out emails.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |user|Yes|Must be in email format|The customer you are planning to grant website access|
 |method|Yes|Must be set to *website_enable*|The customer you are planning to grant website access|
 
@@ -591,42 +467,7 @@ navigation:
 Disallow a customer to login to the SendGrid.com website. This call will not prevent them from sending out emails.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |user|Yes|Must be in email format|The customer you are planning to disallow website access|
 |method|Yes|Must be set to *website_disable*|The customer you are planning to disallow website access|
 
@@ -693,133 +534,247 @@ navigation:
 Allows you to update your customers profile information
 
 |Parameter|Required|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Management
-navigation:
-   show: true
----
-----|
+|:--------|:-------|:----------|
+|task|Yes|Must be set to **set** in order to update profile information|
+|method|Yes|Must be set to *profile*|
+|user|Yes|Customer that is registered under you|
+|first_name|No|First name of customer|
+|last_name|No|Last name of customer|
+|address|No|Address of customer|
+|city|No|City of customer|
+|state|No|State of customer|
+|country|No|Country of customer|
+|zip|No|Zipcode of customer|
+|phone|No|Phone number of customer|
+|website|No|Website of customer|
+|company|No|Company of customer|
+
+### XML Call
+
+{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=&newLastNam {% endcodeblock %}
+
+### Response: Success
+
+
+{% codeblock lang:xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
+{% endcodeblock %}
+
+
+### Response: Error
+
+
+{% codeblock lang:xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error</message>
+   <errors>
+      ...
+      <error>... error messages ...</error>
+      ...
+   </errors>
+</result>
+
+{% endcodeblock %}
+
+
+### JSON Call
+
+{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=&newLastNam {% endcodeblock %}
+
+### Response: Success
+
+
+{% codeblock lang:javascript %}
+{
+  "message": "success"
+}
+{% endcodeblock %}
+
+
+### Response: Error
+
+
+{% codeblock lang:javascript %}
+{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
+{% endcodeblock %}
+
+
+* * * * *
+
+
+{% anchor h2 %} Update Customer Password {% endanchor %}
+
+
+Passwords are encrypted by default and therefore cannot be retrieved; however, you can reset a customers password.
+
+|Parameter|Required|Requirements|Description|
+|:--------|:-------|:-----------|:----------|
+|user|Yes|Customer must be registered under you|The customer you are planning to reset the password|
+|password|Yes|Must be at least 6 characters|New password of customer|
+|confirm_password|Yes|Must match password parameter and be at least 6 characters|Confirm new password|
+|method|Yes|Must be set to *password*|Allows you to access password functionality|
+
+### XML Call
+
+{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=password&user=customer@example.com&password=newPasword&confirm_password=newPasswor {% endcodeblock %}
+
+### Response: Success
+
+
+{% codeblock lang:xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
+{% endcodeblock %}
+
+
+### Response: Error
+
+
+{% codeblock lang:xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error</message>
+   <errors>
+      ...
+      <error>... error messages ...</error>
+      ...
+   </errors>
+</result>
+
+{% endcodeblock %}
+
+
+### JSON Call
+
+{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=password&user=customer@example.com&password=newPasword&confirm_password=newPasswor {% endcodeblock %}
+
+### Response: Success
+
+
+{% codeblock lang:javascript %}
+{
+  "message": "success"
+}
+{% endcodeblock %}
+
+
+### Response: Error
+
+
+{% codeblock lang:javascript %}
+{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
+{% endcodeblock %}
+
+
+* * * * *
+
+
+{% anchor h2 %} Update Customer Username {% endanchor %}
+
+
+Note that your customer account username is used to login to our SMTP server *and* the website and changes take effect immediately.
+
+|Parameter|Required|Requirements|Description|
+|:--------|:-------|:-----------|:----------|
+|task|Yes|Must be set to **setUsername**|This will let us know you want to update your customers username. This is the new username your customer will be authenticating with our SMTP servers *and* to access the website. This update takes effect immediately|
+|user|Yes|Customer must be registered under your account|The user we will be updating their username for|
+|username|Yes|Must be in email format, not more than 100 characters, cannot be already taken and cannot contain SendGrid.com in the domain name|This is the new username we will be authenticating with our SMTP servers *and* to access our site. This update takes effect immediately|
+|method|Yes|Must be set to *profile*|Allows you to access profile functionality|
+
+### XML Call
+
+{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setUsername&user=customer@example.com&username=newcustomer@example.com {% endcodeblock %}
+
+### Response: Success
+
+
+{% codeblock lang:xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
+{% endcodeblock %}
+
+
+### Response: Error
+
+
+{% codeblock lang:xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error</message>
+   <errors>
+      ...
+      <error>... error messages ...</error>
+      ...
+   </errors>
+</result>
+
+{% endcodeblock %}
+
+
+### JSON Call
+
+{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setUsername&user=customer@example.com&username=newcustomer@example.com {% endcodeblock %}
+
+### Response: Success
+
+
+{% codeblock lang:javascript %}
+{
+  "message": "success"
+}
+{% endcodeblock %}
+
+
+### Response: Error
+
+
+{% codeblock lang:javascript %}
+{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
+{% endcodeblock %}
+
+
+* * * * *
+
+
+{% anchor h2 %} Update Customer Email Address {% endanchor %}
+
+
+This is the contact email we use for your customers. Changes take place immediately. It is your responsibility to validate the contact email.
+
+|Parameter|Required|Requirements|Description|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to **setEmail**|This will let us know you want to update your customers email address. This update takes effect immediately|
 |user|Yes|Customer must be registered under your account|The user we will be updating their username for|
 |email|Yes|Must be in email format, not more than 100 characters|This is the new email address we will use for contacting customer. This update takes effect immediately|

@@ -7,28 +7,7 @@ navigation:
 ---
 
 |Parameter|Required|Description|
-|:---
-layout: page
-weight: 0
-title: Retrieving End User Invoice
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Retrieving End User Invoice
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Retrieving End User Invoice
-navigation:
-   show: true
----
-----|
+|:--------|:-------|:----------|
 |task|Yes|Must be set to *usage*.|
 |number|Yes|Must be the invoice number you received from SendGrid.|
 

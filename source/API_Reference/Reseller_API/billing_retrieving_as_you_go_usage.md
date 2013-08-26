@@ -9,28 +9,7 @@ navigation:
 Retrieve invoices/usages from end users before your scheduled billing date.
 
 |Parameter|Required|Description|
-|:---
-layout: page
-weight: 0
-title: Retrieving As-You-Go Usage
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Retrieving As-You-Go Usage
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Retrieving As-You-Go Usage
-navigation:
-   show: true
----
-----|
+|:--------|:-------|:----------|
 |task|Yes|Must be set to *current*.|
 
 {% xmljsontabs get %}

@@ -10,42 +10,7 @@ navigation:
 
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Spam Reports
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Spam Reports
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Spam Reports
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Spam Reports
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Spam Reports
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |user|Yes|Customer must be registered under your account|The customer we are retrieving spam reports from|
 |task|Yes|Must be set to *get*|This will allow you to retrieve the spam reports for the specified user|
 |date|No|Must be set to 1|Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS|
@@ -114,42 +79,7 @@ navigation:
 Since SendGrid does not deliver to spam reported addresses, users can remove spam reports from their list at any time if re-delivery to a spam reported address is desired.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Spam Reports
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Spam Reports
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Spam Reports
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Spam Reports
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Spam Reports
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |user|Yes|Customer must be registered under your account|The customer we are retrieving spam reports from|
 |task|Yes|Must be set to *delete*|This will allow you to delete a spam report for the specified user|
 |email|No|Must be a spam reports|You must specify the spam reports to remove|

@@ -12,42 +12,7 @@ navigation:
 Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Subuser Unsubscribes
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Subuser Unsubscribes
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Subuser Unsubscribes
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Subuser Unsubscribes
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Subuser Unsubscribes
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |user|Yes|Customer subuser must be registered under your account|The customer subuser we are retrieving unsubscribes from|
 |task|Yes|Must be set to *get*|This will allow you to retrieve the unsubscribes for the specified customer subuser|
 |date|No|Must be set to 1|Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS|
@@ -115,42 +80,7 @@ navigation:
 Since SendGrid does not deliver to unsubscribe addresses, users can remove unsubscribes from their list at any time if re-delivery to an unsubscribed address is desired.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Subuser Unsubscribes
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Subuser Unsubscribes
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Subuser Unsubscribes
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Subuser Unsubscribes
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Subuser Unsubscribes
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |user|Yes|Customer subuser must be registered under your account|The customer subuser we are retrieving unsubscribes from|
 |task|Yes|Must be set to *delete*|This will allow you to delete an unsubscribe record for the specified customer subuser|
 |email|No|Must be an unsubscribe record|You must specify the unsubscribe record to remove|
@@ -227,42 +157,7 @@ navigation:
 Add unsubscribe email records to their account if they need to stop sending email messages to a specific recipient.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Subuser Unsubscribes
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Subuser Unsubscribes
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Subuser Unsubscribes
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Subuser Unsubscribes
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Subuser Unsubscribes
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |user|Yes|Customer subuser must be registered under your account|The customer subuser we are retrieving unsubscribes from|
 |task|Yes|Must be set to *add*|This will allow you to add an unsubscribe record for the specified customer subuser|
 |email|No|Must be an unsubscribe record|You must specify the unsubscribe record to add|

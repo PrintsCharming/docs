@@ -14,42 +14,7 @@ List all of the available apps.
 Note: The *name* entry is used in all the other API calls to identify a app.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Apps
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Apps
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Apps
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Apps
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Apps
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *getavailable*|Retrieve Available Apps|
 |user|Yes|Customer must be registered under your account|The customer who we will update|
 |method|Yes|Must be set to *apps*|Allows you to access apps functionality|
@@ -113,42 +78,7 @@ Twitter
 
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Apps
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Apps
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Apps
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Apps
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Apps
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *activate*|Retrieve Available Apps|
 |user|Yes|Customer must be registered under your account|The customer who we will update|
 |method|Yes|Must be set to *apps*|Allows you to access apps functionality|
@@ -200,42 +130,7 @@ navigation:
 
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Apps
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Apps
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Apps
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Apps
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Apps
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *deactivate*|Retrieve Available Apps|
 |user|Yes|Customer must be registered under your account|The customer who we will update|
 |method|Yes|Must be set to *apps*|Allows you to access apps functionality|

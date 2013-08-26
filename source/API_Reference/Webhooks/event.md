@@ -299,21 +299,7 @@ The following shows each type of event that can be posted along with the specifi
 
 
 |event|email|category|
-|:---
-layout: page
-weight: 0
-title: Event
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Event
-navigation:
-  show: true
----
--|
+|:----|:----|:-------|
 |processed|Message recipient|The category you assigned|
 
 
@@ -321,35 +307,7 @@ navigation:
 
 
 |event|email|response|attempt|category|
-|:---
-layout: page
-weight: 0
-title: Event
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Event
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Event
-navigation:
-  show: true
----
-|:---
-layout: page
-weight: 0
-title: Event
-navigation:
-  show: true
----
--|
+|:----|:----|:-------|:------|:-------|
 |deferred|Message recipient|Full reponse from MTA|Delivery attempt \#|The category you assigned|
 
 
@@ -357,28 +315,7 @@ navigation:
 
 
 |event|email|response|category|
-|:---
-layout: page
-weight: 0
-title: Event
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Event
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Event
-navigation:
-  show: true
----
--|
+|:----|:----|:-------|:-------|
 |delivered|Message recipient|Full reponse from MTA|The category you assigned|
 
 
@@ -386,21 +323,7 @@ navigation:
 
 
 |event|email|category|
-|:---
-layout: page
-weight: 0
-title: Event
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Event
-navigation:
-  show: true
----
--|
+|:----|:----|:-------|
 |open|Message recipient|The category you assigned|
 
 
@@ -408,21 +331,7 @@ navigation:
 
 
 |event|email|url|category|
-|:---
-layout: page
-weight: 0
-title: Event
-navigation:
-  show: true
----
--|:--|:---
-layout: page
-weight: 0
-title: Event
-navigation:
-  show: true
----
--|
+|:----|:----|:--|:-------|
 |click|Message recipient|URL Clicked|The category you assigned|
 
 
@@ -430,49 +339,15 @@ navigation:
 
 
 |event|email|status|reason|type|category|
-|:---
-layout: page
-weight: 0
-title: Event
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Event
-navigation:
-  show: true
----
---|:---
-layout: page
-weight: 0
-title: Event
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Event
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Event
-navigation:
-  show: true
----
---|:---
-layout: page
-weight: 0
-title: Event
-navigation:
-  show: true
----
--|
+|:----|:----|:-----|:-----|:---|:-------|
+|bounce|Message recipient|3-digit status code|Bounce reason from MTA|Bounce/Blocked/Expired|The category you assigned|
+
+
+{% anchor h2 %} Drop {% endanchor %}
+
+
+|event|email|reason|category|
+|:----|:----|:-----|:-------|
 |dropped|Message recipient|Drop reason|The category you assigned|
 
 
@@ -480,21 +355,7 @@ navigation:
 
 
 |event|email|category|
-|:---
-layout: page
-weight: 0
-title: Event
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Event
-navigation:
-  show: true
----
--|
+|:----|:----|:-------|
 |spamreport|Message recipient|The category you assigned|
 
 
@@ -502,21 +363,7 @@ navigation:
 
 
 |event|email|category|
-|:---
-layout: page
-weight: 0
-title: Event
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Event
-navigation:
-  show: true
----
--|
+|:----|:----|:-------|
 |unsubscribe|Message recipient|The category you assigned|
 
 

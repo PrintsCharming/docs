@@ -9,42 +9,7 @@ navigation:
 View general account information regarding your customers, including billing cycle, current billing cycle, credit usage, package, overage credits, etc.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Account Overview
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Account Overview
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Account Overview
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Account Overview
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Account Overview
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *overview*.|The task that allows us to present the customers information.|
 |user|Yes|Customer that is registered under your account.|The customer|
 

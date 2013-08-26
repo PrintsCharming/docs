@@ -553,42 +553,7 @@ Specify the new country code to be used for this Address.
 Retrieve information associated with a particular Address.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Sender Address
-navigation:
-  show: true
----
---|:---
-layout: page
-weight: 0
-title: Sender Address
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Sender Address
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Sender Address
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Sender Address
-navigation:
-  show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |identity|Yes|Must be an existing Address.|Retrieve contents of the specified Address.|
 
 {% xmljsontabs get %}
@@ -685,42 +650,7 @@ navigation:
 List all Addresses on your account, or check if a particular Address exists.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Sender Address
-navigation:
-  show: true
----
---|:---
-layout: page
-weight: 0
-title: Sender Address
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Sender Address
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Sender Address
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Sender Address
-navigation:
-  show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |identity|No|Must be an existing Address.|Check for this particular Identity. (To list all Addresses on your account exclude this parameter)|
 
 {% xmljsontabs list %}
@@ -802,42 +732,7 @@ navigation:
 Remove an Address from your account.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Sender Address
-navigation:
-  show: true
----
---|:---
-layout: page
-weight: 0
-title: Sender Address
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Sender Address
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Sender Address
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Sender Address
-navigation:
-  show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |identity|Yes|Must be an existing Address.|Remove the specified Address from your account.|
 
 {% xmljsontabs delete %}

@@ -17,42 +17,7 @@ This endpoint allows you to add, view, or remove scheduled delivery events for M
 Schedule a delivery time for an existing Marketing Email.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Schedule
-navigation:
-  show: true
----
---|:---
-layout: page
-weight: 0
-title: Schedule
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Schedule
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Schedule
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Schedule
-navigation:
-  show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |name|Yes|Must be an existing Marketing Email.|Marketing Email to schedule delivery for. (If Marketing Email should be sent now, include no additional parameters.)|
 |at|No|Date / Time must be provided in ISO 8601 format (YYYY-MM-DD HH:MM:SS+-HH:MM)|Date / Time to schedule marketing email Delivery.|
 |after|No|Must be a positive integer.|Number of minutes until delivery should occur.|
@@ -132,42 +97,7 @@ navigation:
 Retrieve the scheduled delivery time for an existing Marketing Email.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Schedule
-navigation:
-  show: true
----
---|:---
-layout: page
-weight: 0
-title: Schedule
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Schedule
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Schedule
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Schedule
-navigation:
-  show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |name|Yes|Must be an existing Marketing Email.|Retrieve the delivery time scheduled for this Marketing Email.|
 
 {% xmljsontabs get %}
@@ -245,42 +175,7 @@ navigation:
 Cancel a scheduled send for a Marketing Email.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Schedule
-navigation:
-  show: true
----
---|:---
-layout: page
-weight: 0
-title: Schedule
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Schedule
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Schedule
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Schedule
-navigation:
-  show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |name|Yes|Must be an existing Marketing Email|Remove the scheduled delivery time from an existing Marketing Email.|
 
 {% xmljsontabs delete %}

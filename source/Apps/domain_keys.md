@@ -19,28 +19,7 @@ By default, SendGrid signs all e-mail with Domain Keys to improve its deliverabi
 
 
 |Name|Required|Description|
-|:---
-layout: page
-weight: 0
-title: Domain Keys
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Domain Keys
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Domain Keys
-navigation:
-  show: true
----
--|
+|:---|:-------|:----------|
 |Domain|Yes|Sets the sender domain.|
 |Enable sender header|Yes|Enables the Domain Keys sender header.|
 

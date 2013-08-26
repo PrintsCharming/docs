@@ -15,42 +15,7 @@ This endpoint allows you to add, view, or remove marketing emails.
 Create a new Marketing Email.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Marketing Emails
-navigation:
-  show: true
----
---|:---
-layout: page
-weight: 0
-title: Marketing Emails
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Marketing Emails
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Marketing Emails
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Marketing Emails
-navigation:
-  show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |identity|Yes|Must be an existing Identity|The Identity that will be used for the Marketing Email being created.|
 |name|Yes|None|The name that will be used for the Marketing Email being created.|
 |subject|Yes|None|The subject that will be used for the Marketing Email being created.|
@@ -335,42 +300,7 @@ The new html portion of the Marketing Email being edited.
 Retrieve the contents of an existing Marketing Email.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Marketing Emails
-navigation:
-  show: true
----
---|:---
-layout: page
-weight: 0
-title: Marketing Emails
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Marketing Emails
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Marketing Emails
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Marketing Emails
-navigation:
-  show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |name|Yes|Must be an existing Marketing Email|Retrieve the content of an existing Marketing Email.|
 
 {% xmljsontabs get %}
@@ -465,42 +395,7 @@ navigation:
 Retrieve a list of all existing Marketing Email.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Marketing Emails
-navigation:
-  show: true
----
---|:---
-layout: page
-weight: 0
-title: Marketing Emails
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Marketing Emails
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Marketing Emails
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Marketing Emails
-navigation:
-  show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |name|No|Must be an existing Marketing Email|Search to see if a specific Marketing Email exists rather than a list of all Marketing Emails.|
 
 {% xmljsontabs list %}
@@ -608,42 +503,7 @@ navigation:
 Remove an existing Marketing Email.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Marketing Emails
-navigation:
-  show: true
----
---|:---
-layout: page
-weight: 0
-title: Marketing Emails
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Marketing Emails
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Marketing Emails
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Marketing Emails
-navigation:
-  show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |name|Yes|Must be an existing Marketing Email|Remove the Marketing Email with this name.|
 
 {% xmljsontabs delete %}

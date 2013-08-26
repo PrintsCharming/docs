@@ -15,56 +15,17 @@ For a more detailed description of each of the Apps below, please visit the [App
 
 
 |Parameter|Description|Example|
-|:---
-layout: page
-weight: 0
-title: Filter Settings
-navigation:
-  show: true
----
---|:---
-layout: page
-weight: 0
-title: Filter Settings
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Filter Settings
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Filter Settings
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Filter Settings
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Filter Settings
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Filter Settings
-navigation:
-  show: true
----
-|
+|:--------|:----------|:------|
+|list|A list of email addresses or domains.|Ex: list[]=support@example.com&list[]=sale@example.com}|
+
+* * * * *
+
+
+{% anchor h2 %} BCC "Blind Carbon Copy" {% endanchor %}
+ [API app name: "bcc"]
+
+|Parameter|Description|Example|
+|:--------|:----------|:------|
 |bcc|An email address to be the BCC recipient.|email@example.com|
 
 * * * * *
@@ -74,56 +35,17 @@ navigation:
  [API app name: "clicktrack"]
 
 |Parameter|Description|Example|
-|:---
-layout: page
-weight: 0
-title: Filter Settings
-navigation:
-  show: true
----
---|:---
-layout: page
-weight: 0
-title: Filter Settings
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Filter Settings
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Filter Settings
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Filter Settings
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Filter Settings
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Filter Settings
-navigation:
-  show: true
----
-|
+|:--------|:----------|:------|
+|enable_text|Enable click tracking in plain text emails.|0|1|
+
+* * * * *
+
+
+{% anchor h2 %} Domain Keys {% endanchor %}
+ [API app name:"domainkeys"]
+
+|Parameter|Description|Example|
+|:--------|:----------|:------|
 |domain|The domain to sign messages as|example.com|
 |sender|1 to insert a sender header if the domain specified does not match the from address 0 to never insert a Sender header|0|1|
 
@@ -221,56 +143,77 @@ Content
 
 
 |Parameter|Description|Example|
-|:---
-layout: page
-weight: 0
-title: Filter Settings
-navigation:
-  show: true
----
---|:---
-layout: page
-weight: 0
-title: Filter Settings
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Filter Settings
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Filter Settings
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Filter Settings
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Filter Settings
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Filter Settings
-navigation:
-  show: true
----
-|
+|:--------|:----------|:------|
+|processed|Notify when email is processed|0|1|
+|dropped|Notify when email is dropped|0|1|
+|deferred|Notify when email is deferred|0|1|
+|delivered|Notify when email is delivered|0|1|
+|bounce|Notify when email is bounced|0|1|
+|click|Notify when email is clicked|0|1|
+|open|Notify when email is opened|0|1|
+|unsubscribe|Notify when email is unsubscribed|0|1|
+|spamreport|Notify when email is marked as spam|0|1|
+|url|The post notification url to post these event messages to|url=http://yourPostNotificationUrl.example.com|
+
+* * * * *
+
+
+{% anchor h2 %} Footer {% endanchor %}
+ [API app name:"footer"]
+
+<table markdown="1" class="table table-bordered table-striped">
+<tr markdown="1">
+<th markdown="1">
+Parameter
+
+</th>
+<th markdown="1">
+Description
+
+</th>
+<th markdown="1">
+Example
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+text/html
+
+</td>
+<td markdown="1">
+String that holds the html body
+
+</td>
+<td markdown="1">
+Content
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+text/plain
+
+</td>
+<td markdown="1">
+String that holds the text body
+
+</td>
+<td markdown="1">
+Content
+
+</td>
+</tr>
+</table>
+
+* * * * *
+
+
+{% anchor h2 %} Google Analytics {% endanchor %}
+ [API app name:"ganalytics"]
+
+|Parameter|Description|Example|
+|:--------|:----------|:------|
 |utm_source|Name of the referrer source|Google, SomeDomain.com, or Marketing EmailA|
 |utm_medium|Name of the marketing medium|Email, Affiliate, or MobileApp|
 |utm_campaign|Name of the campaign|Quarter1, FallShoeSale|
@@ -586,28 +529,7 @@ a tag that can be added to the content that will be replaced by SendGrid with th
  [API app name:"twitter"]
 
 |Parameter|Description|Example|
-|:---
-layout: page
-weight: 0
-title: Filter Settings
-navigation:
-  show: true
----
---|:---
-layout: page
-weight: 0
-title: Filter Settings
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Filter Settings
-navigation:
-  show: true
----
----|
+|:--------|:----------|:------|
 |username|Your Twitter username|username|
 |password|Your Twitter password|password|
 

@@ -15,28 +15,7 @@ The Address Whitelist App whitelists a specified e-mail address or domain for wh
 
 
 |Name|Required|Description|
-|:---
-layout: page
-weight: 0
-title: Address Whitelisting
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Address Whitelisting
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Address Whitelisting
-navigation:
-  show: true
----
--|
+|:---|:-------|:----------|
 |Email|Yes|Adds the entered domain or address to the list of those that should never be suppressed.|
 
 There is no practical limit to the number of domains you add in this way.

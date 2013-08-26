@@ -12,42 +12,7 @@ navigation:
 Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Statistics
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Statistics
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Statistics
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Statistics
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Statistics
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |user|Yes|Customer must be registered under your account|The customer we are retrieving statistics from|
 |days|No|Must be an integer greater than 0|Number of days in the past to include statistics (includes today)|
 |start_date|No|Date must be in YYYY-mm-dd format and be before the end_date parameter|The start date to look up statistics|
@@ -79,42 +44,7 @@ navigation:
 Retrieve all-time totals for your customer
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Statistics
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Statistics
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Statistics
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Statistics
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Statistics
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |user|Yes|Customer must be registered under your account|The subuser we are retrieving statistics from|
 |aggregate|Yes|Must be set to 1|This is used to let us know that you are interested in all time totals|
 |method|Yes|Must be set to *stats*|Allows you to access stats functionality|
@@ -167,42 +97,7 @@ navigation:
 Retrieve a list of all the categories used in your customers account.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Statistics
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Statistics
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Statistics
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Statistics
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Statistics
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |list|Yes|The value must be set to *true*|This will allow you to retrieve a list of all categories used in your customers account.|
 |user|Yes|Subuser must be registered under your account|The subuser we are retrieving category statistics from|
 |method|Yes|Must be set to *stats*|Allows you to access stats functionality|
@@ -251,42 +146,7 @@ Retrieve statistics broken down by category. If the category does not exist, the
 Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Statistics
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Statistics
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Statistics
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Statistics
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Statistics
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |category|Yes|Must be an existing category that has statistics. You can pass in an array of categories|The category you will specify to retrieve detailed stats|
 |user|Yes|Customer must be registered under you|The customer we are retrieving statistics from|
 |days|No|Must be an integer greater than 0|Number of days in the past to include statistics (Includes today)|

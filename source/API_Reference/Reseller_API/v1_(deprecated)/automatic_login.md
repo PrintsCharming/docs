@@ -17,42 +17,7 @@ Allow customers to manage their account from your website using an iframe to our
 In order to login your customer, you need to contact our web API to retrieve the unique URL to automatically login your customer. Then display the generated URL to automatically login your customer.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Automatic Login
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Automatic Login
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Automatic Login
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Automatic Login
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Automatic Login
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |user|Yes|Must be set in email format|This is the customer you will attempt to automatically login|
 |password|No|Your customer password.|Authenticate the customer with this API call.|
 |method|Yes|Must be set to *geturl*|Allows you to access automatic login functionality|

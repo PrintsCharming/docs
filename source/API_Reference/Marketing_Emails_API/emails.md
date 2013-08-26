@@ -15,42 +15,7 @@ This endpoint allows you to manage entries in your Recipient Lists.
 Add one or more emails to a Recipient List.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Emails
-navigation:
-  show: true
----
---|:---
-layout: page
-weight: 0
-title: Emails
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Emails
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Emails
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Emails
-navigation:
-  show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |list|Yes|Must be an existing Recipient List.|The list which you are adding email addresses too.|
 |data|Yes|Must be a valid JSON string matching the required format. Limited to a 1000 entries maximum.|Specify the name, email address, and additional fields to add to the specified Recipient List.|
 
@@ -148,42 +113,7 @@ Add multiple email recipients to a list:
 Get the email addresses and associated fields for a Recipient List.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Emails
-navigation:
-  show: true
----
---|:---
-layout: page
-weight: 0
-title: Emails
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Emails
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Emails
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Emails
-navigation:
-  show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |list|Yes|Must be an existing Recipient List.|The list you are searching.|
 |email|No|Must be an email address or list of addresses.|Optional email addresses to search for in the Recipient List.|
 
@@ -268,42 +198,7 @@ navigation:
 Remove one or more emails from a Recipient List.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Emails
-navigation:
-  show: true
----
---|:---
-layout: page
-weight: 0
-title: Emails
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Emails
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Emails
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Emails
-navigation:
-  show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |list|Yes|Must be an existing Recipient List.|The list which you are removing email addresses from.|
 |email|Yes|Must be an email or emails in the Recipient List.|Specify the email address or email addresses you wish to remove from the specified Recipient List.|
 

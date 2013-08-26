@@ -15,42 +15,7 @@ This module allows you to create and manage categories within your Marketing Ema
 Create a new Category.
 
 |Parameter|Required|Requirements|Description.|
-|:---
-layout: page
-weight: 0
-title: Categories
-navigation:
-  show: true
----
---|:---
-layout: page
-weight: 0
-title: Categories
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Categories
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Categories
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Categories
-navigation:
-  show: true
----
---|
+|:--------|:-------|:-----------|:-----------|
 |category|Yes|None|The name that will be used for the Category being created.|
 
 {% xmljsontabs create %}
@@ -128,42 +93,7 @@ navigation:
 Assign a Category to an existing Marketing Email.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Categories
-navigation:
-  show: true
----
---|:---
-layout: page
-weight: 0
-title: Categories
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Categories
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Categories
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Categories
-navigation:
-  show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |category|Yes|Must be an existing Category.|The Category that will be added to the marketing email.|
 |name|Yes|Must be an existing Marketing Email|The Marketing Email to which the categories will be added.|
 
@@ -242,42 +172,7 @@ navigation:
 Remove specific categories, or all categories from a Marketing Email.\\
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Categories
-navigation:
-  show: true
----
---|:---
-layout: page
-weight: 0
-title: Categories
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Categories
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Categories
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Categories
-navigation:
-  show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |name|Yes|Must be an existing Marketing Email|The Marketing Email that will have Category(ies) deleted from it.|
 |category|No|Must be an existing category currently added to the Marketing Email|Remove the Category with this name. If the category is not specified. all categories will be deleted from the Marketing Email.|
 
@@ -356,42 +251,7 @@ navigation:
 List all categories.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Categories
-navigation:
-  show: true
----
---|:---
-layout: page
-weight: 0
-title: Categories
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Categories
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Categories
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Categories
-navigation:
-  show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |category|No|Must be an existing Category|Search to see if a specific Category exists rather than a list of all Categories.|
 
 {% xmljsontabs list %}

@@ -12,42 +12,7 @@ navigation:
 Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Subuser Bounces
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Subuser Bounces
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Subuser Bounces
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Subuser Bounces
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Subuser Bounces
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |user|Yes|Customer subuser must be registered under your account|The customer subuser we are retrieving bounces from|
 |task|Yes|Must be set to *get*|This will allow you to retrieve the bounces for the specified customer subuser|
 |date|No|Must be set to 1|Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS|
@@ -123,42 +88,7 @@ navigation:
 Since SendGrid does not re-deliver to bounced addresses, users can remove bounces from their list at any time if redelivery to a bounced address is desired.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Subuser Bounces
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Subuser Bounces
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Subuser Bounces
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Subuser Bounces
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Subuser Bounces
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |user|Yes|Subuser must be registered under your account|The subuser we are retrieving bounces from|
 |task|Yes|Must be set to *delete*|This will allow you to delete the bounces for the specified user|
 |email|No|Bounce email address you want to delete|You must specify the bounced email message to remove|

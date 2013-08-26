@@ -14,42 +14,7 @@ List all of the available apps.
 Note: The *name* entry is used in all the other API calls to identify a app.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Subuser Apps
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Subuser Apps
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Subuser Apps
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Subuser Apps
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Subuser Apps
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *getavailable*|Retrieve Available Apps|
 |user|Yes|Customer subuser must be registered under your account|The customer subuser who we will update|
 
@@ -94,42 +59,7 @@ Twitter
 
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Subuser Apps
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Subuser Apps
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Subuser Apps
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Subuser Apps
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Subuser Apps
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *activate*|Retrieve Available Apps|
 |user|Yes|Customer subuser must be registered under your account|The customer subuser who we will update|
 
@@ -171,42 +101,7 @@ navigation:
 
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Subuser Apps
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Subuser Apps
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Subuser Apps
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Subuser Apps
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Subuser Apps
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *deactivate*|Retrieve Available Apps|
 |user|Yes|Customer subuser must be registered under your account|The customer subuser who we will update|
 

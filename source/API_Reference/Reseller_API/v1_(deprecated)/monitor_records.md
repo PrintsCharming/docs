@@ -19,42 +19,7 @@ The first step is to create a Monitor Record. Once the monitor record has been c
 Obtain a complete list of all customer.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Monitor Records
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Monitor Records
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Monitor Records
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Monitor Records
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Monitor Records
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *create*|Create a monitor record|
 |name|Yes|Name must be unique. Can't be more than 255 characters|The unique name to identify this monitor record|
 |email|Yes|Must be in email format|The email destination to send the email sample to|
@@ -121,42 +86,7 @@ navigation:
 Make modifications to an existing Monitor record.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Monitor Records
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Monitor Records
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Monitor Records
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Monitor Records
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Monitor Records
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *edit*|The task required to edit a monitor|
 |name|Yes|The name of the previous monitor record|The monitor record we are going to edit|
 |new_name|No|New name must be unique and can't be more than 255 characters|The new monitor record name|
@@ -224,42 +154,7 @@ navigation:
 Deleting a monitor record will remove it from SendGrid's system. **Make sure no users are currently using the monitor record when removing, or removal will fail.**
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Monitor Records
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Monitor Records
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Monitor Records
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Monitor Records
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Monitor Records
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *delete*|The task required to remove a monitor|
 |name|Yes|Must be a monitor record to remove|The unique name to identify this monitor record|
 |method|Yes|Must be set to *monitor*|Allows you to access monitor functionality|
@@ -333,42 +228,7 @@ navigation:
 List all available monitor records a reseller has.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Monitor Records
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Monitor Records
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Monitor Records
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Monitor Records
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Monitor Records
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *list*|The task required to list all monitor records|
 |method|Yes|Must be set to *monitor*|Allows you to access monitor functionality|
 
@@ -420,42 +280,7 @@ navigation:
 Append a monitor record to a existing record onto a customer.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Monitor Records
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Monitor Records
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Monitor Records
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Monitor Records
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Monitor Records
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *append*|The task required to append a monitor record to a customer|
 |user|Yes|Customer must be registered under your account|The user we will append a monitor record to|
 |name|No|Must be a valid monitor record|The name of the monitor record we will be appending|
@@ -521,42 +346,7 @@ navigation:
 Detach a customer from a monitor record.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Monitor Records
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Monitor Records
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Monitor Records
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Monitor Records
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Monitor Records
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *detach*|The task required to detach a monitor record to a customer|
 |user|Yes|Customer must be registered under your account|The customer we will detach the monitor record from|
 |method|Yes|Must be set to *monitor*|Allows you to access monitor functionality|

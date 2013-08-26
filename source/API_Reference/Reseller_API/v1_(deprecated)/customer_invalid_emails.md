@@ -10,42 +10,7 @@ navigation:
 
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Invalid Emails
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Invalid Emails
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Invalid Emails
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Invalid Emails
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Invalid Emails
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |user|Yes|Customer must be registered under your account|The customer we are retrieving invalid emails from|
 |task|Yes|Must be set to *get*|This will allow you to retrieve the invalid emails for the specified customer|
 |date|No|Must be set to 1|Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS|
@@ -76,42 +41,7 @@ navigation:
 Since SendGrid does not deliver to invalid emails, users can remove invalid emails from their list at any time if re-delivery to a spam reported address is desired.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Invalid Emails
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Invalid Emails
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Invalid Emails
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Invalid Emails
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Invalid Emails
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |user|Yes|Customer must be registered under your account|The customer we are retrieving invalid emails from|
 |task|Yes|Must be set to *delete*|This will allow you to delete a invalid email for the specified customer|
 |email|No|Must be a invalid email|You must specify the invalid emails to remove|

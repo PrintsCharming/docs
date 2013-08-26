@@ -13,35 +13,7 @@ Some e-mails are too important to do normal list management checks, such as pass
 
 
 |App Name|Setting Field|Description|
-|:---
-layout: page
-weight: 0
-title: Bypass List Management
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Bypass List Management
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Bypass List Management
-navigation:
-  show: true
----
-|:---
-layout: page
-weight: 0
-title: Bypass List Management
-navigation:
-  show: true
----
-----|
+|:-------|:------------|:----------|
 |bypass_list_management|enable|0 to disable  
 1 to enable|
 

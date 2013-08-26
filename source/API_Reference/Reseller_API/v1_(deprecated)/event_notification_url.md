@@ -10,42 +10,7 @@ navigation:
 
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Event Notification URL
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Event Notification URL
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Event Notification URL
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Event Notification URL
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Event Notification URL
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *get*|This will allow you to retrieve the event notification url for the specified customer|
 |user|Yes|Customer must be registered under your account|The username of the customer|
 |method|Yes|Must be set to *eventposturl*|Allows you to access post event url functionality|
@@ -86,42 +51,7 @@ navigation:
 
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Event Notification URL
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Event Notification URL
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Event Notification URL
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Event Notification URL
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Event Notification URL
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *set*|This will allow you to retrieve the event notification url for the specified customer|
 |user|Yes|Customer must be registered under your account|The name of the customer|
 |url|Yes|The notification URL|This is the new event notification URL|
@@ -165,42 +95,7 @@ navigation:
 
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Event Notification URL
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Event Notification URL
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Event Notification URL
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Event Notification URL
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Event Notification URL
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *delete*|This will allow you to delete the event notification url for the specified customer|
 |user|Yes|Customer must be registered under your account|The name of the customer|
 |method|Yes|Must be set to *eventposturl*|Allows you to access post event url functionality|

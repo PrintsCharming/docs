@@ -12,42 +12,7 @@ navigation:
 View all IPs under your account.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: IP Management
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: IP Management
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: IP Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: IP Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: IP Management
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *all*.|Retrieve all IPs available for your account.|
 |ip|No|Can be a complete or partial IP address.|Filter your search results.|
 |system|No|Must be set to *true*.|Include IPs assigned by SendGrid.|
@@ -113,42 +78,7 @@ navigation:
 A listing of all free IPs under your account. A Free IP is any IP that is not in use by a user or is not linked to an IP grouping.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: IP Management
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: IP Management
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: IP Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: IP Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: IP Management
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *free*.|Retrieve all free IPs for your account.|
 |ip|No|Can be a complete or partial IP address.|Filter your search results.|
 
@@ -202,42 +132,7 @@ navigation:
 A listing of all taken IPs under your account. A Taken IP is any IP that is in use by a user or is linked to an IP grouping.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: IP Management
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: IP Management
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: IP Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: IP Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: IP Management
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *taken*.|Retrieve all taken IPs for your account.|
 |ip|No|Can be a complete or partial IP address.|Filter your search results.|
 
@@ -291,42 +186,7 @@ navigation:
 A listing of all available IPs under your account. An Available IP is any IP that is currently free, or is in use by a user *but* that user is inactive or that is not linked to an IP grouping.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: IP Management
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: IP Management
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: IP Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: IP Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: IP Management
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *available*.|Retrieve all available IPs for your account.|
 |ip|No|Can be a complete or partial IP address.|Filter your search results.|
 
@@ -380,42 +240,7 @@ navigation:
 The current breakdown of users who are using your IPs.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: IP Management
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: IP Management
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: IP Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: IP Management
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: IP Management
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *usage*.|Retrieve all IPs in use broken down by user.|
 |ip|No|Can be a complete or partial IP address.|Filter your search results.|
 |user|No|Can be a complete or part of a username.|Filter your search results.|

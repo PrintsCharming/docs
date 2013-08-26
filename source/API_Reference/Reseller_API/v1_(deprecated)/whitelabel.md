@@ -15,56 +15,50 @@ With the whitelabel API calls you will be able to retrieve whitelabel settings r
 
 
 |Parameter|Required|Requirements|
-|:---
-layout: page
-weight: 0
-title: Whitelabel
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Whitelabel
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Whitelabel
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Whitelabel
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Whitelabel
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Whitelabel
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Whitelabel
-navigation:
-   show: true
----
---|
+|:--------|:-------|:-----------|
+|list|Yes|Must be set to *list*|
+|method|Yes|Must be set to *whitelabel*|
+
+### XML Call
+
+{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=whitelabel&task=lis {% endcodeblock %}
+
+### Response
+
+
+{% codeblock lang:xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<whitelabels>
+   <whitelabel>
+      <mail_domain>email.sendgrid.com</mail_domain>
+      <url_domain>email.sendgrid.com</url_domain>
+   </whitelabel>
+   <whitelabel>
+      <mail_domain>email.example.com</mail_domain>
+      <url_domain>email.example.com</url_domain>
+   </whitelabel>
+</whitelabels>
+
+{% endcodeblock %}
+
+
+### JSON Call
+
+{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=whitelabel&task=lis {% endcodeblock %}
+
+### Response
+
+
+
+* * * * *
+
+
+{% anchor h2 %} Append {% endanchor %}
+
+
+|Parameter|Required|Requirements|
+|:--------|:-------|:-----------|
 |list|Yes|Must be set to *append*|
 |user|Yes|Subuser must be registered under your account|
 |mail_domain|Yes|Whitelabel mail_domain used to append a whitelabel record to a subuser|

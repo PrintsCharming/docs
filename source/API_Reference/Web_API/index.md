@@ -16,7 +16,7 @@ SendGrid offers a Web API that allows customers to retrieve information about th
 
 The following is the syntax for making Web API requests:
 
-`     https://sendgrid.com/api/[module].[action].[format]`
+` 	https://sendgrid.com/api/[module].[action].[format]`
 
 -   **[module]** - The API endpoint to call, e.g. blocks.
 -   **[action]** - Each module supports multiple actions such as add, get, and delete.

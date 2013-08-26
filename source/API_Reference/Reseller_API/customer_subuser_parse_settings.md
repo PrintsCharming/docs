@@ -10,42 +10,7 @@ navigation:
 
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Subuser Parse Settingsf
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Subuser Parse Settingsf
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Subuser Parse Settingsf
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Subuser Parse Settingsf
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Subuser Parse Settingsf
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *get*|Retrieve Parse settings|
 |user|Yes|Customer subuser must be registered under your account|The customer subuser who we will update|
 
@@ -114,42 +79,7 @@ navigation:
 
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Subuser Parse Settingsf
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Subuser Parse Settingsf
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Subuser Parse Settingsf
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Subuser Parse Settingsf
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Subuser Parse Settingsf
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *set*|Set Parse settings|
 |hostname|Yes|No more than 255 characters|Hostname we will use with your email|
 |url|Yes||The parse destination|
@@ -233,42 +163,7 @@ navigation:
 
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Subuser Parse Settingsf
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Subuser Parse Settingsf
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Subuser Parse Settingsf
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Subuser Parse Settingsf
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Subuser Parse Settingsf
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *update*|Set Parse settings|
 |hostname|Yes|No more than 255 characters|Hostname entry you want to update|
 |url|Yes||The parse destination|
@@ -352,42 +247,7 @@ navigation:
 
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Subuser Parse Settingsf
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Subuser Parse Settingsf
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Subuser Parse Settingsf
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Subuser Parse Settingsf
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Subuser Parse Settingsf
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *delete*|Set Parse settings|
 |user|Yes|Customer subuser must be registered under your account|The customer subuser who we will update|
 |hostname|Yes|Must be the hostname you wish to delete.|The host name you will remove for your customer subuser|

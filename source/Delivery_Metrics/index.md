@@ -129,21 +129,7 @@ The [ISP report](http://sendgrid.com/statistics/isp) highlights how your mail pe
 Available devices:
 
 |Device|Description|
-|:---
-layout: page
-weight: 100
-title: Delivery Metrics Index
-navigation:
-  show: true
----
----
-layout: page
-weight: 100
-title: Delivery Metrics Index
-navigation:
-  show: true
----
--|
+|:-----|:----------|
 |Desktop|Email software on desktop computer I.E. Outlook, Sparrow, or Apple Mail.|
 |WebMail|A web-based email client I.E. Yahoo, Google, AOL, or Outlook.com.|
 |Phone|A smart phone; IPhone, Android, Blackberry, etc.|

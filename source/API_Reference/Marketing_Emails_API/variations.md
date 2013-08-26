@@ -17,42 +17,7 @@ This module allows you to add new Variations to your drafted Marketing Emails. T
 Create a new Variation.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
---|:---
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |name|Yes|Must be an existing Marketing Email in draft mode.|The name of the Marketing Email you are adding Variations to.|
 |variation|Yes|None|The name of the Variation you will be adding.|
 |subject|Yes|None|The subject that will be used for the Variation being created.|
@@ -134,42 +99,7 @@ navigation:
  Edit an existing Variation.   
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
---|:---
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |name|Yes|Must be an existing Marketing Email with Variations added to it.|The name of the Marketing Email you are editing Variations on.|
 |variation|Yes|Must be an existing Variation|The name of the Variation you will be editing.|
 |newvariation|No|None|The new name of the Variation.|
@@ -251,42 +181,7 @@ navigation:
  Retrieve the contents of an existing Variation.   
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
---|:---
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |name|Yes|Must be an existing Marketing Email|The name of the Marketing Email with existing Variations added to it.|
 |variation|Yes|Must be an existing Variation|The name of the Variation you would like the contents of.|
 
@@ -354,42 +249,7 @@ navigation:
  Cancels a current Variation send that is in progress.   
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
---|:---
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |name|Yes|Must be an existing Marketing Email|The name of the Marketing Email you wish to cancel, this cancels added Variations.|
 
 {% xmljsontabs cancel %}
@@ -467,42 +327,7 @@ navigation:
  Delete the contents of an existing Variation.   
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
---|:---
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |name|Yes|Must be an existing Marketing Email|The name of the Marketing Email with existing Variations added to it.|
 |variation|No|Must be an existing Variation|The name of the Variation you would like to delete.|
 
@@ -581,42 +406,7 @@ navigation:
  Retrieve a list of all Variations attached to a Marketing Email.   
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
---|:---
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |name|Yes|Must be an existing Marketing Email|The marketing email for which to list variations.|
 |variation|No|Must be an existing Variation|An optional list of names to check for.|
 
@@ -695,42 +485,7 @@ navigation:
  Select the Variation you would like to send.   
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
---|:---
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |name|Yes|Must be an existing Marketing Email|Select the Marketing Email you're picking the winner of.|
 |variation|Yes|Must be an existing Variation|The winning Variation.|
 
@@ -809,42 +564,7 @@ navigation:
  Schedule a send time and percentage for your variations.   
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
---|:---
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
--|:---
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: Variations (A/B Testing)
-navigation:
-  show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |name|Yes|Must be an existing Marketing Email|Select the Marketing Email you'de like to schedule Variation testing on.|
 |percent|Yes|Must be a number 0-100|Percentage of the total recipients that will be emailed in the test.|
 |delay|No|Must be numeric.|The number of units specified by `delay_type` by which to delay the send.|

@@ -15,42 +15,7 @@ Throttle your customer when you need them to send only a specific amount of emai
 Retrieve account limits for a specific customer. If the API call response is empty that means the customer has the limits removed.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Account Limits
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Account Limits
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Account Limits
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Account Limits
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Account Limits
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *retrieve*|Retrieve account limits|
 |user|Yes|Customer must be registered under your account|The customer who will have their account limits retrieved|
 
@@ -138,42 +103,7 @@ navigation:
 Obtain a complete list of all customer.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Account Limits
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Account Limits
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Account Limits
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Account Limits
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Account Limits
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *none*|Remove account limits|
 |user|Yes|Customer must be registered under your account|The customer who will have their account limits removed|
 |method|Yes|Must be set to *limit*|Allows you to access limit functionality|
@@ -257,42 +187,7 @@ navigation:
 A recurring reset will allow you to periodically reset a subusers credits to a number you specify. This can be either daily, weekly or monthly.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Account Limits
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Account Limits
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Account Limits
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Account Limits
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Account Limits
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *recurring*|The task required to set the recurring reset|
 |user|Yes|Customer must be registered under your account|The customer you will be applying a recurring reset to|
 |credits|Yes|Must be an integer and greater than 0|The number of credits the customer will be reset to|
@@ -381,42 +276,7 @@ navigation:
 Set a subusers credits to a specified amount.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Account Limits
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Account Limits
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Account Limits
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Account Limits
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Account Limits
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *total*|Set the credits to the specified amount|
 |user|Yes|Customer must be registered under your account|The customer who will have their credits updated|
 |credits|Yes|Must be an integer and greater than 0|The total number of credits the customer will be reset to|
@@ -501,42 +361,7 @@ navigation:
 Increment a subusers credits by a specified amount.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Account Limits
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Account Limits
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Account Limits
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Account Limits
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Account Limits
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *increment*|Increment the credits by the specified amount|
 |user|Yes|Customer must be registered under your account|The customer who will have their credits incremented|
 |credits|Yes|Must be an integer and greater than 0|The total number of credits the customer will be incremented by|
@@ -621,42 +446,7 @@ navigation:
 Decrement a subusers credits by a specified amount.
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Account Limits
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Account Limits
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Account Limits
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Account Limits
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Account Limits
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *increment*|Decrement the credits by the specified amount|
 |user|Yes|Customer must be registered under your account|The customer who will have their credits decremented|
 |credits|Yes|Must be an integer and greater than 0|The total number of credits the customer will be decremented by|

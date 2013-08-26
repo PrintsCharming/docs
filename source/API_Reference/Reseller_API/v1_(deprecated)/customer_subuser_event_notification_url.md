@@ -10,42 +10,7 @@ navigation:
 
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Subuser Event Notification URL
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Subuser Event Notification URL
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Subuser Event Notification URL
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Subuser Event Notification URL
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Subuser Event Notification URL
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *get*|This will allow you to retrieve the event notification url for the specified customer subuser|
 |user|Yes|Customer subuser must be registered under your account|The username of the customer subuser|
 
@@ -85,42 +50,7 @@ navigation:
 
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Subuser Event Notification URL
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Subuser Event Notification URL
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Subuser Event Notification URL
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Subuser Event Notification URL
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Subuser Event Notification URL
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *set*|This will allow you to retrieve the event notification url for the specified customer subuser|
 |user|Yes|Customer subuser must be registered under your account|The name of the customer subuser|
 |url|Yes|The notification URL|This is the new event notification URL|
@@ -163,42 +93,7 @@ navigation:
 
 
 |Parameter|Required|Requirements|Description|
-|:---
-layout: page
-weight: 0
-title: Customer Subuser Event Notification URL
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Customer Subuser Event Notification URL
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Customer Subuser Event Notification URL
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Subuser Event Notification URL
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Customer Subuser Event Notification URL
-navigation:
-   show: true
----
--|
+|:--------|:-------|:-----------|:----------|
 |task|Yes|Must be set to *delete*|This will allow you to delete the event notification url for the specified customer subuser|
 |user|Yes|Customer subuser must be registered under your account|The name of the customer subuser|
 

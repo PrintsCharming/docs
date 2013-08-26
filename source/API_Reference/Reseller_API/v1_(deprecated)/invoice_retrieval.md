@@ -17,56 +17,51 @@ Retrieve your invoice information.
 Return an array of invoice numbers to your account.
 
 |Parameter|Required|Description|
-|:---
-layout: page
-weight: 0
-title: Invoice Retrieval
-navigation:
-   show: true
----
---|:---
-layout: page
-weight: 0
-title: Invoice Retrieval
-navigation:
-   show: true
----
--|:---
-layout: page
-weight: 0
-title: Invoice Retrieval
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Invoice Retrieval
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Invoice Retrieval
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Invoice Retrieval
-navigation:
-   show: true
----
----
-layout: page
-weight: 0
-title: Invoice Retrieval
-navigation:
-   show: true
----
--|
+|:--------|:-------|:----------|
+|start_date|No|Must be in YYYY-mm-dd format. This is the start date to begin your invoice search from.|
+|end_date|No|Must be in YYYY-mm-dd format and also include a start_date in the API call. This is the end date you wish to end your invoice search from.|
+|status|No|Must be either paid, unpaid, refunded, deferred, canceled. This is used to specify what kind of invoice you would like returned.|
+
+### XML Call
+
+{% codeblock %} https://sendgrid.com/api/billing.list.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai {% endcodeblock %}
+
+### Response
+
+
+{% codeblock lang:xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<invoices>
+   <invoice>
+      <number>2010010001</number>
+   </invoice>
+   <invoice>
+      <number>2010010002</number>
+   </invoice>
+</invoices>
+
+{% endcodeblock %}
+
+
+### JSON Call
+
+{% codeblock %} https://sendgrid.com/api/billing.list.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai {% endcodeblock %}
+
+### Response
+
+
+
+* * * * *
+
+
+{% anchor h2 %} Retrieve Invoices {% endanchor %}
+
+
+Return an array of invoices.
+
+|Parameter|Required|Description|
+|:--------|:-------|:----------|
 |start_date|No|Must be in YYYY-mm-dd format. This is the start date to begin your invoice search from.|
 |end_date|No|Must be in YYYY-mm-dd format and also include a start_date in the API call. This is the end date you wish to end your invoice search from.|
 |status|No|Must be either paid, unpaid, refunded, deferred, canceled. This is used to specify what kind of invoice you would like returned.|

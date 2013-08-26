@@ -13,28 +13,7 @@ Automatically sends a blind carbon copy to an address for every e-mail sent with
 
 
 |Name|Required|Description|
-|:---
-layout: page
-weight: 0
-title: BCC
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: BCC
-navigation:
-  show: true
----
----
-layout: page
-weight: 0
-title: BCC
-navigation:
-  show: true
----
--|
+|:---|:-------|:----------|
 |Email|Yes|Sets the entered address to be the BCC recipient.|
 
 
