@@ -11,41 +11,100 @@ navigation:
 
 Notes: This API call allows SendGrid resellers to add a new set of credentials to a specified child account.
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>The username must be be between 3 and 64 characters and cannot be completely numeric.</td>
-         <td>The child account we are adding a credential to.</td>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>The task must be set to 'add'.</td>
-         <td>The task we are setting so we create a credential.</td>
-      </tr>
-      <tr>
-         <td>credential_name</td>
-         <td>Yes</td>
-         <td>The credential_name must be be between 3 and 64 characters and cannot be completely numeric.</td>
-         <td>The credential we are creating under the child account.</td>
-      </tr>
-      <tr>
-         <td>credential_password</td>
-         <td>Yes</td>
-         <td>Must be at least 6 characters.</td>
-         <td>The password used to authenticate the newly generated credential.</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+Parameter
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Requirements
+
+</th>
+<th markdown="1">
+Description
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+user
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+The username must be be between 3 and 64 characters and cannot be completely numeric.
+
+</td>
+<td markdown="1">
+The child account we are adding a credential to.
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+task
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+The task must be set to 'add'.
+
+</td>
+<td markdown="1">
+The task we are setting so we create a credential.
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+credential_name
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+The credential_name must be be between 3 and 64 characters and cannot be completely numeric.
+
+</td>
+<td markdown="1">
+The credential we are creating under the child account.
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+credential_password
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Must be at least 6 characters.
+
+</td>
+<td markdown="1">
+The password used to authenticate the newly generated credential.
+
+</td>
+</tr>
+</tbody>
+</table>
 ### XML API Request
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.credential.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=reseller_customer&task=add&credential_name=reseller_customer_credential&credential_password=reseller_customer_password {% endcodeblock %}
@@ -116,41 +175,100 @@ Notes: This API call allows SendGrid resellers to add a new set of credentials t
 
 Notes: This API call allows SendGrid resellers to edit an already existing credential password. Changing the credential name is not currently allowed.
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>The username must be be between 3 and 64 characters and cannot be completely numeric.</td>
-         <td>The username that we are checking against existing usernames.</td>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>The task must be set to 'edit'.</td>
-         <td>The task we are setting so we edit a credential password</td>
-      </tr>
-      <tr>
-         <td>credential_name</td>
-         <td>Yes</td>
-         <td>The credential_name must be be between 3 and 64 characters and cannot be completely numeric.</td>
-         <td>The credential we want to modify</td>
-      </tr>
-      <tr>
-         <td>new_credential_password</td>
-         <td>Yes</td>
-         <td>Must be at least 6 characters</td>
-         <td>The updated password</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+Parameter
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Requirements
+
+</th>
+<th markdown="1">
+Description
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+user
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+The username must be be between 3 and 64 characters and cannot be completely numeric.
+
+</td>
+<td markdown="1">
+The username that we are checking against existing usernames.
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+task
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+The task must be set to 'edit'.
+
+</td>
+<td markdown="1">
+The task we are setting so we edit a credential password
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+credential_name
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+The credential_name must be be between 3 and 64 characters and cannot be completely numeric.
+
+</td>
+<td markdown="1">
+The credential we want to modify
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+new_credential_password
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Must be at least 6 characters
+
+</td>
+<td markdown="1">
+The updated password
+
+</td>
+</tr>
+</tbody>
+</table>
 ### XML API Request
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.credential.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=reseller_customer&task=edit&credential_name=reseller_customer_credential&new_credential_password=reseller_customer_password {% endcodeblock %}
@@ -220,35 +338,82 @@ Notes: This API call allows SendGrid resellers to edit an already existing crede
 
 Notes: This API call allows SendGrid resellers to delete an existing credential under a child account.
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>The username must be be between 3 and 64 characters and cannot be completely numeric.</td>
-         <td>The username that we are checking against existing usernames.</td>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>The task must be set to 'delete'.</td>
-         <td>The task we are setting so we delete a credential</td>
-      </tr>
-      <tr>
-         <td>credential_name</td>
-         <td>Yes</td>
-         <td>The credential_name must be be between 3 and 64 characters and cannot be completely numeric.</td>
-         <td>The credential we want to remove</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+Parameter
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Requirements
+
+</th>
+<th markdown="1">
+Description
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+user
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+The username must be be between 3 and 64 characters and cannot be completely numeric.
+
+</td>
+<td markdown="1">
+The username that we are checking against existing usernames.
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+task
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+The task must be set to 'delete'.
+
+</td>
+<td markdown="1">
+The task we are setting so we delete a credential
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+credential_name
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+The credential_name must be be between 3 and 64 characters and cannot be completely numeric.
+
+</td>
+<td markdown="1">
+The credential we want to remove
+
+</td>
+</tr>
+</tbody>
+</table>
 ### XML API Request
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.credential.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=reseller_customer&task=delete&credential_name=reseller_customer_credential {% endcodeblock %}

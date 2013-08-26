@@ -14,33 +14,68 @@ This module allows you to manage which lists are assigned to marketing email.
 
 Assign a List to a Marketing Email.
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>list</td>
-         <td>Yes</td>
-         <td>None</td>
-         <td>The name of the list to assign to the marketing email</td>
-      </tr>
-      <tr>
-         <td>name</td>
-         <td>Yes</td>
-         <td>None</td>
-         <td>The name of the marketing email</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+Parameter
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Requirements
+
+</th>
+<th markdown="1">
+Description
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+list
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+None
+
+</td>
+<td markdown="1">
+The name of the list to assign to the marketing email
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+name
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+None
+
+</td>
+<td markdown="1">
+The name of the marketing email
+
+</td>
+</tr>
+</tbody>
+</table>
 {% xmljsontabs add %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="add-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="add-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/recipients/add.json?name=SendGrid%20NL%20Test2&list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -69,7 +104,7 @@ Assign a List to a Marketing Email.
 
 
 </div>
-<div class="tab-pane" id="add-xml">
+<div markdown="1" class="tab-pane" id="add-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/recipients/add.xml?name=SendGrid%20NL%20Test2&list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -111,27 +146,50 @@ Assign a List to a Marketing Email.
 
 Get all lists assigned to a particular marketing email
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>name</td>
-         <td>Yes</td>
-         <td>None</td>
-         <td>The name of the marketing email for which to retrieve lists.</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+Parameter
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Requirements
+
+</th>
+<th markdown="1">
+Description
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+name
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+None
+
+</td>
+<td markdown="1">
+The name of the marketing email for which to retrieve lists.
+
+</td>
+</tr>
+</tbody>
+</table>
 {% xmljsontabs get %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="get-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/recipients/get.json?name=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -162,7 +220,7 @@ Get all lists assigned to a particular marketing email
 
 
 </div>
-<div class="tab-pane" id="get-xml">
+<div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/recipients/get.xml?name=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -206,33 +264,68 @@ Get all lists assigned to a particular marketing email
 
 Remove assigned lists from marketing email
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>name</td>
-         <td>Yes</td>
-         <td>Must be an existing marketing email</td>
-         <td>To marketing email from which the list will be unassigned.</td>
-      </tr>
-      <tr>
-         <td>list</td>
-         <td>Yes</td>
-         <td>Must be an existing Recipient List.</td>
-         <td>Remove this list from the marketing email</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+Parameter
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Requirements
+
+</th>
+<th markdown="1">
+Description
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+name
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Must be an existing marketing email
+
+</td>
+<td markdown="1">
+To marketing email from which the list will be unassigned.
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+list
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Must be an existing Recipient List.
+
+</td>
+<td markdown="1">
+Remove this list from the marketing email
+
+</td>
+</tr>
+</tbody>
+</table>
 {% xmljsontabs delete %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="delete-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="delete-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/delete.json?name=SendGrid%20NL%20Test1&list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -261,7 +354,7 @@ Remove assigned lists from marketing email
 
 
 </div>
-<div class="tab-pane" id="delete-xml">
+<div markdown="1" class="tab-pane" id="delete-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/delete.xml?name=SendGrid%20NL%20Test1&list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}

@@ -16,27 +16,31 @@ We use SpamAssassin to process the spam checks for this filter. The default thre
 {% anchor h2 %} Settings {% endanchor %}
 
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Name</th>
-<th align="left">Required</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">URL to Post Spam Messages</td>
-<td align="left">No</td>
-<td align="left">SendGrid will send an HTTP POST request when it detects emails that are above the threshold to the URL specified.</td>
-</tr>
-<tr class="even">
-<td align="left">Spam Threshhold</td>
-<td align="left">No (default:5)</td>
-<td align="left">Emails with a spam score over this value will be considered spam and will not be delivered to the recipient. We use SpamAssassin to process the spam checks for this App, so you can base your Spam Threshold setting on values typically used with SpamAssassin. The more negative a score is, the less likely it is to be spam, conversely increasing positive numbers suggest a message is spam.</td>
-</tr>
-</tbody>
-</table>
+|Name|Required|Description|
+|:---
+layout: page
+weight: 0
+title: Spam Checker
+navigation:
+  show: true
+---
+---
+layout: page
+weight: 0
+title: Spam Checker
+navigation:
+  show: true
+---
+---
+layout: page
+weight: 0
+title: Spam Checker
+navigation:
+  show: true
+---
+-|
+|URL to Post Spam Messages|No|SendGrid will send an HTTP POST request when it detects emails that are above the threshold to the URL specified.|
+|Spam Threshhold|No (default:5)|Emails with a spam score over this value will be considered spam and will not be delivered to the recipient. We use SpamAssassin to process the spam checks for this App, so you can base your Spam Threshold setting on values typically used with SpamAssassin. The more negative a score is, the less likely it is to be spam, conversely increasing positive numbers suggest a message is spam.|
 
 The HTTP POST request that you receive at the designated URL will contain parameters with details about the spam checker event. If the URL is not specified, this HTTP POST request will simply not occur.
 
@@ -44,24 +48,24 @@ The HTTP POST request that you receive at the designated URL will contain parame
 {% anchor h2 %} Parameters: {% endanchor %}
 
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Name</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">email</td>
-<td align="left">The contents of the email that was flagged as spam.</td>
-</tr>
-<tr class="even">
-<td align="left">report</td>
-<td align="left">The detailed SpamAssassin report describing why the email was designated as spam.</td>
-</tr>
-</tbody>
-</table>
+|Name|Description|
+|:---
+layout: page
+weight: 0
+title: Spam Checker
+navigation:
+  show: true
+---
+---
+layout: page
+weight: 0
+title: Spam Checker
+navigation:
+  show: true
+---
+-|
+|email|The contents of the email that was flagged as spam.|
+|report|The detailed SpamAssassin report describing why the email was designated as spam.|
 
 
 {% anchor h2 %} Example POST: {% endanchor %}
@@ -71,13 +75,13 @@ The HTTP POST request that you receive at the designated URL will contain parame
 {% anchor h3 %} Parameters {% endanchor %}
  {% codeblock %} email: Date: Tue, 12 June 2012 11:59:34 PST From: Hip Recall Claim Center <hiprecallclaimcenter> Subject: Thousands of Hip Implants Recalled Due to Failure! To: Undisclosed Recipient <mail> X-BID: 11117965 22049 MIME-Version: 1.0 Content-Type: text/html Content-Transfer-Encoding: 7bit Message-ID:
 
-<center>
+<center markdown="1">
 Please click "Not Spam" above if delivered to spam folder
 
   
   
 
-<div align="center">
+<div markdown="1" align="center">
 [Hip Implants Recalled Due to Failure, Info and Compensation Here!...Click Here  
 ![](http://xgwi112oswing_._com/?dWlkPTEwMDAxJmNpZD0yMjA0OSZsaWQ9YSZybj1taXh1d2V6YQ)](http://xgwi112oswing_._com/?dWlkPTEwMDAxJmNpZD0yMjA0OSZsaWQ9MSZybj1jdXBp)   
 [![](http://xgwi112oswing.com/?dWlkPTEwMDAxJmNpZD0yMjA0OSZsaWQ9YiZybj13dWs)](http://xgwi112oswing_._com/?dWlkPTEwMDAxJmNpZD0yMjA0OSZsaWQ9MiZybj13YWo)   

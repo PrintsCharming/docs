@@ -8,27 +8,35 @@ navigation:
 
 Retrieve invoices/usages from end users before your scheduled billing date.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>current</em>.</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Description|
+|:---
+layout: page
+weight: 0
+title: Retrieving As-You-Go Usage
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Retrieving As-You-Go Usage
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Retrieving As-You-Go Usage
+navigation:
+   show: true
+---
+----|
+|task|Yes|Must be set to *current*.|
 
 {% xmljsontabs get %}
 
-<div class="tab-content">
-<div class="tab-pane" id="get-xml">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.billing.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&number=2010010001&task=curren {% endcodeblock %}
@@ -64,7 +72,7 @@ Retrieve invoices/usages from end users before your scheduled billing date.
 
 
 </div>
-<div class="tab-pane active" id="get-json">
+<div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.billing.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&number=2010010001&task=curren {% endcodeblock %}

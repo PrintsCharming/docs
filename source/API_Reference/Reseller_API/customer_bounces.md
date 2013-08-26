@@ -11,47 +11,52 @@ navigation:
 
 Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Customer must be registered under your account</td>
-<td align="left">The customer we are retrieving bounces from</td>
-</tr>
-<tr class="even">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>get</em></td>
-<td align="left">This will allow you to retrieve the bounces for the specified customer</td>
-</tr>
-<tr class="odd">
-<td align="left">date</td>
-<td align="left">No</td>
-<td align="left">Must be set to 1</td>
-<td align="left">Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
-</tr>
-<tr class="even">
-<td align="left">method</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>bounces</em></td>
-<td align="left">Allows you to access bounces functionality</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Customer Bounces
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Customer Bounces
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Customer Bounces
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Bounces
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Bounces
+navigation:
+   show: true
+---
+-|
+|user|Yes|Customer must be registered under your account|The customer we are retrieving bounces from|
+|task|Yes|Must be set to *get*|This will allow you to retrieve the bounces for the specified customer|
+|date|No|Must be set to 1|Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS|
+|method|Yes|Must be set to *bounces*|Allows you to access bounces functionality|
 
 {% xmljsontabs get %}
 
-<div class="tab-content">
-<div class="tab-pane" id="get-xml">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=customer@example.com&task=get&date= {% endcodeblock %}
@@ -81,7 +86,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 
 </div>
-<div class="tab-pane active" id="get-json">
+<div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=customer@example.com&task=get&date= {% endcodeblock %}
@@ -118,47 +123,52 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 Since SendGrid does not re-deliver to bounced addresses, users can remove bounces from their list at any time if redelivery to a bounced address is desired.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Subuser must be registered under your account</td>
-<td align="left">The subuser we are retrieving bounces from</td>
-</tr>
-<tr class="even">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>delete</em></td>
-<td align="left">This will allow you to delete the bounces for the specified user</td>
-</tr>
-<tr class="odd">
-<td align="left">email</td>
-<td align="left">No</td>
-<td align="left">Bounce email address you want to delete</td>
-<td align="left">You must specify the bounced email message to remove</td>
-</tr>
-<tr class="even">
-<td align="left">method</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>bounces</em></td>
-<td align="left">Allows you to access bounces functionality</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Customer Bounces
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Customer Bounces
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Customer Bounces
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Bounces
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Bounces
+navigation:
+   show: true
+---
+-|
+|user|Yes|Subuser must be registered under your account|The subuser we are retrieving bounces from|
+|task|Yes|Must be set to *delete*|This will allow you to delete the bounces for the specified user|
+|email|No|Bounce email address you want to delete|You must specify the bounced email message to remove|
+|method|Yes|Must be set to *bounces*|Allows you to access bounces functionality|
 
 {% xmljsontabs delete %}
 
-<div class="tab-content">
-<div class="tab-pane" id="delete-xml">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane" id="delete-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=customer@example.com&task=delete&email=bounce@example.com {% endcodeblock %}
@@ -190,7 +200,7 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
 
 
 </div>
-<div class="tab-pane" id="delete-json">
+<div markdown="1" class="tab-pane" id="delete-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=customer@example.com&task=delete&email=bounce@example.com {% endcodeblock %}

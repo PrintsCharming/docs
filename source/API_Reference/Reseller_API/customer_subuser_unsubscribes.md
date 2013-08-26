@@ -11,41 +11,51 @@ navigation:
 
 Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Customer subuser must be registered under your account</td>
-<td align="left">The customer subuser we are retrieving unsubscribes from</td>
-</tr>
-<tr class="even">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>get</em></td>
-<td align="left">This will allow you to retrieve the unsubscribes for the specified customer subuser</td>
-</tr>
-<tr class="odd">
-<td align="left">date</td>
-<td align="left">No</td>
-<td align="left">Must be set to 1</td>
-<td align="left">Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Customer Subuser Unsubscribes
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Customer Subuser Unsubscribes
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Customer Subuser Unsubscribes
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Subuser Unsubscribes
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Subuser Unsubscribes
+navigation:
+   show: true
+---
+-|
+|user|Yes|Customer subuser must be registered under your account|The customer subuser we are retrieving unsubscribes from|
+|task|Yes|Must be set to *get*|This will allow you to retrieve the unsubscribes for the specified customer subuser|
+|date|No|Must be set to 1|Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS|
 
 {% xmljsontabs get %}
 
-<div class="tab-content">
-<div class="tab-pane" id="get-xml">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=example@example.com&task=get&date= {% endcodeblock %}
@@ -71,7 +81,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 
 </div>
-<div class="tab-pane active" id="get-json">
+<div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=example@example.com&task=get&date= {% endcodeblock %}
@@ -104,41 +114,51 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 Since SendGrid does not deliver to unsubscribe addresses, users can remove unsubscribes from their list at any time if re-delivery to an unsubscribed address is desired.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Customer subuser must be registered under your account</td>
-<td align="left">The customer subuser we are retrieving unsubscribes from</td>
-</tr>
-<tr class="even">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>delete</em></td>
-<td align="left">This will allow you to delete an unsubscribe record for the specified customer subuser</td>
-</tr>
-<tr class="odd">
-<td align="left">email</td>
-<td align="left">No</td>
-<td align="left">Must be an unsubscribe record</td>
-<td align="left">You must specify the unsubscribe record to remove</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Customer Subuser Unsubscribes
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Customer Subuser Unsubscribes
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Customer Subuser Unsubscribes
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Subuser Unsubscribes
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Subuser Unsubscribes
+navigation:
+   show: true
+---
+-|
+|user|Yes|Customer subuser must be registered under your account|The customer subuser we are retrieving unsubscribes from|
+|task|Yes|Must be set to *delete*|This will allow you to delete an unsubscribe record for the specified customer subuser|
+|email|No|Must be an unsubscribe record|You must specify the unsubscribe record to remove|
 
 {% xmljsontabs delete %}
 
-<div class="tab-content">
-<div class="tab-pane" id="delete-xml">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane" id="delete-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=example@example.com&task=delete&email=unsubscribe@sample.com {% endcodeblock %}
@@ -170,7 +190,7 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 
 
 </div>
-<div class="tab-pane active" id="delete-json">
+<div markdown="1" class="tab-pane active" id="delete-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=example@example.com&task=delete&email=unsubscribe@sample.com {% endcodeblock %}
@@ -206,41 +226,51 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 
 Add unsubscribe email records to their account if they need to stop sending email messages to a specific recipient.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Customer subuser must be registered under your account</td>
-<td align="left">The customer subuser we are retrieving unsubscribes from</td>
-</tr>
-<tr class="even">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>add</em></td>
-<td align="left">This will allow you to add an unsubscribe record for the specified customer subuser</td>
-</tr>
-<tr class="odd">
-<td align="left">email</td>
-<td align="left">No</td>
-<td align="left">Must be an unsubscribe record</td>
-<td align="left">You must specify the unsubscribe record to add</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Customer Subuser Unsubscribes
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Customer Subuser Unsubscribes
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Customer Subuser Unsubscribes
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Subuser Unsubscribes
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Subuser Unsubscribes
+navigation:
+   show: true
+---
+-|
+|user|Yes|Customer subuser must be registered under your account|The customer subuser we are retrieving unsubscribes from|
+|task|Yes|Must be set to *add*|This will allow you to add an unsubscribe record for the specified customer subuser|
+|email|No|Must be an unsubscribe record|You must specify the unsubscribe record to add|
 
 {% xmljsontabs add %}
 
-<div class="tab-content">
-<div class="tab-pane" id="add-xml">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane" id="add-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=example@example.com&task=add&email=unsubscribe@sample.com {% endcodeblock %}
@@ -272,7 +302,7 @@ Add unsubscribe email records to their account if they need to stop sending emai
 
 
 </div>
-<div class="tab-pane active" id="add-json">
+<div markdown="1" class="tab-pane active" id="add-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=example@example.com&task=add&email=unsubscribe@sample.com {% endcodeblock %}

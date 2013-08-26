@@ -14,35 +14,50 @@ Throttle your customer subuser when you need them to send only a specific amount
 
 Retrieve account limits for a specific customer subuser. If the API call response is empty that means the customer subuser has the limits removed.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>retrieve</em></td>
-<td align="left">Retrieve account limits</td>
-</tr>
-<tr class="even">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Customer subuser must be registered under your account</td>
-<td align="left">The customer subuser who will have their account limits retrieved</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Customer Subuser Account Limits
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Customer Subuser Account Limits
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Customer Subuser Account Limits
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Subuser Account Limits
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Subuser Account Limits
+navigation:
+   show: true
+---
+-|
+|task|Yes|Must be set to *retrieve*|Retrieve account limits|
+|user|Yes|Customer subuser must be registered under your account|The customer subuser who will have their account limits retrieved|
 
 {% xmljsontabs get %}
 
-<div class="tab-content">
-<div class="tab-pane" id="get-xml">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=retrieve {% endcodeblock %}
@@ -81,7 +96,7 @@ Retrieve account limits for a specific customer subuser. If the API call respons
 
 
 </div>
-<div class="tab-pane active" id="get-json">
+<div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=retrieve {% endcodeblock %}
@@ -114,35 +129,50 @@ Retrieve account limits for a specific customer subuser. If the API call respons
 
 Obtain a complete list of all customer subuser.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>none</em></td>
-<td align="left">Remove account limits</td>
-</tr>
-<tr class="even">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Customer subuser must be registered under your account</td>
-<td align="left">The customer subuser who will have their account limits removed</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Customer Subuser Account Limits
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Customer Subuser Account Limits
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Customer Subuser Account Limits
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Subuser Account Limits
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Subuser Account Limits
+navigation:
+   show: true
+---
+-|
+|task|Yes|Must be set to *none*|Remove account limits|
+|user|Yes|Customer subuser must be registered under your account|The customer subuser who will have their account limits removed|
 
 {% xmljsontabs subuser %}
 
-<div class="tab-content">
-<div class="tab-pane" id="subuser-xml">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane" id="subuser-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=non {% endcodeblock %}
@@ -179,7 +209,7 @@ Obtain a complete list of all customer subuser.
 
 
 </div>
-<div class="tab-pane active" id="subuser-json">
+<div markdown="1" class="tab-pane active" id="subuser-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=non {% endcodeblock %}
@@ -218,65 +248,55 @@ Obtain a complete list of all customer subuser.
 
 A recurring reset will allow you to periodically reset a subusers credits to a number you specify. This can be either daily, weekly or monthly.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>recurring</em></td>
-<td align="left">The task required to set the recurring reset</td>
-</tr>
-<tr class="even">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Customer subuser must be registered under your account</td>
-<td align="left">The customer subuser you will be applying a recurring reset to</td>
-</tr>
-<tr class="odd">
-<td align="left">credits</td>
-<td align="left">Yes</td>
-<td align="left">Must be an integer and greater than 0</td>
-<td align="left">The number of credits the customer subuser will be reset to</td>
-</tr>
-<tr class="even">
-<td align="left">period</td>
-<td align="left">Yes</td>
-<td align="left">Must be either daily, weekly, or monthly</td>
-<td align="left">How often you want SendGrid to reset your customer subusers credits</td>
-</tr>
-<tr class="odd">
-<td align="left">startdate</td>
-<td align="left">No</td>
-<td align="left">Date must be in YYYY-mm-dd format</td>
-<td align="left">The date you want to start resetting the customer subusers credits</td>
-</tr>
-<tr class="even">
-<td align="left">enddate</td>
-<td align="left">No</td>
-<td align="left">Date must be in YYYY-mm-dd format</td>
-<td align="left">The date you want to stop resetting the customer subusers credits</td>
-</tr>
-<tr class="odd">
-<td align="left">initial_credits</td>
-<td align="left">No</td>
-<td align="left">Must be an integer greater than 0</td>
-<td align="left">The number of credits you initially want the account reset to. If this is not set, the credits will be reset using the credits parameter</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Customer Subuser Account Limits
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Customer Subuser Account Limits
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Customer Subuser Account Limits
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Subuser Account Limits
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Subuser Account Limits
+navigation:
+   show: true
+---
+-|
+|task|Yes|Must be set to *recurring*|The task required to set the recurring reset|
+|user|Yes|Customer subuser must be registered under your account|The customer subuser you will be applying a recurring reset to|
+|credits|Yes|Must be an integer and greater than 0|The number of credits the customer subuser will be reset to|
+|period|Yes|Must be either daily, weekly, or monthly|How often you want SendGrid to reset your customer subusers credits|
+|startdate|No|Date must be in YYYY-mm-dd format|The date you want to start resetting the customer subusers credits|
+|enddate|No|Date must be in YYYY-mm-dd format|The date you want to stop resetting the customer subusers credits|
+|initial_credits|No|Must be an integer greater than 0|The number of credits you initially want the account reset to. If this is not set, the credits will be reset using the credits parameter|
 
 {% xmljsontabs reset %}
 
-<div class="tab-content">
-<div class="tab-pane" id="reset-xml">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane" id="reset-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=recurring&credits=200&period=daily {% endcodeblock %}
@@ -313,7 +333,7 @@ A recurring reset will allow you to periodically reset a subusers credits to a n
 
 
 </div>
-<div class="tab-pane active" id="reset-json">
+<div markdown="1" class="tab-pane active" id="reset-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=recurring&credits=200&period=daily {% endcodeblock %}
@@ -352,41 +372,51 @@ A recurring reset will allow you to periodically reset a subusers credits to a n
 
 Set a subusers credits to a specified amount.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>total</em></td>
-<td align="left">Set the credits to the specified amount</td>
-</tr>
-<tr class="even">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Customer subuser must be registered under your account</td>
-<td align="left">The customer subuser who will have their credits updated</td>
-</tr>
-<tr class="odd">
-<td align="left">credits</td>
-<td align="left">Yes</td>
-<td align="left">Must be an integer and greater than 0</td>
-<td align="left">The total number of credits the customer subuser will be reset to</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Customer Subuser Account Limits
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Customer Subuser Account Limits
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Customer Subuser Account Limits
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Subuser Account Limits
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Subuser Account Limits
+navigation:
+   show: true
+---
+-|
+|task|Yes|Must be set to *total*|Set the credits to the specified amount|
+|user|Yes|Customer subuser must be registered under your account|The customer subuser who will have their credits updated|
+|credits|Yes|Must be an integer and greater than 0|The total number of credits the customer subuser will be reset to|
 
 {% xmljsontabs total %}
 
-<div class="tab-content">
-<div class="tab-pane" id="total-xml">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane" id="total-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=total&credits=20 {% endcodeblock %}
@@ -423,7 +453,7 @@ Set a subusers credits to a specified amount.
 
 
 </div>
-<div class="tab-pane active" id="total-json">
+<div markdown="1" class="tab-pane active" id="total-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=total&credits=20 {% endcodeblock %}
@@ -462,41 +492,51 @@ Set a subusers credits to a specified amount.
 
 Increment a subusers credits by a specified amount.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>increment</em></td>
-<td align="left">Increment the credits by the specified amount</td>
-</tr>
-<tr class="even">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Customer subuser must be registered under your account</td>
-<td align="left">The customer subuser who will have their credits incremented</td>
-</tr>
-<tr class="odd">
-<td align="left">credits</td>
-<td align="left">Yes</td>
-<td align="left">Must be an integer and greater than 0</td>
-<td align="left">The total number of credits the customer subuser will be incremented by</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Customer Subuser Account Limits
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Customer Subuser Account Limits
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Customer Subuser Account Limits
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Subuser Account Limits
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Subuser Account Limits
+navigation:
+   show: true
+---
+-|
+|task|Yes|Must be set to *increment*|Increment the credits by the specified amount|
+|user|Yes|Customer subuser must be registered under your account|The customer subuser who will have their credits incremented|
+|credits|Yes|Must be an integer and greater than 0|The total number of credits the customer subuser will be incremented by|
 
 {% xmljsontabs increment %}
 
-<div class="tab-content">
-<div class="tab-pane" id="increment-xml">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane" id="increment-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=increment&credits=20 {% endcodeblock %}
@@ -533,7 +573,7 @@ Increment a subusers credits by a specified amount.
 
 
 </div>
-<div class="tab-pane active" id="increment-json">
+<div markdown="1" class="tab-pane active" id="increment-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=increment&credits=20 {% endcodeblock %}
@@ -572,41 +612,51 @@ Increment a subusers credits by a specified amount.
 
 Decrement a subusers credits by a specified amount.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>increment</em></td>
-<td align="left">Decrement the credits by the specified amount</td>
-</tr>
-<tr class="even">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Customer subuser must be registered under your account</td>
-<td align="left">The customer subuser who will have their credits decremented</td>
-</tr>
-<tr class="odd">
-<td align="left">credits</td>
-<td align="left">Yes</td>
-<td align="left">Must be an integer and greater than 0</td>
-<td align="left">The total number of credits the customer subuser will be decremented by</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Customer Subuser Account Limits
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Customer Subuser Account Limits
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Customer Subuser Account Limits
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Subuser Account Limits
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Subuser Account Limits
+navigation:
+   show: true
+---
+-|
+|task|Yes|Must be set to *increment*|Decrement the credits by the specified amount|
+|user|Yes|Customer subuser must be registered under your account|The customer subuser who will have their credits decremented|
+|credits|Yes|Must be an integer and greater than 0|The total number of credits the customer subuser will be decremented by|
 
 {% xmljsontabs decrement %}
 
-<div class="tab-content">
-<div class="tab-pane" id="decrement-xml">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane" id="decrement-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=decrement&credits=20 {% endcodeblock %}
@@ -643,7 +693,7 @@ Decrement a subusers credits by a specified amount.
 
 
 </div>
-<div class="tab-pane active" id="decrement-json">
+<div markdown="1" class="tab-pane active" id="decrement-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=decrement&credits=20 {% endcodeblock %}

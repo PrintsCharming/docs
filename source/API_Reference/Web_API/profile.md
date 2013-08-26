@@ -12,8 +12,8 @@ View your SendGrid Profile
 
 {% xmljsontabs get %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="get-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/profile.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -42,7 +42,7 @@ View your SendGrid Profile
 
 
 </div>
-<div class="tab-pane" id="get-xml">
+<div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/profile.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -60,7 +60,7 @@ View your SendGrid Profile
       <active>true</active>
       <first_name>john</first_name>
       <last_name>doe</last_name>
-      <address>
+      <address markdown="1">
 555 any street
 
 </address>
@@ -85,65 +85,154 @@ View your SendGrid Profile
 {% anchor h2 %} set {% endanchor %}
 
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>first_name</td>
-         <td>No</td>
-         <td>Your first name</td>
-      </tr>
-      <tr>
-         <td>last_name</td>
-         <td>No</td>
-         <td>Your last name</td>
-      </tr>
-      <tr>
-         <td>address</td>
-         <td>No</td>
-         <td>Company address</td>
-      </tr>
-      <tr>
-         <td>city</td>
-         <td>No</td>
-         <td>City where your company is located</td>
-      </tr>
-      <tr>
-         <td>state</td>
-         <td>No</td>
-         <td>State where your company is located</td>
-      </tr>
-      <tr>
-         <td>country</td>
-         <td>No</td>
-         <td>Country where your company is located</td>
-      </tr>
-      <tr>
-         <td>zip</td>
-         <td>No</td>
-         <td>Zipcode where your company is located</td>
-      </tr>
-      <tr>
-         <td>phone</td>
-         <td>No</td>
-         <td>Valid phone number where we can reach you</td>
-      </tr>
-      <tr>
-         <td>website</td>
-         <td>No</td>
-         <td>Your company's website</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+Parameter
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Description
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+first_name
+
+</td>
+<td markdown="1">
+No
+
+</td>
+<td markdown="1">
+Your first name
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+last_name
+
+</td>
+<td markdown="1">
+No
+
+</td>
+<td markdown="1">
+Your last name
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+address
+
+</td>
+<td markdown="1">
+No
+
+</td>
+<td markdown="1">
+Company address
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+city
+
+</td>
+<td markdown="1">
+No
+
+</td>
+<td markdown="1">
+City where your company is located
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+state
+
+</td>
+<td markdown="1">
+No
+
+</td>
+<td markdown="1">
+State where your company is located
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+country
+
+</td>
+<td markdown="1">
+No
+
+</td>
+<td markdown="1">
+Country where your company is located
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+zip
+
+</td>
+<td markdown="1">
+No
+
+</td>
+<td markdown="1">
+Zipcode where your company is located
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+phone
+
+</td>
+<td markdown="1">
+No
+
+</td>
+<td markdown="1">
+Valid phone number where we can reach you
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+website
+
+</td>
+<td markdown="1">
+No
+
+</td>
+<td markdown="1">
+Your company's website
+
+</td>
+</tr>
+</tbody>
+</table>
 {% xmljsontabs set %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="set-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="set-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/profile.set.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&first_name=newFirstName&last_name=&newLastName {% endcodeblock %}
@@ -172,7 +261,7 @@ View your SendGrid Profile
 
 
 </div>
-<div class="tab-pane" id="set-xml">
+<div markdown="1" class="tab-pane" id="set-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/profile.set.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&first_name=newFirstName&last_name=&newLastName {% endcodeblock %}
@@ -218,33 +307,68 @@ View your SendGrid Profile
 {% anchor h2 %} setPassword {% endanchor %}
 
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>password</td>
-         <td>Yes</td>
-         <td>Must be at least 6 characters</td>
-         <td>Your new password</td>
-      </tr>
-      <tr>
-         <td>confirm_password</td>
-         <td>Yes</td>
-         <td>Must match password parameter and be at least 6 characters long</td>
-         <td>Confrim new password</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+Parameter
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Requirements
+
+</th>
+<th markdown="1">
+Description
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+password
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Must be at least 6 characters
+
+</td>
+<td markdown="1">
+Your new password
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+confirm_password
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Must match password parameter and be at least 6 characters long
+
+</td>
+<td markdown="1">
+Confrim new password
+
+</td>
+</tr>
+</tbody>
+</table>
 {% xmljsontabs reset %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="reset-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="reset-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/password.set.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&password=newPasword&confirm_password=newPassword {% endcodeblock %}
@@ -273,7 +397,7 @@ View your SendGrid Profile
 
 
 </div>
-<div class="tab-pane" id="reset-xml">
+<div markdown="1" class="tab-pane" id="reset-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/password.set.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&password=newPasword&confirm_password=newPassword {% endcodeblock %}
@@ -306,27 +430,50 @@ View your SendGrid Profile
 {% warning %} Please note, your account username is used to login to our SMTP server and the website. Changes will take effect immediately. {% endwarning %}
 
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>username</td>
-         <td>Yes</td>
-         <td>Must not exceed 100 characters. The username cannot be already taken or contain the SendGrid.com domain</td>
-         <td>This is the new username we will be authenticating with our SMTP servers and our website. Changes take effect immediately</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+Parameter
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Requirements
+
+</th>
+<th markdown="1">
+Description
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+username
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Must not exceed 100 characters. The username cannot be already taken or contain the SendGrid.com domain
+
+</td>
+<td markdown="1">
+This is the new username we will be authenticating with our SMTP servers and our website. Changes take effect immediately
+
+</td>
+</tr>
+</tbody>
+</table>
 {% xmljsontabs setusername %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="setusername-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="setusername-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/profile.setUsername.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=yournewusername@domain.com {% endcodeblock %}
@@ -355,7 +502,7 @@ View your SendGrid Profile
 
 
 </div>
-<div class="tab-pane" id="setusername-xml">
+<div markdown="1" class="tab-pane" id="setusername-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/profile.setUsername.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=yournewusername@domain.com {% endcodeblock %}
@@ -388,27 +535,50 @@ View your SendGrid Profile
 {% info %} Please note, we send out a confirmation email to the new email account in order to be validated. Your email address changes when you click on the confirmation link. {% endinfo %}
 
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>email</td>
-         <td>Yes</td>
-         <td>Must be in email format and not more than 100 characters</td>
-         <td>This is the new email address we will be contacting you with. Changes take effect immediately</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+Parameter
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Requirements
+
+</th>
+<th markdown="1">
+Description
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+email
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Must be in email format and not more than 100 characters
+
+</td>
+<td markdown="1">
+This is the new email address we will be contacting you with. Changes take effect immediately
+
+</td>
+</tr>
+</tbody>
+</table>
 {% xmljsontabs setemail %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="setemail-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="setemail-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/profile.setEmail.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=yournewemail@domain.com {% endcodeblock %}
@@ -437,7 +607,7 @@ View your SendGrid Profile
 
 
 </div>
-<div class="tab-pane" id="setemail-xml">
+<div markdown="1" class="tab-pane" id="setemail-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/profile.setEmail.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=yournewemail@domain.com {% endcodeblock %}

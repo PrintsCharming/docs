@@ -12,63 +12,158 @@ Retrieve and delete entries in the Spam Reports list.
 {% anchor h2 %} get {% endanchor %}
 
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>date</td>
-         <td>No</td>
-         <td>Must be set to 1</td>
-         <td>Retrieve the timestamp of the spam report records. It will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
-      </tr>
-      <tr>
-         <td>days</td>
-         <td>No</td>
-         <td>If specified, must be an integer greater than 0</td>
-         <td>Number of days in the past for which to retrieve spam reports (includes today)</td>
-      </tr>
-      <tr>
-         <td>start_date</td>
-         <td>No</td>
-         <td>Date must be in YYYY-MM-DD format and be earlier than the end_date parameter.</td>
-         <td>The start of the date range for which to retrieve spam reports.</td>
-      </tr>
-      <tr>
-         <td>end_date</td>
-         <td>No</td>
-         <td>Date must be in YYYY-MM-DD format and be later than the start_date parameter.</td>
-         <td>The end of the date range for which to retrieve spam reports.</td>
-      </tr>
-      <tr>
-         <td>limit</td>
-         <td>No</td>
-         <td>some integer</td>
-         <td>Optional field to limit the number of results returned.</td>
-      </tr>
-      <tr>
-         <td>offset</td>
-         <td>No</td>
-         <td>some integer</td>
-         <td>optional beginning point in the list to retrieve from.</td>
-      </tr>
-      <tr>
-         <td>email</td>
-         <td>No</td>
-         <td>email address eg testing@example.com</td>
-         <td>optional email addresses to search for.</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+Parameter
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Requirements
+
+</th>
+<th markdown="1">
+Description
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+date
+
+</td>
+<td markdown="1">
+No
+
+</td>
+<td markdown="1">
+Must be set to 1
+
+</td>
+<td markdown="1">
+Retrieve the timestamp of the spam report records. It will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+days
+
+</td>
+<td markdown="1">
+No
+
+</td>
+<td markdown="1">
+If specified, must be an integer greater than 0
+
+</td>
+<td markdown="1">
+Number of days in the past for which to retrieve spam reports (includes today)
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+start_date
+
+</td>
+<td markdown="1">
+No
+
+</td>
+<td markdown="1">
+Date must be in YYYY-MM-DD format and be earlier than the end_date parameter.
+
+</td>
+<td markdown="1">
+The start of the date range for which to retrieve spam reports.
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+end_date
+
+</td>
+<td markdown="1">
+No
+
+</td>
+<td markdown="1">
+Date must be in YYYY-MM-DD format and be later than the start_date parameter.
+
+</td>
+<td markdown="1">
+The end of the date range for which to retrieve spam reports.
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+limit
+
+</td>
+<td markdown="1">
+No
+
+</td>
+<td markdown="1">
+some integer
+
+</td>
+<td markdown="1">
+Optional field to limit the number of results returned.
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+offset
+
+</td>
+<td markdown="1">
+No
+
+</td>
+<td markdown="1">
+some integer
+
+</td>
+<td markdown="1">
+optional beginning point in the list to retrieve from.
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+email
+
+</td>
+<td markdown="1">
+No
+
+</td>
+<td markdown="1">
+email address eg testing@example.com
+
+</td>
+<td markdown="1">
+optional email addresses to search for.
+
+</td>
+</tr>
+</tbody>
+</table>
 {% xmljsontabs get %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="get-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/spamreports.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1 {% endcodeblock %}
@@ -93,7 +188,7 @@ Retrieve and delete entries in the Spam Reports list.
 
 
 </div>
-<div class="tab-pane" id="get-xml">
+<div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/spamreports.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1 {% endcodeblock %}
@@ -131,27 +226,50 @@ Retrieve and delete entries in the Spam Reports list.
 
 Delete an address from the Spam Reports list.
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>email</td>
-         <td>Yes</td>
-         <td>Must be a valid user account email</td>
-         <td>Email spam reports address to remove</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+Parameter
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Requirements
+
+</th>
+<th markdown="1">
+Description
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+email
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Must be a valid user account email
+
+</td>
+<td markdown="1">
+Email spam reports address to remove
+
+</td>
+</tr>
+</tbody>
+</table>
 {% xmljsontabs delete %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="delete-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="delete-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/spamreports.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com {% endcodeblock %}
@@ -180,7 +298,7 @@ Delete an address from the Spam Reports list.
 
 
 </div>
-<div class="tab-pane" id="delete-xml">
+<div markdown="1" class="tab-pane" id="delete-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/spamreports.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com {% endcodeblock %}

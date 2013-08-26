@@ -15,36 +15,32 @@ The Return Path Seedlist App allows customers to easily use Return Path's Mailbo
 {% anchor h2 %} Settings {% endanchor %}
 
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Name</th>
-<th align="left">Required</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Global Frequency</td>
-<td align="left">No</td>
-<td align="left">If you are not using subject based keywords, select this option.</td>
-</tr>
-<tr class="even">
-<td align="left">Use Lists</td>
-<td align="left">No</td>
-<td align="left">Select this option to specify subjects that will be used to identify this category of message.</td>
-</tr>
-<tr class="odd">
-<td align="left">Frequency</td>
-<td align="left">Yes</td>
-<td align="left">The number of times per day the Seedlist should be used.</td>
-</tr>
-<tr class="even">
-<td align="left">Email List</td>
-<td align="left">Yes</td>
-<td align="left">The addresses in the Seedlist.</td>
-</tr>
-</tbody>
-</table>
+|Name|Required|Description|
+|:---
+layout: page
+weight: 0
+title: Return Path Seedlist
+navigation:
+  show: true
+---
+---
+layout: page
+weight: 0
+title: Return Path Seedlist
+navigation:
+  show: true
+---
+---
+layout: page
+weight: 0
+title: Return Path Seedlist
+navigation:
+  show: true
+---
+-|
+|Global Frequency|No|If you are not using subject based keywords, select this option.|
+|Use Lists|No|Select this option to specify subjects that will be used to identify this category of message.|
+|Frequency|Yes|The number of times per day the Seedlist should be used.|
+|Email List|Yes|The addresses in the Seedlist.|
 
 

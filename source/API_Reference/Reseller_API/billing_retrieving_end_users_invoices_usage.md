@@ -8,32 +8,36 @@ navigation:
 
 Retrieve invoices/usages from customers.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>usage</em>.</td>
-</tr>
-<tr class="even">
-<td align="left">number</td>
-<td align="left">Yes</td>
-<td align="left">Must be the invoice number you received from SendGrid.</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Description|
+|:---
+layout: page
+weight: 0
+title: Retrieving Invoice Usage
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Retrieving Invoice Usage
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Retrieving Invoice Usage
+navigation:
+   show: true
+---
+----|
+|task|Yes|Must be set to *usage*.|
+|number|Yes|Must be the invoice number you received from SendGrid.|
 
 {% xmljsontabs get %}
 
-<div class="tab-content">
-<div class="tab-pane" id="get-xml">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.billing.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&number=2010010001&task=usag {% endcodeblock %}
@@ -104,7 +108,7 @@ Retrieve invoices/usages from customers.
 
 
 </div>
-<div class="tab-pane active" id="get-json">
+<div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.billing.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&number=2010010001&task=usag {% endcodeblock %}

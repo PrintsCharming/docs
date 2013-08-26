@@ -14,35 +14,50 @@ Throttle your customer when you need them to send only a specific amount of emai
 
 Retrieve account limits for a specific customer. If the API call response is empty that means the customer has the limits removed.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>retrieve</em></td>
-<td align="left">Retrieve account limits</td>
-</tr>
-<tr class="even">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Customer must be registered under your account</td>
-<td align="left">The customer who will have their account limits retrieved</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Customer Account Limits
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Customer Account Limits
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Customer Account Limits
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Account Limits
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Account Limits
+navigation:
+   show: true
+---
+-|
+|task|Yes|Must be set to *retrieve*|Retrieve account limits|
+|user|Yes|Customer must be registered under your account|The customer who will have their account limits retrieved|
 
 {% xmljsontabs get %}
 
-<div class="tab-content">
-<div class="tab-pane" id="get-xml">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=customer@example.com&task=retriev {% endcodeblock %}
@@ -81,7 +96,7 @@ Retrieve account limits for a specific customer. If the API call response is emp
 
 
 </div>
-<div class="tab-pane active" id="get-json">
+<div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=customer@example.com&task=retrieve {% endcodeblock %}
@@ -122,41 +137,51 @@ Retrieve account limits for a specific customer. If the API call response is emp
 
 Obtain a complete list of all customer.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>none</em></td>
-<td align="left">Remove account limits</td>
-</tr>
-<tr class="even">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Customer must be registered under your account</td>
-<td align="left">The customer who will have their account limits removed</td>
-</tr>
-<tr class="odd">
-<td align="left">method</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>limit</em></td>
-<td align="left">Allows you to access limit functionality</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Customer Account Limits
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Customer Account Limits
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Customer Account Limits
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Account Limits
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Account Limits
+navigation:
+   show: true
+---
+-|
+|task|Yes|Must be set to *none*|Remove account limits|
+|user|Yes|Customer must be registered under your account|The customer who will have their account limits removed|
+|method|Yes|Must be set to *limit*|Allows you to access limit functionality|
 
 {% xmljsontabs list %}
 
-<div class="tab-content">
-<div class="tab-pane" id="list-xml">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane" id="list-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=customer@example.com&task=non {% endcodeblock %}
@@ -192,7 +217,7 @@ Obtain a complete list of all customer.
 
 
 </div>
-<div class="tab-pane active" id="list-json">
+<div markdown="1" class="tab-pane active" id="list-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=customer@example.com&task=non {% endcodeblock %}
@@ -231,71 +256,56 @@ Obtain a complete list of all customer.
 
 A recurring reset will allow you to periodically reset a subusers credits to a number you specify. This can be either daily, weekly or monthly.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>recurring</em></td>
-<td align="left">The task required to set the recurring reset</td>
-</tr>
-<tr class="even">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Customer must be registered under your account</td>
-<td align="left">The customer you will be applying a recurring reset to</td>
-</tr>
-<tr class="odd">
-<td align="left">credits</td>
-<td align="left">Yes</td>
-<td align="left">Must be an integer and greater than 0</td>
-<td align="left">The number of credits the customer will be reset to</td>
-</tr>
-<tr class="even">
-<td align="left">period</td>
-<td align="left">Yes</td>
-<td align="left">Must be either daily, weekly, or monthly</td>
-<td align="left">How often you want SendGrid to reset your customers credits</td>
-</tr>
-<tr class="odd">
-<td align="left">startdate</td>
-<td align="left">No</td>
-<td align="left">Date must be in YYYY-mm-dd format</td>
-<td align="left">The date you want to start resetting the customers credits</td>
-</tr>
-<tr class="even">
-<td align="left">enddate</td>
-<td align="left">No</td>
-<td align="left">Date must be in YYYY-mm-dd format</td>
-<td align="left">The date you want to stop resetting the customers credits</td>
-</tr>
-<tr class="odd">
-<td align="left">initial_credits</td>
-<td align="left">No</td>
-<td align="left">Must be an integer greater than 0</td>
-<td align="left">The number of credits you initially want the account reset to. If this is not set, the credits will be reset using the credits parameter</td>
-</tr>
-<tr class="even">
-<td align="left">method</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>limit</em></td>
-<td align="left">Allows you to access account limit functionality</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Customer Account Limits
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Customer Account Limits
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Customer Account Limits
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Account Limits
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Account Limits
+navigation:
+   show: true
+---
+-|
+|task|Yes|Must be set to *recurring*|The task required to set the recurring reset|
+|user|Yes|Customer must be registered under your account|The customer you will be applying a recurring reset to|
+|credits|Yes|Must be an integer and greater than 0|The number of credits the customer will be reset to|
+|period|Yes|Must be either daily, weekly, or monthly|How often you want SendGrid to reset your customers credits|
+|startdate|No|Date must be in YYYY-mm-dd format|The date you want to start resetting the customers credits|
+|enddate|No|Date must be in YYYY-mm-dd format|The date you want to stop resetting the customers credits|
+|initial_credits|No|Must be an integer greater than 0|The number of credits you initially want the account reset to. If this is not set, the credits will be reset using the credits parameter|
+|method|Yes|Must be set to *limit*|Allows you to access account limit functionality|
 
 {% xmljsontabs reset %}
 
-<div class="tab-content">
-<div class="tab-pane" id="reset-xml">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane" id="reset-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=customer@example.com&task=recurring&credits=200&period=daily {% endcodeblock %}
@@ -331,7 +341,7 @@ A recurring reset will allow you to periodically reset a subusers credits to a n
 
 
 </div>
-<div class="tab-pane active" id="reset-json">
+<div markdown="1" class="tab-pane active" id="reset-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=customer@example.com&task=recurring&credits=200&period=dail {% endcodeblock %}
@@ -370,47 +380,52 @@ A recurring reset will allow you to periodically reset a subusers credits to a n
 
 Set a subusers credits to a specified amount.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>total</em></td>
-<td align="left">Set the credits to the specified amount</td>
-</tr>
-<tr class="even">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Customer must be registered under your account</td>
-<td align="left">The customer who will have their credits updated</td>
-</tr>
-<tr class="odd">
-<td align="left">credits</td>
-<td align="left">Yes</td>
-<td align="left">Must be an integer and greater than 0</td>
-<td align="left">The total number of credits the customer will be reset to</td>
-</tr>
-<tr class="even">
-<td align="left">method</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>limit</em></td>
-<td align="left">Allows you to access account limit functionality</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Customer Account Limits
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Customer Account Limits
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Customer Account Limits
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Account Limits
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Account Limits
+navigation:
+   show: true
+---
+-|
+|task|Yes|Must be set to *total*|Set the credits to the specified amount|
+|user|Yes|Customer must be registered under your account|The customer who will have their credits updated|
+|credits|Yes|Must be an integer and greater than 0|The total number of credits the customer will be reset to|
+|method|Yes|Must be set to *limit*|Allows you to access account limit functionality|
 
 {% xmljsontabs total %}
 
-<div class="tab-content">
-<div class="tab-pane" id="total-xml">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane" id="total-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=customer@example.com&task=total&credits=20 {% endcodeblock %}
@@ -446,7 +461,7 @@ Set a subusers credits to a specified amount.
 
 
 </div>
-<div class="tab-pane active" id="total-xml">
+<div markdown="1" class="tab-pane active" id="total-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=customer@example.com&task=total&credits=20 {% endcodeblock %}
@@ -485,47 +500,52 @@ Set a subusers credits to a specified amount.
 
 Increment a subusers credits by a specified amount.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>increment</em></td>
-<td align="left">Increment the credits by the specified amount</td>
-</tr>
-<tr class="even">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Customer must be registered under your account</td>
-<td align="left">The customer who will have their credits incremented</td>
-</tr>
-<tr class="odd">
-<td align="left">credits</td>
-<td align="left">Yes</td>
-<td align="left">Must be an integer and greater than 0</td>
-<td align="left">The total number of credits the customer will be incremented by</td>
-</tr>
-<tr class="even">
-<td align="left">method</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>limit</em></td>
-<td align="left">Allows you to access account limit functionality</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Customer Account Limits
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Customer Account Limits
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Customer Account Limits
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Account Limits
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Account Limits
+navigation:
+   show: true
+---
+-|
+|task|Yes|Must be set to *increment*|Increment the credits by the specified amount|
+|user|Yes|Customer must be registered under your account|The customer who will have their credits incremented|
+|credits|Yes|Must be an integer and greater than 0|The total number of credits the customer will be incremented by|
+|method|Yes|Must be set to *limit*|Allows you to access account limit functionality|
 
 {% xmljsontabs increment %}
 
-<div class="tab-content">
-<div class="tab-pane" id="increment-xml">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane" id="increment-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=customer@example.com&task=increment&credits=20 {% endcodeblock %}
@@ -561,7 +581,7 @@ Increment a subusers credits by a specified amount.
 
 
 </div>
-<div class="tab-pane active" id="increment-json">
+<div markdown="1" class="tab-pane active" id="increment-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=customer@example.com&task=increment&credits=20 {% endcodeblock %}
@@ -600,47 +620,52 @@ Increment a subusers credits by a specified amount.
 
 Decrement a subusers credits by a specified amount.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>increment</em></td>
-<td align="left">Decrement the credits by the specified amount</td>
-</tr>
-<tr class="even">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Customer must be registered under your account</td>
-<td align="left">The customer who will have their credits decremented</td>
-</tr>
-<tr class="odd">
-<td align="left">credits</td>
-<td align="left">Yes</td>
-<td align="left">Must be an integer and greater than 0</td>
-<td align="left">The total number of credits the customer will be decremented by</td>
-</tr>
-<tr class="even">
-<td align="left">method</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>limit</em></td>
-<td align="left">Allows you to access account limit functionality</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Customer Account Limits
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Customer Account Limits
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Customer Account Limits
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Account Limits
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Account Limits
+navigation:
+   show: true
+---
+-|
+|task|Yes|Must be set to *increment*|Decrement the credits by the specified amount|
+|user|Yes|Customer must be registered under your account|The customer who will have their credits decremented|
+|credits|Yes|Must be an integer and greater than 0|The total number of credits the customer will be decremented by|
+|method|Yes|Must be set to *limit*|Allows you to access account limit functionality|
 
 {% xmljsontabs decrement %}
 
-<div class="tab-content">
-<div class="tab-pane" id="decrement-xml">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane" id="decrement-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=customer@example.com&task=decrement&credits=20 {% endcodeblock %}
@@ -676,7 +701,7 @@ Decrement a subusers credits by a specified amount.
 
 
 </div>
-<div class="tab-pane" id="decrement-json">
+<div markdown="1" class="tab-pane" id="decrement-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=customer@example.com&task=decrement&credits=20 {% endcodeblock %}

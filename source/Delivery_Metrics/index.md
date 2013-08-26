@@ -128,36 +128,27 @@ The [ISP report](http://sendgrid.com/statistics/isp) highlights how your mail pe
 
 Available devices:
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Device</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Desktop</td>
-<td align="left">Email software on desktop computer I.E. Outlook, Sparrow, or Apple Mail.</td>
-</tr>
-<tr class="even">
-<td align="left">WebMail</td>
-<td align="left">A web-based email client I.E. Yahoo, Google, AOL, or Outlook.com.</td>
-</tr>
-<tr class="odd">
-<td align="left">Phone</td>
-<td align="left">A smart phone; IPhone, Android, Blackberry, etc.</td>
-</tr>
-<tr class="even">
-<td align="left">Tablet</td>
-<td align="left">A tablet computer: IPad, android based tablet, etc.</td>
-</tr>
-<tr class="odd">
-<td align="left">Other</td>
-<td align="left">An unrecognized Device.</td>
-</tr>
-</tbody>
-</table>
+|Device|Description|
+|:---
+layout: page
+weight: 100
+title: Delivery Metrics Index
+navigation:
+  show: true
+---
+---
+layout: page
+weight: 100
+title: Delivery Metrics Index
+navigation:
+  show: true
+---
+-|
+|Desktop|Email software on desktop computer I.E. Outlook, Sparrow, or Apple Mail.|
+|WebMail|A web-based email client I.E. Yahoo, Google, AOL, or Outlook.com.|
+|Phone|A smart phone; IPhone, Android, Blackberry, etc.|
+|Tablet|A tablet computer: IPad, android based tablet, etc.|
+|Other|An unrecognized Device.|
 
 
 {% anchor h3 %} Browser {% endanchor %}

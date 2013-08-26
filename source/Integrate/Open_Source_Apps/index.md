@@ -6,8 +6,8 @@ navigation:
   show: true
 ---
 
-<div class="row-fluid">
-<div class="span4 well callout">
+<div markdown="1" class="row-fluid">
+<div markdown="1" class="span4 well callout">
 [<span class="pull-right framework-icon framework-icondrupal"></span>](drupal.html)
 
 [Drupal](drupal.html)---
@@ -61,7 +61,7 @@ navigation:
 ---
 
 </div>
-<div class="span4 well callout">
+<div markdown="1" class="span4 well callout">
 [<span class="pull-right framework-icon framework-iconmagento"></span>](magento.html)
 
 [Magento](magento.html)---

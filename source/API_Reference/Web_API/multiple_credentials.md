@@ -16,51 +16,126 @@ navigation:
 
 This API call allows user to add a new set of credentials to their account.
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>api_user</td>
-         <td>Yes</td>
-         <td>alphanumeric</td>
-         <td>The primary account holder's user ID creating the new account</td>
-      </tr>
-      <tr>
-         <td>api_key</td>
-         <td>Yes</td>
-         <td>alphanumeric</td>
-         <td>The primary account holder's password</td>
-      </tr>
-      <tr>
-         <td>username</td>
-         <td>Yes</td>
-         <td>alphanumeric</td>
-         <td>Enter a username for the new account</td>
-      </tr>
-      <tr>
-         <td>password</td>
-         <td>Yes</td>
-         <td>alphanumeric</td>
-         <td>Enter a password for the new account</td>
-      </tr>
-      <tr>
-         <td>permissions</td>
-         <td>No</td>
-         <td>JSON array of bits</td>
-         <td>Credentials are specified using a JSON object. There are three key names: **email** for access to SMTP, **api** for programmatic access, and **web** for administration. The values for each are a bit, 0 for off or 1 for on.The following example allows the specified username/password to log into the dashboard, but *not* send email or have access to any of the APIs:`{"email": 0, "web": 1, "api": 0}`</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+Parameter
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Requirements
+
+</th>
+<th markdown="1">
+Description
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+api_user
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+alphanumeric
+
+</td>
+<td markdown="1">
+The primary account holder's user ID creating the new account
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+api_key
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+alphanumeric
+
+</td>
+<td markdown="1">
+The primary account holder's password
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+username
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+alphanumeric
+
+</td>
+<td markdown="1">
+Enter a username for the new account
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+password
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+alphanumeric
+
+</td>
+<td markdown="1">
+Enter a password for the new account
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+permissions
+
+</td>
+<td markdown="1">
+No
+
+</td>
+<td markdown="1">
+JSON array of bits
+
+</td>
+<td markdown="1">
+Credentials are specified using a JSON object. There are three key names: **email** for access to SMTP, **api** for programmatic access, and **web** for administration. The values for each are a bit, 0 for off or 1 for on.
+
+The following example allows the specified username/password to log into the dashboard, but *not* send email or have access to any of the APIs:
+
+`{"email": 0, "web": 1, "api": 0}`
+
+</td>
+</tr>
+</tbody>
+</table>
 {% xmljsontabs add %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="add-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="add-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/credentials/add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=name&password=password&permissions={"email": 0, "web": 1, "api": 0} {% endcodeblock %}
@@ -86,7 +161,7 @@ This API call allows user to add a new set of credentials to their account.
 
 
 </div>
-<div class="tab-pane" id="add-xml">
+<div markdown="1" class="tab-pane" id="add-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/credentials/add.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=name&password=password&permissions={"email": 0, "web": 1, "api": 0} {% endcodeblock %}
@@ -134,39 +209,86 @@ navigation:
 ---
 ---
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>api_user</td>
-         <td>Yes</td>
-         <td>alphanumeric</td>
-         <td>The primary account holder's user ID creating the new account</td>
-      </tr>
-      <tr>
-         <td>api_key</td>
-         <td>Yes</td>
-         <td>alphanumeric</td>
-         <td>The primary account holder's password</td>
-      </tr>
-      <tr>
-         <td>username</td>
-         <td>Yes</td>
-         <td>alphanumeric</td>
-         <td>The credential to remove</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+Parameter
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Requirements
+
+</th>
+<th markdown="1">
+Description
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+api_user
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+alphanumeric
+
+</td>
+<td markdown="1">
+The primary account holder's user ID creating the new account
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+api_key
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+alphanumeric
+
+</td>
+<td markdown="1">
+The primary account holder's password
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+username
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+alphanumeric
+
+</td>
+<td markdown="1">
+The credential to remove
+
+</td>
+</tr>
+</tbody>
+</table>
 {% xmljsontabs remove %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="remove-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="remove-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/credentials/remove.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example_user {% endcodeblock %}
@@ -192,7 +314,7 @@ navigation:
 
 
 </div>
-<div class="tab-pane" id="remove-xml">
+<div markdown="1" class="tab-pane" id="remove-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/credentials/remove.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example_user {% endcodeblock %}

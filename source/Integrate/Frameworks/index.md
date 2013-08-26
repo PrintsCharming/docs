@@ -6,8 +6,8 @@ navigation:
   show: true
 ---
 
-<div class="row-fluid">
-<div class="span4 well callout">
+<div markdown="1" class="row-fluid">
+<div markdown="1" class="span4 well callout">
 [<span class="pull-right framework-icon framework-iconcake" alt="CakePHP"></span>](cakephp.html)
 
 [CakePHP](cakephp.html)---
@@ -97,8 +97,8 @@ navigation:
 
 </div>
 </div>
-<div class="row-fluid">
-<div class="span4 well callout">
+<div markdown="1" class="row-fluid">
+<div markdown="1" class="span4 well callout">
 [<span class="pull-right framework-icon framework-iconror"></span>](rubyonrails.html)
 
 [Ruby on Rails](rubyonrails.html)---
@@ -167,7 +167,7 @@ navigation:
 --
 
 </div>
-<div class="span4 well callout">
+<div markdown="1" class="span4 well callout">
 [<span class="pull-right framework-icon framework-iconphp"></span>](zend.html)
 
 [Zend](zend.html)---

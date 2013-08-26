@@ -13,25 +13,42 @@ With the whitelabel API calls you will be able to retrieve whitelabel settings r
 {% anchor h2 %} List {% endanchor %}
 
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-      </tr>
-      <tr>
-         <td>list</td>
-         <td>Yes</td>
-         <td>Must be set to *list*</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+Parameter
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Requirements
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+list
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Must be set to *list*
+
+</td>
+</tr>
+</tbody>
+</table>
 {% xmljsontabs list %}
 
-<div class="tab-content">
-<div class="tab-pane" id="list-xml">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane" id="list-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/customer.whitelabel.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list {% endcodeblock %}
@@ -57,7 +74,7 @@ With the whitelabel API calls you will be able to retrieve whitelabel settings r
 
 
 </div>
-<div class="tab-pane active" id="list-json">
+<div markdown="1" class="tab-pane active" id="list-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/customer.whitelabel.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list {% endcodeblock %}
@@ -79,35 +96,70 @@ With the whitelabel API calls you will be able to retrieve whitelabel settings r
 {% anchor h2 %} Append {% endanchor %}
 
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-      </tr>
-      <tr>
-         <td>list</td>
-         <td>Yes</td>
-         <td>Must be set to *append*</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Subuser must be registered under your account</td>
-      </tr>
-      <tr>
-         <td>mail_domain</td>
-         <td>Yes</td>
-         <td>Whitelabel mail_domain used to append a whitelabel record to a subuser</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+Parameter
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Requirements
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+list
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Must be set to *append*
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+user
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Subuser must be registered under your account
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+mail_domain
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Whitelabel mail_domain used to append a whitelabel record to a subuser
+
+</td>
+</tr>
+</tbody>
+</table>
 {% xmljsontabs append %}
 
-<div class="tab-content">
-<div class="tab-pane" id="append-xml">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane" id="append-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/customer.whitelabel.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&user=example@example.com&mail_domain=email.sendgrid.com {% endcodeblock %}
@@ -144,7 +196,7 @@ With the whitelabel API calls you will be able to retrieve whitelabel settings r
 
 
 </div>
-<div class="tab-pane active" id="append-json">
+<div markdown="1" class="tab-pane active" id="append-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/customer.whitelabel.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&user=example@example.com&mail_domain=email.sendgrid.com {% endcodeblock %}

@@ -7,8 +7,8 @@ navigation:
   show: true
 ---
 
-<div class="well">
-<div class="video-container">
+<div markdown="1" class="well">
+<div markdown="1" class="video-container">
 <iframe width="100%" height="100%" src="http://www.youtube.com/embed/VdafUVlhKpk" frameborder="0" allowfullscreen></iframe>
 
 </div>

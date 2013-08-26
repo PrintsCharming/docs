@@ -14,24 +14,50 @@ The Event Notification App controls webhook notifications for events, such as bo
 {% anchor h2 %} Settings {% endanchor %}
 
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Name</th>
-         <th>Required</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>Emails are "x"</td>
-         <td>As needed</td>
-         <td>Enables the selected notifications.</td>
-      </tr>
-      <tr>
-         <td>Post Event URL</td>
-         <td>Yes</td>
-         <td>Sets the entered URL as the target of notification posts.</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+Name
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Description
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+Emails are "x"
+
+</td>
+<td markdown="1">
+As needed
+
+</td>
+<td markdown="1">
+Enables the selected notifications.
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+Post Event URL
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Sets the entered URL as the target of notification posts.
+
+</td>
+</tr>
+</tbody>
+</table>
 

@@ -14,21 +14,29 @@ Enabling the Click Tracking App causes all the links in your emails to be overwr
 {% anchor h2 %} Settings {% endanchor %}
 
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Name</th>
-<th align="left">Required</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Enable</td>
-<td align="left">Yes</td>
-<td align="left">All the links in your emails will be overwritten and pointed to our servers.</td>
-</tr>
-</tbody>
-</table>
+|Name|Required|Description|
+|:---
+layout: page
+weight: 0
+title: Click Tracking
+navigation:
+  show: true
+---
+---
+layout: page
+weight: 0
+title: Click Tracking
+navigation:
+  show: true
+---
+---
+layout: page
+weight: 0
+title: Click Tracking
+navigation:
+  show: true
+---
+-|
+|Enable|Yes|All the links in your emails will be overwritten and pointed to our servers.|
 
 

@@ -8,30 +8,56 @@ navigation:
 
 <span>Authenticate a subuser on your website before displaying their account information so that you can have users manage their SendGrid account on your website completely.</span>
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Subuser that is registered under your account.</td>
-      </tr>
-      <tr>
-         <td>password</td>
-         <td>Yes</td>
-         <td>Password the subuser submitted.</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+Parameter
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Requirements
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+user
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Subuser that is registered under your account.
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+password
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Password the subuser submitted.
+
+</td>
+</tr>
+</tbody>
+</table>
 {% xmljsontabs auth %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="auth-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="auth-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/customer.auth.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=theirsubmittedpassword {% endcodeblock %}
@@ -60,7 +86,7 @@ navigation:
 
 
 </div>
-<div class="tab-pane" id="auth-xml">
+<div markdown="1" class="tab-pane" id="auth-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/customer.auth.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=theirsubmittedpasswor {% endcodeblock %}

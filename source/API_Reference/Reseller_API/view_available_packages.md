@@ -12,8 +12,8 @@ There are no extra parameters required for this call
 
 {% xmljsontabs get %}
 
-<div class="tab-content">
-<div class="tab-pane" id="get-xml">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.packages.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -71,7 +71,7 @@ There are no extra parameters required for this call
 
 
 </div>
-<div class="tab-pane active" id="get-json">
+<div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.packages.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}

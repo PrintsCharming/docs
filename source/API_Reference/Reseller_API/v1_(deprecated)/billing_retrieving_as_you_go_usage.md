@@ -8,22 +8,30 @@ navigation:
 
 Retrieve invoices/usages from end users before your scheduled billing date.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>current</em>.</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Description|
+|:---
+layout: page
+weight: 0
+title: Retrieving As-You-Go Usage
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Retrieving As-You-Go Usage
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Retrieving As-You-Go Usage
+navigation:
+   show: true
+---
+----|
+|task|Yes|Must be set to *current*.|
 
 ### XML Call
 
@@ -31,9 +39,10 @@ Retrieve invoices/usages from end users before your scheduled billing date.
 
 ### Response
 
-{% codeblock %} usage\><invoices><invoice><number>201001000100</number><credits>123456</credits><date_invoiced>2010-09-01 00:00:00</date_invoiced><status>Unpaid</status><amount>1001</amount><overage>6.95</overage><type>Recurring Bill</type><prorated>0</prorated><start_date>2010-08-01</start_date><end_date>2010-08-31</end_date><username>user4@example.com</username><package>Example Package</package><additional_charges>0</additional_charges><final_amount>1007.95</final_amount></invoice></invoices></usage>JSON Call
+{% codeblock %} <usage><invoices><invoice><number>201001000100</number><credits>123456</credits><date_invoiced>2010-09-01 00:00:00</date_invoiced><status>Unpaid</status><amount>1001</amount><overage>6.95</overage><type>Recurring Bill</type><prorated>0</prorated><start_date>2010-08-01</start_date><end_date>2010-08-31</end_date><username>user4@example.com</username><package>Example Package</package><additional_charges>0</additional_charges><final_amount>1007.95</final_amount></invoice></invoices></usage> {% endcodeblock %}
 
-</h3>
+### JSON Call
+
 {% codeblock %} https://sendgrid.com/api/distributor.billing.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&number=2010010001&task=curren {% endcodeblock %}
 
 ### Response

@@ -14,39 +14,90 @@ This endpoint allows you to manage and create Recipient Lists associated with th
 
 Create a new Recipient List.
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>list</td>
-         <td>Yes</td>
-         <td>None</td>
-         <td>Create a Recipient List with this name.</td>
-      </tr>
-      <tr>
-         <td>name</td>
-         <td>No</td>
-         <td>None</td>
-         <td>Specify the column name for the 'name' associated with email addresses.</td>
-      </tr>
-      <tr>
-         <td>*columnname*</td>
-         <td>No</td>
-         <td>None</td>
-         <td>Specify additional column names. The format needs to be    =columnname[*columnname*] will be the replacement tag.</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+Parameter
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Requirements
+
+</th>
+<th markdown="1">
+Description
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+list
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+None
+
+</td>
+<td markdown="1">
+Create a Recipient List with this name.
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+name
+
+</td>
+<td markdown="1">
+No
+
+</td>
+<td markdown="1">
+None
+
+</td>
+<td markdown="1">
+Specify the column name for the 'name' associated with email addresses.
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+*columnname*
+
+</td>
+<td markdown="1">
+No
+
+</td>
+<td markdown="1">
+None
+
+</td>
+<td markdown="1">
+Specify additional column names. The format needs to be
+
+    &columnname=columnname
+
+[*columnname*] will be the replacement tag.
+
+</td>
+</tr>
+</tbody>
+</table>
 {% xmljsontabs add %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="add-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="add-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/lists/add.json?list=test789&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -75,7 +126,7 @@ Create a new Recipient List.
 
 
 </div>
-<div class="tab-pane" id="add-xml">
+<div markdown="1" class="tab-pane" id="add-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/lists/add.xml?list=test789&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -117,33 +168,68 @@ Create a new Recipient List.
 
 Rename a Recipient List.
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>list</td>
-         <td>Yes</td>
-         <td>Must be an existing Recipient List.</td>
-         <td>This is the name of the Recipient List to be renamed.</td>
-      </tr>
-      <tr>
-         <td>newlist</td>
-         <td>Yes</td>
-         <td>None</td>
-         <td>Specify the new name for the Recipient List.</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+Parameter
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Requirements
+
+</th>
+<th markdown="1">
+Description
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+list
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Must be an existing Recipient List.
+
+</td>
+<td markdown="1">
+This is the name of the Recipient List to be renamed.
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+newlist
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+None
+
+</td>
+<td markdown="1">
+Specify the new name for the Recipient List.
+
+</td>
+</tr>
+</tbody>
+</table>
 {% xmljsontabs edit %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="edit-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="edit-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/lists/edit.json?list=test7890&newlist=test567&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -172,7 +258,7 @@ Rename a Recipient List.
 
 
 </div>
-<div class="tab-pane" id="edit-xml">
+<div markdown="1" class="tab-pane" id="edit-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/lists/edit.xml?list=test7890&newlist=test567&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -214,27 +300,50 @@ Rename a Recipient List.
 
 List all Recipient Lists on your account, or check if a particular List exists.
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>list</td>
-         <td>No</td>
-         <td>None</td>
-         <td>Check for this particular list. (To list all Recipient Lists on your account exclude this parameter)</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+Parameter
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Requirements
+
+</th>
+<th markdown="1">
+Description
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+list
+
+</td>
+<td markdown="1">
+No
+
+</td>
+<td markdown="1">
+None
+
+</td>
+<td markdown="1">
+Check for this particular list. (To list all Recipient Lists on your account exclude this parameter)
+
+</td>
+</tr>
+</tbody>
+</table>
 {% xmljsontabs get %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="get-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/lists/get.json?list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -265,7 +374,7 @@ List all Recipient Lists on your account, or check if a particular List exists.
 
 
 </div>
-<div class="tab-pane" id="get-xml">
+<div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/lists/get.xml?list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -309,27 +418,50 @@ List all Recipient Lists on your account, or check if a particular List exists.
 
 Remove a Recipient List from your account.
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>list</td>
-         <td>Yes</td>
-         <td>Must be an existing Recipient List.</td>
-         <td>Remove this Recipient List.</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+Parameter
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Requirements
+
+</th>
+<th markdown="1">
+Description
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+list
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Must be an existing Recipient List.
+
+</td>
+<td markdown="1">
+Remove this Recipient List.
+
+</td>
+</tr>
+</tbody>
+</table>
 {% xmljsontabs delete %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="delete-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="delete-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/lists/delete.json?list=test5678&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -358,7 +490,7 @@ Remove a Recipient List from your account.
 
 
 </div>
-<div class="tab-pane" id="delete-xml">
+<div markdown="1" class="tab-pane" id="delete-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/lists/delete.xml?list=test5678&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}

@@ -9,36 +9,46 @@ navigation:
 {% anchor h2 %} Get Current Settings {% endanchor %}
 
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>get</em></td>
-<td align="left">Retrieve Parse settings</td>
-</tr>
-<tr class="even">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Customer must be registered under your account</td>
-<td align="left">The customer who we will update</td>
-</tr>
-<tr class="odd">
-<td align="left">method</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>parse</em></td>
-<td align="left">Allows you to access parse functionality</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+-|
+|task|Yes|Must be set to *get*|Retrieve Parse settings|
+|user|Yes|Customer must be registered under your account|The customer who we will update|
+|method|Yes|Must be set to *parse*|Allows you to access parse functionality|
 
 ### XML Call
 
@@ -46,21 +56,56 @@ navigation:
 
 ### Response: Success
 
-{% codeblock %} <parse><entry><hostname>www.example.com</hostname><url>www.mydomain.com/parse.php</url><spam_check>1</spam_check></entry></parse>Response: Empty
 
-</h3>
-{% codeblock %} <parse></parse>JSON Call
+{% codeblock lang:xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-</h3>
+<parse>
+   <entry>
+      <hostname>www.example.com</hostname>
+      <url>www.mydomain.com/parse.php</url>
+      <spam_check>1</spam_check>
+   </entry>
+</parse>
+
+{% endcodeblock %}
+
+
+### Response: Empty
+
+{% codeblock %} <parse></parse> {% endcodeblock %}
+
+### JSON Call
+
 {% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&method=parse&user=customer@example.com {% endcodeblock %}
 
 ### Response: Success
 
-{% codeblock %} "parse":[{"hostname":"www.example.com","url":"www.mydomain.com\\/parse.php","spam_check":1}] {% endcodeblock %}
+
+{% codeblock lang:javascript %}
+{
+  "parse": [
+    {
+      "hostname": "www.example.com",
+      "url": "www.mydomain.com\\/parse.php",
+      "spam_check": "1"
+    }
+  ]
+}
+{% endcodeblock %}
+
 
 ### Response: Empty
 
-{% codeblock %} "parse":[] {% endcodeblock %}
+
+{% codeblock lang:javascript %}
+{
+  "parse": [
+
+  ]
+}
+{% endcodeblock %}
+
 
 * * * * *
 
@@ -68,48 +113,48 @@ navigation:
 {% anchor h2 %} Create New Entry {% endanchor %}
 
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>set</em></td>
-<td align="left">Set Parse settings</td>
-</tr>
-<tr class="even">
-<td align="left">hostname</td>
-<td align="left">Yes</td>
-<td align="left">No more than 255 characters</td>
-<td align="left">Hostname we will use with your email</td>
-</tr>
-<tr class="odd">
-<td align="left">url</td>
-<td align="left">Yes</td>
-<td align="left"></td>
-<td align="left">The parse destination</td>
-</tr>
-<tr class="even">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Customer must be registered under your account</td>
-<td align="left">The customer who we will update</td>
-</tr>
-<tr class="odd">
-<td align="left">method</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>parse</em></td>
-<td align="left">Allows you to access parse functionality</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+-|
+|task|Yes|Must be set to *set*|Set Parse settings|
+|hostname|Yes|No more than 255 characters|Hostname we will use with your email|
+|url|Yes||The parse destination|
+|user|Yes|Customer must be registered under your account|The customer who we will update|
+|method|Yes|Must be set to *parse*|Allows you to access parse functionality|
 
 ### XML Call
 
@@ -179,48 +224,48 @@ navigation:
 {% anchor h2 %} Edit Entry {% endanchor %}
 
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>update</em></td>
-<td align="left">Set Parse settings</td>
-</tr>
-<tr class="even">
-<td align="left">hostname</td>
-<td align="left">Yes</td>
-<td align="left">No more than 255 characters</td>
-<td align="left">Hostname entry you want to update</td>
-</tr>
-<tr class="odd">
-<td align="left">url</td>
-<td align="left">Yes</td>
-<td align="left"></td>
-<td align="left">The parse destination</td>
-</tr>
-<tr class="even">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Customer must be registered under your account</td>
-<td align="left">The customer who we will update</td>
-</tr>
-<tr class="odd">
-<td align="left">method</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>parse</em></td>
-<td align="left">Allows you to access parse functionality</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+-|
+|task|Yes|Must be set to *update*|Set Parse settings|
+|hostname|Yes|No more than 255 characters|Hostname entry you want to update|
+|url|Yes||The parse destination|
+|user|Yes|Customer must be registered under your account|The customer who we will update|
+|method|Yes|Must be set to *parse*|Allows you to access parse functionality|
 
 ### XML Call
 
@@ -290,42 +335,47 @@ navigation:
 {% anchor h2 %} Delete Entry {% endanchor %}
 
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>delete</em></td>
-<td align="left">Set Parse settings</td>
-</tr>
-<tr class="even">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Customer must be registered under your account</td>
-<td align="left">The customer who we will update</td>
-</tr>
-<tr class="odd">
-<td align="left">hostname</td>
-<td align="left">Yes</td>
-<td align="left">Must be the hostname you wish to delete.</td>
-<td align="left">The host name you will remove for your customer</td>
-</tr>
-<tr class="even">
-<td align="left">method</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>parse</em></td>
-<td align="left">Allows you to access parse functionality</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+-|
+|task|Yes|Must be set to *delete*|Set Parse settings|
+|user|Yes|Customer must be registered under your account|The customer who we will update|
+|hostname|Yes|Must be the hostname you wish to delete.|The host name you will remove for your customer|
+|method|Yes|Must be set to *parse*|Allows you to access parse functionality|
 
 ### XML Call
 

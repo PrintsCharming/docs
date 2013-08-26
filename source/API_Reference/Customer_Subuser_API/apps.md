@@ -9,33 +9,15 @@ navigation:
 {% anchor h2 %} List {% endanchor %}
  List all of the available apps. Note: The *name* entry is used in all the other API calls to identify a app.
 
-<table>
-<tbody>
-<tr class="odd">
-<td align="left">Parameter</td>
-<td align="left">Required</td>
-<td align="left">Requirements</td>
-<td align="left">Description</td>
-</tr>
-<tr class="even">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>getavailable</em></td>
-<td align="left">Retrieve Available Apps</td>
-</tr>
-<tr class="odd">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Subuser must be registered under your account</td>
-<td align="left">The subuser who we will update</td>
-</tr>
-</tbody>
-</table>
+||
+|Parameter|Required|Requirements|Description|
+|task|Yes|Must be set to *getavailable*|Retrieve Available Apps|
+|user|Yes|Subuser must be registered under your account|The subuser who we will update|
 
 {% xmljsontabs list %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="list-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="list-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&user=example@example.com {% endcodeblock %}
@@ -54,7 +36,7 @@ navigation:
 
 
 </div>
-<div class="tab-pane" id="list-xml">
+<div markdown="1" class="tab-pane" id="list-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&user=example@example.com {% endcodeblock %}
@@ -68,7 +50,7 @@ navigation:
 <filters>
    <filter>
       <name>twitter</name>
-      <title>
+      <title markdown="1">
 Twitter
 
 </title>
@@ -89,33 +71,15 @@ Twitter
 {% anchor h2 %} Activate App {% endanchor %}
 
 
-<table>
-<tbody>
-<tr class="odd">
-<td align="left">Parameter</td>
-<td align="left">Required</td>
-<td align="left">Requirements</td>
-<td align="left">Description</td>
-</tr>
-<tr class="even">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>activate</em></td>
-<td align="left">Retrieve Available Apps</td>
-</tr>
-<tr class="odd">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Subuser must be registered under your account</td>
-<td align="left">The subuser who we will update</td>
-</tr>
-</tbody>
-</table>
+||
+|Parameter|Required|Requirements|Description|
+|task|Yes|Must be set to *activate*|Retrieve Available Apps|
+|user|Yes|Subuser must be registered under your account|The subuser who we will update|
 
 {% xmljsontabs activate %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="activate-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="activate-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=activate&user=example@example.com {% endcodeblock %}
@@ -131,7 +95,7 @@ Twitter
 
 
 </div>
-<div class="tab-pane" id="activate-xml">
+<div markdown="1" class="tab-pane" id="activate-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=activate&user=example@example.com {% endcodeblock %}
@@ -158,33 +122,15 @@ Twitter
 {% anchor h2 %} Deactivate App {% endanchor %}
 
 
-<table>
-<tbody>
-<tr class="odd">
-<td align="left">Parameter</td>
-<td align="left">Required</td>
-<td align="left">Requirements</td>
-<td align="left">Description</td>
-</tr>
-<tr class="even">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>deactivate</em></td>
-<td align="left">Retrieve Available Apps</td>
-</tr>
-<tr class="odd">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Subuser must be registered under your account</td>
-<td align="left">The subuser who we will update</td>
-</tr>
-</tbody>
-</table>
+||
+|Parameter|Required|Requirements|Description|
+|task|Yes|Must be set to *deactivate*|Retrieve Available Apps|
+|user|Yes|Subuser must be registered under your account|The subuser who we will update|
 
 {% xmljsontabs deactivate %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="deactivate-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="deactivate-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=deactivate&user=example@example.com {% endcodeblock %}
@@ -200,7 +146,7 @@ Twitter
 
 
 </div>
-<div class="tab-pane" id="deactivate-xml">
+<div markdown="1" class="tab-pane" id="deactivate-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=deactivate&user=example@example.com {% endcodeblock %}
@@ -227,8 +173,8 @@ Twitter
 {% anchor h2 %} Customize App {% endanchor %}
  These API calls require that settings are passed using POST. {% xmljsontabs customize %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="customize-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="customize-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=setup&user=example@example.com {% endcodeblock %}
@@ -259,7 +205,7 @@ This is returned if that filter has no settings or is not enabled.
 
 
 </div>
-<div class="tab-pane" id="customize-xml">
+<div markdown="1" class="tab-pane" id="customize-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=setup&user=example@example.com {% endcodeblock %}
@@ -312,8 +258,8 @@ This is returned if that filter has no settings or is not enabled.
 {% anchor h2 %} Get Current Settings {% endanchor %}
  {% xmljsontabs settings %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="settings-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="settings-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=example@example.com {% endcodeblock %}
@@ -357,7 +303,7 @@ This is returned if that filter has no settings or is not enabled.
 
 
 </div>
-<div class="tab-pane" id="settings-xml">
+<div markdown="1" class="tab-pane" id="settings-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=example@example.com {% endcodeblock %}

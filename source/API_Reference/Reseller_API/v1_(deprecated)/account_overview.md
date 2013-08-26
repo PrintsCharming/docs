@@ -8,29 +8,64 @@ navigation:
 
 View general account information regarding your customers, including billing cycle, current billing cycle, credit usage, package, overage credits, etc.
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>Must be set to *overview*.</td>
-         <td>The task that allows us to present the customers information.</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer that is registered under your account.</td>
-         <td>The customer</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+Parameter
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Requirements
+
+</th>
+<th markdown="1">
+Description
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+task
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Must be set to *overview*.
+
+</td>
+<td markdown="1">
+The task that allows us to present the customers information.
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+user
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Customer that is registered under your account.
+
+</td>
+<td markdown="1">
+The customer
+
+</td>
+</tr>
+</tbody>
+</table>
 ### XML Call
 
 {% codeblock %} https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=overview&user=customer@example.com {% endcodeblock %}

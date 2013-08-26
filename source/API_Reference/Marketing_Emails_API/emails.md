@@ -14,35 +14,50 @@ This endpoint allows you to manage entries in your Recipient Lists.
 
 Add one or more emails to a Recipient List.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">list</td>
-<td align="left">Yes</td>
-<td align="left">Must be an existing Recipient List.</td>
-<td align="left">The list which you are adding email addresses too.</td>
-</tr>
-<tr class="even">
-<td align="left">data</td>
-<td align="left">Yes</td>
-<td align="left">Must be a valid JSON string matching the required format. Limited to a 1000 entries maximum.</td>
-<td align="left">Specify the name, email address, and additional fields to add to the specified Recipient List.</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Emails
+navigation:
+  show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Emails
+navigation:
+  show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Emails
+navigation:
+  show: true
+---
+---
+layout: page
+weight: 0
+title: Emails
+navigation:
+  show: true
+---
+---
+layout: page
+weight: 0
+title: Emails
+navigation:
+  show: true
+---
+-|
+|list|Yes|Must be an existing Recipient List.|The list which you are adding email addresses too.|
+|data|Yes|Must be a valid JSON string matching the required format. Limited to a 1000 entries maximum.|Specify the name, email address, and additional fields to add to the specified Recipient List.|
 
 {% xmljsontabs add %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="add-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="add-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/lists/email/add.json?list=Test&data=%7B%22email%22%3A%22example%40gmail.com%22%2C%22name%22%3A%22example%22%7D&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -71,7 +86,7 @@ Add one or more emails to a Recipient List.
 
 
 </div>
-<div class="tab-pane" id="add-xml">
+<div markdown="1" class="tab-pane" id="add-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/lists/email/add.xml?list=Test&data=%7B%22email%22%3A%22example%40gmail.com%22%2C%22name%22%3A%22example%22%7D&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -132,35 +147,50 @@ Add multiple email recipients to a list:
 
 Get the email addresses and associated fields for a Recipient List.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">list</td>
-<td align="left">Yes</td>
-<td align="left">Must be an existing Recipient List.</td>
-<td align="left">The list you are searching.</td>
-</tr>
-<tr class="even">
-<td align="left">email</td>
-<td align="left">No</td>
-<td align="left">Must be an email address or list of addresses.</td>
-<td align="left">Optional email addresses to search for in the Recipient List.</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Emails
+navigation:
+  show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Emails
+navigation:
+  show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Emails
+navigation:
+  show: true
+---
+---
+layout: page
+weight: 0
+title: Emails
+navigation:
+  show: true
+---
+---
+layout: page
+weight: 0
+title: Emails
+navigation:
+  show: true
+---
+-|
+|list|Yes|Must be an existing Recipient List.|The list you are searching.|
+|email|No|Must be an email address or list of addresses.|Optional email addresses to search for in the Recipient List.|
 
 {% xmljsontabs get %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="get-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/lists/email/get.json?list=Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -192,7 +222,7 @@ Get the email addresses and associated fields for a Recipient List.
 
 
 </div>
-<div class="tab-pane" id="get-xml">
+<div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/lists/email/get.xml?list=Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -237,35 +267,50 @@ Get the email addresses and associated fields for a Recipient List.
 
 Remove one or more emails from a Recipient List.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">list</td>
-<td align="left">Yes</td>
-<td align="left">Must be an existing Recipient List.</td>
-<td align="left">The list which you are removing email addresses from.</td>
-</tr>
-<tr class="even">
-<td align="left">email</td>
-<td align="left">Yes</td>
-<td align="left">Must be an email or emails in the Recipient List.</td>
-<td align="left">Specify the email address or email addresses you wish to remove from the specified Recipient List.</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Emails
+navigation:
+  show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Emails
+navigation:
+  show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Emails
+navigation:
+  show: true
+---
+---
+layout: page
+weight: 0
+title: Emails
+navigation:
+  show: true
+---
+---
+layout: page
+weight: 0
+title: Emails
+navigation:
+  show: true
+---
+-|
+|list|Yes|Must be an existing Recipient List.|The list which you are removing email addresses from.|
+|email|Yes|Must be an email or emails in the Recipient List.|Specify the email address or email addresses you wish to remove from the specified Recipient List.|
 
 {% xmljsontabs delete %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="delete-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="delete-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/lists/email/delete.json?list=Test&email=example%40gmail.com&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -294,7 +339,7 @@ Remove one or more emails from a Recipient List.
 
 
 </div>
-<div class="tab-pane" id="delete-xml">
+<div markdown="1" class="tab-pane" id="delete-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/lists/email/delete.xml?list=Test&email=example%40gmail.com&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}

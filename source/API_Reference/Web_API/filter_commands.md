@@ -15,8 +15,8 @@ List all of the available apps.
 
 {% xmljsontabs getavailable %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="getavailable-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="getavailable-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/filter.getavailable.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -37,7 +37,7 @@ List all of the available apps.
 
 
 </div>
-<div class="tab-pane" id="getavailable-xml">
+<div markdown="1" class="tab-pane" id="getavailable-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/filter.getavailable.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -51,7 +51,7 @@ List all of the available apps.
 <filters>
    <filter>
       <name>twitter</name>
-      <title>
+      <title markdown="1">
 Twitter
 
 </title>
@@ -73,8 +73,8 @@ Twitter
 {% anchor h2 %} Activate App {% endanchor %}
  {% xmljsontabs activate %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="activate-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="activate-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/filter.activate.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter {% endcodeblock %}
@@ -90,7 +90,7 @@ Twitter
 
 
 </div>
-<div class="tab-pane" id="activate-xml">
+<div markdown="1" class="tab-pane" id="activate-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/filter.activate.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter {% endcodeblock %}
@@ -115,8 +115,8 @@ Twitter
 
 {% xmljsontabs deactivate %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="deactivate-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="deactivate-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/filter.deactivate.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter {% endcodeblock %}
@@ -132,7 +132,7 @@ Twitter
 
 
 </div>
-<div class="tab-pane" id="deactivate-xml">
+<div markdown="1" class="tab-pane" id="deactivate-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/filter.deactivate.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter {% endcodeblock %}
@@ -176,8 +176,8 @@ Code Example
 {% anchor h2 %} Get Settings {% endanchor %}
  {% xmljsontabs getsettings %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="getsettings-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="getsettings-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/filter.getsettings.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter {% endcodeblock %}
@@ -221,7 +221,7 @@ Code Example
 
 
 </div>
-<div class="tab-pane" id="getsettings-xml">
+<div markdown="1" class="tab-pane" id="getsettings-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/filter.getsettings.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter {% endcodeblock %}

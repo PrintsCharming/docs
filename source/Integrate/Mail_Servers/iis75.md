@@ -23,7 +23,7 @@ Before you get going, you'll need to set up IIS in order to support SendGrid int
 8.  In Authentication Settings click the "Not required" option.
 9.  On the right side "Actions" pane: click Apply
 
-<center>
+<center markdown="1">
 ![]({{root_url}}/images/iis_mgr_site.png)
 
 </center>

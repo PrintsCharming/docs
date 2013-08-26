@@ -14,53 +14,53 @@ This endpoint allows you to add, view, or remove marketing emails.
 
 Create a new Marketing Email.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">identity</td>
-<td align="left">Yes</td>
-<td align="left">Must be an existing Identity</td>
-<td align="left">The Identity that will be used for the Marketing Email being created.</td>
-</tr>
-<tr class="even">
-<td align="left">name</td>
-<td align="left">Yes</td>
-<td align="left">None</td>
-<td align="left">The name that will be used for the Marketing Email being created.</td>
-</tr>
-<tr class="odd">
-<td align="left">subject</td>
-<td align="left">Yes</td>
-<td align="left">None</td>
-<td align="left">The subject that will be used for the Marketing Email being created.</td>
-</tr>
-<tr class="even">
-<td align="left">text</td>
-<td align="left">Yes</td>
-<td align="left">None</td>
-<td align="left">The text portion of the Marketing Email being created.</td>
-</tr>
-<tr class="odd">
-<td align="left">html</td>
-<td align="left">Yes</td>
-<td align="left">None</td>
-<td align="left">The html portion of the Marketing Email being created.</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Marketing Emails
+navigation:
+  show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Marketing Emails
+navigation:
+  show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Marketing Emails
+navigation:
+  show: true
+---
+---
+layout: page
+weight: 0
+title: Marketing Emails
+navigation:
+  show: true
+---
+---
+layout: page
+weight: 0
+title: Marketing Emails
+navigation:
+  show: true
+---
+-|
+|identity|Yes|Must be an existing Identity|The Identity that will be used for the Marketing Email being created.|
+|name|Yes|None|The name that will be used for the Marketing Email being created.|
+|subject|Yes|None|The subject that will be used for the Marketing Email being created.|
+|text|Yes|None|The text portion of the Marketing Email being created.|
+|html|Yes|None|The html portion of the Marketing Email being created.|
 
 {% xmljsontabs create %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="create-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="create-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/add.json?identity=Sender_Address&name=SendGrid_Test&subject=testsubject&text=testtextbody&html=%3Chtml%3E%3Cp%3Etest_html_body%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -89,7 +89,7 @@ Create a new Marketing Email.
 
 
 </div>
-<div class="tab-pane" id="create-xml">
+<div markdown="1" class="tab-pane" id="create-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/add.xml?identity=Sender_Address&name=SendGrid_Test&subject=testsubject&text=testtextbody&html=%3Chtml%3E%3Cp%3Etest_html_body%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -131,23 +131,139 @@ Create a new Marketing Email.
 
 Edit an existing Marketing Email.
 
-<table class="table table-bordered table-striped">
-   <tr>
-      <th>Parameter</th>
-      <th>Required</th>
-      <th>Requirements</th>
-      <th>Description</th>
-   </tr>
-   <td>name</td>
-   <td>Yes</td>
-   <td>Must be an existing Identity</td>
-   <td>The name of the Marketing Email being updated.</td>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tr markdown="1">
+<th markdown="1">
+Parameter
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Requirements
+
+</th>
+<th markdown="1">
+Description
+
+</th>
+</tr>
+<td markdown="1">
+name
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Must be an existing Identity
+
+</td>
+<td markdown="1">
+The name of the Marketing Email being updated.
+
+</td>
+</tr>
+<tr markdown="1">
+<tr markdown="1">
+<td markdown="1">
+newname
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+None
+
+</td>
+<td markdown="1">
+The new name for the Marketing Email being edited.
+
+</td>
+</tr>
+<tr markdown="1">
+<tr markdown="1">
+<td markdown="1">
+identity
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Must be an existing Identity
+
+</td>
+<td markdown="1">
+The new Identity for the Marketing Email being edited.
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+subject
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+None
+
+</td>
+<td markdown="1">
+The new subject that will be used for the Marketing Email being edited.
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+text
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+None
+
+</td>
+<td markdown="1">
+The new text portion of the Marketing Email being edited.
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+html
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+None
+
+</td>
+<td markdown="1">
+The new html portion of the Marketing Email being edited.
+
+</td>
+</tr>
+</table>
 {% xmljsontabs edit %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="edit-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="edit-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/edit.json?identity=Sender_Address&name=SendGrid_Edit_Test&newname=new_name_test&subject=test_subject&text=test_text&html=%3Chtml%3E%3Cp%3ETest_html_text%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -176,7 +292,7 @@ Edit an existing Marketing Email.
 
 
 </div>
-<div class="tab-pane" id="edit-xml">
+<div markdown="1" class="tab-pane" id="edit-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/edit.xml?identity=Sender_Address&name=SendGrid_Edit_Test&newname=new_name_test&subject=test_subject&text=test_text&html=%3Chtml%3E%3Cp%3ETest_html_text%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -218,29 +334,49 @@ Edit an existing Marketing Email.
 
 Retrieve the contents of an existing Marketing Email.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">name</td>
-<td align="left">Yes</td>
-<td align="left">Must be an existing Marketing Email</td>
-<td align="left">Retrieve the content of an existing Marketing Email.</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Marketing Emails
+navigation:
+  show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Marketing Emails
+navigation:
+  show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Marketing Emails
+navigation:
+  show: true
+---
+---
+layout: page
+weight: 0
+title: Marketing Emails
+navigation:
+  show: true
+---
+---
+layout: page
+weight: 0
+title: Marketing Emails
+navigation:
+  show: true
+---
+-|
+|name|Yes|Must be an existing Marketing Email|Retrieve the content of an existing Marketing Email.|
 
 {% xmljsontabs get %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="get-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/get.json?name=SendGrid_Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -278,7 +414,7 @@ Retrieve the contents of an existing Marketing Email.
 
 
 </div>
-<div class="tab-pane" id="get-xml">
+<div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/get.xml?name=SendGrid_Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -328,29 +464,49 @@ Retrieve the contents of an existing Marketing Email.
 
 Retrieve a list of all existing Marketing Email.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">name</td>
-<td align="left">No</td>
-<td align="left">Must be an existing Marketing Email</td>
-<td align="left">Search to see if a specific Marketing Email exists rather than a list of all Marketing Emails.</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Marketing Emails
+navigation:
+  show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Marketing Emails
+navigation:
+  show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Marketing Emails
+navigation:
+  show: true
+---
+---
+layout: page
+weight: 0
+title: Marketing Emails
+navigation:
+  show: true
+---
+---
+layout: page
+weight: 0
+title: Marketing Emails
+navigation:
+  show: true
+---
+-|
+|name|No|Must be an existing Marketing Email|Search to see if a specific Marketing Email exists rather than a list of all Marketing Emails.|
 
 {% xmljsontabs list %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="list-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="list-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/list.json?&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -394,7 +550,7 @@ Retrieve a list of all existing Marketing Email.
 
 
 </div>
-<div class="tab-pane" id="list-xml">
+<div markdown="1" class="tab-pane" id="list-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/list.xml?&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -451,29 +607,49 @@ Retrieve a list of all existing Marketing Email.
 
 Remove an existing Marketing Email.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">name</td>
-<td align="left">Yes</td>
-<td align="left">Must be an existing Marketing Email</td>
-<td align="left">Remove the Marketing Email with this name.</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Marketing Emails
+navigation:
+  show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Marketing Emails
+navigation:
+  show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Marketing Emails
+navigation:
+  show: true
+---
+---
+layout: page
+weight: 0
+title: Marketing Emails
+navigation:
+  show: true
+---
+---
+layout: page
+weight: 0
+title: Marketing Emails
+navigation:
+  show: true
+---
+-|
+|name|Yes|Must be an existing Marketing Email|Remove the Marketing Email with this name.|
 
 {% xmljsontabs delete %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="delete-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="delete-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/delete.json?name=SendGrid_Test1&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -502,7 +678,7 @@ Remove an existing Marketing Email.
 
 
 </div>
-<div class="tab-pane" id="delete-xml">
+<div markdown="1" class="tab-pane" id="delete-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/delete.xml?name=SendGrid_Test1&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}

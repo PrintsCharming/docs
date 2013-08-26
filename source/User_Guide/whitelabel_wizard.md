@@ -27,26 +27,14 @@ Your first step is to choose a subdomain. Common examples are EMAIL, MAIL, CONTA
 {% info %} The hosting company 1&1 does not support TXT records, so SPF cannot be specified and therefore is not supported by SendGrid. {% endinfo %}
 
 
-<table>
-<tbody>
-<tr class="odd">
-<td align="left">GoDaddy</td>
-<td align="left"><a href="http://support.godaddy.com/help/4597/setup-dns-using-cpanel">Configure DNS using CPanel</a> <br /> <a href="http://support.godaddy.com/help/198/setting-up-dns-with-your-parallels-plesk-panel-9-server-and-domain-with-us">Configure DNS using Plesk Panel 9</a> <br /> <a href="http://support.godaddy.com/help/6891/setting-up-dns-with-your-parallels-plesk-panel-10-server-and-domain-with-us">Configure DNS using Plesk Panel 10</a> <br /><a href="http://screencast.com/t/tip4j5ce6b">-Watch a video!-</a></td>
-</tr>
-<tr class="even">
-<td align="left">Bluehost</td>
-<td align="left"><a href="https://my.bluehost.com/cgi/help/559">Instructions on how to configure DNS using cPanel on BlueHost</a></td>
-</tr>
-<tr class="odd">
-<td align="left">Dreamhost</td>
-<td align="left"><a href="http://wiki.dreamhost.com/Custom_DNS">Instructions on how to configure custom DNS on DreamHost</a></td>
-</tr>
-<tr class="even">
-<td align="left">Hover</td>
-<td align="left"><a href="https://www.hover.com/help/edit-dns-records-cname-mx-txt-and-srv">Instructions on how to edit your DNS configuration on Hover</a></td>
-</tr>
-</tbody>
-</table>
+||
+|GoDaddy|[Configure DNS using CPanel](http://support.godaddy.com/help/4597/setup-dns-using-cpanel)   
+ [Configure DNS using Plesk Panel 9](http://support.godaddy.com/help/198/setting-up-dns-with-your-parallels-plesk-panel-9-server-and-domain-with-us)   
+ [Configure DNS using Plesk Panel 10](http://support.godaddy.com/help/6891/setting-up-dns-with-your-parallels-plesk-panel-10-server-and-domain-with-us)   
+[-Watch a video!-](http://screencast.com/t/tip4j5ce6b)|
+|Bluehost|[Instructions on how to configure DNS using cPanel on BlueHost](https://my.bluehost.com/cgi/help/559)|
+|Dreamhost|[Instructions on how to configure custom DNS on DreamHost](http://wiki.dreamhost.com/Custom_DNS)|
+|Hover|[Instructions on how to edit your DNS configuration on Hover](https://www.hover.com/help/edit-dns-records-cname-mx-txt-and-srv)|
 
 
 {% warning %} It is critical that you select a subdomain that does not already exist. MAIL is a common subdomain. If you do not have access to your domain registrar, check with your service administrator. {% endwarning %}
@@ -66,62 +54,132 @@ Our Whitelabel Wizard makes it easier to setup your Whitelabel by walking you th
 
 The following records are needed for links, SPF, DomainKeys, and DKIM to work correctly.
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>location</th>
-         <th>type</th>
-         <th>value</th>
-      </tr>
-      <tr>
-         <td>email.example.com.</td>
-         <td>CNAME</td>
-         <td>sendgrid.net.</td>
-      </tr>
-      <tr>
-         <td>example.com.</td>
-         <td>TXT</td>
-         <td>v=spf1 a mx include:sendgrid.net \~all</td>
-      </tr>
-      <tr>
-         <td>smtpapi._domainkey.example.com.</td>
-         <td>CNAME</td>
-         <td>dkim.sendgrid.net.</td>
-      </tr>
-      <tr>
-         <td>smtpapi._domainkey.email.example.com.</td>
-         <td>CNAME</td>
-         <td>dkim.sendgrid.net.</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+location
 
+</th>
+<th markdown="1">
+type
+
+</th>
+<th markdown="1">
+value
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+email.example.com.
+
+</td>
+<td markdown="1">
+CNAME
+
+</td>
+<td markdown="1">
+sendgrid.net.
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+example.com.
+
+</td>
+<td markdown="1">
+TXT
+
+</td>
+<td markdown="1">
+v=spf1 a mx include:sendgrid.net \~all
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+smtpapi._domainkey.example.com.
+
+</td>
+<td markdown="1">
+CNAME
+
+</td>
+<td markdown="1">
+dkim.sendgrid.net.
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+smtpapi._domainkey.email.example.com.
+
+</td>
+<td markdown="1">
+CNAME
+
+</td>
+<td markdown="1">
+dkim.sendgrid.net.
+
+</td>
+</tr>
+</tbody>
+</table>
 
 {% info %} If you already have an SPF record, you can simply add include:sendgrid.net to this entry. Make sure to add it BEFORE the "all" mechanism as "all" always matches and typically goes at the end of the SPF record. {% endinfo %}
  **Underscore Problems?**
 
 If your DNS server does not allow underscores in CNAMES you will have problems adding the smtpapi._domainkey CNAME records. If that is the case please create the following TXT records instead:
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>location</th>
-         <th>type</th>
-         <th>value</th>
-      </tr>
-      <tr>
-         <td>smtpapi._domainkey.example.com.</td>
-         <td>TXT</td>
-         <td>See Below.</td>
-      </tr>
-      <tr>
-         <td>smtpapi._domainkey.email.example.com.</td>
-         <td>TXT</td>
-         <td>See Below.</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+location
 
+</th>
+<th markdown="1">
+type
+
+</th>
+<th markdown="1">
+value
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+smtpapi._domainkey.example.com.
+
+</td>
+<td markdown="1">
+TXT
+
+</td>
+<td markdown="1">
+See Below.
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+smtpapi._domainkey.email.example.com.
+
+</td>
+<td markdown="1">
+TXT
+
+</td>
+<td markdown="1">
+See Below.
+
+</td>
+</tr>
+</tbody>
+</table>
 DomainKey Value:
 
 {% codeblock %} k=rsa; t=s; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDPtW5iwpXVPiH5FzJ7Nrl8USzuY9zqqzjE0D1r04xDN6qwziDnmgcFNNfMewVKN2D1O+2J9N14hRprzByFwfQW76yojh54Xu3uSbQ3JP0A7k8o8GutRF8zbFUA8n0ZH2y0cIEjMliXY4W4LwPA7m4q0ObmvSjhd63O9d8z1XkUBwIDAQAB {% endcodeblock %} 
@@ -130,19 +188,36 @@ DomainKey Value:
 
 SendGrid allows you to have your own dedicated IP address to help build your own reputation. These IPs need to be mapped to real names. SendGrid handles the mapping of an IP to a name, reverse DNS records (RDNS), and expects the mapping of the name to match the IP in the RDNS record. Please use the Whitelabel Wizard or contact support for the IPs and the names needed to be setup. In this case, an IP of 192.168.2.1 has been given the name o1.email.domain.com. SendGrid assigns the mapping of 192.168.2.1 to o1.email.example.com, and the following A record is needed to map o1.email.domain.com to 192.168.2.1:
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>location</th>
-         <th>type</th>
-         <th>value</th>
-      </tr>
-      <tr>
-         <td>o1.email.example.com.</td>
-         <td>A</td>
-         <td>192.168.2.1</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+location
 
+</th>
+<th markdown="1">
+type
+
+</th>
+<th markdown="1">
+value
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+o1.email.example.com.
+
+</td>
+<td markdown="1">
+A
+
+</td>
+<td markdown="1">
+192.168.2.1
+
+</td>
+</tr>
+</tbody>
+</table>
 

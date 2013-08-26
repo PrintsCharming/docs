@@ -8,35 +8,50 @@ navigation:
 
 View general account information regarding your customers, including billing cycle, current billing cycle, credit usage, package, overage credits, etc.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>overview</em>.</td>
-<td align="left">The task that allows us to present the customers information.</td>
-</tr>
-<tr class="even">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Customer that is registered under your account.</td>
-<td align="left">The customer</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Account Overview
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Account Overview
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Account Overview
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Account Overview
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Account Overview
+navigation:
+   show: true
+---
+-|
+|task|Yes|Must be set to *overview*.|The task that allows us to present the customers information.|
+|user|Yes|Customer that is registered under your account.|The customer|
 
 {% xmljsontabs get %}
 
-<div class="tab-content">
-<div class="tab-pane" id="get-xml">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=overview&user=customer@example.com {% endcodeblock %}
@@ -84,7 +99,7 @@ View general account information regarding your customers, including billing cyc
 
 
 </div>
-<div class="tab-pane active" id="get-json">
+<div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=overview&user=customer@example.com {% endcodeblock %}

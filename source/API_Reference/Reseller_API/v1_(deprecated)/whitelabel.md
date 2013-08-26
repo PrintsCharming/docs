@@ -14,80 +14,61 @@ With the whitelabel API calls you will be able to retrieve whitelabel settings r
 {% anchor h2 %} List {% endanchor %}
 
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">list</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>list</em></td>
-</tr>
-<tr class="even">
-<td align="left">method</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>whitelabel</em></td>
-</tr>
-</tbody>
-</table>
-
-### XML Call
-
-{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=whitelabel&task=lis {% endcodeblock %}
-
-### Response
-
-{% codeblock %} whitelabels\><whitelabel><mail_domain>email.sendgrid.com</mail_domain><url_domain>email.sendgrid.com</url_domain></whitelabel><whitelabel><mail_domain>email.example.com</mail_domain><url_domain>email.example.com</url_domain></whitelabel></whitelabels>JSON Call
-
-</h3>
-{% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=whitelabel&task=lis {% endcodeblock %}
-
-### Response
-
-{% codeblock %} [{"mail_domain":"email.sendgrid.com","url_domain":"email.sendgrid.com"},{"mail_domain":"email.example.com","url_domain":"email.example.com"}] {% endcodeblock %}
-
-* * * * *
-
-
-{% anchor h2 %} Append {% endanchor %}
-
-
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">list</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>append</em></td>
-</tr>
-<tr class="even">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Subuser must be registered under your account</td>
-</tr>
-<tr class="odd">
-<td align="left">mail_domain</td>
-<td align="left">Yes</td>
-<td align="left">Whitelabel mail_domain used to append a whitelabel record to a subuser</td>
-</tr>
-<tr class="even">
-<td align="left">method</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>whitelabel</em></td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|
+|:---
+layout: page
+weight: 0
+title: Whitelabel
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Whitelabel
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Whitelabel
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Whitelabel
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Whitelabel
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Whitelabel
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Whitelabel
+navigation:
+   show: true
+---
+--|
+|list|Yes|Must be set to *append*|
+|user|Yes|Subuser must be registered under your account|
+|mail_domain|Yes|Whitelabel mail_domain used to append a whitelabel record to a subuser|
+|method|Yes|Must be set to *whitelabel*|
 
 ### XML Call
 

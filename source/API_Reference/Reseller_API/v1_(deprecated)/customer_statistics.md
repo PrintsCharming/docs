@@ -11,48 +11,48 @@ navigation:
 
 Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Customer must be registered under your account</td>
-<td align="left">The customer we are retrieving statistics from</td>
-</tr>
-<tr class="even">
-<td align="left">days</td>
-<td align="left">No</td>
-<td align="left">Must be an integer greater than 0</td>
-<td align="left">Number of days in the past to include statistics (includes today)</td>
-</tr>
-<tr class="odd">
-<td align="left">start_date</td>
-<td align="left">No</td>
-<td align="left">Date must be in YYYY-mm-dd format and be before the end_date parameter</td>
-<td align="left">The start date to look up statistics</td>
-</tr>
-<tr class="even">
-<td align="left">end_date</td>
-<td align="left">No</td>
-<td align="left">Date must be in YYYY-mm-dd format and be after the start_date parameter</td>
-<td align="left">The end date to look up statistics</td>
-</tr>
-<tr class="odd">
-<td align="left">method</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>stats</em></td>
-<td align="left">Allows you to access stats functionality</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Customer Statistics
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Customer Statistics
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Customer Statistics
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Statistics
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Statistics
+navigation:
+   show: true
+---
+-|
+|user|Yes|Customer must be registered under your account|The customer we are retrieving statistics from|
+|days|No|Must be an integer greater than 0|Number of days in the past to include statistics (includes today)|
+|start_date|No|Date must be in YYYY-mm-dd format and be before the end_date parameter|The start date to look up statistics|
+|end_date|No|Date must be in YYYY-mm-dd format and be after the start_date parameter|The end date to look up statistics|
+|method|Yes|Must be set to *stats*|Allows you to access stats functionality|
 
 ### XML Call
 
@@ -60,9 +60,10 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 ### Response
 
-{% codeblock %} stats\><day><date>2009-06-20</date><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></day><day><date>2009-06-21</date><requests>32342</requests><bounces>10</bounces><clicks>14323</clicks><opens>10995</opens><spamreports>7</spamreports></day><day><date>2009-06-22</date><requests>52342</requests><bounces>11</bounces><clicks>19223</clicks><opens>12992</opens><spamreports>2</spamreports></day></stats>JSON Call
+{% codeblock %} <stats><day><date>2009-06-20</date><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></day><day><date>2009-06-21</date><requests>32342</requests><bounces>10</bounces><clicks>14323</clicks><opens>10995</opens><spamreports>7</spamreports></day><day><date>2009-06-22</date><requests>52342</requests><bounces>11</bounces><clicks>19223</clicks><opens>12992</opens><spamreports>2</spamreports></day></stats> {% endcodeblock %}
 
-</h3>
+### JSON Call
+
 {% codeblock %} https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com {% endcodeblock %}
 
 ### Response
@@ -77,36 +78,46 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 Retrieve all-time totals for your customer
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Customer must be registered under your account</td>
-<td align="left">The subuser we are retrieving statistics from</td>
-</tr>
-<tr class="even">
-<td align="left">aggregate</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to 1</td>
-<td align="left">This is used to let us know that you are interested in all time totals</td>
-</tr>
-<tr class="odd">
-<td align="left">method</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>stats</em></td>
-<td align="left">Allows you to access stats functionality</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Customer Statistics
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Customer Statistics
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Customer Statistics
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Statistics
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Statistics
+navigation:
+   show: true
+---
+-|
+|user|Yes|Customer must be registered under your account|The subuser we are retrieving statistics from|
+|aggregate|Yes|Must be set to 1|This is used to let us know that you are interested in all time totals|
+|method|Yes|Must be set to *stats*|Allows you to access stats functionality|
 
 ### XML Call
 
@@ -114,14 +125,38 @@ Retrieve all-time totals for your customer
 
 ### Response
 
-{% codeblock %} stats\><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></stats>JSON Call
 
-</h3>
+{% codeblock lang:xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<stats>
+   <requests>12342</requests>
+   <bounces>12</bounces>
+   <clicks>10223</clicks>
+   <opens>9992</opens>
+   <spamreports>5</spamreports>
+</stats>
+
+{% endcodeblock %}
+
+
+### JSON Call
+
 {% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&aggregate= {% endcodeblock %}
 
 ### Response
 
-{% codeblock %} "requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5 {% endcodeblock %}
+
+{% codeblock lang:javascript %}
+{
+  "requests": 12342,
+  "bounces": 12,
+  "clicks": 10223,
+  "opens": 9992,
+  "spamreports": 5
+}
+{% endcodeblock %}
+
 
 * * * * *
 
@@ -131,51 +166,79 @@ Retrieve all-time totals for your customer
 
 Retrieve a list of all the categories used in your customers account.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">list</td>
-<td align="left">Yes</td>
-<td align="left">The value must be set to <em>true</em></td>
-<td align="left">This will allow you to retrieve a list of all categories used in your customers account.</td>
-</tr>
-<tr class="even">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Subuser must be registered under your account</td>
-<td align="left">The subuser we are retrieving category statistics from</td>
-</tr>
-<tr class="odd">
-<td align="left">method</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>stats</em></td>
-<td align="left">Allows you to access stats functionality</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Customer Statistics
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Customer Statistics
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Customer Statistics
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Statistics
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Statistics
+navigation:
+   show: true
+---
+-|
+|list|Yes|The value must be set to *true*|This will allow you to retrieve a list of all categories used in your customers account.|
+|user|Yes|Subuser must be registered under your account|The subuser we are retrieving category statistics from|
+|method|Yes|Must be set to *stats*|Allows you to access stats functionality|
 
 ### XML Call
 
-{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&list=tru {% endcodeblock %}
+{% codeblock %} https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&list=true {% endcodeblock %}
 
 ### Response
 
-{% codeblock %} categories\><category>categoryA</category><category>categoryB</category><category>categoryC</category></categories>JSON Call
 
-</h3>
+{% codeblock lang:xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<categories>
+   <category>categoryA</category>
+   <category>categoryB</category>
+   <category>categoryC</category>
+</categories>
+
+{% endcodeblock %}
+
+
+### JSON Call
+
 {% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&list=tru {% endcodeblock %}
 
 ### Response
 
-{% codeblock %} {"category":"categoryA","category":"categoryB","category":"categoryC"} {% endcodeblock %}
+
+{% codeblock lang:javascript %}
+{
+  "category": "categoryC"
+}
+{% endcodeblock %}
+
 
 * * * * *
 
@@ -187,54 +250,49 @@ Retrieve statistics broken down by category. If the category does not exist, the
 
 Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">category</td>
-<td align="left">Yes</td>
-<td align="left">Must be an existing category that has statistics. You can pass in an array of categories</td>
-<td align="left">The category you will specify to retrieve detailed stats</td>
-</tr>
-<tr class="even">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Customer must be registered under you</td>
-<td align="left">The customer we are retrieving statistics from</td>
-</tr>
-<tr class="odd">
-<td align="left">days</td>
-<td align="left">No</td>
-<td align="left">Must be an integer greater than 0</td>
-<td align="left">Number of days in the past to include statistics (Includes today)</td>
-</tr>
-<tr class="even">
-<td align="left">start_date</td>
-<td align="left">No</td>
-<td align="left">Date must be in YYYY-mm-dd format and be before the end_date parameter</td>
-<td align="left">The start date to look up statistics</td>
-</tr>
-<tr class="odd">
-<td align="left">end_date</td>
-<td align="left">No</td>
-<td align="left">Date must be in YYYY-mm-dd format and be after the start_date parameter</td>
-<td align="left">The end date to look up statistics</td>
-</tr>
-<tr class="even">
-<td align="left">method</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>stats</em></td>
-<td align="left">Allows you to access stats functionality</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Customer Statistics
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Customer Statistics
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Customer Statistics
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Statistics
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Customer Statistics
+navigation:
+   show: true
+---
+-|
+|category|Yes|Must be an existing category that has statistics. You can pass in an array of categories|The category you will specify to retrieve detailed stats|
+|user|Yes|Customer must be registered under you|The customer we are retrieving statistics from|
+|days|No|Must be an integer greater than 0|Number of days in the past to include statistics (Includes today)|
+|start_date|No|Date must be in YYYY-mm-dd format and be before the end_date parameter|The start date to look up statistics|
+|end_date|No|Date must be in YYYY-mm-dd format and be after the start_date parameter|The end date to look up statistics|
+|method|Yes|Must be set to *stats*|Allows you to access stats functionality|
 
 ### XML Call
 
@@ -246,9 +304,36 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 ### Response
 
-{% codeblock %} stats\><day><date>2009-06-20</date><category>categoryA</category><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></day><day><date>2009-06-21</date><category>categoryB</category><requests>32342</requests><bounces>10</bounces><clicks>14323</clicks><opens>10995</opens><spamreports>7</spamreports></day></stats>JSON Call
 
-</h3>
+{% codeblock lang:xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<stats>
+   <day>
+      <date>2009-06-20</date>
+      <category>categoryA</category>
+      <requests>12342</requests>
+      <bounces>12</bounces>
+      <clicks>10223</clicks>
+      <opens>9992</opens>
+      <spamreports>5</spamreports>
+   </day>
+   <day>
+      <date>2009-06-21</date>
+      <category>categoryB</category>
+      <requests>32342</requests>
+      <bounces>10</bounces>
+      <clicks>14323</clicks>
+      <opens>10995</opens>
+      <spamreports>7</spamreports>
+   </day>
+</stats>
+
+{% endcodeblock %}
+
+
+### JSON Call
+
 {% codeblock %} https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category {% endcodeblock %}
 
 #### Command - Using an array of categories
@@ -257,4 +342,4 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 ### Response
 
-{% codeblock %} {"date":"2009-06-20","category":,"categoryA","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5},{"date":"2009-06-21",,"category":,"categoryB","requests":32342,"bounces":10,"clicks":14323,"opens":10995,"spamreports":7} {% endcodeblock %}
+

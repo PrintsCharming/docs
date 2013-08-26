@@ -9,33 +9,68 @@ navigation:
 {% anchor h2 %} Retrieve {% endanchor %}
 
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>Must be set to *get*</td>
-         <td>This will allow you to retrieve the event notification url for the specified subuser</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Subuser must be registered under your account</td>
-         <td>The username of the subuser</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+Parameter
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Requirements
+
+</th>
+<th markdown="1">
+Description
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+task
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Must be set to *get*
+
+</td>
+<td markdown="1">
+This will allow you to retrieve the event notification url for the specified subuser
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+user
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Subuser must be registered under your account
+
+</td>
+<td markdown="1">
+The username of the subuser
+
+</td>
+</tr>
+</tbody>
+</table>
 {% xmljsontabs retrieve %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="retrieve-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="retrieve-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/customer.eventposturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com {% endcodeblock %}
@@ -51,7 +86,7 @@ navigation:
 
 
 </div>
-<div class="tab-pane" id="retrieve-xml">
+<div markdown="1" class="tab-pane" id="retrieve-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/customer.eventposturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.co {% endcodeblock %}
@@ -76,39 +111,86 @@ navigation:
 {% anchor h2 %} Update / Set URL {% endanchor %}
 
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>Must be set to *set*</td>
-         <td>This will allow you to retrieve the event notification url for the specified subuser</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Subuser must be registered under your account</td>
-         <td>The name of the subuser</td>
-      </tr>
-      <tr>
-         <td>url</td>
-         <td>Yes</td>
-         <td>The notification URL</td>
-         <td>This is the new event notification URL</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+Parameter
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Requirements
+
+</th>
+<th markdown="1">
+Description
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+task
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Must be set to *set*
+
+</td>
+<td markdown="1">
+This will allow you to retrieve the event notification url for the specified subuser
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+user
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Subuser must be registered under your account
+
+</td>
+<td markdown="1">
+The name of the subuser
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+url
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+The notification URL
+
+</td>
+<td markdown="1">
+This is the new event notification URL
+
+</td>
+</tr>
+</tbody>
+</table>
 {% xmljsontabs set %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="set-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="set-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/customer.eventposturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.co {% endcodeblock %}
@@ -124,7 +206,7 @@ navigation:
 
 
 </div>
-<div class="tab-pane" id="set-xml">
+<div markdown="1" class="tab-pane" id="set-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/customer.eventposturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.co {% endcodeblock %}
@@ -151,33 +233,68 @@ navigation:
 {% anchor h2 %} Delete {% endanchor %}
 
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>Must be set to *delete*</td>
-         <td>This will allow you to delete the event notification url for the specified subuser</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Subuser must be registered under your account</td>
-         <td>The name of the subuser</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+Parameter
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Requirements
+
+</th>
+<th markdown="1">
+Description
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+task
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Must be set to *delete*
+
+</td>
+<td markdown="1">
+This will allow you to delete the event notification url for the specified subuser
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+user
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Subuser must be registered under your account
+
+</td>
+<td markdown="1">
+The name of the subuser
+
+</td>
+</tr>
+</tbody>
+</table>
 {% xmljsontabs delete %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="delete-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="delete-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/customer.eventposturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.co {% endcodeblock %}
@@ -193,7 +310,7 @@ navigation:
 
 
 </div>
-<div class="tab-pane" id="delete-xml">
+<div markdown="1" class="tab-pane" id="delete-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/customer.eventposturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.co {% endcodeblock %}

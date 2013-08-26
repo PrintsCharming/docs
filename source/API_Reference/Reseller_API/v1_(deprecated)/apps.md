@@ -13,36 +13,46 @@ List all of the available apps.
 
 Note: The *name* entry is used in all the other API calls to identify a app.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>getavailable</em></td>
-<td align="left">Retrieve Available Apps</td>
-</tr>
-<tr class="even">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Customer must be registered under your account</td>
-<td align="left">The customer who we will update</td>
-</tr>
-<tr class="odd">
-<td align="left">method</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>apps</em></td>
-<td align="left">Allows you to access apps functionality</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Apps
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Apps
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Apps
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Apps
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Apps
+navigation:
+   show: true
+---
+-|
+|task|Yes|Must be set to *getavailable*|Retrieve Available Apps|
+|user|Yes|Customer must be registered under your account|The customer who we will update|
+|method|Yes|Must be set to *apps*|Allows you to access apps functionality|
 
 ### XML Call
 
@@ -52,7 +62,7 @@ Note: The *name* entry is used in all the other API calls to identify a app.
 
 {% codeblock %} <filters><filter><name>twitter</name>
 
-<title>
+<title markdown="1">
 Twitter
 
 </title>
@@ -68,36 +78,46 @@ Twitter
 {% anchor h2 %} Activate App {% endanchor %}
 
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>activate</em></td>
-<td align="left">Retrieve Available Apps</td>
-</tr>
-<tr class="even">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Customer must be registered under your account</td>
-<td align="left">The customer who we will update</td>
-</tr>
-<tr class="odd">
-<td align="left">method</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>apps</em></td>
-<td align="left">Allows you to access apps functionality</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Apps
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Apps
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Apps
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Apps
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Apps
+navigation:
+   show: true
+---
+-|
+|task|Yes|Must be set to *activate*|Retrieve Available Apps|
+|user|Yes|Customer must be registered under your account|The customer who we will update|
+|method|Yes|Must be set to *apps*|Allows you to access apps functionality|
 
 ### XML Call
 
@@ -127,36 +147,46 @@ Twitter
 {% anchor h2 %} Deactivate App {% endanchor %}
 
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>deactivate</em></td>
-<td align="left">Retrieve Available Apps</td>
-</tr>
-<tr class="even">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Customer must be registered under your account</td>
-<td align="left">The customer who we will update</td>
-</tr>
-<tr class="odd">
-<td align="left">method</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>apps</em></td>
-<td align="left">Allows you to access apps functionality</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Apps
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Apps
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Apps
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Apps
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Apps
+navigation:
+   show: true
+---
+-|
+|task|Yes|Must be set to *deactivate*|Retrieve Available Apps|
+|user|Yes|Customer must be registered under your account|The customer who we will update|
+|method|Yes|Must be set to *apps*|Allows you to access apps functionality|
 
 ### XML Call
 

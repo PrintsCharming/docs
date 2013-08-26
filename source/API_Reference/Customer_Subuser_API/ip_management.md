@@ -10,39 +10,53 @@ List
 
 Obtain a complete list of all IP's and which are free, taken or available.
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-      </tr>
-      <tr>
-         <td>list</td>
-         <td>Yes</td>
-         <td>Must be set to either ( all / free / taken / available )</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+Parameter
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Requirements
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+list
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Must be set to either ( all / free / taken / available )
+
+</td>
+</tr>
+</tbody>
+</table>
 Here is a brief explanation of each option available for the list parameter:
 
-all  
-All IP addresses available to reseller, regardless of whether or not the IP is taken by a subuser
-
-free  
-All free IP addresses for the reseller. If a subuser is using an IP, it will not show up on this list
-
-taken  
-All taken IP addresses for the reseller. Only IP addresses that taken by subusers will show up on this list
-
-available  
-All available IP addresses for the reseller including all free IP addresses. If a subuser is deactivated*and* is assigned an IP, that IP will show up on this list since that IP address is not being used by anyone
+all
+:   All IP addresses available to reseller, regardless of whether or not the IP is taken by a subuser
+free
+:   All free IP addresses for the reseller. If a subuser is using an IP, it will not show up on this list
+taken
+:   All taken IP addresses for the reseller. Only IP addresses that taken by subusers will show up on this list
+available
+:   All available IP addresses for the reseller including all free IP addresses. If a subuser is deactivated*and* is assigned an IP, that IP will show up on this list since that IP address is not being used by anyone
 
 {% xmljsontabs list %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="list-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="list-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/customer.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=all {% endcodeblock %}
@@ -66,7 +80,7 @@ All available IP addresses for the reseller including all free IP addresses. If 
 
 
 </div>
-<div class="tab-pane" id="list-xml">
+<div markdown="1" class="tab-pane" id="list-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/customer.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=all {% endcodeblock %}
@@ -95,30 +109,56 @@ All available IP addresses for the reseller including all free IP addresses. If 
 {% anchor h2 %} Subuser IP Usage {% endanchor %}
  If your account has more than one IP address, you can manage what IPs your subusers are allowed to send from. If you remove all IPs from a specified user, they will use all IPs from from your list.
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>Must be set to *list*</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Subuser must be registered under your account</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+Parameter
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Requirements
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+task
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Must be set to *list*
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+user
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Subuser must be registered under your account
+
+</td>
+</tr>
+</tbody>
+</table>
 {% xmljsontabs usage %}
 
-<div class="tab-content">
-<div class="tab-pane" id="usage-xml">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane" id="usage-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/customer.sendip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list&user=example@example.com {% endcodeblock %}
@@ -157,7 +197,7 @@ All available IP addresses for the reseller including all free IP addresses. If 
 
 
 </div>
-<div class="tab-pane active" id="usage-json">
+<div markdown="1" class="tab-pane active" id="usage-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/customer.sendip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list&user=example@example.com {% endcodeblock %}
@@ -215,40 +255,84 @@ All available IP addresses for the reseller including all free IP addresses. If 
 {% anchor h2 %} Subuser IP Assignment {% endanchor %}
  You need to assign at least ONE IP to your subuser.
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>Must be set to *append*</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Subuser must be registered under your account</td>
-      </tr>
-      <tr>
-         <td>set</td>
-         <td>Yes</td>
-         <td>Must be either: **none**: Remove all ips. **all**: Apply all possible ips to subuser. **specify**: Specify the ips to the subser. Must be a valid set of IPs (use the list call to determine valid IPs)</td>
-      </tr>
-      <tr>
-         <td>ip[]</td>
-         <td>No</td>
-         <td>If the *set* parameter is set, then you must specify the IPs. Use the ip[] parameter to specify an IP. [ IE - ip[]=255.255.255.0[]=255.255.255.1 ]</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+Parameter
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Requirements
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+task
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Must be set to *append*
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+user
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Subuser must be registered under your account
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+set
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Must be either: **none**: Remove all ips. **all**: Apply all possible ips to subuser. **specify**: Specify the ips to the subser. Must be a valid set of IPs (use the list call to determine valid IPs)
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+ip[]
+
+</td>
+<td markdown="1">
+No
+
+</td>
+<td markdown="1">
+If the *set* parameter is set, then you must specify the IPs. Use the ip[] parameter to specify an IP. [ IE - ip[]=255.255.255.0&ip[]=255.255.255.1 ]
+
+</td>
+</tr>
+</tbody>
+</table>
 {% xmljsontabs subuser %}
 
-<div class="tab-content">
-<div class="tab-pane" id="subuser-xml">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane" id="subuser-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/customer.sendip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&set=specify&user=example@example.com&ip[]=255.255.255.250&ip[]=255.255.255.255 {% endcodeblock %}
@@ -285,7 +369,7 @@ All available IP addresses for the reseller including all free IP addresses. If 
 
 
 </div>
-<div class="tab-pane active" id="subuser-json">
+<div markdown="1" class="tab-pane active" id="subuser-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/customer.sendip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&set=specify&user=example@example.com&ip[]=255.255.255.250&ip[]=255.255.255.255 {% endcodeblock %}

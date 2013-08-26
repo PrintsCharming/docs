@@ -6,8 +6,8 @@ navigation:
   show: true
 ---
 
-<div class="row-fluid">
-<div class="span4 well callout">
+<div markdown="1" class="row-fluid">
+<div markdown="1" class="span4 well callout">
 [<span class="pull-right icon-12"></span>](EngineYard.html)
 
 [Deploying a SendGrid App on Engine Yard](EngineYard.html)---

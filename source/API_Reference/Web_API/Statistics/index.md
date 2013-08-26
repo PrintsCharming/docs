@@ -13,45 +13,104 @@ navigation:
 {% anchor h2 %} Parameters {% endanchor %}
 
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>days</td>
-         <td>No</td>
-         <td>Must be an integer greater than 0</td>
-         <td>Number of days in the past to include statistics (Includes today)</td>
-      </tr>
-      <tr>
-         <td>start_date</td>
-         <td>No</td>
-         <td>Date must be in YYYY-MM-DD format and be before the end_date parameter</td>
-         <td>The start date to look up statistics</td>
-      </tr>
-      <tr>
-         <td>end_date</td>
-         <td>No</td>
-         <td>Date must be in YYYY-MM-DD format and be after the start_date parameter</td>
-         <td>The end date to look up statistics</td>
-      </tr>
-      <tr>
-         <td>aggregate</td>
-         <td>No</td>
-         <td>0 or 1</td>
-         <td>This is used to indicate you are interested in all-time totals</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+Parameter
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Requirements
+
+</th>
+<th markdown="1">
+Description
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+days
+
+</td>
+<td markdown="1">
+No
+
+</td>
+<td markdown="1">
+Must be an integer greater than 0
+
+</td>
+<td markdown="1">
+Number of days in the past to include statistics (Includes today)
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+start_date
+
+</td>
+<td markdown="1">
+No
+
+</td>
+<td markdown="1">
+Date must be in YYYY-MM-DD format and be before the end_date parameter
+
+</td>
+<td markdown="1">
+The start date to look up statistics
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+end_date
+
+</td>
+<td markdown="1">
+No
+
+</td>
+<td markdown="1">
+Date must be in YYYY-MM-DD format and be after the start_date parameter
+
+</td>
+<td markdown="1">
+The end date to look up statistics
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+aggregate
+
+</td>
+<td markdown="1">
+No
+
+</td>
+<td markdown="1">
+0 or 1
+
+</td>
+<td markdown="1">
+This is used to indicate you are interested in all-time totals
+
+</td>
+</tr>
+</tbody>
+</table>
 {% xmljsontabs activate %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="activate-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="activate-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/stats.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&days=2 {% endcodeblock %}
@@ -99,7 +158,7 @@ navigation:
 
 
 </div>
-<div class="tab-pane" id="activate-xml">
+<div markdown="1" class="tab-pane" id="activate-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/stats.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&days=2 {% endcodeblock %}
@@ -162,8 +221,8 @@ navigation:
 
 {% xmljsontabs list %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="list-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="list-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/stats.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=true {% endcodeblock %}
@@ -187,7 +246,7 @@ navigation:
 
 
 </div>
-<div class="tab-pane" id="list-xml">
+<div markdown="1" class="tab-pane" id="list-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/stats.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=true {% endcodeblock %}
@@ -224,51 +283,122 @@ navigation:
 {% anchor h2 %} Parameters {% endanchor %}
 
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>category</td>
-         <td>Yes</td>
-         <td>Must be an existing category that has statistics.</td>
-         <td>The category you will specify to retrieve detailed stats</td>
-      </tr>
-      <tr>
-         <td>days</td>
-         <td>No</td>
-         <td>Must be an integer greater than 0</td>
-         <td>Number of days in the past to include statistics (Includes today)</td>
-      </tr>
-      <tr>
-         <td>start_date</td>
-         <td>No</td>
-         <td>Date must be in YYYY-MM-DD format and be before the end_date parameter</td>
-         <td>The start date to look up statistics</td>
-      </tr>
-      <tr>
-         <td>end_date</td>
-         <td>No</td>
-         <td>Date must be in YYYY-MM-DD format and be after the start_date parameter</td>
-         <td>The end date to look up statistics</td>
-      </tr>
-      <tr>
-         <td>aggregate</td>
-         <td>No</td>
-         <td>0 or 1</td>
-         <td>This is used to indicate you are interested in all-time totals</td>
-      </tr>
-   </tbody>
-</table>
+<table markdown="1" class="table table-bordered table-striped">
+<tbody markdown="1">
+<tr markdown="1">
+<th markdown="1">
+Parameter
 
+</th>
+<th markdown="1">
+Required
+
+</th>
+<th markdown="1">
+Requirements
+
+</th>
+<th markdown="1">
+Description
+
+</th>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+category
+
+</td>
+<td markdown="1">
+Yes
+
+</td>
+<td markdown="1">
+Must be an existing category that has statistics.
+
+</td>
+<td markdown="1">
+The category you will specify to retrieve detailed stats
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+days
+
+</td>
+<td markdown="1">
+No
+
+</td>
+<td markdown="1">
+Must be an integer greater than 0
+
+</td>
+<td markdown="1">
+Number of days in the past to include statistics (Includes today)
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+start_date
+
+</td>
+<td markdown="1">
+No
+
+</td>
+<td markdown="1">
+Date must be in YYYY-MM-DD format and be before the end_date parameter
+
+</td>
+<td markdown="1">
+The start date to look up statistics
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+end_date
+
+</td>
+<td markdown="1">
+No
+
+</td>
+<td markdown="1">
+Date must be in YYYY-MM-DD format and be after the start_date parameter
+
+</td>
+<td markdown="1">
+The end date to look up statistics
+
+</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">
+aggregate
+
+</td>
+<td markdown="1">
+No
+
+</td>
+<td markdown="1">
+0 or 1
+
+</td>
+<td markdown="1">
+This is used to indicate you are interested in all-time totals
+
+</td>
+</tr>
+</tbody>
+</table>
 {% xmljsontabs category %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="category-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="category-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/stats.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category=categoryA {% endcodeblock %}
@@ -311,7 +441,7 @@ navigation:
 
 
 </div>
-<div class="tab-pane" id="category-xml">
+<div markdown="1" class="tab-pane" id="category-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/stats.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category=categoryA {% endcodeblock %}

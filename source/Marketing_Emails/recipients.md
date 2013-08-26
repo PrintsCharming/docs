@@ -146,7 +146,7 @@ You can take the following actions depending on which category you want to make 
 {% anchor h3 %} Subscription Widget {% endanchor %}
 
 
-<li>
+<li markdown="1">
 This form enables your visitors to subscribe to your marketing email directly from your website.
 
 </li>

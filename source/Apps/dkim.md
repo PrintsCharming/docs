@@ -16,26 +16,30 @@ By default, SendGrid signs all e-mail with DKIM to improve its deliverability. F
 {% anchor h2 %} Settings {% endanchor %}
 
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Name</th>
-<th align="left">Required</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Domain</td>
-<td align="left">No</td>
-<td align="left">Sets the sender domain.</td>
-</tr>
-<tr class="even">
-<td align="left">Use From domain</td>
-<td align="left">No</td>
-<td align="left">Sets the DKIM domain to the sender domain</td>
-</tr>
-</tbody>
-</table>
+|Name|Required|Description|
+|:---
+layout: page
+weight: 0
+title: DKIM
+navigation:
+  show: true
+---
+---
+layout: page
+weight: 0
+title: DKIM
+navigation:
+  show: true
+---
+---
+layout: page
+weight: 0
+title: DKIM
+navigation:
+  show: true
+---
+-|
+|Domain|No|Sets the sender domain.|
+|Use From domain|No|Sets the DKIM domain to the sender domain|
 
 

@@ -9,41 +9,51 @@ navigation:
 {% anchor h2 %} Get Current Settings {% endanchor %}
 
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>get</em></td>
-<td align="left">Retrieve Parse settings</td>
-</tr>
-<tr class="even">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Customer must be registered under your account</td>
-<td align="left">The customer who we will update</td>
-</tr>
-<tr class="odd">
-<td align="left">method</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>parse</em></td>
-<td align="left">Allows you to access parse functionality</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+-|
+|task|Yes|Must be set to *get*|Retrieve Parse settings|
+|user|Yes|Customer must be registered under your account|The customer who we will update|
+|method|Yes|Must be set to *parse*|Allows you to access parse functionality|
 
 {% xmljsontabs get %}
 
-<div class="tab-content">
-<div class="tab-pane" id="get-xml">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=parse&task=get&method=parse&user=customer@example.com {% endcodeblock %}
@@ -77,7 +87,7 @@ navigation:
 
 
 </div>
-<div class="tab-pane active" id="get-json">
+<div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&method=parse&user=customer@example.com {% endcodeblock %}
@@ -119,53 +129,53 @@ navigation:
 {% anchor h2 %} Create New Entry {% endanchor %}
 
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>set</em></td>
-<td align="left">Set Parse settings</td>
-</tr>
-<tr class="even">
-<td align="left">hostname</td>
-<td align="left">Yes</td>
-<td align="left">No more than 255 characters</td>
-<td align="left">Hostname we will use with your email</td>
-</tr>
-<tr class="odd">
-<td align="left">url</td>
-<td align="left">Yes</td>
-<td align="left"></td>
-<td align="left">The parse destination</td>
-</tr>
-<tr class="even">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Customer must be registered under your account</td>
-<td align="left">The customer who we will update</td>
-</tr>
-<tr class="odd">
-<td align="left">method</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>parse</em></td>
-<td align="left">Allows you to access parse functionality</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+-|
+|task|Yes|Must be set to *set*|Set Parse settings|
+|hostname|Yes|No more than 255 characters|Hostname we will use with your email|
+|url|Yes||The parse destination|
+|user|Yes|Customer must be registered under your account|The customer who we will update|
+|method|Yes|Must be set to *parse*|Allows you to access parse functionality|
 
 {% xmljsontabs create %}
 
-<div class="tab-content">
-<div class="tab-pane" id="create-xml">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane" id="create-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=set&method=parse&user=customer@example.com {% endcodeblock %}
@@ -202,7 +212,7 @@ navigation:
 
 
 </div>
-<div class="tab-pane active" id="create-json">
+<div markdown="1" class="tab-pane active" id="create-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=set&method=parse&user=customer@example.com {% endcodeblock %}
@@ -239,53 +249,53 @@ navigation:
 {% anchor h2 %} Edit Entry {% endanchor %}
 
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>update</em></td>
-<td align="left">Set Parse settings</td>
-</tr>
-<tr class="even">
-<td align="left">hostname</td>
-<td align="left">Yes</td>
-<td align="left">No more than 255 characters</td>
-<td align="left">Hostname entry you want to update</td>
-</tr>
-<tr class="odd">
-<td align="left">url</td>
-<td align="left">Yes</td>
-<td align="left"></td>
-<td align="left">The parse destination</td>
-</tr>
-<tr class="even">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Customer must be registered under your account</td>
-<td align="left">The customer who we will update</td>
-</tr>
-<tr class="odd">
-<td align="left">method</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>parse</em></td>
-<td align="left">Allows you to access parse functionality</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+-|
+|task|Yes|Must be set to *update*|Set Parse settings|
+|hostname|Yes|No more than 255 characters|Hostname entry you want to update|
+|url|Yes||The parse destination|
+|user|Yes|Customer must be registered under your account|The customer who we will update|
+|method|Yes|Must be set to *parse*|Allows you to access parse functionality|
 
 {% xmljsontabs edit %}
 
-<div class="tab-content">
-<div class="tab-pane" id="edit-xml">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane" id="edit-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=update&user=customer@example.com {% endcodeblock %}
@@ -322,7 +332,7 @@ navigation:
 
 
 </div>
-<div class="tab-pane active" id="edit-json">
+<div markdown="1" class="tab-pane active" id="edit-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=parse&user=customer@example.com {% endcodeblock %}
@@ -359,47 +369,52 @@ navigation:
 {% anchor h2 %} Delete Entry {% endanchor %}
 
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">task</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>delete</em></td>
-<td align="left">Set Parse settings</td>
-</tr>
-<tr class="even">
-<td align="left">user</td>
-<td align="left">Yes</td>
-<td align="left">Customer must be registered under your account</td>
-<td align="left">The customer who we will update</td>
-</tr>
-<tr class="odd">
-<td align="left">hostname</td>
-<td align="left">Yes</td>
-<td align="left">Must be the hostname you wish to delete.</td>
-<td align="left">The host name you will remove for your customer</td>
-</tr>
-<tr class="even">
-<td align="left">method</td>
-<td align="left">Yes</td>
-<td align="left">Must be set to <em>parse</em></td>
-<td align="left">Allows you to access parse functionality</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+---
+layout: page
+weight: 0
+title: Parse Settings
+navigation:
+   show: true
+---
+-|
+|task|Yes|Must be set to *delete*|Set Parse settings|
+|user|Yes|Customer must be registered under your account|The customer who we will update|
+|hostname|Yes|Must be the hostname you wish to delete.|The host name you will remove for your customer|
+|method|Yes|Must be set to *parse*|Allows you to access parse functionality|
 
 {% xmljsontabs delete %}
 
-<div class="tab-content">
-<div class="tab-pane" id="delete-xml">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane" id="delete-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&method=parse&user=customer@example.com {% endcodeblock %}
@@ -436,7 +451,7 @@ navigation:
 
 
 </div>
-<div class="tab-pane active" id="delete-json">
+<div markdown="1" class="tab-pane active" id="delete-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&method=parse&user=customer@example.com {% endcodeblock %}

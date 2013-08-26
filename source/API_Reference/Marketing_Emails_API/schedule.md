@@ -16,41 +16,51 @@ This endpoint allows you to add, view, or remove scheduled delivery events for M
 
 Schedule a delivery time for an existing Marketing Email.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">name</td>
-<td align="left">Yes</td>
-<td align="left">Must be an existing Marketing Email.</td>
-<td align="left">Marketing Email to schedule delivery for. (If Marketing Email should be sent now, include no additional parameters.)</td>
-</tr>
-<tr class="even">
-<td align="left">at</td>
-<td align="left">No</td>
-<td align="left">Date / Time must be provided in ISO 8601 format (YYYY-MM-DD HH:MM:SS+-HH:MM)</td>
-<td align="left">Date / Time to schedule marketing email Delivery.</td>
-</tr>
-<tr class="odd">
-<td align="left">after</td>
-<td align="left">No</td>
-<td align="left">Must be a positive integer.</td>
-<td align="left">Number of minutes until delivery should occur.</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Schedule
+navigation:
+  show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Schedule
+navigation:
+  show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Schedule
+navigation:
+  show: true
+---
+---
+layout: page
+weight: 0
+title: Schedule
+navigation:
+  show: true
+---
+---
+layout: page
+weight: 0
+title: Schedule
+navigation:
+  show: true
+---
+-|
+|name|Yes|Must be an existing Marketing Email.|Marketing Email to schedule delivery for. (If Marketing Email should be sent now, include no additional parameters.)|
+|at|No|Date / Time must be provided in ISO 8601 format (YYYY-MM-DD HH:MM:SS+-HH:MM)|Date / Time to schedule marketing email Delivery.|
+|after|No|Must be a positive integer.|Number of minutes until delivery should occur.|
 
 {% xmljsontabs add %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="add-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="add-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/schedule/add.json?name=test&at=2012-09-05_18%3A35%3A00&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -79,7 +89,7 @@ Schedule a delivery time for an existing Marketing Email.
 
 
 </div>
-<div class="tab-pane" id="add-xml">
+<div markdown="1" class="tab-pane" id="add-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/schedule/add.xml?name=test&at=2012-09-05_18%3A35%3A00&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -121,29 +131,49 @@ Schedule a delivery time for an existing Marketing Email.
 
 Retrieve the scheduled delivery time for an existing Marketing Email.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">name</td>
-<td align="left">Yes</td>
-<td align="left">Must be an existing Marketing Email.</td>
-<td align="left">Retrieve the delivery time scheduled for this Marketing Email.</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Schedule
+navigation:
+  show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Schedule
+navigation:
+  show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Schedule
+navigation:
+  show: true
+---
+---
+layout: page
+weight: 0
+title: Schedule
+navigation:
+  show: true
+---
+---
+layout: page
+weight: 0
+title: Schedule
+navigation:
+  show: true
+---
+-|
+|name|Yes|Must be an existing Marketing Email.|Retrieve the delivery time scheduled for this Marketing Email.|
 
 {% xmljsontabs get %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="get-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="get-json">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/schedule/get.json?name=SendGrid_Test2&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -172,7 +202,7 @@ Retrieve the scheduled delivery time for an existing Marketing Email.
 
 
 </div>
-<div class="tab-pane" id="get-xml">
+<div markdown="1" class="tab-pane" id="get-xml">
 ### Call
 
 {% codeblock %} https://sendgrid.com/api/newsletter/schedule/get.xml?name=SendGrid_Test2&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -214,29 +244,49 @@ Retrieve the scheduled delivery time for an existing Marketing Email.
 
 Cancel a scheduled send for a Marketing Email.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Requirements</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">name</td>
-<td align="left">Yes</td>
-<td align="left">Must be an existing Marketing Email</td>
-<td align="left">Remove the scheduled delivery time from an existing Marketing Email.</td>
-</tr>
-</tbody>
-</table>
+|Parameter|Required|Requirements|Description|
+|:---
+layout: page
+weight: 0
+title: Schedule
+navigation:
+  show: true
+---
+--|:---
+layout: page
+weight: 0
+title: Schedule
+navigation:
+  show: true
+---
+-|:---
+layout: page
+weight: 0
+title: Schedule
+navigation:
+  show: true
+---
+---
+layout: page
+weight: 0
+title: Schedule
+navigation:
+  show: true
+---
+---
+layout: page
+weight: 0
+title: Schedule
+navigation:
+  show: true
+---
+-|
+|name|Yes|Must be an existing Marketing Email|Remove the scheduled delivery time from an existing Marketing Email.|
 
 {% xmljsontabs delete %}
 
-<div class="tab-content">
-<div class="tab-pane active" id="delete-json">
+<div markdown="1" class="tab-content">
+<div markdown="1" class="tab-pane active" id="delete-json">
 ### Call
 
 {% codeblock %} sendgrid.com/api/newsletter/schedule/delete.json?name=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
@@ -265,7 +315,7 @@ Cancel a scheduled send for a Marketing Email.
 
 
 </div>
-<div class="tab-pane" id="delete-xml">
+<div markdown="1" class="tab-pane" id="delete-xml">
 ### Call
 
 {% codeblock %} sendgrid.com/api/newsletter/schedule/delete.xml?name=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password {% endcodeblock %}
