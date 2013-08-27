@@ -12,17 +12,12 @@ navigation:
   <tbody>
     <tr>
       <th>Parameter</th>
-
       <th>Required</th>
-
       <th>Description</th>
     </tr>
-
     <tr>
       <td>data_type</td>
-
       <td>Yes</td>
-
       <td>
         One of the following:
         <ul>
@@ -35,12 +30,9 @@ navigation:
         </ul>
       </td>
     </tr>
-
     <tr>
       <td>start_date</td>
-
       <td>Yes</td>
-
       <td>
         <p>Date format is based on aggregated_by value (default is yyyy-mm-dd):</p>
         <ul>
@@ -53,9 +45,7 @@ navigation:
 
     <tr>
       <td>end_date</td>
-
       <td>No</td>
-
       <td>
         Date format is based on aggregated_by value (default is yyyy-mm-dd):
         <ul>
@@ -90,17 +80,13 @@ navigation:
 
     <tr>
       <td>category</td>
-
       <td>No</td>
-
       <td>Return stats for the given category</td>
     </tr>
 
     <tr>
       <td>aggregated_by</td>
-
       <td>No</td>
-
       <td>
         Aggregate the data by the given period (default is <i>day</i>):
         <ul>
@@ -110,20 +96,16 @@ navigation:
         </ul>
       </td>
     </tr>
-
     <tr>
       <td>country</td>
       <td>No</td>
       <td>
         <p>Get stats for each region/state for the given country. Only <i>US</i> (United States) and <i>CA</i> (Canada) is supported at this time. Country code is two letter characters based on <a href = "http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO 3166-1 alpha-2</a></p>
-
         <p>This parameter is only used for when <i>data_type=geo</i></p>
       </td>
     </tr>
-
   </tbody>
 </table>
-
 
 {% xmljsontabs activate %}
 
