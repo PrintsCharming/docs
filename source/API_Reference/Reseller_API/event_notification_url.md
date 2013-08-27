@@ -56,14 +56,14 @@ navigation:
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=customer@example.com&method=eventpostur
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=get&amp;user=customer@example.com&amp;method=eventpostur
 {% endcodeblock %}
 <h3>Response</h3>
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<url>http://www.SubUserPostUrlHere.com&gt;</url>
+<url>http://www.SubUserPostUrlHere.com&amp;gt;</url>
 
 {% endcodeblock %}
 
@@ -77,7 +77,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=customer@example.com&method=eventpostur
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=get&amp;user=customer@example.com&amp;method=eventpostur
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -152,7 +152,7 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=customer@example.com&url=http://www.SubUserPostUrlHere.com&method=eventposturl
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=set&amp;user=customer@example.com&amp;url=http://www.SubUserPostUrlHere.com&amp;method=eventposturl
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -175,7 +175,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=customer@example.com&url=http://www.SubUserPostUrlHere.com&method=eventposturl
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=set&amp;user=customer@example.com&amp;url=http://www.SubUserPostUrlHere.com&amp;method=eventposturl
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -244,7 +244,7 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com&method=eventposturl
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=delete&amp;user=customer@example.com&amp;method=eventposturl
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -267,7 +267,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com&method=eventpostur
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=delete&amp;user=customer@example.com&amp;method=eventpostur
 {% endcodeblock %}
 <h3>Response</h3>
 

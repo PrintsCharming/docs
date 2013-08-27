@@ -47,11 +47,11 @@ In order to login your customer subuser, you need to contact our web API to retr
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=geturl&user=example@example.com
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=geturl&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
-<params><params>al_username=username&al_subuser_name=example@example.com&al_hash=b478ab36ebc306990dd283b1c341898e</params></params>
+<params><params>al_username=username&amp;al_subuser_name=example@example.com&amp;al_hash=b478ab36ebc306990dd283b1c341898e</params></params>
 {% endcodeblock %}
 
 
@@ -61,11 +61,11 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_us
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=geturl&user=example@example.com
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=geturl&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
-{"params":"al_username=username&al_subuser_name=example@example.com&al_hash=aa39649af578679d3a90d2cc43245d56"}
+{"params":"al_username=username&amp;al_subuser_name=example@example.com&amp;al_hash=aa39649af578679d3a90d2cc43245d56"}
 {% endcodeblock %}
 
 

@@ -49,7 +49,7 @@ In order to login your customer subuser, you need to contact our web API to retr
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=geturl&user=example@example.com
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=geturl&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -72,13 +72,13 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=geturl&user=example@example.com
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=geturl&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response</h3>
 
 {% codeblock lang:javascript %}
 {
-  "params": "al_username=username&al_subuser_name=example@example.com&al_hash=aa39649af578679d3a90d2cc43245d56"
+  "params": "al_username=username&amp;al_subuser_name=example@example.com&amp;al_hash=aa39649af578679d3a90d2cc43245d56"
 }
 {% endcodeblock %}
 

@@ -32,9 +32,8 @@ Retrieve
     </tbody></table>
   
 {% xmljsontabs retrieve %}
-
 <div class="tab-content">
-	  <div class="tab-pane active" id="retrieve-json">
+<div class="tab-pane active" id="retrieve-json">
 <h3>Call</h3>
 	  {% codeblock %}
 	https://sendgrid.com/apiv2/customer.eventposturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com
@@ -43,8 +42,8 @@ Retrieve
 	  {% codeblock lang:javascript%}
 	{"url":"http:\/\/www.SubUserPostUrlHere.com"}
 	{% endcodeblock %}
-	</div>
-  <div class="tab-pane" id="retrieve-xml">
+</div>
+<div class="tab-pane" id="retrieve-xml">
 <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.eventposturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.co
@@ -55,7 +54,7 @@ https://sendgrid.com/apiv2/customer.eventposturl.xml?api_user=your_sendgrid_user
 <url>http://www.SubUserPostUrlHere.com</url>
 
 {% endcodeblock %}
-    </div>
+</div>
 
 </div>
   <hr/>
@@ -91,9 +90,8 @@ Update / Set URL
     </tbody></table>
   
 {% xmljsontabs set %}
-
 <div class="tab-content">
-	  <div class="tab-pane active" id="set-json">
+<div class="tab-pane active" id="set-json">
 <h3>Call</h3>
 	  {% codeblock %}
 	https://sendgrid.com/apiv2/customer.eventposturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.co
@@ -104,8 +102,8 @@ Update / Set URL
   "message": "success"
 }
 {% endcodeblock %}
-	</div>
-  <div class="tab-pane" id="set-xml">
+</div>
+<div class="tab-pane" id="set-xml">
 <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.eventposturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.co
@@ -118,7 +116,7 @@ https://sendgrid.com/apiv2/customer.eventposturl.xml?api_user=your_sendgrid_user
 </result>
 
 {% endcodeblock %}
-    </div>
+</div>
 </div>
   <hr/>
   {% anchor h2 %}
@@ -147,9 +145,8 @@ Delete
     </tbody></table>
   
 {% xmljsontabs delete %}
-
 <div class="tab-content">
-	  <div class="tab-pane active" id="delete-json">
+<div class="tab-pane active" id="delete-json">
 <h3>Call</h3>
 	  {% codeblock %}
 	https://sendgrid.com/apiv2/customer.eventposturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.co
@@ -160,8 +157,8 @@ Delete
   "message": "success"
 }
 {% endcodeblock %}
-	</div>
-  <div class="tab-pane" id="delete-xml">
+</div>
+<div class="tab-pane" id="delete-xml">
 <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.eventposturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.co
@@ -174,6 +171,6 @@ https://sendgrid.com/apiv2/customer.eventposturl.xml?api_user=your_sendgrid_user
 </result>
 
 {% endcodeblock %}
-    </div>
+</div>
 
 </div>

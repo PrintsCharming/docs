@@ -22,7 +22,7 @@ List all of the available apps.
 
 
 {% codeblock %}
-https://sendgrid.com/api/filter.getavailable.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/filter.getavailable.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -47,7 +47,7 @@ https://sendgrid.com/api/filter.getavailable.json?api_user=your_sendgrid_usernam
 
 
 {% codeblock %}
-https://sendgrid.com/api/filter.getavailable.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/filter.getavailable.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -61,7 +61,6 @@ https://sendgrid.com/api/filter.getavailable.xml?api_user=your_sendgrid_username
       <description>This plugin allows you to send an email message to twitter</description>
       <activated>0</activated>
    </filter>
-   ...
 </filters>
 
 {% endcodeblock %}
@@ -85,7 +84,7 @@ https://sendgrid.com/api/filter.getavailable.xml?api_user=your_sendgrid_username
 
 
 {% codeblock %}
-https://sendgrid.com/api/filter.activate.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
+https://sendgrid.com/api/filter.activate.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -105,7 +104,7 @@ https://sendgrid.com/api/filter.activate.json?api_user=your_sendgrid_username&ap
 
 
 {% codeblock %}
-https://sendgrid.com/api/filter.activate.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
+https://sendgrid.com/api/filter.activate.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -135,7 +134,7 @@ https://sendgrid.com/api/filter.activate.xml?api_user=your_sendgrid_username&api
 
 
 {% codeblock %}
-https://sendgrid.com/api/filter.deactivate.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
+https://sendgrid.com/api/filter.deactivate.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -156,7 +155,7 @@ https://sendgrid.com/api/filter.deactivate.json?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/api/filter.deactivate.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
+https://sendgrid.com/api/filter.deactivate.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -243,7 +242,7 @@ print_r($response);
 
 
 {% codeblock %}
-https://sendgrid.com/api/filter.getsettings.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
+https://sendgrid.com/api/filter.getsettings.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -299,7 +298,7 @@ https://sendgrid.com/api/filter.getsettings.json?api_user=your_sendgrid_username
 
 
 {% codeblock %}
-https://sendgrid.com/api/filter.getsettings.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
+https://sendgrid.com/api/filter.getsettings.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter
 {% endcodeblock %}
 <h3>Response: Success</h3>
 

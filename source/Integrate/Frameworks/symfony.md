@@ -78,7 +78,7 @@ class myEmail
                 $html = get_partial($partials['html'], $parameters);
             }
         }
-        if ($text === null && $html === null) {
+        if ($text === null &amp;&amp; $html === null) {
             throw new sfException('A text and/or HTML partial must be given');
         }
         
@@ -92,7 +92,7 @@ class myEmail
             $mailer  = Swift_Mailer::newInstance($connection);
             $message = Swift_Message::newInstance()->setSubject($subject)->setTo($mailTo);
             
-            if ($text && $html) {
+            if ($text &amp;&amp; $html) {
                 $message->setBody($html, 'text/html');
                 $message->addPart($text, 'text/plain');
             } else if ($text) {

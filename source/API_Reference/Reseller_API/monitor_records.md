@@ -77,7 +77,7 @@ Obtain a complete list of all customer.
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=create&name=myMonitor&email=example@example.com&frequency=1000
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=monitor&amp;task=create&amp;name=myMonitor&amp;email=example@example.com&amp;frequency=1000
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -122,7 +122,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=create&name=myMonitor&email=example@example.com&frequency=1000
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=monitor&amp;task=create&amp;name=myMonitor&amp;email=example@example.com&amp;frequency=1000
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -228,7 +228,7 @@ Make modifications to an existing Monitor record.
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=monitor&amp;task=edit&amp;name=myMonitor&amp;new_name=updatedMonitor&amp;new_email=example@example.com&amp;new_frequency=5
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -273,7 +273,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=monitor&amp;task=edit&amp;name=myMonitor&amp;new_name=updatedMonitor&amp;new_email=example@example.com&amp;new_frequency=5
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -361,7 +361,7 @@ Deleting a monitor record will remove it from SendGrid's system. **Make sure no 
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=delete&name=recordToDelet
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=monitor&amp;task=delete&amp;name=recordToDelet
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -406,7 +406,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=delete&name=recordToDelet
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=monitor&amp;task=delete&amp;name=recordToDelet
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -488,7 +488,7 @@ List all available monitor records a reseller has.
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=lis
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=monitor&amp;task=lis
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}  <monitors><monitor><name>sampleNameA</name><email>example@example.com</email><frequency>1000</frequency><users></users></monitor><monitor><name>sampleNameB</name><email>example@example.com</email><frequency>10000</frequency><users><user>user1@example.com</user><user>user2@example.com</user></users></monitor></monitors>
@@ -503,7 +503,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=lis
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=monitor&amp;task=lis
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
@@ -576,7 +576,7 @@ Append a monitor record to a existing record onto a customer.
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=append&name=myMonitor&user=customer@example.com
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=monitor&amp;task=append&amp;name=myMonitor&amp;user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -621,7 +621,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=append&name=myMonitor&user=customer@example.com
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=monitor&amp;task=append&amp;name=myMonitor&amp;user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -709,7 +709,7 @@ Detach a customer from a monitor record.
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=detach&user=customer@example.com
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=monitor&amp;task=detach&amp;user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -754,7 +754,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=detach&user=customer@example.com
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=monitor&amp;task=detach&amp;user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 

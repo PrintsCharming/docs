@@ -85,7 +85,7 @@ Create a new Variation.
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/variations/add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=variation_name&subject=variation_subject&html=variation_body
+https://sendgrid.com/api/newsletter/variations/add.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=existing_draft&amp;type=html&amp;variation=variation_name&amp;subject=variation_subject&amp;html=variation_body
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -122,7 +122,7 @@ https://sendgrid.com/api/newsletter/variations/add.json?api_user=your_sendgrid_u
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/variations/add.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=variation_name&subject=variation_subject&html=variation_body
+https://sendgrid.com/api/newsletter/variations/add.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=existing_draft&amp;type=html&amp;variation=variation_name&amp;subject=variation_subject&amp;html=variation_body
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -229,7 +229,7 @@ https://sendgrid.com/api/newsletter/variations/add.xml?api_user=your_sendgrid_us
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/variations/edit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=existing_variation_name&newvariation=new_variation_name&subject=variation_subject&html=variation_body
+https://sendgrid.com/api/newsletter/variations/edit.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=existing_draft&amp;type=html&amp;variation=existing_variation_name&amp;newvariation=new_variation_name&amp;subject=variation_subject&amp;html=variation_body
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -266,7 +266,7 @@ https://sendgrid.com/api/newsletter/variations/edit.json?api_user=your_sendgrid_
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/variations/edit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=existing_variation_name&newvariation=new_variation_name&subject=variation_subject&html=variation_body
+https://sendgrid.com/api/newsletter/variations/edit.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=existing_draft&amp;type=html&amp;variation=existing_variation_name&amp;newvariation=new_variation_name&amp;subject=variation_subject&amp;html=variation_body
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -343,7 +343,7 @@ https://sendgrid.com/api/newsletter/variations/edit.xml?api_user=your_sendgrid_u
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/variations/get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=existing_variation_name
+https://sendgrid.com/api/newsletter/variations/get.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=existing_draft&amp;variation=existing_variation_name
 {% endcodeblock %}
 <h3>Response: Success</h3>
 <h3>Response: Error</h3>
@@ -367,7 +367,7 @@ https://sendgrid.com/api/newsletter/variations/get.json?api_user=your_sendgrid_u
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/variations/get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=existing_variation_name
+https://sendgrid.com/api/newsletter/variations/get.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=existing_draft&amp;variation=existing_variation_name
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -437,7 +437,7 @@ https://sendgrid.com/api/newsletter/variations/get.xml?api_user=your_sendgrid_us
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/variations/cancel.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft
+https://sendgrid.com/api/newsletter/variations/cancel.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=existing_draft
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -474,7 +474,7 @@ https://sendgrid.com/api/newsletter/variations/cancel.json?api_user=your_sendgri
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/variations/cancel.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft
+https://sendgrid.com/api/newsletter/variations/cancel.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=existing_draft
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -553,7 +553,7 @@ https://sendgrid.com/api/newsletter/variations/cancel.xml?api_user=your_sendgrid
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/variations/delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_delete
+https://sendgrid.com/api/newsletter/variations/delete.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=existing_draft&amp;variation=variation_to_delete
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -590,7 +590,7 @@ https://sendgrid.com/api/newsletter/variations/delete.json?api_user=your_sendgri
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/variations/delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_delete
+https://sendgrid.com/api/newsletter/variations/delete.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=existing_draft&amp;variation=variation_to_delete
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -669,7 +669,7 @@ https://sendgrid.com/api/newsletter/variations/delete.xml?api_user=your_sendgrid
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/variations/list.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_find
+https://sendgrid.com/api/newsletter/variations/list.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=existing_draft&amp;variation=variation_to_find
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -706,7 +706,7 @@ https://sendgrid.com/api/newsletter/variations/list.json?api_user=your_sendgrid_
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/variations/list.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_find
+https://sendgrid.com/api/newsletter/variations/list.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=existing_draft&amp;variation=variation_to_find
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -785,7 +785,7 @@ https://sendgrid.com/api/newsletter/variations/list.xml?api_user=your_sendgrid_u
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/variations/pickwinner.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_that_wins
+https://sendgrid.com/api/newsletter/variations/pickwinner.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=existing_draft&amp;variation=variation_that_wins
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -822,7 +822,7 @@ https://sendgrid.com/api/newsletter/variations/pickwinner.json?api_user=your_sen
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/variations/pickwinner.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_that_wins
+https://sendgrid.com/api/newsletter/variations/pickwinner.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=existing_draft&amp;variation=variation_that_wins
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -932,7 +932,7 @@ https://sendgrid.com/api/newsletter/variations/pickwinner.xml?api_user=your_send
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/variations/schedule.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&percent=50
+https://sendgrid.com/api/newsletter/variations/schedule.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=existing_draft&amp;percent=50
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -969,7 +969,7 @@ https://sendgrid.com/api/newsletter/variations/schedule.json?api_user=your_sendg
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/variations/schedule.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&percent=50
+https://sendgrid.com/api/newsletter/variations/schedule.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=existing_draft&amp;percent=50
 {% endcodeblock %}
 <h3>Response: Success</h3>
 

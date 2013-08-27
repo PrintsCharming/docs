@@ -64,7 +64,7 @@ Note that you can use *either* the days parameter *or* the start\_date and end\_
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=get&date=
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=unsubscribes&amp;user=customer@example.com&amp;task=get&amp;date=
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -94,7 +94,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=get&date=
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=unsubscribes&amp;user=customer@example.com&amp;task=get&amp;date=
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -169,7 +169,7 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=delete&email=unsubscribe@sample.com
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=unsubscribes&amp;user=customer@example.com&amp;task=delete&amp;email=unsubscribe@sample.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -209,7 +209,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=delete&email=unsubscribe@sample.com
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=unsubscribes&amp;user=customer@example.com&amp;task=delete&amp;email=unsubscribe@sample.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -291,7 +291,7 @@ Add unsubscribe email records to their account if they need to stop sending emai
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=add&email=unsubscribe@sample.com
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=unsubscribes&amp;user=customer@example.com&amp;task=add&amp;email=unsubscribe@sample.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -331,7 +331,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=add&email=unsubscribe@sample.com
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=unsubscribes&amp;user=customer@example.com&amp;task=add&amp;email=unsubscribe@sample.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 

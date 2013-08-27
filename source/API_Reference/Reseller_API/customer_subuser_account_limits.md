@@ -52,7 +52,7 @@ Retrieve account limits for a specific customer subuser. If the API call respons
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=retrieve
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=limit&amp;user=example@example.com&amp;task=retrieve
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -99,7 +99,7 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=retrieve
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=limit&amp;user=example@example.com&amp;task=retrieve
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang: javascript %}
@@ -174,7 +174,7 @@ Obtain a complete list of all customer subuser.
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=non
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=limit&amp;user=example@example.com&amp;task=non
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -219,7 +219,7 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=non
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=limit&amp;user=example@example.com&amp;task=non
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -328,7 +328,7 @@ A recurring reset will allow you to periodically reset a subusers credits to a n
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=recurring&credits=200&period=daily
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=limit&amp;user=example@example.com&amp;task=recurring&amp;credits=200&amp;period=daily
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -373,7 +373,7 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=recurring&credits=200&period=daily
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=limit&amp;user=example@example.com&amp;task=recurring&amp;credits=200&amp;period=daily
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -458,7 +458,7 @@ Set a subusers credits to a specified amount.
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=total&credits=20
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=limit&amp;user=example@example.com&amp;task=total&amp;credits=20
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -503,7 +503,7 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=total&credits=20
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=limit&amp;user=example@example.com&amp;task=total&amp;credits=20
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -588,7 +588,7 @@ Increment a subusers credits by a specified amount.
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=increment&credits=20
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=limit&amp;user=example@example.com&amp;task=increment&amp;credits=20
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -633,7 +633,7 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=increment&credits=20
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=limit&amp;user=example@example.com&amp;task=increment&amp;credits=20
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -718,7 +718,7 @@ Decrement a subusers credits by a specified amount.
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=decrement&credits=20
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=limit&amp;user=example@example.com&amp;task=decrement&amp;credits=20
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -763,7 +763,7 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=decrement&credits=20
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=limit&amp;user=example@example.com&amp;task=decrement&amp;credits=20
 {% endcodeblock %}
 <h3>Response: Success</h3>
 

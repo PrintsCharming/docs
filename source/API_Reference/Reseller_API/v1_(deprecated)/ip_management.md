@@ -56,7 +56,7 @@ View all IPs under your account.
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=al
+https://sendgrid.com/api/distributor.ip.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=al
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -80,7 +80,7 @@ https://sendgrid.com/api/distributor.ip.xml?api_user=your_sendgrid_username&api_
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=al
+https://sendgrid.com/api/distributor.ip.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=al
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -158,7 +158,7 @@ A listing of all free IPs under your account. A Free IP is any IP that is not in
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=fre
+https://sendgrid.com/api/distributor.ip.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=fre
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -182,7 +182,7 @@ https://sendgrid.com/api/distributor.ip.xml?api_user=your_sendgrid_username&api_
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=fre
+https://sendgrid.com/api/distributor.ip.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=fre
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -251,7 +251,7 @@ A listing of all taken IPs under your account. A Taken IP is any IP that is in u
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=take
+https://sendgrid.com/api/distributor.ip.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=take
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -275,7 +275,7 @@ https://sendgrid.com/api/distributor.ip.xml?api_user=your_sendgrid_username&api_
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=take
+https://sendgrid.com/api/distributor.ip.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=take
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -344,7 +344,7 @@ A listing of all available IPs under your account. An Available IP is any IP tha
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=availabl
+https://sendgrid.com/api/distributor.ip.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=availabl
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -368,7 +368,7 @@ https://sendgrid.com/api/distributor.ip.xml?api_user=your_sendgrid_username&api_
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=availabl
+https://sendgrid.com/api/distributor.ip.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=availabl
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -459,7 +459,7 @@ The current breakdown of users who are using your IPs.
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=usage&user=example.com
+https://sendgrid.com/api/distributor.ip.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=usage&amp;user=example.com
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -487,7 +487,7 @@ https://sendgrid.com/api/distributor.ip.xml?api_user=your_sendgrid_username&api_
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=usage&user=example.com
+https://sendgrid.com/api/distributor.ip.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=usage&amp;user=example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}

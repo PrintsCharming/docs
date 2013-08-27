@@ -14,6 +14,34 @@ This endpoint allows you to manage and create Recipient Lists associated with th
 
 Create a new Recipient List.
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>list</td>
+         <td>Yes</td>
+         <td>None</td>
+         <td>Create a Recipient List with this name.</td>
+      </tr>
+      <tr>
+         <td>name</td>
+         <td>No</td>
+         <td>None</td>
+         <td>Specify the column name for the 'name' associated with email addresses.</td>
+      </tr>
+      <tr>
+         <td>*columnname*</td>
+         <td>No</td>
+         <td>None</td>
+         <td>Specify additional column names. The format needs to be    =columnname[*columnname*] will be the replacement tag.</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs add %}
 
@@ -105,6 +133,28 @@ https://sendgrid.com/api/newsletter/lists/add.xml?list=test789&amp;api_user=your
 
 Rename a Recipient List.
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>list</td>
+         <td>Yes</td>
+         <td>Must be an existing Recipient List.</td>
+         <td>This is the name of the Recipient List to be renamed.</td>
+      </tr>
+      <tr>
+         <td>newlist</td>
+         <td>Yes</td>
+         <td>None</td>
+         <td>Specify the new name for the Recipient List.</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs edit %}
 
@@ -196,6 +246,22 @@ https://sendgrid.com/api/newsletter/lists/edit.xml?list=test7890&amp;newlist=tes
 
 List all Recipient Lists on your account, or check if a particular List exists.
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>list</td>
+         <td>No</td>
+         <td>None</td>
+         <td>Check for this particular list. (To list all Recipient Lists on your account exclude this parameter)</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs get %}
 
@@ -291,6 +357,22 @@ https://sendgrid.com/api/newsletter/lists/get.xml?list=test&amp;api_user=your_se
 
 Remove a Recipient List from your account.
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>list</td>
+         <td>Yes</td>
+         <td>Must be an existing Recipient List.</td>
+         <td>Remove this Recipient List.</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs delete %}
 

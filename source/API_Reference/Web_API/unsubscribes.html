@@ -106,7 +106,7 @@ get
 </tbody></table>
 {% xmljsontabs get %}
 <div class="tab-content">
-  <div class="tab-pane active" id="get-json">
+<div class="tab-pane active" id="get-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/unsubscribes.get.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;date=1
@@ -119,18 +119,17 @@ https://sendgrid.com/api/unsubscribes.get.json?api_user=your_sendgrid_username&a
   }
 ]
 {% endcodeblock %}
-
-  </div>
-  <div class="tab-pane" id="get-xml">
+</div>
+<div class="tab-pane" id="get-xml">
 <h3>Call</h3>
 {% codeblock lang:xml %}
+https://sendgrid.com/api/unsubscribes.get.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;date=1
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock %}
+{% codeblock lang:xml%}
 <unsubscribes><unsubscribe><email>brandon.west@sendgrid.com</email><created>2012-09-06 14:03:18</created></unsubscribe></unsubscribes>
 {% endcodeblock %}
-
-  </div>
+</div>
 </div>
 
 <hr>
@@ -161,7 +160,7 @@ delete
 </tbody></table>
 {% xmljsontabs delete %}
 <div class="tab-content">
-  <div class="tab-pane active" id="delete-json">
+<div class="tab-pane active" id="delete-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/unsubscribes.delete.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=emailToDelete@domain.com
@@ -181,9 +180,8 @@ https://sendgrid.com/api/unsubscribes.delete.json?api_user=your_sendgrid_usernam
   ]
 }
 {% endcodeblock %}
-
-  </div>
-  <div class="tab-pane" id="delete-xml">
+</div>
+<div class="tab-pane" id="delete-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/unsubscribes.delete.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=emailToDelete@domain.com
@@ -196,18 +194,13 @@ https://sendgrid.com/api/unsubscribes.delete.xml?api_user=your_sendgrid_username
 <result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
-
-@nodes
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
   Email does not exist
-@nodes
 </result>
 
 {% endcodeblock %}
-
-  </result></result></result>
 </div>
 </div>
 
@@ -233,7 +226,7 @@ add
 </tbody></table>
 {% xmljsontabs add %}
 <div class="tab-content">
-  <div class="tab-pane active" id="add-json">
+<div class="tab-pane active" id="add-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/unsubscribes.add.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=email2@domain.com
@@ -253,9 +246,8 @@ https://sendgrid.com/api/unsubscribes.add.json?api_user=your_sendgrid_username&a
   ]
 }
 {% endcodeblock %}
-
-  </div>
-  <div class="tab-pane" id="add-xml">
+</div>
+<div class="tab-pane" id="add-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/unsubscribes.add.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=email2@domain.com
@@ -276,7 +268,5 @@ https://sendgrid.com/api/unsubscribes.add.xml?api_user=your_sendgrid_username&am
 </result>
 
 {% endcodeblock %}
-
-  </result></result>
 </div>
 </div>

@@ -10,6 +10,34 @@ navigation:
 
 Retrieve a list of all credentials, or permissions for a specific credential.
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>api_user</td>
+         <td>Yes</td>
+         <td>alphanumeric</td>
+         <td>The primary account holder's user ID creating the new account</td>
+      </tr>
+      <tr>
+         <td>api_key</td>
+         <td>Yes</td>
+         <td>alphanumeric</td>
+         <td>The primary account holder's password</td>
+      </tr>
+      <tr>
+         <td>username</td>
+         <td>No</td>
+         <td>alphanumeric</td>
+         <td>If a username is supplied, the API returns the JSON permissions for that user</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs get %}
 
@@ -20,7 +48,7 @@ Retrieve a list of all credentials, or permissions for a specific credential.
 
 
 {% codeblock %}
-https://sendgrid.com/api/credentials/get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/credentials/get.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -69,7 +97,7 @@ https://sendgrid.com/api/credentials/get.json?api_user=your_sendgrid_username&ap
 
 
 {% codeblock %}
-https://sendgrid.com/api/credentials/get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/credentials/get.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -132,6 +160,46 @@ https://sendgrid.com/api/credentials/get.xml?api_user=your_sendgrid_username&api
 
 This API call allows user to add a new set of credentials to their account.
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>api_user</td>
+         <td>Yes</td>
+         <td>alphanumeric</td>
+         <td>The primary account holder's user ID creating the new account</td>
+      </tr>
+      <tr>
+         <td>api_key</td>
+         <td>Yes</td>
+         <td>alphanumeric</td>
+         <td>The primary account holder's password</td>
+      </tr>
+      <tr>
+         <td>username</td>
+         <td>Yes</td>
+         <td>alphanumeric</td>
+         <td>Enter a username for the new account</td>
+      </tr>
+      <tr>
+         <td>password</td>
+         <td>Yes</td>
+         <td>alphanumeric</td>
+         <td>Enter a password for the new account</td>
+      </tr>
+      <tr>
+         <td>permissions</td>
+         <td>No</td>
+         <td>JSON array of bits</td>
+         <td>Credentials are specified using a JSON object. There are three key names: **email** for access to SMTP, **api** for programmatic access, and **web** for administration. The values for each are a bit, 0 for off or 1 for on.The following example allows the specified username/password to log into the dashboard, but *not* send email or have access to any of the APIs:`{"email": 0, "web": 1, "api": 0}`</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs add %}
 
@@ -142,7 +210,7 @@ This API call allows user to add a new set of credentials to their account.
 
 
 {% codeblock %}
-https://sendgrid.com/api/credentials/add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=name&password=password&permissions={"email": 0, "web": 1, "api": 0}
+https://sendgrid.com/api/credentials/add.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;username=name&amp;password=password&amp;permissions={"email": 0, "web": 1, "api": 0}
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -176,7 +244,7 @@ https://sendgrid.com/api/credentials/add.json?api_user=your_sendgrid_username&ap
 
 
 {% codeblock %}
-https://sendgrid.com/api/credentials/add.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=name&password=password&permissions={"email": 0, "web": 1, "api": 0}
+https://sendgrid.com/api/credentials/add.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;username=name&amp;password=password&amp;permissions={"email": 0, "web": 1, "api": 0}
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -219,6 +287,46 @@ https://sendgrid.com/api/credentials/add.xml?api_user=your_sendgrid_username&api
 
 ## Edit
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>api_user</td>
+         <td>Yes</td>
+         <td>alphanumeric</td>
+         <td>The primary account holder's user ID creating the new account</td>
+      </tr>
+      <tr>
+         <td>api_key</td>
+         <td>Yes</td>
+         <td>alphanumeric</td>
+         <td>The primary account holder's password</td>
+      </tr>
+      <tr>
+         <td>username</td>
+         <td>Yes</td>
+         <td>alphanumeric</td>
+         <td>The existing credentials to edit</td>
+      </tr>
+      <tr>
+         <td>password</td>
+         <td>No</td>
+         <td>alphanumeric</td>
+         <td>Optionally update the password</td>
+      </tr>
+      <tr>
+         <td>permissions</td>
+         <td>No</td>
+         <td>JSON array of bits</td>
+         <td>Credentials are specified using a JSON object. There are three key names: **email** for access to SMTP, **api** for programmatic access, and **web** for administration. The values for each are a bit, 0 for off or 1 for on.The following example allows the specified username/password to log into the dashboard, but *not* send email or have access to any of the APIs:`{"email": 0, "web": 1, "api": 0}`If you do not specify any additional parameters (i.e., email, web, api), then no permissions will be changed. This behavior allows you to change passwords without having to lookup the current applied permissions.</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs edit %}
 
@@ -229,7 +337,7 @@ https://sendgrid.com/api/credentials/add.xml?api_user=your_sendgrid_username&api
 
 
 {% codeblock %}
-https://sendgrid.com/api/credentials/edit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=name&password=password&permissions={"email": 0, "web": 1, "api": 0}
+https://sendgrid.com/api/credentials/edit.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;username=name&amp;password=password&amp;permissions={"email": 0, "web": 1, "api": 0}
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -263,7 +371,7 @@ https://sendgrid.com/api/credentials/edit.json?api_user=your_sendgrid_username&a
 
 
 {% codeblock %}
-https://sendgrid.com/api/credentials/edit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=name&password=password&permissions={"email": 0, "web": 1, "api": 0}
+https://sendgrid.com/api/credentials/edit.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;username=name&amp;password=password&amp;permissions={"email": 0, "web": 1, "api": 0}
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -303,6 +411,34 @@ https://sendgrid.com/api/credentials/edit.xml?api_user=your_sendgrid_username&ap
 
 ## Delete
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>api_user</td>
+         <td>Yes</td>
+         <td>alphanumeric</td>
+         <td>The primary account holder's user ID creating the new account</td>
+      </tr>
+      <tr>
+         <td>api_key</td>
+         <td>Yes</td>
+         <td>alphanumeric</td>
+         <td>The primary account holder's password</td>
+      </tr>
+      <tr>
+         <td>username</td>
+         <td>Yes</td>
+         <td>alphanumeric</td>
+         <td>The credential to remove</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs remove %}
 
@@ -313,7 +449,7 @@ https://sendgrid.com/api/credentials/edit.xml?api_user=your_sendgrid_username&ap
 
 
 {% codeblock %}
-https://sendgrid.com/api/credentials/remove.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example_user
+https://sendgrid.com/api/credentials/remove.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;username=example_user
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -347,7 +483,7 @@ https://sendgrid.com/api/credentials/remove.json?api_user=your_sendgrid_username
 
 
 {% codeblock %}
-https://sendgrid.com/api/credentials/remove.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example_user
+https://sendgrid.com/api/credentials/remove.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;username=example_user
 {% endcodeblock %}
 <h3>Response: Success</h3>
 

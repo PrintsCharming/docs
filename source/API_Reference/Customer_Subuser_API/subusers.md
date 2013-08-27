@@ -14,6 +14,106 @@ These are actions that directly affect your subuser. We provide access via XML a
 {% anchor h2 %} Create a Subuser {% endanchor %}
 
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>username</td>
+         <td>Yes</td>
+         <td>No more than 64 characters</td>
+         <td>The subusers new username</td>
+      </tr>
+      <tr>
+         <td>password</td>
+         <td>Yes</td>
+         <td>Must be at least 6 characters</td>
+         <td>New password of subuser</td>
+      </tr>
+      <tr>
+         <td>confirm_password</td>
+         <td>Yes</td>
+         <td>Must match password parameter, must be at least 6 characters</td>
+         <td>Confirm new password</td>
+      </tr>
+      <tr>
+         <td>email</td>
+         <td>Yes</td>
+         <td>Must be in email format, no more than 64 characters</td>
+         <td>Email address of new subuser</td>
+      </tr>
+      <tr>
+         <td>first_name</td>
+         <td>Yes</td>
+         <td>No more than 50 characters</td>
+         <td>First name of new subuser</td>
+      </tr>
+      <tr>
+         <td>last_name</td>
+         <td>Yes</td>
+         <td>No more than 50 characters</td>
+         <td>Last name of new subuser</td>
+      </tr>
+      <tr>
+         <td>address</td>
+         <td>Yes</td>
+         <td>No more than 100 characters</td>
+         <td>Address of new subuser</td>
+      </tr>
+      <tr>
+         <td>city</td>
+         <td>Yes</td>
+         <td>No more than 100 characters</td>
+         <td>City of new subuser</td>
+      </tr>
+      <tr>
+         <td>state</td>
+         <td>Yes</td>
+         <td>No more than 100 characters</td>
+         <td>State of new subuser</td>
+      </tr>
+      <tr>
+         <td>zip</td>
+         <td>Yes</td>
+         <td>No more than 50 characters</td>
+         <td>Zip of new subuser. This field is not validated for correct value. It's up to developer to check for valid zip code.</td>
+      </tr>
+      <tr>
+         <td>country</td>
+         <td>Yes</td>
+         <td>No more than 100 characters</td>
+         <td>Country of new subuser</td>
+      </tr>
+      <tr>
+         <td>phone</td>
+         <td>Yes</td>
+         <td>No more than 50 characters</td>
+         <td>Phone number of new subuser</td>
+      </tr>
+      <tr>
+         <td>website</td>
+         <td>Yes</td>
+         <td>No more than 255 characters</td>
+         <td>Website of new subuser</td>
+      </tr>
+      <tr>
+         <td>company</td>
+         <td>Yes</td>
+         <td>No more than 255 characters</td>
+         <td>Company of new subuser</td>
+      </tr>
+      <tr>
+         <td>mail_domain</td>
+         <td>No</td>
+         <td>A mail domain must already be setup with SendGrid, please contact [support@sendgrid.com](mailto:support@sendgrid.com) to have one setup</td>
+         <td>Mail domain of new subuser</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs create %}
 
@@ -24,7 +124,7 @@ These are actions that directly affect your subuser. We provide access via XML a
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.add.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=example@example.com&country=US&phone=555-5555
+https://sendgrid.com/apiv2/customer.add.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;username=example@example.com&amp;website=example.com&amp;password=samplepassword&amp;confirm_password=samplepassword&amp;first_name=fname&amp;last_name=lname&amp;address=555_anystreet&amp;city=any_city&amp;state=CA&amp;zip=91234&amp;email=example@example.com&amp;country=US&amp;phone=555-5555
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -64,7 +164,7 @@ https://sendgrid.com/apiv2/customer.add.xml?api_user=your_sendgrid_username&api_
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=example@example.com&country=US&phone=555-5555
+https://sendgrid.com/apiv2/customer.add.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;username=example@example.com&amp;website=example.com&amp;password=samplepassword&amp;confirm_password=samplepassword&amp;first_name=fname&amp;last_name=lname&amp;address=555_anystreet&amp;city=any_city&amp;state=CA&amp;zip=91234&amp;email=example@example.com&amp;country=US&amp;phone=555-5555
 {% endcodeblock %}
 <h3>Response: Success</h3>
   
@@ -103,6 +203,22 @@ https://sendgrid.com/apiv2/customer.add.json?api_user=your_sendgrid_username&api
 {% anchor h2 %} Delete a Subuser {% endanchor %}
 
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Must be a valid subuser name.</td>
+         <td>The subuser to delete.</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs delete %}
 
@@ -113,7 +229,7 @@ https://sendgrid.com/apiv2/customer.add.json?api_user=your_sendgrid_username&api
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example@example.com
+https://sendgrid.com/apiv2/customer.delete.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;username=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -153,7 +269,7 @@ https://sendgrid.com/apiv2/customer.delete.xml?api_user=your_sendgrid_username&a
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
+https://sendgrid.com/apiv2/customer.delete.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
   
@@ -192,6 +308,85 @@ https://sendgrid.com/apiv2/customer.delete.json?api_user=your_sendgrid_username&
 {% anchor h2 %} Retrieve Subusers {% endanchor %}
  Obtain a complete list of all subusers.
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>Must be set to **get** in order to retrieve user information</td>
+      </tr>
+      <tr>
+         <td>username</td>
+         <td>No</td>
+         <td>Search filter, subuser that is registered under you</td>
+      </tr>
+      <tr>
+         <td>email</td>
+         <td>No</td>
+         <td>Search filter, email address subuser was registered with</td>
+      </tr>
+      <tr>
+         <td>active</td>
+         <td>No</td>
+         <td>Search filter, whether or not the subuser is currently active</td>
+      </tr>
+      <tr>
+         <td>first_name</td>
+         <td>No</td>
+         <td>Search filter, first name of subuser</td>
+      </tr>
+      <tr>
+         <td>last_name</td>
+         <td>No</td>
+         <td>Search filter, last name of subuser</td>
+      </tr>
+      <tr>
+         <td>address</td>
+         <td>No</td>
+         <td>Search filter, address of subuser</td>
+      </tr>
+      <tr>
+         <td>city</td>
+         <td>No</td>
+         <td>Search filter, city of subuser</td>
+      </tr>
+      <tr>
+         <td>state</td>
+         <td>No</td>
+         <td>Search filter, state of subuser</td>
+      </tr>
+      <tr>
+         <td>country</td>
+         <td>No</td>
+         <td>Search filter, country of subuser</td>
+      </tr>
+      <tr>
+         <td>zip</td>
+         <td>No</td>
+         <td>Search filter, zipcode of subuser</td>
+      </tr>
+      <tr>
+         <td>phone</td>
+         <td>No</td>
+         <td>Search filter, phone number of subuser</td>
+      </tr>
+      <tr>
+         <td>website</td>
+         <td>No</td>
+         <td>Search filter, website of subuser</td>
+      </tr>
+      <tr>
+         <td>company</td>
+         <td>No</td>
+         <td>Search filter, company of subuser</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs get %}
 
@@ -202,7 +397,7 @@ https://sendgrid.com/apiv2/customer.delete.json?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get
+https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=get
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -252,7 +447,7 @@ https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get
+https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=get
 {% endcodeblock %}
 <h3>Response</h3>
   
@@ -301,6 +496,22 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username
 {% anchor h2 %} Enable a Subuser {% endanchor %}
  Enable a subuser so they may start sending out emails again. This call will not enable website access.
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Must be in email format</td>
+         <td>The subuser you are planning to enabling</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs enable %}
 
@@ -311,7 +522,7 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.enable.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
+https://sendgrid.com/apiv2/customer.enable.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -351,7 +562,7 @@ https://sendgrid.com/apiv2/customer.enable.xml?api_user=your_sendgrid_username&a
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.enable.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
+https://sendgrid.com/apiv2/customer.enable.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
   
@@ -387,6 +598,22 @@ https://sendgrid.com/apiv2/customer.enable.json?api_user=your_sendgrid_username&
 {% anchor h2 %} Disable a Subuser {% endanchor %}
  This prevents them from sending out emails with SendGrid.
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Must be in email format</td>
+         <td>The subuser you are planning to disabling</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs disable %}
 
@@ -397,7 +624,7 @@ https://sendgrid.com/apiv2/customer.enable.json?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.disable.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/apiv2/customer.disable.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -437,7 +664,7 @@ https://sendgrid.com/apiv2/customer.disable.xml?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.disable.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/apiv2/customer.disable.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
   {% codeblock %}
@@ -469,6 +696,22 @@ https://sendgrid.com/apiv2/customer.disable.json?api_user=your_sendgrid_username
 {% anchor h2 %} Enable Website Access To A Subuser {% endanchor %}
  Allow a subuser to login to the SendGrid.com website. This call will not enable the subuser to send out emails.
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Must be in email format</td>
+         <td>The subuser you are planning to grant website access</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs enablewebsite %}
 
@@ -479,7 +722,7 @@ https://sendgrid.com/apiv2/customer.disable.json?api_user=your_sendgrid_username
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.website_enable.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
+https://sendgrid.com/apiv2/customer.website_enable.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -519,7 +762,7 @@ https://sendgrid.com/apiv2/customer.website_enable.xml?api_user=your_sendgrid_us
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.website_enable.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
+https://sendgrid.com/apiv2/customer.website_enable.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
   {% codeblock %}
@@ -551,6 +794,22 @@ https://sendgrid.com/apiv2/customer.website_enable.json?api_user=your_sendgrid_u
 {% anchor h2 %} Disable Website Access To A Subuser {% endanchor %}
  Disallow a subuser to login to the SendGrid.com website. This call will not prevent them from sending emails.
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Must be in email format</td>
+         <td>The subuser you are planning to disallow website access</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs disablewebsite %}
 
@@ -561,7 +820,7 @@ https://sendgrid.com/apiv2/customer.website_enable.json?api_user=your_sendgrid_u
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.website_disable.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/apiv2/customer.website_disable.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -601,7 +860,7 @@ https://sendgrid.com/apiv2/customer.website_disable.xml?api_user=your_sendgrid_u
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.website_disable.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/apiv2/customer.website_disable.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
   {% codeblock %}
@@ -633,6 +892,75 @@ https://sendgrid.com/apiv2/customer.website_disable.json?api_user=your_sendgrid_
 {% anchor h2 %} Update Subuser Profile {% endanchor %}
  Allows you to update your subusers profile information
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>Must be set to **set** in order to update profile information</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Subuser that is registered under you</td>
+      </tr>
+      <tr>
+         <td>first_name</td>
+         <td>No</td>
+         <td>First name of subuser</td>
+      </tr>
+      <tr>
+         <td>last_name</td>
+         <td>No</td>
+         <td>Last name of subuser</td>
+      </tr>
+      <tr>
+         <td>address</td>
+         <td>No</td>
+         <td>Address of subuser</td>
+      </tr>
+      <tr>
+         <td>city</td>
+         <td>No</td>
+         <td>City of subuser</td>
+      </tr>
+      <tr>
+         <td>state</td>
+         <td>No</td>
+         <td>State of subuser</td>
+      </tr>
+      <tr>
+         <td>country</td>
+         <td>No</td>
+         <td>Country of subuser</td>
+      </tr>
+      <tr>
+         <td>zip</td>
+         <td>No</td>
+         <td>Zipcode of subuser</td>
+      </tr>
+      <tr>
+         <td>phone</td>
+         <td>No</td>
+         <td>Phone number of subuser</td>
+      </tr>
+      <tr>
+         <td>website</td>
+         <td>No</td>
+         <td>Website of subuser</td>
+      </tr>
+      <tr>
+         <td>company</td>
+         <td>No</td>
+         <td>Company of subuser</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs updateprofile %}
 
@@ -643,7 +971,7 @@ https://sendgrid.com/apiv2/customer.website_disable.json?api_user=your_sendgrid_
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&first_name=newFirstName&last_name=&newLastNam
+https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=set&amp;user=example@example.com&amp;first_name=newFirstName&amp;last_name=&amp;newLastNam
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -683,7 +1011,7 @@ https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&first_name=newFirstName&last_name=&newLastNam
+https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=set&amp;user=example@example.com&amp;first_name=newFirstName&amp;last_name=&amp;newLastNam
 {% endcodeblock %}
 <h3>Response: Success</h3>
   {% codeblock %}
@@ -704,7 +1032,7 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username
     ]
 }
 {% endcodeblock %}
-  </div>
+</div>
 </div>
   <hr/>
   
@@ -713,15 +1041,42 @@ Update Subuser Password
 {% endanchor %}
 
   Passwords are encrypted by default and therefore cannot be retrieved; however, you can reset a subusers password.
-  
+  <table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Subuser must be registered under you</td>
+         <td>The subuser you are planning to reset the password</td>
+      </tr>
+      <tr>
+         <td>password</td>
+         <td>Yes</td>
+         <td>Must be at least 6 characters</td>
+         <td>New password of subuser</td>
+      </tr>
+      <tr>
+         <td>confirm_password</td>
+         <td>Yes</td>
+         <td>Must match password parameter and be at least 6 characters</td>
+         <td>Confirm new password</td>
+      </tr>
+   </tbody>
+</table>
+
   
 {% xmljsontabs updateSubuserPassword %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="updateSubuserPassword-xml">
+<div class="tab-pane" id="updateSubuserPassword-xml">
 <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.password.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=newPasword&confirm_password=newPasswor
+https://sendgrid.com/apiv2/customer.password.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=example@example.com&amp;password=newPasword&amp;confirm_password=newPasswor
 {% endcodeblock %}
 
 
@@ -767,7 +1122,7 @@ https://sendgrid.com/apiv2/customer.password.xml?api_user=your_sendgrid_username
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.password.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=newPasword&confirm_password=newPasswor
+https://sendgrid.com/apiv2/customer.password.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=example@example.com&amp;password=newPasword&amp;confirm_password=newPasswor
 {% endcodeblock %}
 <h3>Response: Success</h3>
   {% codeblock %}
@@ -788,7 +1143,7 @@ https://sendgrid.com/apiv2/customer.password.json?api_user=your_sendgrid_usernam
     ]
 }
 {% endcodeblock %}
-  </div>
+</div>
 </div>
   <hr/>
   
@@ -797,15 +1152,53 @@ Update Subuser Username
 {% endanchor %}
 
   Note that your subuser account username is used to login to our SMTP server <em>and</em> the website and changes take effect immediately.
-  
+  <table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to
+            <strong>setUsername</strong>
+         </td>
+         <td>
+            This will let us know you want to update your subusers username. This is the new username your subuser will be authenticating with our SMTP servers 
+            <em>and</em>
+             to access the website. This update takes effect immediately
+         </td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Subuser must be registered under your account</td>
+         <td>The user we will be updating their username for</td>
+      </tr>
+      <tr>
+         <td>username</td>
+         <td>Yes</td>
+         <td>Must be in email format, not more than 100 characters, cannot be already taken and cannot contain SendGrid.com in the domain name</td>
+         <td>
+            This is the new username we will be authenticating with our SMTP servers 
+            <em>and</em>
+             to access our site. This update takes effect immediately
+         </td>
+      </tr>
+   </tbody>
+</table>
+
   
 {% xmljsontabs updateSubuserUsername %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="updateSubuserUsername-xml">
+<div class="tab-pane" id="updateSubuserUsername-xml">
 <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setUsername&user=example@example.com&username=newexample@example.com
+https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=setUsername&amp;user=example@example.com&amp;username=newexample@example.com
 {% endcodeblock %}
 
 
@@ -851,7 +1244,7 @@ https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setUsername&user=example@example.com&username=newexample@example.com
+https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=setUsername&amp;user=example@example.com&amp;username=newexample@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
   {% codeblock %}
@@ -872,7 +1265,7 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username
     ]
 }
 {% endcodeblock %}
-  </div>
+</div>
 </div>
   <hr/>
   
@@ -881,15 +1274,45 @@ Update Subuser Email Address
 {% endanchor %}
 
   This is the contact email we use for your subusers. Changes take place immediately. It is your responsibility to validate the contact email.
-  
+  <table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>
+            Must be set to 
+            <strong>setEmail</strong>
+         </td>
+         <td>This will let us know you want to update your subusers email address. This update takes effect immediately</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Subuser must be registered under your account</td>
+         <td>The user we will be updating their username for</td>
+      </tr>
+      <tr>
+         <td>email</td>
+         <td>Yes</td>
+         <td>Must be in email format, not more than 100 characters</td>
+         <td>This is the new email address we will use for contacting subuser. This update takes effect immediately</td>
+      </tr>
+   </tbody>
+</table>
+
   
 {% xmljsontabs updateSubuserEmailAddress %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="updateSubuserEmailAddress-xml">
+<div class="tab-pane" id="updateSubuserEmailAddress-xml">
 <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setEmail&user=example@example.com&email=newexample@example.com
+https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=setEmail&amp;user=example@example.com&amp;email=newexample@example.com
 {% endcodeblock %}
 
 
@@ -935,7 +1358,7 @@ https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setEmail&user=example@example.com&email=newexample@example.com
+https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=setEmail&amp;user=example@example.com&amp;email=newexample@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
   {% codeblock %}

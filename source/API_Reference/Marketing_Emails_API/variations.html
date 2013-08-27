@@ -70,9 +70,8 @@ add
   </table>
 
 {% xmljsontabs add %}
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="add-json">
+<div class="tab-content">
+<div class="tab-pane active" id="add-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/variations/add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=variation_name&subject=variation_subject&html=variation_body
@@ -92,8 +91,8 @@ https://sendgrid.com/api/newsletter/variations/add.json?api_user=your_sendgrid_u
   ]
 }
 {% endcodeblock %}
-    </div>
-    <div class="tab-pane" id="add-xml">
+</div>
+<div class="tab-pane" id="add-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/variations/add.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=variation_name&subject=variation_subject&html=variation_body
@@ -114,7 +113,7 @@ https://sendgrid.com/api/newsletter/variations/add.xml?api_user=your_sendgrid_us
 </result>
 
 {% endcodeblock %}
-    </div>
+</div>
   </div>
 
 <hr/>
@@ -177,9 +176,8 @@ Edit an existing Variation.
   </table>
 
 {% xmljsontabs edit %}
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="edit-json">
+<div class="tab-content">
+<div class="tab-pane active" id="edit-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/variations/edit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=existing_variation_name&newvariation=new_variation_name&subject=variation_subject&html=variation_body
@@ -199,8 +197,8 @@ https://sendgrid.com/api/newsletter/variations/edit.json?api_user=your_sendgrid_
   ]
 }
 {% endcodeblock %}
-    </div>
-    <div class="tab-pane" id="edit-xml">
+</div>
+<div class="tab-pane" id="edit-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/variations/edit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=existing_variation_name&newvariation=new_variation_name&subject=variation_subject&html=variation_body
@@ -221,7 +219,7 @@ https://sendgrid.com/api/newsletter/variations/edit.xml?api_user=your_sendgrid_u
 </result>
 
 {% endcodeblock %}
-    </div>
+</div>
   </div>
 
 
@@ -255,9 +253,8 @@ Retrieve the contents of an existing Variation.
   </table>
 
 {% xmljsontabs get %}
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="get-json">
+<div class="tab-content">
+<div class="tab-pane active" id="get-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/variations/get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=existing_variation_name
@@ -272,8 +269,8 @@ https://sendgrid.com/api/newsletter/variations/get.json?api_user=your_sendgrid_u
   ]
 }
 {% endcodeblock %}
-    </div>
-    <div class="tab-pane" id="edit-xml">
+</div>
+<div class="tab-pane" id="edit-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/variations/get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=existing_variation_name
@@ -292,7 +289,7 @@ https://sendgrid.com/api/newsletter/variations/get.xml?api_user=your_sendgrid_us
 </result>
 
 {% endcodeblock %}
-    </div>
+</div>
   </div>
 
 <hr/>
@@ -320,9 +317,8 @@ Cancels a current Variation send that is in progress.
   </table>
 
 {% xmljsontabs cancel %}
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="cancel-json">
+<div class="tab-content">
+<div class="tab-pane active" id="cancel-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/variations/cancel.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft
@@ -342,8 +338,8 @@ https://sendgrid.com/api/newsletter/variations/cancel.json?api_user=your_sendgri
   ]
 }
 {% endcodeblock %}
-    </div>
-    <div class="tab-pane" id="edit-xml">
+</div>
+<div class="tab-pane" id="edit-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/variations/cancel.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft
@@ -366,7 +362,7 @@ https://sendgrid.com/api/newsletter/variations/cancel.xml?api_user=your_sendgrid
 </result>
 
 {% endcodeblock %}
-    </div>
+</div>
   </div>
 
 <hr/>
@@ -401,9 +397,8 @@ Delete the contents of an existing Variation.
 
 
 {% xmljsontabs delete %}
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="delete-json">
+<div class="tab-content">
+<div class="tab-pane active" id="delete-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/variations/delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_delete
@@ -423,8 +418,8 @@ https://sendgrid.com/api/newsletter/variations/delete.json?api_user=your_sendgri
   ]
 }
 {% endcodeblock %}
-    </div>
-    <div class="tab-pane" id="edit-xml">
+</div>
+<div class="tab-pane" id="edit-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/variations/delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_delete
@@ -447,7 +442,7 @@ https://sendgrid.com/api/newsletter/variations/delete.xml?api_user=your_sendgrid
 </result>
 
 {% endcodeblock %}
-    </div>
+</div>
   </div>
 
 <hr/>
@@ -480,9 +475,8 @@ Retrieve a list of all Variations attached to a Marketing Email.
   </table>
 
 {% xmljsontabs list %}
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="list-json">
+<div class="tab-content">
+<div class="tab-pane active" id="list-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/variations/list.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_find
@@ -502,8 +496,8 @@ https://sendgrid.com/api/newsletter/variations/list.json?api_user=your_sendgrid_
   ]
 }
 {% endcodeblock %}
-    </div>
-    <div class="tab-pane" id="list-xml">
+</div>
+<div class="tab-pane" id="list-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/variations/list.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_find
@@ -526,7 +520,7 @@ https://sendgrid.com/api/newsletter/variations/list.xml?api_user=your_sendgrid_u
 </result>
 
 {% endcodeblock %}
-    </div>
+</div>
   </div>
 
 
@@ -560,9 +554,8 @@ Select the Variation you would like to send.
   </table>
 
 {% xmljsontabs delete %}
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="delete-json">
+<div class="tab-content">
+<div class="tab-pane active" id="delete-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/variations/pickwinner.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_that_wins
@@ -582,8 +575,8 @@ https://sendgrid.com/api/newsletter/variations/pickwinner.json?api_user=your_sen
   ]
 }
 {% endcodeblock %}
-    </div>
-    <div class="tab-pane" id="edit-xml">
+</div>
+<div class="tab-pane" id="edit-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/variations/pickwinner.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_that_wins
@@ -606,7 +599,7 @@ https://sendgrid.com/api/newsletter/variations/pickwinner.xml?api_user=your_send
 </result>
 
 {% endcodeblock %}
-    </div>
+</div>
   </div>
 
 
@@ -664,9 +657,8 @@ Schedule a send time and percentage for your variations.
   </table>
 
   {% xmljsontabs schedule %}
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="schedule-json">
+<div class="tab-content">
+<div class="tab-pane active" id="schedule-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/variations/schedule.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&percent=50
@@ -686,8 +678,8 @@ https://sendgrid.com/api/newsletter/variations/schedule.json?api_user=your_sendg
   ]
 }
 {% endcodeblock %}
-    </div>
-    <div class="tab-pane" id="schedule-xml">
+</div>
+<div class="tab-pane" id="schedule-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/newsletter/variations/schedule.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&percent=50
@@ -710,6 +702,6 @@ https://sendgrid.com/api/newsletter/variations/schedule.xml?api_user=your_sendgr
 </result>
 
 {% endcodeblock %}
-    </div>
+</div>
   </div>
 

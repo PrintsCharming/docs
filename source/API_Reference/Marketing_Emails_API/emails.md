@@ -49,7 +49,7 @@ Add one or more emails to a Recipient List.
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/lists/email/add.json?list=Test&data=%7B%22email%22%3A%22example%40gmail.com%22%2C%22name%22%3A%22example%22%7D&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/newsletter/lists/email/add.json?list=Test&amp;data=%7B%22email%22%3A%22example%40gmail.com%22%2C%22name%22%3A%22example%22%7D&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -86,7 +86,7 @@ https://sendgrid.com/api/newsletter/lists/email/add.json?list=Test&data=%7B%22em
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/lists/email/add.xml?list=Test&data=%7B%22email%22%3A%22example%40gmail.com%22%2C%22name%22%3A%22example%22%7D&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/newsletter/lists/email/add.xml?list=Test&amp;data=%7B%22email%22%3A%22example%40gmail.com%22%2C%22name%22%3A%22example%22%7D&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -129,11 +129,11 @@ Add an email recipient to a list:
 
 
 {% codeblock %}
-#curl -d 'api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=my_list&data={"email":"address@domain.com","name":"contactName"}' https://sendgrid.com/api/newsletter/lists/email/add.json
+#curl -d 'api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;list=my_list&amp;data={"email":"address@domain.com","name":"contactName"}' https://sendgrid.com/api/newsletter/lists/email/add.json
 {% endcodeblock %}
 
 <p>Add an email recipient with multiple data fields:</p>
-{% codeblock %}#curl -d 'api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=my_list&data={"email":"grouch@trashcan.com","name":"Oscar","city":"New York","street":"123 Sesame St"}' https://sendgrid.com/api/newsletter/lists/email/add.json{% endcodeblock %}
+{% codeblock %}#curl -d 'api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;list=my_list&amp;data={"email":"grouch@trashcan.com","name":"Oscar","city":"New York","street":"123 Sesame St"}' https://sendgrid.com/api/newsletter/lists/email/add.json{% endcodeblock %}
 
 
 
@@ -142,7 +142,7 @@ Add multiple email recipients to a list:
 
 
 {% codeblock %}
-#curl -d 'api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=my_list&data[]={"email":"address1@domain.com","name":"contactName1"}&data[]={"email":"address2@domain.com","name":"contactName2"}' https://sendgrid.com/api/newsletter/lists/email/add.json
+#curl -d 'api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;list=my_list&amp;data[]={"email":"address1@domain.com","name":"contactName1"}&amp;data[]={"email":"address2@domain.com","name":"contactName2"}' https://sendgrid.com/api/newsletter/lists/email/add.json
 {% endcodeblock %}
 
 <hr/>
@@ -156,16 +156,35 @@ get
 
 <p>Get the email addresses and associated fields for a Recipient List.</p>
 
+<table class="table table-bordered table-striped">
+   <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+   </tr>
+   <tr>
+      <td>list</td>
+      <td>Yes</td>
+      <td>Must be an existing Recipient List.</td>
+      <td>The list you are searching.</td>
+   </tr>
+   <tr>
+      <td>email</td>
+      <td>No</td>
+      <td>Must be an email address or list of addresses.</td>
+      <td>Optional email addresses to search for in the Recipient List.</td>
+   </tr>
+</table>
 
 
 
 {% xmljsontabs get %}
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="get-json">
+<div class="tab-content">
+<div class="tab-pane active" id="get-json">
 <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/newsletter/lists/email/get.json?list=Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/newsletter/lists/email/get.json?list=Test&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 
 
@@ -211,7 +230,7 @@ https://sendgrid.com/api/newsletter/lists/email/get.json?list=Test&api_user=your
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/lists/email/get.xml?list=Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/newsletter/lists/email/get.xml?list=Test&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -295,7 +314,7 @@ Remove one or more emails from a Recipient List.
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/lists/email/delete.json?list=Test&email=example%40gmail.com&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/newsletter/lists/email/delete.json?list=Test&amp;email=example%40gmail.com&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -332,7 +351,7 @@ https://sendgrid.com/api/newsletter/lists/email/delete.json?list=Test&email=exam
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/lists/email/delete.xml?list=Test&email=example%40gmail.com&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/newsletter/lists/email/delete.xml?list=Test&amp;email=example%40gmail.com&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 

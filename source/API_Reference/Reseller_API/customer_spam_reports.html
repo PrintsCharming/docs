@@ -51,9 +51,8 @@ Retrieve Spam Reports
   </tr>
 </table>
 {% xmljsontabs get %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="get-xml">
+<div class="tab-pane" id="get-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=customer@example.com&task=get&date=
@@ -73,8 +72,8 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
 </spamreports>
 
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="get-json">
+</div>
+<div class="tab-pane active" id="get-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=customer@example.com&task=get&date=1
@@ -91,7 +90,7 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
   }
 ]
 {% endcodeblock %}
-  </div>
+</div>
 </div>
 <hr/>
 
@@ -140,9 +139,8 @@ Delete Spam Reports
   </tr>
 </table>
 {% xmljsontabs delete %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="delete-xml">
+<div class="tab-pane" id="delete-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=customer@example.com&task=delete&email=spamreport@domain.com
@@ -163,8 +161,8 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
 </result>
 
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="delete-json">
+</div>
+<div class="tab-pane active" id="delete-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=customer@example.com&task=delete&email=spamreport@domain.com

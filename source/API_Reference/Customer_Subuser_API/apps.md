@@ -45,7 +45,7 @@ navigation:
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&user=example@example.com
+https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=getavailable&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -68,7 +68,7 @@ https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&ap
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&user=example@example.com
+https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=getavailable&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -134,7 +134,7 @@ https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=activate&user=example@example.com
+https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter&amp;task=activate&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -154,7 +154,7 @@ https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&ap
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=activate&user=example@example.com
+https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter&amp;task=activate&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -215,7 +215,7 @@ https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=deactivate&user=example@example.com
+https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter&amp;task=deactivate&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -235,7 +235,7 @@ https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&ap
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=deactivate&user=example@example.com
+https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter&amp;task=deactivate&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -271,7 +271,7 @@ These API calls require that settings are passed using POST.
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=setup&user=example@example.com
+https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter&amp;task=setup&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -304,7 +304,7 @@ This is returned if that filter has no settings or is not enabled.
 <div class="tab-pane" id="customize-xml">
 <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=setup&user=example@example.com
+https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter&amp;task=setup&amp;user=example@example.com
 {% endcodeblock %}
 
 
@@ -368,12 +368,11 @@ Get Current Settings
 
   
 {% xmljsontabs settings %}
-
 <div class="tab-content">
 <div class="tab-pane active" id="settings-json">
 <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=example@example.com
+https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter&amp;task=getsettings&amp;user=example@example.com
 {% endcodeblock %}
 
 
@@ -421,7 +420,7 @@ https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&ap
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=example@example.com
+https://sendgrid.com/apiv2/customer.apps.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter&amp;task=getsettings&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 

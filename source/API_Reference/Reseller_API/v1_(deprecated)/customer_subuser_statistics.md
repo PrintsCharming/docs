@@ -9,13 +9,47 @@ navigation:
 {% anchor h2 %} Retrieve Customer Subuser Statistics {% endanchor %}
  Note that you can use *either* the days parameter *or* the start\_date and end\_date parameter.
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer subuser must be registered under your account</td>
+         <td>The customer subuser we are retrieving statistics from</td>
+      </tr>
+      <tr>
+         <td>days</td>
+         <td>No</td>
+         <td>Must be an integer greater than 0</td>
+         <td>Number of days in the past to include statistics (includes today)</td>
+      </tr>
+      <tr>
+         <td>start_date</td>
+         <td>No</td>
+         <td>Date must be in YYYY-mm-dd format and be before the end_date parameter</td>
+         <td>The start date to look up statistics</td>
+      </tr>
+      <tr>
+         <td>end_date</td>
+         <td>No</td>
+         <td>Date must be in YYYY-mm-dd format and be after the start_date parameter</td>
+         <td>The end date to look up statistics</td>
+      </tr>
+   </tbody>
+</table>
 
 ### XML Call
 
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -59,7 +93,7 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_us
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -78,13 +112,35 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 {% anchor h2 %} Retrieve Aggregates {% endanchor %}
  Retrieve all-time totals for your customer subuser
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer subuser must be registered under your account</td>
+         <td>The subuser we are retrieving statistics from</td>
+      </tr>
+      <tr>
+         <td>aggregate</td>
+         <td>Yes</td>
+         <td>Must be set to 1</td>
+         <td>This is used to let us know that you are interested in all time totals</td>
+      </tr>
+   </tbody>
+</table>
 
 ### XML Call
 
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&;user=example@example.com&aggregate=
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;;user=example@example.com&amp;aggregate=
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -109,7 +165,7 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_us
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&aggregate=
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=example@example.com&amp;aggregate=
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -132,13 +188,35 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 {% anchor h2 %} Category List {% endanchor %}
  Retrieve a list of all the categories used in your customer subusers account.
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>list</td>
+         <td>Yes</td>
+         <td>The value must be set to *true*</td>
+         <td>This will allow you to retrieve a list of all categories used in your customer subusers account.</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Subuser must be registered under your account</td>
+         <td>The subuser we are retrieving category statistics from</td>
+      </tr>
+   </tbody>
+</table>
 
 ### XML Call
 
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&list=tru
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=example@example.com&amp;list=tru
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -161,7 +239,7 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_us
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&list=tru
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=example@example.com&amp;list=tru
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -180,17 +258,57 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 {% anchor h2 %} Category Statistics {% endanchor %}
  Retrieve statistics broken down by category. If the category does not exist, there will be an empty result set. Note that you can use *either* the days parameter *or* the start\_date and end\_date parameter.
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>category</td>
+         <td>Yes</td>
+         <td>Must be an existing category that has statistics. You can pass in an array of categories</td>
+         <td>The category you will specify to retrieve detailed stats</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer subuser must be registered under you</td>
+         <td>The customer subuser we are retrieving statistics from</td>
+      </tr>
+      <tr>
+         <td>days</td>
+         <td>No</td>
+         <td>Must be an integer greater than 0</td>
+         <td>Number of days in the past to include statistics (Includes today)</td>
+      </tr>
+      <tr>
+         <td>start_date</td>
+         <td>No</td>
+         <td>Date must be in YYYY-mm-dd format and be before the end_date parameter</td>
+         <td>The start date to look up statistics</td>
+      </tr>
+      <tr>
+         <td>end_date</td>
+         <td>No</td>
+         <td>Date must be in YYYY-mm-dd format and be after the start_date parameter</td>
+         <td>The end date to look up statistics</td>
+      </tr>
+   </tbody>
+</table>
 
 ### XML Call
 
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=example@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category=category
 {% endcodeblock %}
 <h4>Command - Using an array of categories</h4>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=category
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=example@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category[]=categoryA&amp;category[]=category
 {% endcodeblock %}
 
 
@@ -234,11 +352,11 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_us
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=example@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category=category
 {% endcodeblock %}
 <h4>Command - Using an array of categories</h4>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=category
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=example@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category[]=categoryA&amp;category[]=category
 {% endcodeblock %}
 
 

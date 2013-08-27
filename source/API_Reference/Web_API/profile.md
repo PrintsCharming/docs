@@ -19,7 +19,7 @@ View your SendGrid Profile
 
 
 {% codeblock %}
-https://sendgrid.com/api/profile.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/profile.get.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -52,7 +52,7 @@ https://sendgrid.com/api/profile.get.json?api_user=your_sendgrid_username&api_ke
 
 
 {% codeblock %}
-https://sendgrid.com/api/profile.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/profile.get.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -90,6 +90,60 @@ https://sendgrid.com/api/profile.get.xml?api_user=your_sendgrid_username&api_key
 {% anchor h2 %} set {% endanchor %}
 
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>first_name</td>
+         <td>No</td>
+         <td>Your first name</td>
+      </tr>
+      <tr>
+         <td>last_name</td>
+         <td>No</td>
+         <td>Your last name</td>
+      </tr>
+      <tr>
+         <td>address</td>
+         <td>No</td>
+         <td>Company address</td>
+      </tr>
+      <tr>
+         <td>city</td>
+         <td>No</td>
+         <td>City where your company is located</td>
+      </tr>
+      <tr>
+         <td>state</td>
+         <td>No</td>
+         <td>State where your company is located</td>
+      </tr>
+      <tr>
+         <td>country</td>
+         <td>No</td>
+         <td>Country where your company is located</td>
+      </tr>
+      <tr>
+         <td>zip</td>
+         <td>No</td>
+         <td>Zipcode where your company is located</td>
+      </tr>
+      <tr>
+         <td>phone</td>
+         <td>No</td>
+         <td>Valid phone number where we can reach you</td>
+      </tr>
+      <tr>
+         <td>website</td>
+         <td>No</td>
+         <td>Your company's website</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs set %}
 
@@ -100,7 +154,7 @@ https://sendgrid.com/api/profile.get.xml?api_user=your_sendgrid_username&api_key
 
 
 {% codeblock %}
-https://sendgrid.com/api/profile.set.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&first_name=newFirstName&last_name=&newLastName
+https://sendgrid.com/api/profile.set.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;first_name=newFirstName&amp;last_name=&amp;newLastName
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -137,7 +191,7 @@ https://sendgrid.com/api/profile.set.json?api_user=your_sendgrid_username&api_ke
 
 
 {% codeblock %}
-https://sendgrid.com/api/profile.set.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&first_name=newFirstName&last_name=&newLastName
+https://sendgrid.com/api/profile.set.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;first_name=newFirstName&amp;last_name=&amp;newLastName
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -185,6 +239,28 @@ https://sendgrid.com/api/profile.set.xml?api_user=your_sendgrid_username&api_key
 {% anchor h2 %} setPassword {% endanchor %}
 
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>password</td>
+         <td>Yes</td>
+         <td>Must be at least 6 characters</td>
+         <td>Your new password</td>
+      </tr>
+      <tr>
+         <td>confirm_password</td>
+         <td>Yes</td>
+         <td>Must match password parameter and be at least 6 characters long</td>
+         <td>Confrim new password</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs reset %}
 
@@ -195,7 +271,7 @@ https://sendgrid.com/api/profile.set.xml?api_user=your_sendgrid_username&api_key
 
 
 {% codeblock %}
-https://sendgrid.com/api/password.set.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&password=newPasword&confirm_password=newPassword
+https://sendgrid.com/api/password.set.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;password=newPasword&amp;confirm_password=newPassword
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -232,7 +308,7 @@ https://sendgrid.com/api/password.set.json?api_user=your_sendgrid_username&api_k
 
 
 {% codeblock %}
-https://sendgrid.com/api/password.set.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&password=newPasword&confirm_password=newPassword
+https://sendgrid.com/api/password.set.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;password=newPasword&amp;confirm_password=newPassword
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -262,8 +338,7 @@ https://sendgrid.com/api/password.set.xml?api_user=your_sendgrid_username&api_ke
   </errors>
 @nodes
 {% endcodeblock %}
-
-  </div>
+</div>
 </div>
 
 <hr/>
@@ -281,16 +356,31 @@ Please note, your account username is used to login to our SMTP server and the w
 {% endwarning %}
 
 
- 
+ <table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>username</td>
+         <td>Yes</td>
+         <td>Must not exceed 100 characters. The username cannot be already taken or       contain the SendGrid.com domain</td>
+         <td>This is the new username we will be authenticating with our SMTP servers and       our website. Changes take effect immediately</td>
+      </tr>
+   </tbody>
+</table>
+
 
 
 {% xmljsontabs setusername %}
-
 <div class="tab-content">
-  <div class="tab-pane active" id="setusername-json">
+<div class="tab-pane active" id="setusername-json">
 <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/profile.setUsername.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=yournewusername@domain.com
+https://sendgrid.com/api/profile.setUsername.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;username=yournewusername@domain.com
 {% endcodeblock %}
 
 
@@ -333,7 +423,7 @@ https://sendgrid.com/api/profile.setUsername.json?api_user=your_sendgrid_usernam
 
 
 {% codeblock %}
-https://sendgrid.com/api/profile.setUsername.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=yournewusername@domain.com
+https://sendgrid.com/api/profile.setUsername.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;username=yournewusername@domain.com
 {% endcodeblock %}
 <h3>Response: Success</H3>
 
@@ -363,8 +453,7 @@ https://sendgrid.com/api/profile.setUsername.xml?api_user=your_sendgrid_username
   </errors>
 @nodes
 {% endcodeblock %}
-
-  </div>
+</div>
 </div>
 
 <hr/>
@@ -382,16 +471,31 @@ Please note, we send out a confirmation email to the new email account in order 
 {% endinfo %}
 
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>email</td>
+         <td>Yes</td>
+         <td>Must be in email format and not more than 100 characters</td>
+         <td>This is the new email address we will be contacting you with. Changes take      effect immediately</td>
+      </tr>
+   </tbody>
+</table>
 
 
 
 {% xmljsontabs setemail %}
-
 <div class="tab-content">
-  <div class="tab-pane active" id="setemail-json">
+<div class="tab-pane active" id="setemail-json">
 <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/profile.setEmail.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=yournewemail@domain.com
+https://sendgrid.com/api/profile.setEmail.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=yournewemail@domain.com
 {% endcodeblock %}
 
 
@@ -434,7 +538,7 @@ https://sendgrid.com/api/profile.setEmail.json?api_user=your_sendgrid_username&a
 
 
 {% codeblock %}
-https://sendgrid.com/api/profile.setEmail.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=yournewemail@domain.com
+https://sendgrid.com/api/profile.setEmail.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=yournewemail@domain.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 

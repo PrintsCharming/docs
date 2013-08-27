@@ -43,7 +43,7 @@ Create a new Category.
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/category/create.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY
+https://sendgrid.com/api/newsletter/category/create.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;category=CATEGORY
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -80,7 +80,7 @@ https://sendgrid.com/api/newsletter/category/create.json?api_user=your_sendgrid_
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/category/create.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY
+https://sendgrid.com/api/newsletter/category/create.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;category=CATEGORY
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -159,7 +159,7 @@ Assign a Category to an existing Marketing Email.
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/category/add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY&name=NEWSLETTER
+https://sendgrid.com/api/newsletter/category/add.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;category=CATEGORY&amp;name=NEWSLETTER
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -196,7 +196,7 @@ https://sendgrid.com/api/newsletter/category/add.json?api_user=your_sendgrid_use
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/category/add.xml?&api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY&name=NEWSLETTER
+https://sendgrid.com/api/newsletter/category/add.xml?&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;category=CATEGORY&amp;name=NEWSLETTER
 
 {% endcodeblock %}
 <h3>Response: Success</h3>
@@ -276,7 +276,7 @@ Remove specific categories, or all categories from a Marketing Email.\\
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/category/remove.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY&name=NEWSLETTER
+https://sendgrid.com/api/newsletter/category/remove.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;category=CATEGORY&amp;name=NEWSLETTER
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -313,7 +313,7 @@ https://sendgrid.com/api/newsletter/category/remove.json?api_user=your_sendgrid_
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/category/remove.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY&name=NEWSLETTER
+https://sendgrid.com/api/newsletter/category/remove.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;category=CATEGORY&amp;name=NEWSLETTER
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -386,7 +386,7 @@ List all categories.
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/category/list.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/newsletter/category/list.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -428,7 +428,7 @@ https://sendgrid.com/api/newsletter/category/list.json?api_user=your_sendgrid_us
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/category/list.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/newsletter/category/list.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 

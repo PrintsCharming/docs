@@ -19,7 +19,7 @@ There are no extra parameters required for this call
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.packages.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/apiv2/reseller.packages.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -85,7 +85,7 @@ https://sendgrid.com/apiv2/reseller.packages.xml?api_user=your_sendgrid_username
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.packages.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/apiv2/reseller.packages.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 

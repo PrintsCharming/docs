@@ -115,9 +115,8 @@ Create a Subuser
     </tbody></table>
   
 {% xmljsontabs create %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="create-xml">
+<div class="tab-pane" id="create-xml">
 <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.add.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=example@example.com&country=US&phone=555-5555
@@ -138,8 +137,8 @@ https://sendgrid.com/apiv2/customer.add.xml?api_user=your_sendgrid_username&api_
 </result>
 
 {% endcodeblock %}
-    </div>
-  <div class="tab-pane active" id="create-json">
+</div>
+<div class="tab-pane active" id="create-json">
 <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=example@example.com&country=US&phone=555-5555
@@ -159,7 +158,7 @@ https://sendgrid.com/apiv2/customer.add.json?api_user=your_sendgrid_username&api
   ]
 }
 {% endcodeblock %}
-  </div>
+</div>
 </div>
   <hr/>
 {% anchor h2 %}
@@ -180,9 +179,8 @@ Delete a Subuser
       </tr>
   </table>
 {% xmljsontabs delete %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="delete-xml">
+<div class="tab-pane" id="delete-xml">
 <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example@example.com
@@ -203,8 +201,8 @@ https://sendgrid.com/apiv2/customer.delete.xml?api_user=your_sendgrid_username&a
 </result>
 
 {% endcodeblock %}
-    </div>
-  <div class="tab-pane active" id="delete-json">
+</div>
+<div class="tab-pane active" id="delete-json">
 <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
@@ -224,7 +222,7 @@ https://sendgrid.com/apiv2/customer.delete.json?api_user=your_sendgrid_username&
   ]
 }
 {% endcodeblock %}
-  </div>
+</div>
 </div>
 
 <hr/>
@@ -312,9 +310,8 @@ Retrieve Subusers
     </tbody></table>
   
 {% xmljsontabs get %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="get-xml">
+<div class="tab-pane" id="get-xml">
 <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get
@@ -354,8 +351,8 @@ https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&
 </users>
 
 {% endcodeblock %}
-    </div>
-  <div class="tab-pane active" id="get-json">
+</div>
+<div class="tab-pane active" id="get-json">
 <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get
@@ -392,7 +389,7 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username
   }
 ]
 {% endcodeblock %}
-  </div>
+</div>
 </div>
   <hr/>
   {% anchor h2 %}
@@ -416,9 +413,8 @@ Enable a Subuser
     </tbody></table>
   
 {% xmljsontabs enable %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="enable-xml">
+<div class="tab-pane" id="enable-xml">
 <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.enable.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
@@ -439,8 +435,8 @@ https://sendgrid.com/apiv2/customer.enable.xml?api_user=your_sendgrid_username&a
 </result>
 
 {% endcodeblock %}
-    </div>
-  <div class="tab-pane active" id="enable-json">
+</div>
+<div class="tab-pane active" id="enable-json">
 <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.enable.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
@@ -457,7 +453,7 @@ https://sendgrid.com/apiv2/customer.enable.json?api_user=your_sendgrid_username&
   "message": "User not found"
 }
 {% endcodeblock %}
-  </div>
+</div>
 </div>
   <hr/>
   {% anchor h2 %}
@@ -480,9 +476,8 @@ Disable a Subuser
     </tbody></table>
   
 {% xmljsontabs disable %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="disable-xml">
+<div class="tab-pane" id="disable-xml">
 <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.disable.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password
@@ -503,8 +498,8 @@ https://sendgrid.com/apiv2/customer.disable.xml?api_user=your_sendgrid_username&
 </result>
 
 {% endcodeblock %}
-    </div>
-  <div class="tab-pane active" id="disable-json">
+</div>
+<div class="tab-pane active" id="disable-json">
 <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.disable.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
@@ -519,7 +514,7 @@ https://sendgrid.com/apiv2/customer.disable.json?api_user=your_sendgrid_username
   "message": "User not found"
 }
 {% endcodeblock %}
-  </div>
+</div>
 </div>
   <hr/>
   {% anchor h2 %}
@@ -543,9 +538,8 @@ Enable Website Access To A Subuser
     </tbody></table>
   
 {% xmljsontabs enablewebsite %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="enablewebsite-xml">
+<div class="tab-pane" id="enablewebsite-xml">
 <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.website_enable.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
@@ -567,7 +561,7 @@ https://sendgrid.com/apiv2/customer.website_enable.xml?api_user=your_sendgrid_us
 
 {% endcodeblock %}
 </div>
-  <div class="tab-pane active" id="enablewebsite-json">
+<div class="tab-pane active" id="enablewebsite-json">
 <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.website_enable.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
@@ -582,7 +576,7 @@ https://sendgrid.com/apiv2/customer.website_enable.json?api_user=your_sendgrid_u
   "message": "User not found"
 }
 {% endcodeblock %}
-  </div>
+</div>
 </div>
   <hr/>
   {% anchor h2 %}
@@ -605,9 +599,8 @@ Disable Website Access To A Subuser
     </tbody></table>
   
 {% xmljsontabs disablewebsite %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="disablewebsite-xml">
+<div class="tab-pane" id="disablewebsite-xml">
 <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.website_disable.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password
@@ -629,7 +622,7 @@ https://sendgrid.com/apiv2/customer.website_disable.xml?api_user=your_sendgrid_u
 
 {% endcodeblock %}
 </div>
-  <div class="tab-pane active" id="disablewebsite-json">
+<div class="tab-pane active" id="disablewebsite-json">
 <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.website_disable.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
@@ -644,7 +637,7 @@ https://sendgrid.com/apiv2/customer.website_disable.json?api_user=your_sendgrid_
   "message": "User not found"
 }
 {% endcodeblock %}
-  </div>
+</div>
 </div>
   <hr/>
   {% anchor h2 %}
@@ -720,9 +713,8 @@ Update Subuser Profile
     </tbody></table>
   
 {% xmljsontabs updateprofile %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="updateprofile-xml">
+<div class="tab-pane" id="updateprofile-xml">
 <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&first_name=newFirstName&last_name=&newLastNam
@@ -743,8 +735,8 @@ https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&
 </result>
 
 {% endcodeblock %}
-    </div>
-  <div class="tab-pane active" id="updateprofile-json">
+</div>
+<div class="tab-pane active" id="updateprofile-json">
 <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&first_name=newFirstName&last_name=&newLastNam
@@ -762,7 +754,7 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username
     ]
 }
 {% endcodeblock %}
-  </div>
+</div>
 </div>
   <hr/>
   {% anchor h2 %}
@@ -797,9 +789,8 @@ Update Subuser Password
     </tbody></table>
   
 {% xmljsontabs updateSubuserPassword %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="updateSubuserPassword-xml">
+<div class="tab-pane" id="updateSubuserPassword-xml">
 <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.password.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=newPasword&confirm_password=newPasswor
@@ -820,8 +811,8 @@ https://sendgrid.com/apiv2/customer.password.xml?api_user=your_sendgrid_username
 </result>
 
 {% endcodeblock %}
-    </div>
-  <div class="tab-pane active" id="updateSubuserPassword-json">
+</div>
+<div class="tab-pane active" id="updateSubuserPassword-json">
 <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.password.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=newPasword&confirm_password=newPasswor
@@ -839,7 +830,7 @@ https://sendgrid.com/apiv2/customer.password.json?api_user=your_sendgrid_usernam
     ]
 }
 {% endcodeblock %}
-  </div>
+</div>
 </div>
   <hr/>
   {% anchor h2 %}
@@ -875,9 +866,8 @@ Update Subuser Username
     </tbody></table>
   
 {% xmljsontabs updateSubuserUsername %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="updateSubuserUsername-xml">
+<div class="tab-pane" id="updateSubuserUsername-xml">
 <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setUsername&user=example@example.com&username=newexample@example.com
@@ -898,8 +888,8 @@ https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&
 </result>
 
 {% endcodeblock %}
-    </div>
-  <div class="tab-pane active" id="updateSubuserUsername-json">
+</div>
+<div class="tab-pane active" id="updateSubuserUsername-json">
 <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setUsername&user=example@example.com&username=newexample@example.com
@@ -917,7 +907,7 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username
     ]
 }
 {% endcodeblock %}
-  </div>
+</div>
 </div>
   <hr/>
   {% anchor h2 %}
@@ -953,9 +943,8 @@ Update Subuser Email Address
     </tbody></table>
   
 {% xmljsontabs updateSubuserEmailAddress %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="updateSubuserEmailAddress-xml">
+<div class="tab-pane" id="updateSubuserEmailAddress-xml">
 <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setEmail&user=example@example.com&email=newexample@example.com
@@ -976,8 +965,8 @@ https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&
 </result>
 
 {% endcodeblock %}
-    </div>
-  <div class="tab-pane active" id="updateSubuserEmailAddress-json">
+</div>
+<div class="tab-pane active" id="updateSubuserEmailAddress-json">
 <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setEmail&user=example@example.com&email=newexample@example.com

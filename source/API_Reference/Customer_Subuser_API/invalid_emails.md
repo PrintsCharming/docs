@@ -9,6 +9,34 @@ navigation:
 {% anchor h2 %} Retrieve Invalid Emails {% endanchor %}
 
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Subuser must be registered under your account</td>
+         <td>The subuser we are retrieving invalid emails from</td>
+      </tr>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>Must be set to *get*</td>
+         <td>This will allow you to retrieve the invalid emails for the specified subuser</td>
+      </tr>
+      <tr>
+         <td>date</td>
+         <td>No</td>
+         <td>Must be set to 1</td>
+         <td>Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs get %}
 
@@ -19,7 +47,7 @@ navigation:
 
 
 {% codeblock %}
-	https://sendgrid.com/apiv2/customer.invalidemails.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=1
+	https://sendgrid.com/apiv2/customer.invalidemails.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=example@example.com&amp;task=get&amp;date=1
 	{% endcodeblock %}
 <h3>Response</h3>
 	
@@ -53,7 +81,7 @@ navigation:
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.invalidemails.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=1
+https://sendgrid.com/apiv2/customer.invalidemails.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=example@example.com&amp;task=get&amp;date=1
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -92,6 +120,34 @@ https://sendgrid.com/apiv2/customer.invalidemails.xml?api_user=your_sendgrid_use
 {% anchor h2 %} Delete Invalid Emails {% endanchor %}
  Since SendGrid does not deliver to invalid emails, users can remove invalid emails from their list at any time if re-delivery to a spam reported address is desired.
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Subuser must be registered under your account</td>
+         <td>The subuser we are retrieving invalid emails from</td>
+      </tr>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>Must be set to *delete*</td>
+         <td>This will allow you to delete a invalid email for the specified subuser</td>
+      </tr>
+      <tr>
+         <td>email</td>
+         <td>No</td>
+         <td>Must be a invalid email</td>
+         <td>You must specify the invalid emails to remove</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs delete %}
 
@@ -102,7 +158,7 @@ https://sendgrid.com/apiv2/customer.invalidemails.xml?api_user=your_sendgrid_use
 
 
 {% codeblock %}
-	https://sendgrid.com/apiv2/customer.invalidemails.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=invalidemail@example.com
+	https://sendgrid.com/apiv2/customer.invalidemails.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=example@example.com&amp;task=delete&amp;email=invalidemail@example.com
 	{% endcodeblock %}
 <h3>Response: Success</h3>
 	
@@ -136,7 +192,7 @@ https://sendgrid.com/apiv2/customer.invalidemails.xml?api_user=your_sendgrid_use
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.invalidemails.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=invalidemail@example.com
+https://sendgrid.com/apiv2/customer.invalidemails.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=example@example.com&amp;task=delete&amp;email=invalidemail@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 

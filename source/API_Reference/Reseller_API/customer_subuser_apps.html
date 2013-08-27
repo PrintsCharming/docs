@@ -37,9 +37,8 @@ List
   </tr>
 </table>
 {% xmljsontabs list %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="list-xml">
+<div class="tab-pane" id="list-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=example@example.com
@@ -58,8 +57,8 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
 </filters>
 
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="list-json">
+</div>
+<div class="tab-pane active" id="list-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=example@example.com
@@ -73,7 +72,7 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_us
   "activated": false
 }
 {% endcodeblock %}
-  </div>
+</div>
 </div>
 <hr/>
 
@@ -104,9 +103,8 @@ Activate App
   </tr>
 </table>
 {% xmljsontabs activate %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="activate-xml">
+<div class="tab-pane" id="activate-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=activate&user=example@example.com
@@ -119,8 +117,8 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
 </result>
 
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="activate-json">
+</div>
+<div class="tab-pane active" id="activate-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=activate&user=example@example.com
@@ -131,7 +129,7 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_us
   "message": "success"
 }
 {% endcodeblock %}
-  </div>
+</div>
 </div>
 <hr/>
 
@@ -162,9 +160,8 @@ Deactivate App
   </tr>
 </table>
 {% xmljsontabs deactivate %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="deactivate-xml">
+<div class="tab-pane" id="deactivate-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=deactivate&user=example@example.com
@@ -177,8 +174,8 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
 </result>
 
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="deactivate-json">
+</div>
+<div class="tab-pane active" id="deactivate-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=deactivate&user=example@example.com
@@ -189,7 +186,7 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_us
   "message": "success"
 }
 {% endcodeblock %}
-  </div>
+</div>
 </div>
 <hr/>
 
@@ -199,9 +196,8 @@ Customize App
 <p>These API calls require that settings are passed using POST.</p>
 
 {% xmljsontabs customize %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="customize-xml">
+<div class="tab-pane" id="customize-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=setup&user=example@example.com
@@ -229,8 +225,8 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
 {% codeblock %}
 <filter></filter>
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="customize-json">
+</div>
+<div class="tab-pane active" id="customize-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=setup&user=example@example.com
@@ -245,7 +241,7 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_us
 {% codeblock %}
 "settings":null}
 {% endcodeblock %}
-  </div>
+</div>
 </div>
 <hr/>
 
@@ -254,9 +250,8 @@ Get Current Settings
 {% endanchor %}
 
 {% xmljsontabs settings %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="settings-xml">
+<div class="tab-pane" id="settings-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=example@example.com&method=app
@@ -284,8 +279,8 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
 {% codeblock %}
 <filter></filter>
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="settings-json">
+</div>
+<div class="tab-pane active" id="settings-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=example@example.com&method=app

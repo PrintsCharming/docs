@@ -14,6 +14,28 @@ This module allows you to manage which lists are assigned to marketing email.
 
 Assign a List to a Marketing Email.
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>list</td>
+         <td>Yes</td>
+         <td>None</td>
+         <td>The name of the list to assign to the marketing email</td>
+      </tr>
+      <tr>
+         <td>name</td>
+         <td>Yes</td>
+         <td>None</td>
+         <td>The name of the marketing email</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs add %}
 
@@ -24,7 +46,7 @@ Assign a List to a Marketing Email.
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/recipients/add.json?name=SendGrid%20NL%20Test2&list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/newsletter/recipients/add.json?name=SendGrid%20NL%20Test2&amp;list=test&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -61,7 +83,7 @@ https://sendgrid.com/api/newsletter/recipients/add.json?name=SendGrid%20NL%20Tes
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/recipients/add.xml?name=SendGrid%20NL%20Test2&list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/newsletter/recipients/add.xml?name=SendGrid%20NL%20Test2&amp;list=test&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -105,6 +127,22 @@ https://sendgrid.com/api/newsletter/recipients/add.xml?name=SendGrid%20NL%20Test
 
 Get all lists assigned to a particular marketing email
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>name</td>
+         <td>Yes</td>
+         <td>None</td>
+         <td>The name of the marketing email for which to retrieve lists.</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs get %}
 
@@ -115,7 +153,7 @@ Get all lists assigned to a particular marketing email
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/recipients/get.json?name=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/newsletter/recipients/get.json?name=test&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -154,7 +192,7 @@ https://sendgrid.com/api/newsletter/recipients/get.json?name=test&api_user=your_
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/recipients/get.xml?name=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/newsletter/recipients/get.xml?name=test&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -200,6 +238,28 @@ https://sendgrid.com/api/newsletter/recipients/get.xml?name=test&api_user=your_s
 
 Remove assigned lists from marketing email
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>name</td>
+         <td>Yes</td>
+         <td>Must be an existing marketing email</td>
+         <td>To marketing email from which the list will be unassigned.</td>
+      </tr>
+      <tr>
+         <td>list</td>
+         <td>Yes</td>
+         <td>Must be an existing Recipient List.</td>
+         <td>Remove this list from the marketing email</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs delete %}
 
@@ -210,7 +270,7 @@ Remove assigned lists from marketing email
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/delete.json?name=SendGrid%20NL%20Test1&list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/newsletter/delete.json?name=SendGrid%20NL%20Test1&amp;list=test&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -247,7 +307,7 @@ https://sendgrid.com/api/newsletter/delete.json?name=SendGrid%20NL%20Test1&list=
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/delete.xml?name=SendGrid%20NL%20Test1&list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/newsletter/delete.xml?name=SendGrid%20NL%20Test1&amp;list=test&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 

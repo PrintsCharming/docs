@@ -8,13 +8,35 @@ navigation:
 
 View general account information regarding your customers, including billing cycle, current billing cycle, credit usage, package, overage credits, etc.
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>Must be set to *overview*.</td>
+         <td>The task that allows us to present the customers information.</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Customer that is registered under your account.</td>
+         <td>The customer</td>
+      </tr>
+   </tbody>
+</table>
 
 ### XML Call
 
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=overview&user=customer@example.com
+https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=overview&amp;user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -69,7 +91,7 @@ https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=overview&user=customer@example.com
+https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=overview&amp;user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}

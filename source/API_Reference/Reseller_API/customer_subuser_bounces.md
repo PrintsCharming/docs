@@ -55,7 +55,7 @@ Note that you can use *either* the days parameter *or* the start\_date and end\_
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=get&date=
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=bounces&amp;user=example@example.com&amp;task=get&amp;date=
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -89,7 +89,7 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=get&date=
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=bounces&amp;user=example@example.com&amp;task=get&amp;date=
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -168,7 +168,7 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=delete&email=bounce@example.com
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=bounces&amp;user=example@example.com&amp;task=delete&amp;email=bounce@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -208,7 +208,7 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=delete&email=bounce@example.com
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=bounces&amp;user=example@example.com&amp;task=delete&amp;email=bounce@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 

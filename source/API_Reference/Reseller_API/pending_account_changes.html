@@ -36,9 +36,8 @@ List Pending Changes
   </tr>
 </table>
 {% xmljsontabs users %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="users-xml">
+<div class="tab-pane" id="users-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.pending.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list
@@ -88,8 +87,8 @@ https://sendgrid.com/apiv2/reseller.pending.xml?api_user=your_sendgrid_username&
 </result>
 
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="users-json">
+</div>
+<div class="tab-pane active" id="users-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.pending.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list
@@ -134,7 +133,7 @@ https://sendgrid.com/apiv2/reseller.pending.json?api_user=your_sendgrid_username
   ]
 }
 {% endcodeblock %}
-  </div>
+</div>
 </div>
 <hr/>
 
@@ -161,9 +160,8 @@ Delete Pending Changes
   </tr>
 </table>
 {% xmljsontabs delete %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="delete-xml">
+<div class="tab-pane" id="delete-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.pending.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com
@@ -189,8 +187,8 @@ https://sendgrid.com/apiv2/reseller.pending.xml?api_user=your_sendgrid_username&
 </result>
 
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="delete-json">
+</div>
+<div class="tab-pane active" id="delete-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.pending.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com
@@ -210,7 +208,7 @@ https://sendgrid.com/apiv2/reseller.pending.json?api_user=your_sendgrid_username
   ]
 }
 {% endcodeblock %}
-  </div>
+</div>
 </div>
 <hr/>
 
@@ -257,9 +255,8 @@ Immediate Upgrade
   </tr>
 </table>
 {% xmljsontabs upgrade %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="upgrade-xml">
+<div class="tab-pane" id="upgrade-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
@@ -285,8 +282,8 @@ https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&
 </result>
 
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="upgrade-json">
+</div>
+<div class="tab-pane active" id="upgrade-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
@@ -306,7 +303,7 @@ https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username
   ]
 }
 {% endcodeblock %}
-  </div>
+</div>
 </div>
 <hr/>
 
@@ -353,9 +350,8 @@ Immediate Downgrade
   </tr>
 </table>
 {% xmljsontabs downgrade %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="downgrade-xml">
+<div class="tab-pane" id="downgrade-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
@@ -381,8 +377,8 @@ https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&
 </result>
 
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="downgrade-json">
+</div>
+<div class="tab-pane active" id="downgrade-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
@@ -402,7 +398,7 @@ https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username
   ]
 }
 {% endcodeblock %}
-  </div>
+</div>
 </div>
 <hr/>
 
@@ -435,9 +431,8 @@ Immediate Close
   </tr>
 </table>
 {% xmljsontabs close %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="close-xml">
+<div class="tab-pane" id="close-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Group
@@ -463,8 +458,8 @@ https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&
 </result>
 
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="close-json">
+</div>
+<div class="tab-pane active" id="close-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Group
@@ -484,7 +479,7 @@ https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username
   ]
 }
 {% endcodeblock %}
-  </div>
+</div>
 </div>
 <hr/>
 
@@ -531,9 +526,8 @@ Scheduled Upgrade
   </tr>
 </table>
 {% xmljsontabs sched %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="sched-xml">
+<div class="tab-pane" id="sched-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
@@ -559,8 +553,8 @@ https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&
 </result>
 
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="sched-json">
+</div>
+<div class="tab-pane active" id="sched-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
@@ -580,7 +574,7 @@ https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username
   ]
 }
 {% endcodeblock %}
-  </div>
+</div>
 </div>
 <hr/>
 
@@ -627,9 +621,8 @@ Scheduled Downgrade
   </tr>
 </table>
 {% xmljsontabs scheddown %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="scheddown-xml">
+<div class="tab-pane" id="scheddown-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
@@ -655,8 +648,8 @@ https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&
 </result>
 
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="scheddown-json">
+</div>
+<div class="tab-pane active" id="scheddown-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
@@ -676,7 +669,7 @@ https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username
   ]
 }
 {% endcodeblock %}
-  </div>
+</div>
 </div>
 <hr/>
 
@@ -709,9 +702,8 @@ Scheduled Close
   </tr>
 </table>
 {% xmljsontabs schedclose %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="schedclose-xml">
+<div class="tab-pane" id="schedclose-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Group
@@ -737,8 +729,8 @@ https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&
 </result>
 
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="schedclose-json">
+</div>
+<div class="tab-pane active" id="schedclose-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Group

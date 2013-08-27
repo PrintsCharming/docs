@@ -58,7 +58,7 @@ In order to login your customer, you need to contact our web API to retrieve the
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=geturl&user=customer@example.com
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=geturl&amp;user=customer@example.com
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -81,13 +81,13 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=geturl&user=customer@example.com
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=geturl&amp;user=customer@example.com
 {% endcodeblock %}
 <h3>Response</h3>
 
 {% codeblock lang:javascript %}
 {
-  "params": "al_username=username&al_subuser_name=customer@example.com&al_hash=aa39649af578679d3a90d2cc43245d56"
+  "params": "al_username=username&amp;al_subuser_name=customer@example.com&amp;al_hash=aa39649af578679d3a90d2cc43245d56"
 }
 {% endcodeblock %}
 

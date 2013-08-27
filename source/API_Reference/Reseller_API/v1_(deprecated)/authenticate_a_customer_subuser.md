@@ -36,7 +36,7 @@ Authenticate a customer subuser on your website before displaying their account 
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=theirsubmittedpassword&method=aut
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=example@example.com&amp;password=theirsubmittedpassword&amp;method=aut
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -70,7 +70,7 @@ result><message>success</message></result>
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=theirsubmittedpassword&method=aut
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=example@example.com&amp;password=theirsubmittedpassword&amp;method=aut
 {% endcodeblock %}
 <h3>Response: Success</h3>
 

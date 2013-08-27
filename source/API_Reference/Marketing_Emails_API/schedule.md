@@ -57,7 +57,7 @@ Schedule a delivery time for an existing Marketing Email.
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/schedule/add.json?name=test&at=2012-09-05_18%3A35%3A00&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/newsletter/schedule/add.json?name=test&amp;at=2012-09-05_18%3A35%3A00&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -94,7 +94,7 @@ https://sendgrid.com/api/newsletter/schedule/add.json?name=test&at=2012-09-05_18
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/schedule/add.xml?name=test&at=2012-09-05_18%3A35%3A00&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/newsletter/schedule/add.xml?name=test&amp;at=2012-09-05_18%3A35%3A00&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -167,7 +167,7 @@ Retrieve the scheduled delivery time for an existing Marketing Email.
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/schedule/get.json?name=SendGrid_Test2&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/newsletter/schedule/get.json?name=SendGrid_Test2&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -204,7 +204,7 @@ https://sendgrid.com/api/newsletter/schedule/get.json?name=SendGrid_Test2&api_us
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/schedule/get.xml?name=SendGrid_Test2&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/newsletter/schedule/get.xml?name=SendGrid_Test2&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -279,7 +279,7 @@ Cancel a scheduled send for a Marketing Email.
 
 
 {% codeblock %}
-sendgrid.com/api/newsletter/schedule/delete.json?name=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+sendgrid.com/api/newsletter/schedule/delete.json?name=test&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -316,7 +316,7 @@ sendgrid.com/api/newsletter/schedule/delete.json?name=test&api_user=your_sendgri
 
 
 {% codeblock %}
-sendgrid.com/api/newsletter/schedule/delete.xml?name=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+sendgrid.com/api/newsletter/schedule/delete.xml?name=test&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 

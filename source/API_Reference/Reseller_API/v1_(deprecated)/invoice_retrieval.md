@@ -49,7 +49,7 @@ Return an array of invoice numbers to your account.
 
 
 {% codeblock %}
-https://sendgrid.com/api/billing.list.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai
+https://sendgrid.com/api/billing.list.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;status=pai
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -75,7 +75,7 @@ https://sendgrid.com/api/billing.list.xml?api_user=your_sendgrid_username&api_ke
 
 
 {% codeblock %}
-https://sendgrid.com/api/billing.list.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai
+https://sendgrid.com/api/billing.list.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;status=pai
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -129,7 +129,7 @@ Return an array of invoices.
 
 
 {% codeblock %}
-https://sendgrid.com/api/billing.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai
+https://sendgrid.com/api/billing.get.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;status=pai
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -167,7 +167,7 @@ Bill</type>
 
 
 {% codeblock %}
-https://sendgrid.com/api/billing.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai
+https://sendgrid.com/api/billing.get.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;status=pai
 {% endcodeblock %}
 <h3>Response</h3>
 

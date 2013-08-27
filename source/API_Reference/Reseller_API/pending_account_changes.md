@@ -57,7 +57,7 @@ Returns all of the users who have pending changes within your account.
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.pending.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list
+https://sendgrid.com/apiv2/reseller.pending.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=list
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -126,7 +126,7 @@ https://sendgrid.com/apiv2/reseller.pending.xml?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.pending.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list
+https://sendgrid.com/apiv2/reseller.pending.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=list
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -229,7 +229,7 @@ Cancel/Revert a pending change.
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.pending.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com
+https://sendgrid.com/apiv2/reseller.pending.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=delete&amp;user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -274,7 +274,7 @@ https://sendgrid.com/apiv2/reseller.pending.xml?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.pending.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com
+https://sendgrid.com/apiv2/reseller.pending.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=delete&amp;user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -366,7 +366,7 @@ Once an upgrade happens, an invoice is generated for that user. If it's a free u
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
+https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=immediate_upgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -411,7 +411,7 @@ https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
+https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=immediate_upgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Group
 {% endcodeblock %}
 <h4>Return - Success'); ?></h4>
 
@@ -503,7 +503,7 @@ Once a downgrade happens, an invoice is generated for that user. Free customers 
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
+https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=immediate_downgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -548,7 +548,7 @@ https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
+https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=immediate_downgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -630,7 +630,7 @@ Close or revert an account to a free user immediately. An invoice is generated f
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Group
+https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=immediate_close&amp;user=customer@example.com&amp;ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -675,7 +675,7 @@ https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Group
+https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=immediate_close&amp;user=customer@example.com&amp;ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -767,7 +767,7 @@ Apply an upgrade at the end of the user's billing cycle. Once an upgrade happens
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
+https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=scheduled_upgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -812,7 +812,7 @@ https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
+https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=scheduled_upgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -904,7 +904,7 @@ Apply a downgrade at the end of the user's billing cycle. Once a downgrade happe
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
+https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=scheduled_downgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -949,7 +949,7 @@ https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
+https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=scheduled_downgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -1031,7 +1031,7 @@ Close or revert an account to a free user at the end of the user's billing cycle
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Group
+https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=scheduled_close&amp;user=customer@example.com&amp;ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -1076,7 +1076,7 @@ https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Group
+https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=scheduled_close&amp;user=customer@example.com&amp;ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 

@@ -39,7 +39,7 @@ Retrieve invoices/usages from end users before your scheduled billing date.
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.billing.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&number=2010010001&task=curren
+https://sendgrid.com/apiv2/reseller.billing.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;number=2010010001&amp;task=curren
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -79,7 +79,7 @@ https://sendgrid.com/apiv2/reseller.billing.xml?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.billing.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&number=2010010001&task=curren
+https://sendgrid.com/apiv2/reseller.billing.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;number=2010010001&amp;task=curren
 {% endcodeblock %}
 <h3>Response</h3>
 

@@ -9,6 +9,28 @@ navigation:
 {% anchor h2 %} Get Current Settings {% endanchor %}
 
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>Must be set to *get*</td>
+         <td>Retrieve Parse settings</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Subuser must be registered under your account</td>
+         <td>The subuser who we will update</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs get %}
 
@@ -19,7 +41,7 @@ navigation:
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com
+https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=get&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -61,7 +83,7 @@ https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&ap
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com
+https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=get&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -105,6 +127,40 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&a
 {% anchor h2 %} Create New Entry {% endanchor %}
 
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>Must be set to *set*</td>
+         <td>Set Parse settings</td>
+      </tr>
+      <tr>
+         <td>hostname</td>
+         <td>Yes</td>
+         <td>No more than 255 characters</td>
+         <td>Hostname we will use with your email</td>
+      </tr>
+      <tr>
+         <td>url</td>
+         <td>Yes</td>
+         <td/>
+         <td>The parse destination</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Subuser must be registered under your account</td>
+         <td>The subuser who we will update</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs create %}
 
@@ -115,7 +171,7 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&a
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=set&user=example@example.com
+https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;task=set&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -160,7 +216,7 @@ https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&ap
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=set&user=example@example.com
+https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;task=set&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -199,6 +255,40 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&a
 {% anchor h2 %} Edit Entry {% endanchor %}
 
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>Must be set to *update*</td>
+         <td>Set Parse settings</td>
+      </tr>
+      <tr>
+         <td>hostname</td>
+         <td>Yes</td>
+         <td>No more than 255 characters</td>
+         <td>Hostname entry you want to update</td>
+      </tr>
+      <tr>
+         <td>url</td>
+         <td>Yes</td>
+         <td/>
+         <td>The parse destination</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Subuser must be registered under your account</td>
+         <td>The subuser who we will update</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs edit %}
 
@@ -209,7 +299,7 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&a
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=update&user=example@example.com
+https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;task=update&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -254,7 +344,7 @@ https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&ap
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=parse&user=example@example.com
+https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;task=parse&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -293,6 +383,34 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&a
 {% anchor h2 %} Delete Entry {% endanchor %}
 
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>Must be set to *delete*</td>
+         <td>Set Parse settings</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Subuser must be registered under your account</td>
+         <td>The subuser who we will update</td>
+      </tr>
+      <tr>
+         <td>hostname</td>
+         <td>Yes</td>
+         <td>Must be the hostname you wish to delete.</td>
+         <td>The host name you will remove for your subuser</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs data %}
 
@@ -303,7 +421,7 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&a
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&user=example@example.com
+https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;hostname=www.example.com&amp;task=delete&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -348,7 +466,7 @@ https://sendgrid.com/apiv2/customer.parse.xml?api_user=your_sendgrid_username&ap
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&user=example@example.com
+https://sendgrid.com/apiv2/customer.parse.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;hostname=www.example.com&amp;task=delete&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response</h3>
 

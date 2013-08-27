@@ -10,6 +10,20 @@ List
 
 Obtain a complete list of all IP's and which are free, taken or available.
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+      </tr>
+      <tr>
+         <td>list</td>
+         <td>Yes</td>
+         <td>Must be set to either ( all / free / taken / available )</td>
+      </tr>
+   </tbody>
+</table>
 
 Here is a brief explanation of each option available for the list parameter:
 
@@ -31,7 +45,7 @@ available
 
 
 {% codeblock %}
-	https://sendgrid.com/apiv2/customer.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=all
+	https://sendgrid.com/apiv2/customer.ip.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;list=all
 	{% endcodeblock %}
 <h3>Response</h3>
 	
@@ -59,7 +73,7 @@ available
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=all
+https://sendgrid.com/apiv2/customer.ip.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;list=all
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -86,6 +100,25 @@ https://sendgrid.com/apiv2/customer.ip.xml?api_user=your_sendgrid_username&api_k
 {% anchor h2 %} Subuser IP Usage {% endanchor %}
  If your account has more than one IP address, you can manage what IPs your subusers are allowed to send from. If you remove all IPs from a specified user, they will use all IPs from from your list.
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+      </tr>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>Must be set to *list*</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Subuser must be registered under your account</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs usage %}
 
@@ -96,7 +129,7 @@ https://sendgrid.com/apiv2/customer.ip.xml?api_user=your_sendgrid_username&api_k
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.sendip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list&user=example@example.com
+https://sendgrid.com/apiv2/customer.sendip.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=list&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -143,7 +176,7 @@ https://sendgrid.com/apiv2/customer.sendip.xml?api_user=your_sendgrid_username&a
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.sendip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list&user=example@example.com
+https://sendgrid.com/apiv2/customer.sendip.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=list&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -203,6 +236,35 @@ https://sendgrid.com/apiv2/customer.sendip.json?api_user=your_sendgrid_username&
 {% anchor h2 %} Subuser IP Assignment {% endanchor %}
  You need to assign at least ONE IP to your subuser.
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+      </tr>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>Must be set to *append*</td>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Subuser must be registered under your account</td>
+      </tr>
+      <tr>
+         <td>set</td>
+         <td>Yes</td>
+         <td>Must be either: **none**: Remove all ips. **all**: Apply all possible ips to subuser. **specify**: Specify the ips to the subser. Must be a valid set of IPs (use the list call to determine valid IPs)</td>
+      </tr>
+      <tr>
+         <td>ip[]</td>
+         <td>No</td>
+         <td>If the *set* parameter is set, then you must specify the IPs. Use the ip[] parameter to specify an IP. [ IE - ip[]=255.255.255.0[]=255.255.255.1 ]</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs subuser %}
 
@@ -213,7 +275,7 @@ https://sendgrid.com/apiv2/customer.sendip.json?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.sendip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&set=specify&user=example@example.com&ip[]=255.255.255.250&ip[]=255.255.255.255
+https://sendgrid.com/apiv2/customer.sendip.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=append&amp;set=specify&amp;user=example@example.com&amp;ip[]=255.255.255.250&amp;ip[]=255.255.255.255
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -258,7 +320,7 @@ https://sendgrid.com/apiv2/customer.sendip.xml?api_user=your_sendgrid_username&a
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.sendip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&set=specify&user=example@example.com&ip[]=255.255.255.250&ip[]=255.255.255.255
+https://sendgrid.com/apiv2/customer.sendip.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=append&amp;set=specify&amp;user=example@example.com&amp;ip[]=255.255.255.250&amp;ip[]=255.255.255.255
 {% endcodeblock %}
 <h3>Response: Success</h3>
 

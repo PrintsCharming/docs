@@ -60,7 +60,7 @@ View all IPs under your account.
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=all
+https://sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=all
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -86,7 +86,7 @@ https://sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&api_k
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=all
+https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=all
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -183,7 +183,7 @@ A listing of all free IPs under your account. A Free IP is any IP that is not in
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=free
+https://sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=free
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -209,7 +209,7 @@ https://sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&api_k
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=free
+https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=free
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -306,7 +306,7 @@ A listing of all taken IPs under your account. A Taken IP is any IP that is in u
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=taken
+https://sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=taken
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -332,7 +332,7 @@ https://sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&api_k
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=taken
+https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=taken
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -429,7 +429,7 @@ A listing of all available IPs under your account. An Available IP is any IP tha
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=available
+https://sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=available
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -455,7 +455,7 @@ https://sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&api_k
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=available
+https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=available
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -574,7 +574,7 @@ The current breakdown of users who are using your IPs.
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=usage&user=example.com
+https://sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=usage&amp;user=example.com
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -604,7 +604,7 @@ https://sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&api_k
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=usage&user=example.com
+https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=usage&amp;user=example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 

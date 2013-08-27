@@ -115,6 +115,16 @@ For a more detailed description of each of the Apps below, please visit the [App
 {% anchor h2 %} DKIM {% endanchor %}
  [API app name:"dkim"]
 
+<table class="table table-bordered table-striped">
+   <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+      <th>Example</th>
+   </tr>
+   <td>domain</td>
+   <td>The domain you would like your DKIM certification signed with</td>
+   <td>example.com</td>
+</table>
 
 
 * * * * *
@@ -123,6 +133,16 @@ For a more detailed description of each of the Apps below, please visit the [App
 {% anchor h2 %} Email Templates {% endanchor %}
  [API app name:"template"]
 
+<table class="table table-bordered table-striped">
+   <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+      <th>Example</th>
+   </tr>
+   <td>text_html</td>
+   <td>A string that holds the template html body</td>
+   <td>Content</td>
+</table>
 
 
 * * * * *
@@ -202,6 +222,23 @@ For a more detailed description of each of the Apps below, please visit the [App
 {% anchor h2 %} Footer {% endanchor %}
  [API app name:"footer"]
 
+<table class="table table-bordered table-striped">
+   <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+      <th>Example</th>
+   </tr>
+   <tr>
+      <td>text/html</td>
+      <td>String that holds the html body</td>
+      <td>Content</td>
+   </tr>
+   <tr>
+      <td>text/plain</td>
+      <td>String that holds the text body</td>
+      <td>Content</td>
+   </tr>
+</table>
 
 
 * * * * *
@@ -254,6 +291,11 @@ For a more detailed description of each of the Apps below, please visit the [App
 {% anchor h2 %} Gravatar {% endanchor %}
  [API app name:"gravatar"]
 
+<table class="table table-bordered table-striped">
+   <th>Parameter</th>
+   <th>Description</th>
+   <th>Example</th>
+</table>
 
 
 * * * * *
@@ -262,6 +304,11 @@ For a more detailed description of each of the Apps below, please visit the [App
 {% anchor h2 %} Open Tracking {% endanchor %}
  [API app name:"opentrack"]
 
+<table class="table table-bordered table-striped">
+   <th>Parameter</th>
+   <th>Description</th>
+   <th>Example</th>
+</table>
 
 
 * * * * *
@@ -270,6 +317,11 @@ For a more detailed description of each of the Apps below, please visit the [App
 {% anchor h2 %} Return Path Seedlist {% endanchor %}
  [API app name:"seedlist"]
 
+<table class="table table-bordered table-striped">
+   <th>Parameter</th>
+   <th>Description</th>
+   <th>Example</th>
+</table>
 
 
 * * * * *
@@ -278,6 +330,11 @@ For a more detailed description of each of the Apps below, please visit the [App
 {% anchor h2 %} SPAM Filter Checker {% endanchor %}
  [API app name:"spamcheck"]
 
+<table class="table table-bordered table-striped">
+   <th>Parameter</th>
+   <th>Description</th>
+   <th>Example</th>
+</table>
 
 
 * * * * *
@@ -286,6 +343,11 @@ For a more detailed description of each of the Apps below, please visit the [App
 {% anchor h2 %} Subscription Tracking {% endanchor %}
  [API app name:"subscriptiontrack"]
 
+<table class="table table-bordered table-striped">
+   <th>Parameter</th>
+   <th>Description</th>
+   <th>Example</th>
+</table>
 
 
 * * * * *

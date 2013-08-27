@@ -20,7 +20,7 @@ The Marketing Email API is very similar to the Web API in that it follows the sa
 
 The following is the syntax for making Marketing Email API requests:
 
-` 	https://sendgrid.com/api/newsletter/[action].[format]`
+`     https://sendgrid.com/api/newsletter/[action].[format]`
 
 -   **[action]** - Each module supports multiple actions such as add, get, and delete.
 -   **[format]** - This determines the response format. It can be either json for a JSON response or xml for an XML response.

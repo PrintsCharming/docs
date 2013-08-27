@@ -42,9 +42,8 @@ Retrieve Invalid Emails
   </tr>
 </table>
 {% xmljsontabs get %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="get-xml">
+<div class="tab-pane" id="get-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=example@example.com&task=get&date=1
@@ -71,8 +70,8 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
 </invalidemails>
 
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="get-json">
+</div>
+<div class="tab-pane active" id="get-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=example@example.com&task=get&date=
@@ -95,8 +94,8 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_us
     "created": "2009-06-01 19:41:39"
   }
 ]
-{% endcodeblock %} 
- </div>
+{% endcodeblock %}
+</div>
 </div>
 <hr/>
 
@@ -136,9 +135,8 @@ Delete Invalid Emails
   </tr>
 </table>
 {% xmljsontabs delete %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="delete-xml">
+<div class="tab-pane" id="delete-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=example@example.com&task=delete&email=invalidemail@example.com
@@ -159,8 +157,8 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=your_sendgrid_use
 </result>
 
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="delete-json">
+</div>
+<div class="tab-pane active" id="delete-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=example@example.com&task=delete&email=invalidemail@example.com

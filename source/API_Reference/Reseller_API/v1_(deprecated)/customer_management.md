@@ -153,7 +153,7 @@ These are actions that directly affect your customer. We provide access via XML 
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.add.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=newcustomer@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=newcustomer@example.com&country=US&phone=555-555&free_user=tru
+https://sendgrid.com/api/distributor.add.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;username=newcustomer@example.com&amp;website=example.com&amp;password=samplepassword&amp;confirm_password=samplepassword&amp;first_name=fname&amp;last_name=lname&amp;address=555_anystreet&amp;city=any_city&amp;state=CA&amp;zip=91234&amp;email=newcustomer@example.com&amp;country=US&amp;phone=555-555&amp;free_user=tru
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -196,7 +196,7 @@ https://sendgrid.com/api/distributor.add.xml?api_user=your_sendgrid_username&api
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=newcustomer@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=newcustomer@example.com&country=US&phone=555-55
+https://sendgrid.com/api/distributor.add.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;username=newcustomer@example.com&amp;website=example.com&amp;password=samplepassword&amp;confirm_password=samplepassword&amp;first_name=fname&amp;last_name=lname&amp;address=555_anystreet&amp;city=any_city&amp;state=CA&amp;zip=91234&amp;email=newcustomer@example.com&amp;country=US&amp;phone=555-55
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -261,7 +261,7 @@ This is the same thing as closing out a customers account at the end of their bi
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=customer@example.com
+https://sendgrid.com/api/distributor.delete.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -304,7 +304,7 @@ https://sendgrid.com/api/distributor.delete.xml?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=customer@example.com
+https://sendgrid.com/api/distributor.delete.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -440,7 +440,7 @@ Obtain a complete list of all customers.
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=ge
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=profile&amp;task=ge
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -489,7 +489,7 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=ge
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=profile&amp;task=ge
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -544,7 +544,7 @@ Enable a customer so they may start sending out emails again. This call will not
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=enable&user=customer@example.com
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=enable&amp;user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -582,7 +582,7 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=enable&user=customer@example.com
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=enable&amp;user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -651,7 +651,7 @@ This prevents them from sending out emails with SendGrid.
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=disable&user=customer@example.com
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=disable&amp;user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -689,7 +689,7 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=disabl
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=disabl
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -758,7 +758,7 @@ Allow a customer to login to the SendGrid.com website. This call will not enable
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_enable&user=customer@example.com
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=website_enable&amp;user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -796,7 +796,7 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_enable&user=customer@example.com
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=website_enable&amp;user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -865,7 +865,7 @@ Disallow a customer to login to the SendGrid.com website. This call will not pre
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_disable&user=customer@example.com
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=website_disable&amp;user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -903,7 +903,7 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_disabl
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=website_disabl
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -1028,7 +1028,7 @@ Allows you to update your customers profile information
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=&newLastNam
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=profile&amp;task=set&amp;user=customer@example.com&amp;first_name=newFirstName&amp;last_name=&amp;newLastNam
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -1071,7 +1071,7 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=&newLastNam
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=profile&amp;task=set&amp;user=customer@example.com&amp;first_name=newFirstName&amp;last_name=&amp;newLastNam
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -1155,7 +1155,7 @@ Passwords are encrypted by default and therefore cannot be retrieved; however, y
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=password&user=customer@example.com&password=newPasword&confirm_password=newPasswor
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=password&amp;user=customer@example.com&amp;password=newPasword&amp;confirm_password=newPasswor
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -1198,7 +1198,7 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=password&user=customer@example.com&password=newPasword&confirm_password=newPasswor
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=password&amp;user=customer@example.com&amp;password=newPasword&amp;confirm_password=newPasswor
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -1293,7 +1293,7 @@ Note that your customer account username is used to login to our SMTP server *an
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setUsername&user=customer@example.com&username=newcustomer@example.com
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=profile&amp;task=setUsername&amp;user=customer@example.com&amp;username=newcustomer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -1336,7 +1336,7 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setUsername&user=customer@example.com&username=newcustomer@example.com
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=profile&amp;task=setUsername&amp;user=customer@example.com&amp;username=newcustomer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -1423,7 +1423,7 @@ This is the contact email we use for your customers. Changes take place immediat
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setEmail&user=customer@example.com&email=newcustomer@example.com
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=profile&amp;task=setEmail&amp;user=customer@example.com&amp;email=newcustomer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -1466,7 +1466,7 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setEmail&user=customer@example.com&email=newcustomer@example.com
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=profile&amp;task=setEmail&amp;user=customer@example.com&amp;email=newcustomer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 

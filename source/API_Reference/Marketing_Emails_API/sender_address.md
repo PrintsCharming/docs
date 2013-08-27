@@ -14,6 +14,44 @@ This endpoint allows you to manage and create Sender Addresses (formerly Identit
 
 Create a new Address.
 
+<table class="table table-bordered table-striped">
+   <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+   </tr>
+   <tr>
+      <td>Identity</td>
+      <td>Yes</td>
+      <td>None</td>
+      <td>Create an Address named this.</td>
+   </tr>
+   <tr>
+      <td>name</td>
+      <td>Yes</td>
+      <td>None</td>
+      <td>Specify the name to be used for this Address.</td>
+   </tr>
+   <tr>
+      <td>email</td>
+      <td>Yes</td>
+      <td>Email address format, complying with [RFC 5322](http://tools.ietf.org/html/rfc5322)</td>
+      <td>Specify the email address to be used for this Address.</td>
+   </tr>
+   <tr>
+      <td>replyto</td>
+      <td>No</td>
+      <td>Email address format, complying with [RFC 5322](http://tools.ietf.org/html/rfc5322)</td>
+      <td>Specify an email address to be used in the Reply-To field. If not defined, will default to the *email* parameter.</td>
+   </tr>
+   <tr>
+      <td>address</td>
+      <td>Yes</td>
+      <td>None</td>
+      <td>Specify the physical address to be used for this Address.</td>
+   </tr>
+</table>
 
 {% xmljsontabs add %}
 
@@ -24,7 +62,7 @@ Create a new Address.
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/identity/add.json?identity=Sender_Address1&name=Grant&email=grant.hull%40sendgrid.com&address=929_Pearl_Stree&city=Boulder&state=Colorado&zip=80302&country=US&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/newsletter/identity/add.json?identity=Sender_Address1&amp;name=Grant&amp;email=grant.hull%40sendgrid.com&amp;address=929_Pearl_Stree&amp;city=Boulder&amp;state=Colorado&amp;zip=80302&amp;country=US&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -61,7 +99,7 @@ https://sendgrid.com/api/newsletter/identity/add.json?identity=Sender_Address1&n
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/identity/add.xml?identity=Sender_Address1&name=Grant&email=grant.hull%40sendgrid.com&address=929_Pearl_Stree&city=Boulder&state=Colorado&zip=80302&country=US&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/newsletter/identity/add.xml?identity=Sender_Address1&amp;name=Grant&amp;email=grant.hull%40sendgrid.com&amp;address=929_Pearl_Stree&amp;city=Boulder&amp;state=Colorado&amp;zip=80302&amp;country=US&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -105,6 +143,50 @@ https://sendgrid.com/api/newsletter/identity/add.xml?identity=Sender_Address1&na
 
 Edit an existing Address.
 
+<table class="table table-bordered table-striped">
+   <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+   </tr>
+   <tr>
+      <td>Identity</td>
+      <td>Yes</td>
+      <td>Must be an existing Address.</td>
+      <td>The Address you wish to edit.</td>
+   </tr>
+   <tr>
+      <td>newidentity</td>
+      <td>No</td>
+      <td>None</td>
+      <td>Specify the new name to be used for this Address.</td>
+   </tr>
+   <tr>
+      <td>name</td>
+      <td>No</td>
+      <td>None</td>
+      <td>Specify the new name to be used for this Address.</td>
+   </tr>
+   <tr>
+      <td>email</td>
+      <td>Yes</td>
+      <td>Email address format, complying with [RFC 5322](http://tools.ietf.org/html/rfc5322)</td>
+      <td>Specify the email address to be used for this Address.</td>
+   </tr>
+   <tr>
+      <td>replyto</td>
+      <td>No</td>
+      <td>Email address format, complying with [RFC 5322](http://tools.ietf.org/html/rfc5322)</td>
+      <td>Specify an email address to be used in the Reply-To field. If not defined, will default to the *email* parameter.</td>
+   </tr>
+   <tr>
+      <td>address</td>
+      <td>No</td>
+      <td>None</td>
+      <td>Specify the new physical address to be used for this Address.</td>
+   </tr>
+</table>
 
 {% xmljsontabs edit %}
 
@@ -115,7 +197,7 @@ Edit an existing Address.
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/identity/edit.json?identity=Sender_Address2&newidentity=Sender_Address3&name=Grant&email=grant.hull%40sendgrid.com&address=929_Pearl_Street&city=Boulder&state=Colorado&zip=80302&country=US&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/newsletter/identity/edit.json?identity=Sender_Address2&amp;newidentity=Sender_Address3&amp;name=Grant&amp;email=grant.hull%40sendgrid.com&amp;address=929_Pearl_Street&amp;city=Boulder&amp;state=Colorado&amp;zip=80302&amp;country=US&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -152,7 +234,7 @@ https://sendgrid.com/api/newsletter/identity/edit.json?identity=Sender_Address2&
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/identity/edit.xml?identity=Sender_Address2&newidentity=Sender_Address3&name=Grant&email=grant.hull%40sendgrid.com&address=929_Pearl_Street&city=Boulder&state=Colorado&zip=80302&country=US&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/newsletter/identity/edit.xml?identity=Sender_Address2&amp;newidentity=Sender_Address3&amp;name=Grant&amp;email=grant.hull%40sendgrid.com&amp;address=929_Pearl_Street&amp;city=Boulder&amp;state=Colorado&amp;zip=80302&amp;country=US&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -225,7 +307,7 @@ Retrieve information associated with a particular Address.
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/identity/get.json?identity=Sender_Address&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/newsletter/identity/get.json?identity=Sender_Address&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -270,7 +352,7 @@ https://sendgrid.com/api/newsletter/identity/get.json?identity=Sender_Address&ap
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/identity/get.xml?identity=Sender_Address&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/newsletter/identity/get.xml?identity=Sender_Address&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -351,7 +433,7 @@ List all Addresses on your account, or check if a particular Address exists.
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/identity/list.json?identity=Sender_Address4&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/newsletter/identity/list.json?identity=Sender_Address4&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -390,7 +472,7 @@ https://sendgrid.com/api/newsletter/identity/list.json?identity=Sender_Address4&
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/identity/list.xml?identity=Sender_Address4&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/newsletter/identity/list.xml?identity=Sender_Address4&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -465,7 +547,7 @@ Remove an Address from your account.
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/identity/delete.json?identity=Sender_Address4&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/newsletter/identity/delete.json?identity=Sender_Address4&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -502,7 +584,7 @@ https://sendgrid.com/api/newsletter/identity/delete.json?identity=Sender_Address
 
 
 {% codeblock %}
-https://sendgrid.com/api/newsletter/identity/delete.xml?identity=Sender_Address4&api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/newsletter/identity/delete.xml?identity=Sender_Address4&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 

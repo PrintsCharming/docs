@@ -52,7 +52,7 @@ navigation:
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=parse&task=get&method=parse&user=customer@example.com
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=parse&amp;task=get&amp;method=parse&amp;user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -80,7 +80,7 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&method=parse&user=customer@example.com
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=get&amp;method=parse&amp;user=customer@example.com
 {% endcodeblock %}
 
 
@@ -182,7 +182,7 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=set&method=parse&user=customer@example.com
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;method=parse&amp;task=set&amp;method=parse&amp;user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -225,7 +225,7 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=set&method=parse&user=customer@example.com
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;method=parse&amp;task=set&amp;method=parse&amp;user=customer@example.com
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -316,7 +316,7 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=update&user=customer@example.com
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;method=parse&amp;task=update&amp;user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -359,7 +359,7 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=parse&user=customer@example.com
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;method=parse&amp;task=parse&amp;user=customer@example.com
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -444,7 +444,7 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&method=parse&user=customer@example.com
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;hostname=www.example.com&amp;task=delete&amp;method=parse&amp;user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -487,7 +487,7 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&method=parse&user=customer@example.com
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;hostname=www.example.com&amp;task=delete&amp;method=parse&amp;user=customer@example.com
 {% endcodeblock %}
 <h3>Response</h3>
 

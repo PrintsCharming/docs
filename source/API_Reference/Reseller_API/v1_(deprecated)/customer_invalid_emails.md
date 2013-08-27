@@ -58,7 +58,7 @@ navigation:
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=customer@example.com&task=get&date=
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=invalidemails&amp;user=customer@example.com&amp;task=get&amp;date=
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
@@ -78,7 +78,7 @@ bad domain</reason><created>2009-06-10
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=customer@example.com&task=get&date=
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=invalidemails&amp;user=customer@example.com&amp;task=get&amp;date=
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
@@ -144,7 +144,7 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=customer@example.com&task=delete&email=invalidemail@example.com
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=invalidemails&amp;user=customer@example.com&amp;task=delete&amp;email=invalidemail@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -162,7 +162,7 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=customer@example.com&task=delete&email=invalidemail@example.com
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=invalidemails&amp;user=customer@example.com&amp;task=delete&amp;email=invalidemail@example.com
 {% endcodeblock %}
 
 

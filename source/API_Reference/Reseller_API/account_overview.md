@@ -47,7 +47,7 @@ View general account information regarding your customers, including billing cyc
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=overview&user=customer@example.com
+https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=overview&amp;user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -103,7 +103,7 @@ https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=overview&user=customer@example.com
+https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=overview&amp;user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 

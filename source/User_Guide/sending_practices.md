@@ -20,6 +20,40 @@ Our Lite package has a bandwidth restriction to keep spammers from abusing our s
 
 As you achieve each guideline after the 7-day period, your account limit will be raised incrementally. You must achieve all guidelines in one row before you can achieve any guideline on the next row. The below table lists the limitation factors, and how they affect your total.
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Account Age</th>
+         <th>Email Requests</th>
+         <th>Send Reputation</th>
+         <th>Daily Send Limit</th>
+      </tr>
+      <tr>
+         <td>0 days</td>
+         <td>--</td>
+         <td>--</td>
+         <td>1,000</td>
+      </tr>
+      <tr>
+         <td>7 days *Adds 3,000*</td>
+         <td>50,000 *Adds 3,000*</td>
+         <td>80% *Adds 3,000*</td>
+         <td>10,000</td>
+      </tr>
+      <tr>
+         <td>14 days *Adds 30,000*</td>
+         <td>500,000 *Adds 30,000*</td>
+         <td>90% *Adds 30,000*</td>
+         <td>100,000</td>
+      </tr>
+      <tr>
+         <td>28 days *Adds 300,000*</td>
+         <td>5,000,000 *Adds 300,000*</td>
+         <td>95% *Adds 300,000*</td>
+         <td>1,000,000</td>
+      </tr>
+   </tbody>
+</table>
 
 For example:
 

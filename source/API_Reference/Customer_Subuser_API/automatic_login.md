@@ -14,6 +14,28 @@ Allow subusers to manage their account from your website using an iframe to our 
 
 In order to login your subuser, you need to contact our web API to retrieve the unique URL to automatically login your subuser. Then display the generated URL to automatically login your subuser.
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Must be set in email format</td>
+         <td>This is the subuser you will attempt to automatically login</td>
+      </tr>
+      <tr>
+         <td>password</td>
+         <td>No</td>
+         <td>Your subuser password.</td>
+         <td>Authenticate the subuser with this API call.</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs auto %}
 
@@ -24,7 +46,7 @@ In order to login your subuser, you need to contact our web API to retrieve the 
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.geturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
+https://sendgrid.com/apiv2/customer.geturl.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -47,13 +69,13 @@ https://sendgrid.com/apiv2/customer.geturl.xml?api_user=your_sendgrid_username&a
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.geturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
+https://sendgrid.com/apiv2/customer.geturl.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response</h3>
 
 {% codeblock lang:javascript %}
 {
-  "params": "al_username=username&al_subuser_name=example@example.com&al_hash=aa39649af578679d3a90d2cc43245d56"
+  "params": "al_username=username&amp;al_subuser_name=example@example.com&amp;al_hash=aa39649af578679d3a90d2cc43245d56"
 }
 {% endcodeblock %}
 

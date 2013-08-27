@@ -58,7 +58,7 @@ navigation:
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=customer@example.com&task=get&date=
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=spamreports&amp;user=customer@example.com&amp;task=get&amp;date=
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
@@ -74,7 +74,7 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=customer@example.com&task=get&date=
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=spamreports&amp;user=customer@example.com&amp;task=get&amp;date=
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
@@ -140,7 +140,7 @@ Since SendGrid does not deliver to spam reported addresses, users can remove spa
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=customer@example.com&task=delete&email=spamreport@domain.com
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=spamreports&amp;user=customer@example.com&amp;task=delete&amp;email=spamreport@domain.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -178,7 +178,7 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=customer@example.com&task=delete&email=spamreport@domain.com
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=spamreports&amp;user=customer@example.com&amp;task=delete&amp;email=spamreport@domain.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 

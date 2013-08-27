@@ -49,7 +49,7 @@ Authenticate a customer on your website before displaying their account informat
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=customer@example.com&password=theirsubmittedpassword&method=aut
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=customer@example.com&amp;password=theirsubmittedpassword&amp;method=aut
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -94,7 +94,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=customer@example.com&password=theirsubmittedpassword&method=aut
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=customer@example.com&amp;password=theirsubmittedpassword&amp;method=aut
 {% endcodeblock %}
 <h3>Response: Success</h3>
 

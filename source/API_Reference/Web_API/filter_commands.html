@@ -13,15 +13,13 @@ Get Available
 
 <p><em>Note: The name entry is used in all the other API calls to identify a app.</em>
 For a list of all the apps and parameters accesible with the Web API you can check the <a href="{{root_url}}/API_Reference/Web_API/filter_settings.html">Filter Settings</a> page.</p>
-
   
 {% xmljsontabs getavailable %}
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="getavailable-json">
+<div class="tab-content">
+<div class="tab-pane active" id="getavailable-json">
 <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/filter.getavailable.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/filter.getavailable.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock lang:javascript %}[
@@ -33,9 +31,8 @@ https://sendgrid.com/api/filter.getavailable.json?api_user=your_sendgrid_usernam
   }
 ]
 {% endcodeblock %}
-
-    </div>
-    <div class="tab-pane" id="getavailable-xml">
+</div>
+<div class="tab-pane" id="getavailable-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/filter.getavailable.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password
@@ -43,33 +40,29 @@ https://sendgrid.com/api/filter.getavailable.xml?api_user=your_sendgrid_username
 <h3>Response</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
-<filters>
-   <filter>
-      <name>twitter</name>
-      <title>Twitter</title>
-      <description>This plugin allows you to send an email message to twitter</description>
-      <activated>0</activated>
-   </filter>
-   ...
-</filters>
+  <filters>
+     <filter>
+        <name>twitter</name>
+        <title>Twitter</title>
+        <description>This plugin allows you to send an email message to twitter</description>
+        <activated>0</activated>
+     </filter>
+  </filters>
 
 {% endcodeblock %}
-    </div>
-  </div>
+</div>
+</div>
 
 <hr/>
-
-
 
 {% anchor h2 %}
 Activate App 
 {% endanchor %}
 
-
 {% xmljsontabs activate %}
 
 <div class="tab-content">
-  <div class="tab-pane active" id="activate-json">
+<div class="tab-pane active" id="activate-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/filter.activate.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
@@ -80,8 +73,8 @@ https://sendgrid.com/api/filter.activate.json?api_user=your_sendgrid_username&ap
   "message": "success"
 }
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane" id="activate-xml">
+</div>
+<div class="tab-pane" id="activate-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/filter.activate.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
@@ -94,7 +87,7 @@ https://sendgrid.com/api/filter.activate.xml?api_user=your_sendgrid_username&api
 </result>
 
 {% endcodeblock %}
-  </div>
+</div>
 </div>
 
 <hr/>
@@ -103,9 +96,8 @@ https://sendgrid.com/api/filter.activate.xml?api_user=your_sendgrid_username&api
 
 
 {% xmljsontabs deactivate %}
-
 <div class="tab-content">
-  <div class="tab-pane active" id="deactivate-json">
+<div class="tab-pane active" id="deactivate-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/filter.deactivate.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
@@ -117,9 +109,8 @@ https://sendgrid.com/api/filter.deactivate.json?api_user=your_sendgrid_username&
   "message": "success"
 }
 {% endcodeblock %}
-
-  </div>
-  <div class="tab-pane" id="deactivate-xml">
+</div>
+<div class="tab-pane" id="deactivate-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/filter.deactivate.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
@@ -132,8 +123,7 @@ https://sendgrid.com/api/filter.deactivate.xml?api_user=your_sendgrid_username&a
 </result>
 
 {% endcodeblock %}
-
-  </div>
+</div>
 </div>
 
 
@@ -196,9 +186,8 @@ Get Settings
 
 
 {% xmljsontabs getsettings %}
-
 <div class="tab-content">
-  <div class="tab-pane active" id="getsettings-json">
+<div class="tab-pane active" id="getsettings-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/filter.getsettings.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
@@ -224,9 +213,8 @@ https://sendgrid.com/api/filter.getsettings.json?api_user=your_sendgrid_username
   "settings": null
 }
 {% endcodeblock %}
-
-  </div>
-  <div class="tab-pane" id="getsettings-xml">
+</div>
+<div class="tab-pane" id="getsettings-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/filter.getsettings.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
@@ -256,8 +244,7 @@ https://sendgrid.com/api/filter.getsettings.xml?api_user=your_sendgrid_username&
 <filter/>
 
 {% endcodeblock %}
-
-  </div>
+</div>
 </div>
 
 

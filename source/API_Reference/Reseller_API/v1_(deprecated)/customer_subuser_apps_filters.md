@@ -47,7 +47,7 @@ Note: The *name* entry is used in all the other API calls to identify a app.
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=example@example.com
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=getavailable&amp;method=apps&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -74,7 +74,7 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_us
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=example@example.com
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=getavailable&amp;method=apps&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -127,7 +127,7 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=activate&user=example@example.com
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter&amp;method=apps&amp;task=activate&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -148,7 +148,7 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_us
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=activate&user=example@example.com
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter&amp;method=apps&amp;task=activate&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -201,7 +201,7 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=deactivate&user=example@example.com
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter&amp;method=apps&amp;task=deactivate&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -222,7 +222,7 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_us
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=deactivate&user=example@example.com
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter&amp;method=apps&amp;task=deactivate&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -248,7 +248,7 @@ These API calls require that settings are passed using POST.
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=setup&user=example@example.com
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter&amp;method=apps&amp;task=setup&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -305,7 +305,7 @@ This is returned if that filter has no settings or is not enabled.
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=setup&user=example@example.com
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter&amp;method=apps&amp;task=setup&amp;user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -346,7 +346,7 @@ This is returned if that filter has no settings or is not enabled.
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=example@example.com&method=app
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter&amp;task=getsettings&amp;user=example@example.com&amp;method=app
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -403,7 +403,7 @@ This is returned if that filter has no settings or is not enabled.
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=example@example.com&method=app
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter&amp;task=getsettings&amp;user=example@example.com&amp;method=app
 {% endcodeblock %}
 <h3>Response: Success</h3>
 

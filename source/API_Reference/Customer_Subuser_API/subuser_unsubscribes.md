@@ -9,6 +9,34 @@ navigation:
 {% anchor h2 %} Retrieve Unsubscribes {% endanchor %}
  Note that you can use *either* the days parameter *or* the start\_date and end\_date parameter.
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Subuser must be registered under your account</td>
+         <td>The subuser we are retrieving unsubscribes from</td>
+      </tr>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>Must be set to *get*</td>
+         <td>This will allow you to retrieve the unsubscribes for the specified subuser</td>
+      </tr>
+      <tr>
+         <td>date</td>
+         <td>No</td>
+         <td>Must be set to 1</td>
+         <td>Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs get %}
 
@@ -19,7 +47,7 @@ navigation:
 
 
 {% codeblock %}
-https://sendgrid.com/api/user.unsubscribes.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=
+https://sendgrid.com/api/user.unsubscribes.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=example@example.com&amp;task=get&amp;date=
 {% endcodeblock %}
 <h3>Response</h3>
   
@@ -49,7 +77,7 @@ https://sendgrid.com/api/user.unsubscribes.xml?api_user=your_sendgrid_username&a
 
 
 {% codeblock %}
-https://sendgrid.com/api/user.unsubscribes.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=
+https://sendgrid.com/api/user.unsubscribes.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=example@example.com&amp;task=get&amp;date=
 {% endcodeblock %}
 <h3>Response</h3>
   
@@ -78,6 +106,34 @@ https://sendgrid.com/api/user.unsubscribes.json?api_user=your_sendgrid_username&
 {% anchor h2 %} Delete Unsubscribes {% endanchor %}
  Since SendGrid does not deliver to unsubscribe addresses, users can remove unsubscribes from their list at any time if re-delivery to an unsubscribed address is desired.
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Subuser must be registered under your account</td>
+         <td>The subuser we are retrieving unsubscribes from</td>
+      </tr>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>Must be set to *delete*</td>
+         <td>This will allow you to delete an unsubscribe record for the specified subuser</td>
+      </tr>
+      <tr>
+         <td>email</td>
+         <td>No</td>
+         <td>Must be an unsubscribe record</td>
+         <td>You must specify the unsubscribe record to remove</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs delete %}
 
@@ -88,7 +144,7 @@ https://sendgrid.com/api/user.unsubscribes.json?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/api/user.unsubscribes.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=unsubscribe@sample.com
+https://sendgrid.com/api/user.unsubscribes.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=example@example.com&amp;task=delete&amp;email=unsubscribe@sample.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
   
@@ -128,7 +184,7 @@ https://sendgrid.com/api/user.unsubscribes.xml?api_user=your_sendgrid_username&a
 
 
 {% codeblock %}
-https://sendgrid.com/api/user.unsubscribes.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=unsubscribe@sample.com
+https://sendgrid.com/api/user.unsubscribes.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=example@example.com&amp;task=delete&amp;email=unsubscribe@sample.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
   
@@ -164,6 +220,34 @@ https://sendgrid.com/api/user.unsubscribes.json?api_user=your_sendgrid_username&
 {% anchor h2 %} Add Unsubscribes {% endanchor %}
  Add unsubscribe email records to their account if they need to stop sending email messages to a specific recipient.
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Subuser must be registered under your account</td>
+         <td>The subuser we are retrieving unsubscribes from</td>
+      </tr>
+      <tr>
+         <td>task</td>
+         <td>Yes</td>
+         <td>Must be set to *add*</td>
+         <td>This will allow you to add an unsubscribe record for the specified subuser</td>
+      </tr>
+      <tr>
+         <td>email</td>
+         <td>No</td>
+         <td>Must be an unsubscribe record</td>
+         <td>You must specify the unsubscribe record to add</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs add %}
 
@@ -174,7 +258,7 @@ https://sendgrid.com/api/user.unsubscribes.json?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/api/user.unsubscribes.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=add&email=unsubscribe@sample.com
+https://sendgrid.com/api/user.unsubscribes.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=example@example.com&amp;task=add&amp;email=unsubscribe@sample.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
   
@@ -214,7 +298,7 @@ https://sendgrid.com/api/user.unsubscribes.xml?api_user=your_sendgrid_username&a
 
 
 {% codeblock %}
-https://sendgrid.com/api/user.unsubscribes.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=add&email=unsubscribe@sample.com
+https://sendgrid.com/api/user.unsubscribes.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=example@example.com&amp;task=add&amp;email=unsubscribe@sample.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
   

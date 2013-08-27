@@ -14,6 +14,64 @@ This endpoint allows you to retrieve and delete entries in the Bounces list.
 
 Retrieve a list of bounces with addresses and response codes, optionally with dates.
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>date</td>
+         <td>No</td>
+         <td>Must be set to 1</td>
+         <td>Retrieve the timestamp of the bounce records. It will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
+      </tr>
+      <tr>
+         <td>days</td>
+         <td>No</td>
+         <td>If specified, must be an integer greater than 0</td>
+         <td>Number of days in the past for which to retrieve bounces (includes today)</td>
+      </tr>
+      <tr>
+         <td>start_date</td>
+         <td>No</td>
+         <td>Date must be in YYYY-MM-DD format and be earlier than the end_date parameter.</td>
+         <td>The start of the date range for which to retrieve bounces.</td>
+      </tr>
+      <tr>
+         <td>end_date</td>
+         <td>No</td>
+         <td>Date must be in YYYY-MM-DD format and be later than the start_date parameter.</td>
+         <td>The end of the date range for which to retrieve bounces.</td>
+      </tr>
+      <tr>
+         <td>limit</td>
+         <td>No</td>
+         <td>some integer</td>
+         <td>Optional field to limit the number of results returned.</td>
+      </tr>
+      <tr>
+         <td>offset</td>
+         <td>No</td>
+         <td>some integer</td>
+         <td>optional beginning point in the list to retrieve from.</td>
+      </tr>
+      <tr>
+         <td>type</td>
+         <td>No</td>
+         <td>hard or soft</td>
+         <td>choose the type of bounce to search for.</td>
+      </tr>
+      <tr>
+         <td>email</td>
+         <td>No</td>
+         <td>email address eg testing@example.com</td>
+         <td>optional email addresses to search for.</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs get %}
 
@@ -24,7 +82,7 @@ Retrieve a list of bounces with addresses and response codes, optionally with da
 
 
 {% codeblock %}
-https://sendgrid.com/api/bounces.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1
+https://sendgrid.com/api/bounces.get.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;date=1
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -79,7 +137,7 @@ https://sendgrid.com/api/bounces.get.json?api_user=your_sendgrid_username&api_ke
 
 
 {% codeblock %}
-https://sendgrid.com/api/bounces.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1
+https://sendgrid.com/api/bounces.get.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;date=1
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -117,6 +175,41 @@ https://sendgrid.com/api/bounces.get.xml?api_user=your_sendgrid_username&api_key
 
 Delete an address from the Bounce list. Please note that if no parameters are specified the ENTIRE list will be deleted.
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>start_date</td>
+         <td>No</td>
+         <td>Date must be in YYYY-mm-dd format and be before the end_date parameter</td>
+         <td>Optional date to start deleting from.</td>
+      </tr>
+      <tr>
+         <td>end_date</td>
+         <td>No</td>
+         <td>Date must be in YYYY-mm-dd format and be after the start_date parameter</td>
+         <td>Optional date to end deleting from.</td>
+      </tr>
+      <tr>
+         <td>type</td>
+         <td>No</td>
+         <td>hard or soft</td>
+         <td>choose the type of bounce to be removed.</td>
+      </tr>
+      <tr>
+         <td>email</td>
+         <td>No</td>
+         <td>Must be a valid user account email</td>
+         <td>Email bounce address to remove</td>
+      </tr>
+      <tr/>
+   </tbody>
+</table>
 
 {% xmljsontabs delete %}
 
@@ -127,7 +220,7 @@ Delete an address from the Bounce list. Please note that if no parameters are sp
 
 
 {% codeblock %}
-https://sendgrid.com/api/bounces.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com
+https://sendgrid.com/api/bounces.delete.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=emailToDelete@domain.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -161,7 +254,7 @@ https://sendgrid.com/api/bounces.delete.json?api_user=your_sendgrid_username&api
 
 
 {% codeblock %}
-https://sendgrid.com/api/bounces.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com
+https://sendgrid.com/api/bounces.delete.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=emailToDelete@domain.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -204,6 +297,34 @@ https://sendgrid.com/api/bounces.delete.xml?api_user=your_sendgrid_username&api_
 {% anchor h2 %} Count {% endanchor %}
 
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+         <td>start_date</td>
+         <td>No</td>
+         <td>Date must be in YYYY-mm-dd format and be before the end_date parameter</td>
+         <td>Optional date to start counting from.</td>
+      </tr>
+      <tr>
+         <td>end_date</td>
+         <td>No</td>
+         <td>Date must be in YYYY-mm-dd format and be after the start_date parameter</td>
+         <td>Optional date to end counting from.</td>
+      </tr>
+      <tr>
+         <td>type</td>
+         <td>No</td>
+         <td>hard or soft</td>
+         <td>choose the type of bounce to search for.</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs count %}
 
@@ -214,7 +335,7 @@ https://sendgrid.com/api/bounces.delete.xml?api_user=your_sendgrid_username&api_
 
 
 {% codeblock %}
-https://sendgrid.com/api/bounces.count.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/bounces.count.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -251,7 +372,7 @@ https://sendgrid.com/api/bounces.count.json?api_user=your_sendgrid_username&api_
 
 
 {% codeblock %}
-https://sendgrid.com/api/bounces.count.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password
+https://sendgrid.com/api/bounces.count.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 

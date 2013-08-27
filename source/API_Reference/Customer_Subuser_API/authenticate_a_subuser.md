@@ -8,6 +8,25 @@ navigation:
 
 <span>Authenticate a subuser on your website before displaying their account information so that you can have users manage their SendGrid account on your website completely.</span>
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>Parameter</th>
+         <th>Required</th>
+         <th>Requirements</th>
+      </tr>
+      <tr>
+         <td>user</td>
+         <td>Yes</td>
+         <td>Subuser that is registered under your account.</td>
+      </tr>
+      <tr>
+         <td>password</td>
+         <td>Yes</td>
+         <td>Password the subuser submitted.</td>
+      </tr>
+   </tbody>
+</table>
 
 {% xmljsontabs auth %}
 
@@ -18,7 +37,7 @@ navigation:
 
 
 {% codeblock %}
-	https://sendgrid.com/apiv2/customer.auth.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=theirsubmittedpassword
+	https://sendgrid.com/apiv2/customer.auth.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=example@example.com&amp;password=theirsubmittedpassword
 	{% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -55,7 +74,7 @@ navigation:
 
 
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.auth.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=theirsubmittedpasswor
+https://sendgrid.com/apiv2/customer.auth.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=example@example.com&amp;password=theirsubmittedpasswor
 {% endcodeblock %}
 <h3>Response: Success</h3>
   

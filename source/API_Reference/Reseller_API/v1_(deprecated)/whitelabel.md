@@ -48,7 +48,7 @@ With the whitelabel API calls you will be able to retrieve whitelabel settings r
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=whitelabel&task=lis
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=whitelabel&amp;task=lis
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -76,7 +76,7 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=whitelabel&task=lis
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=whitelabel&amp;task=lis
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -139,7 +139,7 @@ https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=whitelabel&task=append&user=customer@example.com&mail_domain=email.sendgrid.com
+https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=whitelabel&amp;task=append&amp;user=customer@example.com&amp;mail_domain=email.sendgrid.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -173,7 +173,7 @@ result><message>success</message></result>
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=whitelabel&task=append&user=customer@example.com&mail_domain=email.sendgrid.com
+https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=whitelabel&amp;task=append&amp;user=customer@example.com&amp;mail_domain=email.sendgrid.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 

@@ -49,7 +49,7 @@ navigation:
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=example@example.com&task=get&date=
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=invalidemails&amp;user=example@example.com&amp;task=get&amp;date=
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -90,7 +90,7 @@ bad domain</reason>
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=example@example.com&task=get&date=
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=invalidemails&amp;user=example@example.com&amp;task=get&amp;date=
 {% endcodeblock %}
 <h3>Response</h3>
 
@@ -151,7 +151,7 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
 
 
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=example@example.com&task=delete&email=invalidemail@example.com
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=invalidemails&amp;user=example@example.com&amp;task=delete&amp;email=invalidemail@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 
@@ -176,7 +176,7 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_us
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=example@example.com&task=delete&email=invalidemail@example.com
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=invalidemails&amp;user=example@example.com&amp;task=delete&amp;email=invalidemail@example.com
 {% endcodeblock %}
 
 

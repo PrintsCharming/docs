@@ -33,9 +33,8 @@ navigation:
   </dl>
   
 {% xmljsontabs list %}
-
 <div class="tab-content">
-	  <div class="tab-pane active" id="list-json">
+<div class="tab-pane active" id="list-json">
 <h3>Call</h3>
 	{% codeblock %}
 	https://sendgrid.com/apiv2/customer.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=all
@@ -53,8 +52,8 @@ navigation:
   }
 ]
 {% endcodeblock %}
-	</div>
-  <div class="tab-pane" id="list-xml">
+</div>
+<div class="tab-pane" id="list-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=all
@@ -69,7 +68,7 @@ https://sendgrid.com/apiv2/customer.ip.xml?api_user=your_sendgrid_username&api_k
 </ips>
 
 {% endcodeblock %}
-    </div>
+</div>
 
 </div>
 <hr/>
@@ -96,9 +95,8 @@ If your account has more than one IP address, you can manage what IPs your subus
     </tr>
   </tbody></table>
 {% xmljsontabs usage %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="usage-xml">
+<div class="tab-pane" id="usage-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.sendip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list&user=example@example.com
@@ -126,8 +124,8 @@ https://sendgrid.com/apiv2/customer.sendip.xml?api_user=your_sendgrid_username&a
 </result>
 
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="usage-json">
+</div>
+<div class="tab-pane active" id="usage-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.sendip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list&user=example@example.com
@@ -168,7 +166,7 @@ https://sendgrid.com/apiv2/customer.sendip.json?api_user=your_sendgrid_username&
   }
 }
 {% endcodeblock %}
-  </div>
+</div>
 </div>
 <hr/>
 
@@ -208,9 +206,8 @@ You need to assign at least ONE IP to your subuser.
     </tr>
   </tbody></table>
 {% xmljsontabs subuser %}
-
 <div class="tab-content">
-  <div class="tab-pane" id="subuser-xml">
+<div class="tab-pane" id="subuser-xml">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.sendip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&set=specify&user=example@example.com&ip[]=255.255.255.250&ip[]=255.255.255.255
@@ -236,8 +233,8 @@ https://sendgrid.com/apiv2/customer.sendip.xml?api_user=your_sendgrid_username&a
 </result>
 
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="subuser-json">
+</div>
+<div class="tab-pane active" id="subuser-json">
 <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.sendip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&set=specify&user=example@example.com&ip[]=255.255.255.250&ip[]=255.255.255.255
