@@ -9,6 +9,7 @@ files: [
   'source/javascripts/analytics.js',
   'source/javascripts/anchors.js',
   'source/javascripts/codebuttons.js',
+  'source/javascripts/livedocs.js',
   'source/javascripts/libs/modernizr-2.0.js',
   'source/javascripts/libs/bootstrap.js',
   'source/javascripts/search.js',
